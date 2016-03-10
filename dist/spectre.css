@@ -1,3 +1,8 @@
+/* Copyright 2016 Spectre.css */
+/* Core variables */
+/* Core variables */
+/* Global */
+/* Reset and dependencies */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -353,6 +358,27 @@ td,
 th {
   padding: 0;
 }
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+/* Base */
 * {
   box-sizing: border-box;
 }
@@ -360,7 +386,223 @@ th {
 *:after {
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
 body {
+  color: #333;
+  font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", WenQuanYi Micro Hei, sans-serif;
+  font-size: 14px;
   background-color: #fff;
-  font-size: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", WenQuanYi Micro Hei, sans-serif;
+}
+/* Core classes */
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+p {
+  line-height: 1.428571429;
+  margin: 0 0 1rem;
+}
+p.lead {
+  font-size: 120%;
+}
+blockquote {
+  padding: 1rem 2rem;
+  border-left: 2px solid #ddd;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.text-break {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+/* List */
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-left: 2rem;
+}
+ul {
+  list-style: disc inside;
+}
+ul ul {
+  list-style-type: circle;
+}
+ol {
+  list-style: decimal inside;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+/* Layout */
+/* Components */
+/* Buttons */
+/* Utility classes */
+/* Position */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.top {
+  position: absolute;
+  top: 0;
+}
+.right {
+  position: absolute;
+  right: 0;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+.left {
+  position: absolute;
+  left: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mt-5 {
+  margin-top: 5px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+/* Display */
+.block {
+  display: block !important;
+}
+.inline {
+  display: inline !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hide {
+  display: none !important;
+}
+/* Shadow */
+.shadow {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.light-shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+/* Shapes */
+.rounded {
+  border-radius: 3px;
+}
+.circle {
+  border-radius: 50%;
 }
