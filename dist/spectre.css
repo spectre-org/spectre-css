@@ -742,6 +742,11 @@ button.btn-lg {
   line-height: 2rem;
   padding: 1rem 1.8rem;
 }
+.btn.btn-block,
+button.btn-block {
+  width: 100%;
+  display: block;
+}
 .clearfix::after,
 .container::after,
 .columns::after {
