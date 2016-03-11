@@ -1,1 +1,103 @@
 // Buttons
+.btn,
+button {
+  display: inline-block;
+  padding: .7rem 1.5rem;
+  background-color: transparent;
+  border-radius: 3px;
+  color: @core-color;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  border: 1px solid @core-color;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  -webkit-appearance: none;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: @core-color;
+  }
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: darken(@core-color, 5%);
+  }
+
+  &.loading {
+    color: transparent !important;
+    pointer-events: none;
+    position: relative;
+
+    &::after {
+      border: 2px solid @core-color;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-radius: 8px;
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -8px;
+      margin-top: -8px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      animation: loading 500ms infinite linear;
+    }
+  }
+
+  &[disabled] {
+    opacity: .5;
+    cursor: default;
+  }
+
+  &.btn-primary {
+    color: #fff;
+    border-color: @core-color;
+    background-color: @core-color;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      border-color: darken(@core-color, 5%);
+      background-color: darken(@core-color, 5%);
+    }
+    &:active,
+    &.active {
+      color: #fff;
+      border-color: darken(@core-color, 10%);
+      background-color: darken(@core-color, 10%);
+    }
+
+    &.loading {
+      &::after {
+        border-color: #fff;
+        border-right-color: transparent;
+        border-top-color: transparent;
+      }
+    }
+  }
+
+  &.btn-link {
+    color: @core-color;
+    border-color: transparent;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: darken(@core-color, 15%);
+    }
+    &:active,
+    &.active {
+      color: darken(@core-color, 25%);
+    }
+  }
+
+  // TODO: Button with icons
+}
