@@ -1,8 +1,3 @@
-/* Copyright 2016 Spectre.css */
-/* Core variables */
-/* Core variables */
-/* Global */
-/* Reset and dependencies */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -378,7 +373,6 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
-/* Base */
 * {
   box-sizing: border-box;
 }
@@ -395,8 +389,6 @@ body {
   font-size: 14px;
   background-color: #fff;
 }
-/* Core classes */
-/* Typography */
 h1,
 h2,
 h3,
@@ -482,7 +474,6 @@ blockquote p:last-child {
       -ms-hyphens: auto;
           hyphens: auto;
 }
-/* List */
 ul,
 ol {
   margin: 0 0 1rem;
@@ -505,11 +496,6 @@ ol {
 ol ol {
   list-style-type: lower-alpha;
 }
-/* Layout */
-/* Components */
-/* Buttons */
-/* Utility classes */
-/* Position */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -573,7 +559,6 @@ ol ol {
 .ml-5 {
   margin-left: 5px;
 }
-/* Display */
 .block {
   display: block !important;
 }
@@ -592,14 +577,12 @@ ol ol {
 .hide {
   display: none !important;
 }
-/* Shadow */
 .shadow {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 .light-shadow {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
-/* Shapes */
 .rounded {
   border-radius: 3px;
 }
