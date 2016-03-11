@@ -2,16 +2,17 @@
 .btn,
 button {
   display: inline-block;
+  height: 3.2rem;
   padding: .7rem 1.5rem;
+  border: .1rem solid @core-color;
   background-color: transparent;
   border-radius: 3px;
   color: @core-color;
   font-size: 1.4rem;
-  line-height: 1.2;
+  line-height: 1.6rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  border: 1px solid @core-color;
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
@@ -57,6 +58,7 @@ button {
     cursor: default;
   }
 
+  // Button Primary
   &.btn-primary {
     color: #fff;
     border-color: @core-color;
@@ -84,6 +86,7 @@ button {
     }
   }
 
+  // Button Link
   &.btn-link {
     color: @core-color;
     border-color: transparent;
@@ -99,5 +102,24 @@ button {
     }
   }
 
+  // Button Small
+  &.btn-sm {
+    height: 2.4rem;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: .4rem 1rem;
+  }
+
+  // Button Large
+  &.btn-lg {
+    height: 4.2rem;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 1rem 1.8rem;
+  }
+
   // TODO: Button with icons
+  // TODO: Button groups
 }

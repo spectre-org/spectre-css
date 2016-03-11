@@ -617,16 +617,17 @@ ol ol {
 .btn,
 button {
   display: inline-block;
+  height: 3.2rem;
   padding: .7rem 1.5rem;
+  border: 0.1rem solid #5764C6;
   background-color: transparent;
   border-radius: 3px;
   color: #5764C6;
   font-size: 1.4rem;
-  line-height: 1.2;
+  line-height: 1.6rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  border: 1px solid #5764C6;
   white-space: nowrap;
   cursor: pointer;
   -webkit-user-select: none;
@@ -724,6 +725,22 @@ button.btn-link:active,
 .btn.btn-link.active,
 button.btn-link.active {
   color: #283176;
+}
+.btn.btn-sm,
+button.btn-sm {
+  height: 2.4rem;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding: .4rem 1rem;
+}
+.btn.btn-lg,
+button.btn-lg {
+  height: 4.2rem;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 1rem 1.8rem;
 }
 .clearfix::after,
 .container::after,
