@@ -505,6 +505,12 @@ ol ol {
   padding-left: 10px;
   padding-right: 10px;
 }
+.container.grid-960 {
+  width: 960px;
+}
+.container.grid-full {
+  width: 100%;
+}
 .columns {
   display: -webkit-box;
   display: -webkit-flex;
@@ -642,6 +648,12 @@ ol ol {
   position: absolute;
   left: 0;
 }
+.centered {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -667,13 +679,13 @@ ol ol {
   margin-left: 5px;
 }
 .block {
-  display: block !important;
+  display: block;
 }
 .inline {
-  display: inline !important;
+  display: inline;
 }
 .inline-block {
-  display: inline-block !important;
+  display: inline-block;
 }
 .flex {
   display: -webkit-box;
