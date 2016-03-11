@@ -382,6 +382,7 @@ ol ol {
 }
 html {
   font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   color: #333;
@@ -396,6 +397,8 @@ h4,
 h5,
 h6 {
   font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
 }
 h1 {
   font-size: 5rem;
@@ -496,12 +499,116 @@ ol {
 ol ol {
   list-style-type: lower-alpha;
 }
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.clearfix:after {
+.columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+.column.col-12 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 100%;
+}
+.column.col-11 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 91.66666667%;
+}
+.column.col-10 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 83.33333333%;
+}
+.column.col-9 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 75%;
+}
+.column.col-8 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 66.66666667%;
+}
+.column.col-7 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 58.33333333%;
+}
+.column.col-6 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 50%;
+}
+.column.col-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 41.66666667%;
+}
+.column.col-4 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 33.33333333%;
+}
+.column.col-3 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 25%;
+}
+.column.col-2 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 16.66666667%;
+}
+.column.col-1 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 8.33333333%;
+}
+.clearfix::after,
+.container::after,
+.columns::after {
+  content: "";
+  display: table;
   clear: both;
 }
 .pull-left {
