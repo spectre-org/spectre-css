@@ -750,12 +750,7 @@ button.btn-block {
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
-form .label,
-.form-group .label {
-  display: block;
-  margin-bottom: .5rem;
-}
-.input {
+.form-input {
   position: relative;
   display: block;
   width: 100%;
@@ -772,37 +767,57 @@ form .label,
   -webkit-appearance: none;
   outline: 0;
 }
-.input:focus {
+.form-input:focus {
   border-color: #5764C6;
 }
-.input[disabled] {
+.form-input[disabled] {
   opacity: .75;
   background-color: #eeeff2;
   pointer-events: none;
 }
-.input.input-sm {
+.form-input.input-sm {
   height: 2.4rem;
   border-radius: 2px;
   font-size: 1.2rem;
   line-height: 1.4rem;
   padding: .4rem .6rem;
 }
-.input.input-lg {
+.form-input.input-lg {
   height: 4.2rem;
   border-radius: 4px;
   font-size: 1.8rem;
   line-height: 2rem;
   padding: 1rem 1.2rem;
 }
-.input.input-inline {
+.form-input.input-inline {
   width: auto;
   display: inline-block;
 }
-.input.is-success {
+textarea.form-input {
+  height: auto;
+}
+.form-input.is-success {
   border-color: #00c372;
 }
-.input.is-danger {
+.form-input.is-danger {
   border-color: #e74c3c;
+}
+.form-label {
+  display: block;
+  margin-bottom: .5rem;
+}
+.form-select:not([multiple]) {
+  height: 3.2rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  padding: .7rem .8rem;
+  border: 0.1rem solid #c5c5c5;
+  border-radius: 3px;
+  outline: 0;
+}
+.form-select:focus {
+  border-color: #5764C6;
 }
 .clearfix::after,
 .container::after,

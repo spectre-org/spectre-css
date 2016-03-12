@@ -2,14 +2,7 @@
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
-form,
-.form-group {
-  .label {
-    display: block;
-    margin-bottom: .5rem;
-  }
-}
-.input {
+.form-input {
   position: relative;
   display: block;
   width: 100%;
@@ -54,10 +47,15 @@ form,
     padding: 1rem 1.2rem;
   }
 
-  // Input Inlines
+  // Input Inline
   &.input-inline {
     width: auto;
     display: inline-block;
+  }
+
+  // Textarea
+  textarea& {
+    height: auto;
   }
 
   // Status
@@ -69,6 +67,26 @@ form,
   }
 
   // TODO: Input with icons
+}
+.form-label {
+  display: block;
+  margin-bottom: .5rem;
+}
+.form-select {
+  &:not([multiple]) {
+    height: 3.2rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: .7rem .8rem;
+    border: .1rem solid @control-color;
+    border-radius: 3px;
+    outline: 0;
+  }
+
+  &:focus {
+    border-color: @core-color;
+  }
 }
 
 
