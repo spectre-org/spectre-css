@@ -529,88 +529,57 @@ ol ol {
     display: -ms-flexbox;
     display: flex;
   }
-  .column.col-12 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 100%;
-  }
-  .column.col-11 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 91.66666667%;
-  }
-  .column.col-10 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 83.33333333%;
-  }
-  .column.col-9 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 75%;
-  }
-  .column.col-8 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 66.66666667%;
-  }
-  .column.col-7 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 58.33333333%;
-  }
-  .column.col-6 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 50%;
-  }
-  .column.col-5 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 41.66666667%;
-  }
-  .column.col-4 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 33.33333333%;
-  }
-  .column.col-3 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 25%;
-  }
-  .column.col-2 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    width: 16.66666667%;
-  }
+  .column.col-12,
+  .column.col-11,
+  .column.col-10,
+  .column.col-9,
+  .column.col-8,
+  .column.col-7,
+  .column.col-6,
+  .column.col-5,
+  .column.col-4,
+  .column.col-3,
+  .column.col-2,
   .column.col-1 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
         -ms-flex: none;
             flex: none;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 91.66666667%;
+  }
+  .col-10 {
+    width: 83.33333333%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-8 {
+    width: 66.66666667%;
+  }
+  .col-7 {
+    width: 58.33333333%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-5 {
+    width: 41.66666667%;
+  }
+  .col-4 {
+    width: 33.33333333%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-2 {
+    width: 16.66666667%;
+  }
+  .col-1 {
     width: 8.33333333%;
   }
 }
@@ -796,9 +765,11 @@ button.btn-block {
 textarea.form-input {
   height: auto;
 }
+.has-success .form-input,
 .form-input.is-success {
   border-color: #00c372;
 }
+.has-danger .form-input,
 .form-input.is-danger {
   border-color: #e74c3c;
 }
@@ -825,6 +796,74 @@ textarea.form-input {
   font-size: 1.2rem;
   line-height: 1.4rem;
   padding: .4rem .6rem;
+}
+.form-checkbox,
+.form-radio {
+  line-height: 1.8rem;
+  padding: .3rem 1.8rem .3rem 1.8rem;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.form-checkbox input,
+.form-radio input {
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+  border: 0.1rem solid #c5c5c5;
+  float: left;
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0;
+  position: absolute;
+  top: .5rem;
+  left: 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+.form-checkbox input:hover,
+.form-radio input:hover {
+  border-color: #9f9f9f;
+}
+.form-checkbox input:checked,
+.form-radio input:checked {
+  background-color: #5764C6;
+  border-color: #5764C6;
+}
+.form-checkbox input {
+  border-radius: 2px;
+}
+.form-checkbox input:checked::after {
+  width: .6rem;
+  height: 1rem;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.6rem;
+  margin-left: -0.3rem;
+  border: .2rem solid #fff;
+  border-top-width: 0;
+  border-left-width: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.form-radio input {
+  border-radius: .7rem;
+}
+.form-radio input:checked::after {
+  width: .4rem;
+  height: .4rem;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.2rem;
+  margin-left: -0.2rem;
+  border-radius: .2rem;
+  background-color: #fff;
 }
 .clearfix::after,
 .container::after,
