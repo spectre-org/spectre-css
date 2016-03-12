@@ -654,8 +654,8 @@ button.active {
 .btn.loading,
 button.loading {
   color: transparent !important;
-  pointer-events: none;
   position: relative;
+  pointer-events: none;
 }
 .btn.loading::after,
 button.loading::after {
@@ -746,6 +746,63 @@ button.btn-lg {
 button.btn-block {
   width: 100%;
   display: block;
+}
+.form-group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+form .label,
+.form-group .label {
+  display: block;
+  margin-bottom: .5rem;
+}
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 3.2rem;
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #c5c5c5;
+  border-radius: 3px;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  padding: .7rem .8rem;
+  -webkit-appearance: none;
+  outline: 0;
+}
+.input:focus {
+  border-color: #5764C6;
+}
+.input[disabled] {
+  opacity: .75;
+  background-color: #eeeff2;
+  pointer-events: none;
+}
+.input.input-sm {
+  height: 2.4rem;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding: .4rem .6rem;
+}
+.input.input-lg {
+  height: 4.2rem;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 1rem 1.2rem;
+}
+.input.input-inline {
+  width: auto;
+  display: inline-block;
+}
+.input.is-success {
+  border-color: #00c372;
+}
+.input.is-danger {
+  border-color: #e74c3c;
 }
 .clearfix::after,
 .container::after,
