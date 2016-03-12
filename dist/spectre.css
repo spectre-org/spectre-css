@@ -819,6 +819,13 @@ textarea.form-input {
 .form-select:focus {
   border-color: #5764C6;
 }
+.form-select.select-sm {
+  height: 2.4rem;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  padding: .4rem .6rem;
+}
 .clearfix::after,
 .container::after,
 .columns::after {
