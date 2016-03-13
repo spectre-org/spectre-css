@@ -601,6 +601,10 @@ table td {
 table th {
   border-color: #d6d6d6;
 }
+table tr.selected th,
+table tr.selected td {
+  background-color: #f4f4f4;
+}
 .btn,
 button {
   display: inline-block;
@@ -882,6 +886,26 @@ textarea.form-input {
   margin-left: -0.2rem;
   border-radius: .2rem;
   background-color: #fff;
+}
+.label {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+  background-color: #c5c5c5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-top: -0.2rem;
+  border-radius: 2px;
+}
+.label.label-primary {
+  background-color: #5764C6;
+}
+.label.label-lg {
+  padding: .4rem .8rem;
+  font-size: 1.4rem;
 }
 .clearfix::after,
 .container::after,
