@@ -583,6 +583,19 @@ ol ol {
     width: 8.33333333%;
   }
 }
+table {
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 1rem .5rem;
+  border-bottom: 0.1rem solid #efefef;
+  background-color: #fff;
+}
+th {
+  border-color: #d6d6d6;
+}
 .btn,
 button {
   display: inline-block;
