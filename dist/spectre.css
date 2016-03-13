@@ -830,11 +830,11 @@ textarea.form-input {
   height: auto;
 }
 .has-success .form-input,
-.form-input.is-success {
+.form-input.input-success {
   border-color: #00c372;
 }
 .has-danger .form-input,
-.form-input.is-danger {
+.form-input.input-danger {
   border-color: #e74c3c;
 }
 .form-label {
@@ -928,6 +928,35 @@ textarea.form-input {
   margin-left: -0.2rem;
   border-radius: .2rem;
   background-color: #fff;
+}
+.toast {
+  display: block;
+  width: 100%;
+  padding: 1.4rem;
+  color: #666;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+.toast.toast-primary {
+  color: #fff;
+  background-color: #5764C6;
+  border-color: #4f5dc3;
+}
+.toast.toast-success {
+  color: #fff;
+  background-color: #00c372;
+  border-color: #00b96c;
+}
+.toast.toast-warning {
+  color: #896902;
+  background-color: #fccf42;
+  border-color: #fccc38;
+}
+.toast.toast-danger {
+  color: #fff;
+  background-color: #e74c3c;
+  border-color: #e64433;
 }
 .label {
   display: inline-block;

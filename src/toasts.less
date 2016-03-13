@@ -1,0 +1,32 @@
+// Toasts
+.toast {
+  display: block;
+  width: 100%;
+  padding: 1.4rem;
+  color: #666;
+  border: .1rem solid darken(@core-border-color, 2%);
+  border-radius: 3px;
+  background-color: @core-border-color;
+
+  &.toast-primary {
+    color: #fff;
+    background-color: @core-color;
+    border-color: darken(@core-color, 2%);
+  }
+
+  &.toast-success {
+    color: #fff;
+    background-color: @control-color-success;
+    border-color: darken(@control-color-success, 2%);
+  }
+  &.toast-warning {
+    color: darken(@control-color-warning, 35%);
+    background-color: @control-color-warning;
+    border-color: darken(@control-color-warning, 2%);
+  }
+  &.toast-danger {
+    color: #fff;
+    background-color: @control-color-danger;
+    border-color: darken(@control-color-danger, 2%);
+  }
+}
