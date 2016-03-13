@@ -934,8 +934,8 @@ textarea.form-input {
   padding: .2rem .5rem;
   font-size: 1.2rem;
   line-height: 1.4rem;
-  color: #fff;
-  background-color: #c5c5c5;
+  color: #666;
+  background-color: #efefef;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -943,9 +943,11 @@ textarea.form-input {
   border-radius: 2px;
 }
 .label.label-primary {
+  color: #fff;
   background-color: #5764C6;
 }
 .label.label-success {
+  color: #fff;
   background-color: #00c372;
 }
 .label.label-warning {
@@ -953,10 +955,11 @@ textarea.form-input {
   background-color: #fccf42;
 }
 .label.label-danger {
+  color: #fff;
   background-color: #e74c3c;
 }
 .label.label-lg {
-  padding: .2rem .8rem;
+  padding: .3rem .8rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
