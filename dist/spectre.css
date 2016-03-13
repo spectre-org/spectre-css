@@ -738,6 +738,48 @@ button.btn-block {
   width: 100%;
   display: block;
 }
+.btn.btn-clear,
+button.btn-clear {
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0;
+  margin: 0.1rem -0.2rem 0.1rem 0.2rem;
+  border: 0;
+  border-radius: .7rem;
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.btn.btn-clear:hover,
+button.btn-clear:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.btn.btn-clear::before,
+button.btn-clear::before,
+.btn.btn-clear::after,
+button.btn-clear::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+}
+.btn.btn-clear::before,
+button.btn-clear::before {
+  width: .8rem;
+  height: .2rem;
+  margin-left: -0.4rem;
+  margin-top: -0.1rem;
+}
+.btn.btn-clear::after,
+button.btn-clear::after {
+  width: .2rem;
+  height: .8rem;
+  margin-left: -0.1rem;
+  margin-top: -0.4rem;
+}
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -904,8 +946,9 @@ textarea.form-input {
   background-color: #5764C6;
 }
 .label.label-lg {
-  padding: .4rem .8rem;
+  padding: .2rem .8rem;
   font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 .clearfix::after,
 .container::after,

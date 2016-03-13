@@ -126,6 +126,46 @@ button {
     display: block;
   }
 
+  // Button Clear
+  &.btn-clear {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0;
+    margin: .1rem -.2rem .1rem .2rem;
+    border: 0;
+    border-radius: .7rem;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, .15);
+    transform: rotate(-45deg);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .35);
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: #fff;
+    }
+
+    &::before {
+      width: .8rem;
+      height: .2rem;
+      margin-left: -.4rem;
+      margin-top: -.1rem;
+    }
+    &::after {
+      width: .2rem;
+      height: .8rem;
+      margin-left: -.1rem;
+      margin-top: -.4rem;
+    }
+  }
+
   // TODO: Button with icons
   // TODO: Button groups
 }
