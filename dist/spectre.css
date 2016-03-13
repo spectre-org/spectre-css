@@ -428,6 +428,7 @@ p.lead {
 blockquote {
   padding: 1rem 2rem;
   border-left: 2px solid #ddd;
+  margin-left: 0;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -486,6 +487,10 @@ ol ul,
 ul ol,
 ol ol {
   margin-left: 2rem;
+}
+ul li,
+ol li {
+  margin-top: 1rem;
 }
 ul {
   list-style: disc inside;
@@ -586,14 +591,14 @@ ol ol {
 table {
   width: 100%;
 }
-th,
-td {
+table th,
+table td {
   text-align: left;
-  padding: 1rem .5rem;
+  padding: 1.5rem 1rem;
   border-bottom: 0.1rem solid #efefef;
   background-color: #fff;
 }
-th {
+table th {
   border-color: #d6d6d6;
 }
 .btn,

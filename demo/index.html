@@ -32,28 +32,34 @@
             </blockquote>
 
             <header class="text-center"><h4>lists</h4></header>
-            <ul class="list">
-                <li>list item 1</li>
-                <li>list item 2
-                    <ul>
-                        <li>list item 2.1</li>
-                        <li>list item 2.2</li>
-                        <li>list item 2.3</li>
+            <div class="columns">
+                <div class="column col-6">
+                    <ul class="list">
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ul>
+                                <li>list item 2.1</li>
+                                <li>list item 2.2</li>
+                                <li>list item 2.3</li>
+                            </ul>
+                        </li>
+                        <li>list item 3</li>
                     </ul>
-                </li>
-                <li>list item 3</li>
-            </ul>
-            <ol class="list">
-                <li>list item 1</li>
-                <li>list item 2
-                    <ol>
-                        <li>list item 2.1</li>
-                        <li>list item 2.2</li>
-                        <li>list item 2.3</li>
+                </div>
+                <div class="column col-6">
+                    <ol class="list">
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ol>
+                                <li>list item 2.1</li>
+                                <li>list item 2.2</li>
+                                <li>list item 2.3</li>
+                            </ol>
+                        </li>
+                        <li>list item 3</li>
                     </ol>
-                </li>
-                <li>list item 3</li>
-            </ol>
+                </div>
+            </div>
         </section>
         <section class="layout">
             <header class="text-center"><h4>flexbox layout</h4></header>
@@ -187,12 +193,10 @@
                 </div>
                 <div class="form-group">
                     <label class="form-radio">
-                        <input type="radio" name="question">
-                        Yes
+                        <input type="radio" name="question" checked> Yes
                     </label>
                     <label class="form-radio">
-                        <input type="radio" name="question">
-                        No
+                        <input type="radio" name="question"> No
                     </label>
                 </div>
                 <div class="form-group">
