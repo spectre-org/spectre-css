@@ -433,6 +433,32 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-left: 2rem;
+}
+ul li,
+ol li {
+  margin-top: 1rem;
+}
+ul {
+  list-style: disc inside;
+}
+ul ul {
+  list-style-type: circle;
+}
+ol {
+  list-style: decimal inside;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
 .text-left {
   text-align: left;
 }
@@ -477,32 +503,6 @@ blockquote p:last-child {
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-}
-ul,
-ol {
-  margin: 0 0 1rem;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-left: 2rem;
-}
-ul li,
-ol li {
-  margin-top: 1rem;
-}
-ul {
-  list-style: disc inside;
-}
-ul ul {
-  list-style-type: circle;
-}
-ol {
-  list-style: decimal inside;
-}
-ol ol {
-  list-style-type: lower-alpha;
 }
 .container {
   width: 100%;
@@ -929,6 +929,37 @@ textarea.form-input {
   border-radius: .2rem;
   background-color: #fff;
 }
+.label {
+  display: inline-block;
+  padding: .2rem .5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+  background-color: #c5c5c5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin: -0.2rem 0.5rem 0 0;
+  border-radius: 2px;
+}
+.label.label-primary {
+  background-color: #5764C6;
+}
+.label.label-success {
+  background-color: #00c372;
+}
+.label.label-warning {
+  color: #896902;
+  background-color: #fccf42;
+}
+.label.label-danger {
+  background-color: #e74c3c;
+}
+.label.label-lg {
+  padding: .2rem .8rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
 .toast {
   display: block;
   width: 100%;
@@ -957,27 +988,6 @@ textarea.form-input {
   color: #fff;
   background-color: #e74c3c;
   border-color: #e64433;
-}
-.label {
-  display: inline-block;
-  padding: .2rem .5rem;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  color: #fff;
-  background-color: #c5c5c5;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  margin-top: -0.2rem;
-  border-radius: 2px;
-}
-.label.label-primary {
-  background-color: #5764C6;
-}
-.label.label-lg {
-  padding: .2rem .8rem;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
 }
 .clearfix::after,
 .container::after,

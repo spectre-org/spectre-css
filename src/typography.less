@@ -44,6 +44,33 @@ blockquote {
     margin-bottom: 0;
   }
 }
+ul,
+ol {
+  margin: 0 0 1rem;
+
+  ul,
+  ol {
+    margin-left: 2rem;
+  }
+
+  li {
+    margin-top: 1rem;
+  }
+}
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+ol {
+  list-style: decimal inside;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
 
 .text-left {
   text-align: left;
@@ -89,32 +116,4 @@ blockquote {
   word-break: break-word;
   word-wrap: break-word;
   hyphens: auto;
-}
-
-ul,
-ol {
-  margin: 0 0 1rem;
-
-  ul,
-  ol {
-    margin-left: 2rem;
-  }
-
-  li {
-    margin-top: 1rem;
-  }
-}
-ul {
-  list-style: disc inside;
-
-  ul {
-    list-style-type: circle;
-  }
-}
-ol {
-  list-style: decimal inside;
-
-  ol {
-    list-style-type: lower-alpha;
-  }
 }
