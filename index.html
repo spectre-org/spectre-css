@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spectre, a lightweight and clean CSS framework for faster and extendable development.</title>
+    <link rel="stylesheet" href="dist/spectre.css">
+</head>
+<body>
+    <section class="container grid-960">
+        <section class="typography">
+            <header class="text-center"><h4>headings</h4></header>
+            <h1>H1 Title</h1>
+            <h2>H2 Title</h2>
+            <h3>H3 Title</h3>
+            <h4>H4 Title</h4>
+            <h5>H5 Title</h5>
+            <h6>H6 Title</h6>
+
+            <header class="text-center"><h4>paragraphs</h4></header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+            <header class="text-center"><h4>blockquote</h4></header>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+
+            <header class="text-center"><h4>lists</h4></header>
+            <div class="columns">
+                <div class="column col-6">
+                    <ul class="list">
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ul>
+                                <li>list item 2.1</li>
+                                <li>list item 2.2</li>
+                                <li>list item 2.3</li>
+                            </ul>
+                        </li>
+                        <li>list item 3</li>
+                    </ul>
+                </div>
+                <div class="column col-6">
+                    <ol class="list">
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ol>
+                                <li>list item 2.1</li>
+                                <li>list item 2.2</li>
+                                <li>list item 2.3</li>
+                            </ol>
+                        </li>
+                        <li>list item 3</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="layout">
+            <header class="text-center"><h4>flexbox layout</h4></header>
+            <div class="columns">
+                <div class="column col-6">
+                    First column
+                </div>
+                <div class="column">
+                    Second column
+                </div>
+                <div class="column">
+                    Third column
+                </div>
+                <div class="column">
+                    Fourth column
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-4">
+                    First column
+                </div>
+                <div class="column col-4">
+                    Second column
+                </div>
+                <div class="column">
+                    Third column
+                </div>
+                <div class="column">
+                    Fourth column
+                </div>
+            </div>
+        </section>
+        <section class="tables">
+            <header class="text-center"><h4>tables</h4></header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>duration</th>
+                        <th>genre</th>
+                        <th>release date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Shawshank Redemption</td>
+                        <td>2h 22min</td>
+                        <td>Crime, Drama</td>
+                        <td>14 October 1994 <span class="label">USA</span></td>
+                    </tr>
+                    <tr>
+                        <td>The Godfather</td>
+                        <td>2h 55min</td>
+                        <td>Crime, Drama</td>
+                        <td>24 March 1972 <span class="label">USA</span></td>
+                    </tr>
+                    <tr class="selected">
+                        <td>Schindler's List</td>
+                        <td>3h 15min</td>
+                        <td>Biography, Drama, History</td>
+                        <td>4 February 1994 <span class="label">USA</span></td>
+                    </tr>
+                    <tr>
+                        <td>Se7en</td>
+                        <td>2h 7min</td>
+                        <td>Crime, Drama, Mystery</td>
+                        <td>24 March 1972 <span class="label">USA</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="buttons">
+            <header class="text-center"><h4>buttons</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <button class="btn">default button</button>
+                    <button class="btn loading">default button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-primary">primary button</button>
+                    <button class="btn btn-primary loading">primary button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-link">link button</button>
+                    <button class="btn btn-link loading">link button</button>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <button class="btn btn-sm">small button</button>
+                </div>
+                <div class="column">
+                    <button class="btn">normal button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-lg">large button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-block">block button</button>
+                </div>
+            </div>
+        </section>
+        <section class="forms">
+            <header class="text-center"><h4>forms</h4></header>
+            <form class="col-6">
+                <div class="form-group">
+                    <label class="form-label" for="input-example-1">Name</label>
+                    <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="input-example-2">Email</label>
+                    <input class="form-input" type="email" id="input-example-2" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <select class="form-select">
+                        <option>Choose an option</option>
+                        <option>Slack</option>
+                        <option>Skype</option>
+                        <option>Hipchat</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="input-example-3">Message</label>
+                    <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-checkbox">
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-radio">
+                        <input type="radio" name="question" checked> Yes
+                    </label>
+                    <label class="form-radio">
+                        <input type="radio" name="question"> No
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Submit</button>
+                    <button class="btn btn-link">Cancel</button>
+                </div>
+            </form>
+        </section>
+        <section class="labels">
+            <header class="text-center"><h4>labels</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <span class="label">default label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-primary">primary label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-success">primary label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-warning">default label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-danger">primary label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-lg">default label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-primary label-lg">primary label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-lg">
+                        large label
+                        <button class="btn-clear"></button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="toasts">
+            <header class="text-center"><h4>toasts</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="toast">
+                        <button class="btn-clear pull-right"></button>
+                        Here's a bunch of numbers. They may look random but they're my phone numbers.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-primary">
+                        <button class="btn-clear pull-right"></button>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="toast toast-success">
+                        <button class="btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-warning">
+                        <button class="btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-danger">
+                        <button class="btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
