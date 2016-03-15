@@ -16,3 +16,12 @@ body {
   font-size: @body-font-size;
   background-color: @body-bg;
 }
+a {
+  color: @core-link-color;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken(@core-link-color, 10%);
+  }
+}

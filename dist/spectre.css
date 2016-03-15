@@ -390,6 +390,14 @@ body {
   font-size: 14px;
   background-color: #fff;
 }
+a {
+  color: #5764C6;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: #3b49af;
+}
 h1,
 h2,
 h3,
@@ -997,6 +1005,34 @@ textarea.form-input {
   color: #fff;
   background-color: #e74c3c;
   border-color: #e64433;
+}
+.menu {
+  display: block;
+  width: auto;
+  text-align: left;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.menu .menu-item {
+  display: block;
+  padding: .2rem 1rem;
+  border-radius: 3px;
+  color: #333;
+  line-height: 2.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.menu .menu-item:hover,
+.menu .menu-item:focus {
+  background-color: #efefef;
 }
 .clearfix::after,
 .container::after,
