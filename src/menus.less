@@ -13,16 +13,57 @@
   .menu-item {
     display: block;
     padding: .2rem 1rem;
+    margin-top: 0;
     border-radius: 3px;
     color: @body-font-color;
     line-height: 2.4rem;
-    cursor: pointer;
     text-decoration: none;
     user-select: none;
 
-    &:hover,
-    &:focus {
-      background-color: @core-border-color;
+    a {
+      display: block;
+      margin: -.2rem -1rem;
+      padding: .2rem 1rem;
+      border-radius: 3px;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        background-color: @core-border-color;
+      }
     }
+  }
+
+  .menu-header {
+    display: block;
+    padding: .2rem 1rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: lighten(@body-font-color, 60%);
+
+    .menu-header-text {
+      display: inline-block;
+      padding: 0 .6rem;
+      margin-left: -.6rem;
+      background-color: #fff;
+      position: relative;
+      z-index: 99;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      transform: translateY(-10px);
+      border-bottom: 1px solid @core-border-color;
+    }
+  }
+
+  .divider {
+    display: block;
+    border-bottom: 1px solid @core-border-color;
+    margin: .5rem;
   }
 }

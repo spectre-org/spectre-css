@@ -396,7 +396,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #3b49af;
+  color: #283176;
 }
 h1,
 h2,
@@ -1020,19 +1020,56 @@ textarea.form-input {
 .menu .menu-item {
   display: block;
   padding: .2rem 1rem;
+  margin-top: 0;
   border-radius: 3px;
   color: #333;
   line-height: 2.4rem;
-  cursor: pointer;
   text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.menu .menu-item:hover,
-.menu .menu-item:focus {
+.menu .menu-item a {
+  display: block;
+  margin: -0.2rem -1rem;
+  padding: .2rem 1rem;
+  border-radius: 3px;
+  color: inherit;
+  text-decoration: none;
+}
+.menu .menu-item a:hover {
   background-color: #efefef;
+}
+.menu .menu-header {
+  display: block;
+  padding: .2rem 1rem;
+  margin-top: 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #cccccc;
+}
+.menu .menu-header .menu-header-text {
+  display: inline-block;
+  padding: 0 .6rem;
+  margin-left: -0.6rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 99;
+}
+.menu .menu-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  border-bottom: 1px solid #efefef;
+}
+.menu .divider {
+  display: block;
+  border-bottom: 1px solid #efefef;
+  margin: .5rem;
 }
 .clearfix::after,
 .container::after,
