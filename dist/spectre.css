@@ -1145,6 +1145,68 @@ textarea.form-input {
   padding: 0 .4rem;
   color: #c5c5c5;
 }
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  content: attr(data-tooltip);
+  display: block;
+  max-width: 32rem;
+  padding: .6rem 1rem;
+  border-radius: .3rem;
+  background-color: rgba(51, 51, 51, 0.9);
+  opacity: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  overflow: hidden;
+  z-index: 99;
+  pointer-events: none;
+  -webkit-transition: all .216s ease;
+  transition: all .216s ease;
+}
+.tooltip:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -0.5rem);
+          transform: translate(-50%, -0.5rem);
+}
+.tooltip[data-tooltip-pos="right"]::after {
+  bottom: 50%;
+  left: 100%;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+.tooltip[data-tooltip-pos="right"]:hover::after {
+  -webkit-transform: translate(0.5rem, 50%);
+          transform: translate(0.5rem, 50%);
+}
+.tooltip[data-tooltip-pos="bottom"]::after {
+  top: 100%;
+  bottom: auto;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.tooltip[data-tooltip-pos="bottom"]:hover::after {
+  -webkit-transform: translate(-50%, 0.5rem);
+          transform: translate(-50%, 0.5rem);
+}
+.tooltip[data-tooltip-pos="left"]::after {
+  right: 100%;
+  bottom: 50%;
+  left: auto;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+.tooltip[data-tooltip-pos="left"]:hover::after {
+  -webkit-transform: translate(-0.5rem, 50%);
+          transform: translate(-0.5rem, 50%);
+}
 .clearfix::after,
 .container::after,
 .columns::after {
