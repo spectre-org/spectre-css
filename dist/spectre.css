@@ -982,10 +982,10 @@ textarea.form-input {
   transition: left .15s ease;
 }
 .form-switch input:hover {
-  border-color: #9f9f9f;
+  border-color: #b8b8b8;
 }
 .form-switch input:hover::after {
-  background-color: #b8b8b8;
+  background-color: #c2c2c2;
 }
 .form-switch input:checked {
   background-color: #5764C6;
