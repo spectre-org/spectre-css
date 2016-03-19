@@ -1123,6 +1123,28 @@ textarea.form-input {
   border-bottom: 1px solid #efefef;
   margin: .5rem;
 }
+.breadcrumb {
+  list-style: none;
+  margin: .5rem 0;
+  padding: 1.2rem;
+}
+.breadcrumb li {
+  display: inline-block;
+  margin: 0;
+}
+.breadcrumb li a {
+  text-decoration: none;
+}
+.breadcrumb li:last-child,
+.breadcrumb li:last-child a {
+  color: #666666;
+  pointer-events: none;
+}
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+  padding: 0 .4rem;
+  color: #c5c5c5;
+}
 .clearfix::after,
 .container::after,
 .columns::after {
