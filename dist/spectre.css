@@ -441,6 +441,9 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
+blockquote small {
+  color: #b3b3b3;
+}
 ul,
 ol {
   margin: 0 0 1rem;
