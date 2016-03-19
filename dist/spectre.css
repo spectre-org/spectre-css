@@ -691,7 +691,7 @@ button[disabled] {
 .btn.btn-primary,
 button.btn-primary {
   color: #fff;
-  border-color: #5764C6;
+  border-color: #4452c0;
   background-color: #5764C6;
 }
 .btn.btn-primary:hover,
@@ -699,7 +699,7 @@ button.btn-primary:hover,
 .btn.btn-primary:focus,
 button.btn-primary:focus {
   color: #fff;
-  border-color: #4452c0;
+  border-color: #3b49af;
   background-color: #4452c0;
 }
 .btn.btn-primary:active,
@@ -796,6 +796,36 @@ button.btn-clear::after {
   height: .8rem;
   margin-left: -0.1rem;
   margin-top: -0.4rem;
+}
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn-group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn-group .btn {
+  float: left;
+}
+.btn-group .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group .btn:not(:first-child):not(:last-child) {
+  margin-left: -0.1rem;
+  border-radius: 0;
+}
+.btn-group .btn:last-child:not(:first-child) {
+  margin-left: -0.1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;

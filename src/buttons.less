@@ -61,13 +61,13 @@ button {
   // Button Primary
   &.btn-primary {
     color: #fff;
-    border-color: @core-color;
+    border-color: darken(@core-color, 5%);
     background-color: @core-color;
 
     &:hover,
     &:focus {
       color: #fff;
-      border-color: darken(@core-color, 5%);
+      border-color: darken(@core-color, 10%);
       background-color: darken(@core-color, 5%);
     }
     &:active,
@@ -166,10 +166,29 @@ button {
     }
   }
 
-  .btn-groups {
-
-  }
-
   // TODO: Button with icons
-  // TODO: Button groups
+}
+
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+  .clearfix();
+
+  .btn {
+    float: left;
+
+    &:first-child:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      margin-left: -.1rem;
+      border-radius: 0;
+    }
+    &:last-child:not(:first-child) {
+      margin-left: -.1rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
 }
