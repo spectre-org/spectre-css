@@ -187,6 +187,7 @@
     line-height: 24px;
     vertical-align: top;
     border: .1rem solid @control-color;
+    background-color: @control-color;
     display: inline-block;
     width: 3rem;
     height: 1.8rem;
@@ -202,22 +203,18 @@
     &::after {
       content: "";
       display: block;
-      width: 1.4rem;
-      height: 1.4rem;
-      border-radius: .7rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: .8rem;
       position: absolute;
-      top: .1rem;
-      left: .1rem;
-      background-color: lighten(@control-color, 5%);
+      top: 0;
+      left: 0;
+      background-color: #fff;
       transition: left .15s ease;
     }
 
     &:hover {
-      border-color: darken(@control-color, 5%);
 
-      &::after {
-        background-color: darken(@control-color, 1%);
-      }
     }
 
     &:checked {
@@ -225,7 +222,7 @@
       border-color: @core-color;
 
       &::after {
-        left: 1.3rem;
+        left: 1.2rem;
         background-color: #fff;
       }
     }
