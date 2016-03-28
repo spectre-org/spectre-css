@@ -165,9 +165,9 @@ button {
       margin-top: -.4rem;
     }
   }
-
-  // TODO: Button with icons
 }
+
+// TODO: Button with icons
 
 .btn-group {
   display: inline-block;
@@ -184,11 +184,13 @@ button {
     &:not(:first-child):not(:last-child) {
       margin-left: -.1rem;
       border-radius: 0;
+      z-index: 49;
     }
     &:last-child:not(:first-child) {
       margin-left: -.1rem;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      z-index: 99;
     }
   }
 }

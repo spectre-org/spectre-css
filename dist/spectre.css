@@ -387,7 +387,7 @@ html {
 body {
   color: #333;
   font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", WenQuanYi Micro Hei, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   background-color: #fff;
 }
 a {
@@ -435,7 +435,7 @@ p.lead {
 }
 blockquote {
   padding: 1rem 2rem;
-  border-left: 2px solid #ddd;
+  border-left: .2rem solid #ddd;
   margin-left: 0;
 }
 blockquote p:last-child {
@@ -525,24 +525,24 @@ ol ol {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media screen and (min-width: 961px) {
   .container.grid-960 {
-    width: 960px;
+    width: 96rem;
   }
 }
 .columns {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 .column {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
+  padding: 1rem;
 }
 @media screen and (min-width: 769px) {
   .columns {
@@ -821,11 +821,13 @@ button.btn-clear::after {
 .btn-group .btn:not(:first-child):not(:last-child) {
   margin-left: -0.1rem;
   border-radius: 0;
+  z-index: 49;
 }
 .btn-group .btn:last-child:not(:first-child) {
   margin-left: -0.1rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  z-index: 99;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
@@ -839,7 +841,7 @@ button.btn-clear::after {
   background-color: #fff;
   background-image: none;
   border: 0.1rem solid #c5c5c5;
-  border-radius: 3px;
+  border-radius: .3rem;
   color: #333;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -857,15 +859,15 @@ button.btn-clear::after {
 }
 .form-input.input-sm {
   height: 2.4rem;
-  border-radius: 2px;
+  border-radius: .2rem;
   font-size: 1.2rem;
   line-height: 1.4rem;
   padding: .4rem .6rem;
 }
 .form-input.input-lg {
   height: 4.2rem;
-  border-radius: 4px;
-  font-size: 1.8rem;
+  border-radius: .4rem;
+  font-size: 1.6rem;
   line-height: 2rem;
   padding: 1rem 1.2rem;
 }
@@ -887,6 +889,7 @@ textarea.form-input {
 .form-label {
   display: block;
   margin-bottom: .5rem;
+  line-height: 1.6rem;
 }
 .form-select:not([multiple]) {
   height: 3.2rem;
@@ -895,7 +898,7 @@ textarea.form-input {
   line-height: 1.6rem;
   padding: .7rem .8rem;
   border: 0.1rem solid #c5c5c5;
-  border-radius: 3px;
+  border-radius: .3rem;
   outline: 0;
 }
 .form-select:focus {
@@ -903,7 +906,7 @@ textarea.form-input {
 }
 .form-select.select-sm {
   height: 2.4rem;
-  border-radius: 2px;
+  border-radius: .2rem;
   font-size: 1.2rem;
   line-height: 1.4rem;
   padding: .4rem .6rem;
@@ -983,7 +986,7 @@ textarea.form-input {
   position: relative;
 }
 .form-switch input {
-  line-height: 24px;
+  line-height: 2.4rem;
   vertical-align: top;
   border: 0.1rem solid #c5c5c5;
   background-color: #c5c5c5;
@@ -1031,7 +1034,7 @@ textarea.form-input {
   white-space: nowrap;
   vertical-align: middle;
   margin: -0.2rem 0.5rem 0 0;
-  border-radius: 2px;
+  border-radius: .2rem;
 }
 .label.label-primary {
   color: #fff;
@@ -1050,9 +1053,9 @@ textarea.form-input {
   background-color: #e74c3c;
 }
 .label.label-lg {
-  padding: .3rem .8rem;
+  padding: .2rem .8rem;
   font-size: 1.4rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
 }
 .toast {
   display: block;
@@ -1060,7 +1063,7 @@ textarea.form-input {
   padding: 1.4rem;
   color: #666;
   border: 0.1rem solid #eaeaea;
-  border-radius: 3px;
+  border-radius: .3rem;
   background-color: #efefef;
 }
 .toast.toast-primary {
@@ -1089,16 +1092,16 @@ textarea.form-input {
   text-align: left;
   margin: 0;
   padding: 1rem;
-  border-radius: 3px;
+  border-radius: .3rem;
   background-color: #fff;
   z-index: 999;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .menu .menu-item {
   display: block;
   padding: .2rem 1rem;
   margin-top: 0;
-  border-radius: 3px;
+  border-radius: .3rem;
   color: #333;
   line-height: 2.4rem;
   text-decoration: none;
@@ -1111,7 +1114,7 @@ textarea.form-input {
   display: block;
   margin: -0.2rem -1rem;
   padding: .2rem 1rem;
-  border-radius: 3px;
+  border-radius: .3rem;
   color: inherit;
   text-decoration: none;
 }
@@ -1138,14 +1141,14 @@ textarea.form-input {
   content: "";
   display: block;
   width: 100%;
-  height: 1px;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  border-bottom: 1px solid #efefef;
+  height: .1rem;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  border-bottom: 0.1rem solid #efefef;
 }
 .menu .divider {
   display: block;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 0.1rem solid #efefef;
   margin: .5rem;
 }
 .breadcrumb {
@@ -1277,28 +1280,28 @@ textarea.form-input {
   margin-right: auto;
 }
 .mt-10 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .mr-10 {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .mb-10 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .ml-10 {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 .mt-5 {
-  margin-top: 5px;
+  margin-top: .5rem;
 }
 .mr-5 {
-  margin-right: 5px;
+  margin-right: .5rem;
 }
 .mb-5 {
-  margin-bottom: 5px;
+  margin-bottom: .5rem;
 }
 .ml-5 {
-  margin-left: 5px;
+  margin-left: .5rem;
 }
 .block {
   display: block;
@@ -1319,13 +1322,13 @@ textarea.form-input {
   display: none !important;
 }
 .shadow {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .light-shadow {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
 }
 .rounded {
-  border-radius: 3px;
+  border-radius: .3rem;
 }
 .circle {
   border-radius: 50%;

@@ -12,7 +12,7 @@
   background-color: #fff;
   background-image: none;
   border: .1rem solid @control-color;
-  border-radius: 3px;
+  border-radius: .3rem;
   color: @body-font-color;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -33,7 +33,7 @@
   // Input Small
   &.input-sm {
     height: 2.4rem;
-    border-radius: 2px;
+    border-radius: .2rem;
     font-size: 1.2rem;
     line-height: 1.4rem;
     padding: .4rem .6rem;
@@ -42,8 +42,8 @@
   // Input Large
   &.input-lg {
     height: 4.2rem;
-    border-radius: 4px;
-    font-size: 1.8rem;
+    border-radius: .4rem;
+    font-size: 1.6rem;
     line-height: 2rem;
     padding: 1rem 1.2rem;
   }
@@ -75,6 +75,7 @@
 .form-label {
   display: block;
   margin-bottom: .5rem;
+  line-height: 1.6rem;
 }
 // Form element: Select
 .form-select {
@@ -85,7 +86,7 @@
     line-height: 1.6rem;
     padding: .7rem .8rem;
     border: .1rem solid @control-color;
-    border-radius: 3px;
+    border-radius: .3rem;
     outline: 0;
   }
 
@@ -96,7 +97,7 @@
   // Select Small
   &.select-sm {
     height: 2.4rem;
-    border-radius: 2px;
+    border-radius: .2rem;
     font-size: 1.2rem;
     line-height: 1.4rem;
     padding: .4rem .6rem;
@@ -184,7 +185,7 @@
   position: relative;
 
   input {
-    line-height: 24px;
+    line-height: 2.4rem;
     vertical-align: top;
     border: .1rem solid @control-color;
     background-color: @control-color;
@@ -211,10 +212,6 @@
       left: 0;
       background-color: #fff;
       transition: left .15s ease;
-    }
-
-    &:hover {
-
     }
 
     &:checked {
