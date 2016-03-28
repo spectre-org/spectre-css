@@ -832,6 +832,27 @@ button.btn-clear::after {
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
+.form-horizontal .col-12,
+.form-horizontal .col-11,
+.form-horizontal .col-10,
+.form-horizontal .col-9,
+.form-horizontal .col-8,
+.form-horizontal .col-7,
+.form-horizontal .col-6,
+.form-horizontal .col-5,
+.form-horizontal .col-4,
+.form-horizontal .col-3,
+.form-horizontal .col-2,
+.form-horizontal .col-1 {
+  float: left;
+}
+.form-horizontal .form-label {
+  padding: .8rem .4rem;
+}
+.form-horizontal .form-checkbox,
+.form-horizontal .form-radio {
+  margin: .5rem 0;
+}
 .form-input {
   position: relative;
   display: block;

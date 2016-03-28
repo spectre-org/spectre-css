@@ -213,53 +213,128 @@
         </section>
         <section class="forms">
             <header class="text-center"><h4>forms</h4></header>
-            <form class="col-6">
-                <div class="form-group">
-                    <label class="form-label" for="input-example-1">Name</label>
-                    <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+            <div class="columns">
+                <div class="column col-6">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-1">Name</label>
+                            <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-2">Email</label>
+                            <input class="form-input" type="email" id="input-example-2" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select">
+                                <option>Choose an option</option>
+                                <option>Slack</option>
+                                <option>Skype</option>
+                                <option>Hipchat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-switch">
+                                <input type="checkbox">
+                                Send me emails with news and tips
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-3">Message</label>
+                            <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <label class="form-radio">
+                                <input type="radio" name="gender"> Male
+                            </label>
+                            <label class="form-radio">
+                                <input type="radio" name="gender" checked> Female
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-link">Cancel</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="input-example-2">Email</label>
-                    <input class="form-input" type="email" id="input-example-2" placeholder="Email">
+            </div>
+            <div class="columns">
+                <div class="column col-6">
+                    <form class="form-horizontal">
+                        <div class="form-group columns">
+                            <label class="form-label col-3" for="input-example-4">Name</label>
+                            <div class="col-9">
+                                <input class="form-input" type="text" id="input-example-4" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <label class="form-label col-3" for="input-example-5">Email</label>
+                            <div class="col-9">
+                                <input class="form-input" type="email" id="input-example-5" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <select class="form-select">
+                                    <option>Choose an option</option>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <label class="form-label col-3" for="input-example-6">Message</label>
+                            <div class="col-9">
+                                <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <label class="form-label col-3">Gender</label>
+                            <div class="col-9">
+                                <label class="form-radio">
+                                    <input type="radio" name="gender"> Male
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="gender" checked> Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-switch">
+                                    <input type="checkbox">
+                                    Send me emails with news and tips
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <button class="btn btn-primary">Submit</button>
+                                <button class="btn btn-link">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <select class="form-select">
-                        <option>Choose an option</option>
-                        <option>Slack</option>
-                        <option>Skype</option>
-                        <option>Hipchat</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="form-switch">
-                        <input type="checkbox">
-                        Send me emails with news and tips
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="input-example-3">Message</label>
-                    <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Gender</label>
-                    <label class="form-radio">
-                        <input type="radio" name="gender"> Male
-                    </label>
-                    <label class="form-radio">
-                        <input type="radio" name="gender" checked> Female
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label class="form-checkbox">
-                        <input type="checkbox">
-                        Remember me
-                    </label>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary">Submit</button>
-                    <button class="btn btn-link">Cancel</button>
-                </div>
-            </form>
+            </div>
         </section>
         <section class="labels">
             <header class="text-center"><h4>labels</h4></header>
