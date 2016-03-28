@@ -1,4 +1,5 @@
 // Navigation
+// Breadcrumb
 .breadcrumb {
   list-style: none;
   margin: .5rem 0;
@@ -29,3 +30,35 @@
     }
   }
 }
+// Tabs
+.tab {
+  display: inline-block;
+  list-style: none;
+  margin: .5rem 0;
+  border-bottom: .1rem solid @control-color;
+  .clearfix();
+
+  li {
+    float: left;
+    margin-bottom: -.1rem;
+
+    a {
+      display: block;
+      padding: .5rem 1.5rem;
+      border-bottom: .1rem solid transparent;
+      color: @body-font-color;
+      text-decoration: none;
+
+      &:hover {
+        color: @core-color;
+        border-bottom-color: @core-color;
+      }
+      &.active,
+      &:active {
+        color: darken(@core-color, 10%);
+        border-bottom-color: darken(@core-color, 10%);
+      }
+    }
+  }
+}
+
