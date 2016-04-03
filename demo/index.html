@@ -6,33 +6,45 @@
     <link rel="stylesheet" href="../dist/spectre.css">
     <style>
         .columns .column {
-            border: 1px solid transparent;
+
         }
     </style>
 </head>
 <body>
     <section class="container grid-960">
-        <section class="typography">
-            <header class="text-center"><h4>headings</h4></header>
-            <h1>H1 Title <span class="label">default label</span></h1>
-            <h2>H2 Title <span class="label">default label</span></h2>
-            <h3>H3 Title <span class="label">default label</span></h3>
-            <h4>H4 Title <span class="label">default label</span></h4>
-            <h5>H5 Title <span class="label">default label</span></h5>
-            <h6>H6 Title <span class="label">default label</span></h6>
+        <section id="overview">
+            <header class="text-center"><h3>Project Spectre</h3></header>
+            <header class="text-center"><h4>introduction</h4></header>
+            <section>
+                <p><strong>Project Spectre</strong> is a lightweight and clean CSS framework for faster and extendable development.</p>
+            </section>
+        </section>
+        <section id="typography">
+            <header class="text-center"><h4>typography</h4></header>
+            <section>
+                <p><strong>typography.less</strong> sets default styles for headings, paragraphs, blockquote, lists elements and some text related utilities. </p>
+            </section>
 
-            <header class="text-center"><h4>paragraphs</h4></header>
+            <header class="text-center"><h5>headings</h5></header>
+            <h1>H1 Title <span class="label">5rem</span></h1>
+            <h2>H2 Title <span class="label">4rem</span></h2>
+            <h3>H3 Title <span class="label">3rem</span></h3>
+            <h4>H4 Title <span class="label">2.4rem</span></h4>
+            <h5>H5 Title <span class="label">2rem</span></h5>
+            <h6>H6 Title <span class="label">1.6rem</span></h6>
+
+            <header class="text-center"><h5>paragraphs</h5></header>
             <p>Lorem ipsum dolor sit amet, <span class="highlight">consectetur</span> adipiscing elit. <a href="#">Integer</a> posuere erat a ante.</p>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 
-            <header class="text-center"><h4>blockquote</h4></header>
+            <header class="text-center"><h5>blockquote</h5></header>
             <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <small>- Source</small>
             </blockquote>
 
-            <header class="text-center"><h4>lists</h4></header>
+            <header class="text-center"><h5>lists</h5></header>
             <div class="columns">
                 <div class="column col-6">
                     <ul class="list">
@@ -64,6 +76,9 @@
         </section>
         <section class="layout">
             <header class="text-center"><h4>flexbox layout</h4></header>
+            <section>
+                <p><strong>layout.less</strong> includes flexbox based grid system with 12 columns. </p>
+            </section>
             <div class="columns">
                 <div class="column">
                     First column
@@ -154,6 +169,9 @@
         </section>
         <section class="buttons">
             <header class="text-center"><h4>buttons</h4></header>
+            <section>
+                <p><strong>buttons.less</strong> includes simple button style for actions in different types and sizes. Buttons can show loading indicators. </p>
+            </section>
             <div class="columns">
                 <div class="column">
                     <button class="btn">default button</button>
@@ -207,6 +225,9 @@
         </section>
         <section class="tooltips">
             <header class="text-center"><h4>tooltips</h4></header>
+            <section>
+                <p><strong>tooltips.less</strong> is built entirely in CSS. </p>
+            </section>
             <div class="columns">
                 <div class="column">
                     <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
@@ -293,6 +314,15 @@
                         <div class="form-group columns">
                             <div class="col-3"></div>
                             <div class="col-9">
+                                <label class="form-switch">
+                                    <input type="checkbox">
+                                    Send me emails with news and tips
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
                                 <select class="form-select">
                                     <option>Choose an option</option>
                                     <option>Slack</option>
@@ -324,15 +354,6 @@
                                 </label>
                                 <label class="form-radio">
                                     <input type="radio" name="gender" checked> Female
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group columns">
-                            <div class="col-3"></div>
-                            <div class="col-9">
-                                <label class="form-switch">
-                                    <input type="checkbox">
-                                    Send me emails with news and tips
                                 </label>
                             </div>
                         </div>
@@ -491,6 +512,25 @@
             <div class="columns">
                 <div class="column">
                     <ul class="tab">
+                        <li class="tab-item">
+                            <a href="#" class="active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Change avatar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="tab tab-block">
                         <li class="tab-item">
                             <a href="#" class="active">
                                 Home
