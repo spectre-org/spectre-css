@@ -605,6 +605,11 @@ ol ol {
     width: 8.33333333%;
   }
 }
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 table {
   width: 100%;
 }
