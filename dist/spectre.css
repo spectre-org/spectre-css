@@ -906,11 +906,11 @@ textarea.form-input {
 }
 .has-success .form-input,
 .form-input.input-success {
-  border-color: #00c372;
+  border-color: #32B643;
 }
 .has-danger .form-input,
 .form-input.input-danger {
-  border-color: #e74c3c;
+  border-color: #E85600;
 }
 .form-label {
   display: block;
@@ -1051,15 +1051,15 @@ textarea.form-input {
 }
 .label {
   display: inline-block;
-  padding: .2rem .5rem;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  padding: .3rem .5rem;
+  font-size: 80%;
+  line-height: 1;
   color: #666;
   background-color: #efefef;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  margin: -0.2rem 0.5rem 0 0;
+  margin: -0.3rem 0.5rem 0 0.5rem;
   border-radius: .2rem;
 }
 .label.label-primary {
@@ -1068,20 +1068,24 @@ textarea.form-input {
 }
 .label.label-success {
   color: #fff;
-  background-color: #00c372;
+  background-color: #32B643;
+}
+.label.label-info {
+  color: #fff;
+  background-color: #0193eb;
 }
 .label.label-warning {
-  color: #896902;
-  background-color: #fccf42;
+  color: #fff;
+  background-color: #ffb700;
 }
 .label.label-danger {
   color: #fff;
-  background-color: #e74c3c;
+  background-color: #E85600;
 }
 .label.label-lg {
-  padding: .2rem .8rem;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 100%;
+  line-height: 1.2;
+  padding: .3rem .8rem;
 }
 .badge {
   position: relative;
@@ -1122,18 +1126,23 @@ textarea.form-input {
 }
 .toast.toast-success {
   color: #fff;
-  background-color: #00c372;
-  border-color: #00b96c;
+  background-color: #32B643;
+  border-color: #30ae40;
+}
+.toast.toast-info {
+  color: #fff;
+  background-color: #0193eb;
+  border-color: #018de1;
 }
 .toast.toast-warning {
-  color: #896902;
-  background-color: #fccf42;
-  border-color: #fccc38;
+  color: #fff;
+  background-color: #ffb700;
+  border-color: #f5b000;
 }
 .toast.toast-danger {
   color: #fff;
-  background-color: #e74c3c;
-  border-color: #e64433;
+  background-color: #E85600;
+  border-color: #de5200;
 }
 .menu {
   display: block;
