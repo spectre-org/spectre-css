@@ -618,13 +618,11 @@ table td {
   text-align: left;
   padding: 1.5rem 1rem;
   border-bottom: 0.1rem solid #efefef;
-  background-color: #fff;
 }
 table th {
-  border-color: #d6d6d6;
+  border-color: #c9c9c9;
 }
-table tr.selected th,
-table tr.selected td {
+table tr.selected {
   background-color: #f4f4f4;
 }
 .btn,
