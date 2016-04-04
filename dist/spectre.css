@@ -762,8 +762,8 @@ button.btn-block {
 }
 .btn.btn-clear,
 button.btn-clear {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
   padding: 0;
   margin: 0.1rem -0.2rem 0.1rem 0.2rem;
   border: 0;
@@ -1146,6 +1146,7 @@ textarea.form-input {
   padding: .3rem .6rem;
   border-radius: .3rem;
   font-size: 1.2rem;
+  vertical-align: middle;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1155,6 +1156,10 @@ textarea.form-input {
 }
 .chip .chip-name {
   margin-left: .4rem;
+}
+.chip:hover,
+.chip:focus {
+  background-color: #eaeaea;
 }
 .label {
   display: inline-block;
