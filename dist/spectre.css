@@ -762,20 +762,21 @@ button.btn-block {
 }
 .btn.btn-clear,
 button.btn-clear {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.6rem;
+  height: 1.6rem;
   padding: 0;
   margin: 0.1rem -0.2rem 0.1rem 0.2rem;
   border: 0;
   border-radius: .7rem;
   vertical-align: top;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  opacity: .35;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 .btn.btn-clear:hover,
 button.btn-clear:hover {
-  background-color: rgba(0, 0, 0, 0.35);
+  opacity: .75;
 }
 .btn.btn-clear::before,
 button.btn-clear::before,
@@ -786,21 +787,21 @@ button.btn-clear::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #fff;
+  background-color: #333;
 }
 .btn.btn-clear::before,
 button.btn-clear::before {
-  width: .8rem;
+  width: 1rem;
   height: .2rem;
-  margin-left: -0.4rem;
+  margin-left: -0.5rem;
   margin-top: -0.1rem;
 }
 .btn.btn-clear::after,
 button.btn-clear::after {
   width: .2rem;
-  height: .8rem;
+  height: 1rem;
   margin-left: -0.1rem;
-  margin-top: -0.4rem;
+  margin-top: -0.5rem;
 }
 .btn-group {
   display: inline-block;
@@ -1136,6 +1137,24 @@ textarea.form-input {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.chip {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: .3rem .6rem;
+  border-radius: .3rem;
+  font-size: 1.2rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #efefef;
+  border: 1px solid #e2e2e2;
+}
+.chip .chip-name {
+  margin-left: .4rem;
 }
 .label {
   display: inline-block;
