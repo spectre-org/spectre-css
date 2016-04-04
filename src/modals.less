@@ -1,0 +1,32 @@
+// Modals
+.modal {
+  display: block;
+  width: 50vw;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-radius: .3rem;
+  background-color: #fff;
+  z-index: 999;
+  .shadow;
+  .centered;
+
+  .modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid @core-border-color;
+
+    .modal-title {
+      margin: 0;
+    }
+  }
+  .modal-body {
+    position: relative;
+    padding: 1.5rem;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  .modal-footer {
+    padding: 1.5rem;
+    text-align: right;
+  }
+}

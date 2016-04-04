@@ -74,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="layout">
+        <section id="layout">
             <header class="text-center"><h4>flexbox layout</h4></header>
             <section>
                 <p><strong>layout.less</strong> includes flexbox based grid system with 12 columns. </p>
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section class="tables">
+        <section id="tables">
             <header class="text-center"><h4>tables</h4></header>
             <table>
                 <thead>
@@ -167,7 +167,7 @@
                 </tbody>
             </table>
         </section>
-        <section class="buttons">
+        <section id="buttons">
             <header class="text-center"><h4>buttons</h4></header>
             <section>
                 <p><strong>buttons.less</strong> includes simple button style for actions in different types and sizes. Buttons can show loading indicators. </p>
@@ -193,7 +193,7 @@
                 </div>
             </div>
         </section>
-        <section class="button-groups">
+        <section id="button-groups">
             <header class="text-center"><h4>button groups</h4></header>
             <div class="columns">
                 <div class="column">
@@ -212,7 +212,7 @@
                 </div>
             </div>
         </section>
-        <section class="media">
+        <section id="media">
             <header class="text-center"><h4>media</h4></header>
             <div class="columns">
                 <div class="column col-6">
@@ -223,7 +223,7 @@
                 </div>
             </div>
         </section>
-        <section class="tooltips">
+        <section id="tooltips">
             <header class="text-center"><h4>tooltips</h4></header>
             <section>
                 <p><strong>tooltips.less</strong> is built entirely in CSS. </p>
@@ -243,10 +243,10 @@
                 </div>
             </div>
         </section>
-        <section class="forms">
+        <section id="forms">
             <header class="text-center"><h4>forms</h4></header>
             <div class="columns">
-                <div class="column col-6">
+                <div class="column col-5">
                     <form>
                         <div class="form-group">
                             <label class="form-label" for="input-example-1">Name</label>
@@ -295,8 +295,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="columns">
+                <div class="column col-1"></div>
                 <div class="column col-6">
                     <form class="form-horizontal">
                         <div class="form-group columns">
@@ -314,15 +313,6 @@
                         <div class="form-group columns">
                             <div class="col-3"></div>
                             <div class="col-9">
-                                <label class="form-switch">
-                                    <input type="checkbox">
-                                    Send me emails with news and tips
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group columns">
-                            <div class="col-3"></div>
-                            <div class="col-9">
                                 <select class="form-select">
                                     <option>Choose an option</option>
                                     <option>Slack</option>
@@ -334,9 +324,9 @@
                         <div class="form-group columns">
                             <div class="col-3"></div>
                             <div class="col-9">
-                                <label class="form-checkbox">
+                                <label class="form-switch">
                                     <input type="checkbox">
-                                    Remember me
+                                    Send me emails with news and tips
                                 </label>
                             </div>
                         </div>
@@ -360,6 +350,15 @@
                         <div class="form-group columns">
                             <div class="col-3"></div>
                             <div class="col-9">
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
                                 <button class="btn btn-primary">Submit</button>
                                 <button class="btn btn-link">Cancel</button>
                             </div>
@@ -368,7 +367,7 @@
                 </div>
             </div>
         </section>
-        <section class="labels">
+        <section id="labels">
             <header class="text-center"><h4>labels</h4></header>
             <div class="columns">
                 <div class="column">
@@ -397,7 +396,7 @@
                 </div>
             </div>
         </section>
-        <section class="toasts">
+        <section id="toasts">
             <header class="text-center"><h4>toasts</h4></header>
             <div class="columns">
                 <div class="column">
@@ -436,7 +435,7 @@
                 </div>
             </div>
         </section>
-        <section class="menus">
+        <section id="menus">
             <header class="text-center"><h4>menus</h4></header>
             <div class="columns">
                 <div class="column col-3">
@@ -483,7 +482,7 @@
                 </div>
             </div>
         </section>
-        <section class="breadcrumbs">
+        <section id="breadcrumbs">
             <header class="text-center"><h4>breadcrumbs</h4></header>
             <div class="columns">
                 <div class="column">
@@ -507,7 +506,7 @@
                 </div>
             </div>
         </section>
-        <section class="tabs">
+        <section id="tabs">
             <header class="text-center"><h4>tabs</h4></header>
             <div class="columns">
                 <div class="column">
@@ -560,7 +559,7 @@
                 </div>
             </div>
         </section>
-        <section class="badges">
+        <section id="badges">
             <header class="text-center"><h4>badges</h4></header>
             <div class="columns">
                 <div class="column">
@@ -582,6 +581,52 @@
                     <span class="badge" data-badge="♀">
                         Notifications
                     </span>
+                </div>
+            </div>
+        </section>
+        <section id="modals">
+            <header class="text-center"><h4>modals</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="modal">
+                        <div class="modal-container" role="document">
+                            <div class="modal-header">
+                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <h6 class="modal-title">Modal title</h6>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content">
+                                    <p>
+                                        This is the content inside the modal.
+                                    </p>
+                                    <h3>Lorem ipsum</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+                                    </p>
+                                    <p>
+                                        Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
+                                    </p>
+                                    <h3>Cupcake ipsum</h3>
+                                    <p>
+                                        Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
+                                    </p>
+                                    <p>
+                                        De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
+                                    </p>
+                                    <p>
+                                        Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
+                                    </p>
+                                    <p>
+                                        Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-link">Close</button>
+                                <button class="btn btn-primary">Share</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
