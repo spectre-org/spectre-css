@@ -86,11 +86,11 @@
 
   // Status
   .has-success &,
-  &.input-success {
+  &.is-success {
     border-color: @control-color-success;
   }
   .has-danger &,
-  &.input-danger {
+  &.is-danger {
     border-color: @control-color-danger;
   }
 
@@ -250,3 +250,37 @@
     }
   }
 }
+
+// Form element: Input groups
+.input-group {
+  display: flex;
+
+  .input-group-addon {
+    line-height: 1.6rem;
+    padding: .7rem .8rem;
+    border: 1px solid @control-color;
+    border-radius: .3rem;
+    background-color: @core-border-color;
+  }
+
+  .form-input,
+  .input-group-addon,
+  .input-group-btn {
+    &:first-child:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      margin-left: -.1rem;
+      border-radius: 0;
+      z-index: 49;
+    }
+    &:last-child:not(:first-child) {
+      margin-left: -.1rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      z-index: 99;
+    }
+  }
+}
+

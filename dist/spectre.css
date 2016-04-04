@@ -909,11 +909,11 @@ textarea.form-input {
   height: auto;
 }
 .has-success .form-input,
-.form-input.input-success {
+.form-input.is-success {
   border-color: #32b643;
 }
 .has-danger .form-input,
-.form-input.input-danger {
+.form-input.is-danger {
   border-color: #e85600;
 }
 .form-label {
@@ -1053,6 +1053,40 @@ textarea.form-input {
   left: 1.2rem;
   background-color: #fff;
 }
+.input-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.input-group .input-group-addon {
+  line-height: 1.6rem;
+  padding: .7rem .8rem;
+  border: 1px solid #c5c5c5;
+  border-radius: .3rem;
+  background-color: #efefef;
+}
+.input-group .form-input:first-child:not(:last-child),
+.input-group .input-group-addon:first-child:not(:last-child),
+.input-group .input-group-btn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group .form-input:not(:first-child):not(:last-child),
+.input-group .input-group-addon:not(:first-child):not(:last-child),
+.input-group .input-group-btn:not(:first-child):not(:last-child) {
+  margin-left: -0.1rem;
+  border-radius: 0;
+  z-index: 49;
+}
+.input-group .form-input:last-child:not(:first-child),
+.input-group .input-group-addon:last-child:not(:first-child),
+.input-group .input-group-btn:last-child:not(:first-child) {
+  margin-left: -0.1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: 99;
+}
 .avatar {
   display: inline-block;
   width: 3.2rem;
@@ -1154,12 +1188,12 @@ textarea.form-input {
   background-color: #efefef;
   border: 1px solid #e2e2e2;
 }
-.chip .chip-name {
-  margin-left: .4rem;
-}
 .chip:hover,
 .chip:focus {
   background-color: #eaeaea;
+}
+.chip .chip-name {
+  margin-left: .4rem;
 }
 .label {
   display: inline-block;
