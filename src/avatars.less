@@ -1,0 +1,42 @@
+// Avatars
+.avatar {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative;
+
+  &::after {
+    content: attr(data-initial);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+
+  &.avatar-xs {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: .8rem;
+  }
+  &.avatar-sm {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1rem;
+  }
+  &.avatar-lg {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 2rem;
+  }
+  &.avatar-xl {
+    width: 6.4rem;
+    height: 6.4rem;
+    font-size: 2.6rem;
+  }
+}
