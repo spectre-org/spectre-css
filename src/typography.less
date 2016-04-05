@@ -7,6 +7,8 @@ h5,
 h6 {
   font-weight: 300;
   line-height: 1.1;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
   color: inherit;
 }
 h1 {
@@ -37,11 +39,15 @@ p {
 }
 blockquote {
   padding: 1rem 2rem;
-  border-left: 2px solid #ddd;
+  border-left: .2rem solid #ddd;
   margin-left: 0;
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  small {
+    color: lighten(@body-font-color, 50%);
   }
 }
 ul,
@@ -70,6 +76,13 @@ ol {
   ol {
     list-style-type: lower-alpha;
   }
+}
+
+.highlight {
+  padding: .2rem;
+  line-height: 1.6rem;
+  border-radius: .2rem;
+  background-color: #fff5b7;
 }
 
 .text-left {

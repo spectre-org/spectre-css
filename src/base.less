@@ -16,3 +16,26 @@ body {
   font-size: @body-font-size;
   background-color: @body-bg;
 }
+a {
+  color: @core-link-color;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken(@core-link-color, 25%);
+  }
+}
+
+
+// Icons
+.btn,
+button,
+.toast,
+.menu {
+  .icon {
+    margin-right: .2rem;
+    font-size: 1.3333em;
+    line-height: 0.8em;
+    vertical-align: -20%;
+  }
+}

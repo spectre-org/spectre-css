@@ -4,34 +4,59 @@
     <meta charset="UTF-8">
     <title>Spectre, a lightweight and clean CSS framework for faster and extendable development.</title>
     <link rel="stylesheet" href="../dist/spectre.css">
+    <link rel="stylesheet" href="font/style.css">
     <style>
-        .columns .column {
-            border: 1px solid transparent;
+        header > h4 {
+            margin-top: 4rem;
+        }
+        .bg-grey {
+            background-color: #efefef;
+            padding: 1rem;
+            border-radius: .3rem;
         }
     </style>
 </head>
 <body>
     <section class="container grid-960">
-        <section class="typography">
-            <header class="text-center"><h4>headings</h4></header>
-            <h1>H1 Title</h1>
-            <h2>H2 Title</h2>
-            <h3>H3 Title</h3>
-            <h4>H4 Title</h4>
-            <h5>H5 Title</h5>
-            <h6>H6 Title</h6>
+        <section id="overview">
+            <header class="text-center"><h3>Project Spectre</h3></header>
+            <header class="text-center"><h4>introduction</h4></header>
+            <section>
+                <p><strong>Project Spectre</strong> is a lightweight and clean CSS framework for faster and extendable development.</p>
+                <ul>
+                    <li>lightweight and clean starting point for your project</li>
+                    <li>flexbox and responsive layout friendly</li>
+                    <li>built in useful components and utilities</li>
+                </ul>
+            </section>
+        </section>
 
-            <header class="text-center"><h4>paragraphs</h4></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <section id="typography">
+            <header class="text-center"><h4>typography</h4></header>
+            <section>
+                <p><strong>typography.less</strong> sets default styles for headings, paragraphs, blockquote, lists elements and some text related utilities. </p>
+            </section>
+
+            <header class="text-center"><h5>headings</h5></header>
+            <h1>H1 Title <span class="label">5rem</span></h1>
+            <h2>H2 Title <span class="label">4rem</span></h2>
+            <h3>H3 Title <span class="label">3rem</span></h3>
+            <h4>H4 Title <span class="label">2.4rem</span></h4>
+            <h5>H5 Title <span class="label">2rem</span></h5>
+            <h6>H6 Title <span class="label">1.6rem</span></h6>
+
+            <header class="text-center"><h5>paragraphs</h5></header>
+            <p>Lorem ipsum dolor sit amet, <span class="highlight">consectetur</span> adipiscing elit. <a href="#">Integer</a> posuere erat a ante.</p>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 
-            <header class="text-center"><h4>blockquote</h4></header>
+            <header class="text-center"><h5>blockquote</h5></header>
             <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>- Source</small>
             </blockquote>
 
-            <header class="text-center"><h4>lists</h4></header>
+            <header class="text-center"><h5>lists</h5></header>
             <div class="columns">
                 <div class="column col-6">
                     <ul class="list">
@@ -61,38 +86,63 @@
                 </div>
             </div>
         </section>
-        <section class="layout">
+
+        <section id="layout">
             <header class="text-center"><h4>flexbox layout</h4></header>
+            <section>
+                <p><strong>layout.less</strong> includes flexbox based grid system with 12 columns. </p>
+            </section>
             <div class="columns">
-                <div class="column col-6">
-                    First column
+                <div class="column">
+                    <div class="bg-grey">First column</div>
                 </div>
                 <div class="column">
-                    Second column
+                    <div class="bg-grey">Second column</div>
                 </div>
                 <div class="column">
-                    Third column
+                    <div class="bg-grey">Third column</div>
                 </div>
                 <div class="column">
-                    Fourth column
+                    <div class="bg-grey">Fourth column</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">Fifth column</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">Sixth column</div>
                 </div>
             </div>
             <div class="columns">
                 <div class="column col-4">
-                    First column
+                    <div class="bg-grey">First column</div>
                 </div>
                 <div class="column col-4">
-                    Second column
+                    <div class="bg-grey">Second column</div>
                 </div>
                 <div class="column">
-                    Third column
+                    <div class="bg-grey">Third column</div>
                 </div>
                 <div class="column">
-                    Fourth column
+                    <div class="bg-grey">Fourth column</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-2">
+                    <div class="bg-grey">First column</div>
+                </div>
+                <div class="column col-4">
+                    <div class="bg-grey">Second column</div>
+                </div>
+                <div class="column col-4">
+                    <div class="bg-grey">Third column</div>
+                </div>
+                <div class="column col-2">
+                    <div class="bg-grey">Fourth column</div>
                 </div>
             </div>
         </section>
-        <section class="tables">
+
+        <section id="tables">
             <header class="text-center"><h4>tables</h4></header>
             <table>
                 <thead>
@@ -131,18 +181,18 @@
                 </tbody>
             </table>
         </section>
-        <section class="buttons">
+
+        <section id="buttons">
             <header class="text-center"><h4>buttons</h4></header>
+            <section>
+                <p><strong>buttons.less</strong> includes simple button style for actions in different types and sizes. Buttons can show loading indicators. </p>
+            </section>
             <div class="columns">
                 <div class="column">
                     <button class="btn">default button</button>
                     <button class="btn loading">default button</button>
-                </div>
-                <div class="column">
                     <button class="btn btn-primary">primary button</button>
                     <button class="btn btn-primary loading">primary button</button>
-                </div>
-                <div class="column">
                     <button class="btn btn-link">link button</button>
                     <button class="btn btn-link loading">link button</button>
                 </div>
@@ -150,62 +200,324 @@
             <div class="columns">
                 <div class="column">
                     <button class="btn btn-sm">small button</button>
-                </div>
-                <div class="column">
+                    <button class="btn btn-sm"><span class="icon icon-markunread"></span> small button</button>
                     <button class="btn">normal button</button>
-                </div>
-                <div class="column">
+                    <button class="btn"><span class="icon icon-markunread"></span> normal button</button>
                     <button class="btn btn-lg">large button</button>
+                    <button class="btn btn-lg"><span class="icon icon-markunread"></span> large button</button>
                 </div>
+
+            </div>
+            <div class="columns">
                 <div class="column">
                     <button class="btn btn-block">block button</button>
                 </div>
             </div>
         </section>
-        <section class="forms">
-            <header class="text-center"><h4>forms</h4></header>
-            <form class="col-6">
-                <div class="form-group">
-                    <label class="form-label" for="input-example-1">Name</label>
-                    <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+
+        <section id="button-groups">
+            <header class="text-center"><h4>button groups</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="btn-group">
+                        <button class="btn">first button</button>
+                        <button class="btn">second button</button>
+                        <button class="btn">third button</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="input-example-2">Email</label>
-                    <input class="form-input" type="email" id="input-example-2" placeholder="Email">
+                <div class="column">
+                    <div class="btn-group">
+                        <button class="btn btn-primary">first button</button>
+                        <button class="btn btn-primary">second button</button>
+                        <button class="btn btn-primary">third button</button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <select class="form-select">
-                        <option>Choose an option</option>
-                        <option>Slack</option>
-                        <option>Skype</option>
-                        <option>Hipchat</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="input-example-3">Message</label>
-                    <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label class="form-checkbox">
-                        <input type="checkbox">
-                        Remember me
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label class="form-radio">
-                        <input type="radio" name="question" checked> Yes
-                    </label>
-                    <label class="form-radio">
-                        <input type="radio" name="question"> No
-                    </label>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary">Submit</button>
-                    <button class="btn btn-link">Cancel</button>
-                </div>
-            </form>
+            </div>
         </section>
-        <section class="labels">
+
+        <section id="forms">
+            <header class="text-center"><h4>forms</h4></header>
+            <div class="columns">
+                <div class="column col-5">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-1">Name</label>
+                            <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-2">Email</label>
+                            <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select">
+                                <option>Choose an option</option>
+                                <option>Slack</option>
+                                <option>Skype</option>
+                                <option>Hipchat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-switch">
+                                <input type="checkbox">
+                                Send me emails with news and tips
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-3">Message</label>
+                            <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <label class="form-radio">
+                                <input type="radio" name="gender"> Male
+                            </label>
+                            <label class="form-radio">
+                                <input type="radio" name="gender" checked> Female
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-link">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="column col-1"></div>
+                <div class="column col-6">
+                    <form class="form-horizontal">
+                        <div class="form-group columns">
+                            <label class="form-label col-3" for="input-example-4">Name</label>
+                            <div class="col-9">
+                                <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <label class="form-label col-3" for="input-example-5">Email</label>
+                            <div class="col-9">
+                                <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <select class="form-select">
+                                    <option>Choose an option</option>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-switch">
+                                    <input type="checkbox">
+                                    Send me emails with news and tips
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <label class="form-label col-3" for="input-example-6">Message</label>
+                            <div class="col-9">
+                                <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <label class="form-label col-3">Gender</label>
+                            <div class="col-9">
+                                <label class="form-radio">
+                                    <input type="radio" name="gender"> Male
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="gender" checked> Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group columns">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <button class="btn btn-primary">Submit</button>
+                                <button class="btn btn-link">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="input-groups">
+            <header class="text-center"><h4>input groups</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="input-group">
+                        <span class="input-group-addon">slack.com/</span>
+                        <input type="text" class="form-input" placeholder="site name" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-group">
+                        <span class="input-group-addon">slack.com/</span>
+                        <input type="text" class="form-input" placeholder="site name" />
+                        <button class="btn btn-primary input-group-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media">
+            <header class="text-center"><h4>media</h4></header>
+            <div class="columns">
+                <div class="column col-6">
+                    <img src="img/apple-el-capitan.jpg" class="img-responsive rounded" />
+                </div>
+            </div>
+        </section>
+
+        <section id="avatars">
+            <header class="text-center"><h4>avatars</h4></header>
+            <div class="columns">
+                <div class="column col-3">
+                    <img src="img/avatar-1.png" class="avatar avatar-xl" />
+                    <img src="img/avatar-2.png" class="avatar avatar-lg" />
+                    <img src="img/avatar-3.png" class="avatar" />
+                    <img src="img/avatar-4.png" class="avatar avatar-sm" />
+                    <img src="img/avatar-5.png" class="avatar avatar-xs" />
+                </div>
+                <div class="column col-3">
+                    <div class="avatar-container">
+                        <img src="img/avatar-1.png" class="avatar avatar-xl" />
+                        <img src="img/avatar-2.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="img/avatar-2.png" class="avatar avatar-lg" />
+                        <img src="img/avatar-3.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="img/avatar-3.png" class="avatar" />
+                        <img src="img/avatar-4.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="img/avatar-4.png" class="avatar avatar-sm" />
+                        <img src="img/avatar-5.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="img/avatar-5.png" class="avatar avatar-xs" />
+                        <img src="img/avatar-1.png" class="avatar avatar-icon" />
+                    </div>
+                </div>
+                <div class="column col-3">
+                    <div class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;"></div>
+                    <div class="avatar avatar-lg" data-initial="YZ" style="background-color: #6874cc;"></div>
+                    <div class="avatar" data-initial="YZ" style="background-color: #7983d2;"></div>
+                    <div class="avatar avatar-sm" data-initial="YZ" style="background-color: #8a93d7;"></div>
+                    <div class="avatar avatar-xs" data-initial="YZ" style="background-color: #9ba2dd;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chips">
+            <header class="text-center"><h4>chips</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="chip">
+                        <span class="icon icon-favorite_border"></span>
+                        <span class="chip-name">Crime</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-name">Drama</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-name">Biography</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-name">Mystery</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="chip">
+                        <img src="img/avatar-1.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <img src="img/avatar-2.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <img src="img/avatar-3.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <img src="img/avatar-4.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fileicons">
+            <header class="text-center"><h4>file icons</h4></header>
+            <section>
+                <p><strong>fileicons.less</strong> includes a set of file icons. This part is written entirely in CSS as well. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="file-icon file-icon-xl" data-type="docx"></div>
+                    <div class="file-icon file-icon-lg" data-type="pptx"></div>
+                    <div class="file-icon" data-type="xlsx"></div>
+                    <div class="file-icon file-icon-sm" data-type="pdf"></div>
+                    <div class="file-icon file-icon-xs" data-type="png"></div>
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="tooltips">
+            <header class="text-center"><h4>tooltips</h4></header>
+            <section>
+                <p><strong>tooltips.less</strong> is built entirely in CSS. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
+                </div>
+                <div class="column">
+                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="right">right tooltip</button>
+                </div>
+                <div class="column">
+                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="bottom">bottom tooltip</button>
+                </div>
+                <div class="column">
+                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="left">left tooltip</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="labels">
             <header class="text-center"><h4>labels</h4></header>
             <div class="columns">
                 <div class="column">
@@ -215,13 +527,16 @@
                     <span class="label label-primary">primary label</span>
                 </div>
                 <div class="column">
-                    <span class="label label-success">primary label</span>
+                    <span class="label label-success">success label</span>
                 </div>
                 <div class="column">
-                    <span class="label label-warning">default label</span>
+                    <span class="label label-info">info label</span>
                 </div>
                 <div class="column">
-                    <span class="label label-danger">primary label</span>
+                    <span class="label label-warning">warning label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-danger">danger label</span>
                 </div>
                 <div class="column">
                     <span class="label label-lg">default label</span>
@@ -229,33 +544,34 @@
                 <div class="column">
                     <span class="label label-primary label-lg">primary label</span>
                 </div>
-                <div class="column">
-                    <span class="label label-lg">
-                        large label
-                        <button class="btn-clear"></button>
-                    </span>
-                </div>
             </div>
         </section>
-        <section class="toasts">
+
+        <section id="toasts">
             <header class="text-center"><h4>toasts</h4></header>
             <div class="columns">
                 <div class="column">
                     <div class="toast">
                         <button class="btn-clear pull-right"></button>
-                        Here's a bunch of numbers. They may look random but they're my phone numbers.
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
                 <div class="column">
                     <div class="toast toast-primary">
                         <button class="btn-clear pull-right"></button>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
             </div>
             <div class="columns">
                 <div class="column">
                     <div class="toast toast-success">
+                        <button class="btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-info">
                         <button class="btn-clear pull-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
@@ -270,6 +586,228 @@
                     <div class="toast toast-danger">
                         <button class="btn-clear pull-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menus">
+            <header class="text-center"><h4>menus</h4></header>
+            <div class="columns">
+                <div class="column col-3">
+                    <menu class="menu">
+                        <menuitem class="menu-item">
+                            <a href="#" class="active">
+                                My profile
+                            </a>
+                        </menuitem>
+                        <menuitem class="divider"></menuitem>
+                        <menuitem class="menu-item">
+                            <a href="#">
+                                Settings
+                            </a>
+                        </menuitem>
+                        <menuitem class="menu-item">
+                            <a href="#">
+                                Logout
+                            </a>
+                        </menuitem>
+                    </menu>
+                </div>
+                <div class="column col-3">
+                    <ul class="menu">
+                        <li class="menu-header">
+                            <span class="menu-header-text">
+                                Go to
+                            </span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Slack
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Hipchat
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            Skype
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-3">
+                    <ul class="menu">
+                        <li class="menu-header">
+                            <span class="menu-header-text">
+                                Go to
+                            </span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span class="icon icon-link"></span> Slack
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span class="icon icon-link"></span> Hipchat
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <span class="icon icon-link"></span> Skype
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="breadcrumbs">
+            <header class="text-center"><h4>breadcrumbs</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Change avatar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tabs">
+            <header class="text-center"><h4>tabs</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <ul class="tab">
+                        <li class="tab-item active">
+                            <a href="#">
+                                Music
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Playlists
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Radio
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Connect
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="tab tab-block">
+                        <li class="tab-item active">
+                            <a href="#">
+                                Music
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Playlists
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Radio
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Connect
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="badges">
+            <header class="text-center"><h4>badges</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <span class="badge" data-badge="1">
+                        Notifications
+                    </span>
+                </div>
+                <div class="column">
+                    <span class="badge" data-badge="99">
+                        Notifications
+                    </span>
+                </div>
+                <div class="column">
+                    <span class="badge" data-badge="999">
+                        Notifications
+                    </span>
+                </div>
+                <div class="column">
+                    <span class="badge" data-badge="♀">
+                        Notifications
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="modals">
+            <header class="text-center"><h4>modals</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="modal">
+                        <div class="modal-container" role="document">
+                            <div class="modal-header">
+                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <h6 class="modal-title">Modal title</h6>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content">
+                                    <p>
+                                        This is the content inside the modal.
+                                    </p>
+                                    <h3>Lorem ipsum</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+                                    </p>
+                                    <p>
+                                        Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
+                                    </p>
+                                    <h3>Cupcake ipsum</h3>
+                                    <p>
+                                        Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
+                                    </p>
+                                    <p>
+                                        De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
+                                    </p>
+                                    <p>
+                                        Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
+                                    </p>
+                                    <p>
+                                        Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-link">Close</button>
+                                <button class="btn btn-primary">Share</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

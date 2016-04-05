@@ -1,0 +1,25 @@
+// Badges
+.badge {
+  position: relative;
+  margin-right: 2.4rem;
+
+  &::after {
+    content: attr(data-badge);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.4rem;
+    background-color: @core-color;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    padding: .3rem .1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    right: -2.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

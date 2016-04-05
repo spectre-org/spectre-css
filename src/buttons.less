@@ -61,13 +61,13 @@ button {
   // Button Primary
   &.btn-primary {
     color: #fff;
-    border-color: @core-color;
+    border-color: darken(@core-color, 5%);
     background-color: @core-color;
 
     &:hover,
     &:focus {
       color: #fff;
-      border-color: darken(@core-color, 5%);
+      border-color: darken(@core-color, 10%);
       background-color: darken(@core-color, 5%);
     }
     &:active,
@@ -135,11 +135,12 @@ button {
     border: 0;
     border-radius: .7rem;
     vertical-align: top;
-    background-color: rgba(0, 0, 0, .15);
+    background-color: transparent;
+    opacity: .35;
     transform: rotate(-45deg);
 
     &:hover {
-      background-color: rgba(0, 0, 0, .35);
+      opacity: .75;
     }
 
     &::before,
@@ -149,23 +150,46 @@ button {
       position: absolute;
       top: 50%;
       left: 50%;
-      background-color: #fff;
+      background-color: #333;
     }
 
     &::before {
-      width: .8rem;
+      width: 1rem;
       height: .2rem;
-      margin-left: -.4rem;
+      margin-left: -.5rem;
       margin-top: -.1rem;
     }
     &::after {
       width: .2rem;
-      height: .8rem;
+      height: 1rem;
       margin-left: -.1rem;
-      margin-top: -.4rem;
+      margin-top: -.5rem;
     }
   }
+}
 
-  // TODO: Button with icons
-  // TODO: Button groups
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+  .clearfix();
+
+  .btn {
+    float: left;
+
+    &:first-child:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+      margin-left: -.1rem;
+      border-radius: 0;
+      z-index: 49;
+    }
+    &:last-child:not(:first-child) {
+      margin-left: -.1rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      z-index: 99;
+    }
+  }
 }

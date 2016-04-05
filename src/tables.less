@@ -7,16 +7,13 @@ table {
     text-align: left;
     padding: 1.5rem 1rem;
     border-bottom: .1rem solid @core-border-color;
-    background-color: #fff;
   }
   th {
-    border-color: darken(@core-border-color, 10%);
+    border-color: darken(@core-border-color, 15%);
   }
-  tr.selected {
-    th,
-    td {
-      background-color: lighten(@core-border-color, 2%);
+  tr {
+    &.selected {
+        background-color: lighten(@core-border-color, 2%);
     }
-
   }
 }
