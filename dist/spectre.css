@@ -398,6 +398,15 @@ a:hover,
 a:focus {
   color: #283176;
 }
+.btn .icon,
+button .icon,
+.toast .icon,
+.menu .icon {
+  margin-right: .2rem;
+  font-size: 1.3333em;
+  line-height: 0.8em;
+  vertical-align: -20%;
+}
 h1,
 h2,
 h3,
@@ -738,13 +747,6 @@ button.btn-link:active,
 .btn.btn-link.active,
 button.btn-link.active {
   color: #283176;
-}
-.btn .icon,
-button .icon {
-  margin-right: .2rem;
-  font-size: 1.3333em;
-  line-height: 0.8em;
-  vertical-align: -20%;
 }
 .btn.btn-sm,
 button.btn-sm {
