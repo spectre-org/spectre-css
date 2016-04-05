@@ -22,7 +22,7 @@
             <header class="text-center"><h3>Project Spectre</h3></header>
             <header class="text-center"><h4>introduction</h4></header>
             <section>
-                <p><strong>Project Spectre</strong> is a lightweight and clean CSS framework for faster and extendable development.</p>
+                <p><a href="https://github.com/picturepan2/spectre" target="_blank">Project Spectre</a> is a lightweight and clean CSS framework for faster and extendable development.</p>
                 <ul>
                     <li>lightweight and clean starting point for your project</li>
                     <li>flexbox and responsive layout friendly</li>
@@ -499,20 +499,21 @@
         <section id="tooltips">
             <header class="text-center"><h4>tooltips</h4></header>
             <section>
-                <p><strong>tooltips.less</strong> is built entirely in CSS. </p>
+                <p><strong>tooltips.less</strong> is built entirely in CSS. Add the attribute <span class="highlight">data-tooltip</span> and class <span class="highlight">tooltip</span> to non self closing elements. And add the class name <span class="highlight">tooltip-right, tooltip-bottom or tooltip-left</span> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
+                <code>&lt;button class=&quot;btn btn-primary tooltip tooltip-right&quot; data-tooltip=&quot;Lorem ipsum dolor sit amet&quot;&gt;right tooltip&lt;/button&gt;</code>
             </section>
             <div class="columns">
                 <div class="column">
-                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
+                    <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
                 </div>
                 <div class="column">
-                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="right">right tooltip</button>
+                    <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
                 </div>
                 <div class="column">
-                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="bottom">bottom tooltip</button>
+                    <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Lorem ipsum dolor sit amet">bottom tooltip</button>
                 </div>
                 <div class="column">
-                    <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="left">left tooltip</button>
+                    <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Lorem ipsum dolor sit amet">left tooltip</button>
                 </div>
             </div>
         </section>

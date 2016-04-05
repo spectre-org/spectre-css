@@ -455,6 +455,24 @@ blockquote p:last-child {
 blockquote small {
   color: #b3b3b3;
 }
+code,
+pre {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-left: .2rem solid #ddd;
+  line-height: 1.8rem;
+  background-color: #efefef;
+}
+code {
+  padding: 1rem 2rem;
+}
+pre code {
+  background-color: transparent;
+  border-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul,
 ol {
   margin: 0 0 1rem;
@@ -1589,34 +1607,34 @@ textarea.form-input {
   -webkit-transform: translate(-50%, -0.5rem);
           transform: translate(-50%, -0.5rem);
 }
-.tooltip[data-tooltip-pos="right"]::after {
+.tooltip.tooltip-right::after {
   bottom: 50%;
   left: 100%;
   -webkit-transform: translate(0, 50%);
           transform: translate(0, 50%);
 }
-.tooltip[data-tooltip-pos="right"]:hover::after {
+.tooltip.tooltip-right:hover::after {
   -webkit-transform: translate(0.5rem, 50%);
           transform: translate(0.5rem, 50%);
 }
-.tooltip[data-tooltip-pos="bottom"]::after {
+.tooltip.tooltip-bottom::after {
   top: 100%;
   bottom: auto;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
-.tooltip[data-tooltip-pos="bottom"]:hover::after {
+.tooltip.tooltip-bottom:hover::after {
   -webkit-transform: translate(-50%, 0.5rem);
           transform: translate(-50%, 0.5rem);
 }
-.tooltip[data-tooltip-pos="left"]::after {
+.tooltip.tooltip-left::after {
   right: 100%;
   bottom: 50%;
   left: auto;
   -webkit-transform: translate(0, 50%);
           transform: translate(0, 50%);
 }
-.tooltip[data-tooltip-pos="left"]:hover::after {
+.tooltip.tooltip-left:hover::after {
   -webkit-transform: translate(-0.5rem, 50%);
           transform: translate(-0.5rem, 50%);
 }
