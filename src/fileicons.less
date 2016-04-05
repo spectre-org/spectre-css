@@ -1,0 +1,43 @@
+// File icons
+.file-icon {
+  display: inline-block;
+  width: 3.2rem;
+  height: 4.4rem;
+  background-color: transparent;
+  position: relative;
+  border-width: 0 0 3.2rem 2rem;
+  border-style: solid;
+  border-color: @control-color;
+  border-radius: .3rem;
+  font-size: 1rem;
+  text-align: left;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background-color: transparent;
+    z-index: 2;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: .6rem solid lighten(@control-color, 10%);
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  &::after {
+    content: attr(data-type);
+    padding: .2rem;
+    position: absolute;
+    bottom: -3.2rem;
+    left: -2rem;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #fff;
+    text-transform: lowercase;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    z-index: 3;
+  }
+}
