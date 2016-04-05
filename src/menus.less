@@ -28,7 +28,12 @@
       color: inherit;
       text-decoration: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
+        background-color: lighten(@core-border-color, 2%);
+      }
+      &:active,
+      &.active {
         background-color: @core-border-color;
       }
     }
@@ -67,3 +72,5 @@
     margin: .5rem;
   }
 }
+
+// TODO: Menus with icons
