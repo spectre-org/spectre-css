@@ -739,6 +739,13 @@ button.btn-link:active,
 button.btn-link.active {
   color: #283176;
 }
+.btn .icon,
+button .icon {
+  margin-right: .2rem;
+  font-size: 1.3333em;
+  line-height: 0.8em;
+  vertical-align: -20%;
+}
 .btn.btn-sm,
 button.btn-sm {
   height: 2.4rem;
@@ -1206,6 +1213,7 @@ textarea.form-input {
   border-color: #c5c5c5;
   border-radius: .2rem;
   text-align: left;
+  zoom: 1;
 }
 .file-icon::before,
 .file-icon::after {
