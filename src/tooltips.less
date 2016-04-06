@@ -23,7 +23,8 @@
     pointer-events: none;
     transition: all .216s ease;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       opacity: 1;
       transform: translate(-50%, -.5rem);
@@ -36,7 +37,8 @@
       left: 100%;
       transform: translate(0, 50%);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: translate(.5rem, 50%);
       }
@@ -48,7 +50,8 @@
       bottom: auto;
       transform: translate(-50%, 0);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: translate(-50%, .5rem);
       }
@@ -61,7 +64,8 @@
       left: auto;
       transform: translate(0, 50%);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: translate(-.5rem, 50%);
       }
