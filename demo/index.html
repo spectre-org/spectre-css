@@ -15,6 +15,13 @@
             padding: 1rem;
             border-radius: .3rem;
         }
+        .grid-hero {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+        .grid-hero h3 {
+            margin-bottom: 5rem;
+        }
         .notes {
             margin: 2rem 0;
             color: #666;
@@ -22,19 +29,34 @@
     </style>
 </head>
 <body>
-    <section class="container grid-960">
-        <section id="overview">
+    <section class="container bg-grey">
+        <section id="overview" class="grid-hero grid-960">
             <header class="text-center"><h3>Project Spectre</h3></header>
-            <header class="text-center"><h4>introduction</h4></header>
-            <section class="notes">
-                <p><a href="https://github.com/picturepan2/spectre" target="_blank">Project Spectre</a> is a lightweight and clean CSS framework for faster and extendable development.</p>
+            <section>
+                <p><strong>Project Spectre</strong> is a lightweight and clean CSS framework for faster and extendable development.</p>
                 <ul>
                     <li>lightweight and clean starting point for your project</li>
                     <li>flexbox and responsive layout friendly</li>
                     <li>built in useful components and utilities</li>
                 </ul>
             </section>
+            <section class="notes text-center">
+                <div class="btn-group">
+                    <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="#get-started" target="_blank" class="btn btn-primary">Documentation</a>
+                </div>
+            </section>
         </section>
+    </section>
+    <section class="container grid-960">
+        <!--<section id="get-started">
+            <header class="text-center"><h4>get started</h4></header>
+            <section class="notes">
+                <p>You can either manually install Spectre CSS framework to your website or app.</p>
+                <h5>Bower</h5>
+                <h5>NPM</h5>
+            </section>
+        </section>-->
 
         <section id="typography">
             <header class="text-center"><h4>typography</h4></header>
@@ -96,7 +118,7 @@
             <header class="text-center"><h4>flexbox layout</h4></header>
             <section class="notes">
                 <p><strong>layout.less</strong> includes flexbox based grid system with 12 columns. </p>
-                <p>Add the class <span class="label">columns</span> to a container. Add any element you want with class <span class="label">column</span> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <span class="label">col-[1-12]</span>.</p>
+                <p>Add the class <span class="label">columns</span> to a container. Add any element you want with classname <span class="label">column</span> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <span class="label">col-[1-12]</span>.</p>
             </section>
             <div class="columns">
                 <div class="column">
@@ -208,6 +230,7 @@
                     <button class="btn btn-link loading">link button</button>
                 </div>
             </div>
+
             <header class="text-center"><h5>button sizes</h5></header>
             <section class="notes">
                 <p>Add the class <span class="label">btn-sm</span> or <span class="label">btn-lg</span> for small or large size. Icons with the class <span class="label">icon</span> can be correctly rendered in each button size. Also, you can add the class <span class="label">btn-block</span> for a full-width button. </p>
@@ -227,10 +250,8 @@
                     <button class="btn btn-block">block button</button>
                 </div>
             </div>
-        </section>
 
-        <section id="button-groups">
-            <header class="text-center"><h4>button groups</h4></header>
+            <header class="text-center"><h5>button groups</h5></header>
             <section class="notes">
                 <p>If you want to use buttons as a group, add the class <span class="label">btn-group</span> to the container. </p>
             </section>
@@ -254,6 +275,10 @@
 
         <section id="forms">
             <header class="text-center"><h4>forms</h4></header>
+            <section class="notes">
+                <p><strong>forms.less</strong> provides the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
+                <p> </p>
+            </section>
             <div class="columns">
                 <div class="column col-5">
                     <form>
@@ -375,10 +400,8 @@
                     </form>
                 </div>
             </div>
-        </section>
 
-        <section id="input-groups">
-            <header class="text-center"><h4>input groups</h4></header>
+            <header class="text-center"><h5>input groups</h5></header>
             <div class="columns">
                 <div class="column">
                     <div class="input-group">
@@ -400,10 +423,10 @@
             <header class="text-center"><h4>media</h4></header>
             <div class="columns">
                 <div class="column col-6">
-                    <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" />
+                    <img src="img/osx-el-capitan.jpg" class="img-responsive rounded hide-sm" />
                 </div>
                 <div class="column col-6">
-                    <img src="img/osx-el-capitan-2.jpg" class="img-responsive rounded" />
+                    <img src="img/osx-el-capitan-2.jpg" class="img-responsive rounded hide-lg" />
                 </div>
             </div>
         </section>
@@ -541,6 +564,10 @@
 
         <section id="labels">
             <header class="text-center"><h4>labels</h4></header>
+            <section class="notes">
+                <p><strong>labels.less</strong> .</p>
+                <p>Add the class <span class="label">label</span> to span elements.</p>
+            </section>
             <div class="columns">
                 <div class="column">
                     <span class="label">default label</span>
