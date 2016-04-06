@@ -804,21 +804,16 @@ ol ol {
   margin-top: -0.5rem;
 }
 .btn-group {
-  display: inline-block;
-  vertical-align: middle;
-}
-.btn-group::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.btn-group::after {
-  content: "";
-  display: table;
-  clear: both;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .btn-group .btn {
-  float: left;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 .btn-group .btn:first-child:not(:last-child) {
   border-top-right-radius: 0;
@@ -834,6 +829,12 @@ ol ol {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   z-index: 99;
+}
+.btn-group.btn-group-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
@@ -1179,6 +1180,51 @@ textarea.form-input {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.card {
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-radius: .3rem;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+.card .card-header,
+.card .card-image,
+.card .card-content,
+.card .card-footer {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.card .card-header:last-child,
+.card .card-image:last-child,
+.card .card-content:last-child,
+.card .card-footer:last-child {
+  padding-bottom: 1.5rem;
+}
+.card .card-image {
+  padding-left: 0;
+  padding-right: 0;
+}
+.card .card-image:first-child {
+  padding-top: 0;
+}
+.card .card-image:first-child img {
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+.card .card-title {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1.6em;
+  line-height: 1;
+}
+.card .card-meta {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  color: #b3b3b3;
+}
 .chip {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1517,9 +1563,9 @@ textarea.form-input {
 .tab.tab-block .tab-item {
   float: none;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   text-align: center;
 }
 .toast {

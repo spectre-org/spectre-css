@@ -169,12 +169,10 @@
 }
 
 .btn-group {
-  display: inline-block;
-  vertical-align: middle;
-  .clearfix();
+  display: inline-flex;
 
   .btn {
-    float: left;
+    flex: 1 0 auto;
 
     &:first-child:not(:last-child) {
       border-top-right-radius: 0;
@@ -191,5 +189,9 @@
       border-bottom-left-radius: 0;
       z-index: 99;
     }
+  }
+
+  &.btn-group-block {
+    display: flex;
   }
 }
