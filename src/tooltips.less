@@ -23,45 +23,49 @@
     pointer-events: none;
     transition: all .216s ease;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       opacity: 1;
       transform: translate(-50%, -.5rem);
     }
   }
 
-  &[data-tooltip-pos="right"] {
+  &.tooltip-right {
     &::after {
       bottom: 50%;
       left: 100%;
       transform: translate(0, 50%);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: translate(.5rem, 50%);
       }
     }
   }
-  &[data-tooltip-pos="bottom"] {
+  &.tooltip-bottom {
     &::after {
       top: 100%;
       bottom: auto;
       transform: translate(-50%, 0);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: translate(-50%, .5rem);
       }
     }
   }
-  &[data-tooltip-pos="left"] {
+  &.tooltip-left {
     &::after {
       right: 100%;
       bottom: 50%;
       left: auto;
       transform: translate(0, 50%);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: translate(-.5rem, 50%);
       }

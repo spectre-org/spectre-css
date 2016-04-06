@@ -1,6 +1,5 @@
 // Buttons
-.btn,
-button {
+.btn {
   display: inline-block;
   height: 3.2rem;
   padding: .7rem 1.5rem;
@@ -53,7 +52,8 @@ button {
     }
   }
 
-  &[disabled] {
+  &[disabled],
+  .disabled {
     opacity: .5;
     cursor: default;
   }
@@ -169,12 +169,10 @@ button {
 }
 
 .btn-group {
-  display: inline-block;
-  vertical-align: middle;
-  .clearfix();
+  display: inline-flex;
 
   .btn {
-    float: left;
+    flex: 1 0 auto;
 
     &:first-child:not(:last-child) {
       border-top-right-radius: 0;
@@ -191,5 +189,9 @@ button {
       border-bottom-left-radius: 0;
       z-index: 99;
     }
+  }
+
+  &.btn-group-block {
+    display: flex;
   }
 }

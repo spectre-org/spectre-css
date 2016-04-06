@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="demo/font/style.css">
     <style>
         header > h4 {
-            margin-top: 4rem;
+            margin-top: 6rem;
+            margin-bottom: 2rem;
         }
         .bg-grey {
             background-color: #efefef;
             padding: 1rem;
             border-radius: .3rem;
+        }
+        .notes {
+            margin: 2rem 0;
+            color: #666;
         }
     </style>
 </head>
@@ -21,7 +26,7 @@
     <section id="overview">
         <header class="text-center"><h3>Project Spectre</h3></header>
         <header class="text-center"><h4>introduction</h4></header>
-        <section>
+        <section class="notes">
             <p><a href="https://github.com/picturepan2/spectre" target="_blank">Project Spectre</a> is a lightweight and clean CSS framework for faster and extendable development.</p>
             <ul>
                 <li>lightweight and clean starting point for your project</li>
@@ -33,7 +38,7 @@
 
     <section id="typography">
         <header class="text-center"><h4>typography</h4></header>
-        <section>
+        <section class="notes">
             <p><strong>typography.less</strong> sets default styles for headings, paragraphs, blockquote, lists elements and some text related utilities. </p>
         </section>
 
@@ -89,8 +94,9 @@
 
     <section id="layout">
         <header class="text-center"><h4>flexbox layout</h4></header>
-        <section>
+        <section class="notes">
             <p><strong>layout.less</strong> includes flexbox based grid system with 12 columns. </p>
+            <p>Add the class <span class="label">columns</span> to a container. Add any element you want with class <span class="label">column</span> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <span class="label">col-[1-12]</span>.</p>
         </section>
         <div class="columns">
             <div class="column">
@@ -144,7 +150,11 @@
 
     <section id="tables">
         <header class="text-center"><h4>tables</h4></header>
-        <table>
+        <section class="notes">
+            <p><strong>tables.less</strong> sets default styles for tables and data sets.</p>
+            <p>Add the class <span class="label">&lt;table&gt;</span> to any table element. The class will add padding, border and emphasized table header. Adding the class <span class="label">selected</span> to a &lt;tr&gt; element will highlight the whole table row. </p>
+        </section>
+        <table class="table">
             <thead>
             <tr>
                 <th>name</th>
@@ -184,8 +194,9 @@
 
     <section id="buttons">
         <header class="text-center"><h4>buttons</h4></header>
-        <section>
-            <p><strong>buttons.less</strong> includes simple button style for actions in different types and sizes. Buttons can show loading indicators. </p>
+        <section class="notes">
+            <p><strong>buttons.less</strong> includes simple button style for actions in different types and sizes. </p>
+            <p>Add the class <span class="label">btn</span> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <span class="label">btn-primary</span> and <span class="label">btn-link</span> for predefined primary and link buttons. A button with the class <span class="label">loading</span> can show loading indicator.  </p>
         </section>
         <div class="columns">
             <div class="column">
@@ -197,16 +208,19 @@
                 <button class="btn btn-link loading">link button</button>
             </div>
         </div>
+        <header class="text-center"><h5>button sizes</h5></header>
+        <section class="notes">
+            <p>Add the class <span class="label">btn-sm</span> or <span class="label">btn-lg</span> for small or large size. Also, you can add the class <span class="label">btn-block</span> for a full-width button.</p>
+        </section>
         <div class="columns">
             <div class="column">
-                <button class="btn btn-sm">small button</button>
-                <button class="btn btn-sm"><span class="icon icon-markunread"></span> small button</button>
-                <button class="btn">normal button</button>
-                <button class="btn"><span class="icon icon-markunread"></span> normal button</button>
                 <button class="btn btn-lg">large button</button>
                 <button class="btn btn-lg"><span class="icon icon-markunread"></span> large button</button>
+                <button class="btn btn-primary">normal button</button>
+                <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal button</button>
+                <button class="btn btn-sm">small button</button>
+                <button class="btn btn-sm"><span class="icon icon-markunread"></span> small button</button>
             </div>
-
         </div>
         <div class="columns">
             <div class="column">
@@ -217,6 +231,9 @@
 
     <section id="button-groups">
         <header class="text-center"><h4>button groups</h4></header>
+        <section class="notes">
+            <p>If you want to use buttons as a group, add the class <span class="label">btn-group</span> to the container. </p>
+        </section>
         <div class="columns">
             <div class="column">
                 <div class="btn-group">
@@ -226,7 +243,7 @@
                 </div>
             </div>
             <div class="column">
-                <div class="btn-group">
+                <div class="btn-group btn-group-block">
                     <button class="btn btn-primary">first button</button>
                     <button class="btn btn-primary">second button</button>
                     <button class="btn btn-primary">third button</button>
@@ -383,7 +400,10 @@
         <header class="text-center"><h4>media</h4></header>
         <div class="columns">
             <div class="column col-6">
-                <img src="demo/img/apple-el-capitan.jpg" class="img-responsive rounded" />
+                <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded" />
+            </div>
+            <div class="column col-6">
+                <img src="demo/img/osx-el-capitan-2.jpg" class="img-responsive rounded" />
             </div>
         </div>
     </section>
@@ -479,7 +499,7 @@
 
     <section id="fileicons">
         <header class="text-center"><h4>file icons</h4></header>
-        <section>
+        <section class="notes">
             <p><strong>fileicons.less</strong> includes a set of file icons. This part is written entirely in CSS as well. </p>
         </section>
         <div class="columns">
@@ -498,21 +518,23 @@
 
     <section id="tooltips">
         <header class="text-center"><h4>tooltips</h4></header>
-        <section>
-            <p><strong>tooltips.less</strong> is built entirely in CSS. </p>
+        <section class="notes">
+            <p><strong>tooltips.less</strong> is a label-like component that appears on hover and focus.</p>
+            <p>Add the class <span class="label">tooltip</span> and the attribute <span class="label">data-tooltip</span>, which contains the tooltip content, to non self closing elements. And add the class name <span class="label">tooltip-right</span>, <span class="label">tooltip-bottom</span> or <span class="label">tooltip-left</span> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
+            <code>&lt;button class=&quot;btn btn-primary tooltip tooltip-right&quot; data-tooltip=&quot;Lorem ipsum dolor sit amet&quot;&gt;right tooltip&lt;/button&gt;</code>
         </section>
         <div class="columns">
             <div class="column">
-                <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
+                <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
             </div>
             <div class="column">
-                <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="right">right tooltip</button>
+                <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
             </div>
             <div class="column">
-                <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="bottom">bottom tooltip</button>
+                <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Lorem ipsum dolor sit amet">bottom tooltip</button>
             </div>
             <div class="column">
-                <button class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet" data-tooltip-pos="left">left tooltip</button>
+                <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Lorem ipsum dolor sit amet">left tooltip</button>
             </div>
         </div>
     </section>
@@ -552,13 +574,13 @@
         <div class="columns">
             <div class="column">
                 <div class="toast">
-                    <button class="btn-clear pull-right"></button>
+                    <button class="btn btn-clear pull-right"></button>
                     <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
             <div class="column">
                 <div class="toast toast-primary">
-                    <button class="btn-clear pull-right"></button>
+                    <button class="btn btn-clear pull-right"></button>
                     <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
@@ -566,25 +588,25 @@
         <div class="columns">
             <div class="column">
                 <div class="toast toast-success">
-                    <button class="btn-clear pull-right"></button>
+                    <button class="btn btn-clear pull-right"></button>
                     Efficiently unleash cross-media information without cross-media value.
                 </div>
             </div>
             <div class="column">
                 <div class="toast toast-info">
-                    <button class="btn-clear pull-right"></button>
+                    <button class="btn btn-clear pull-right"></button>
                     Efficiently unleash cross-media information without cross-media value.
                 </div>
             </div>
             <div class="column">
                 <div class="toast toast-warning">
-                    <button class="btn-clear pull-right"></button>
+                    <button class="btn btn-clear pull-right"></button>
                     Efficiently unleash cross-media information without cross-media value.
                 </div>
             </div>
             <div class="column">
                 <div class="toast toast-danger">
-                    <button class="btn-clear pull-right"></button>
+                    <button class="btn btn-clear pull-right"></button>
                     Efficiently unleash cross-media information without cross-media value.
                 </div>
             </div>
@@ -781,20 +803,21 @@
                                 <p>
                                     This is the content inside the modal.
                                 </p>
-                                <h3>Lorem ipsum</h3>
+                                <h4>Lorem ipsum</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
                                 </p>
                                 <p>
                                     Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
                                 </p>
-                                <h3>Cupcake ipsum</h3>
+                                <h4>Cupcake ipsum</h4>
                                 <p>
                                     Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
                                 </p>
                                 <p>
                                     De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
                                 </p>
+                                <h4>Candy ipsum</h4>
                                 <p>
                                     Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
                                 </p>
@@ -807,6 +830,63 @@
                             <button class="btn btn-link">Close</button>
                             <button class="btn btn-primary">Share</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cards">
+        <header class="text-center"><h4>cards</h4></header>
+        <div class="columns">
+            <div class="column col-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="img-responsive" src="demo/img/osx-el-capitan.jpg" />
+                    </div>
+                    <div class="card-header">
+                        <h4 class="card-title">Microsoft</h4>
+                        <h6 class="card-meta">Software and hardware</h6>
+                    </div>
+                    <div class="card-content">
+                        Empower every person and every organization on the planet to achieve more.
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Do</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Apple</h4>
+                        <h6 class="card-meta">Hardware and software</h6>
+                    </div>
+                    <div class="card-image">
+                        <img class="img-responsive" src="demo/img/osx-yosemite.jpg" />
+                    </div>
+                    <div class="card-content">
+                        To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn-group btn-group-block">
+                            <button class="btn">Buy</button>
+                            <button class="btn">Buy</button>
+                            <button class="btn">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Google</h4>
+                        <h6 class="card-meta">Software and hardware</h6>
+                    </div>
+                    <div class="card-content">
+                        Organize the world’s information and make it universally accessible and useful.
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Ad</a>
                     </div>
                 </div>
             </div>
