@@ -416,7 +416,7 @@ h6 {
   font-weight: 300;
   line-height: 1.1;
   margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: inherit;
 }
 h1 {
@@ -558,8 +558,17 @@ ol ol {
   padding-right: 1rem;
 }
 @media screen and (min-width: 961px) {
-  .container.grid-960 {
+  .grid-960 {
     width: 96rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 481px) {
+  .grid-480 {
+    width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .columns {
@@ -632,6 +641,31 @@ ol ol {
   }
   .col-1 {
     width: 8.33333333%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hide-xs {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 840px) {
+  .hide-md {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hide-lg {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .hide-xl {
+    display: none !important;
   }
 }
 .img-responsive {
