@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="https://github.com/picturepan2/spectre">
     <title>Spectre, a lightweight and clean CSS framework for faster and extendable development.</title>
     <link rel="stylesheet" href="dist/spectre.css">
     <link rel="stylesheet" href="demo/font/style.css">
@@ -122,50 +125,68 @@
         </section>
         <div class="columns">
             <div class="column">
-                <div class="bg-grey">First column</div>
+                <div class="bg-grey">1</div>
             </div>
             <div class="column">
-                <div class="bg-grey">Second column</div>
+                <div class="bg-grey">2</div>
             </div>
             <div class="column">
-                <div class="bg-grey">Third column</div>
+                <div class="bg-grey">3</div>
             </div>
             <div class="column">
-                <div class="bg-grey">Fourth column</div>
+                <div class="bg-grey">4</div>
             </div>
             <div class="column">
-                <div class="bg-grey">Fifth column</div>
+                <div class="bg-grey">5</div>
             </div>
             <div class="column">
-                <div class="bg-grey">Sixth column</div>
+                <div class="bg-grey">6</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">7</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">8</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">9</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">10</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">11</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">12</div>
             </div>
         </div>
         <div class="columns">
-            <div class="column col-4">
-                <div class="bg-grey">First column</div>
+            <div class="column col-8">
+                <div class="bg-grey">1</div>
             </div>
-            <div class="column col-4">
-                <div class="bg-grey">Second column</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">Third column</div>
+            <div class="column col-2">
+                <div class="bg-grey">2</div>
             </div>
             <div class="column">
-                <div class="bg-grey">Fourth column</div>
+                <div class="bg-grey">3</div>
+            </div>
+            <div class="column">
+                <div class="bg-grey">4</div>
             </div>
         </div>
         <div class="columns">
             <div class="column col-2">
-                <div class="bg-grey">First column</div>
+                <div class="bg-grey">1</div>
             </div>
             <div class="column col-4">
-                <div class="bg-grey">Second column</div>
+                <div class="bg-grey">2</div>
             </div>
             <div class="column col-4">
-                <div class="bg-grey">Third column</div>
+                <div class="bg-grey">3</div>
             </div>
             <div class="column col-2">
-                <div class="bg-grey">Fourth column</div>
+                <div class="bg-grey">4</div>
             </div>
         </div>
     </section>
@@ -224,8 +245,12 @@
             <div class="column">
                 <button class="btn">default button</button>
                 <button class="btn loading">default button</button>
+            </div>
+            <div class="column">
                 <button class="btn btn-primary">primary button</button>
                 <button class="btn btn-primary loading">primary button</button>
+            </div>
+            <div class="column">
                 <button class="btn btn-link">link button</button>
                 <button class="btn btn-link loading">link button</button>
             </div>
@@ -238,16 +263,19 @@
         <div class="columns">
             <div class="column">
                 <button class="btn btn-lg">large button</button>
-                <button class="btn btn-lg"><span class="icon icon-markunread"></span> large button</button>
-                <button class="btn btn-primary">normal button</button>
-                <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal button</button>
+                <button class="btn">normal button</button>
                 <button class="btn btn-sm">small button</button>
-                <button class="btn btn-sm"><span class="icon icon-markunread"></span> small button</button>
             </div>
+            <div class="column">
+                <button class="btn btn-block">block button</button>
+            </div>
+
         </div>
         <div class="columns">
             <div class="column">
-                <button class="btn btn-block">block button</button>
+                <button class="btn btn-primary btn-lg"><span class="icon icon-markunread"></span> large button</button>
+                <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal button</button>
+                <button class="btn btn-primary btn-sm"><span class="icon icon-markunread"></span> small button</button>
             </div>
         </div>
 
@@ -280,7 +308,7 @@
             <p> </p>
         </section>
         <div class="columns">
-            <div class="column col-5">
+            <div class="column col-6">
                 <form>
                     <div class="form-group">
                         <label class="form-label" for="input-example-1">Name</label>
@@ -329,22 +357,21 @@
                     </div>
                 </form>
             </div>
-            <div class="column col-1"></div>
             <div class="column col-6">
                 <form class="form-horizontal">
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <label class="form-label col-3" for="input-example-4">Name</label>
                         <div class="col-9">
                             <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <label class="form-label col-3" for="input-example-5">Email</label>
                         <div class="col-9">
                             <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <div class="col-3"></div>
                         <div class="col-9">
                             <select class="form-select">
@@ -355,7 +382,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <div class="col-3"></div>
                         <div class="col-9">
                             <label class="form-switch">
@@ -364,13 +391,13 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <label class="form-label col-3" for="input-example-6">Message</label>
                         <div class="col-9">
                             <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <label class="form-label col-3">Gender</label>
                         <div class="col-9">
                             <label class="form-radio">
@@ -381,7 +408,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <div class="col-3"></div>
                         <div class="col-9">
                             <label class="form-checkbox">
@@ -390,7 +417,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-group columns">
+                    <div class="form-group">
                         <div class="col-3"></div>
                         <div class="col-9">
                             <button class="btn btn-primary">Submit</button>
@@ -423,10 +450,10 @@
         <header class="text-center"><h4>media</h4></header>
         <div class="columns">
             <div class="column col-6">
-                <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded hide-sm" />
+                <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded" />
             </div>
             <div class="column col-6">
-                <img src="demo/img/osx-el-capitan-2.jpg" class="img-responsive rounded hide-lg" />
+                <img src="demo/img/osx-el-capitan-2.jpg" class="img-responsive rounded hide-sm" />
             </div>
         </div>
     </section>
@@ -503,11 +530,6 @@
                 </div>
                 <div class="chip">
                     <img src="demo/img/avatar-2.png" class="avatar avatar-xs" />
-                    <span class="chip-name">Yan Zhu</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-                <div class="chip">
-                    <img src="demo/img/avatar-3.png" class="avatar avatar-xs" />
                     <span class="chip-name">Yan Zhu</span>
                     <button class="btn btn-clear"></button>
                 </div>

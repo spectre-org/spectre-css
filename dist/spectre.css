@@ -572,6 +572,7 @@ ol ol {
   }
 }
 .columns {
+  display: block;
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -582,29 +583,29 @@ ol ol {
           flex: 1;
   padding: 1rem;
 }
-@media screen and (min-width: 769px) {
+.column.col-12,
+.column.col-11,
+.column.col-10,
+.column.col-9,
+.column.col-8,
+.column.col-7,
+.column.col-6,
+.column.col-5,
+.column.col-4,
+.column.col-3,
+.column.col-2,
+.column.col-1 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+@media screen and (min-width: 841px) {
   .columns {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  }
-  .column.col-12,
-  .column.col-11,
-  .column.col-10,
-  .column.col-9,
-  .column.col-8,
-  .column.col-7,
-  .column.col-6,
-  .column.col-5,
-  .column.col-4,
-  .column.col-3,
-  .column.col-2,
-  .column.col-1 {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
   }
   .col-12 {
     width: 100%;
@@ -641,6 +642,33 @@ ol ol {
   }
   .col-1 {
     width: 8.33333333%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 840px) {
+  .columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-8,
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4,
+  .col-3,
+  .col-2,
+  .col-1 {
+    width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -873,29 +901,39 @@ ol ol {
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
-.form-horizontal {
-  padding: 1rem;
+@media screen and (min-width: 841px) {
+  .form-horizontal {
+    padding: 1rem;
+  }
+  .form-horizontal .form-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form-horizontal .form-label {
+    padding: .8rem .4rem;
+  }
+  .form-horizontal .form-checkbox,
+  .form-horizontal .form-radio {
+    margin: .5rem 0;
+  }
 }
-.form-horizontal .col-12,
-.form-horizontal .col-11,
-.form-horizontal .col-10,
-.form-horizontal .col-9,
-.form-horizontal .col-8,
-.form-horizontal .col-7,
-.form-horizontal .col-6,
-.form-horizontal .col-5,
-.form-horizontal .col-4,
-.form-horizontal .col-3,
-.form-horizontal .col-2,
-.form-horizontal .col-1 {
-  float: left;
-}
-.form-horizontal .form-label {
-  padding: .8rem .4rem;
-}
-.form-horizontal .form-checkbox,
-.form-horizontal .form-radio {
-  margin: .5rem 0;
+@media screen and (max-width: 840px) {
+  .form-horizontal .col-12,
+  .form-horizontal .col-11,
+  .form-horizontal .col-10,
+  .form-horizontal .col-9,
+  .form-horizontal .col-8,
+  .form-horizontal .col-7,
+  .form-horizontal .col-6,
+  .form-horizontal .col-5,
+  .form-horizontal .col-4,
+  .form-horizontal .col-3,
+  .form-horizontal .col-2,
+  .form-horizontal .col-1 {
+    width: 100%;
+  }
 }
 .form-input {
   position: relative;
