@@ -1,15 +1,15 @@
 // Labels
 .label {
   display: inline-block;
-  padding: .3rem .4rem;
-  font-size: 90%;
+  padding: .2rem .4rem;
+  font-size: .9em;
   line-height: 1em;
-  color: lighten(@body-font-color, 25%);
+  color: lighten(@body-font-color, 20%);
   background-color: @core-border-color;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
-  margin: -.3rem .1em 0 .1em;
+  vertical-align: baseline;
+  margin: -.2rem .1em 0 .1em;
   border-radius: .2rem;
 
   &.label-primary {
@@ -31,11 +31,5 @@
   &.label-danger {
     color: #fff;
     background-color: @control-color-danger;
-  }
-
-  &.label-lg {
-    font-size: 100%;
-    line-height: 1.2;
-    padding: .3rem .5rem;
   }
 }

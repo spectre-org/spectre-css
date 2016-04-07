@@ -50,24 +50,6 @@ blockquote {
     color: lighten(@body-font-color, 50%);
   }
 }
-code,
-pre {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-left: .2rem solid @core-color;
-  line-height: 1.8rem;
-  background-color: lighten(@core-border-color, 4%);
-}
-code {
-  padding: 1rem 2rem;
-}
-pre code {
-  background-color: transparent;
-  border-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 ul,
 ol {
   margin: 0 0 1rem;
@@ -147,4 +129,32 @@ ol {
   word-break: break-word;
   word-wrap: break-word;
   hyphens: auto;
+}
+
+// Code
+pre {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1.5rem;
+  border-left: .2rem solid @core-color;
+  line-height: 1.8rem;
+  background-color: lighten(@core-border-color, 4%);
+}
+code {
+  padding: .2rem .4rem;
+  margin: -.2rem .1em 0 .1em;
+  border-radius: .2rem;
+  background-color: @core-border-color;
+  font-size: .9em;
+  line-height: 1em;
+  vertical-align: baseline;
+  white-space: nowrap;
+
+  pre & {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 0;
+    background-color: transparent;
+    line-height: 1.8rem;
+  }
 }

@@ -29,351 +29,391 @@
             margin: 2rem 0;
             color: #666;
         }
+        .code .com {
+            color: #adadad;
+        }
+        .code .tag {
+            color: #4452c0;
+        }
+        .code .atn {
+            color: #4452c0;
+        }
+        .code .atv {
+            color: #e06870;
+        }
     </style>
 </head>
 <body>
-<section class="container bg-grey">
-    <section id="overview" class="grid-hero grid-960">
-        <header class="text-center"><h3>Project Spectre</h3></header>
-        <section>
-            <p><strong>Project Spectre</strong> is a lightweight and clean CSS framework for faster and extendable development.</p>
-            <ul>
-                <li>lightweight and clean starting point for your project</li>
-                <li>flexbox and responsive layout friendly</li>
-                <li>built in useful components and utilities</li>
-            </ul>
-        </section>
-        <section class="notes text-center">
-            <div class="btn-group">
-                <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-                <a href="#get-started" class="btn btn-primary">Documentation</a>
-            </div>
-        </section>
-    </section>
-</section>
-<section class="container grid-960">
-    <section id="get-started">
-        <!--<header class="text-center"><h4>get started</h4></header>
-        <section class="notes">
-            <p>You can either manually install Spectre CSS framework to your website or app.</p>
-            <h5>Bower</h5>
-            <h5>NPM</h5>
-        </section>-->
-    </section>
-
-    <section id="typography">
-        <header class="text-center"><h4>typography</h4></header>
-        <section class="notes">
-            <p><strong>typography.less</strong> sets default styles for headings, paragraphs, blockquote, lists elements and some text related utilities. </p>
-        </section>
-
-        <header class="text-center"><h5>headings</h5></header>
-        <h1>H1 Title <span class="label">5rem</span></h1>
-        <h2>H2 Title <span class="label">4rem</span></h2>
-        <h3>H3 Title <span class="label">3rem</span></h3>
-        <h4>H4 Title <span class="label">2.4rem</span></h4>
-        <h5>H5 Title <span class="label">2rem</span></h5>
-        <h6>H6 Title <span class="label">1.6rem</span></h6>
-
-        <header class="text-center"><h5>paragraphs</h5></header>
-        <p>Lorem ipsum dolor sit amet, <span class="highlight">consectetur</span> adipiscing elit. <a href="#">Integer</a> posuere erat a ante.</p>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-
-        <header class="text-center"><h5>blockquote</h5></header>
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <small>- Source</small>
-        </blockquote>
-
-        <header class="text-center"><h5>lists</h5></header>
-        <div class="columns">
-            <div class="column col-6">
-                <ul class="list">
-                    <li>list item 1</li>
-                    <li>list item 2
-                        <ul>
-                            <li>list item 2.1</li>
-                            <li>list item 2.2</li>
-                            <li>list item 2.3</li>
-                        </ul>
-                    </li>
-                    <li>list item 3</li>
+    <section class="container bg-grey">
+        <section id="overview" class="grid-hero grid-960">
+            <header class="text-center"><h3>Project Spectre</h3></header>
+            <section>
+                <p><strong>Project Spectre</strong> is a lightweight and clean CSS framework for faster and extendable development.</p>
+                <ul>
+                    <li>lightweight and clean starting point for your project</li>
+                    <li>flexbox and responsive layout friendly</li>
+                    <li>built in useful components and utilities</li>
                 </ul>
-            </div>
-            <div class="column col-6">
-                <ol class="list">
-                    <li>list item 1</li>
-                    <li>list item 2
-                        <ol>
-                            <li>list item 2.1</li>
-                            <li>list item 2.2</li>
-                            <li>list item 2.3</li>
-                        </ol>
-                    </li>
-                    <li>list item 3</li>
-                </ol>
-            </div>
-        </div>
-    </section>
-
-    <section id="layout">
-        <header class="text-center"><h4>flexbox layout</h4></header>
-        <section class="notes">
-            <p><strong>layout.less</strong> includes flexbox based grid system with 12 columns. </p>
-            <p>Add the class <span class="label">columns</span> to a container. Add any element you want with classname <span class="label">column</span> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <span class="label">col-[1-12]</span>.</p>
-        </section>
-        <div class="columns">
-            <div class="column">
-                <div class="bg-grey">1</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">2</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">3</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">4</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">5</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">6</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">7</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">8</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">9</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">10</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">11</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">12</div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column col-8">
-                <div class="bg-grey">1</div>
-            </div>
-            <div class="column col-2">
-                <div class="bg-grey">2</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">3</div>
-            </div>
-            <div class="column">
-                <div class="bg-grey">4</div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column col-2">
-                <div class="bg-grey">1</div>
-            </div>
-            <div class="column col-4">
-                <div class="bg-grey">2</div>
-            </div>
-            <div class="column col-4">
-                <div class="bg-grey">3</div>
-            </div>
-            <div class="column col-2">
-                <div class="bg-grey">4</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tables">
-        <header class="text-center"><h4>tables</h4></header>
-        <section class="notes">
-            <p><strong>tables.less</strong> sets default styles for tables and data sets.</p>
-            <p>Add the class <span class="label">&lt;table&gt;</span> to any table element. The class will add padding, border and emphasized table header. Adding the class <span class="label">selected</span> to a &lt;tr&gt; element will highlight the whole table row. </p>
-        </section>
-        <table class="table">
-            <thead>
-            <tr>
-                <th>name</th>
-                <th>duration</th>
-                <th>genre</th>
-                <th>release date</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>The Shawshank Redemption</td>
-                <td>2h 22min</td>
-                <td>Crime, Drama</td>
-                <td>14 October 1994 <span class="label">USA</span></td>
-            </tr>
-            <tr>
-                <td>The Godfather</td>
-                <td>2h 55min</td>
-                <td>Crime, Drama</td>
-                <td>24 March 1972 <span class="label">USA</span></td>
-            </tr>
-            <tr class="selected">
-                <td>Schindler's List</td>
-                <td>3h 15min</td>
-                <td>Biography, Drama, History</td>
-                <td>4 February 1994 <span class="label">USA</span></td>
-            </tr>
-            <tr>
-                <td>Se7en</td>
-                <td>2h 7min</td>
-                <td>Crime, Drama, Mystery</td>
-                <td>24 March 1972 <span class="label">USA</span></td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section id="buttons">
-        <header class="text-center"><h4>buttons</h4></header>
-        <section class="notes">
-            <p><strong>buttons.less</strong> includes simple button style for actions in different types and sizes. </p>
-            <p>Add the class <span class="label">btn</span> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <span class="label">btn-primary</span> and <span class="label">btn-link</span> for predefined primary and link buttons. A button with the class <span class="label">loading</span> can show loading indicator.  </p>
-        </section>
-        <div class="columns">
-            <div class="column">
-                <button class="btn">default button</button>
-                <button class="btn loading">default button</button>
-            </div>
-            <div class="column">
-                <button class="btn btn-primary">primary button</button>
-                <button class="btn btn-primary loading">primary button</button>
-            </div>
-            <div class="column">
-                <button class="btn btn-link">link button</button>
-                <button class="btn btn-link loading">link button</button>
-            </div>
-        </div>
-
-        <header class="text-center"><h5>button sizes</h5></header>
-        <section class="notes">
-            <p>Add the class <span class="label">btn-sm</span> or <span class="label">btn-lg</span> for small or large size. Icons with the class <span class="label">icon</span> can be correctly rendered in each button size. Also, you can add the class <span class="label">btn-block</span> for a full-width button. </p>
-        </section>
-        <div class="columns">
-            <div class="column">
-                <button class="btn btn-lg">large button</button>
-                <button class="btn">normal button</button>
-                <button class="btn btn-sm">small button</button>
-            </div>
-            <div class="column">
-                <button class="btn btn-block">block button</button>
-            </div>
-
-        </div>
-        <div class="columns">
-            <div class="column">
-                <button class="btn btn-primary btn-lg"><span class="icon icon-markunread"></span> large button</button>
-                <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal button</button>
-                <button class="btn btn-primary btn-sm"><span class="icon icon-markunread"></span> small button</button>
-            </div>
-        </div>
-
-        <header class="text-center"><h5>button groups</h5></header>
-        <section class="notes">
-            <p>If you want to use buttons as a group, add the class <span class="label">btn-group</span> to the container. </p>
-        </section>
-        <div class="columns">
-            <div class="column">
+            </section>
+            <section class="notes text-center">
                 <div class="btn-group">
-                    <button class="btn">first button</button>
-                    <button class="btn">second button</button>
-                    <button class="btn">third button</button>
+                    <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="#get-started" class="btn btn-primary">Documentation</a>
                 </div>
-            </div>
-            <div class="column">
-                <div class="btn-group btn-group-block">
-                    <button class="btn btn-primary">first button</button>
-                    <button class="btn btn-primary">second button</button>
-                    <button class="btn btn-primary">third button</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="forms">
-        <header class="text-center"><h4>forms</h4></header>
-        <section class="notes">
-            <p><strong>forms.less</strong> provides the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
-            <p> </p>
+            </section>
         </section>
-        <div class="columns">
-            <div class="column col-6">
-                <form>
-                    <div class="form-group">
-                        <label class="form-label" for="input-example-1">Name</label>
-                        <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="input-example-2">Email</label>
-                        <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
-                    </div>
-                    <div class="form-group">
-                        <select class="form-select">
-                            <option>Choose an option</option>
-                            <option>Slack</option>
-                            <option>Skype</option>
-                            <option>Hipchat</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-switch">
-                            <input type="checkbox">
-                            Send me emails with news and tips
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="input-example-3">Message</label>
-                        <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Gender</label>
-                        <label class="form-radio">
-                            <input type="radio" name="gender"> Male
-                        </label>
-                        <label class="form-radio">
-                            <input type="radio" name="gender" checked> Female
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-checkbox">
-                            <input type="checkbox">
-                            Remember me
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary">Submit</button>
-                        <button class="btn btn-link">Cancel</button>
-                    </div>
-                </form>
+    </section>
+    <section class="container grid-960">
+        <section id="get-started">
+            <!--<header class="text-center"><h4>get started</h4></header>
+            <section class="notes">
+                <p>You can either manually install Spectre CSS framework to your website or app.</p>
+                <h5>Bower</h5>
+                <h5>NPM</h5>
+            </section>-->
+        </section>
+
+        <section id="typography">
+            <header class="text-center"><h4>typography</h4></header>
+            <section class="notes">
+                <p><strong>Typography</strong> sets default styles for headings, paragraphs, blockquote, lists elements and some text related utilities. </p>
+            </section>
+
+            <header class="text-center"><h5>headings</h5></header>
+            <h1>H1 Title <small class="label">5rem</small></h1>
+            <h2>H2 Title <small class="label">4rem</small></h2>
+            <h3>H3 Title <small class="label">3rem</small></h3>
+            <h4>H4 Title <small class="label">2.4rem</small></h4>
+            <h5>H5 Title <small class="label">2rem</small></h5>
+            <h6>H6 Title <small class="label">1.6rem</small></h6>
+
+            <header class="text-center"><h5>paragraphs</h5></header>
+            <p>Lorem ipsum dolor sit amet, <span class="highlight">consectetur</span> adipiscing elit. <a href="#">Integer</a> posuere erat a ante.</p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+            <header class="text-center"><h5>blockquote</h5></header>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>- Source</small>
+            </blockquote>
+
+            <header class="text-center"><h5>lists</h5></header>
+            <div class="columns">
+                <div class="column col-6">
+                    <ul class="list">
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ul>
+                                <li>list item 2.1</li>
+                                <li>list item 2.2</li>
+                                <li>list item 2.3</li>
+                            </ul>
+                        </li>
+                        <li>list item 3</li>
+                    </ul>
+                </div>
+                <div class="column col-6">
+                    <ol class="list">
+                        <li>list item 1</li>
+                        <li>list item 2
+                            <ol>
+                                <li>list item 2.1</li>
+                                <li>list item 2.2</li>
+                                <li>list item 2.3</li>
+                            </ol>
+                        </li>
+                        <li>list item 3</li>
+                    </ol>
+                </div>
             </div>
-            <div class="column col-6">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label class="form-label col-3" for="input-example-4">Name</label>
-                        <div class="col-9">
-                            <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
-                        </div>
+        </section>
+
+        <section id="layout">
+            <header class="text-center"><h4>flexbox layout</h4></header>
+            <section class="notes">
+                <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
+                <p>Add the class <code class="label">columns</code> to a container. And add any element you want with classname <code class="label">column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code class="label">col-[1-12]</code>.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="bg-grey">1</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">2</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">3</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">4</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">5</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">6</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">7</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">8</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">9</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">10</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">11</div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey">12</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-6">
+                    <div class="bg-grey">col-6</div>
+                </div>
+                <div class="column col-3">
+                    <div class="bg-grey">col-3</div>
+                </div>
+                <div class="column col-2">
+                    <div class="bg-grey">col-2</div>
+                </div>
+                <div class="column col-1">
+                    <div class="bg-grey">col-1</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-2">
+                    <div class="bg-grey">col-2</div>
+                </div>
+                <div class="column col-4">
+                    <div class="bg-grey">col-4</div>
+                </div>
+                <div class="column col-4">
+                    <div class="bg-grey">col-4</div>
+                </div>
+                <div class="column col-2">
+                    <div class="bg-grey">col-2</div>
+                </div>
+            </div>
+
+            <!-- layout example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="tables">
+            <header class="text-center"><h4>tables</h4></header>
+            <section class="notes">
+                <p><strong>Tables</strong> include default styles for tables and data sets.</p>
+                <p>Add the class <code class="label">table</code> to any &lt;table&gt; element. The class will add padding, border and emphasized table header. Use the class <code class="label">selected</code> to make &lt;tr&gt; element highlighted. </p>
+            </section>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>duration</th>
+                        <th>genre</th>
+                        <th>release date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="selected">
+                        <td>The Shawshank Redemption</td>
+                        <td>2h 22min</td>
+                        <td>Crime, Drama</td>
+                        <td>14 October 1994 <span class="label">USA</span></td>
+                    </tr>
+                    <tr>
+                        <td>The Godfather</td>
+                        <td>2h 55min</td>
+                        <td>Crime, Drama</td>
+                        <td>24 March 1972 <span class="label">USA</span></td>
+                    </tr>
+                    <tr>
+                        <td>Schindler's List</td>
+                        <td>3h 15min</td>
+                        <td>Biography, Drama, History</td>
+                        <td>4 February 1994 <span class="label">USA</span></td>
+                    </tr>
+                    <tr>
+                        <td>Se7en</td>
+                        <td>2h 7min</td>
+                        <td>Crime, Drama, Mystery</td>
+                        <td>24 March 1972 <span class="label">USA</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- tables example -->
+<pre class="code lang-html">
+&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table&quot;</span>&gt;
+    &lt;<span class="tag">thead</span>&gt;
+        &lt;<span class="tag">tr</span>&gt;
+            &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
+            &lt;<span class="tag">th</span>&gt;duration&lt;<span class="tag">/th</span>&gt;
+            &lt;<span class="tag">th</span>&gt;genre&lt;<span class="tag">/th</span>&gt;
+            &lt;<span class="tag">th</span>&gt;release date&lt;<span class="tag">/th</span>&gt;
+        &lt;<span class="tag">/tr</span>&gt;
+    &lt;<span class="tag">/thead</span>&gt;
+    &lt;<span class="tag">tbody</span>&gt;
+        &lt;<span class="tag">tr</span> <span class="atn">class</span>=<span class="atv">&quot;selected&quot;</span>&gt;
+            &lt;<span class="tag">th</span>&gt;The Shawshank Redemption&lt;<span class="tag">/th</span>&gt;
+            &lt;<span class="tag">th</span>&gt;2h 22min&lt;<span class="tag">/th</span>&gt;
+            &lt;<span class="tag">th</span>&gt;Crime, Drama&lt;<span class="tag">/th</span>&gt;
+            &lt;<span class="tag">th</span>&gt;14 October 1994&lt;<span class="tag">/th</span>&gt;
+        &lt;<span class="tag">/tr</span>&gt;
+    &lt;<span class="tag">/tbody</span>&gt;
+&lt;<span class="tag">/table</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="buttons">
+            <header class="text-center"><h4>buttons</h4></header>
+            <section class="notes">
+                <p><strong>Buttons</strong> include simple button styles for actions in different types and sizes. </p>
+                <p>Add the class <code class="label">btn</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code class="label">btn-primary</code> and <code class="label">btn-link</code> for predefined primary and link buttons. A button with the class <code class="label">loading</code> can show loading indicator.  </p>
+            </section>
+
+            <div class="columns">
+                <div class="column">
+                    <button class="btn">default button</button>
+                    <button class="btn loading">default button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-primary">primary button</button>
+                    <button class="btn btn-primary loading">primary button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-link">link button</button>
+                    <button class="btn btn-link loading">link button</button>
+                </div>
+            </div>
+
+            <!-- buttons example -->
+<pre class="code lang-html">
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
+
+<span class="com">&lt;!-- a button with loading state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
+</pre>
+
+            <header class="text-center"><h5>button sizes</h5></header>
+            <section class="notes">
+                <p>Add the class <code class="label">btn-sm</code> or <code class="label">btn-lg</code> for small or large button size. Also, you can add the class <code class="label">btn-block</code> for a full-width button. </p>
+            </section>
+
+            <div class="columns">
+                <div class="column">
+                    <button class="btn btn-lg">large button</button>
+                    <button class="btn">normal button</button>
+                    <button class="btn btn-sm">small button</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-block">block button</button>
+                </div>
+            </div>
+
+            <!-- buttons example -->
+<pre class="code lang-html">
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
+</pre>
+
+            <section class="notes">
+                <p>Icons with the class <code class="label">icon</code> can be correctly rendered in each button size. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <button class="btn btn-primary btn-lg"><span class="icon icon-markunread"></span> large</button>
+                    <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal</button>
+                    <button class="btn btn-primary btn-sm"><span class="icon icon-markunread"></span> small</button>
+                </div>
+            </div>
+
+            <!-- buttons example -->
+<pre class="code lang-html">
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+</pre>
+
+            <header class="text-center"><h5>button groups</h5></header>
+            <section class="notes">
+                <p>If you want to use buttons as a group, add the class <code class="label">btn-group</code> to the container. You can add the class <code class="label">btn-group-block</code> for a full-width button group.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="btn-group">
+                        <button class="btn">first button</button>
+                        <button class="btn">second button</button>
+                        <button class="btn">third button</button>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label col-3" for="input-example-5">Email</label>
-                        <div class="col-9">
-                            <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="btn-group btn-group-block">
+                        <button class="btn btn-primary">first button</button>
+                        <button class="btn btn-primary">second button</button>
+                        <button class="btn btn-primary">third button</button>
                     </div>
-                    <div class="form-group">
-                        <div class="col-3"></div>
-                        <div class="col-9">
+                </div>
+            </div>
+
+            <!-- button groups example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group btn-group-block&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;first button&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;second button&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;third button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="forms">
+            <header class="text-center"><h4>forms</h4></header>
+            <section class="notes">
+                <p><strong>Forms</strong> provide the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
+                <p> </p>
+            </section>
+            <div class="columns">
+                <div class="column col-6">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-1">Name</label>
+                            <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-2">Email</label>
+                            <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gender</label>
+                            <label class="form-radio">
+                                <input type="radio" name="gender" /> Male
+                            </label>
+                            <label class="form-radio">
+                                <input type="radio" name="gender" checked /> Female
+                            </label>
+                        </div>
+                        <div class="form-group">
                             <select class="form-select">
                                 <option>Choose an option</option>
                                 <option>Slack</option>
@@ -381,578 +421,858 @@
                                 <option>Hipchat</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-3"></div>
-                        <div class="col-9">
+                        <div class="form-group">
                             <label class="form-switch">
-                                <input type="checkbox">
+                                <input type="checkbox" />
                                 Send me emails with news and tips
                             </label>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label col-3" for="input-example-6">Message</label>
-                        <div class="col-9">
-                            <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
+                        <div class="form-group">
+                            <label class="form-label" for="input-example-3">Message</label>
+                            <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label col-3">Gender</label>
-                        <div class="col-9">
-                            <label class="form-radio">
-                                <input type="radio" name="gender"> Male
-                            </label>
-                            <label class="form-radio">
-                                <input type="radio" name="gender" checked> Female
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-3"></div>
-                        <div class="col-9">
+                        <div class="form-group">
                             <label class="form-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" />
                                 Remember me
                             </label>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-3"></div>
-                        <div class="col-9">
+                        <div class="form-group">
                             <button class="btn btn-primary">Submit</button>
                             <button class="btn btn-link">Cancel</button>
                         </div>
+                    </form>
+                </div>
+                <div class="column col-6">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="form-label col-3" for="input-example-4">Name</label>
+                            <div class="col-9">
+                                <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label col-3" for="input-example-5">Email</label>
+                            <div class="col-9">
+                                <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label col-3">Gender</label>
+                            <div class="col-9">
+                                <label class="form-radio">
+                                    <input type="radio" name="gender" /> Male
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="gender" checked /> Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <select class="form-select">
+                                    <option>Choose an option</option>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-switch">
+                                    <input type="checkbox" />
+                                    Send me emails with news and tips
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label col-3" for="input-example-6">Message</label>
+                            <div class="col-9">
+                                <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" />
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <button class="btn btn-primary">Submit</button>
+                                <button class="btn btn-link">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- forms example -->
+<pre class="code lang-html">
+&lt;<span class="tag">form</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+        &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+            &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> /&gt; Male
+        &lt;<span class="tag">/label</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+            &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt; Female
+        &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+        &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
+            &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
+            &lt;<span class="tag">option</span>&gt;Slack&lt;<span class="tag">/option</span>&gt;
+            &lt;<span class="tag">option</span>&gt;Skype&lt;<span class="tag">/option</span>&gt;
+            &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
+        &lt;<span class="tag">/select</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
+            &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+            Send me emails with news and tips
+        &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
+        &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
+            &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+            Remember me
+        &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/form</span>&gt;
+</pre>
+
+            <header class="text-center"><h5>input groups</h5></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="input-group">
+                        <span class="input-group-addon">slack.com/</span>
+                        <input type="text" class="form-input" placeholder="site name" />
                     </div>
-                </form>
-            </div>
-        </div>
-
-        <header class="text-center"><h5>input groups</h5></header>
-        <div class="columns">
-            <div class="column">
-                <div class="input-group">
-                    <span class="input-group-addon">slack.com/</span>
-                    <input type="text" class="form-input" placeholder="site name" />
+                </div>
+                <div class="column">
+                    <div class="input-group">
+                        <span class="input-group-addon">slack.com/</span>
+                        <input type="text" class="form-input" placeholder="site name" />
+                        <button class="btn btn-primary input-group-btn">Submit</button>
+                    </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="input-group">
-                    <span class="input-group-addon">slack.com/</span>
-                    <input type="text" class="form-input" placeholder="site name" />
-                    <button class="btn btn-primary input-group-btn">Submit</button>
+        </section>
+
+        <section id="images">
+            <header class="text-center"><h4>images</h4></header>
+            <section class="notes">
+                <p><strong>Images</strong> include responsive image class. </p>
+                <p>Add the class <code class="label">img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-6">
+                    <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded" />
+                </div>
+                <div class="column col-6">
+                    <img src="demo/img/osx-el-capitan-2.jpg" class="img-responsive rounded hide-sm" />
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="media">
-        <header class="text-center"><h4>media</h4></header>
-        <div class="columns">
-            <div class="column col-6">
-                <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded" />
-            </div>
-            <div class="column col-6">
-                <img src="demo/img/osx-el-capitan-2.jpg" class="img-responsive rounded hide-sm" />
-            </div>
-        </div>
-    </section>
+            <!-- images example -->
+<pre class="code lang-html">
+&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+</pre>
 
-    <section id="avatars">
-        <header class="text-center"><h4>avatars</h4></header>
-        <div class="columns">
-            <div class="column col-3">
-                <img src="demo/img/avatar-1.png" class="avatar avatar-xl" />
-                <img src="demo/img/avatar-2.png" class="avatar avatar-lg" />
-                <img src="demo/img/avatar-3.png" class="avatar" />
-                <img src="demo/img/avatar-4.png" class="avatar avatar-sm" />
-                <img src="demo/img/avatar-5.png" class="avatar avatar-xs" />
-            </div>
-            <div class="column col-3">
-                <div class="avatar-container">
+        </section>
+
+        <section id="avatars">
+            <header class="text-center"><h4>avatars</h4></header>
+            <section class="notes">
+                <p><strong>Avatars</strong> are user profile pictures. </p>
+                <p>Add the class <code class="label">avatar</code> to &lt;img&gt; element. Avatars come in 5 sizes, including <code class="label">avatar-xl</code> (64px), <code class="label">avatar-lg</code> (48px), <code class="label">avatar-sm</code> (24px), and <code class="label">avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
+                <p>For users who don't have profile pictures, you may use their initials for avatars. Add the class <code class="label">avatar</code> and avatar size class to &lt;div&gt; element. The attribute <code class="label">data-initial</code> is the name appear inside the avatar.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-3">
                     <img src="demo/img/avatar-1.png" class="avatar avatar-xl" />
-                    <img src="demo/img/avatar-2.png" class="avatar avatar-icon" />
-                </div>
-                <div class="avatar-container">
                     <img src="demo/img/avatar-2.png" class="avatar avatar-lg" />
-                    <img src="demo/img/avatar-3.png" class="avatar avatar-icon" />
-                </div>
-                <div class="avatar-container">
                     <img src="demo/img/avatar-3.png" class="avatar" />
-                    <img src="demo/img/avatar-4.png" class="avatar avatar-icon" />
-                </div>
-                <div class="avatar-container">
                     <img src="demo/img/avatar-4.png" class="avatar avatar-sm" />
-                    <img src="demo/img/avatar-5.png" class="avatar avatar-icon" />
-                </div>
-                <div class="avatar-container">
                     <img src="demo/img/avatar-5.png" class="avatar avatar-xs" />
-                    <img src="demo/img/avatar-1.png" class="avatar avatar-icon" />
+                </div>
+                <div class="column col-3">
+                    <div class="avatar-container">
+                        <img src="demo/img/avatar-1.png" class="avatar avatar-xl" />
+                        <img src="demo/img/avatar-2.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="demo/img/avatar-2.png" class="avatar avatar-lg" />
+                        <img src="demo/img/avatar-3.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="demo/img/avatar-3.png" class="avatar" />
+                        <img src="demo/img/avatar-4.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="demo/img/avatar-4.png" class="avatar avatar-sm" />
+                        <img src="demo/img/avatar-5.png" class="avatar avatar-icon" />
+                    </div>
+                    <div class="avatar-container">
+                        <img src="demo/img/avatar-5.png" class="avatar avatar-xs" />
+                        <img src="demo/img/avatar-1.png" class="avatar avatar-icon" />
+                    </div>
+                </div>
+                <div class="column col-3">
+                    <div class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;"></div>
+                    <div class="avatar avatar-lg" data-initial="YZ" style="background-color: #6874cc;"></div>
+                    <div class="avatar" data-initial="YZ" style="background-color: #7983d2;"></div>
+                    <div class="avatar avatar-sm" data-initial="YZ" style="background-color: #8a93d7;"></div>
+                    <div class="avatar avatar-xs" data-initial="YZ" style="background-color: #9ba2dd;"></div>
                 </div>
             </div>
-            <div class="column col-3">
-                <div class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;"></div>
-                <div class="avatar avatar-lg" data-initial="YZ" style="background-color: #6874cc;"></div>
-                <div class="avatar" data-initial="YZ" style="background-color: #7983d2;"></div>
-                <div class="avatar avatar-sm" data-initial="YZ" style="background-color: #8a93d7;"></div>
-                <div class="avatar avatar-xs" data-initial="YZ" style="background-color: #9ba2dd;"></div>
-            </div>
-        </div>
-    </section>
 
-    <section id="chips">
-        <header class="text-center"><h4>chips</h4></header>
-        <div class="columns">
-            <div class="column">
-                <div class="chip">
-                    <span class="icon icon-favorite_border"></span>
-                    <span class="chip-name">Crime</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-                <div class="chip">
-                    <span class="chip-name">Drama</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-                <div class="chip">
-                    <span class="chip-name">Biography</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-                <div class="chip">
-                    <span class="chip-name">Mystery</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="chip">
-                    <img src="demo/img/avatar-1.png" class="avatar avatar-xs" />
-                    <span class="chip-name">Yan Zhu</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-                <div class="chip">
-                    <img src="demo/img/avatar-2.png" class="avatar avatar-xs" />
-                    <span class="chip-name">Yan Zhu</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-                <div class="chip">
-                    <img src="demo/img/avatar-4.png" class="avatar avatar-xs" />
-                    <span class="chip-name">Yan Zhu</span>
-                    <button class="btn btn-clear"></button>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- avatars example -->
+<pre class="code lang-html">
+&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> /&gt;
 
-    <section id="fileicons">
-        <header class="text-center"><h4>file icons</h4></header>
-        <section class="notes">
-            <p><strong>fileicons.less</strong> includes a set of file icons. This part is written entirely in CSS as well. </p>
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-container&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> /&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-5.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-icon&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</pre>
+
         </section>
-        <div class="columns">
-            <div class="column">
-                <div class="file-icon file-icon-xl" data-type="docx"></div>
-                <div class="file-icon file-icon-lg" data-type="pptx"></div>
-                <div class="file-icon" data-type="xlsx"></div>
-                <div class="file-icon file-icon-sm" data-type="pdf"></div>
-                <div class="file-icon file-icon-xs" data-type="png"></div>
-            </div>
-            <div class="column">
 
+        <section id="chips">
+            <header class="text-center"><h4>chips</h4></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="chip">
+                        <span class="icon icon-favorite_border"></span>
+                        <span class="chip-name">Crime</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-name">Drama</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-name">Biography</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <span class="chip-name">Mystery</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="chip">
+                        <img src="demo/img/avatar-1.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <img src="demo/img/avatar-2.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip">
+                        <img src="demo/img/avatar-4.png" class="avatar avatar-xs" />
+                        <span class="chip-name">Yan Zhu</span>
+                        <button class="btn btn-clear"></button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="tooltips">
-        <header class="text-center"><h4>tooltips</h4></header>
-        <section class="notes">
-            <p><strong>tooltips.less</strong> is a label-like component that appears on hover and focus.</p>
-            <p>Add the class <span class="label">tooltip</span> and the attribute <span class="label">data-tooltip</span>, which contains the tooltip content, to non self closing elements. And add the class name <span class="label">tooltip-right</span>, <span class="label">tooltip-bottom</span> or <span class="label">tooltip-left</span> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
-            <code>&lt;button class=&quot;btn btn-primary tooltip tooltip-right&quot; data-tooltip=&quot;Lorem ipsum dolor sit amet&quot;&gt;right tooltip&lt;/button&gt;</code>
         </section>
-        <div class="columns">
-            <div class="column">
-                <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
-            </div>
-            <div class="column">
-                <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
-            </div>
-            <div class="column">
-                <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Lorem ipsum dolor sit amet">bottom tooltip</button>
-            </div>
-            <div class="column">
-                <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Lorem ipsum dolor sit amet">left tooltip</button>
-            </div>
-        </div>
-    </section>
 
-    <section id="labels">
-        <header class="text-center"><h4>labels</h4></header>
-        <section class="notes">
-            <p><strong>labels.less</strong> .</p>
-            <p>Add the class <span class="label">label</span> to span elements.</p>
+        <section id="fileicons">
+            <header class="text-center"><h4>file icons</h4></header>
+            <section class="notes">
+                <p><strong>fileicons.less</strong> includes a set of file icons. This part is written entirely in CSS as well. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="file-icon file-icon-xl" data-type="docx"></div>
+                    <div class="file-icon file-icon-lg" data-type="pptx"></div>
+                    <div class="file-icon" data-type="xlsx"></div>
+                    <div class="file-icon file-icon-sm" data-type="pdf"></div>
+                    <div class="file-icon file-icon-xs" data-type="png"></div>
+                </div>
+            </div>
         </section>
-        <div class="columns">
-            <div class="column">
-                <span class="label">default label</span>
-            </div>
-            <div class="column">
-                <span class="label label-primary">primary label</span>
-            </div>
-            <div class="column">
-                <span class="label label-success">success label</span>
-            </div>
-            <div class="column">
-                <span class="label label-info">info label</span>
-            </div>
-            <div class="column">
-                <span class="label label-warning">warning label</span>
-            </div>
-            <div class="column">
-                <span class="label label-danger">danger label</span>
-            </div>
-            <div class="column">
-                <span class="label label-lg">default label</span>
-            </div>
-            <div class="column">
-                <span class="label label-primary label-lg">primary label</span>
-            </div>
-        </div>
-    </section>
 
-    <section id="toasts">
-        <header class="text-center"><h4>toasts</h4></header>
-        <section class="notes">
-            <p><strong>toasts.less</strong> is used to show alert or information to users.</p>
-            <p>Add a container element with the class <span class="label">toast</span>. You can add any text within the container, and even icons. You may also add a close button with the class <span class="label">btn-clear</span> if you need. </p>
-        </section>
-        <div class="columns">
-            <div class="column">
-                <div class="toast">
-                    <button class="btn btn-clear pull-right"></button>
-                    <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <section id="tooltips">
+            <header class="text-center"><h4>tooltips</h4></header>
+            <section class="notes">
+                <p><strong>Tooltips</strong> provide context information labels that appear on hover and focus.</p>
+                <p>Add the class <code class="label">tooltip</code> and the attribute <code class="label">data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code class="label">tooltip-right</code>, <code class="label">tooltip-bottom</code> or <code class="label">tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
+            </section>
+            <div class="columns">
+                <div class="column text-center">
+                    <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Lorem ipsum dolor sit amet">bottom tooltip</button>
+                </div>
+                <div class="column">
+                    <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Lorem ipsum dolor sit amet">left tooltip</button>
                 </div>
             </div>
-            <div class="column">
-                <div class="toast toast-primary">
-                    <button class="btn btn-clear pull-right"></button>
-                    <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column">
-                <div class="toast toast-success">
-                    <button class="btn btn-clear pull-right"></button>
-                    Efficiently unleash cross-media information without cross-media value.
-                </div>
-            </div>
-            <div class="column">
-                <div class="toast toast-info">
-                    <button class="btn btn-clear pull-right"></button>
-                    Efficiently unleash cross-media information without cross-media value.
-                </div>
-            </div>
-            <div class="column">
-                <div class="toast toast-warning">
-                    <button class="btn btn-clear pull-right"></button>
-                    Efficiently unleash cross-media information without cross-media value.
-                </div>
-            </div>
-            <div class="column">
-                <div class="toast toast-danger">
-                    <button class="btn btn-clear pull-right"></button>
-                    Efficiently unleash cross-media information without cross-media value.
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="menus">
-        <header class="text-center"><h4>menus</h4></header>
-        <section class="notes">
-            <p><strong>menus.less</strong> is a vertical list links or buttons for actions and navigations.</p>
-            <p>Add a container element with the class <span class="label">menu</span>. And add child elements with the class name <span class="label">menu-item</span>. That is a basic menu component.</p>
+            <!-- tooltips example -->
+<pre class="code lang-html">
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;top tooltip&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip tooltip-right&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;right tooltip&lt;<span class="tag">/button</span>&gt;
+</pre>
+
         </section>
-        <div class="columns">
-            <div class="column col-3">
-                <menu class="menu">
-                    <menuitem class="menu-item">
-                        <a href="#" class="active">
-                            My profile
-                        </a>
-                    </menuitem>
-                    <menuitem class="divider"></menuitem>
-                    <menuitem class="menu-item">
-                        <a href="#">
-                            Settings
-                        </a>
-                    </menuitem>
-                    <menuitem class="menu-item">
-                        <a href="#">
-                            Logout
-                        </a>
-                    </menuitem>
-                </menu>
+
+        <section id="labels">
+            <header class="text-center"><h4>labels</h4></header>
+            <section class="notes">
+                <p><strong>Labels</strong> are formatted text tags for highlighted, informative information.</p>
+                <p>Add the class <code class="label">label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code class="label">label-primary</code>, <code class="label">label-success</code>, <code class="label">label-info</code>, <code class="label">label-warning</code>, <code class="label">label-danger</code> for more colored labels.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <span class="label">default label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-primary">primary label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-success">success label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-info">info label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-warning">warning label</span>
+                </div>
+                <div class="column">
+                    <span class="label label-danger">danger label</span>
+                </div>
             </div>
-            <div class="column col-3">
-                <ul class="menu">
-                    <li class="menu-header">
+
+            <!-- labels example -->
+<pre class="code lang-html">
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;default label&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;primary label&lt;<span class="tag">/span</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="toasts">
+            <header class="text-center"><h4>toasts</h4></header>
+            <section class="notes">
+                <p><strong>Toasts</strong> are used to show alert or information to users.</p>
+                <p>Add a container element with the class <code class="label">toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code class="label">btn-clear</code> if you need. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="toast">
+                        <button class="btn btn-clear pull-right"></button>
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-primary">
+                        <button class="btn btn-clear pull-right"></button>
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
+                <p>You can add the class <code class="label">toast-primary</code>, <code class="label">toast-success</code>, <code class="label">toast-info</code>, <code class="label">toast-warning</code>, <code class="label">toast-danger</code> for more colors.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="toast toast-success">
+                        <button class="btn btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-info">
+                        <button class="btn btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-warning">
+                        <button class="btn btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="toast toast-danger">
+                        <button class="btn btn-clear pull-right"></button>
+                        Efficiently unleash cross-media information without cross-media value.
+                    </div>
+                </div>
+            </div>
+
+            <!-- toasts example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast toast-primary&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="menus">
+            <header class="text-center"><h4>menus</h4></header>
+            <section class="notes">
+                <p>A <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
+                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>. That is a basic menu component.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-3">
+                    <menu class="menu">
+                        <menuitem class="menu-item">
+                            <a href="#" class="active">
+                                My profile
+                            </a>
+                        </menuitem>
+                        <menuitem class="divider"></menuitem>
+                        <menuitem class="menu-item">
+                            <a href="#">
+                                Settings
+                            </a>
+                        </menuitem>
+                        <menuitem class="menu-item">
+                            <a href="#">
+                                Logout
+                            </a>
+                        </menuitem>
+                    </menu>
+                </div>
+                <div class="column col-3">
+                    <ul class="menu">
+                        <li class="menu-header">
                             <span class="menu-header-text">
                                 Go to
                             </span>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            Slack
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            Hipchat
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        Skype
-                    </li>
-                </ul>
-            </div>
-            <div class="column col-3">
-                <ul class="menu">
-                    <li class="menu-header">
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Slack
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Hipchat
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            Skype
+                        </li>
+                    </ul>
+                </div>
+                <div class="column col-3">
+                    <ul class="menu">
+                        <li class="menu-header">
                             <span class="menu-header-text">
                                 Go to
                             </span>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            <span class="icon icon-link"></span> Slack
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            <span class="icon icon-link"></span> Hipchat
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <span class="icon icon-link"></span> Skype
-                    </li>
-                </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span class="icon icon-link"></span> Slack
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span class="icon icon-link"></span> Hipchat
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <span class="icon icon-link"></span> Skype
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section id="breadcrumbs">
-        <header class="text-center"><h4>breadcrumbs</h4></header>
-        <div class="columns">
-            <div class="column">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#">
-                            Profile
-                        </a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#">
-                            Change avatar
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <!-- menus example -->
+<pre class="code lang-html">
+&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
+        &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
+            Go to
+        &lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Slack
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; HIpchat
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; skype
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</pre>
 
-    <section id="tabs">
-        <header class="text-center"><h4>tabs</h4></header>
-        <div class="columns">
-            <div class="column">
-                <ul class="tab">
-                    <li class="tab-item active">
-                        <a href="#">
-                            Music
-                        </a>
-                    </li>
-                    <li class="tab-item">
-                        <a href="#">
-                            Playlists
-                        </a>
-                    </li>
-                    <li class="tab-item">
-                        <a href="#">
-                            Radio
-                        </a>
-                    </li>
-                    <li class="tab-item">
-                        <a href="#">
-                            Connect
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul class="tab tab-block">
-                    <li class="tab-item active">
-                        <a href="#">
-                            Music
-                        </a>
-                    </li>
-                    <li class="tab-item">
-                        <a href="#">
-                            Playlists
-                        </a>
-                    </li>
-                    <li class="tab-item">
-                        <a href="#">
-                            Radio
-                        </a>
-                    </li>
-                    <li class="tab-item">
-                        <a href="#">
-                            Connect
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="badges">
-        <header class="text-center"><h4>badges</h4></header>
-        <section class="notes">
-            <p><strong>badges.less</strong> is often used as unread number indicator.</p>
-            <p>Add the class <span class="label">badge</span> to non self closing elements. And add the attribute <span class="label">data-badge</span> to define the content of a badge. The badge will appear in the top-right direction of the element.</p>
         </section>
-        <div class="columns">
-            <div class="column">
+
+        <section id="navigation">
+            <header class="text-center"><h4>navigation</h4></header>
+            <section class="notes">
+                <p><strong>Navigation</strong> includes several components, including breadcrumbs and tabs.</p>
+            </section>
+            <header class="text-center"><h5>breadcrumbs</h5></header>
+            <section class="notes">
+                <p>Add a container element with the class <code class="label">breadcrumb</code>. And add child elements with the classname <code class="label">breadcrumb-item</code>.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Profile
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">
+                                Change avatar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- breadcrumbs example -->
+<pre class="code lang-html">
+&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb&quot;</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Home
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Profile
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Change avatar
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</pre>
+
+            <header class="text-center"><h5>tabs</h5></header>
+            <section class="notes">
+                <p>Add a container element with the class <code class="label">tab</code>. And add child elements with the classname <code class="label">tab-item</code>. You can add the class <code class="label">tab-block</code> for a full-width tab.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <ul class="tab">
+                        <li class="tab-item active">
+                            <a href="#">
+                                Music
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Playlists
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Radio
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Connect
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="tab tab-block">
+                        <li class="tab-item active">
+                            <a href="#">
+                                Music
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Playlists
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Radio
+                            </a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="#">
+                                Connect
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- tabs example -->
+<pre class="code lang-html">
+&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item active&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Music
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Playlists
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Radio
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            Connect
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="badges">
+            <header class="text-center"><h4>badges</h4></header>
+            <section class="notes">
+                <p><strong>Badges</strong> are often used as unread number indicators.</p>
+                <p>Add the class <code class="label">badge</code> to non self closing elements. And add the attribute <code class="label">data-badge</code> to define the content of a badge. The badge will appear in the top-right direction of the element.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
                     <span class="badge" data-badge="1">
                         Notifications
                     </span>
-            </div>
-            <div class="column">
+                </div>
+                <div class="column">
                     <span class="badge" data-badge="99">
                         Notifications
                     </span>
-            </div>
-            <div class="column">
+                </div>
+                <div class="column">
                     <span class="badge" data-badge="999">
                         Notifications
                     </span>
-            </div>
-            <div class="column">
+                </div>
+                <div class="column">
                     <span class="badge" data-badge="♀">
                         Notifications
                     </span>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section id="modals">
-        <header class="text-center"><h4>modals</h4></header>
-        <div class="columns">
-            <div class="column">
-                <div class="modal">
-                    <div class="modal-container" role="document">
-                        <div class="modal-header">
-                            <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
-                            <h6 class="modal-title">Modal title</h6>
-                        </div>
-                        <div class="modal-body">
-                            <div class="content">
-                                <p>
-                                    This is the content inside the modal.
-                                </p>
-                                <h4>Lorem ipsum</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
-                                </p>
-                                <p>
-                                    Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
-                                </p>
-                                <h4>Cupcake ipsum</h4>
-                                <p>
-                                    Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
-                                </p>
-                                <p>
-                                    De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
-                                </p>
-                                <h4>Candy ipsum</h4>
-                                <p>
-                                    Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
-                                </p>
-                                <p>
-                                    Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.
-                                </p>
+            <!-- badges example -->
+<pre class="code lang-html">
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;99&quot;</span>&gt;
+    Notifications
+&lt;<span class="tag">/span</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="modals">
+            <header class="text-center"><h4>modals</h4></header>
+            <section class="notes">
+                <p></p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="modal">
+                        <div class="modal-container" role="document">
+                            <div class="modal-header">
+                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <h6 class="modal-title">Modal title</h6>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content">
+                                    <p>
+                                        This is the content inside the modal.
+                                    </p>
+                                    <h4>Lorem ipsum</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.
+                                    </p>
+                                    <p>
+                                        Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.
+                                    </p>
+                                    <h4>Cupcake ipsum</h4>
+                                    <p>
+                                        Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.
+                                    </p>
+                                    <p>
+                                        De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.
+                                    </p>
+                                    <h4>Candy ipsum</h4>
+                                    <p>
+                                        Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.
+                                    </p>
+                                    <p>
+                                        Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-link">Close</button>
+                                <button class="btn btn-primary">Share</button>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-link">Close</button>
-                            <button class="btn btn-primary">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modals example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-header&quot;</span>&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+            &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/h6</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-body&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;content&quot;</span>&gt;
+                <span class="com">&lt;!-- content here --&gt;</span>
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-footer&quot;</span>&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Close&lt;<span class="tag">/button</span>&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Share&lt;<span class="tag">/button</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+        <section id="cards">
+            <header class="text-center"><h4>cards</h4></header>
+            <section class="notes">
+                <p><strong>Cards</strong> are flexible content containers.</p>
+                <p>Add a container element with the class <code class="label">card</code>. And add child elements with the class name <code class="label">card-image</code>, <code class="label">card-header</code>, <code class="label">card-content</code> and/or <code class="label">card-footer</code> in any order. </p>
+            </section>
+            <div class="columns">
+                <div class="column col-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-responsive" src="demo/img/osx-el-capitan.jpg" />
+                        </div>
+                        <div class="card-header">
+                            <h4 class="card-title">Microsoft</h4>
+                            <h6 class="card-meta">Software and hardware</h6>
+                        </div>
+                        <div class="card-body">
+                            Empower every person and every organization on the planet to achieve more.
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Do</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Apple</h4>
+                            <h6 class="card-meta">Hardware and software</h6>
+                        </div>
+                        <div class="card-image">
+                            <img class="img-responsive" src="demo/img/osx-yosemite.jpg" />
+                        </div>
+                        <div class="card-body">
+                            To make a contribution to the world by making tools for the mind that advance humankind.
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-group btn-group-block">
+                                <button class="btn">Buy</button>
+                                <button class="btn">Buy</button>
+                                <button class="btn">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Google</h4>
+                            <h6 class="card-meta">Software and hardware</h6>
+                        </div>
+                        <div class="card-body">
+                            Organize the world’s information and make it universally accessible and useful.
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Ad</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- cards example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-image&quot;</span>&gt;
+        &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
+        &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;card-title&quot;</span>&gt;Microsoft&lt;<span class="tag">/h4</span>&gt;
+        &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-meta&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
+        To make a contribution to the world by making tools for the mind that advance humankind.
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
+        &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Do&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
     </section>
-    <section id="cards">
-        <header class="text-center"><h4>cards</h4></header>
-        <div class="columns">
-            <div class="column col-4">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="img-responsive" src="demo/img/osx-el-capitan.jpg" />
-                    </div>
-                    <div class="card-header">
-                        <h4 class="card-title">Microsoft</h4>
-                        <h6 class="card-meta">Software and hardware</h6>
-                    </div>
-                    <div class="card-content">
-                        Empower every person and every organization on the planet to achieve more.
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Do</a>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Apple</h4>
-                        <h6 class="card-meta">Hardware and software</h6>
-                    </div>
-                    <div class="card-image">
-                        <img class="img-responsive" src="demo/img/osx-yosemite.jpg" />
-                    </div>
-                    <div class="card-content">
-                        To make a contribution to the world by making tools for the mind that advance humankind.
-                    </div>
-                    <div class="card-footer">
-                        <div class="btn-group btn-group-block">
-                            <button class="btn">Buy</button>
-                            <button class="btn">Buy</button>
-                            <button class="btn">Buy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Google</h4>
-                        <h6 class="card-meta">Software and hardware</h6>
-                    </div>
-                    <div class="card-content">
-                        Organize the world’s information and make it universally accessible and useful.
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Ad</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</section>
 </body>
 </html>
