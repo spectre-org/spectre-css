@@ -455,24 +455,6 @@ blockquote p:last-child {
 blockquote small {
   color: #b3b3b3;
 }
-code,
-pre {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-left: 0.2rem solid #5764c6;
-  line-height: 1.8rem;
-  background-color: #f9f9f9;
-}
-code {
-  padding: 1rem 2rem;
-}
-pre code {
-  background-color: transparent;
-  border-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 ul,
 ol {
   margin: 0 0 1rem;
@@ -549,6 +531,31 @@ ol ol {
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+}
+pre {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1.5rem;
+  border-left: 0.2rem solid #5764c6;
+  line-height: 1.8rem;
+  background-color: #f9f9f9;
+}
+code {
+  padding: .2rem .4rem;
+  margin: -0.2rem 0.1em 0 0.1em;
+  border-radius: .2rem;
+  background-color: #efefef;
+  font-size: .9em;
+  line-height: 1em;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+pre code {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-left: 0;
+  background-color: transparent;
+  line-height: 1.8rem;
 }
 .container {
   width: 100%;
@@ -1264,13 +1271,13 @@ textarea.form-input {
 }
 .card .card-header,
 .card .card-image,
-.card .card-content,
+.card .card-body,
 .card .card-footer {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 .card .card-header:last-child,
 .card .card-image:last-child,
-.card .card-content:last-child,
+.card .card-body:last-child,
 .card .card-footer:last-child {
   padding-bottom: 1.5rem;
 }
@@ -1426,15 +1433,15 @@ textarea.form-input {
 }
 .label {
   display: inline-block;
-  padding: .3rem .4rem;
-  font-size: 90%;
+  padding: .2rem .4rem;
+  font-size: .9em;
   line-height: 1em;
-  color: #737373;
+  color: #666666;
   background-color: #efefef;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
-  margin: -0.3rem 0.1em 0 0.1em;
+  vertical-align: baseline;
+  margin: -0.2rem 0.1em 0 0.1em;
   border-radius: .2rem;
 }
 .label.label-primary {
@@ -1456,11 +1463,6 @@ textarea.form-input {
 .label.label-danger {
   color: #fff;
   background-color: #e85600;
-}
-.label.label-lg {
-  font-size: 100%;
-  line-height: 1.2;
-  padding: .3rem .5rem;
 }
 .menu {
   display: block;
@@ -1533,7 +1535,6 @@ textarea.form-input {
   margin: .5rem;
 }
 .modal {
-  width: 50vw;
   text-align: left;
   margin: 0;
   padding: 0;
@@ -1562,6 +1563,11 @@ textarea.form-input {
 .modal .modal-footer {
   padding: 1.5rem;
   text-align: right;
+}
+@media screen and (min-width: 640px) {
+  .modal {
+    width: 64rem;
+  }
 }
 .breadcrumb {
   list-style: none;
