@@ -1,0 +1,30 @@
+{
+  "name": "spectre.css",
+  "version": "0.1.1",
+  "homepage": "http://picturepan2.github.io/spectre",
+  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "description": "A lightweight and modern CSS framework for faster and extensible development.",
+  "main": "spectre.less",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picturepan2/spectre.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "framework",
+    "flexbox",
+    "responsive",
+    "mobile-friendly",
+    "front-end",
+    "less",
+    "modern"
+  ],
+  "bugs": {
+    "url": "https://github.com/picturepan2/spectre/issues"
+  },
+  "devDependencies": {
+    "less": "^2.6.1",
+    "less-plugin-autoprefix": "^1.4.2"
+  }
+}

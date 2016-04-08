@@ -50,9 +50,9 @@
 <body>
     <section class="container bg-grey">
         <section id="overview" class="grid-hero grid-960">
-            <header class="text-center"><h3>Project Spectre</h3></header>
+            <header class="text-center"><h3>Spectre</h3></header>
             <section>
-                <p><strong>Project Spectre</strong> is a lightweight and modern CSS framework for faster and extensible development.</p>
+                <p><strong>Spectre</strong> is a lightweight and modern CSS framework for faster and extensible development.</p>
                 <ul>
                     <li>lightweight and clean starting point for your project</li>
                     <li>flexbox, responsive and mobile-friendly layout</li>
@@ -62,7 +62,7 @@
             <section class="notes text-center">
                 <div class="btn-group">
                     <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-                    <a href="#get-started" class="btn btn-primary">Documentation</a>
+                    <a href="#getting-started" class="btn btn-primary">Documentation</a>
                 </div>
             </section>
         </section>
@@ -71,41 +71,40 @@
         <section id="getting-started">
             <header class="text-center"><h4>getting started</h4></header>
             <section class="notes">
-                <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower (comming soon).</p>
-                <p>Download the compiled and minified Spectre CSS file (less than 25KB), and include it in your website or Web app <code class="label">&lt;head&gt;</code>:</p>
-
-                <!-- getting started example -->
+                <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
+                <h5>Install manually</h5>
+                <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 25KB):</p>
+                <p><a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+                <h5>Install with NPM</h5>
+                <!-- install with npm example -->
 <pre class="code lang-html">
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.css&quot;</span> /&gt;
+<span class="tag">$</span> npm install <span class="atv">spectre.css</span>
 </pre>
+                <h5>Install with Bower</h5>
+                <!-- install with bower example -->
+<pre class="code lang-html">
+<span class="tag">$</span> bower install <span class="atv">spectre.css</span>
+</pre>
+                <p>And include it in your website or Web app <code class="label">&lt;head&gt;</code></p>
+                <!-- install manually example -->
+<pre class="code lang-html">
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
+</pre>
+
                 <p>You could even customize Spectre CSS with your own code and removing unneeded components. It requires a LESS compiler and Autoprefixer.</p>
 
-                <!--<p>Install with NPM</p>
-                <p>Install with Bower</p>-->
-
             </section>
+        </section>
+        <section id="core">
             <section class="notes text-center">
-                <h4>core elements</h4>
+                <header class="text-center"><h4>core elements</h4></header>
                 <div class="btn-group">
-                    <a href="#typography" class="btn btn-default">typography</a>
-                    <a href="#layout" class="btn btn-default">layout</a>
-                    <a href="#tables" class="btn btn-default">tables</a>
-                    <a href="#buttons" class="btn btn-default">buttons</a>
-                    <a href="#forms" class="btn btn-default">forms</a>
-                    <a href="#images" class="btn btn-default">images</a>
-                </div>
-                <h4>components</h4>
-                <div class="btn-group">
-                    <a href="#avatars" class="btn btn-default">avatars</a>
-                    <a href="#chips" class="btn btn-default">chips</a>
-                    <a href="#tooltips" class="btn btn-default">tooltips</a>
-                    <a href="#labels" class="btn btn-default">labels</a>
-                    <a href="#badges" class="btn btn-default">badges</a>
-                    <a href="#toasts" class="btn btn-default">toasts</a>
-                    <a href="#menus" class="btn btn-default">menus</a>
-                    <a href="#navigation" class="btn btn-default">navigation</a>
-                    <a href="#modals" class="btn btn-default">modals</a>
-                    <a href="#cards" class="btn btn-default">cards</a>
+                    <a href="#typography" class="btn btn-primary">typography</a>
+                    <a href="#layout" class="btn btn-primary">layout</a>
+                    <a href="#tables" class="btn btn-primary">tables</a>
+                    <a href="#buttons" class="btn btn-primary">buttons</a>
+                    <a href="#forms" class="btn btn-primary">forms</a>
+                    <a href="#images" class="btn btn-primary">images</a>
                 </div>
             </section>
         </section>
@@ -377,6 +376,7 @@
 <pre class="code lang-html">
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
+
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
 </pre>
 
@@ -650,6 +650,24 @@
 &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
 </pre>
 
+        </section>
+
+        <section id="components">
+            <section class="notes text-center">
+                <header class="text-center"><h4>components</h4></header>
+                <div class="btn-group">
+                    <a href="#avatars" class="btn btn-primary">avatars</a>
+                    <a href="#chips" class="btn btn-primary">chips</a>
+                    <a href="#tooltips" class="btn btn-primary">tooltips</a>
+                    <a href="#labels" class="btn btn-primary">labels</a>
+                    <a href="#badges" class="btn btn-primary">badges</a>
+                    <a href="#toasts" class="btn btn-primary">toasts</a>
+                    <a href="#menus" class="btn btn-primary">menus</a>
+                    <a href="#navigation" class="btn btn-primary">navigation</a>
+                    <a href="#modals" class="btn btn-primary">modals</a>
+                    <a href="#cards" class="btn btn-primary">cards</a>
+                </div>
+            </section>
         </section>
 
         <section id="avatars">

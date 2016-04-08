@@ -21,11 +21,13 @@
   &:hover,
   &:focus {
     color: #fff;
+    border-color: darken(@core-color, 5%);
     background-color: @core-color;
   }
   &:active,
   &.active {
     color: #fff;
+    border-color: darken(@core-color, 10%);
     background-color: darken(@core-color, 5%);
   }
 
@@ -73,7 +75,7 @@
     &:active,
     &.active {
       color: #fff;
-      border-color: darken(@core-color, 10%);
+      border-color: darken(@core-color, 15%);
       background-color: darken(@core-color, 10%);
     }
 

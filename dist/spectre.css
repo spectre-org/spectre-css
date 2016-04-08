@@ -748,11 +748,13 @@ pre code {
 .btn:hover,
 .btn:focus {
   color: #fff;
+  border-color: #4452c0;
   background-color: #5764c6;
 }
 .btn:active,
 .btn.active {
   color: #fff;
+  border-color: #3b49af;
   background-color: #4452c0;
 }
 .btn.loading {
@@ -796,7 +798,7 @@ pre code {
 .btn.btn-primary:active,
 .btn.btn-primary.active {
   color: #fff;
-  border-color: #3b49af;
+  border-color: #35419c;
   background-color: #3b49af;
 }
 .btn.btn-primary.loading::after {
