@@ -1,9 +1,9 @@
 # Spectre
-Spectre is a lightweight and clean CSS framework for faster and extendable development.
+Spectre is a lightweight and modern CSS framework for faster and extensible development.
 
 * lightweight and clean starting point for your project
 * flexbox and responsive layout friendly
-* built in CSS components and utilities
+* built in useful components and utilities
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base CSS styles, layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 

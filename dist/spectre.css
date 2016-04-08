@@ -457,7 +457,7 @@ blockquote small {
 }
 ul,
 ol {
-  margin: 0 0 1rem;
+  margin: 0 0 1rem 1rem;
 }
 ul ul,
 ol ul,
@@ -897,6 +897,10 @@ pre code {
   margin-left: -0.1rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  z-index: 99;
+}
+.btn-group .btn:hover,
+.btn-group .btn:focus {
   z-index: 99;
 }
 .btn-group.btn-group-block {
@@ -1466,7 +1470,6 @@ textarea.form-input {
 }
 .menu {
   display: block;
-  width: auto;
   text-align: left;
   margin: 0;
   padding: 1rem;
