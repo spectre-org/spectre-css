@@ -872,42 +872,75 @@ pre code {
   margin-left: -0.1rem;
   margin-top: -0.5rem;
 }
-.btn-group {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+@media screen and (min-width: 481px) {
+  .btn-group {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .btn-group .btn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
+  .btn-group .btn:first-child:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .btn-group .btn:not(:first-child):not(:last-child) {
+    margin-left: -0.1rem;
+    border-radius: 0;
+  }
+  .btn-group .btn:last-child:not(:first-child) {
+    margin-left: -0.1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .btn-group .btn:hover,
+  .btn-group .btn:focus {
+    z-index: 99;
+  }
+  .btn-group.btn-group-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-.btn-group .btn {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-.btn-group .btn:first-child:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.btn-group .btn:not(:first-child):not(:last-child) {
-  margin-left: -0.1rem;
-  border-radius: 0;
-  z-index: 49;
-}
-.btn-group .btn:last-child:not(:first-child) {
-  margin-left: -0.1rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  z-index: 99;
-}
-.btn-group .btn:hover,
-.btn-group .btn:focus {
-  z-index: 99;
-}
-.btn-group.btn-group-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 480px) {
+  .btn-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .btn-group .btn {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 100%;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  .btn-group .btn:first-child:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .btn-group .btn:not(:first-child):not(:last-child) {
+    margin-top: -0.1rem;
+    border-radius: 0;
+  }
+  .btn-group .btn:last-child:not(:first-child) {
+    margin-top: -0.1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
