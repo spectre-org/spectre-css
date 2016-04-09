@@ -487,51 +487,6 @@ ol ol {
   border-radius: .2rem;
   background-color: #fff5b7;
 }
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-}
-.text-lowercase {
-  text-transform: lowercase;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
-.text-capitalize {
-  text-transform: capitalize;
-}
-.text-bold {
-  font-weight: bold;
-}
-.text-italic {
-  font-style: italic;
-}
-.text-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.text-clip {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
-}
-.text-break {
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
 pre {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -1870,8 +1825,59 @@ textarea.form-input {
   display: -ms-flexbox;
   display: flex;
 }
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 .hide {
   display: none !important;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.text-break {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 .shadow {
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
