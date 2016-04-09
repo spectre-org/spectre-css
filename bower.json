@@ -23,9 +23,5 @@
     "bower.json",
     "package.json",
     "node_modules"
-  ],
-  "dependencies": {
-    "less": "^2.6.1",
-    "less-plugin-autoprefix": "^1.4.2"
-  }
+  ]
 }
