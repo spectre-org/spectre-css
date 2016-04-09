@@ -564,7 +564,7 @@ pre code {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 981px) {
   .grid-960 {
     width: 96rem;
     margin-left: auto;
@@ -1203,7 +1203,6 @@ textarea.form-input {
 .input-group .input-group-btn:not(:first-child):not(:last-child) {
   margin-left: -0.1rem;
   border-radius: 0;
-  z-index: 49;
 }
 .input-group .form-input:last-child:not(:first-child),
 .input-group .input-group-addon:last-child:not(:first-child),
@@ -1211,6 +1210,10 @@ textarea.form-input {
   margin-left: -0.1rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.input-group .form-input:focus,
+.input-group .input-group-addon:focus,
+.input-group .input-group-btn:focus {
   z-index: 99;
 }
 .avatar {

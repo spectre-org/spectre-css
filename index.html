@@ -26,6 +26,9 @@
         .grid-hero h3 {
             margin-bottom: 5rem;
         }
+        .grid-hero .notes {
+            margin: 4rem 0;
+        }
         .notes {
             margin: 2rem 0;
             color: #666;
@@ -61,14 +64,38 @@
             </section>
             <section class="notes text-center">
                 <div class="btn-group">
-                    <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub Repo</a>
                     <a href="#getting-started" class="btn btn-primary">Documentation</a>
                 </div>
             </section>
         </section>
     </section>
-    <section class="container grid-960">
-        <section id="getting-started">
+    <section class="container">
+        <section class="notes text-center">
+            <ul class="tab inline-block">
+                <li class="tab-item active">
+                    <a href="#getting-started">
+                        getting started
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a href="#elements">
+                        elements
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a href="#components">
+                        components
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a href="#utilities">
+                        utilities
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="getting-started" class="grid-960">
             <header class="text-center"><h4>getting started</h4></header>
             <section class="notes">
                 <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
@@ -95,9 +122,32 @@
 
             </section>
         </section>
-        <section id="core">
+        <section id="elements" class="grid-960">
             <section class="notes text-center">
-                <header class="text-center"><h4>core elements</h4></header>
+                <ul class="tab inline-block">
+                    <li class="tab-item">
+                        <a href="#getting-started">
+                            getting started
+                        </a>
+                    </li>
+                    <li class="tab-item active">
+                        <a href="#elements">
+                            elements
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#components">
+                            components
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#utilities">
+                            utilities
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="notes text-center">
                 <div class="btn-group">
                     <a href="#typography" class="btn btn-primary">typography</a>
                     <a href="#layout" class="btn btn-primary">layout</a>
@@ -109,7 +159,7 @@
             </section>
         </section>
 
-        <section id="typography">
+        <section id="typography" class="grid-960">
             <header class="text-center"><h4>typography</h4></header>
             <section class="notes">
                 <p><strong>Typography</strong> sets default styles for headings, paragraphs, blockquote, lists elements and some text related utilities. </p>
@@ -165,7 +215,7 @@
             </div>
         </section>
 
-        <section id="layout">
+        <section id="layout" class="grid-960">
             <header class="text-center"><h4>flexbox layout</h4></header>
             <section class="notes">
                 <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
@@ -252,7 +302,7 @@
 
         </section>
 
-        <section id="tables">
+        <section id="tables" class="grid-960">
             <header class="text-center"><h4>tables</h4></header>
             <section class="notes">
                 <p><strong>Tables</strong> include default styles for tables and data sets.</p>
@@ -322,7 +372,7 @@
 
         </section>
 
-        <section id="buttons">
+        <section id="buttons" class="grid-960">
             <header class="text-center"><h4>buttons</h4></header>
             <section class="notes">
                 <p><strong>Buttons</strong> include simple button styles for actions in different types and sizes. </p>
@@ -430,7 +480,7 @@
 
         </section>
 
-        <section id="forms">
+        <section id="forms" class="grid-960">
             <header class="text-center"><h4>forms</h4></header>
             <section class="notes">
                 <p><strong>Forms</strong> provide the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
@@ -610,15 +660,29 @@
                 </div>
                 <div class="column">
                     <div class="input-group">
+                        <input type="text" class="form-input" placeholder="username" />
+                        <span class="input-group-addon">@slack.com</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-group">
                         <span class="input-group-addon">slack.com/</span>
                         <input type="text" class="form-input" placeholder="site name" />
                         <button class="btn btn-primary input-group-btn">Submit</button>
                     </div>
                 </div>
             </div>
+            <section class="notes">
+                <p>If you want to attach text and button along with an input, add the class <code class="label">input-group</code> to the input container. And add the class <code class="label">input-group-addon</code> to the text element and <code class="label">input-group-btn</code> to the button element.</p>
+            </section>
 
             <!-- input groups example -->
 <pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
@@ -628,7 +692,7 @@
 
         </section>
 
-        <section id="images">
+        <section id="images" class="grid-960">
             <header class="text-center"><h4>images</h4></header>
             <section class="notes">
                 <p><strong>Images</strong> include responsive image class. </p>
@@ -652,9 +716,32 @@
 
         </section>
 
-        <section id="components">
+        <section id="components" class="grid-960">
             <section class="notes text-center">
-                <header class="text-center"><h4>components</h4></header>
+                <ul class="tab inline-block">
+                    <li class="tab-item">
+                        <a href="#getting-started">
+                            getting started
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#elements">
+                            elements
+                        </a>
+                    </li>
+                    <li class="tab-item active">
+                        <a href="#components">
+                            components
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#utilities">
+                            utilities
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="notes text-center">
                 <div class="btn-group">
                     <a href="#avatars" class="btn btn-primary">avatars</a>
                     <a href="#chips" class="btn btn-primary">chips</a>
@@ -670,7 +757,7 @@
             </section>
         </section>
 
-        <section id="avatars">
+        <section id="avatars" class="grid-960">
             <header class="text-center"><h4>avatars</h4></header>
             <section class="notes">
                 <p><strong>Avatars</strong> are user profile pictures. </p>
@@ -734,8 +821,11 @@
 
         </section>
 
-        <section id="chips">
+        <section id="chips" class="grid-960">
             <header class="text-center"><h4>chips</h4></header>
+            <section class="notes">
+                <p><strong>Chips</strong> are complex entities in small blocks. </p>
+            </section>
             <div class="columns">
                 <div class="column">
                     <div class="chip">
@@ -774,12 +864,15 @@
                     </div>
                 </div>
             </div>
+            <section class="notes">
+                <p>Add a container element with the class <code class="label">chip</code>. And add child text elements with <code class="label">chip-name</code> or icons with  <code class="label">icon</code>.</p>
+            </section>
         </section>
 
-        <section id="fileicons">
+        <section id="fileicons" class="grid-960">
             <header class="text-center"><h4>file icons</h4></header>
             <section class="notes">
-                <p><strong>fileicons.less</strong> includes a set of file icons. This part is written entirely in CSS as well. </p>
+                <p><strong>File icons</strong> are written entirely in CSS. More detail is coming soon. </p>
             </section>
             <div class="columns">
                 <div class="column">
@@ -792,7 +885,7 @@
             </div>
         </section>
 
-        <section id="tooltips">
+        <section id="tooltips" class="grid-960">
             <header class="text-center"><h4>tooltips</h4></header>
             <section class="notes">
                 <p><strong>Tooltips</strong> provide context information labels that appear on hover and focus.</p>
@@ -823,7 +916,7 @@
 
         </section>
 
-        <section id="labels">
+        <section id="labels" class="grid-960">
             <header class="text-center"><h4>labels</h4></header>
             <section class="notes">
                 <p><strong>Labels</strong> are formatted text tags for highlighted, informative information.</p>
@@ -855,7 +948,7 @@
 
         </section>
 
-        <section id="badges">
+        <section id="badges" class="grid-960">
             <header class="text-center"><h4>badges</h4></header>
             <section class="notes">
                 <p><strong>Badges</strong> are often used as unread number indicators.</p>
@@ -895,7 +988,7 @@
 
         </section>
 
-        <section id="toasts">
+        <section id="toasts" class="grid-960">
             <header class="text-center"><h4>toasts</h4></header>
             <section class="notes">
                 <p><strong>Toasts</strong> are used to show alert or information to users.</p>
@@ -963,7 +1056,7 @@
 
         </section>
 
-        <section id="menus">
+        <section id="menus" class="grid-960">
             <header class="text-center"><h4>menus</h4></header>
             <section class="notes">
                 <p>A <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
@@ -1035,7 +1128,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>. That is a basic menu component.</p>
+                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>.</p>
             </section>
 
             <!-- menus example -->
@@ -1066,7 +1159,7 @@
 
         </section>
 
-        <section id="navigation">
+        <section id="navigation" class="grid-960">
             <header class="text-center"><h4>navigation</h4></header>
             <section class="notes">
                 <p><strong>Navigation</strong> includes several components, including breadcrumbs and tabs.</p>
@@ -1201,10 +1294,10 @@
 
         </section>
 
-        <section id="modals">
+        <section id="modals" class="grid-960">
             <header class="text-center"><h4>modals</h4></header>
             <section class="notes">
-                <p></p>
+                <p><strong>Modals</strong> are flexible dialog prompts.</p>
             </section>
             <div class="columns">
                 <div class="column">
@@ -1250,6 +1343,9 @@
                     </div>
                 </div>
             </div>
+            <section class="notes">
+                <p>Add a container element with the class <code class="label">modal</code> and add another container <code class="label">modal-container</code> inside it. And add child elements with the class name <code class="label">modal-header</code>, <code class="label">modal-content</code> and/or <code class="label">modal-footer</code>. </p>
+            </section>
 
             <!-- modals example -->
 <pre class="code lang-html">
@@ -1273,7 +1369,8 @@
 </pre>
 
         </section>
-        <section id="cards">
+
+        <section id="cards" class="grid-960">
             <header class="text-center"><h4>cards</h4></header>
             <section class="notes">
                 <p><strong>Cards</strong> are flexible content containers.</p>
@@ -1310,7 +1407,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="btn-group btn-group-block">
-                                <button class="btn">Buy</button>
+                                <button class="btn btn-primary">Buy</button>
                                 <button class="btn">Buy</button>
                                 <button class="btn">Buy</button>
                             </div>
@@ -1333,14 +1430,14 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">card</code>. And add child elements with the class name <code class="label">card-image</code>, <code class="label">card-header</code>, <code class="label">card-content</code> and/or <code class="label">card-footer</code> in any order. </p>
+                <p>Add a container element with the class <code class="label">card</code>. And add child elements with the class name <code class="label">card-image</code>, <code class="label">card-header</code>, <code class="label">card-content</code> and/or <code class="label">card-footer</code>. The <code class="label">card-image</code> can be placed in any position. </p>
             </section>
 
             <!-- cards example -->
 <pre class="code lang-html">
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-image&quot;</span>&gt;
-        &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+        &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive&quot;</span> /&gt;
     &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
         &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;card-title&quot;</span>&gt;Microsoft&lt;<span class="tag">/h4</span>&gt;
@@ -1353,6 +1450,59 @@
         &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Do&lt;<span class="tag">/button</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="utilities" class="grid-960">
+            <section class="notes text-center">
+                <ul class="tab inline-block">
+                    <li class="tab-item">
+                        <a href="#getting-started">
+                            getting started
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#elements">
+                            elements
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#components">
+                            components
+                        </a>
+                    </li>
+                    <li class="tab-item active">
+                        <a href="#utilities">
+                            utilities
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="notes text-center">
+                <div class="btn-group">
+                    <a href="#position" class="btn btn-primary">position</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="position" class="grid-960">
+            <header class="text-center"><h4>position</h4></header>
+            <section class="notes">
+                <p><strong>Position utilities</strong></p>
+            </section>
+            <div class="columns">
+                <div class="column">
+
+                </div>
+            </div>
+            <section class="notes">
+
+            </section>
+
+            <!-- position utilities example -->
+<pre class="code lang-html">
+
 </pre>
 
         </section>
