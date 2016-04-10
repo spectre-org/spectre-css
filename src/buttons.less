@@ -31,29 +31,6 @@
     background-color: darken(@core-color, 5%);
   }
 
-  &.loading {
-    color: transparent !important;
-    position: relative;
-    pointer-events: none;
-
-    &::after {
-      border: .2rem solid @core-color;
-      border-right-color: transparent;
-      border-top-color: transparent;
-      border-radius: .8rem;
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -.8rem;
-      margin-top: -.8rem;
-      display: block;
-      width: 1.6rem;
-      height: 1.6rem;
-      animation: loading 500ms infinite linear;
-    }
-  }
-
   &[disabled],
   .disabled {
     opacity: .5;

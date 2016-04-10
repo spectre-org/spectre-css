@@ -5,7 +5,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="https://github.com/picturepan2/spectre" />
-    <title>Spectre, a lightweight and modern CSS framework for faster and extensible development.</title>
+    <title>Spectre.css, a lightweight and modern CSS framework for faster and extensible development.</title>
     <link rel="stylesheet" href="dist/spectre.css" />
     <link rel="stylesheet" href="demo/font/style.css" />
     <style>
@@ -61,9 +61,9 @@
 <body>
     <section class="container bg-grey">
         <section id="overview" class="grid-hero grid-960">
-            <header class="text-center"><h3>Spectre</h3></header>
+            <header class="text-center"><h3>Spectre.css</h3></header>
             <section>
-                <p><strong>Spectre</strong> is a lightweight and modern CSS framework for faster and extensible development.</p>
+                <p><strong>Spectre.css</strong> is a lightweight and modern CSS framework for faster and extensible development.</p>
                 <ul>
                     <li>lightweight and clean starting point for your project</li>
                     <li>flexbox, responsive and mobile-friendly layout</li>
@@ -1082,22 +1082,16 @@
                         <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
-                </div>
-                <div class="column">
                     <div class="toast toast-info">
                         <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
                 </div>
-            </div>
-            <div class="columns">
                 <div class="column">
                     <div class="toast toast-warning">
                         <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
-                </div>
-                <div class="column">
                     <div class="toast toast-danger">
                         <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
@@ -1132,24 +1126,24 @@
             </section>
             <div class="columns">
                 <div class="column">
-                    <menu class="menu">
-                        <menuitem class="menu-item">
+                    <ul class="menu">
+                        <li class="menu-item">
                             <a href="#" class="active">
                                 My profile
                             </a>
-                        </menuitem>
-                        <menuitem class="divider"></menuitem>
-                        <menuitem class="menu-item">
+                        </li>
+                        <li class="divider"></li>
+                        <li class="menu-item">
                             <a href="#">
                                 Settings
                             </a>
-                        </menuitem>
-                        <menuitem class="menu-item">
+                        </li>
+                        <li class="menu-item">
                             <a href="#">
                                 Logout
                             </a>
-                        </menuitem>
-                    </menu>
+                        </li>
+                    </ul>
                 </div>
                 <div class="column">
                     <ul class="menu">
@@ -1483,8 +1477,8 @@
                                 <div class="content">
                                     <form>
                                         <div class="form-group">
-                                            <label class="form-label" for="input-example-1">Name</label>
-                                            <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+                                            <label class="form-label" for="input-example-7">Name</label>
+                                            <input class="form-input" type="text" id="input-example-7" placeholder="Name" />
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Gender</label>
@@ -1632,6 +1626,7 @@
                     <a href="#display" class="btn btn-primary">display</a>
                     <a href="#text" class="btn btn-primary">text</a>
                     <a href="#shapes" class="btn btn-primary">shapes</a>
+                    <a href="#loading" class="btn btn-primary">loading</a>
                 </div>
             </section>
         </section>
@@ -1727,7 +1722,7 @@
 
         </section>
 
-        <section id="shadow" class="grid-960">
+        <section id="shapes" class="grid-960">
             <section class="notes">
                 <p><strong>Shape utilities</strong> are used for change element shapes.</p>
             </section>
@@ -1738,6 +1733,23 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rounded&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- circle element --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;circle&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="loading" class="grid-960">
+            <section class="notes">
+                <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code class="label">loading</code> to buttons for loading status.</p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="loading"></div>
+                </div>
+            </div>
+            <!-- loading example -->
+<pre class="code lang-html">
+<span class="com">&lt;!-- loading element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 </pre>
 
         </section>
