@@ -1770,22 +1770,6 @@ textarea.form-input {
 .fixed {
   position: fixed;
 }
-.top {
-  position: absolute;
-  top: 0;
-}
-.right {
-  position: absolute;
-  right: 0;
-}
-.bottom {
-  position: absolute;
-  bottom: 0;
-}
-.left {
-  position: absolute;
-  left: 0;
-}
 .centered {
   display: block;
   float: none;
@@ -1815,6 +1799,30 @@ textarea.form-input {
 }
 .ml-5 {
   margin-left: .5rem;
+}
+.pt-10 {
+  padding-top: 1rem;
+}
+.pr-10 {
+  padding-right: 1rem;
+}
+.pb-10 {
+  padding-bottom: 1rem;
+}
+.pl-10 {
+  padding-left: 1rem;
+}
+.pt-5 {
+  padding-top: .5rem;
+}
+.pr-5 {
+  padding-right: .5rem;
+}
+.pb-5 {
+  padding-bottom: .5rem;
+}
+.pl-5 {
+  padding-left: .5rem;
 }
 .block {
   display: block;
@@ -1860,6 +1868,9 @@ textarea.form-input {
 }
 .text-capitalize {
   text-transform: capitalize;
+}
+.text-normal {
+  font-weight: normal;
 }
 .text-bold {
   font-weight: bold;
