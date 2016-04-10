@@ -5,7 +5,7 @@
   padding: .7rem 1.5rem;
   border: .1rem solid @core-color;
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: .3rem;
   color: @core-color;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -37,19 +37,19 @@
     pointer-events: none;
 
     &::after {
-      border: 2px solid @core-color;
+      border: .2rem solid @core-color;
       border-right-color: transparent;
       border-top-color: transparent;
-      border-radius: 8px;
+      border-radius: .8rem;
       content: "";
       position: absolute;
       left: 50%;
       top: 50%;
-      margin-left: -8px;
-      margin-top: -8px;
+      margin-left: -.8rem;
+      margin-top: -.8rem;
       display: block;
-      width: 16px;
-      height: 16px;
+      width: 1.6rem;
+      height: 1.6rem;
       animation: loading 500ms infinite linear;
     }
   }
@@ -107,7 +107,7 @@
   // Button Small
   &.btn-sm {
     height: 2.4rem;
-    border-radius: 2px;
+    border-radius: .2rem;
     font-size: 1.2rem;
     line-height: 1.4rem;
     padding: .4rem 1rem;
@@ -116,7 +116,7 @@
   // Button Large
   &.btn-lg {
     height: 4.2rem;
-    border-radius: 4px;
+    border-radius: .4rem;
     font-size: 1.8rem;
     line-height: 2rem;
     padding: 1rem 1.8rem;
@@ -171,61 +171,33 @@
 }
 
 // Button groups
-@media screen and (min-width: 481px) {
-  .btn-group {
-    display: inline-flex;
-    flex-wrap: wrap;
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
 
-    .btn {
-      flex: 1 0 auto;
+  .btn {
+    flex: 1 0 auto;
 
-      &:first-child:not(:last-child) {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-      &:not(:first-child):not(:last-child) {
-        margin-left: -.1rem;
-        border-radius: 0;
-      }
-      &:last-child:not(:first-child) {
-        margin-left: -.1rem;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-      &:hover,
-      &:focus {
-        z-index: 99;
-      }
+    &:first-child:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
-
-    &.btn-group-block {
-      display: flex;
+    &:not(:first-child):not(:last-child) {
+      margin-left: -.1rem;
+      border-radius: 0;
+    }
+    &:last-child:not(:first-child) {
+      margin-left: -.1rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &:hover,
+    &:focus {
+      z-index: 99;
     }
   }
-}
-// Responsive button groups
-@media screen and (max-width: 480px) {
-  .btn-group {
+
+  &.btn-group-block {
     display: flex;
-    flex-wrap: wrap;
-
-    .btn {
-      flex: 1 0 100%;
-
-      &:first-child:not(:last-child) {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-      &:not(:first-child):not(:last-child) {
-        margin-top: -.1rem;
-        border-radius: 0;
-      }
-      &:last-child:not(:first-child) {
-        margin-top: -.1rem;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-    }
   }
 }
-
