@@ -30,7 +30,7 @@
             margin: 4rem 0;
         }
         .notes {
-            margin: 2rem 0;
+            margin: 4rem 0;
             color: #666;
         }
         .code {
@@ -144,13 +144,24 @@
             <h5>H5 Title <small class="label">2rem</small></h5>
             <h6>H6 Title <small class="label">1.6rem</small></h6>
 
+            <!-- headings example -->
+<pre class="code lang-html">
+&lt;<span class="tag">h1</span>&gt;H1 Title&lt;<span class="tag">/h1</span>&gt;
+&lt;<span class="tag">h2</span>&gt;H2 Title &lt;<span class="tag">small</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;4rem&lt;<span class="tag">/small</span>&gt;&lt;<span class="tag">/h2</span>&gt;
+</pre>
+
             <header class="text-center"><h5>paragraphs</h5></header>
             <p>Lorem ipsum dolor sit amet, <span class="highlight">consectetur</span> adipiscing elit. <a href="#">Integer</a> posuere erat a ante.</p>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 
+            <!-- headings example -->
+<pre class="code lang-html">
+&lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;highlight&quot;</span>&gt;consectetur&lt;<span class="tag">/span</span>&gt; adipiscing elit. &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Integer&lt;<span class="tag">/a</span>&gt; posuere erat a ante.&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;lead&quot;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;<span class="tag">/p</span>&gt;
+</pre>
+
             <header class="text-center"><h5>blockquote</h5></header>
             <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <small>- Source</small>
             </blockquote>
@@ -581,10 +592,12 @@
             <!-- forms example -->
 <pre class="code lang-html">
 &lt;<span class="tag">form</span>&gt;
+    <span class="com">&lt;!-- form input control --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
     &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- form radio control --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
@@ -594,6 +607,7 @@
             &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt; Female
         &lt;<span class="tag">/label</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- form select control --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
             &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
@@ -602,16 +616,19 @@
             &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
         &lt;<span class="tag">/select</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- form switch control --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
             &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
             Send me emails with news and tips
         &lt;<span class="tag">/label</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- form textarea control --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- form checkbox control --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
             &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
@@ -795,11 +812,11 @@
             <div class="columns">
                 <div class="column">
                     <div class="chip">
-                        <span class="icon icon-favorite_border"></span>
                         <span class="chip-name">Crime</span>
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip">
+                        <span class="icon icon-favorite_border"></span>
                         <span class="chip-name">Drama</span>
                         <button class="btn btn-clear"></button>
                     </div>
@@ -814,17 +831,17 @@
                 </div>
                 <div class="column">
                     <div class="chip">
-                        <img src="demo/img/avatar-1.png" class="avatar avatar-xs" />
+                        <img src="demo/img/avatar-1.png" class="avatar" />
                         <span class="chip-name">Yan Zhu</span>
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip">
-                        <img src="demo/img/avatar-2.png" class="avatar avatar-xs" />
+                        <img src="demo/img/avatar-2.png" class="avatar" />
                         <span class="chip-name">Yan Zhu</span>
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip">
-                        <img src="demo/img/avatar-4.png" class="avatar avatar-xs" />
+                        <img src="demo/img/avatar-4.png" class="avatar" />
                         <span class="chip-name">Yan Zhu</span>
                         <button class="btn btn-clear"></button>
                     </div>
@@ -833,6 +850,27 @@
             <section class="notes">
                 <p>Add a container element with the class <code class="label">chip</code>. And add child text elements with <code class="label">chip-name</code> or icons with  <code class="label">icon</code>.</p>
             </section>
+
+            <!-- chips example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Crime&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-favorite_border&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Drama&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Yan Zhu&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
         </section>
 
         <section id="fileicons" class="grid-960">
@@ -856,8 +894,8 @@
             <section class="notes">
                 <p><strong>Tooltips</strong> provide context information labels that appear on hover and focus.</p>
             </section>
-            <div class="columns">
-                <div class="column text-center">
+            <div class="columns text-center">
+                <div class="column">
                     <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
                 </div>
                 <div class="column">
@@ -871,6 +909,7 @@
                 </div>
             </div>
             <section class="notes">
+                <p>Tooltip component is built entirely in CSS.</p>
                 <p>Add the class <code class="label">tooltip</code> and the attribute <code class="label">data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code class="label">tooltip-right</code>, <code class="label">tooltip-bottom</code> or <code class="label">tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
             </section>
 
@@ -1094,17 +1133,19 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>.</p>
+                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>. You can separate menu items with a <code class="label">divider</code> or <code class="label">menu-header</code>. </p>
             </section>
 
             <!-- menus example -->
 <pre class="code lang-html">
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+    <span class="com">&lt;!-- menu header --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
         &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
             Go to
         &lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
+    <span class="com">&lt;!-- menu item --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
             &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Slack
@@ -1118,6 +1159,13 @@
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
             &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Skype
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    <span class="com">&lt;!-- menu divider --&gt;</span>
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Settings
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
@@ -1271,7 +1319,7 @@
                         <div class="modal-container" role="document">
                             <div class="modal-header">
                                 <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
-                                <h6 class="modal-title">Modal title</h6>
+                                <div class="modal-title">Modal title</div>
                             </div>
                             <div class="modal-body">
                                 <div class="content">
@@ -1310,7 +1358,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">modal</code> and add another container <code class="label">modal-container</code> inside it. And add child elements with the class name <code class="label">modal-header</code>, <code class="label">modal-content</code> and/or <code class="label">modal-footer</code>. </p>
+                <p>Add a container element with the class <code class="label">modal</code> and add another container <code class="label">modal-container</code> inside it. You can add child elements with the class name <code class="label">modal-header</code>, <code class="label">modal-content</code> and <code class="label">modal-footer</code> - any or all of them. </p>
             </section>
 
             <!-- modals example -->
@@ -1319,7 +1367,7 @@
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-header&quot;</span>&gt;
             &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-            &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/h6</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-body&quot;</span>&gt;
             &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;content&quot;</span>&gt;
@@ -1330,6 +1378,74 @@
             &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Close&lt;<span class="tag">/button</span>&gt;
             &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Share&lt;<span class="tag">/button</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+            <header class="text-center"><h5>modal sizes</h5></header>
+            <div class="columns">
+                <div class="column">
+                    <div class="modal modal-sm">
+                        <div class="modal-container" role="document">
+                            <div class="modal-header">
+                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <div class="modal-title">Modal title</div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-link">Close</button>
+                                <button class="btn btn-primary">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="modal modal-sm">
+                        <div class="modal-container" role="document">
+                            <div class="modal-header">
+                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <div class="modal-title">Modal title</div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="content">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="form-label" for="input-example-1">Name</label>
+                                            <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Gender</label>
+                                            <label class="form-radio">
+                                                <input type="radio" name="gender" /> Male
+                                            </label>
+                                            <label class="form-radio">
+                                                <input type="radio" name="gender" checked /> Female
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-link">Close</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
+                <p>Add the class <code class="label">modal-sm</code> for a smaller modal dialog. </p>
+            </section>
+
+            <!-- modals example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal modal-sm&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+        <span class="com">&lt;!-- modal structure here --&gt;</span>
     &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </pre>
