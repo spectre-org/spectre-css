@@ -29,6 +29,14 @@
         .grid-hero .notes {
             margin: 4rem 0;
         }
+        .grid-footer {
+            color: #888;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .grid-footer a {
+            color: #666;
+        }
         .notes {
             margin: 4rem 0;
             color: #666;
@@ -1057,13 +1065,13 @@
             <div class="columns">
                 <div class="column">
                     <div class="toast">
-                        <button class="btn btn-clear pull-right"></button>
+                        <button class="btn btn-clear float-right"></button>
                         <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
                 <div class="column">
                     <div class="toast toast-primary">
-                        <button class="btn btn-clear pull-right"></button>
+                        <button class="btn btn-clear float-right"></button>
                         <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
@@ -1071,13 +1079,13 @@
             <div class="columns">
                 <div class="column">
                     <div class="toast toast-success">
-                        <button class="btn btn-clear pull-right"></button>
+                        <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
                 </div>
                 <div class="column">
                     <div class="toast toast-info">
-                        <button class="btn btn-clear pull-right"></button>
+                        <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
                 </div>
@@ -1085,13 +1093,13 @@
             <div class="columns">
                 <div class="column">
                     <div class="toast toast-warning">
-                        <button class="btn btn-clear pull-right"></button>
+                        <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
                 </div>
                 <div class="column">
                     <div class="toast toast-danger">
-                        <button class="btn btn-clear pull-right"></button>
+                        <button class="btn btn-clear float-right"></button>
                         Efficiently unleash cross-media information without cross-media value.
                     </div>
                 </div>
@@ -1104,12 +1112,12 @@
             <!-- toasts example -->
 <pre class="code lang-html">
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast&quot;</span>&gt;
-    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;<span class="tag">/div</span>&gt;
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast toast-primary&quot;</span>&gt;
-    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;<span class="tag">/div</span>&gt;
@@ -1123,7 +1131,7 @@
                 <p>A <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
             </section>
             <div class="columns">
-                <div class="column col-3">
+                <div class="column">
                     <menu class="menu">
                         <menuitem class="menu-item">
                             <a href="#" class="active">
@@ -1143,7 +1151,7 @@
                         </menuitem>
                     </menu>
                 </div>
-                <div class="column col-3">
+                <div class="column">
                     <ul class="menu">
                         <li class="menu-header">
                             <span class="menu-header-text">
@@ -1165,7 +1173,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="column col-3">
+                <div class="column">
                     <ul class="menu">
                         <li class="menu-header">
                             <span class="menu-header-text">
@@ -1189,7 +1197,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>. You can separate menu items with a <code class="label">divider</code> or <code class="label">menu-header</code>. </p>
+                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>. You can separate menu items with a <code class="label">divider</code> or <code class="label">menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
             </section>
 
             <!-- menus example -->
@@ -1372,9 +1380,10 @@
             <div class="columns">
                 <div class="column">
                     <div class="modal">
+                        <div class="modal-overlay"></div>
                         <div class="modal-container" role="document">
                             <div class="modal-header">
-                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
                                 <div class="modal-title">Modal title</div>
                             </div>
                             <div class="modal-body">
@@ -1414,15 +1423,17 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">modal</code> and add another container <code class="label">modal-container</code> inside it. You can add child elements with the class name <code class="label">modal-header</code>, <code class="label">modal-content</code> and <code class="label">modal-footer</code> - any or all of them. </p>
+                <p>Add a container element with the class <code class="label">modal</code>. And add a real container <code class="label">modal-container</code> and overlay <code class="label">modal-overlay</code> inside it. You can add child elements with the class name <code class="label">modal-header</code>, <code class="label">modal-content</code> and <code class="label">modal-footer</code> - any or all of them. </p>
+                <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the class <code class="label">active</code> to the <code class="label">modal</code> container</p>
             </section>
 
             <!-- modals example -->
 <pre class="code lang-html">
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal&quot;</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal active&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-header&quot;</span>&gt;
-            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear pull-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
             &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-body&quot;</span>&gt;
@@ -1442,9 +1453,10 @@
             <div class="columns">
                 <div class="column">
                     <div class="modal modal-sm">
+                        <div class="modal-overlay"></div>
                         <div class="modal-container" role="document">
                             <div class="modal-header">
-                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
                                 <div class="modal-title">Modal title</div>
                             </div>
                             <div class="modal-body">
@@ -1461,9 +1473,10 @@
                 </div>
                 <div class="column">
                     <div class="modal modal-sm">
+                        <div class="modal-overlay"></div>
                         <div class="modal-container" role="document">
                             <div class="modal-header">
-                                <button type="button" class="btn btn-clear pull-right" aria-label="Close"></button>
+                                <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
                                 <div class="modal-title">Modal title</div>
                             </div>
                             <div class="modal-body">
@@ -1500,6 +1513,7 @@
             <!-- modals example -->
 <pre class="code lang-html">
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal modal-sm&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
         <span class="com">&lt;!-- modal structure here --&gt;</span>
     &lt;<span class="tag">/div</span>&gt;
@@ -1644,5 +1658,13 @@
 
         </section>
     </section>
+    <footer class="bg-grey">
+        <section id="copyright" class="grid-footer grid-960">
+            <div class="btn-group">
+
+            </div>
+            Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the MIT License.
+        </section>
+    </footer>
 </body>
 </html>

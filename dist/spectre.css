@@ -1504,43 +1504,70 @@ textarea.form-input {
   border-bottom: 0.1rem solid #efefef;
   margin: .5rem;
 }
-.modal {
+.modal.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  z-index: 499;
+}
+.modal.active .modal-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-container {
+  display: block;
   text-align: left;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-radius: .3rem;
   background-color: #fff;
   z-index: 999;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
-  display: block;
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
 }
-.modal .modal-header {
+.modal-container .modal-header {
   padding: 1.5rem;
 }
-.modal .modal-header .modal-title {
+.modal-container .modal-header .modal-title {
   margin: 0;
   font-size: 1.5rem;
 }
-.modal .modal-body {
+.modal-container .modal-body {
   position: relative;
   padding: 1.5rem;
   max-height: 50vh;
   overflow-y: auto;
 }
-.modal .modal-footer {
+.modal-container .modal-footer {
   padding: 1.5rem;
   text-align: right;
 }
 @media screen and (min-width: 640px) {
-  .modal {
+  .modal-container {
     width: 64rem;
   }
 }
 @media screen and (min-width: 320px) {
-  .modal.modal-sm {
+  .modal-sm .modal-container {
     width: 32rem;
   }
 }
@@ -1728,10 +1755,10 @@ textarea.form-input {
   display: table;
   clear: both;
 }
-.pull-left {
+.float-left {
   float: left !important;
 }
-.pull-right {
+.float-right {
   float: right !important;
 }
 .rel {

@@ -1,14 +1,35 @@
 // Modals
-.modal {
+.modal.active {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 499;
+
+  .modal-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+  }
+}
+.modal-container {
   display: block;
   text-align: left;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-radius: .3rem;
   background-color: #fff;
   z-index: 999;
   .shadow;
-  .centered;
 
   .modal-header {
     padding: 1.5rem;
@@ -30,13 +51,13 @@
   }
 }
 @media screen and (min-width: 640px) {
-  .modal {
+  .modal-container {
     width: 64rem;
   }
 }
 @media screen and (min-width: 320px) {
-  .modal {
-    &.modal-sm {
+  .modal-sm {
+    .modal-container {
       width: 32rem;
     }
   }
