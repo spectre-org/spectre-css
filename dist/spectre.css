@@ -1941,11 +1941,7 @@ textarea.form-input {
   min-height: 1.6rem;
   position: relative;
   pointer-events: none;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+  color: transparent !important;
 }
 .loading::after {
   border: 0.2rem solid #5764c6;
