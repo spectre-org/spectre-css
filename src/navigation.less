@@ -77,5 +77,36 @@
     }
   }
 }
-// TODO: Pagination
+// Pagination
+.pagination {
+  list-style: none;
+  margin: .5rem 0;
+  padding: 1.2rem;
+
+  .page-item {
+    float: left;
+    padding: .1rem .2rem;
+    border: .1rem solid transparent;
+    border-radius: .3rem;
+
+    a {
+      display: block;
+      padding: .5rem 1.5rem;
+      color: @core-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: darken(@core-color, 15%);
+      }
+    }
+    &.active {
+      background-color: @core-color;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
 
