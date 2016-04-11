@@ -713,28 +713,6 @@ pre code {
   border-color: #3b49af;
   background-color: #4452c0;
 }
-.btn.loading {
-  color: transparent !important;
-  position: relative;
-  pointer-events: none;
-}
-.btn.loading::after {
-  border: 0.2rem solid #5764c6;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  border-radius: .8rem;
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -0.8rem;
-  margin-top: -0.8rem;
-  display: block;
-  width: 1.6rem;
-  height: 1.6rem;
-  -webkit-animation: loading 500ms infinite linear;
-          animation: loading 500ms infinite linear;
-}
 .btn[disabled],
 .btn .disabled {
   opacity: .5;
@@ -1418,22 +1396,27 @@ textarea.form-input {
 .label.label-primary {
   color: #fff;
   background-color: #5764c6;
+  border-color: #4f5dc3;
 }
 .label.label-success {
   color: #fff;
   background-color: #32b643;
+  border-color: #30ae40;
 }
 .label.label-info {
   color: #fff;
   background-color: #0193eb;
+  border-color: #018de1;
 }
 .label.label-warning {
   color: #fff;
   background-color: #ffb700;
+  border-color: #f5b000;
 }
 .label.label-danger {
   color: #fff;
   background-color: #e85600;
+  border-color: #de5200;
 }
 .menu {
   display: block;
@@ -1682,6 +1665,19 @@ textarea.form-input {
   background-color: #e85600;
   border-color: #de5200;
 }
+.toast:first-child:not(:last-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.toast:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  margin-top: -0.1rem;
+}
+.toast:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: -0.1rem;
+}
 .tooltip {
   position: relative;
 }
@@ -1907,6 +1903,29 @@ textarea.form-input {
 }
 .circle {
   border-radius: 50%;
+}
+.loading {
+  min-height: 1.6rem;
+  color: transparent !important;
+  position: relative;
+  pointer-events: none;
+}
+.loading::after {
+  border: 0.2rem solid #5764c6;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-radius: .8rem;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.8rem;
+  margin-top: -0.8rem;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  -webkit-animation: loading 500ms infinite linear;
+          animation: loading 500ms infinite linear;
 }
 @-webkit-keyframes loading {
   0% {

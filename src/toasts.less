@@ -9,31 +9,32 @@
   background-color: @core-border-color;
 
   &.toast-primary {
-    color: #fff;
-    background-color: @core-color;
-    border-color: darken(@core-color, 2%);
+    .toast-variant(@core-color);
   }
-
   &.toast-success {
-    color: #fff;
-    background-color: @control-color-success;
-    border-color: darken(@control-color-success, 2%);
+    .toast-variant(@control-color-success);
   }
   &.toast-info {
-    color: #fff;
-    background-color: @control-color-info;
-    border-color: darken(@control-color-info, 2%);
+    .toast-variant(@control-color-info);
   }
   &.toast-warning {
-    color: #fff;
-    background-color: @control-color-warning;
-    border-color: darken(@control-color-warning, 2%);
+    .toast-variant(@control-color-warning);
   }
   &.toast-danger {
-    color: #fff;
-    background-color: @control-color-danger;
-    border-color: darken(@control-color-danger, 2%);
+    .toast-variant(@control-color-danger);
+  }
+
+  &:first-child:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    margin-top: -.1rem;
+  }
+  &:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -.1rem;
   }
 }
-
-// TODO: attached toasts
