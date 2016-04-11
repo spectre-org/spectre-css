@@ -811,40 +811,51 @@
             </section>
             <div class="columns">
                 <div class="column col-3">
-                    <img src="demo/img/avatar-1.png" class="avatar avatar-xl" />
-                    <img src="demo/img/avatar-2.png" class="avatar avatar-lg" />
-                    <img src="demo/img/avatar-3.png" class="avatar" />
-                    <img src="demo/img/avatar-4.png" class="avatar avatar-sm" />
-                    <img src="demo/img/avatar-5.png" class="avatar avatar-xs" />
+                    <figure class="avatar avatar-xl">
+                        <img src="demo/img/avatar-1.png" />
+                    </figure>
+                    <figure class="avatar avatar-lg">
+                        <img src="demo/img/avatar-2.png" />
+                    </figure>
+                    <figure class="avatar">
+                        <img src="demo/img/avatar-3.png" />
+                    </figure>
+                    <figure class="avatar avatar-sm">
+                        <img src="demo/img/avatar-4.png" />
+                    </figure>
+                    <figure class="avatar avatar-xs">
+                        <img src="demo/img/avatar-5.png" />
+                    </figure>
                 </div>
                 <div class="column col-3">
-                    <div class="avatar-container">
-                        <img src="demo/img/avatar-1.png" class="avatar avatar-xl" />
-                        <img src="demo/img/avatar-2.png" class="avatar avatar-icon" />
-                    </div>
-                    <div class="avatar-container">
-                        <img src="demo/img/avatar-2.png" class="avatar avatar-lg" />
-                        <img src="demo/img/avatar-3.png" class="avatar avatar-icon" />
-                    </div>
-                    <div class="avatar-container">
-                        <img src="demo/img/avatar-3.png" class="avatar" />
-                        <img src="demo/img/avatar-4.png" class="avatar avatar-icon" />
-                    </div>
-                    <div class="avatar-container">
-                        <img src="demo/img/avatar-4.png" class="avatar avatar-sm" />
-                        <img src="demo/img/avatar-5.png" class="avatar avatar-icon" />
-                    </div>
-                    <div class="avatar-container">
-                        <img src="demo/img/avatar-5.png" class="avatar avatar-xs" />
-                        <img src="demo/img/avatar-1.png" class="avatar avatar-icon" />
-                    </div>
+                    <figure class="avatar avatar-xl">
+                        <img src="demo/img/avatar-1.png" />
+                        <img src="demo/img/avatar-2.png" class="avatar-icon" />
+                    </figure>
+                    <figure class="avatar avatar-lg">
+                        <img src="demo/img/avatar-2.png" />
+                        <img src="demo/img/avatar-3.png" class="avatar-icon" />
+                    </figure>
+                    <figure class="avatar">
+                        <img src="demo/img/avatar-3.png" />
+                        <img src="demo/img/avatar-4.png" class="avatar-icon" />
+                    </figure>
+                    <figure class="avatar avatar-sm">
+                        <img src="demo/img/avatar-4.png" />
+                        <img src="demo/img/avatar-5.png" class="avatar-icon" />
+                    </figure>
+                    <figure class="avatar avatar-xs">
+                        <img src="demo/img/avatar-5.png" />
+                        <img src="demo/img/avatar-1.png" class="avatar-icon" />
+                    </figure>
                 </div>
+
                 <div class="column col-3">
-                    <div class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;"></div>
-                    <div class="avatar avatar-lg" data-initial="YZ" style="background-color: #6874cc;"></div>
-                    <div class="avatar" data-initial="YZ" style="background-color: #7983d2;"></div>
-                    <div class="avatar avatar-sm" data-initial="YZ" style="background-color: #8a93d7;"></div>
-                    <div class="avatar avatar-xs" data-initial="YZ" style="background-color: #9ba2dd;"></div>
+                    <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;"></figure>
+                    <figure class="avatar avatar-lg" data-initial="YZ" style="background-color: #6874cc;"></figure>
+                    <figure class="avatar" data-initial="YZ" style="background-color: #7983d2;"></figure>
+                    <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #8a93d7;"></figure>
+                    <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #9ba2dd;"></figure>
                 </div>
             </div>
 
@@ -855,15 +866,16 @@
 
             <!-- avatars example -->
 <pre class="code lang-html">
-&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> /&gt;
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
 
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-5.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-icon&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
 
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-container&quot;</span>&gt;
-    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> /&gt;
-    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-5.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-icon&quot;</span> /&gt;
-&lt;<span class="tag">/div</span>&gt;
-
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;&lt;<span class="tag">/figure</span>&gt;
 </pre>
 
         </section>
