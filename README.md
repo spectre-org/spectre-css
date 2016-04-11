@@ -1,5 +1,5 @@
-# Spectre
-Spectre is a lightweight and modern CSS framework for faster and extensible development.
+# Spectre.css
+Spectre.css is a lightweight and modern CSS framework for faster and extensible development.
 
 * lightweight and clean starting point for your project
 * flexbox and responsive layout friendly
@@ -9,6 +9,4 @@ Spectre is a side project based on years of CSS development work on a large web 
 
 Read [the documentation](http://picturepan2.github.io/spectre/) to learn more.
 
-The documentation is still being written carefully, there are some usages and demos in [the current doc](http://picturepan2.github.io/spectre/). Feel free to submit a pull request. Help is always appreciated.
-
-Currently maintained by [Yan Zhu](https://twitter.com/picturepan2).
+Currently maintained by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
