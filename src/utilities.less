@@ -94,6 +94,19 @@
 .hide {
   display: none !important;
 }
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
 // Text
 .text-left {
   text-align: left;
@@ -163,9 +176,9 @@
 // Loading
 .loading {
   min-height: 1.6rem;
-  color: transparent !important;
   position: relative;
   pointer-events: none;
+  .text-hide;
 
   &::after {
     border: .2rem solid @core-color;
