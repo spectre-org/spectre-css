@@ -25,11 +25,16 @@ a {
     color: darken(@core-link-color, 25%);
   }
 }
-
+// Disabled state
+&[disabled],
+.disabled {
+  opacity: .5;
+  cursor: default;
+  pointer-events: none;
+}
 
 // Icons
 .btn,
-button,
 .toast,
 .menu {
   .icon {

@@ -6,7 +6,7 @@
   border: .1rem solid @core-color;
   background-color: transparent;
   border-radius: .3rem;
-  color: @core-color;
+  color: @core-link-color;
   font-size: 1.4rem;
   line-height: 1.6rem;
   text-align: center;
@@ -29,12 +29,6 @@
     color: #fff;
     border-color: darken(@core-color, 10%);
     background-color: darken(@core-color, 5%);
-  }
-
-  &[disabled],
-  .disabled {
-    opacity: .5;
-    cursor: default;
   }
 
   // Button Primary
@@ -67,17 +61,17 @@
 
   // Button Link
   &.btn-link {
-    color: @core-color;
+    color: @core-link-color;
     border-color: transparent;
     background-color: transparent;
 
     &:hover,
     &:focus {
-      color: darken(@core-color, 15%);
+      color: darken(@core-link-color, 15%);
     }
     &:active,
     &.active {
-      color: darken(@core-color, 25%);
+      color: darken(@core-link-color, 25%);
     }
   }
 

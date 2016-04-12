@@ -1,11 +1,15 @@
 // Navigation
-// Breadcrumbs
-.breadcrumb {
+.breadcrumb,
+.tab,
+.pagination {
   list-style: none;
   margin: .5rem 0;
+}
+// Breadcrumbs
+.breadcrumb {
   padding: 1.2rem;
 
-  li {
+  .breadcrumb-item {
     display: inline-block;
     margin: 0;
 
@@ -33,36 +37,34 @@
 // Tabs
 .tab {
   display: block;
-  list-style: none;
-  margin: .5rem 0;
   border-bottom: .1rem solid @control-color;
   .clearfix();
 
   .tab-item {
-    float: left;
-    border-bottom: .1rem solid transparent;
+    display: inline-block;
     margin-bottom: -.1rem;
+    margin-right: .2rem;
+    padding: .5rem 1.5rem;
 
     a {
       display: block;
       padding: .5rem 1.5rem;
+      margin: -.5rem -1.5rem;
+      border-bottom: .2rem solid transparent;
       color: @body-font-color;
       text-decoration: none;
-    }
 
-    &:hover,
-    &:focus {
-      border-bottom-color: @core-color;
-
-      a {
-        color: @core-color;
+      &:hover,
+      &:focus {
+        border-bottom-color: @core-color;
+        color: @core-link-color;
       }
     }
-    &.active {
-      border-bottom-color: darken(@core-color, 10%);
 
+    &.active {
       a {
-        color: darken(@core-color, 10%);
+        border-bottom-color: darken(@core-color, 10%);
+        color: darken(@core-link-color, 10%);
       }
     }
   }
@@ -71,7 +73,6 @@
     display: flex;
 
     .tab-item {
-      float: none;
       flex: 1 0 auto;
       text-align: center;
     }
@@ -79,32 +80,33 @@
 }
 // Pagination
 .pagination {
-  list-style: none;
-  margin: .5rem 0;
+  display: inline-block;
   padding: 1.2rem;
 
   .page-item {
-    float: left;
-    padding: .1rem .2rem;
-    border: .1rem solid transparent;
-    border-radius: .3rem;
+    display: inline-block;
 
+    span {
+      display: inline-block;
+      padding: .6rem .5rem;
+    }
     a {
-      display: block;
-      padding: .5rem 1.5rem;
-      color: @core-color;
+      display: inline-block;
+      padding: .6rem 1.2rem;
+      margin: 0 .1rem;
+      border-radius: .3rem;
       text-decoration: none;
 
       &:hover,
       &:focus {
-        color: darken(@core-color, 15%);
+        background-color: lighten(@core-color, 40%);
       }
     }
-    &.active {
-      background-color: @core-color;
 
+    &.active {
       a {
         color: #fff;
+        background-color: @core-color;
       }
     }
   }
