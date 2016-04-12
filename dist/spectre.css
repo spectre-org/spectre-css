@@ -1164,6 +1164,46 @@ textarea.form-input {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    margin-top: -3rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes slide-down {
+  0% {
+    margin-top: -3rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
 .badge {
   position: relative;
   margin-right: 2.4rem;
@@ -1259,110 +1299,6 @@ textarea.form-input {
   width: 1.6rem;
   height: 1.6rem;
   font-size: .8rem;
-}
-.file-icon {
-  display: inline-block;
-  width: 2.4rem;
-  height: 3.2rem;
-  background-color: transparent;
-  position: relative;
-  border-width: 0 0 2.2rem 1.4rem;
-  border-style: solid;
-  border-color: #c5c5c5;
-  border-radius: .2rem;
-  text-align: left;
-  zoom: 1;
-}
-.file-icon::before,
-.file-icon::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: '';
-  width: 1rem;
-  height: 1rem;
-  border: 0.5rem solid #c5c5c5;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  background-color: transparent;
-  z-index: 2;
-}
-.file-icon::after {
-  content: attr(data-type);
-  border-color: rgba(255, 255, 255, 0.5);
-  border-bottom-left-radius: .2rem;
-  color: #fff;
-  font-size: 1rem;
-  text-indent: -1.6rem;
-  line-height: 3.6rem;
-  z-index: 3;
-}
-.file-icon.file-icon-xs {
-  width: 1.2rem;
-  height: 1.6rem;
-  border-width: 0 0 1.2rem .8rem;
-}
-.file-icon.file-icon-xs::before,
-.file-icon.file-icon-xs::after {
-  width: .4rem;
-  height: .4rem;
-  border-width: .2rem;
-}
-.file-icon.file-icon-xs::after {
-  text-indent: -0.8rem;
-  line-height: 1.6rem;
-  font-size: .8rem;
-  border-radius: .1rem;
-  content: '--';
-}
-.file-icon.file-icon-sm {
-  width: 1.8rem;
-  height: 2.4rem;
-  border-width: 0 0 1.6rem 1rem;
-}
-.file-icon.file-icon-sm::before,
-.file-icon.file-icon-sm::after {
-  width: .8rem;
-  height: .8rem;
-  border-width: .4rem;
-}
-.file-icon.file-icon-sm::after {
-  text-indent: -1.2rem;
-  line-height: 2.6rem;
-  font-size: .8rem;
-}
-.file-icon.file-icon-lg {
-  width: 3.6rem;
-  height: 4.8rem;
-  border-width: 0 0 3.4rem 2.2rem;
-}
-.file-icon.file-icon-lg::before,
-.file-icon.file-icon-lg::after {
-  width: 1.4rem;
-  height: 1.4rem;
-  border-width: .7rem;
-}
-.file-icon.file-icon-lg::after {
-  text-indent: -2.6rem;
-  line-height: 6.2rem;
-  font-size: 1.2rem;
-}
-.file-icon.file-icon-xl {
-  width: 4.8rem;
-  height: 6.4rem;
-  border-width: 0 0 4.6rem 3rem;
-  border-radius: .3rem;
-}
-.file-icon.file-icon-xl::before,
-.file-icon.file-icon-xl::after {
-  width: 1.8rem;
-  height: 1.8rem;
-  border-width: .9rem;
-}
-.file-icon.file-icon-xl::after {
-  text-indent: -3.4rem;
-  line-height: 8.8rem;
-  font-size: 1.4rem;
 }
 .label {
   display: inline-block;
@@ -1582,26 +1518,13 @@ textarea.form-input {
   display: block;
   border-bottom: 0.1rem solid #c5c5c5;
 }
-.tab::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.tab::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .tab .tab-item {
   display: inline-block;
   margin-bottom: -0.1rem;
-  margin-right: .2rem;
-  padding: .5rem 1.5rem;
 }
 .tab .tab-item a {
   display: block;
   padding: .5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
   border-bottom: .2rem solid transparent;
   color: #333;
   text-decoration: none;
@@ -1962,44 +1885,4 @@ textarea.form-input {
   height: 1.6rem;
   -webkit-animation: loading 500ms infinite linear;
           animation: loading 500ms infinite linear;
-}
-@-webkit-keyframes loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes slide-down {
-  0% {
-    margin-top: -3rem;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
-@keyframes slide-down {
-  0% {
-    margin-top: -3rem;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
-  }
 }
