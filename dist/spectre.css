@@ -398,8 +398,13 @@ a:hover,
 a:focus {
   color: #283176;
 }
+[disabled],
+.disabled {
+  opacity: .5;
+  cursor: default;
+  pointer-events: none;
+}
 .btn .icon,
-button .icon,
 .toast .icon,
 .menu .icon {
   margin-right: .2rem;
@@ -712,11 +717,6 @@ pre code {
   color: #fff;
   border-color: #3b49af;
   background-color: #4452c0;
-}
-.btn[disabled],
-.btn .disabled {
-  opacity: .5;
-  cursor: default;
 }
 .btn.btn-primary {
   color: #fff;
@@ -1637,22 +1637,29 @@ textarea.form-input {
   text-align: center;
 }
 .pagination {
+  display: inline-block;
   padding: 1.2rem;
 }
 .pagination .page-item {
-  float: left;
-  margin-right: .2rem;
-  padding: .1rem .2rem;
+  display: inline;
 }
 .pagination .page-item span {
+  float: left;
   display: inline-block;
-  padding: .7rem .5rem;
+  padding: .5rem .5rem;
 }
 .pagination .page-item a {
-  display: block;
-  padding: .7rem 1.5rem;
+  float: left;
+  display: inline-block;
+  padding: .4rem 1rem;
+  margin: 0 .2rem;
+  border: .1rem solid transparent;
   border-radius: .3rem;
   text-decoration: none;
+}
+.pagination .page-item a:hover,
+.pagination .page-item a:focus {
+  border-color: #5764c6;
 }
 .pagination .page-item.active a {
   color: #fff;
