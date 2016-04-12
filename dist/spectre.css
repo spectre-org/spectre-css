@@ -1480,11 +1480,8 @@ textarea.form-input {
   border-bottom: 0.1rem solid #efefef;
   margin: .5rem;
 }
-.modal.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1493,13 +1490,22 @@ textarea.form-input {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
+              -ms-grid-row-align: center;
           align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  z-index: 499;
+  opacity: 0;
+}
+.modal.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1988;
+  opacity: 1;
 }
 .modal.active .modal-overlay {
   display: block;
@@ -1510,6 +1516,10 @@ textarea.form-input {
   left: 0;
   background-color: rgba(0, 0, 0, 0.75);
 }
+.modal.active .modal-container {
+  -webkit-animation: slide-down 0.216s;
+          animation: slide-down 0.216s;
+}
 .modal-container {
   display: block;
   text-align: left;
@@ -1517,7 +1527,9 @@ textarea.form-input {
   padding: 0;
   border-radius: .3rem;
   background-color: #fff;
-  z-index: 999;
+  z-index: 1988;
+  -webkit-animation: slide-up 0.216s;
+          animation: slide-up 0.216s;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .modal-container .modal-header {
@@ -1978,5 +1990,25 @@ textarea.form-input {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    margin-top: -3rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes slide-down {
+  0% {
+    margin-top: -3rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
   }
 }

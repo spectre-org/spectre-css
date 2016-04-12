@@ -1,6 +1,6 @@
 // Modals
-.modal.active {
-  display: flex;
+.modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -9,16 +9,25 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  z-index: 499;
+  opacity: 0;
 
-  .modal-overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .75);
+  &.active {
+    display: flex;
+    z-index: 1988;
+    opacity: 1;
+
+    .modal-overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, .75);
+    }
+    .modal-container {
+      animation: slide-down .216s;
+    }
   }
 }
 .modal-container {
@@ -28,7 +37,8 @@
   padding: 0;
   border-radius: .3rem;
   background-color: #fff;
-  z-index: 999;
+  z-index: 1988;
+  animation: slide-up .216s;
   .shadow;
 
   .modal-header {
