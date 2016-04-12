@@ -28,7 +28,7 @@ Spectre has 3 major parts:
 - [badges](http://picturepan2.github.io/spectre/#badges)
 - [toasts](http://picturepan2.github.io/spectre/#toasts)
 - [menus](http://picturepan2.github.io/spectre/#menus)
-- [navigation](http://picturepan2.github.io/spectre/#navigation) - breadcrumb and tabs
+- [navigation](http://picturepan2.github.io/spectre/#navigation) - breadcrumb, tabs and pagination
 - [modals](http://picturepan2.github.io/spectre/#modals) - flexible dialog prompts
 - [cards](http://picturepan2.github.io/spectre/#cards) - flexible content containers
 
