@@ -1568,19 +1568,19 @@ textarea.form-input {
 .breadcrumb {
   padding: 1.2rem;
 }
-.breadcrumb li {
+.breadcrumb .breadcrumb-item {
   display: inline-block;
   margin: 0;
 }
-.breadcrumb li a {
+.breadcrumb .breadcrumb-item a {
   text-decoration: none;
 }
-.breadcrumb li:last-child,
-.breadcrumb li:last-child a {
+.breadcrumb .breadcrumb-item:last-child,
+.breadcrumb .breadcrumb-item:last-child a {
   color: #666666;
   pointer-events: none;
 }
-.breadcrumb li:not(:last-child)::after {
+.breadcrumb .breadcrumb-item:not(:last-child)::after {
   content: "/";
   padding: 0 .4rem;
   color: #c5c5c5;
@@ -1600,7 +1600,7 @@ textarea.form-input {
   clear: both;
 }
 .tab .tab-item {
-  float: left;
+  display: inline-block;
   margin-bottom: -0.1rem;
   margin-right: .2rem;
   padding: .5rem 1.5rem;
@@ -1629,7 +1629,6 @@ textarea.form-input {
   display: flex;
 }
 .tab.tab-block .tab-item {
-  float: none;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -1641,25 +1640,22 @@ textarea.form-input {
   padding: 1.2rem;
 }
 .pagination .page-item {
-  display: inline;
+  display: inline-block;
 }
 .pagination .page-item span {
-  float: left;
   display: inline-block;
-  padding: .5rem .5rem;
+  padding: .6rem .5rem;
 }
 .pagination .page-item a {
-  float: left;
   display: inline-block;
-  padding: .4rem 1rem;
-  margin: 0 .2rem;
-  border: .1rem solid transparent;
+  padding: .6rem 1.2rem;
+  margin: 0 .1rem;
   border-radius: .3rem;
   text-decoration: none;
 }
 .pagination .page-item a:hover,
 .pagination .page-item a:focus {
-  border-color: #5764c6;
+  background-color: #eff1fa;
 }
 .pagination .page-item.active a {
   color: #fff;
