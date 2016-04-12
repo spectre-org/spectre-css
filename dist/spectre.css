@@ -1444,11 +1444,13 @@ textarea.form-input {
 }
 .menu .menu-item a:hover,
 .menu .menu-item a:focus {
-  background-color: #f4f4f4;
+  color: #5764c6;
+  background-color: #ffffff;
 }
 .menu .menu-item a:active,
 .menu .menu-item a.active {
-  background-color: #efefef;
+  color: #35419c;
+  background-color: #eff1fa;
 }
 .menu .menu-header {
   display: block;

@@ -29,11 +29,13 @@
 
       &:hover,
       &:focus {
-        background-color: lighten(@core-border-color, 2%);
+        color: @core-color;
+        background-color: lighten(@core-color, 45%);
       }
       &:active,
       &.active {
-        background-color: @core-border-color;
+        color: darken(@core-link-color, 15%);
+        background-color: lighten(@core-color, 40%);
       }
     }
   }
