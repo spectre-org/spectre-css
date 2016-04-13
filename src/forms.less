@@ -51,7 +51,7 @@
   color: @body-font-color;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  padding: .7rem .8rem;
+  padding: .5rem .8rem;
   -webkit-appearance: none;
   outline: 0;
 
@@ -60,9 +60,7 @@
   }
 
   &[disabled] {
-    opacity: .75;
     background-color: #eeeff2;
-    pointer-events: none;
   }
 
   // Input sizes
@@ -70,7 +68,6 @@
     height: 2.4rem;
     border-radius: .2rem;
     font-size: 1.2rem;
-    line-height: 1.4rem;
     padding: .4rem .6rem;
   }
 
@@ -78,7 +75,6 @@
     height: 4.2rem;
     border-radius: .4rem;
     font-size: 1.6rem;
-    line-height: 2rem;
     padding: 1rem 1.2rem;
   }
 
@@ -90,6 +86,7 @@
   // Textarea
   textarea& {
     height: auto;
+    line-height: 2rem;
   }
 
   // Form status
@@ -101,8 +98,6 @@
   &.is-danger {
     border-color: @control-color-danger;
   }
-
-  // TODO: Input with icons
 }
 // Form element: Label
 .form-label {
@@ -112,15 +107,17 @@
 }
 // Form element: Select
 .form-select {
+  appearance: none;
+
   &:not([multiple]) {
     height: 3.2rem;
-    background-color: #fff;
     font-size: 1.4rem;
-    line-height: 1.6rem;
-    padding: .7rem .8rem;
+    vertical-align: middle;
+    padding: .5rem 2.4rem .5rem .8rem;
     border: .1rem solid @control-color;
     border-radius: .3rem;
     outline: 0;
+    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
   }
 
   &:focus {
@@ -132,21 +129,27 @@
     height: 2.4rem;
     border-radius: .2rem;
     font-size: 1.2rem;
-    line-height: 1.4rem;
     padding: .4rem .6rem;
   }
 }
 
 // Form element: Checkbox and radio
 .form-checkbox,
+.form-radio,
+.form-switch {
+  input {
+    display: none;
+  }
+}
+.form-checkbox,
 .form-radio {
   line-height: 1.8rem;
-  padding: .3rem 1.8rem;
+  padding: .3rem 2rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
 
-  input {
+  .form-icon {
     font-size: 1.4rem;
     line-height: 2.4rem;
     vertical-align: top;
@@ -158,23 +161,22 @@
     position: absolute;
     top: .5rem;
     left: 0;
-    cursor: pointer;
     outline: none;
-    -webkit-appearance: none;
-
-    &:hover {
-      border-color: darken(@control-color, 15%);
-    }
-    &:checked {
-      background-color: @core-color;
-      border-color: @core-color;
-    }
+  }
+  &:hover .form-icon {
+    border-color: darken(@control-color, 15%);
+  }
+  input:checked + .form-icon {
+    background-color: @core-color;
+    border-color: @core-color;
   }
 }
-.form-checkbox input {
-  border-radius: .2rem;
+.form-checkbox {
+  .form-icon {
+    border-radius: .2rem;
+  }
 
-  &:checked {
+  input:checked + .form-icon {
     &::after {
       width: .6rem;
       height: 1rem;
@@ -191,10 +193,12 @@
     }
   }
 }
-.form-radio input {
-  border-radius: .7rem;
+.form-radio {
+  .form-icon {
+    border-radius: .7rem;
+  }
 
-  &:checked {
+  input:checked + .form-icon {
     &::after {
       width: .4rem;
       height: .4rem;
@@ -212,12 +216,12 @@
 // Form element: Switch
 .form-switch {
   line-height: 1.8rem;
-  padding: .3rem 1.8rem .3rem 3.4rem;
+  padding: .3rem 2rem .3rem 3.6rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
 
-  input {
+  .form-icon {
     line-height: 2.4rem;
     vertical-align: top;
     border: .1rem solid @control-color;
@@ -230,9 +234,7 @@
     position: absolute;
     top: .3rem;
     left: 0;
-    cursor: pointer;
     outline: none;
-    -webkit-appearance: none;
 
     &::after {
       content: "";
@@ -246,15 +248,14 @@
       background-color: #fff;
       transition: left .15s ease;
     }
+  }
 
-    &:checked {
-      background-color: @core-color;
-      border-color: @core-color;
+  input:checked + .form-icon {
+    background-color: @core-color;
+    border-color: @core-color;
 
-      &::after {
-        left: 1.2rem;
-        background-color: #fff;
-      }
+    &::after {
+      left: 1.2rem;
     }
   }
 }
