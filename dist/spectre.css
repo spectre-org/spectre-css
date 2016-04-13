@@ -887,7 +887,7 @@ pre code {
   color: #333;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  padding: .7rem .8rem;
+  padding: .5rem .8rem;
   -webkit-appearance: none;
   outline: 0;
 }
@@ -895,22 +895,18 @@ pre code {
   border-color: #5764c6;
 }
 .form-input[disabled] {
-  opacity: .75;
   background-color: #eeeff2;
-  pointer-events: none;
 }
 .form-input.input-sm {
   height: 2.4rem;
   border-radius: .2rem;
   font-size: 1.2rem;
-  line-height: 1.4rem;
   padding: .4rem .6rem;
 }
 .form-input.input-lg {
   height: 4.2rem;
   border-radius: .4rem;
   font-size: 1.6rem;
-  line-height: 2rem;
   padding: 1rem 1.2rem;
 }
 .form-input.input-inline {
@@ -919,6 +915,7 @@ pre code {
 }
 textarea.form-input {
   height: auto;
+  line-height: 2rem;
 }
 .has-success .form-input,
 .form-input.is-success {
@@ -933,15 +930,20 @@ textarea.form-input {
   margin-bottom: .5rem;
   line-height: 1.6rem;
 }
+.form-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 .form-select:not([multiple]) {
   height: 3.2rem;
-  background-color: #fff;
   font-size: 1.4rem;
-  line-height: 1.6rem;
-  padding: .7rem .8rem;
+  vertical-align: middle;
+  padding: .5rem 2.4rem .5rem .8rem;
   border: 0.1rem solid #c5c5c5;
   border-radius: .3rem;
   outline: 0;
+  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right 0.75rem center / 0.8rem 1rem;
 }
 .form-select:focus {
   border-color: #5764c6;
@@ -950,7 +952,6 @@ textarea.form-input {
   height: 2.4rem;
   border-radius: .2rem;
   font-size: 1.2rem;
-  line-height: 1.4rem;
   padding: .4rem .6rem;
 }
 .form-checkbox input,
