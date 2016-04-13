@@ -139,14 +139,21 @@
 
 // Form element: Checkbox and radio
 .form-checkbox,
+.form-radio,
+.form-switch {
+  input {
+    display: none;
+  }
+}
+.form-checkbox,
 .form-radio {
   line-height: 1.8rem;
-  padding: .3rem 1.8rem;
+  padding: .3rem 2rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
 
-  input {
+  .form-icon {
     font-size: 1.4rem;
     line-height: 2.4rem;
     vertical-align: top;
@@ -161,20 +168,21 @@
     cursor: pointer;
     outline: none;
     -webkit-appearance: none;
-
-    &:hover {
-      border-color: darken(@control-color, 15%);
-    }
-    &:checked {
-      background-color: @core-color;
-      border-color: @core-color;
-    }
+  }
+  &:hover .form-icon {
+    border-color: darken(@control-color, 15%);
+  }
+  input:checked + .form-icon {
+    background-color: @core-color;
+    border-color: @core-color;
   }
 }
-.form-checkbox input {
-  border-radius: .2rem;
+.form-checkbox {
+  .form-icon {
+    border-radius: .2rem;
+  }
 
-  &:checked {
+  input:checked + .form-icon {
     &::after {
       width: .6rem;
       height: 1rem;
@@ -191,10 +199,12 @@
     }
   }
 }
-.form-radio input {
-  border-radius: .7rem;
+.form-radio {
+  .form-icon {
+    border-radius: .7rem;
+  }
 
-  &:checked {
+  input:checked + .form-icon {
     &::after {
       width: .4rem;
       height: .4rem;

@@ -953,16 +953,21 @@ textarea.form-input {
   line-height: 1.4rem;
   padding: .4rem .6rem;
 }
+.form-checkbox input,
+.form-radio input,
+.form-switch input {
+  display: none;
+}
 .form-checkbox,
 .form-radio {
   line-height: 1.8rem;
-  padding: .3rem 1.8rem;
+  padding: .3rem 2rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
 }
-.form-checkbox input,
-.form-radio input {
+.form-checkbox .form-icon,
+.form-radio .form-icon {
   font-size: 1.4rem;
   line-height: 2.4rem;
   vertical-align: top;
@@ -978,19 +983,19 @@ textarea.form-input {
   outline: none;
   -webkit-appearance: none;
 }
-.form-checkbox input:hover,
-.form-radio input:hover {
+.form-checkbox:hover .form-icon,
+.form-radio:hover .form-icon {
   border-color: #9f9f9f;
 }
-.form-checkbox input:checked,
-.form-radio input:checked {
+.form-checkbox input:checked + .form-icon,
+.form-radio input:checked + .form-icon {
   background-color: #5764c6;
   border-color: #5764c6;
 }
-.form-checkbox input {
+.form-checkbox .form-icon {
   border-radius: .2rem;
 }
-.form-checkbox input:checked::after {
+.form-checkbox input:checked + .form-icon::after {
   width: .6rem;
   height: 1rem;
   content: "";
@@ -1005,10 +1010,10 @@ textarea.form-input {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.form-radio input {
+.form-radio .form-icon {
   border-radius: .7rem;
 }
-.form-radio input:checked::after {
+.form-radio input:checked + .form-icon::after {
   width: .4rem;
   height: .4rem;
   content: "";
