@@ -373,7 +373,7 @@ html {
 }
 body {
   color: #333;
-  font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", WenQuanYi Micro Hei, sans-serif;
+  font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", sans-serif;
   font-size: 1.4rem;
   background-color: #fff;
 }
