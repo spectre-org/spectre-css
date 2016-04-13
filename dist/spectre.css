@@ -979,9 +979,7 @@ textarea.form-input {
   position: absolute;
   top: .5rem;
   left: 0;
-  cursor: pointer;
   outline: none;
-  -webkit-appearance: none;
 }
 .form-checkbox:hover .form-icon,
 .form-radio:hover .form-icon {
@@ -1027,12 +1025,12 @@ textarea.form-input {
 }
 .form-switch {
   line-height: 1.8rem;
-  padding: .3rem 1.8rem .3rem 3.4rem;
+  padding: .3rem 2rem .3rem 3.6rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
 }
-.form-switch input {
+.form-switch .form-icon {
   line-height: 2.4rem;
   vertical-align: top;
   border: 0.1rem solid #c5c5c5;
@@ -1045,11 +1043,9 @@ textarea.form-input {
   position: absolute;
   top: .3rem;
   left: 0;
-  cursor: pointer;
   outline: none;
-  -webkit-appearance: none;
 }
-.form-switch input::after {
+.form-switch .form-icon::after {
   content: "";
   display: block;
   width: 1.6rem;
@@ -1062,13 +1058,12 @@ textarea.form-input {
   -webkit-transition: left .15s ease;
   transition: left .15s ease;
 }
-.form-switch input:checked {
+.form-switch input:checked + .form-icon {
   background-color: #5764c6;
   border-color: #5764c6;
 }
-.form-switch input:checked::after {
+.form-switch input:checked + .form-icon::after {
   left: 1.2rem;
-  background-color: #fff;
 }
 .input-group {
   display: -webkit-box;

@@ -165,9 +165,7 @@
     position: absolute;
     top: .5rem;
     left: 0;
-    cursor: pointer;
     outline: none;
-    -webkit-appearance: none;
   }
   &:hover .form-icon {
     border-color: darken(@control-color, 15%);
@@ -222,12 +220,12 @@
 // Form element: Switch
 .form-switch {
   line-height: 1.8rem;
-  padding: .3rem 1.8rem .3rem 3.4rem;
+  padding: .3rem 2rem .3rem 3.6rem;
   cursor: pointer;
   display: inline-block;
   position: relative;
 
-  input {
+  .form-icon {
     line-height: 2.4rem;
     vertical-align: top;
     border: .1rem solid @control-color;
@@ -240,9 +238,7 @@
     position: absolute;
     top: .3rem;
     left: 0;
-    cursor: pointer;
     outline: none;
-    -webkit-appearance: none;
 
     &::after {
       content: "";
@@ -256,15 +252,14 @@
       background-color: #fff;
       transition: left .15s ease;
     }
+  }
+  
+  input:checked + .form-icon {
+    background-color: @core-color;
+    border-color: @core-color;
 
-    &:checked {
-      background-color: @core-color;
-      border-color: @core-color;
-
-      &::after {
-        left: 1.2rem;
-        background-color: #fff;
-      }
+    &::after {
+      left: 1.2rem;
     }
   }
 }
