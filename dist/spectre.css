@@ -672,7 +672,7 @@ pre code {
 .table th {
   border-color: #c9c9c9;
 }
-.table tr.selected {
+.table .selected {
   background-color: #f4f4f4;
 }
 .btn {
