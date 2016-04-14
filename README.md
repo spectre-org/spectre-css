@@ -3,16 +3,20 @@ Spectre.css is a lightweight, responsive and modern CSS framework for faster and
 
 - lightweight and clean starting point for your project and prototype
 - flexbox, responsive and mobile-friendly layout
+- carefully designed elements
+- optimized for asian fonts
 - built in useful components and utilities
+- patterns and html templates (soon)
+- email templates (soon)
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 
 Read [the documentation](http://picturepan2.github.io/spectre/) to learn more.
 
-Spectre has 3 major parts:
+Spectre includes 3 parts:
 #### Elements
 
-- [typography](http://picturepan2.github.io/spectre/#typography) - headings, paragraphs, blockquote, lists and code elements
+- [typography](http://picturepan2.github.io/spectre/#typography) - headings, paragraphs, blockquote, lists and code elements, optimized for asian fonts
 - [layout](http://picturepan2.github.io/spectre/#layout) - flexbox based responsive layout system
 - [tables](http://picturepan2.github.io/spectre/#tables)
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
