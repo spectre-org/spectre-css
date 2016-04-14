@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="https://github.com/picturepan2/spectre" />
     <title>Spectre.css: a lightweight, responsive and modern CSS framework</title>
     <link rel="stylesheet" href="dist/spectre.css" />
     <link rel="stylesheet" href="demo/font/style.css" />
     <style>
-        header > h4 {
+        header > h4,
+        header > h5 {
             padding-top: 4rem;
             margin-top: 4rem;
             margin-bottom: 2rem;
@@ -179,7 +181,7 @@
             <header class="text-center"><h5>blockquote</h5></header>
             <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <small>- Source</small>
+                <span class="blockquote-source">- Source</span>
             </blockquote>
 
             <!-- blockquote example -->
@@ -528,6 +530,12 @@
                             <label class="form-radio">
                                 <input type="radio" name="gender" checked />
                                 <i class="form-icon"></i> Female
+                            </label>
+                        </div>
+                        <div class="form-group hide">
+                            <label class="form-file">
+                                <input type="file" id="file">
+                                <span class="file-custom"></span>
                             </label>
                         </div>
                         <div class="form-group">
@@ -962,22 +970,6 @@
 </pre>
 
         </section>
-
-        <!--<section id="fileicons" class="grid-960">
-            <header class="text-center"><h4>file icons</h4></header>
-            <section class="notes">
-                <p><strong>File icons</strong> are written entirely in CSS. More detail is coming soon. </p>
-            </section>
-            <div class="columns">
-                <div class="column">
-                    <div class="file-icon file-icon-xl" data-type="docx"></div>
-                    <div class="file-icon file-icon-lg" data-type="pptx"></div>
-                    <div class="file-icon" data-type="xlsx"></div>
-                    <div class="file-icon file-icon-sm" data-type="pdf"></div>
-                    <div class="file-icon file-icon-xs" data-type="png"></div>
-                </div>
-            </div>
-        </section>-->
 
         <section id="tooltips" class="grid-960">
             <header class="text-center"><h4>tooltips</h4></header>
@@ -1461,6 +1453,11 @@
                             </a>
                         </li>
                         <li class="page-item">
+                            <a href="#pagination">
+                                3
+                            </a>
+                        </li>
+                        <li class="page-item">
                             <span>...</span>
                         </li>
                         <li class="page-item">
@@ -1496,6 +1493,11 @@
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
             2
+        &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+            3
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
@@ -1895,7 +1897,7 @@
             <!-- loading example -->
 <pre class="code lang-html">
 <span class="com">&lt;!-- loading element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;&quot;</span>&gt;Loading&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 </pre>
 
         </section>
@@ -1903,7 +1905,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.7
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.9
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>
