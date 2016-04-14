@@ -35,7 +35,7 @@ And include it in your website or Web app &lt;head&gt; part.
 - [tables](http://picturepan2.github.io/spectre/#tables)
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
 - [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
-- [images](http://picturepan2.github.io/spectre/#images) - responsive image
+- [media](http://picturepan2.github.io/spectre/#media) - responsive image and video class
 
 #### Components
 
