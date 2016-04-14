@@ -948,6 +948,9 @@ textarea.form-input {
 .form-select:focus {
   border-color: #5764c6;
 }
+.form-select select::-ms-expand {
+  display: none;
+}
 .form-select.select-sm {
   height: 2.4rem;
   border-radius: .2rem;
