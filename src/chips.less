@@ -1,7 +1,8 @@
 // Chips
 .chip {
   display: flex;
-  padding: .8rem;
+  padding: .8rem 1rem;
+  border: .1rem solid transparent;
   border-radius: .3rem;
   margin: 0;
   list-style: none;
@@ -50,18 +51,16 @@
   font-size: 1.2rem;
   align-items: center;
   background-color: @core-border-color;
-  border: .1rem solid darken(@core-border-color, 2%);
   text-decoration: none;
-  .text-ellipsis;
 
   &:hover,
   &:focus {
-    background-color: darken(@core-border-color, 4%);
-    border-color: darken(@core-border-color, 6%);
+    background-color: darken(@core-border-color, 3%);
   }
 
   .chip-name {
     margin-left: .4rem;
+    .text-ellipsis;
   }
   .avatar {
     width: 1.6rem;
@@ -80,7 +79,7 @@
     max-width: 100%;
     min-height: 3.2rem;
     background-color: #fff;
-    padding: .3rem .3rem 0 .3rem;
+    padding: .3rem .5rem 0 .5rem;
     border: .1rem solid @control-color;
     border-radius: .3rem;
     color: @body-font-color;
@@ -112,8 +111,8 @@
     display: block;
     width: 100%;
     height: auto;
-    padding: .3rem;
-    margin: -.4rem 0 0 0;
+    padding: .3rem 0 .5rem 0;
+    margin: -.3rem 0 0 0;
     border: .1rem solid @control-color;
     border-top: transparent;
     border-bottom-left-radius: .3rem;
@@ -124,14 +123,17 @@
       content: '';
       display: block;
       width: 100%;
-      height: .5rem;
+      height: 0;
       border-top: .1rem solid @core-border-color;
     }
 
     .chip {
+      border-radius: 0;
+      background-color: lighten(@core-border-color, 10%);
+
       &:hover,
       &.selected {
-        background-color: lighten(@control-color, 20%);
+        background-color: lighten(@core-border-color, 2%);
       }
     }
   }

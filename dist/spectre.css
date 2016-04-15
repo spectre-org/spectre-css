@@ -1300,7 +1300,8 @@ textarea.form-input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: .8rem;
+  padding: .8rem 1rem;
+  border: .1rem solid transparent;
   border-radius: .3rem;
   margin: 0;
   list-style: none;
@@ -1366,19 +1367,17 @@ textarea.form-input {
       -ms-flex-align: center;
           align-items: center;
   background-color: #efefef;
-  border: 0.1rem solid #eaeaea;
   text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .chip-sm:hover,
 .chip-sm:focus {
-  background-color: #e5e5e5;
-  border-color: #e0e0e0;
+  background-color: #e7e7e7;
 }
 .chip-sm .chip-name {
   margin-left: .4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .chip-sm .avatar {
   width: 1.6rem;
@@ -1394,7 +1393,7 @@ textarea.form-input {
   max-width: 100%;
   min-height: 3.2rem;
   background-color: #fff;
-  padding: .3rem .3rem 0 .3rem;
+  padding: .3rem .5rem 0 .5rem;
   border: 0.1rem solid #c5c5c5;
   border-radius: .3rem;
   color: #333;
@@ -1423,8 +1422,8 @@ textarea.form-input {
   display: block;
   width: 100%;
   height: auto;
-  padding: .3rem;
-  margin: -0.4rem 0 0 0;
+  padding: .3rem 0 .5rem 0;
+  margin: -0.3rem 0 0 0;
   border: 0.1rem solid #c5c5c5;
   border-top: transparent;
   border-bottom-left-radius: .3rem;
@@ -1435,12 +1434,16 @@ textarea.form-input {
   content: '';
   display: block;
   width: 100%;
-  height: .5rem;
+  height: 0;
   border-top: 0.1rem solid #efefef;
+}
+.form-autocomplete .form-autocomplete-list .chip {
+  border-radius: 0;
+  background-color: #ffffff;
 }
 .form-autocomplete .form-autocomplete-list .chip:hover,
 .form-autocomplete .form-autocomplete-list .chip.selected {
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
 }
 .label {
   display: inline-block;
