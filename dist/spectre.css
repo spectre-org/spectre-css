@@ -1296,10 +1296,55 @@ textarea.form-input {
   color: #b3b3b3;
 }
 .chip {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5rem;
+  border-radius: .3rem;
+  margin: 0;
+  list-style: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+}
+.chip:hover,
+.chip.selected {
+  background-color: #f8f8f8;
+}
+.chip .chip-list-icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.chip .chip-list-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chip .chip-list-action {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.chip-sm {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: auto;
+  height: 2.4rem;
   padding: .3rem .6rem;
   border-radius: .3rem;
   font-size: 1.2rem;
@@ -1309,19 +1354,74 @@ textarea.form-input {
       -ms-flex-align: center;
           align-items: center;
   background-color: #efefef;
-  border: 0.1rem solid #e2e2e2;
+  border: 0.1rem solid #eaeaea;
+  text-decoration: none;
 }
-.chip:hover,
-.chip:focus {
-  background-color: #eaeaea;
+.chip-sm:hover,
+.chip-sm:focus {
+  background-color: #e5e5e5;
+  border-color: #e0e0e0;
 }
-.chip .chip-name {
+.chip-sm .chip-name {
   margin-left: .4rem;
 }
-.chip .avatar {
+.chip-sm .avatar {
   width: 1.6rem;
   height: 1.6rem;
   font-size: .8rem;
+}
+.form-autocomplete {
+  position: relative;
+}
+.form-autocomplete .form-autocomplete-input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 3.2rem;
+  background-color: #fff;
+  padding: .3rem .3rem 0 .3rem;
+  border: 0.1rem solid #c5c5c5;
+  border-radius: .3rem;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  outline: 0;
+}
+.form-autocomplete .form-autocomplete-input .chip {
+  margin-bottom: .3rem;
+}
+.form-autocomplete .form-autocomplete-input .form-input {
+  display: inline-block;
+  border-color: transparent;
+  background-color: #fff;
+  width: auto;
+  height: 2.4rem;
+  padding: .3rem;
+  margin-bottom: .3rem;
+  vertical-align: top;
+}
+.form-autocomplete .form-autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1988;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: .3rem;
+  margin: -0.4rem 0 0 0;
+  border: 0.1rem solid #c5c5c5;
+  border-top: transparent;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  background-color: #fff;
+}
+.form-autocomplete .form-autocomplete-list::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: .5rem;
+  border-top: 0.1rem solid #efefef;
 }
 .label {
   display: inline-block;
@@ -1395,7 +1495,7 @@ textarea.form-input {
 .menu .menu-item a:hover,
 .menu .menu-item a:focus {
   color: #5764c6;
-  background-color: #ffffff;
+  background-color: #eff1fa;
 }
 .menu .menu-item a:active,
 .menu .menu-item a.active {

@@ -18,9 +18,9 @@ There are 3 ways to get started with Spectre CSS framework in your projects. You
 ##### Install manually
 Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/dist).
 ##### Install with NPM
-`$ npm install spectre.css`
+`$ npm install spectre.css --save`
 ##### Install with Bower
-`$ bower install spectre.css`
+`$ bower install spectre.css --save`
 
 And include it in your website or Web app &lt;head&gt; part.
 
@@ -32,7 +32,7 @@ And include it in your website or Web app &lt;head&gt; part.
 
 - [typography](http://picturepan2.github.io/spectre/#typography) - headings, paragraphs, blockquote, lists and code elements, optimized for asian fonts
 - [layout](http://picturepan2.github.io/spectre/#layout) - flexbox based responsive layout system
-- [tables](http://picturepan2.github.io/spectre/#tables)
+- [tables](http://picturepan2.github.io/spectre/#tables) - organize and display data
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
 - [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
 - [media](http://picturepan2.github.io/spectre/#media) - responsive image and video class
