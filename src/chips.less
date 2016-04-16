@@ -1,23 +1,24 @@
 // Chips
 .chip {
   display: flex;
-  padding: .8rem 1rem;
+  padding: .3rem .8rem;
   border: .1rem solid transparent;
   border-radius: .3rem;
   margin: 0;
   list-style: none;
   align-items: center;
   align-content: space-around;
+  color: #666;
 
-  .chip-list-icon {
+  .chip-icon {
     flex: 0 0 auto;
   }
-  .chip-list-content {
+  .chip-content {
     flex: 1 1 auto;
     padding: 0 1rem;
     .text-ellipsis;
   }
-  .chip-list-action {
+  .chip-action {
     flex: 0 0 auto;
 
     .btn {
@@ -51,91 +52,42 @@
   padding: .3rem .6rem;
   border-radius: .3rem;
   font-size: 1.2rem;
-  background-color: @core-border-color;
+  background-color: lighten(@core-color, 40%);
+  color: #666;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    background-color: darken(@core-border-color, 3%);
+    background-color: lighten(@core-color, 38%);
+  }
+
+  .btn {
+    &::before,
+    &::after {
+      background-color: darken(@core-color, 10%);
+    }
+  }
+
+  &.selected {
+    background-color: @core-color;
+    color: #fff;
+
+    .btn {
+      &::before,
+      &::after {
+        background-color: lighten(@core-color, 40%);
+      }
+    }
   }
 
   .chip-name {
     margin-left: .4rem;
     .text-ellipsis;
   }
+
   .avatar {
     width: 1.6rem;
     height: 1.6rem;
     font-size: .8rem;
-  }
-}
-
-// Autocomplete
-.form-autocomplete {
-  position: relative;
-
-  .form-autocomplete-input {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    min-height: 3.2rem;
-    background-color: #fff;
-    padding: .3rem .5rem 0 .5rem;
-    border: .1rem solid @control-color;
-    border-radius: .3rem;
-    color: @body-font-color;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    outline: 0;
-
-    .chip-sm {
-      margin-bottom: .3rem;
-    }
-
-    .form-input {
-      display: inline-block;
-      border-color: transparent;
-      background-color: #fff;
-      width: auto;
-      height: 2.4rem;
-      padding: .3rem;
-      margin-bottom: .3rem;
-      vertical-align: top;
-    }
-  }
-
-  .form-autocomplete-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1988;
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: .3rem 0 .5rem 0;
-    margin: -.3rem 0 0 0;
-    border: .1rem solid @control-color;
-    border-top: transparent;
-    border-bottom-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    background-color: #fff;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 0;
-      border-top: .1rem solid @core-border-color;
-    }
-
-    .chip {
-      border-radius: 0;
-      background-color: lighten(@core-border-color, 10%);
-
-      &:hover,
-      &.selected {
-        background-color: lighten(@core-border-color, 2%);
-      }
-    }
   }
 }
