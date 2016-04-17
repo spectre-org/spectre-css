@@ -71,8 +71,8 @@
                     <li>flexbox, responsive and mobile-friendly layout</li>
                     <li>carefully designed elements</li>
                     <li>built in useful components and utilities</li>
-                    <li>patterns and html templates (soon)</li>
-                    <li>email templates (soon)</li>
+                    <li>patterns and html templates <span class="label label-success">soon</span></li>
+                    <li>email templates <span class="label label-success">soon</span></li>
                 </ul>
             </section>
             <section class="notes text-center">
@@ -89,7 +89,7 @@
             <section class="notes">
                 <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
                 <h5>Install manually</h5>
-                <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 25KB):</p>
+                <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 28KB):</p>
                 <p><a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
                 <h5>Install with NPM</h5>
                 <!-- install with npm example -->
@@ -828,6 +828,7 @@
                 <div class="btn-group">
                     <a href="#avatars" class="btn btn-primary">avatars</a>
                     <a href="#chips" class="btn btn-primary">chips</a>
+                    <a href="#autocomplete" class="btn btn-primary">autocomplete</a>
                     <a href="#tooltips" class="btn btn-primary">tooltips</a>
                     <a href="#labels" class="btn btn-primary">labels</a>
                     <a href="#badges" class="btn btn-primary">badges</a>
@@ -923,63 +924,249 @@
             </section>
             <div class="columns">
                 <div class="column">
-                    <div class="chip">
+                    <div class="chip-sm">
                         <span class="chip-name">Crime</span>
                         <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip">
+                    <div class="chip-sm">
                         <span class="icon icon-favorite_border"></span>
                         <span class="chip-name">Drama</span>
                         <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip">
+                    <div class="chip-sm">
                         <span class="chip-name">Biography</span>
                         <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip">
+                    <div class="chip-sm">
                         <span class="chip-name">Mystery</span>
                         <button class="btn btn-clear"></button>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="chip">
+                    <div class="chip-sm">
                         <img src="demo/img/avatar-1.png" class="avatar" />
-                        <span class="chip-name">Yan Zhu</span>
+                        <span class="chip-name">Tony Stark</span>
                         <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip">
+                    <div class="chip-sm">
                         <img src="demo/img/avatar-2.png" class="avatar" />
-                        <span class="chip-name">Yan Zhu</span>
+                        <span class="chip-name">Thor Odinson</span>
                         <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip">
+                    <div class="chip-sm">
                         <img src="demo/img/avatar-4.png" class="avatar" />
-                        <span class="chip-name">Yan Zhu</span>
+                        <span class="chip-name">Steve Rogers</span>
                         <button class="btn btn-clear"></button>
                     </div>
                 </div>
             </div>
+            <!-- <div class="columns">
+                <div class="column">
+                    <div class="chip">
+                        <div class="chip-list-icon">
+                            <img src="demo/img/avatar-1.png" class="avatar" />
+                        </div>
+                        <div class="chip-list-content">
+                            Yan Zhu
+                        </div>
+                        <div class="chip-list-action">
+                            <button class="btn">
+                                <i class="icon icon-message"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+
+                </div>
+            </div> -->
+
             <section class="notes">
                 <p>Add a container element with the class <code class="label">chip</code>. And add child text elements with <code class="label">chip-name</code> or icons with  <code class="label">icon</code>.</p>
             </section>
 
             <!-- chips example -->
 <pre class="code lang-html">
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Crime&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-favorite_border&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Drama&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
     &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Yan Zhu&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="autocomplete" class="grid-960">
+            <header class="text-center"><h4>autocomplete</h4></header>
+            <section class="notes">
+                <p><strong>Autocomplete</strong> form component provides suggestions while you type. It is often used for tags and contacts input. </p>
+            </section>
+            <div class="columns">
+                <div class="column col-6">
+                    <div class="form-group">
+                        <div class="form-autocomplete">
+                            <div class="form-autocomplete-input">
+                                <div class="chip-sm">
+                                    <img src="demo/img/avatar-1.png" class="avatar" />
+                                    <span class="chip-name">Tony Stark</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <img src="demo/img/avatar-2.png" class="avatar" />
+                                    <span class="chip-name">Thor Odinson</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <img src="demo/img/avatar-4.png" class="avatar" />
+                                    <span class="chip-name">Steve Rogers</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <img src="demo/img/avatar-1.png" class="avatar" />
+                                    <span class="chip-name">Bruce Banner</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm selected">
+                                    <img src="demo/img/avatar-2.png" class="avatar" />
+                                    <span class="chip-name">Natasha Romanoff</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <input class="form-input" type="text" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-autocomplete">
+                            <div class="form-autocomplete-input">
+                                <div class="chip-sm">
+                                    <span class="chip-name">Tony Stark</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <span class="chip-name">Thor Odinson</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <span class="chip-name">Steve Rogers</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <span class="chip-name">Bruce Banner</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm selected">
+                                    <span class="chip-name">Natasha Romanoff</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <input class="form-input" type="text" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-6">
+                    <div class="form-group">
+                        <div class="form-autocomplete">
+                            <div class="form-autocomplete-input">
+                                <div class="chip-sm">
+                                    <img src="demo/img/avatar-1.png" class="avatar" />
+                                    <span class="chip-name">Tony Stark</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <div class="chip-sm">
+                                    <img src="demo/img/avatar-2.png" class="avatar" />
+                                    <span class="chip-name">Thor Odinson</span>
+                                    <button class="btn btn-clear"></button>
+                                </div>
+                                <input class="form-input" type="text" placeholder="typing here" />
+                            </div>
+                            <ul class="form-autocomplete-list">
+                                <li class="chip hand">
+                                    <div class="chip-icon">
+                                        <img src="demo/img/avatar-4.png" class="avatar" />
+                                    </div>
+                                    <div class="chip-content">
+                                        Steve Rogers
+                                    </div>
+                                    <div class="chip-action">
+
+                                    </div>
+                                </li>
+                                <li class="chip hand">
+                                    <div class="chip-icon">
+                                        <img src="demo/img/avatar-2.png" class="avatar" />
+                                    </div>
+                                    <div class="chip-content">
+                                        Yan Zhu
+                                    </div>
+                                    <div class="chip-action">
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
+                <p>Add a container element with the class <code class="label">form-autocomplete</code>. There are 2 parts of it, one is  <code class="label">form-autocomplete-input</code>, another is <code class="label">form-autocomplete-list</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below. </p>
+            </section>
+
+            <!-- autocomplete example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
+    <span class="com">&lt;!-- autocomplete input container --&gt;</span>
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input&quot;</span>&gt;
+        <span class="com">&lt;!-- autocomplete chips --&gt;</span>
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
+            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Yan Zhu&lt;<span class="tag">/span</span>&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm selected&quot;</span>&gt;
+            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-2.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Yan Zhu&lt;<span class="tag">/span</span>&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
+        &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span> /&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- autocomplete suggestion list --&gt;</span>
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-list&quot;</span>&gt;
+        <span class="com">&lt;!-- autocomplete list chips --&gt;</span>
+        &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;chip hand&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
+                &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+            &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+                Steve Rogers
+            &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-action&quot;</span>&gt;
+                &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;&lt;<span class="tag">/button</span>&gt;
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/li</span>&gt;
+        &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;chip hand&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
+                &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+            &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+                Yan Zhu
+            &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-action&quot;</span>&gt;
+                &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;&lt;<span class="tag">/button</span>&gt;
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">/ul</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </pre>
 
@@ -1919,7 +2106,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.9
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.10
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

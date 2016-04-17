@@ -3,7 +3,7 @@
   display: block;
   text-align: left;
   margin: 0;
-  padding: 1rem;
+  padding: .5rem;
   border-radius: .3rem;
   background-color: #fff;
   z-index: 999;
@@ -12,7 +12,7 @@
   .menu-item {
     display: block;
     padding: .2rem 1rem;
-    margin-top: 0;
+    margin-top: .1rem;
     border-radius: .3rem;
     color: @body-font-color;
     line-height: 2.4rem;
@@ -30,11 +30,10 @@
       &:hover,
       &:focus {
         color: @core-link-color;
-        background-color: lighten(@core-color, 45%);
       }
       &:active,
       &.active {
-        color: darken(@core-link-color, 15%);
+        color: darken(@core-link-color, 5%);
         background-color: lighten(@core-color, 40%);
       }
     }

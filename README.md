@@ -18,9 +18,9 @@ There are 3 ways to get started with Spectre CSS framework in your projects. You
 ##### Install manually
 Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/dist).
 ##### Install with NPM
-`$ npm install spectre.css`
+`$ npm install spectre.css --save`
 ##### Install with Bower
-`$ bower install spectre.css`
+`$ bower install spectre.css --save`
 
 And include it in your website or Web app &lt;head&gt; part.
 
@@ -32,7 +32,7 @@ And include it in your website or Web app &lt;head&gt; part.
 
 - [typography](http://picturepan2.github.io/spectre/#typography) - headings, paragraphs, blockquote, lists and code elements, optimized for asian fonts
 - [layout](http://picturepan2.github.io/spectre/#layout) - flexbox based responsive layout system
-- [tables](http://picturepan2.github.io/spectre/#tables)
+- [tables](http://picturepan2.github.io/spectre/#tables) - organize and display data
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
 - [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
 - [media](http://picturepan2.github.io/spectre/#media) - responsive image and video class
@@ -41,11 +41,12 @@ And include it in your website or Web app &lt;head&gt; part.
 
 - [avatars](http://picturepan2.github.io/spectre/#avatars) - user profile pictures or name initials rendered avatar
 - [chips](http://picturepan2.github.io/spectre/#chips) - complex entities in small blocks
+- [autocomplete](http://picturepan2.github.io/spectre/#autocomplete) - form component provides suggestions while you type
 - [tooltips](http://picturepan2.github.io/spectre/#tooltips) - simple tooltip built entirely in CSS
-- [labels](http://picturepan2.github.io/spectre/#labels)
-- [badges](http://picturepan2.github.io/spectre/#badges)
+- [labels](http://picturepan2.github.io/spectre/#labels) - formatted text tags for highlighted, informative information
+- [badges](http://picturepan2.github.io/spectre/#badges) - unread number indicators
 - [toasts](http://picturepan2.github.io/spectre/#toasts)
-- [menus](http://picturepan2.github.io/spectre/#menus)
+- [menus](http://picturepan2.github.io/spectre/#menus) - list of links or buttons for actions and navigation
 - [navigation](http://picturepan2.github.io/spectre/#navigation) - breadcrumb, tabs and pagination
 - [modals](http://picturepan2.github.io/spectre/#modals) - flexible dialog prompts
 - [cards](http://picturepan2.github.io/spectre/#cards) - flexible content containers

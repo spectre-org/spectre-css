@@ -792,10 +792,9 @@ pre code {
   border: 0;
   border-radius: .7rem;
   vertical-align: top;
+  position: relative;
   background-color: transparent;
   opacity: .35;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 .btn.btn-clear:hover {
   opacity: .75;
@@ -808,6 +807,8 @@ pre code {
   top: 50%;
   left: 50%;
   background-color: #333;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .btn.btn-clear::before {
   width: 1rem;
@@ -1230,6 +1231,58 @@ textarea.form-input {
     opacity: 1;
   }
 }
+.form-autocomplete {
+  position: relative;
+}
+.form-autocomplete .form-autocomplete-input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 3.2rem;
+  background-color: #fff;
+  padding: .3rem .5rem 0 .5rem;
+  border: 0.1rem solid #c5c5c5;
+  border-radius: .3rem;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  outline: 0;
+}
+.form-autocomplete .form-autocomplete-input .chip-sm {
+  margin-bottom: .3rem;
+}
+.form-autocomplete .form-autocomplete-input .form-input {
+  display: inline-block;
+  border-color: transparent;
+  background-color: #fff;
+  width: auto;
+  height: 2.4rem;
+  padding: .3rem;
+  margin-bottom: .3rem;
+  vertical-align: top;
+}
+.form-autocomplete .form-autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1988;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  margin: .3rem 0 0 0;
+  border: 0.1rem solid #d2d2d2;
+  border-radius: .3rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+.form-autocomplete .form-autocomplete-list .chip {
+  background-color: transparent;
+}
+.form-autocomplete .form-autocomplete-list .chip:hover,
+.form-autocomplete .form-autocomplete-list .chip.selected {
+  background-color: #eff1fa;
+}
 .badge {
   position: relative;
 }
@@ -1296,29 +1349,105 @@ textarea.form-input {
   color: #b3b3b3;
 }
 .chip {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: .3rem .6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .3rem .8rem;
+  border: .1rem solid transparent;
   border-radius: .3rem;
-  font-size: 1.2rem;
-  vertical-align: middle;
+  margin: 0;
+  list-style: none;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #efefef;
-  border: 0.1rem solid #e2e2e2;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around;
+  color: #666;
 }
-.chip:hover,
-.chip:focus {
-  background-color: #eaeaea;
+.chip .chip-icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
-.chip .chip-name {
+.chip .chip-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chip .chip-action {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.chip .chip-action .btn {
+  padding: .7rem .5rem;
+  border-color: transparent;
+  color: #c5c5c5;
+}
+.chip .chip-action .btn:hover,
+.chip .chip-action .btn:focus {
+  color: #5764c6;
+  border-color: transparent;
+  background-color: transparent;
+}
+.chip .chip-action .btn:active,
+.chip .chip-action .btn.active {
+  color: #4452c0;
+  border-color: transparent;
+  background-color: transparent;
+}
+.chip-sm {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  max-width: 100%;
+  height: 2.4rem;
+  padding: .3rem .6rem;
+  border-radius: .3rem;
+  font-size: 1.2rem;
+  background-color: #eff1fa;
+  color: #666;
+  text-decoration: none;
+}
+.chip-sm:hover,
+.chip-sm:focus {
+  background-color: #e8eaf7;
+}
+.chip-sm .btn::before,
+.chip-sm .btn::after {
+  background-color: #3b49af;
+}
+.chip-sm.selected {
+  background-color: #5764c6;
+  color: #fff;
+}
+.chip-sm.selected .btn::before,
+.chip-sm.selected .btn::after {
+  background-color: #eff1fa;
+}
+.chip-sm .chip-name {
   margin-left: .4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.chip .avatar {
+.chip-sm .avatar {
   width: 1.6rem;
   height: 1.6rem;
   font-size: .8rem;
@@ -1365,7 +1494,7 @@ textarea.form-input {
   display: block;
   text-align: left;
   margin: 0;
-  padding: 1rem;
+  padding: .5rem;
   border-radius: .3rem;
   background-color: #fff;
   z-index: 999;
@@ -1374,7 +1503,7 @@ textarea.form-input {
 .menu .menu-item {
   display: block;
   padding: .2rem 1rem;
-  margin-top: 0;
+  margin-top: .1rem;
   border-radius: .3rem;
   color: #333;
   line-height: 2.4rem;
@@ -1395,11 +1524,10 @@ textarea.form-input {
 .menu .menu-item a:hover,
 .menu .menu-item a:focus {
   color: #5764c6;
-  background-color: #ffffff;
 }
 .menu .menu-item a:active,
 .menu .menu-item a.active {
-  color: #35419c;
+  color: #4452c0;
   background-color: #eff1fa;
 }
 .menu .menu-header {
@@ -1873,6 +2001,9 @@ textarea.form-input {
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+}
+.hand {
+  cursor: pointer;
 }
 .shadow {
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
