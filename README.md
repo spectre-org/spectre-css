@@ -45,7 +45,7 @@ And include it in your website or Web app &lt;head&gt; part.
 - [tooltips](http://picturepan2.github.io/spectre/#tooltips) - simple tooltip built entirely in CSS
 - [labels](http://picturepan2.github.io/spectre/#labels) - formatted text tags for highlighted, informative information
 - [badges](http://picturepan2.github.io/spectre/#badges) - unread number indicators
-- [toasts](http://picturepan2.github.io/spectre/#toasts)
+- [toasts](http://picturepan2.github.io/spectre/#toasts) - showing alerts or notifications
 - [menus](http://picturepan2.github.io/spectre/#menus) - list of links or buttons for actions and navigation
 - [navigation](http://picturepan2.github.io/spectre/#navigation) - breadcrumb, tabs and pagination
 - [modals](http://picturepan2.github.io/spectre/#modals) - flexible dialog prompts
