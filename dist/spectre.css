@@ -363,8 +363,8 @@ textarea {
 * {
   box-sizing: border-box;
 }
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 html {
@@ -1528,7 +1528,7 @@ textarea.form-input {
   position: relative;
   z-index: 99;
 }
-.menu .menu-header:after {
+.menu .menu-header::after {
   content: "";
   display: block;
   width: 100%;
