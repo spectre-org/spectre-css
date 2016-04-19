@@ -184,14 +184,14 @@
             <header class="text-center"><h5>blockquote</h5></header>
             <blockquote>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <span class="blockquote-source">- Source</span>
+                <cite>- Source</cite>
             </blockquote>
 
             <!-- blockquote example -->
 <pre class="code lang-html">
 &lt;<span class="tag">blockquote</span>&gt;
     &lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;<span class="tag">/p</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;blockquote-source&quot;</span>&gt;- Source&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">cite</span>&gt;- Source&lt;<span class="tag">/cite</span>&gt;
 &lt;<span class="tag">/blockquote</span>&gt;
 </pre>
 
@@ -300,21 +300,30 @@
                 </div>
             </div>
             <div class="columns">
-                <div class="column col-2">
-                    <div class="bg-grey">col-2</div>
+                <div class="column col-12">
+                    <div class="bg-grey">col-12 (100%)</div>
                 </div>
-                <div class="column col-4">
-                    <div class="bg-grey">col-4</div>
+            </div>
+            <div class="columns">
+                <div class="column col-9">
+                    <div class="bg-grey">col-9 (75%)</div>
                 </div>
-                <div class="column col-4">
-                    <div class="bg-grey">col-4</div>
+            </div>
+            <div class="columns">
+                <div class="column col-6">
+                    <div class="bg-grey">col-6 (50%)</div>
                 </div>
-                <div class="column col-2">
-                    <div class="bg-grey">col-2</div>
+            </div>
+            <div class="columns">
+                <div class="column col-3">
+                    <div class="bg-grey">col-3 (25%)</div>
                 </div>
             </div>
             <section class="notes">
                 <p>Add the class <code class="label">columns</code> to a container. And add any element you want with classname <code class="label">column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code class="label">col-[1-12]</code>.</p>
+            </section>
+            <section class="notes">
+                <p>When the width of browser viewport is less than 840px and more than 480px, the col-[1-11] will be 50% width to the parent elements.</p>
             </section>
 
             <!-- layout example -->
@@ -2054,7 +2063,7 @@
 <span class="com">&lt;!-- Capitalized text --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-capitalize&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 
-<span class="com">&lt;!-- Noral weight text --&gt;</span>
+<span class="com">&lt;!-- Normal weight text --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-normal&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- Bold text --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-bold&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
@@ -2098,7 +2107,7 @@
             <!-- loading example -->
 <pre class="code lang-html">
 <span class="com">&lt;!-- loading element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 </pre>
 
         </section>
