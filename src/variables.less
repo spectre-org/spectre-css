@@ -8,6 +8,7 @@
 
 // Colors
 @core-color: #5764c6;
+@core-text-color: #fff;
 @core-link-color: #5764c6;
 @core-border-color: #efefef;
 @control-color: #c5c5c5;
@@ -15,7 +16,6 @@
 @control-color-info: #0193eb;
 @control-color-warning: #ffb700;
 @control-color-danger: #e85600;
-
 
 // Mixins
 .clearfix() {
@@ -25,13 +25,12 @@
     display: table;
   }
 }
-
 .toast-variant(@color) {
   background-color: @color;
   border-color: darken(@color, 2%);
-  color: #fff;
+  color: @core-text-color;
 }
 .label-variant(@color) {
   background-color: @color;
-  color: #fff;
+  color: @core-text-color;
 }
