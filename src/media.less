@@ -7,9 +7,13 @@
 .video-responsive {
   height: 0;
   overflow: hidden;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%; /* Default 16:9, you can calculate this value by dividing 9 by 16 */
   padding-top: 3rem;
   position: relative;
+
+  &.video-responsive-4-3 {
+    padding-bottom: 75%; /* 4:3 */
+  }
 
   iframe,
   object,
