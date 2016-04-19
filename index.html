@@ -107,10 +107,24 @@
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
 </pre>
 
-                <p>You could even customize Spectre CSS with your own code and removing unneeded components. It requires a LESS compiler and Autoprefixer.</p>
-
             </section>
         </section>
+
+        <section id="compiling" class="grid-960">
+            <header class="text-center"><h4>compiling custom version</h4></header>
+            <section class="notes">
+                <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code class="label">/src</code> directory or removing unneeded components from <code class="label">spectre.less</code>.</p>
+                <p>Then, you can build the CSS file from the command line:</p>
+                <ol>
+                    <li>Navigate to the root directory of Spectre where you can find <code class="label">package.json</code> file.</li>
+                    <li>Run <code class="label">npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
+                    <li>When completed, run <code class="label">gulp build</code> to compile LESS to CSS and minify files.</li>
+                    <li>You can find compiled CSS files in <code class="label">/dist</code> directory.</li>
+                </ol>
+                <p>You can watch file changes and rebuild CSS files by using <code class="label">gulp watch</code>.</p>
+            </section>
+        </section>
+
         <section id="elements" class="grid-960">
             <section class="notes text-center">
                 <ul class="tab inline-block">
