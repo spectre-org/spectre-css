@@ -30,13 +30,12 @@ h6 {
   font-size: 1.6rem;
 }
 p {
-  line-height: 1.428571429;
   margin: 0 0 1rem;
 }
 blockquote {
   border-left: .2rem solid #ddd;
-  padding: 1rem 2rem;
   margin-left: 0;
+  padding: 1rem 2rem;
 
   p:last-child {
     margin-bottom: 0;
@@ -48,8 +47,8 @@ blockquote {
 }
 ul,
 ol {
-  padding: 0;
   margin: 2rem 0 2rem 2rem;
+  padding: 0;
 
   ul,
   ol {
@@ -77,38 +76,39 @@ ol {
 .lead {
   font-size: 120%;
 }
+mark,
 .highlight {
-  padding: .2rem;
-  line-height: 1.6rem;
-  border-radius: .2rem;
   background-color: lighten(@control-color-warning, 32%);
+  border-radius: .2rem;
+  line-height: 1.6rem;
+  padding: .2rem;
 }
 
 // Code
 pre {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1.5rem;
+  background-color: lighten(@core-border-color, 4%);
   border-left: .2rem solid @core-color;
   line-height: 1.8rem;
-  background-color: lighten(@core-border-color, 4%);
+  margin-bottom: 1em;
+  margin-top: 1em;
   overflow: auto;
+  padding: 1.5rem;
 }
 code {
-  padding: .2rem .4rem;
-  margin: -.2rem .1em 0 .1em;
-  border-radius: .2rem;
   background-color: @core-border-color;
-  font-size: .9em;
-  line-height: 1em;
-  vertical-align: baseline;
+  border-radius: .2rem;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: -.2em 0;
+  padding: .2em .3em;
+  vertical-align: middle;
   white-space: nowrap;
 
   pre & {
-    margin-top: 0;
-    margin-bottom: 0;
-    border-left: 0;
     background-color: transparent;
+    border-left: 0;
     line-height: 1.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }

@@ -368,6 +368,7 @@ textarea {
 html {
   box-sizing: border-box;
   font-size: 10px;
+  line-height: 1.428571429;
   -webkit-tap-highlight-color: transparent;
 }
 body {
@@ -429,7 +430,6 @@ h6 {
   font-size: 1.6rem;
 }
 p {
-  line-height: 1.428571429;
   margin: 0 0 1rem;
 }
 blockquote {
@@ -473,6 +473,7 @@ ol ol {
 .lead {
   font-size: 120%;
 }
+mark,
 .highlight {
   background-color: #ffe5a3;
   border-radius: .2rem;
@@ -491,11 +492,11 @@ pre {
 code {
   background-color: #efefef;
   border-radius: .2rem;
-  font-size: .9em;
-  line-height: 1em;
-  margin: -.2rem .1em 0 .1em;
-  padding: .2rem .4rem;
-  vertical-align: baseline;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: -.2em 0;
+  padding: .2em .3em;
+  vertical-align: middle;
   white-space: nowrap;
 }
 pre code {
@@ -1443,8 +1444,9 @@ textarea.form-input {
   color: #666;
   display: inline-block;
   font-size: 1em;
-  margin-top: -.15em;
-  padding: .15em .25em;
+  line-height: 1;
+  margin: -.2rem 0;
+  padding: .2rem .3rem;
   text-align: center;
   vertical-align: baseline;
   white-space: nowrap;
