@@ -1442,8 +1442,8 @@ textarea.form-input {
   border-radius: .2rem;
   color: #666;
   display: inline-block;
-  font-size: .85em;
-  line-height: 1;
+  font-size: 1em;
+  margin-top: -.15em;
   padding: .15em .25em;
   text-align: center;
   vertical-align: baseline;
