@@ -524,7 +524,7 @@
             </section>
             <div class="columns">
                 <div class="column col-6">
-                    <form>
+                    <form action="#forms">
                         <div class="form-group">
                             <label class="form-label" for="input-example-1">Name</label>
                             <input class="form-input is-danger" type="text" id="input-example-1" placeholder="Name" />
@@ -575,13 +575,13 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary">Submit</button>
-                            <button class="btn btn-link">Cancel</button>
+                            <button class="btn btn-primary" onclick="return false;">Submit</button>
+                            <button class="btn btn-link" onclick="return false;">Cancel</button>
                         </div>
                     </form>
                 </div>
                 <div class="column col-6">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="#forms">
                         <div class="form-group">
                             <label class="form-label col-3" for="input-example-4">Name</label>
                             <div class="col-9">
@@ -645,8 +645,8 @@
                         <div class="form-group">
                             <div class="col-3"></div>
                             <div class="col-9">
-                                <button class="btn btn-primary">Submit</button>
-                                <button class="btn btn-link">Cancel</button>
+                                <button class="btn btn-primary" onclick="return false;">Submit</button>
+                                <button class="btn btn-link" onclick="return false;">Cancel</button>
                             </div>
                         </div>
                     </form>
@@ -1325,18 +1325,18 @@
                 <div class="column">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a href="#menu" class="active">
+                            <a href="#menus" class="active">
                                 My profile
                             </a>
                         </li>
                         <li class="divider"></li>
                         <li class="menu-item">
-                            <a href="#menu">
+                            <a href="#menus">
                                 Settings
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#menu">
+                            <a href="#menus">
                                 Logout
                             </a>
                         </li>
@@ -1350,12 +1350,12 @@
                             </span>
                         </li>
                         <li class="menu-item">
-                            <a href="#menu">
+                            <a href="#menus">
                                 Slack
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#menu">
+                            <a href="#menus">
                                 Hipchat
                             </a>
                         </li>
@@ -1372,12 +1372,12 @@
                             </span>
                         </li>
                         <li class="menu-item">
-                            <a href="#menu">
+                            <a href="#menus">
                                 <span class="icon icon-link"></span> Slack
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#menu">
+                            <a href="#menus">
                                 <span class="icon icon-link"></span> Hipchat
                             </a>
                         </li>
