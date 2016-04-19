@@ -89,7 +89,7 @@
             <section class="notes">
                 <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
                 <h5>Install manually</h5>
-                <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 28KB):</p>
+                <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (about 26KB):</p>
                 <p><a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
                 <h5>Install with NPM</h5>
                 <!-- install with npm example -->
@@ -575,8 +575,8 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary" onclick="return false;">Submit</button>
-                            <button class="btn btn-link" onclick="return false;">Cancel</button>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-link" type="reset">Cancel</button>
                         </div>
                     </form>
                 </div>
@@ -645,8 +645,8 @@
                         <div class="form-group">
                             <div class="col-3"></div>
                             <div class="col-9">
-                                <button class="btn btn-primary" onclick="return false;">Submit</button>
-                                <button class="btn btn-link" onclick="return false;">Cancel</button>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                                <button class="btn btn-link" type="reset">Cancel</button>
                             </div>
                         </div>
                     </form>
@@ -799,7 +799,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>For responsive video, add a container with the class <code class="label">video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9.</p>
+                <p>For responsive video, add a container with the class <code class="label">video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code class="label">.video-responsive-4-3</code> for 4:3 ratio video container.</p>
             </section>
 
             <!-- media example -->
@@ -2084,10 +2084,6 @@
         </section>
     </footer>
     <script>
-        // Stop form submission on demo and jump to page top
-	    document.getElementsByTagName('form').onsubmit = function() {
-			return false;
-		}
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -2095,7 +2091,6 @@
 
         ga('create', 'UA-2702768-8', 'auto');
         ga('send', 'pageview');
-
     </script>
 </body>
 </html>

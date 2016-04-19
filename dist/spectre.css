@@ -661,10 +661,6 @@ pre code {
   padding-top: 3rem;
   position: relative;
 }
-.video-responsive.video-responsive-4-3 {
-  padding-bottom: 75%;
-  /* 4:3 */
-}
 .video-responsive iframe,
 .video-responsive object,
 .video-responsive embed {
@@ -678,6 +674,10 @@ pre code {
   height: auto;
   max-width: 100%;
   width: 100%;
+}
+.video-responsive-4-3 {
+  padding-bottom: 75%;
+  /* 4:3 */
 }
 .table {
   border-collapse: collapse;
@@ -1520,11 +1520,6 @@ textarea.form-input {
           transform: translateY(-1rem);
   width: 100%;
 }
-.menu .divider {
-  border-bottom: .1rem solid #efefef;
-  display: block;
-  margin: .5rem;
-}
 .modal {
   -webkit-align-items: center;
           align-items: center;
@@ -1942,6 +1937,11 @@ textarea.form-input {
 }
 .circle {
   border-radius: 50%;
+}
+.divider {
+  border-bottom: .1rem solid #efefef;
+  display: block;
+  margin: .5rem;
 }
 .loading {
   color: transparent !important;
