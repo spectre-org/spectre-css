@@ -1,3 +1,10 @@
+.label-base {
+  border-radius: .2rem;
+  display: inline;
+  font-size: 1em;
+  padding: .1em .3em;
+  vertical-align: baseline;
+}
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -477,8 +484,10 @@ mark,
 .highlight {
   background-color: #ffe5a3;
   border-radius: .2rem;
-  line-height: 1.6rem;
-  padding: .2rem;
+  display: inline;
+  font-size: 1em;
+  padding: .1em .3em;
+  vertical-align: baseline;
 }
 pre {
   background-color: #f9f9f9;
@@ -492,11 +501,10 @@ pre {
 code {
   background-color: #efefef;
   border-radius: .2rem;
+  display: inline;
   font-size: 1em;
-  line-height: 1.4;
-  margin: -.2em 0;
-  padding: .2em .3em;
-  vertical-align: middle;
+  padding: .1em .3em;
+  vertical-align: baseline;
   white-space: nowrap;
 }
 pre code {
@@ -1443,12 +1451,9 @@ textarea.form-input {
   background-color: #efefef;
   border-radius: .2rem;
   color: #666;
-  display: inline-block;
+  display: inline;
   font-size: 1em;
-  line-height: 1;
-  margin: -.2rem 0;
-  padding: .2rem .3rem;
-  text-align: center;
+  padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
 }

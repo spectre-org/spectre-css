@@ -101,7 +101,7 @@
 <pre class="code lang-html">
 <span class="tag">$</span> bower install <span class="atv">spectre.css</span>
 </pre>
-                <p>And include it in your website or Web app <code class="label">&lt;head&gt;</code></p>
+                <p>And include it in your website or Web app <code>&lt;head&gt;</code></p>
                 <!-- install manually example -->
 <pre class="code lang-html">
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
@@ -113,15 +113,15 @@
         <section id="compiling" class="grid-960">
             <header class="text-center"><h4>compiling custom version</h4></header>
             <section class="notes">
-                <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code class="label">/src</code> directory or removing unneeded components from <code class="label">spectre.less</code>.</p>
+                <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>.</p>
                 <p>Then, you can build the CSS file from the command line:</p>
                 <ol>
-                    <li>Navigate to the root directory of Spectre where you can find <code class="label">package.json</code> file.</li>
-                    <li>Run <code class="label">npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-                    <li>When completed, run <code class="label">gulp build</code> to compile LESS to CSS and minify files.</li>
-                    <li>You can find compiled CSS files in <code class="label">/dist</code> directory.</li>
+                    <li>Navigate to the root directory of Spectre where you can find <code>package.json</code> file.</li>
+                    <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
+                    <li>When completed, run <code>gulp build</code> to compile LESS to CSS and minify files.</li>
+                    <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
                 </ol>
-                <p>You can watch file changes and rebuild CSS files by using <code class="label">gulp watch</code>.</p>
+                <p>You can watch file changes and rebuild CSS files by using <code>gulp watch</code>.</p>
             </section>
         </section>
 
@@ -334,7 +334,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">columns</code> to a container. And add any element you want with classname <code class="label">column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code class="label">col-[1-12]</code>.</p>
+                <p>Add the class <code>columns</code> to a container. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
             </section>
             <section class="notes">
                 <p>When the width of browser viewport is less than 840px and more than 480px, the col-[1-11] will be 50% width to the parent elements.</p>
@@ -395,7 +395,7 @@
                 </tbody>
             </table>
             <section class="notes">
-                <p>Add the class <code class="label">table</code> to any &lt;table&gt; element. The class will add padding, border and emphasized table header. Use the class <code class="label">selected</code> to make &lt;tr&gt; element highlighted. </p>
+                <p>Add the class <code>table</code> to any &lt;table&gt; element. The class will add padding, border and emphasized table header. Use the class <code>selected</code> to make &lt;tr&gt; element highlighted. </p>
             </section>
 
             <!-- tables example -->
@@ -443,7 +443,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">btn</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code class="label">btn-primary</code> and <code class="label">btn-link</code> for predefined primary and link buttons. A button with the class <code class="label">loading</code> can show loading indicator.  </p>
+                <p>Add the class <code>btn</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. A button with the class <code>loading</code> can show loading indicator.  </p>
             </section>
 
             <!-- buttons example -->
@@ -469,7 +469,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">btn-sm</code> or <code class="label">btn-lg</code> for small or large button size. Also, you can add the class <code class="label">btn-block</code> for a full-width button. </p>
+                <p>Add the class <code>btn-sm</code> or <code>btn-lg</code> for small or large button size. Also, you can add the class <code>btn-block</code> for a full-width button. </p>
             </section>
 
             <!-- buttons example -->
@@ -488,7 +488,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Icons with the class <code class="label">icon</code> can be correctly rendered in each button size. </p>
+                <p>Icons with the class <code>icon</code> can be correctly rendered in each button size. </p>
             </section>
 
             <!-- buttons example -->
@@ -516,7 +516,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>If you want to use buttons as a group, add the class <code class="label">btn-group</code> to the container. You can add the class <code class="label">btn-group-block</code> for a full-width button group.</p>
+                <p>If you want to use buttons as a group, add the class <code>btn-group</code> to the container. You can add the class <code>btn-group-block</code> for a full-width button group.</p>
             </section>
 
             <!-- button groups example -->
@@ -719,7 +719,7 @@
 </pre>
 
             <section class="notes">
-                <p>If you want to have a horizontal form, add the class <code class="label">form-horizontal</code> to the &lt;form&gt; container. And add the class <code class="label">col-[1-12]</code> to the child elements for form row layout. Please note <code class="label">form-horizontal</code> only works in viewports that are at least 840px wide.</p>
+                <p>If you want to have a horizontal form, add the class <code>form-horizontal</code> to the &lt;form&gt; container. And add the class <code>col-[1-12]</code> to the child elements for form row layout. Please note <code>form-horizontal</code> only works in viewports that are at least 840px wide.</p>
             </section>
 
             <!-- forms example -->
@@ -736,7 +736,7 @@
 </pre>
 
             <section class="notes">
-                <p>To use form validation styles, add <code class="label">is-success</code> and <code class="label">is-danger</code> to the controls or add <code class="label">has-success</code> and <code class="label">has-danger</code> to parent elements.</p>
+                <p>To use form validation styles, add <code>is-success</code> and <code>is-danger</code> to the controls or add <code>has-success</code> and <code>has-danger</code> to parent elements.</p>
             </section>
 
             <!-- forms example -->
@@ -773,7 +773,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>If you want to attach text and button along with an input, add the class <code class="label">input-group</code> to the input container. And add the class <code class="label">input-group-addon</code> to the text element and <code class="label">input-group-btn</code> to the button element.</p>
+                <p>If you want to attach text and button along with an input, add the class <code>input-group</code> to the input container. And add the class <code>input-group-addon</code> to the text element and <code>input-group-btn</code> to the button element.</p>
             </section>
 
             <!-- input groups example -->
@@ -803,7 +803,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
+                <p>Add the class <code>img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
             </section>
             <div class="columns">
                 <div class="column col-6">
@@ -813,7 +813,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>For responsive video, add a container with the class <code class="label">video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code class="label">.video-responsive-4-3</code> for 4:3 ratio video container.</p>
+                <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>.video-responsive-4-3</code> for 4:3 ratio video container.</p>
             </section>
 
             <!-- media example -->
@@ -920,8 +920,8 @@
             </div>
 
             <section class="notes">
-                <p>Add the class <code class="label">avatar</code> to &lt;img&gt; element. There are 4 additional sizes available, including <code class="label">avatar-xl</code> (64px), <code class="label">avatar-lg</code> (48px), <code class="label">avatar-sm</code> (24px), and <code class="label">avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
-                <p>For users who don't have profile pictures, you may use their initials for avatars. Add the class <code class="label">avatar</code> and avatar size class to &lt;div&gt; element. The attribute <code class="label">data-initial</code> is the name appear inside the avatar.</p>
+                <p>Add the class <code>avatar</code> to &lt;img&gt; element. There are 4 additional sizes available, including <code>avatar-xl</code> (64px), <code>avatar-lg</code> (48px), <code>avatar-sm</code> (24px), and <code>avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
+                <p>For users who don't have profile pictures, you may use their initials for avatars. Add the class <code>avatar</code> and avatar size class to &lt;div&gt; element. The attribute <code>data-initial</code> is the name appear inside the avatar.</p>
             </section>
 
             <!-- avatars example -->
@@ -1005,7 +1005,7 @@
             </div> -->
 
             <section class="notes">
-                <p>Add a container element with the class <code class="label">chip</code>. And add child text elements with <code class="label">chip-name</code> or icons with  <code class="label">icon</code>.</p>
+                <p>Add a container element with the class <code>chip</code>. And add child text elements with <code>chip-name</code> or icons with  <code>icon</code>.</p>
             </section>
 
             <!-- chips example -->
@@ -1142,7 +1142,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">form-autocomplete</code>. There are 2 parts of it, one is  <code class="label">form-autocomplete-input</code>, another is <code class="label">form-autocomplete-list</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below. </p>
+                <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>form-autocomplete-list</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below. </p>
             </section>
 
             <!-- autocomplete example -->
@@ -1216,7 +1216,7 @@
             </div>
             <section class="notes">
                 <p>Tooltip component is built entirely in CSS.</p>
-                <p>Add the class <code class="label">tooltip</code> and the attribute <code class="label">data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code class="label">tooltip-right</code>, <code class="label">tooltip-bottom</code> or <code class="label">tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
+                <p>Add the class <code>tooltip</code> and the attribute <code>data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
             </section>
 
             <!-- tooltips example -->
@@ -1239,7 +1239,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code class="label">label-primary</code> for a primary colored label.</p>
+                <p>Add the class <code>label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code> for a primary colored label.</p>
             </section>
 
             <!-- labels example -->
@@ -1278,7 +1278,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">badge</code> to non self closing elements. And add the attribute <code class="label">data-badge</code> to define the content of a badge. The badge will appear in the top-right direction of the element.</p>
+                <p>Add the class <code>badge</code> to non self closing elements. And add the attribute <code>data-badge</code> to define the content of a badge. The badge will appear in the top-right direction of the element.</p>
             </section>
 
             <!-- badges example -->
@@ -1310,8 +1310,8 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code class="label">btn-clear</code> if you need. </p>
-                <p>And you can add the class <code class="label">toast-primary</code> for primary toast color.</p>
+                <p>Add a container element with the class <code>toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code>btn-clear</code> if you need. </p>
+                <p>And you can add the class <code>toast-primary</code> for primary toast color.</p>
             </section>
 
             <!-- toasts example -->
@@ -1402,7 +1402,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">menu</code>. And add child elements with the classname <code class="label">menu-item</code>. You can separate menu items with a <code class="label">divider</code> or <code class="label">menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
+                <p>Add a container element with the class <code>menu</code>. And add child elements with the classname <code>menu-item</code>. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
             </section>
 
             <!-- menus example -->
@@ -1470,7 +1470,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">breadcrumb</code>. And add child elements with the classname <code class="label">breadcrumb-item</code>.</p>
+                <p>Add a container element with the class <code>breadcrumb</code>. And add child elements with the classname <code>breadcrumb-item</code>.</p>
             </section>
 
             <!-- breadcrumbs example -->
@@ -1546,7 +1546,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">tab</code>. And add child elements with the classname <code class="label">tab-item</code>. You can add the class <code class="label">tab-block</code> for a full-width tab.</p>
+                <p>Add a container element with the class <code>tab</code>. And add child elements with the classname <code>tab-item</code>. You can add the class <code>tab-block</code> for a full-width tab.</p>
             </section>
 
             <!-- tabs example -->
@@ -1661,7 +1661,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">pagination</code>. And add child elements with the classname <code class="label">page-item</code>.</p>
+                <p>Add a container element with the class <code>pagination</code>. And add child elements with the classname <code>page-item</code>.</p>
             </section>
 
             <!-- pagination example -->
@@ -1744,8 +1744,8 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">modal</code>. And add a real container <code class="label">modal-container</code> and overlay <code class="label">modal-overlay</code> inside it. You can add child elements with the class name <code class="label">modal-header</code>, <code class="label">modal-content</code> and <code class="label">modal-footer</code> - any or all of them. </p>
-                <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the class <code class="label">active</code> to the <code class="label">modal</code> container</p>
+                <p>Add a container element with the class <code>modal</code>. And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it. You can add child elements with the class name <code>modal-header</code>, <code>modal-content</code> and <code>modal-footer</code> - any or all of them. </p>
+                <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the class <code>active</code> to the <code>modal</code> container</p>
             </section>
 
             <!-- modals example -->
@@ -1830,7 +1830,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code class="label">modal-sm</code> for a smaller modal dialog. </p>
+                <p>Add the class <code>modal-sm</code> for a smaller modal dialog. </p>
             </section>
 
             <!-- modals example -->
@@ -1905,7 +1905,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code class="label">card</code>. And add child elements with the class name <code class="label">card-image</code>, <code class="label">card-header</code>, <code class="label">card-content</code> and/or <code class="label">card-footer</code>. The <code class="label">card-image</code> can be placed in any position. </p>
+                <p>Add a container element with the class <code>card</code>. And add child elements with the class name <code>card-image</code>, <code>card-header</code>, <code>card-content</code> and/or <code>card-footer</code>. The <code>card-image</code> can be placed in any position. </p>
             </section>
 
             <!-- cards example -->
@@ -2074,7 +2074,7 @@
 
         <section id="loading" class="grid-960">
             <section class="notes">
-                <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code class="label">loading</code> to buttons for loading status.</p>
+                <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code>loading</code> to buttons for loading status.</p>
             </section>
             <div class="columns">
                 <div class="column">
