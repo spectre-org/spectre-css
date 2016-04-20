@@ -906,7 +906,7 @@ pre code {
   line-height: 1.6rem;
   max-width: 100%;
   outline: 0;
-  padding: .5rem .8rem;
+  padding: .7rem .8rem;
   position: relative;
   width: 100%;
 }
@@ -920,12 +920,13 @@ pre code {
   border-radius: .2rem;
   font-size: 1.2rem;
   height: 2.4rem;
-  padding: .4rem .6rem;
+  padding: .3rem .6rem;
 }
 .form-input.input-lg {
   border-radius: .4rem;
   font-size: 1.6rem;
   height: 4.2rem;
+  line-height: 2rem;
   padding: 1rem 1.2rem;
 }
 .form-input.input-inline {
@@ -974,7 +975,7 @@ textarea.form-input {
   border-radius: .2rem;
   font-size: 1.2rem;
   height: 2.4rem;
-  padding: .4rem .6rem;
+  padding: .4rem 2rem .4rem .6rem;
 }
 .form-checkbox input,
 .form-radio input,
