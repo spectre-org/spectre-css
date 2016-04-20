@@ -79,9 +79,7 @@ ol {
 mark,
 .highlight {
   background-color: lighten(@control-color-warning, 32%);
-  border-radius: .2rem;
-  line-height: 1.6rem;
-  padding: .2rem;
+  .label-base;
 }
 
 // Code
@@ -96,12 +94,7 @@ pre {
 }
 code {
   background-color: @core-border-color;
-  border-radius: .2rem;
-  font-size: 1em;
-  line-height: 1.4;
-  margin: -.2em 0;
-  padding: .2em .3em;
-  vertical-align: middle;
+  .label-base;
   white-space: nowrap;
 
   pre & {
