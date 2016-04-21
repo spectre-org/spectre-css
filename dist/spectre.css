@@ -537,14 +537,19 @@ pre code {
   }
 }
 .columns {
-  display: block;
+  display:         flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin-left: -1rem;
   margin-right: -1rem;
 }
 .column {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   padding: 1rem;
 }
 .column.col-12,
@@ -563,73 +568,228 @@ pre code {
       -ms-flex: none;
           flex: none;
 }
-@media screen and (min-width: 841px) {
-  .columns {
-    display:         flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-1 {
+  width: 8.33333333%;
+}
+@media screen and (min-width: 481px) {
+  .col-xs-12,
+  .col-xs-11,
+  .col-xs-10,
+  .col-xs-9,
+  .col-xs-8,
+  .col-xs-7,
+  .col-xs-6,
+  .col-xs-5,
+  .col-xs-4,
+  .col-xs-3,
+  .col-xs-2,
+  .col-xs-1 {
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
   }
-  .col-12 {
+  .col-xs-12 {
     width: 100%;
   }
-  .col-11 {
+  .col-xs-11 {
     width: 91.66666667%;
   }
-  .col-10 {
+  .col-xs-10 {
     width: 83.33333333%;
   }
-  .col-9 {
+  .col-xs-9 {
     width: 75%;
   }
-  .col-8 {
+  .col-xs-8 {
     width: 66.66666667%;
   }
-  .col-7 {
+  .col-xs-7 {
     width: 58.33333333%;
   }
-  .col-6 {
+  .col-xs-6 {
     width: 50%;
   }
-  .col-5 {
+  .col-xs-5 {
     width: 41.66666667%;
   }
-  .col-4 {
+  .col-xs-4 {
     width: 33.33333333%;
   }
-  .col-3 {
+  .col-xs-3 {
     width: 25%;
   }
-  .col-2 {
+  .col-xs-2 {
     width: 16.66666667%;
   }
-  .col-1 {
+  .col-xs-1 {
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 840px) {
-  .columns {
+@media screen and (min-width: 601px) {
+  .col-sm-12,
+  .col-sm-11,
+  .col-sm-10,
+  .col-sm-9,
+  .col-sm-8,
+  .col-sm-7,
+  .col-sm-6,
+  .col-sm-5,
+  .col-sm-4,
+  .col-sm-3,
+  .col-sm-2,
+  .col-sm-1 {
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+}
+@media screen and (min-width: 841px) {
+  .col-md-12,
+  .col-md-11,
+  .col-md-10,
+  .col-md-9,
+  .col-md-8,
+  .col-md-7,
+  .col-md-6,
+  .col-md-5,
+  .col-md-4,
+  .col-md-3,
+  .col-md-2,
+  .col-md-1 {
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+}
+@media screen and (min-width: 841px) {
+  .form-horizontal {
+    padding: 1rem;
+  }
+  .form-horizontal .form-group {
     display:         flex;
     display: -ms-flexbox;
     display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
   }
-  .col-12 {
+  .form-horizontal .form-label {
+    margin-bottom: 0;
+    padding: .8rem .4rem;
+  }
+  .form-horizontal .form-checkbox,
+  .form-horizontal .form-radio {
+    margin: .5rem 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .columns {
+    display: block;
+  }
+  .columns .column {
     width: 100%;
-  }
-  .col-11,
-  .col-10,
-  .col-9,
-  .col-8,
-  .col-7,
-  .col-6,
-  .col-5,
-  .col-4,
-  .col-3,
-  .col-2,
-  .col-1 {
-    width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -868,39 +1028,6 @@ pre code {
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 841px) {
-  .form-horizontal {
-    padding: 1rem;
-  }
-  .form-horizontal .form-group {
-    display:         flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-  }
-  .form-horizontal .form-label {
-    padding: .8rem .4rem;
-  }
-  .form-horizontal .form-checkbox,
-  .form-horizontal .form-radio {
-    margin: .5rem 0;
-  }
-}
-@media screen and (max-width: 840px) {
-  .form-horizontal .col-12,
-  .form-horizontal .col-11,
-  .form-horizontal .col-10,
-  .form-horizontal .col-9,
-  .form-horizontal .col-8,
-  .form-horizontal .col-7,
-  .form-horizontal .col-6,
-  .form-horizontal .col-5,
-  .form-horizontal .col-4,
-  .form-horizontal .col-3,
-  .form-horizontal .col-2,
-  .form-horizontal .col-1 {
-    width: 100%;
-  }
-}
 .form-input {
   -webkit-appearance: none;
   background-color: #fff;
@@ -1082,19 +1209,19 @@ textarea.form-input {
   border-radius: .8rem;
   content: "";
   display: block;
-  height: 1.4rem;
-  left: .1rem;
+  height: 1.6rem;
+  left: 0;
   position: absolute;
-  top: .1rem;
+  top: 0;
   transition: left .15s ease;
-  width: 1.4rem;
+  width: 1.6rem;
 }
 .form-switch input:checked + .form-icon {
   background-color: #5764c6;
   border-color: #5764c6;
 }
 .form-switch input:checked + .form-icon::after {
-  left: 1.3rem;
+  left: 1.2rem;
 }
 .input-group {
   display:         flex;
@@ -1773,8 +1900,7 @@ textarea.form-input {
           transform: translate(-.5rem, 50%);
 }
 .clearfix::after,
-.container::after,
-.columns::after {
+.container::after {
   clear: both;
   content: "";
   display: table;

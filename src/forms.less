@@ -2,41 +2,6 @@
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
-
-@media screen and (min-width: 841px) {
-  .form-horizontal {
-    padding: 1rem;
-
-    .form-group {
-      display: flex;
-    }
-    .form-label {
-      padding: .8rem .4rem;
-    }
-    .form-checkbox,
-    .form-radio {
-      margin: .5rem 0;
-    }
-  }
-}
-@media screen and (max-width: 840px) {
-  .form-horizontal {
-    .col-12,
-    .col-11,
-    .col-10,
-    .col-9,
-    .col-8,
-    .col-7,
-    .col-6,
-    .col-5,
-    .col-4,
-    .col-3,
-    .col-2,
-    .col-1 {
-      width: 100%;
-    }
-  }
-}
 // Form element: Input boxes
 .form-input {
   position: relative;
@@ -243,12 +208,12 @@
     &::after {
       content: "";
       display: block;
-      width: 1.4rem;
-      height: 1.4rem;
+      width: 1.6rem;
+      height: 1.6rem;
       border-radius: .8rem;
       position: absolute;
-      top: .1rem;
-      left: .1rem;
+      top: 0;
+      left: 0;
       background-color: #fff;
       transition: left .15s ease;
     }
@@ -259,7 +224,7 @@
     border-color: @core-color;
 
     &::after {
-      left: 1.3rem;
+      left: 1.2rem;
     }
   }
 }

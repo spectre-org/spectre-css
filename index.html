@@ -299,20 +299,7 @@
                     <div class="bg-grey"></div>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column col-6">
-                    <div class="bg-grey">col-6</div>
-                </div>
-                <div class="column col-3">
-                    <div class="bg-grey">col-3</div>
-                </div>
-                <div class="column col-2">
-                    <div class="bg-grey">col-2</div>
-                </div>
-                <div class="column col-1">
-                    <div class="bg-grey">col-1</div>
-                </div>
-            </div>
+
             <div class="columns">
                 <div class="column col-12">
                     <div class="bg-grey">col-12 (100%)</div>
@@ -333,11 +320,9 @@
                     <div class="bg-grey">col-3 (25%)</div>
                 </div>
             </div>
+
             <section class="notes">
                 <p>Add the class <code>columns</code> to a container. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
-            </section>
-            <section class="notes">
-                <p>When the width of browser viewport is less than 840px and more than 480px, the col-[1-11] will be 50% width to the parent elements.</p>
             </section>
 
             <!-- layout example -->
@@ -347,6 +332,61 @@
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+            <div class="columns">
+                <div class="column col-md-6">
+                    <div class="bg-grey">col-md-6</div>
+                </div>
+                <div class="column col-md-3">
+                    <div class="bg-grey">col-md-3</div>
+                </div>
+                <div class="column col-md-3">
+                    <div class="bg-grey">col-md-3</div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column col-sm-6">
+                    <div class="bg-grey">col-sm-6</div>
+                </div>
+                <div class="column col-sm-3">
+                    <div class="bg-grey">col-sm-3</div>
+                </div>
+                <div class="column col-sm-3">
+                    <div class="bg-grey">col-sm-3</div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column col-xs-6">
+                    <div class="bg-grey">col-xs-6</div>
+                </div>
+                <div class="column col-xs-3">
+                    <div class="bg-grey">col-xs-3</div>
+                </div>
+                <div class="column col-xs-3">
+                    <div class="bg-grey">col-xs-3</div>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>Spectre also provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                <ul>
+                    <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
+                    <li><code>col-xs-[1-12]</code> apply to window width greater than or equal to <strong>481px</strong>. </li>
+                    <li><code>col-sm-[1-12]</code> apply to window width greater than or equal to <strong>601px</strong>. </li>
+                    <li><code>col-md-[1-12]</code> apply to window width greater than or equal to <strong>841px</strong>. </li>
+                </ul>
+            </section>
+
+            <!-- layout example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </pre>
 
@@ -597,20 +637,26 @@
                 <div class="column col-6">
                     <form class="form-horizontal" action="#forms">
                         <div class="form-group">
-                            <label class="form-label col-3" for="input-example-4">Name</label>
-                            <div class="col-9">
+                            <div class="col-sm-3">
+                                <label class="form-label" for="input-example-4">Name</label>
+                            </div>
+                            <div class="col-sm-9">
                                 <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label col-3" for="input-example-5">Email</label>
-                            <div class="col-9">
+                            <div class="col-sm-3">
+                                <label class="form-label" for="input-example-5">Email</label>
+                            </div>
+                            <div class="col-sm-9">
                                 <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label col-3">Gender</label>
-                            <div class="col-9">
+                            <div class="col-sm-3">
+                                <label class="form-label">Gender</label>
+                            </div>
+                            <div class="col-sm-9">
                                 <label class="form-radio">
                                     <input type="radio" name="gender" />
                                     <i class="form-icon"></i> Male
@@ -622,8 +668,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-3"></div>
-                            <div class="col-9">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
                                 <select class="form-select">
                                     <option>Choose an option</option>
                                     <option>Slack</option>
@@ -633,8 +679,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-3"></div>
-                            <div class="col-9">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
                                 <label class="form-switch">
                                     <input type="checkbox" />
                                     <i class="form-icon"></i> Send me emails with news and tips
@@ -642,14 +688,16 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label col-3" for="input-example-6">Message</label>
-                            <div class="col-9">
+                            <div class="col-sm-3">
+                                <label class="form-label" for="input-example-6">Message</label>
+                            </div>
+                            <div class="col-sm-9">
                                 <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-3"></div>
-                            <div class="col-9">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
                                 <label class="form-checkbox">
                                     <input type="checkbox" />
                                     <i class="form-icon"></i> Remember me
@@ -657,8 +705,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-3"></div>
-                            <div class="col-9">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
                                 <button class="btn btn-primary" type="submit">Submit</button>
                                 <button class="btn btn-link" type="reset">Cancel</button>
                             </div>
@@ -726,8 +774,10 @@
 <pre class="code lang-html">
 &lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-        &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label col-3&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-9&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-sm-3&quot;</span>&gt;
+            &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-sm-9&quot;</span>&gt;
             &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
         &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
