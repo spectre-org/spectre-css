@@ -568,40 +568,40 @@ pre code {
       -ms-flex: none;
           flex: none;
 }
-.column.col-12 {
+.col-12 {
   width: 100%;
 }
-.column.col-11 {
+.col-11 {
   width: 91.66666667%;
 }
-.column.col-10 {
+.col-10 {
   width: 83.33333333%;
 }
-.column.col-9 {
+.col-9 {
   width: 75%;
 }
-.column.col-8 {
+.col-8 {
   width: 66.66666667%;
 }
-.column.col-7 {
+.col-7 {
   width: 58.33333333%;
 }
-.column.col-6 {
+.col-6 {
   width: 50%;
 }
-.column.col-5 {
+.col-5 {
   width: 41.66666667%;
 }
-.column.col-4 {
+.col-4 {
   width: 33.33333333%;
 }
-.column.col-3 {
+.col-3 {
   width: 25%;
 }
-.column.col-2 {
+.col-2 {
   width: 16.66666667%;
 }
-.column.col-1 {
+.col-1 {
   width: 8.33333333%;
 }
 @media screen and (min-width: 481px) {
@@ -776,27 +776,12 @@ pre code {
     display: -webkit-flex;
   }
   .form-horizontal .form-label {
+    margin-bottom: 0;
     padding: .8rem .4rem;
   }
   .form-horizontal .form-checkbox,
   .form-horizontal .form-radio {
     margin: .5rem 0;
-  }
-}
-@media screen and (max-width: 840px) {
-  .form-horizontal .col-12,
-  .form-horizontal .col-11,
-  .form-horizontal .col-10,
-  .form-horizontal .col-9,
-  .form-horizontal .col-8,
-  .form-horizontal .col-7,
-  .form-horizontal .col-6,
-  .form-horizontal .col-5,
-  .form-horizontal .col-4,
-  .form-horizontal .col-3,
-  .form-horizontal .col-2,
-  .form-horizontal .col-1 {
-    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
