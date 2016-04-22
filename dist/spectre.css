@@ -1758,10 +1758,11 @@ textarea.form-input {
 }
 .tab {
   border-bottom: .1rem solid #c5c5c5;
-  display: block;
+  display:         flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
 .tab .tab-item {
-  display: inline-block;
   margin-bottom: -.1rem;
 }
 .tab .tab-item a {
@@ -1779,11 +1780,6 @@ textarea.form-input {
 .tab .tab-item.active a {
   border-bottom-color: #3b49af;
   color: #3b49af;
-}
-.tab.tab-block {
-  display:         flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .tab.tab-block .tab-item {
   -webkit-flex: 1 0 auto;
@@ -1830,9 +1826,6 @@ textarea.form-input {
   background-color: #5764c6;
   border-color: #4f5dc3;
   color: #fff;
-}
-.toast + .toast {
-  margin-top: .5rem;
 }
 .tooltip {
   position: relative;
