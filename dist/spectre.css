@@ -540,16 +540,13 @@ pre code {
   display:         flex;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   margin-left: -1rem;
   margin-right: -1rem;
 }
 .column {
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 1rem;
 }
 .column.col-12,
@@ -957,7 +954,7 @@ pre code {
   border: 0;
   border-radius: .7rem;
   height: 1.4rem;
-  margin: .1rem -.2rem .1rem .2rem;
+  margin: .3rem -.2rem .3rem .2rem;
   opacity: .35;
   padding: 0;
   position: relative;
@@ -1434,8 +1431,8 @@ textarea.form-input {
 }
 .card {
   background-color: #fff;
+  border: .1rem solid #efefef;
   border-radius: .3rem;
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
   margin: 0;
   padding: 0;
@@ -1826,6 +1823,24 @@ textarea.form-input {
   background-color: #5764c6;
   border-color: #4f5dc3;
   color: #fff;
+}
+.toast.toast-success {
+  background-color: #32b643;
+  border-color: #30ae40;
+  color: #fff;
+}
+.toast.toast-danger {
+  background-color: #e85600;
+  border-color: #de5200;
+  color: #fff;
+}
+.toast.toast-primary .btn-clear::before,
+.toast.toast-success .btn-clear::before,
+.toast.toast-danger .btn-clear::before,
+.toast.toast-primary .btn-clear::after,
+.toast.toast-success .btn-clear::after,
+.toast.toast-danger .btn-clear::after {
+  background-color: #fff;
 }
 .tooltip {
   position: relative;

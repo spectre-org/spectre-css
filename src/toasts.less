@@ -11,4 +11,23 @@
   &.toast-primary {
     .toast-variant(@core-color);
   }
+
+  &.toast-success {
+    .toast-variant(@control-color-success);
+  }
+
+  &.toast-danger {
+    .toast-variant(@control-color-danger);
+  }
+
+  &.toast-primary,
+  &.toast-success,
+  &.toast-danger {
+    .btn-clear {
+      &::before,
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
 }
