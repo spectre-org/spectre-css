@@ -79,7 +79,7 @@ ol {
 mark,
 .highlight {
   background: lighten(@control-color-warning, 32%);
-  .label-base;
+  .label-base();
 }
 
 // Code
@@ -94,7 +94,7 @@ pre {
 }
 code {
   background: @core-border-color;
-  .label-base;
+  .label-base();
   white-space: nowrap;
 
   pre & {
