@@ -1,7 +1,7 @@
 // Buttons
 .btn {
   -webkit-appearance: none;
-  background-color: transparent;
+  background: transparent;
   border: .1rem solid @core-color;
   border-radius: .3rem;
   color: @core-link-color;
@@ -20,32 +20,32 @@
 
   &:hover,
   &:focus {
-    background-color: @core-color;
+    background: @core-color;
     border-color: darken(@core-color, 5%);
     color: @core-text-color;
   }
   &:active,
   &.active {
-    background-color: darken(@core-color, 5%);
+    background: darken(@core-color, 5%);
     border-color: darken(@core-color, 10%);
     color: @core-text-color;
   }
 
   // Button Primary
   &.btn-primary {
-    background-color: @core-color;
+    background: @core-color;
     border-color: darken(@core-color, 5%);
     color: @core-text-color;
 
     &:hover,
     &:focus {
-      background-color: darken(@core-color, 5%);
+      background: darken(@core-color, 5%);
       border-color: darken(@core-color, 10%);
       color: @core-text-color;
     }
     &:active,
     &.active {
-      background-color: darken(@core-color, 10%);
+      background: darken(@core-color, 10%);
       border-color: darken(@core-color, 15%);
       color: @core-text-color;
     }
@@ -61,7 +61,7 @@
 
   // Button Link
   &.btn-link {
-    background-color: transparent;
+    background: transparent;
     border-color: transparent;
     color: @core-link-color;
 
@@ -101,7 +101,7 @@
 
   // Button Clear
   &.btn-clear {
-    background-color: transparent;
+    background: transparent;
     border: 0;
     border-radius: .7rem;
     height: 1.4rem;
@@ -118,7 +118,7 @@
 
     &::before,
     &::after {
-      background-color: #333;
+      background: #333;
       content: "";
       display: block;
       left: 50%;
