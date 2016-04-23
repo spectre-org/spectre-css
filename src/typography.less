@@ -78,13 +78,13 @@ ol {
 }
 mark,
 .highlight {
-  background-color: lighten(@control-color-warning, 32%);
+  background: lighten(@control-color-warning, 32%);
   .label-base;
 }
 
 // Code
 pre {
-  background-color: lighten(@core-border-color, 4%);
+  background: lighten(@core-border-color, 4%);
   border-left: .2rem solid @core-color;
   line-height: 1.8rem;
   margin-bottom: 1em;
@@ -93,12 +93,12 @@ pre {
   padding: 1.5rem;
 }
 code {
-  background-color: @core-border-color;
+  background: @core-border-color;
   .label-base;
   white-space: nowrap;
 
   pre & {
-    background-color: transparent;
+    background: transparent;
     border-left: 0;
     line-height: 1.8rem;
     margin-bottom: 0;

@@ -28,13 +28,13 @@
 
       &:hover,
       &:focus {
-        background-color: transparent;
+        background: transparent;
         border-color: transparent;
         color: @core-color;
       }
       &:active,
       &.active {
-        background-color: transparent;
+        background: transparent;
         border-color: transparent;
         color: darken(@core-color, 5%);
       }
@@ -45,7 +45,7 @@
 // Small chips
 .chip-sm {
   align-items: center;
-  background-color: lighten(@core-color, 40%);
+  background: lighten(@core-color, 40%);
   border-radius: .3rem;
   color: #666;
   display: inline-flex;
@@ -58,24 +58,24 @@
 
   &:hover,
   &:focus {
-    background-color: lighten(@core-color, 38%);
+    background: lighten(@core-color, 38%);
   }
 
   .btn {
     &::before,
     &::after {
-      background-color: darken(@core-color, 10%);
+      background: darken(@core-color, 10%);
     }
   }
 
   &.selected {
-    background-color: @core-color;
+    background: @core-color;
     color: @core-text-color;
 
     .btn {
       &::before,
       &::after {
-        background-color: lighten(@core-color, 40%);
+        background: lighten(@core-color, 40%);
       }
     }
   }

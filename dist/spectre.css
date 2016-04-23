@@ -379,7 +379,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background-color: #fff;
+  background: #fff;
   color: #333;
   font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", sans-serif;
   font-size: 1.4rem;
@@ -482,7 +482,7 @@ ol ol {
 }
 mark,
 .highlight {
-  background-color: #ffe5a3;
+  background: #ffe5a3;
   border-radius: .2rem;
   display: inline;
   font-size: 1em;
@@ -490,7 +490,7 @@ mark,
   vertical-align: baseline;
 }
 pre {
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   border-left: .2rem solid #5764c6;
   line-height: 1.8rem;
   margin-bottom: 1em;
@@ -499,7 +499,7 @@ pre {
   padding: 1.5rem;
 }
 code {
-  background-color: #efefef;
+  background: #efefef;
   border-radius: .2rem;
   display: inline;
   font-size: 1em;
@@ -508,7 +508,7 @@ code {
   white-space: nowrap;
 }
 pre code {
-  background-color: transparent;
+  background: transparent;
   border-left: 0;
   line-height: 1.8rem;
   margin-bottom: 0;
@@ -540,16 +540,13 @@ pre code {
   display:         flex;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   margin-left: -1rem;
   margin-right: -1rem;
 }
 .column {
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 1rem;
 }
 .column.col-12,
@@ -863,11 +860,11 @@ pre code {
   border-color: #c9c9c9;
 }
 .table .selected {
-  background-color: #f4f4f4;
+  background: #f4f4f4;
 }
 .btn {
   -webkit-appearance: none;
-  background-color: transparent;
+  background: transparent;
   border: .1rem solid #5764c6;
   border-radius: .3rem;
   color: #5764c6;
@@ -889,30 +886,30 @@ pre code {
 }
 .btn:hover,
 .btn:focus {
-  background-color: #5764c6;
+  background: #5764c6;
   border-color: #4452c0;
   color: #fff;
 }
 .btn:active,
 .btn.active {
-  background-color: #4452c0;
+  background: #4452c0;
   border-color: #3b49af;
   color: #fff;
 }
 .btn.btn-primary {
-  background-color: #5764c6;
+  background: #5764c6;
   border-color: #4452c0;
   color: #fff;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background-color: #4452c0;
+  background: #4452c0;
   border-color: #3b49af;
   color: #fff;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  background-color: #3b49af;
+  background: #3b49af;
   border-color: #35419c;
   color: #fff;
 }
@@ -922,7 +919,7 @@ pre code {
   border-top-color: transparent;
 }
 .btn.btn-link {
-  background-color: transparent;
+  background: transparent;
   border-color: transparent;
   color: #5764c6;
 }
@@ -953,11 +950,11 @@ pre code {
   width: 100%;
 }
 .btn.btn-clear {
-  background-color: transparent;
+  background: transparent;
   border: 0;
   border-radius: .7rem;
   height: 1.4rem;
-  margin: .1rem -.2rem .1rem .2rem;
+  margin: .3rem -.2rem .3rem .2rem;
   opacity: .35;
   padding: 0;
   position: relative;
@@ -969,7 +966,7 @@ pre code {
 }
 .btn.btn-clear::before,
 .btn.btn-clear::after {
-  background-color: #333;
+  background: #333;
   content: "";
   display: block;
   left: 50%;
@@ -1030,7 +1027,7 @@ pre code {
 }
 .form-input {
   -webkit-appearance: none;
-  background-color: #fff;
+  background: #fff;
   background-image: none;
   border: .1rem solid #c5c5c5;
   border-radius: .3rem;
@@ -1049,7 +1046,7 @@ pre code {
   border-color: #5764c6;
 }
 .form-input[disabled] {
-  background-color: #eeeff2;
+  background: #eeeff2;
 }
 .form-input.input-sm {
   border-radius: .2rem;
@@ -1146,7 +1143,7 @@ textarea.form-input {
 }
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon {
-  background-color: #5764c6;
+  background: #5764c6;
   border-color: #5764c6;
 }
 .form-checkbox .form-icon {
@@ -1171,7 +1168,7 @@ textarea.form-input {
   border-radius: .7rem;
 }
 .form-radio input:checked + .form-icon::after {
-  background-color: #fff;
+  background: #fff;
   border-radius: .2rem;
   content: "";
   height: .4rem;
@@ -1190,7 +1187,7 @@ textarea.form-input {
   position: relative;
 }
 .form-switch .form-icon {
-  background-color: #c5c5c5;
+  background: #c5c5c5;
   border: .1rem solid #c5c5c5;
   border-radius: .9rem;
   display: inline-block;
@@ -1205,7 +1202,7 @@ textarea.form-input {
   width: 3rem;
 }
 .form-switch .form-icon::after {
-  background-color: #fff;
+  background: #fff;
   border-radius: .8rem;
   content: "";
   display: block;
@@ -1217,7 +1214,7 @@ textarea.form-input {
   width: 1.6rem;
 }
 .form-switch input:checked + .form-icon {
-  background-color: #5764c6;
+  background: #5764c6;
   border-color: #5764c6;
 }
 .form-switch input:checked + .form-icon::after {
@@ -1229,7 +1226,7 @@ textarea.form-input {
   display: -webkit-flex;
 }
 .input-group .input-group-addon {
-  background-color: #efefef;
+  background: #efefef;
   border: .1rem solid #c5c5c5;
   border-radius: .3rem;
   line-height: 1.6rem;
@@ -1303,7 +1300,7 @@ textarea.form-input {
   width: 100%;
 }
 .avatar .avatar-icon {
-  background-color: #fff;
+  background: #fff;
   bottom: -.2em;
   height: 50%;
   padding: 5%;
@@ -1364,7 +1361,7 @@ textarea.form-input {
   position: relative;
 }
 .form-autocomplete .form-autocomplete-input {
-  background-color: #fff;
+  background: #fff;
   border: .1rem solid #c5c5c5;
   border-radius: .3rem;
   color: #333;
@@ -1381,7 +1378,7 @@ textarea.form-input {
   margin-bottom: .3rem;
 }
 .form-autocomplete .form-autocomplete-input .form-input {
-  background-color: #fff;
+  background: #fff;
   border-color: transparent;
   display: inline-block;
   height: 2.4rem;
@@ -1391,7 +1388,7 @@ textarea.form-input {
   width: auto;
 }
 .form-autocomplete .form-autocomplete-list {
-  background-color: #fff;
+  background: #fff;
   border: .1rem solid #d2d2d2;
   border-radius: .3rem;
   box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .15);
@@ -1406,17 +1403,17 @@ textarea.form-input {
   z-index: 1988;
 }
 .form-autocomplete .form-autocomplete-list .chip {
-  background-color: transparent;
+  background: transparent;
 }
 .form-autocomplete .form-autocomplete-list .chip:hover,
 .form-autocomplete .form-autocomplete-list .chip.selected {
-  background-color: #eff1fa;
+  background: #eff1fa;
 }
 .badge {
   position: relative;
 }
 .badge::after {
-  background-color: #5764c6;
+  background: #5764c6;
   border: .1rem solid #fff;
   border-radius: 1rem;
   color: #fff;
@@ -1433,9 +1430,9 @@ textarea.form-input {
   white-space: nowrap;
 }
 .card {
-  background-color: #fff;
+  background: #fff;
+  border: .1rem solid #efefef;
   border-radius: .3rem;
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
   margin: 0;
   padding: 0;
@@ -1520,20 +1517,20 @@ textarea.form-input {
 }
 .chip .chip-action .btn:hover,
 .chip .chip-action .btn:focus {
-  background-color: transparent;
+  background: transparent;
   border-color: transparent;
   color: #5764c6;
 }
 .chip .chip-action .btn:active,
 .chip .chip-action .btn.active {
-  background-color: transparent;
+  background: transparent;
   border-color: transparent;
   color: #4452c0;
 }
 .chip-sm {
   -webkit-align-items: center;
           align-items: center;
-  background-color: #eff1fa;
+  background: #eff1fa;
   border-radius: .3rem;
   color: #666;
   display: -ms-inline-flexbox;
@@ -1549,19 +1546,19 @@ textarea.form-input {
 }
 .chip-sm:hover,
 .chip-sm:focus {
-  background-color: #e8eaf7;
+  background: #e8eaf7;
 }
 .chip-sm .btn::before,
 .chip-sm .btn::after {
-  background-color: #3b49af;
+  background: #3b49af;
 }
 .chip-sm.selected {
-  background-color: #5764c6;
+  background: #5764c6;
   color: #fff;
 }
 .chip-sm.selected .btn::before,
 .chip-sm.selected .btn::after {
-  background-color: #eff1fa;
+  background: #eff1fa;
 }
 .chip-sm .chip-name {
   margin-left: .4rem;
@@ -1575,7 +1572,7 @@ textarea.form-input {
   width: 1.6rem;
 }
 .label {
-  background-color: #efefef;
+  background: #efefef;
   border-radius: .2rem;
   color: #666;
   display: inline;
@@ -1585,12 +1582,12 @@ textarea.form-input {
   white-space: nowrap;
 }
 .label.label-primary {
-  background-color: #5764c6;
+  background: #5764c6;
   border-color: #4f5dc3;
   color: #fff;
 }
 .menu {
-  background-color: #fff;
+  background: #fff;
   border-radius: .3rem;
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
@@ -1626,7 +1623,7 @@ textarea.form-input {
 }
 .menu .menu-item a:active,
 .menu .menu-item a.active {
-  background-color: #eff1fa;
+  background: #eff1fa;
   color: #4452c0;
 }
 .menu .menu-header {
@@ -1638,7 +1635,7 @@ textarea.form-input {
   padding: .2rem 1rem;
 }
 .menu .menu-header .menu-header-text {
-  background-color: #fff;
+  background: #fff;
   display: inline-block;
   margin-left: -.6rem;
   padding: 0 .6rem;
@@ -1679,7 +1676,7 @@ textarea.form-input {
   z-index: 1988;
 }
 .modal.active .modal-overlay {
-  background-color: rgba(0, 0, 0, .75);
+  background: rgba(0, 0, 0, .75);
   bottom: 0;
   display: block;
   left: 0;
@@ -1694,7 +1691,7 @@ textarea.form-input {
 .modal-container {
   -webkit-animation: slide-up .216s;
           animation: slide-up .216s;
-  background-color: #fff;
+  background: #fff;
   border-radius: .3rem;
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
@@ -1807,14 +1804,14 @@ textarea.form-input {
 }
 .pagination .page-item a:hover,
 .pagination .page-item a:focus {
-  background-color: #eff1fa;
+  background: #eff1fa;
 }
 .pagination .page-item.active a {
-  background-color: #5764c6;
+  background: #5764c6;
   color: #fff;
 }
 .toast {
-  background-color: #efefef;
+  background: #efefef;
   border: .1rem solid #eaeaea;
   border-radius: .3rem;
   color: #666;
@@ -1823,15 +1820,33 @@ textarea.form-input {
   width: 100%;
 }
 .toast.toast-primary {
-  background-color: #5764c6;
+  background: #5764c6;
   border-color: #4f5dc3;
   color: #fff;
+}
+.toast.toast-success {
+  background: #32b643;
+  border-color: #30ae40;
+  color: #fff;
+}
+.toast.toast-danger {
+  background: #e85600;
+  border-color: #de5200;
+  color: #fff;
+}
+.toast.toast-primary .btn-clear::before,
+.toast.toast-success .btn-clear::before,
+.toast.toast-danger .btn-clear::before,
+.toast.toast-primary .btn-clear::after,
+.toast.toast-success .btn-clear::after,
+.toast.toast-danger .btn-clear::after {
+  background: #fff;
 }
 .tooltip {
   position: relative;
 }
 .tooltip::after {
-  background-color: rgba(51, 51, 51, .9);
+  background: rgba(51, 51, 51, .9);
   border-radius: .3rem;
   bottom: 100%;
   color: #fff;
@@ -1996,7 +2011,7 @@ textarea.form-input {
   visibility: hidden;
 }
 .text-hide {
-  background-color: transparent;
+  background: transparent;
   border: 0;
   color: transparent;
   font: 0/0 a;
