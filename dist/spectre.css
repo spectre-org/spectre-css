@@ -1342,7 +1342,7 @@ textarea.form-input {
   max-width: 100%;
   min-height: 3.2rem;
   outline: 0;
-  padding: .3rem .5rem 0 .5rem;
+  padding: .3rem .3rem 0 .3rem;
   width: 100%;
 }
 .form-autocomplete .form-autocomplete-input .chip-sm {
@@ -1373,11 +1373,17 @@ textarea.form-input {
   width: 100%;
   z-index: 1988;
 }
-.form-autocomplete .form-autocomplete-list .chip {
-  background: transparent;
+.form-autocomplete .form-autocomplete-item {
+  border-radius: .3rem;
+  display: block;
+  margin-top: .1rem;
+  padding: .2rem 1rem;
 }
-.form-autocomplete .form-autocomplete-list .chip:hover,
-.form-autocomplete .form-autocomplete-list .chip.selected {
+.form-autocomplete .form-autocomplete-item:hover,
+.form-autocomplete .form-autocomplete-item:focus {
+  background: #f7f8fc;
+}
+.form-autocomplete .form-autocomplete-item.active {
   background: #eff1fa;
 }
 .badge {
@@ -1453,7 +1459,6 @@ textarea.form-input {
           align-items: center;
   border: .1rem solid transparent;
   border-radius: .3rem;
-  color: #666;
   display:         flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1461,7 +1466,7 @@ textarea.form-input {
   -ms-flex-line-pack: distribute;
   list-style: none;
   margin: 0;
-  padding: .5rem;
+  padding: .5rem 0;
 }
 .chip .chip-icon {
   -webkit-flex: 0 0 auto;
@@ -1511,7 +1516,7 @@ textarea.form-input {
   background: #e8eaf7;
 }
 .chip-sm .btn-clear {
-  margin-top: -.1rem;
+  margin-top: -.2rem;
 }
 .chip-sm .btn-clear::before {
   color: #3b49af;
@@ -1798,9 +1803,9 @@ textarea.form-input {
   border-color: #de5200;
   color: #fff;
 }
-.toast.toast-primary .btn-clear::before,
-.toast.toast-success .btn-clear::before,
-.toast.toast-danger .btn-clear::before {
+.toast.toast-primary .btn-clear,
+.toast.toast-success .btn-clear,
+.toast.toast-danger .btn-clear {
   color: #fff;
 }
 .tooltip {
