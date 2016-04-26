@@ -945,40 +945,18 @@ pre code {
 .btn.btn-clear {
   background: transparent;
   border: 0;
-  border-radius: .7rem;
-  height: 1.4rem;
-  margin: .3rem -.2rem .3rem .2rem;
-  opacity: .35;
+  color: #666;
+  height: 2rem;
+  margin-left: .3rem;
+  opacity: .45;
   padding: 0;
-  position: relative;
-  vertical-align: top;
-  width: 1.4rem;
 }
 .btn.btn-clear:hover {
-  opacity: .75;
-}
-.btn.btn-clear::before,
-.btn.btn-clear::after {
-  background: #333;
-  content: "";
-  display: block;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  opacity: .85;
 }
 .btn.btn-clear::before {
-  height: .2rem;
-  margin-left: -.5rem;
-  margin-top: -.1rem;
-  width: 1rem;
-}
-.btn.btn-clear::after {
-  height: 1rem;
-  margin-left: -.1rem;
-  margin-top: -.5rem;
-  width: .2rem;
+  content: "\00d7";
+  font-size: 2rem;
 }
 .btn-group {
   display:         inline-flex;
@@ -1364,7 +1342,7 @@ textarea.form-input {
   max-width: 100%;
   min-height: 3.2rem;
   outline: 0;
-  padding: .3rem .5rem 0 .5rem;
+  padding: .3rem .3rem 0 .3rem;
   width: 100%;
 }
 .form-autocomplete .form-autocomplete-input .chip-sm {
@@ -1395,11 +1373,17 @@ textarea.form-input {
   width: 100%;
   z-index: 1988;
 }
-.form-autocomplete .form-autocomplete-list .chip {
-  background: transparent;
+.form-autocomplete .form-autocomplete-item {
+  border-radius: .3rem;
+  display: block;
+  margin-top: .1rem;
+  padding: .2rem 1rem;
 }
-.form-autocomplete .form-autocomplete-list .chip:hover,
-.form-autocomplete .form-autocomplete-list .chip.selected {
+.form-autocomplete .form-autocomplete-item:hover,
+.form-autocomplete .form-autocomplete-item:focus {
+  background: #f7f8fc;
+}
+.form-autocomplete .form-autocomplete-item.active {
   background: #eff1fa;
 }
 .badge {
@@ -1433,20 +1417,17 @@ textarea.form-input {
   z-index: 999;
 }
 .card .card-header,
-.card .card-image,
 .card .card-body,
 .card .card-footer {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
 .card .card-header:last-child,
-.card .card-image:last-child,
 .card .card-body:last-child,
 .card .card-footer:last-child {
   padding-bottom: 1.5rem;
 }
 .card .card-image {
-  padding-left: 0;
-  padding-right: 0;
+  padding-top: 1.5rem;
 }
 .card .card-image:first-child {
   padding-top: 0;
@@ -1454,6 +1435,10 @@ textarea.form-input {
 .card .card-image:first-child img {
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
+}
+.card .card-image:last-child img {
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
 }
 .card .card-title {
   font-size: 1.4em;
@@ -1474,7 +1459,6 @@ textarea.form-input {
           align-items: center;
   border: .1rem solid transparent;
   border-radius: .3rem;
-  color: #666;
   display:         flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1482,7 +1466,7 @@ textarea.form-input {
   -ms-flex-line-pack: distribute;
   list-style: none;
   margin: 0;
-  padding: .3rem .8rem;
+  padding: .5rem 0;
 }
 .chip .chip-icon {
   -webkit-flex: 0 0 auto;
@@ -1503,22 +1487,12 @@ textarea.form-input {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-.chip .chip-action .btn {
-  border-color: transparent;
-  color: #c5c5c5;
-  padding: .7rem .5rem;
+.chip .chip-title {
+  font-size: 1.4rem;
 }
-.chip .chip-action .btn:hover,
-.chip .chip-action .btn:focus {
-  background: transparent;
-  border-color: transparent;
-  color: #5764c6;
-}
-.chip .chip-action .btn:active,
-.chip .chip-action .btn.active {
-  background: transparent;
-  border-color: transparent;
-  color: #4452c0;
+.chip .chip-meta {
+  color: #b3b3b3;
+  font-size: 1.2rem;
 }
 .chip-sm {
   -webkit-align-items: center;
@@ -1541,17 +1515,19 @@ textarea.form-input {
 .chip-sm:focus {
   background: #e8eaf7;
 }
-.chip-sm .btn::before,
-.chip-sm .btn::after {
-  background: #3b49af;
+.chip-sm .btn-clear {
+  margin-top: -.2rem;
+}
+.chip-sm .btn-clear::before {
+  color: #3b49af;
+  font-size: 1.6rem;
 }
 .chip-sm.selected {
   background: #5764c6;
   color: #fff;
 }
-.chip-sm.selected .btn::before,
-.chip-sm.selected .btn::after {
-  background: #eff1fa;
+.chip-sm.selected .btn-clear::before {
+  color: #eff1fa;
 }
 .chip-sm .chip-name {
   margin-left: .4rem;
@@ -1827,13 +1803,10 @@ textarea.form-input {
   border-color: #de5200;
   color: #fff;
 }
-.toast.toast-primary .btn-clear::before,
-.toast.toast-success .btn-clear::before,
-.toast.toast-danger .btn-clear::before,
-.toast.toast-primary .btn-clear::after,
-.toast.toast-success .btn-clear::after,
-.toast.toast-danger .btn-clear::after {
-  background: #fff;
+.toast.toast-primary .btn-clear,
+.toast.toast-success .btn-clear,
+.toast.toast-danger .btn-clear {
+  color: #fff;
 }
 .tooltip {
   position: relative;

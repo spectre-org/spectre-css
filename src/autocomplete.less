@@ -13,7 +13,7 @@
     max-width: 100%;
     min-height: 3.2rem;
     outline: 0;
-    padding: .3rem .5rem 0 .5rem;
+    padding: .3rem .3rem 0 .3rem;
     width: 100%;
 
     .chip-sm {
@@ -46,14 +46,19 @@
     top: 100%;
     width: 100%;
     z-index: 1988;
+  }
+  .form-autocomplete-item {
+    border-radius: .3rem;
+    display: block;
+    margin-top: .1rem;
+    padding: .2rem 1rem;
 
-    .chip {
-      background: transparent;
-
-      &:hover,
-      &.selected {
-        background: lighten(@core-color, 40%);
-      }
+    &:hover,
+    &:focus {
+      background: lighten(@core-color, 42%);
+    }
+    &.active {
+      background: lighten(@core-color, 40%);
     }
   }
 }
