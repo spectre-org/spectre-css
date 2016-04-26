@@ -8,7 +8,7 @@
   display: flex;
   list-style: none;
   margin: 0;
-  padding: .3rem .8rem;
+  padding: .5rem;
 
   .chip-icon {
     flex: 0 0 auto;
@@ -20,25 +20,13 @@
   }
   .chip-action {
     flex: 0 0 auto;
-
-    .btn {
-      border-color: transparent;
-      color: @control-color;
-      padding: .7rem .5rem;
-
-      &:hover,
-      &:focus {
-        background: transparent;
-        border-color: transparent;
-        color: @core-color;
-      }
-      &:active,
-      &.active {
-        background: transparent;
-        border-color: transparent;
-        color: darken(@core-color, 5%);
-      }
-    }
+  }
+  .chip-title {
+    font-size: 1.4rem;
+  }
+  .chip-meta {
+    color: lighten(@body-font-color, 50%);
+    font-size: 1.2rem;
   }
 }
 
@@ -61,10 +49,12 @@
     background: lighten(@core-color, 38%);
   }
 
-  .btn {
-    &::before,
-    &::after {
-      background: darken(@core-color, 10%);
+  .btn-clear {
+    margin-top: -.1rem;
+
+    &::before {
+      color: darken(@core-color, 10%);
+      font-size: 1.6rem;
     }
   }
 
@@ -72,10 +62,9 @@
     background: @core-color;
     color: @core-text-color;
 
-    .btn {
-      &::before,
-      &::after {
-        background: lighten(@core-color, 40%);
+    .btn-clear {
+      &::before {
+        color: lighten(@core-color, 40%);
       }
     }
   }

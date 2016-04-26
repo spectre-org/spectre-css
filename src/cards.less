@@ -10,7 +10,6 @@
   z-index: 999;
 
   .card-header,
-  .card-image,
   .card-body,
   .card-footer {
     padding: 1.5rem 1.5rem 0 1.5rem;
@@ -20,8 +19,7 @@
     }
   }
   .card-image {
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 1.5rem;
 
     &:first-child {
       padding-top: 0;
@@ -29,6 +27,13 @@
       img {
         border-top-left-radius: .3rem;
         border-top-right-radius: .3rem;
+      }
+    }
+
+    &:last-child {
+      img {
+        border-bottom-left-radius: .3rem;
+        border-bottom-right-radius: .3rem;
       }
     }
   }
