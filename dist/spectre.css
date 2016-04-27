@@ -843,6 +843,15 @@ pre code {
   border-spacing: 0;
   width: 100%;
 }
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background: #fcfcfc;
+}
+.table.table-hover tbody tr:hover {
+  background: #f4f4f4;
+}
+.table.table-hover tbody tr.selected {
+  background: #f2f2f2;
+}
 .table th,
 .table td {
   border-bottom: .1rem solid #efefef;
@@ -851,9 +860,6 @@ pre code {
 }
 .table th {
   border-color: #c9c9c9;
-}
-.table .selected {
-  background: #f4f4f4;
 }
 .btn {
   -webkit-appearance: none;
