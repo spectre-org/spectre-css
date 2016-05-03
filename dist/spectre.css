@@ -470,6 +470,12 @@ ol {
 ol ol {
   list-style-type: lower-alpha;
 }
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin: .5rem 0 1.5rem 0;
+}
 .lead {
   font-size: 120%;
 }
