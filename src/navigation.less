@@ -68,6 +68,15 @@
     .tab-item {
       flex: 1 0 auto;
       text-align: center;
+
+      .badge {
+        &[data-badge]::after {
+          position: absolute;
+          right: 1.5rem;
+          top: .5rem;
+          transform: translate(50%, -.8rem);
+        }
+      }
     }
   }
 }

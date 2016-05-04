@@ -1133,6 +1133,7 @@ textarea.form-input {
   border-radius: .2rem;
 }
 .form-checkbox input:checked + .form-icon::after {
+  background-clip: padding-box;
   border: .2rem solid #fff;
   border-left-width: 0;
   border-top-width: 0;
@@ -1171,6 +1172,7 @@ textarea.form-input {
 }
 .form-switch .form-icon {
   background: #c5c5c5;
+  background-clip: padding-box;
   border: .1rem solid #c5c5c5;
   border-radius: .9rem;
   display: inline-block;
@@ -1401,17 +1403,18 @@ textarea.form-input {
 .badge {
   position: relative;
 }
-.badge::after {
+.badge[data-badge]::after {
   background: #5764c6;
+  background-clip: padding-box;
   border: .1rem solid #fff;
   border-radius: 1rem;
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
-  font-size: 1.2rem;
-  height: 2rem;
-  line-height: 1.4rem;
-  min-width: 2rem;
+  font-size: 1.1rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  min-width: 1.8rem;
   padding: .2rem .5rem;
   text-align: center;
   -webkit-transform: translate(-.2rem, -.8rem);
@@ -1764,6 +1767,13 @@ textarea.form-input {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: center;
+}
+.tab.tab-block .tab-item .badge[data-badge]::after {
+  position: absolute;
+  right: 1.5rem;
+  top: .5rem;
+  -webkit-transform: translate(50%, -.8rem);
+  transform: translate(50%, -.8rem);
 }
 .pagination {
   display: inline-block;
