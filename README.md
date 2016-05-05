@@ -43,7 +43,8 @@ You can compiling your custom version of Spectre.css. Read [the documentation](h
 #### Layout
 - [flexbox-grid](http://picturepan2.github.io/spectre/#grid) - flexbox based responsive grid system
 - [responsive](http://picturepan2.github.io/spectre/#responsive) - responsive grid and utilities
-- [empty states](http://picturepan2.github.io/spectre/#empty) - empty states/blank slates
+- [navbar](http://picturepan2.github.io/spectre/#navbar) - header layout of apps and websites
+- [empty states](http://picturepan2.github.io/spectre/#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
 
