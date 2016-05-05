@@ -948,6 +948,11 @@ textarea.form-input {
 .input-group .input-group-btn:focus {
   z-index: 99;
 }
+.form-inline {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -1243,6 +1248,23 @@ textarea.form-input {
   .hide-xl {
     display: none !important;
   }
+}
+.navbar {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navbar .navbar-brand {
+  font-size: 2rem;
+  text-decoration: none;
+  vertical-align: middle;
 }
 .empty {
   background: #f8f8f8;

@@ -12,7 +12,7 @@
 
 // Colors
 @core-color: #5764c6;
-@core-text-color: #fff;
+@core-light-color: #fff;
 @core-meta-color: #888;
 @core-link-color: #5764c6;
 @core-border-color: #efefef;
@@ -40,7 +40,7 @@
 .toast-variant(@color) {
   background: @color;
   border-color: darken(@color, 2%);
-  color: @core-text-color;
+  color: @core-light-color;
 }
 .label-base() {
   border-radius: .2rem;
@@ -51,5 +51,5 @@
 }
 .label-variant(@color) {
   background: @color;
-  color: @core-text-color;
+  color: @core-light-color;
 }
