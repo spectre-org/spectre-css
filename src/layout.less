@@ -8,18 +8,15 @@
   width: 100%;
   &:extend(.clearfix all);
 }
-@media screen and (min-width: 981px) {
+// Grid sizes
+@media screen and (min-width: (960px + 2 * @html-font-size * @layout-gutter)) {
   .grid-960 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 96rem;
+    width: 96rem + 2 * @layout-gutter;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: (480px + 2 * @html-font-size * @layout-gutter)) {
   .grid-480 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 48rem;
+    width: 48rem + 2 * @layout-gutter;
   }
 }
 
@@ -84,7 +81,7 @@
 .col-1 {
   width: 8.33333333%;
 }
-@media screen and (min-width: (@size-xs+1px)) {
+@media screen and (min-width: (@size-xs + 1px)) {
   .col-xs-12,
   .col-xs-11,
   .col-xs-10,
@@ -136,7 +133,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: (@size-sm+1px)) {
+@media screen and (min-width: (@size-sm + 1px)) {
   .col-sm-12,
   .col-sm-11,
   .col-sm-10,
@@ -188,7 +185,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: (@size-md+1px)) {
+@media screen and (min-width: (@size-md + 1px)) {
   .col-md-12,
   .col-md-11,
   .col-md-10,
@@ -240,7 +237,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (min-width: (@size-md+1px)) {
+@media screen and (min-width: (@size-md + 1px)) {
   .form-horizontal {
     padding: 1rem;
 

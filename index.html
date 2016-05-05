@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="https://github.com/picturepan2/spectre" />
-    <title>Spectre.css: a lightweight, responsive and modern CSS framework</title>
+    <title>Spectre.css - a lightweight, responsive and modern CSS framework</title>
     <link rel="stylesheet" href="dist/spectre.css" />
     <link rel="stylesheet" href="demo/font/style.css" />
     <style>
         header > h4,
         header > h5 {
-            padding-top: 4rem;
             margin-top: 4rem;
             margin-bottom: 2rem;
         }
@@ -43,6 +42,9 @@
             margin: 4rem 0;
             color: #666;
         }
+        .empty .icon {
+            font-size: 4rem;
+        }
         .code {
             color: #666;
         }
@@ -61,8 +63,8 @@
     </style>
 </head>
 <body>
-    <section class="container bg-grey">
-        <section id="overview" class="grid-hero grid-960">
+    <section class="section bg-grey">
+        <section id="overview" class="grid-hero container grid-960">
             <header class="text-center"><h3>Spectre.css</h3></header>
             <section>
                 <p><strong>Spectre.css</strong> is a lightweight, responsive and modern CSS framework for faster and extensible development.</p>
@@ -83,8 +85,8 @@
             </section>
         </section>
     </section>
-    <section class="container">
-        <section id="getting-started" class="grid-960">
+    <section class="section">
+        <section id="getting-started" class="container grid-960">
             <header class="text-center"><h4>getting started</h4></header>
             <section class="notes">
                 <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
@@ -110,7 +112,7 @@
             </section>
         </section>
 
-        <section id="compiling" class="grid-960">
+        <section id="compiling" class="container grid-960">
             <header class="text-center"><h4>compiling custom version</h4></header>
             <section class="notes">
                 <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>.</p>
@@ -125,12 +127,17 @@
             </section>
         </section>
 
-        <section id="elements" class="grid-960">
+        <section id="elements" class="container grid-960">
             <section class="notes text-center">
                 <ul class="tab inline-flex">
                     <li class="tab-item active">
                         <a href="#elements">
                             elements
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#layout">
+                            layout
                         </a>
                     </li>
                     <li class="tab-item">
@@ -148,7 +155,6 @@
             <section class="notes text-center">
                 <div class="btn-group">
                     <a href="#typography" class="btn btn-primary">typography</a>
-                    <a href="#layout" class="btn btn-primary">layout</a>
                     <a href="#tables" class="btn btn-primary">tables</a>
                     <a href="#buttons" class="btn btn-primary">buttons</a>
                     <a href="#forms" class="btn btn-primary">forms</a>
@@ -157,7 +163,7 @@
             </section>
         </section>
 
-        <section id="typography" class="grid-960">
+        <section id="typography" class="container grid-960">
             <header class="text-center"><h4>typography</h4></header>
             <section class="notes">
                 <p><strong>Typography</strong> sets default styles for headings, paragraphs, blockquote, lists and code elements. </p>
@@ -273,158 +279,7 @@
 
         </section>
 
-        <section id="layout" class="grid-960">
-            <header class="text-center"><h4>flexbox layout</h4></header>
-            <section class="notes">
-                <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
-            </section>
-            <div class="columns">
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="column col-12">
-                    <div class="bg-grey">col-12 (100%)</div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column col-9">
-                    <div class="bg-grey">col-9 (75%)</div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column col-6">
-                    <div class="bg-grey">col-6 (50%)</div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column col-3">
-                    <div class="bg-grey">col-3 (25%)</div>
-                </div>
-            </div>
-
-            <section class="notes">
-                <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
-            </section>
-
-            <!-- layout example -->
-<pre class="code lang-html">
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
-</pre>
-
-            <div class="columns">
-                <div class="column col-md-6">
-                    <div class="bg-grey">col-md-6</div>
-                </div>
-                <div class="column col-md-3">
-                    <div class="bg-grey">col-md-3</div>
-                </div>
-                <div class="column col-md-3">
-                    <div class="bg-grey">col-md-3</div>
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="column col-sm-6">
-                    <div class="bg-grey">col-sm-6</div>
-                </div>
-                <div class="column col-sm-3">
-                    <div class="bg-grey">col-sm-3</div>
-                </div>
-                <div class="column col-sm-3">
-                    <div class="bg-grey">col-sm-3</div>
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="column col-xs-6">
-                    <div class="bg-grey">col-xs-6</div>
-                </div>
-                <div class="column col-xs-3">
-                    <div class="bg-grey">col-xs-3</div>
-                </div>
-                <div class="column col-xs-3">
-                    <div class="bg-grey">col-xs-3</div>
-                </div>
-            </div>
-
-            <section class="notes">
-                <p>Spectre also provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
-                <ul>
-                    <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
-                    <li><code>col-xs-[1-12]</code> apply to window width greater than or equal to <strong>481px</strong>. </li>
-                    <li><code>col-sm-[1-12]</code> apply to window width greater than or equal to <strong>601px</strong>. </li>
-                    <li><code>col-md-[1-12]</code> apply to window width greater than or equal to <strong>841px</strong>. </li>
-                </ul>
-            </section>
-
-            <!-- layout example -->
-<pre class="code lang-html">
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
-</pre>
-
-            <section class="notes">
-                <p>For hiding elements on specific viewport sizes, there are classes <code>.hide-xs</code>, <code>.hide-sm</code>, <code>.hide-md</code>, <code>.hide-lg</code> and <code>.hide-xl</code> available.</p>
-                <ul>
-                    <li><code>hide-xs</code> hides elements when the viewport is smaller than or equal to <strong>480px</strong>. </li>
-                    <li><code>hide-sm</code> hides elements when the viewport is smaller than or equal to <strong>600px</strong>. </li>
-                    <li><code>hide-md</code> hides elements when the viewport is smaller than or equal to <strong>840px</strong>. </li>
-                    <li><code>hide-lg</code> hides elements when the viewport is smaller than or equal to <strong>960px</strong>. </li>
-                    <li><code>hide-xl</code> hides elements when the viewport is smaller than or equal to <strong>1280px</strong>. </li>
-                </ul>
-            </section>
-
-        </section>
-
-        <section id="tables" class="grid-960">
+        <section id="tables" class="container grid-960">
             <header class="text-center"><h4>tables</h4></header>
             <section class="notes">
                 <p><strong>Tables</strong> include default styles for tables and data sets.</p>
@@ -440,7 +295,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="selected">
+                    <tr>
                         <td>The Shawshank Redemption</td>
                         <td>2h 22min</td>
                         <td>Crime, Drama</td>
@@ -495,7 +350,7 @@
 
         </section>
 
-        <section id="buttons" class="grid-960">
+        <section id="buttons" class="container grid-960">
             <header class="text-center"><h4>buttons</h4></header>
             <section class="notes">
                 <p><strong>Buttons</strong> include simple button styles for actions in different types and sizes. </p>
@@ -588,6 +443,15 @@
                     </div>
                 </div>
             </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="btn-group">
+                        <button class="btn btn-sm">first button</button>
+                        <button class="btn btn-sm">second button</button>
+                        <button class="btn btn-sm">third button</button>
+                    </div>
+                </div>
+            </div>
             <section class="notes">
                 <p>If you want to use buttons as a group, add the class <code>btn-group</code> to the container. You can add the class <code>btn-group-block</code> for a full-width button group.</p>
             </section>
@@ -603,7 +467,7 @@
 
         </section>
 
-        <section id="forms" class="grid-960">
+        <section id="forms" class="container grid-960">
             <header class="text-center"><h4>forms</h4></header>
             <section class="notes">
                 <p><strong>Forms</strong> provide the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
@@ -876,7 +740,7 @@
 
         </section>
 
-        <section id="media" class="grid-960">
+        <section id="media" class="container grid-960">
             <header class="text-center"><h4>media</h4></header>
             <section class="notes">
                 <p><strong>Media</strong> include responsive image and video class. </p>
@@ -911,12 +775,308 @@
 
         </section>
 
-        <section id="components" class="grid-960">
+        <section id="layout" class="container grid-960">
             <section class="notes text-center">
                 <ul class="tab inline-flex">
                     <li class="tab-item">
                         <a href="#elements">
                             elements
+                        </a>
+                    </li>
+                    <li class="tab-item active">
+                        <a href="#layout">
+                            layout
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#components">
+                            components
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#utilities">
+                            utilities
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="notes text-center">
+                <div class="btn-group">
+                    <a href="#grid" class="btn btn-primary">flexbox grid</a>
+                    <a href="#responsive" class="btn btn-primary">responsive</a>
+                    <a href="#navbar" class="btn btn-primary">navbar</a>
+                    <a href="#empty" class="btn btn-primary">empty states</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="grid" class="container grid-960">
+            <header class="text-center"><h4>flexbox grid</h4></header>
+            <section class="notes">
+                <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+                <div class="column">
+                    <div class="bg-grey"></div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column col-12">
+                    <div class="bg-grey">col-12 (100%)</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-9">
+                    <div class="bg-grey">col-9 (75%)</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-6">
+                    <div class="bg-grey">col-6 (50%)</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-3">
+                    <div class="bg-grey">col-3 (25%)</div>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
+            </section>
+
+            <!-- layout example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="responsive" class="container grid-960">
+            <header class="text-center"><h4>responsive grid</h4></header>
+            <div class="columns">
+                <div class="column col-md-6">
+                    <div class="bg-grey">col-md-6</div>
+                </div>
+                <div class="column col-md-3">
+                    <div class="bg-grey">col-md-3</div>
+                </div>
+                <div class="column col-md-3">
+                    <div class="bg-grey">col-md-3</div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column col-sm-6">
+                    <div class="bg-grey">col-sm-6</div>
+                </div>
+                <div class="column col-sm-3">
+                    <div class="bg-grey">col-sm-3</div>
+                </div>
+                <div class="column col-sm-3">
+                    <div class="bg-grey">col-sm-3</div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column col-xs-6">
+                    <div class="bg-grey">col-xs-6</div>
+                </div>
+                <div class="column col-xs-3">
+                    <div class="bg-grey">col-xs-3</div>
+                </div>
+                <div class="column col-xs-3">
+                    <div class="bg-grey">col-xs-3</div>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>Spectre also provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                <ul>
+                    <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
+                    <li><code>col-xs-[1-12]</code> apply to window width greater than or equal to <strong>481px</strong>. </li>
+                    <li><code>col-sm-[1-12]</code> apply to window width greater than or equal to <strong>601px</strong>. </li>
+                    <li><code>col-md-[1-12]</code> apply to window width greater than or equal to <strong>841px</strong>. </li>
+                </ul>
+            </section>
+
+            <!-- layout example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+            <section class="notes">
+                <p>For hiding elements on specific viewport sizes, there are classes <code>.hide-xs</code>, <code>.hide-sm</code>, <code>.hide-md</code>, <code>.hide-lg</code> and <code>.hide-xl</code> available.</p>
+                <ul>
+                    <li><code>hide-xs</code> hides elements when the viewport is smaller than or equal to <strong>480px</strong>. </li>
+                    <li><code>hide-sm</code> hides elements when the viewport is smaller than or equal to <strong>600px</strong>. </li>
+                    <li><code>hide-md</code> hides elements when the viewport is smaller than or equal to <strong>840px</strong>. </li>
+                    <li><code>hide-lg</code> hides elements when the viewport is smaller than or equal to <strong>960px</strong>. </li>
+                    <li><code>hide-xl</code> hides elements when the viewport is smaller than or equal to <strong>1280px</strong>. </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="navbar" class="container grid-960">
+            <header class="text-center"><h4>navbar</h4></header>
+            <section class="notes">
+                <p><strong>Navbar</strong> is a layout container that appear in the header of apps and websites. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <header class="navbar bg-grey">
+                        <section class="navbar-section">
+                            <a href="#navbar" class="btn btn-link btn-lg"><i class="icon icon-menu"></i></a>
+                            <a href="#navbar" class="navbar-brand">Spectre.css</a>
+                        </section>
+                        <section class="navbar-section">
+                            <input class="form-input form-inline" type="text" placeholder="search" />
+                            <a href="#navbar" class="btn btn-link">documents</a>
+                            <a href="#navbar" class="btn btn-link">login</a>
+                            <a href="#navbar" class="btn btn-primary">signup</a>
+                        </section>
+                    </header>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <header class="navbar">
+                        <section class="navbar-section">
+                            <a href="#navbar" class="btn btn-link btn-lg"><i class="icon icon-menu"></i></a>
+                            <a href="#navbar" class="navbar-brand">Spectre.css</a>
+                        </section>
+                        <section class="navbar-section">
+                            <input class="form-input form-inline" type="text" placeholder="search" />
+                            <figure class="avatar ml-10 mr-10">
+                                <img src="demo/img/avatar-4.png" />
+                            </figure>
+                            <a href="#navbar" class="btn btn-primary">share</a>
+                        </section>
+                    </header>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. By default, there is no grey background.</p>
+            </section>
+
+            <!-- navbar example -->
+<pre class="code lang-html">
+&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link btn-lg&quot;</span>&gt;
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/section</span>&gt;
+    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+        &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input form-inline&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;login&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;signup&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/section</span>&gt;
+&lt;<span class="tag">/header</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="empty" class="container grid-960">
+            <header class="text-center"><h4>empty states/blank slates</h4></header>
+            <section class="notes">
+                <p><strong>Empty states/blank slates</strong> are commonly used as placeholders for first time use, empty data and error screens.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-6">
+                    <section class="empty">
+                        <i class="icon icon-markunread"></i>
+                        <p class="empty-title">You have no new messages</p>
+                        <p class="empty-meta">Click the button to start a conversation.</p>
+                        <button class="btn btn-primary">Send a message</button>
+                    </section>
+                </div>
+                <div class="column col-6">
+                    <section class="empty">
+                        <i class="icon icon-people"></i>
+                        <p class="empty-title">You are not following anyone</p>
+                        <button class="btn btn-primary">Discover people</button>
+                    </section>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>An empty state component can include icons, messages(title and meta messages) and action buttons or any combination of those elements. </p>
+            </section>
+
+            <!-- empty states example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty&quot;</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title&quot;</span>&gt;You have no new messages&lt;<span class="tag">/p</span>&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-meta&quot;</span>&gt;Click the button to start a conversation.&lt;<span class="tag">/p</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Send a message&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="components" class="container grid-960">
+            <section class="notes text-center">
+                <ul class="tab inline-flex">
+                    <li class="tab-item">
+                        <a href="#elements">
+                            elements
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#layout">
+                            layout
                         </a>
                     </li>
                     <li class="tab-item active">
@@ -948,7 +1108,7 @@
             </section>
         </section>
 
-        <section id="avatars" class="grid-960">
+        <section id="avatars" class="container grid-960">
             <header class="text-center"><h4>avatars</h4></header>
             <section class="notes">
                 <p><strong>Avatars</strong> are user profile pictures. </p>
@@ -1024,7 +1184,7 @@
 
         </section>
 
-        <section id="chips" class="grid-960">
+        <section id="chips" class="container grid-960">
             <header class="text-center"><h4>chips</h4></header>
             <section class="notes">
                 <p><strong>Chips</strong> are complex entities in small blocks. </p>
@@ -1094,7 +1254,7 @@
 
         </section>
 
-        <section id="autocomplete" class="grid-960">
+        <section id="autocomplete" class="container grid-960">
             <header class="text-center"><h4>autocomplete</h4></header>
             <section class="notes">
                 <p><strong>Autocomplete</strong> form component provides suggestions while you type. It is often used for tags and contacts input. </p>
@@ -1255,7 +1415,7 @@
 
         </section>
 
-        <section id="tooltips" class="grid-960">
+        <section id="tooltips" class="container grid-960">
             <header class="text-center"><h4>tooltips</h4></header>
             <section class="notes">
                 <p><strong>Tooltips</strong> provide context information labels that appear on hover and focus.</p>
@@ -1287,7 +1447,7 @@
 
         </section>
 
-        <section id="labels" class="grid-960">
+        <section id="labels" class="container grid-960">
             <header class="text-center"><h4>labels</h4></header>
             <section class="notes">
                 <p><strong>Labels</strong> are formatted text tags for highlighted, informative information.</p>
@@ -1310,7 +1470,7 @@
 
         </section>
 
-        <section id="badges" class="grid-960">
+        <section id="badges" class="container grid-960">
             <header class="text-center"><h4>badges</h4></header>
             <section class="notes">
                 <p><strong>Badges</strong> are often used as unread number indicators.</p>
@@ -1350,7 +1510,7 @@
 
         </section>
 
-        <section id="toasts" class="grid-960">
+        <section id="toasts" class="container grid-960">
             <header class="text-center"><h4>toasts</h4></header>
             <section class="notes">
                 <p><strong>Toasts</strong> are used to show alert or information to users.</p>
@@ -1404,7 +1564,7 @@
 
         </section>
 
-        <section id="menus" class="grid-960">
+        <section id="menus" class="container grid-960">
             <header class="text-center"><h4>menus</h4></header>
             <section class="notes">
                 <p>A <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
@@ -1529,7 +1689,7 @@
 
         </section>
 
-        <section id="navigation" class="grid-960">
+        <section id="navigation" class="container grid-960">
             <header class="text-center"><h4>navigation</h4></header>
             <section class="notes">
                 <p><strong>Navigation</strong> includes several components, including breadcrumbs and tabs.</p>
@@ -1856,7 +2016,7 @@
 
         </section>
 
-        <section id="modals" class="grid-960">
+        <section id="modals" class="container grid-960">
             <header class="text-center"><h4>modals</h4></header>
             <section class="notes">
                 <p><strong>Modals</strong> are flexible dialog prompts.</p>
@@ -1996,7 +2156,7 @@
 
         </section>
 
-        <section id="cards" class="grid-960">
+        <section id="cards" class="container grid-960">
             <header class="text-center"><h4>cards</h4></header>
             <section class="notes">
                 <p><strong>Cards</strong> are flexible content containers.</p>
@@ -2080,12 +2240,17 @@
 
         </section>
 
-        <section id="utilities" class="grid-960">
+        <section id="utilities" class="container grid-960">
             <section class="notes text-center">
                 <ul class="tab inline-flex">
                     <li class="tab-item">
                         <a href="#elements">
                             elements
+                        </a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#layout">
+                            layout
                         </a>
                     </li>
                     <li class="tab-item">
@@ -2111,7 +2276,7 @@
             </section>
         </section>
 
-        <section id="position" class="grid-960">
+        <section id="position" class="container grid-960">
             <section class="notes">
                 <p><strong>Position utilities</strong> are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
             </section>
@@ -2139,7 +2304,7 @@
 
         </section>
 
-        <section id="display" class="grid-960">
+        <section id="display" class="container grid-960">
             <section class="notes">
                 <p><strong>Display utilities</strong> are used for display and hidden things.</p>
             </section>
@@ -2168,7 +2333,7 @@
 
         </section>
 
-        <section id="text" class="grid-960">
+        <section id="text" class="container grid-960">
             <section class="notes">
                 <p><strong>Text utilities</strong> are used for text alignment, styles and overflow things.</p>
             </section>
@@ -2208,7 +2373,7 @@
 
         </section>
 
-        <section id="shapes" class="grid-960">
+        <section id="shapes" class="container grid-960">
             <section class="notes">
                 <p><strong>Shape utilities</strong> are used for change element shapes.</p>
             </section>
@@ -2223,7 +2388,7 @@
 
         </section>
 
-        <section id="divider" class="grid-960">
+        <section id="divider" class="container grid-960">
             <section class="notes">
                 <p>A <strong>Divider</strong> is used for separating elements.</p>
             </section>
@@ -2241,7 +2406,7 @@
 
         </section>
 
-        <section id="loading" class="grid-960">
+        <section id="loading" class="container grid-960">
             <section class="notes">
                 <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code>loading</code> to buttons for loading status.</p>
             </section>
@@ -2259,9 +2424,9 @@
         </section>
     </section>
     <footer class="bg-grey">
-        <section id="copyright" class="grid-footer grid-960">
+        <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.18
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.19
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

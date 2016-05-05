@@ -35,11 +35,16 @@ You can compiling your custom version of Spectre.css. Read [the documentation](h
 #### Elements
 
 - [typography](http://picturepan2.github.io/spectre/#typography) - headings, paragraphs, blockquote, lists and code elements, optimized for asian fonts
-- [layout](http://picturepan2.github.io/spectre/#layout) - flexbox based responsive layout system
 - [tables](http://picturepan2.github.io/spectre/#tables) - organize and display data
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
 - [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
 - [media](http://picturepan2.github.io/spectre/#media) - responsive image and video class
+
+#### Layout
+- [flexbox-grid](http://picturepan2.github.io/spectre/#grid) - flexbox based responsive grid system
+- [responsive](http://picturepan2.github.io/spectre/#responsive) - responsive grid and utilities
+- [navbar](http://picturepan2.github.io/spectre/#navbar) - header layout of apps and websites
+- [empty states](http://picturepan2.github.io/spectre/#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
 

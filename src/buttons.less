@@ -22,37 +22,37 @@
   &:focus {
     background: @core-color;
     border-color: darken(@core-color, 5%);
-    color: @core-text-color;
+    color: @core-light-color;
   }
   &:active,
   &.active {
     background: darken(@core-color, 5%);
     border-color: darken(@core-color, 10%);
-    color: @core-text-color;
+    color: @core-light-color;
   }
 
   // Button Primary
   &.btn-primary {
     background: @core-color;
     border-color: darken(@core-color, 5%);
-    color: @core-text-color;
+    color: @core-light-color;
 
     &:hover,
     &:focus {
       background: darken(@core-color, 5%);
       border-color: darken(@core-color, 10%);
-      color: @core-text-color;
+      color: @core-light-color;
     }
     &:active,
     &.active {
       background: darken(@core-color, 10%);
       border-color: darken(@core-color, 15%);
-      color: @core-text-color;
+      color: @core-light-color;
     }
 
     &.loading {
       &::after {
-        border-color: @core-text-color;
+        border-color: @core-light-color;
         border-right-color: transparent;
         border-top-color: transparent;
       }
