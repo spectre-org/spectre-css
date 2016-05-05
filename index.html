@@ -42,6 +42,9 @@
             margin: 4rem 0;
             color: #666;
         }
+        .empty .icon {
+            font-size: 4rem;
+        }
         .code {
             color: #666;
         }
@@ -800,7 +803,8 @@
             <section class="notes text-center">
                 <div class="btn-group">
                     <a href="#grid" class="btn btn-primary">flexbox grid</a>
-                    <a href="#grid" class="btn btn-primary">responsive</a>
+                    <a href="#responsive" class="btn btn-primary">responsive</a>
+                    <a href="#empty" class="btn btn-primary">empty states</a>
                 </div>
             </section>
         </section>
@@ -957,6 +961,46 @@
                     <li><code>hide-xl</code> hides elements when the viewport is smaller than or equal to <strong>1280px</strong>. </li>
                 </ul>
             </section>
+
+        </section>
+
+        <section id="empty" class="container grid-960">
+            <header class="text-center"><h4>empty states/blank slates</h4></header>
+            <section class="notes">
+                <p>Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-6">
+                    <section class="empty">
+                        <i class="icon icon-markunread"></i>
+                        <p class="empty-title">You have no new messages</p>
+                        <p class="empty-meta">Click the button to start a conversation.</p>
+                        <button class="btn btn-primary">Send a message</button>
+                    </section>
+                </div>
+                <div class="column col-6">
+                    <section class="empty">
+                        <i class="icon icon-people"></i>
+                        <p class="empty-title">You are not following anyone</p>
+                        <button class="btn btn-primary">Discover</button>
+                    </section>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>Spectre also provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+            </section>
+
+            <!-- empty states example -->
+<pre class="code lang-html">
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</pre>
 
         </section>
 

@@ -1244,36 +1244,21 @@ textarea.form-input {
     display: none !important;
   }
 }
-.img-responsive {
-  display: block;
-  height: auto;
-  max-width: 100%;
+.empty {
+  background: #f8f8f8;
+  border-radius: .3rem;
+  padding: 2rem;
+  text-align: center;
 }
-.video-responsive {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  /* Default 16:9, you can calculate this value by dividing 9 by 16 */
-  padding-top: 3rem;
-  position: relative;
+.empty .empty-title {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 .5rem 0;
 }
-.video-responsive iframe,
-.video-responsive object,
-.video-responsive embed {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.empty .empty-meta {
+  color: #888;
 }
-.video-responsive video {
-  height: auto;
-  max-width: 100%;
-  width: 100%;
-}
-.video-responsive-4-3 {
-  padding-bottom: 75%;
-  /* 4:3 */
+.empty .btn {
+  margin-top: 1.5rem;
 }
 .avatar {
   border-radius: 50%;
