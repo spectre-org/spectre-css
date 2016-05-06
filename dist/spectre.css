@@ -376,6 +376,7 @@ body {
   color: #333;
   font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", sans-serif;
   font-size: 1.4rem;
+  overflow-x: hidden;
 }
 a {
   color: #5764c6;
@@ -956,7 +957,6 @@ textarea.form-input {
 .container {
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
