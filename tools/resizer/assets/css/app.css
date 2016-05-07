@@ -1,0 +1,121 @@
+/* Spectre Resizer */
+.app-container {
+  background: #5764C6;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.copyright {
+  bottom: 10px;
+  color: #D2D7EE;
+  left: 10px;
+  position: fixed;
+}
+.copyright h1 {
+  font-size: 14px;
+  margin: 0;
+}
+.device {
+  height: 80vh;
+  margin: 10vh auto;
+  transform: scale(1, 1);
+  transition: width .216s ease;
+  width: 80vw;
+}
+.browser {
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+.browser .browser-header {
+  background: #f8f8f8;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  flex: 0 0 42px;
+  width: 100%;
+}
+.browser .navbar-section {
+  flex: 1 0 33.33%;
+}
+.mobile .browser .navbar-section-btns {
+  display: none;
+}
+.browser .browser-header .btn-refresh {
+  right: 0;
+  top: -2px;
+}
+.browser .browser-header .btn-action {
+  color: #999;
+  padding: 7px 5px;
+}
+.browser .browser-header .btn-action:hover,
+.browser .browser-header .btn-action:focus {
+  color: #666;
+}
+.browser .browser-header .form-input {
+  background: #eee;
+  border-color: transparent;
+  color: #666;
+  height: 28px;
+  padding: 5px 30px 5px 8px;
+}
+.browser .browser-header .form-input:hover,
+.browser .browser-header .form-input:focus {
+  background: #e8e8e8;
+  color: #333;
+}
+.browser .browser-header .form-select {
+  background-color: transparent;
+  border-color: transparent;
+  height: 28px;
+  padding: 3px 24px 3px 8px;
+}
+.browser .browser-body {
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  flex: 1 1 auto;
+  height: auto;
+  position: relative;
+}
+.browser .browser-body iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.browser .browser-footer {
+  background: #fefefe;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  flex: 0 0 5px;
+  width: 100%;
+}
+.browser-action {
+  border-radius: 5px;
+  display: inline-block;
+  height: 10px;
+  margin: 3px 0 3px 6px;
+  vertical-align: middle;
+  width: 10px;
+}
+.browser-action.red {
+  background: #FC625D;
+}
+.browser-action.yellow {
+  background: #FEC041;
+}
+.browser-action.green {
+  background: #35CA4A;
+}
