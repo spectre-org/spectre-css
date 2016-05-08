@@ -5,8 +5,7 @@ Spectre.css is a lightweight, responsive and modern CSS framework for faster and
 - flexbox, responsive and mobile-friendly layout
 - carefully designed elements
 - built in useful components and utilities
-- patterns and html templates (soon)
-- email templates (soon)
+- responsive email templates (soon)
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 
@@ -18,9 +17,9 @@ There are 3 ways to get started with Spectre CSS framework in your projects. You
 ##### Install manually
 Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/dist).
 ##### Install with NPM
-`$ npm install spectre.css --save`
+`$ npm install spectre.css`
 ##### Install with Bower
-`$ bower install spectre.css --save`
+`$ bower install spectre.css`
 
 And include it in your website or Web app &lt;head&gt; part.
 
@@ -63,6 +62,10 @@ You can compiling your custom version of Spectre.css. Read [the documentation](h
 #### Utilities
 
 - [utilities](http://picturepan2.github.io/spectre/#utilities) - layout, positions, display, text, shapes, loading things
+
+### Tools
+
+- [Responsive Resizer](http://picturepan2.github.io/spectre/tools/resizer) - responsive test tool
 
 ### Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatiblity, these browsers are recommended:
