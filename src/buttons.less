@@ -18,8 +18,10 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
   &:focus {
+    background: lighten(@core-color, 40%);
+  }
+  &:hover {
     background: @core-color;
     border-color: darken(@core-color, 5%);
     color: @core-light-color;
@@ -37,8 +39,8 @@
     border-color: darken(@core-color, 5%);
     color: @core-light-color;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       background: darken(@core-color, 5%);
       border-color: darken(@core-color, 10%);
       color: @core-light-color;

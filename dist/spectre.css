@@ -590,8 +590,10 @@ pre code {
   vertical-align: middle;
   white-space: nowrap;
 }
-.btn:hover,
 .btn:focus {
+  background: #eff1fa;
+}
+.btn:hover {
   background: #5764c6;
   border-color: #4452c0;
   color: #fff;
@@ -607,8 +609,8 @@ pre code {
   border-color: #4452c0;
   color: #fff;
 }
-.btn.btn-primary:hover,
-.btn.btn-primary:focus {
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
   background: #4452c0;
   border-color: #3b49af;
   color: #fff;
