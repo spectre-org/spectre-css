@@ -86,6 +86,7 @@
   flex: 1 1 auto;
   height: auto;
   position: relative;
+  width: 100%;
 }
 .browser .browser-body iframe {
   height: 100%;
