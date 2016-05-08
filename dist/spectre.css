@@ -1789,6 +1789,7 @@ textarea.form-input {
 }
 .tab .tab-item {
   margin-bottom: -.1rem;
+  margin-top: 0;
 }
 .tab .tab-item a {
   border-bottom: .2rem solid transparent;
@@ -1815,7 +1816,7 @@ textarea.form-input {
 .tab.tab-block .tab-item .badge[data-badge]::after {
   position: absolute;
   right: 1.5rem;
-  top: .5rem;
+  top: .6rem;
   -webkit-transform: translate(50%, -.8rem);
   transform: translate(50%, -.8rem);
 }
