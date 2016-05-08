@@ -663,7 +663,6 @@
 </pre>
 
             <section class="notes">
-                <p>For smaller input and select controls, you could add <code>input-sm</code> and <code>select-sm</code> to the elements.</p>
                 <p>If you want to have a horizontal form, add the class <code>form-horizontal</code> to the &lt;form&gt; container. And add the class <code>col-[1-12]</code> to the child elements for form row layout. Please note <code>form-horizontal</code> only works in viewports that are at least 840px wide.</p>
             </section>
 
@@ -697,6 +696,34 @@
 &lt;<span class="tag">/form</span>&gt;
 </pre>
 
+            <section class="notes">
+                <p>For smaller or larger input and select controls, you could add <code>input-sm</code>/<code>input-lg</code> and <code>select-sm</code>/<code>select-lg</code> to the elements.</p>
+            </section>
+
+            <div class="columns">
+                <div class="column">
+                    <input class="form-input input-sm" type="text" placeholder="Name" />
+                </div>
+                <div class="column">
+                    <input class="form-input input-lg" type="text" placeholder="Name" />
+                </div>
+                <div class="column">
+                    <select class="form-select select-sm">
+                        <option>Choose an option</option>
+                        <option>Slack</option>
+                        <option>Skype</option>
+                        <option>Hipchat</option>
+                    </select>
+
+                    <select class="form-select select-lg">
+                        <option>Choose an option</option>
+                        <option>Slack</option>
+                        <option>Skype</option>
+                        <option>Hipchat</option>
+                    </select>
+                </div>
+            </div>
+
             <header class="text-center"><h5>input groups</h5></header>
             <div class="columns">
                 <div class="column">
@@ -719,17 +746,42 @@
                     </div>
                 </div>
             </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="input-group">
+                        <span class="input-group-addon addon-sm">slack.com/</span>
+                        <input type="text" class="form-input input-sm" placeholder="site name" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-group">
+                        <input type="text" class="form-input input-lg" placeholder="username" />
+                        <span class="input-group-addon addon-lg">@slack.com</span>
+                    </div>
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
             <section class="notes">
                 <p>If you want to attach text and button along with an input, add the class <code>input-group</code> to the input container. And add the class <code>input-group-addon</code> to the text element and <code>input-group-btn</code> to the button element.</p>
             </section>
 
             <!-- input groups example -->
 <pre class="code lang-html">
+<span class="com">&lt;!-- normal input group --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
 &lt;<span class="tag">/div</span>&gt;
 
+<span class="com">&lt;!-- large input group --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon addon-lg&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input input-lg&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- normal input group with button --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
@@ -931,7 +983,7 @@
             </div>
 
             <section class="notes">
-                <p>Spectre also provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
                 <ul>
                     <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
                     <li><code>col-xs-[1-12]</code> apply to window width greater than or equal to <strong>481px</strong>. </li>
@@ -960,6 +1012,7 @@
                     <li><code>hide-lg</code> hides elements when the viewport is smaller than or equal to <strong>960px</strong>. </li>
                     <li><code>hide-xl</code> hides elements when the viewport is smaller than or equal to <strong>1280px</strong>. </li>
                 </ul>
+                <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or <a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank">online</a>.</p>
             </section>
         </section>
 

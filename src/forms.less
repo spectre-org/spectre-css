@@ -41,7 +41,7 @@
     font-size: 1.6rem;
     height: 4.2rem;
     line-height: 2rem;
-    padding: 1rem 1.2rem;
+    padding: 1rem .8rem;
   }
 
   &.input-inline {
@@ -75,16 +75,16 @@
 // Form element: Select
 .form-select {
   appearance: none;
+  border: .1rem solid @control-color;
+  border-radius: .3rem;
+  outline: 0;
+  padding: .5rem .8rem;
+  vertical-align: middle;
 
   &:not([multiple]) {
     background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
-    border: .1rem solid @control-color;
-    border-radius: .3rem;
-    font-size: 1.4rem;
     height: 3.2rem;
-    outline: 0;
-    padding: .5rem 2.4rem .5rem .8rem;
-    vertical-align: middle;
+    padding-right: 2.4rem;
   }
 
   &:focus {
@@ -94,12 +94,16 @@
     display: none;
   }
 
-  // Select small
+  // Select sizes
   &.select-sm {
     border-radius: .2rem;
     font-size: 1.2rem;
     height: 2.4rem;
     padding: .4rem 2rem .4rem .6rem;
+  }
+  &.select-lg {
+    height: 4.2rem;
+    padding: 1rem 2.4rem 1rem .8rem;
   }
 }
 // Form element: Checkbox and radio
@@ -241,6 +245,16 @@
     border-radius: .3rem;
     line-height: 1.6rem;
     padding: .7rem .8rem;
+
+    &.addon-sm {
+      font-size: 1.2rem;
+      padding: .3rem .6rem;
+    }
+    &.addon-lg {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      padding: 1rem .8rem;
+    }
   }
   .input-group-addon,
   .input-group-btn {
