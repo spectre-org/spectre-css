@@ -32,7 +32,7 @@
 // Small chips
 .chip-sm {
   align-items: center;
-  background: lighten(@core-color, 40%);
+  background: @core-secondary-color;
   border-radius: .3rem;
   color: #666;
   display: inline-flex;
@@ -45,7 +45,7 @@
 
   &:hover,
   &:focus {
-    background: lighten(@core-color, 38%);
+    background: darken(@core-secondary-color, 2%);
   }
 
   .btn-clear {
