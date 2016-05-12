@@ -591,7 +591,7 @@ pre code {
   white-space: nowrap;
 }
 .btn:focus {
-  background: #eff1fa;
+  background: #f3f4fb;
 }
 .btn:hover {
   background: #5764c6;
@@ -609,7 +609,9 @@ pre code {
   border-color: #4452c0;
   color: #fff;
 }
-.btn.btn-primary:focus,
+.btn.btn-primary:focus {
+  background: #4f5dc3;
+}
 .btn.btn-primary:hover {
   background: #4452c0;
   border-color: #3b49af;
@@ -1441,7 +1443,7 @@ textarea.form-input {
 }
 .form-autocomplete .form-autocomplete-item:hover,
 .form-autocomplete .form-autocomplete-item:focus {
-  background: #f7f8fc;
+  background: #fff;
 }
 .form-autocomplete .form-autocomplete-item.active {
   background: #eff1fa;
