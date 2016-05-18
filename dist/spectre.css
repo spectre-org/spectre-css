@@ -389,7 +389,7 @@ a:focus {
 [disabled],
 .disabled {
   cursor: default;
-  opacity: .5;
+  opacity: .75;
   pointer-events: none;
 }
 .btn .icon,
@@ -1913,6 +1913,10 @@ textarea.form-input {
   opacity: 1;
   -webkit-transform: translate(-50%, -.5rem);
   transform: translate(-50%, -.5rem);
+}
+.tooltip[disabled],
+.tooltip.disabled {
+  pointer-events: auto;
 }
 .tooltip.tooltip-right::after {
   bottom: 50%;
