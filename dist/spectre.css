@@ -995,6 +995,14 @@ textarea.form-input {
   margin-left: -1rem;
   margin-right: -1rem;
 }
+.columns.col-gapless {
+  margin-left: 0;
+  margin-right: 0;
+}
+.columns.col-gapless .column {
+  padding-left: 0;
+  padding-right: 0;
+}
 .column {
   -webkit-flex: 1;
   -ms-flex: 1;
