@@ -1286,7 +1286,7 @@ textarea.form-input {
 .empty {
   background: #f8f8f8;
   border-radius: .3rem;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
 }
 .empty .empty-title {
@@ -1296,7 +1296,7 @@ textarea.form-input {
 .empty .empty-meta {
   color: #888;
 }
-.empty .btn {
+.empty .empty-action {
   margin-top: 1.5rem;
 }
 .avatar {
