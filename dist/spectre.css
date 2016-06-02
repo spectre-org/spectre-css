@@ -814,7 +814,17 @@ textarea.form-input {
 .form-checkbox input,
 .form-radio input,
 .form-switch input {
-  display: none;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+.form-checkbox input:focus + .form-icon,
+.form-radio input:focus + .form-icon,
+.form-switch input:focus + .form-icon {
+  box-shadow: 0 0 .3rem .1rem #efefef;
 }
 .form-checkbox,
 .form-radio {
