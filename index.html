@@ -866,44 +866,6 @@
             <section class="notes">
                 <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
             </section>
-            <div class="columns col-gapless">
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-                <div class="column">
-                    <div class="bg-grey"></div>
-                </div>
-            </div>
             <div class="columns">
                 <div class="column">
                     <div class="bg-grey"></div>
@@ -970,8 +932,18 @@
             </div>
 
             <section class="notes">
-                <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>. And you can add the class <code>col-gapless</code> to have gapless columns.</p>
+                <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
+                <p>And you can add the class <code>col-gapless</code> to have gapless columns.</p>
             </section>
+
+            <div class="columns col-gapless">
+                <div class="column col-6">
+                    <div class="bg-grey">col-6 (gapless)</div>
+                </div>
+                <div class="column col-6">
+                    <div class="bg-grey">col-6 (gapless)</div>
+                </div>
+            </div>
 
             <!-- layout example -->
 <pre class="code lang-html">
@@ -981,6 +953,11 @@
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns col-gapless&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </pre>
