@@ -1645,6 +1645,14 @@ textarea.form-input {
   border-color: #4f5dc3;
   color: #fff;
 }
+.label.label-primary a {
+  color: #fff;
+}
+.label.label-primary a:hover,
+.label.label-primary a:focus,
+.label.label-primary a:active {
+  opacity: .75;
+}
 .menu {
   background: #fff;
   border-radius: .3rem;
@@ -1891,15 +1899,39 @@ textarea.form-input {
   border-color: #4f5dc3;
   color: #fff;
 }
+.toast.toast-primary a {
+  color: #fff;
+}
+.toast.toast-primary a:hover,
+.toast.toast-primary a:focus,
+.toast.toast-primary a:active {
+  opacity: .75;
+}
 .toast.toast-success {
   background: #32b643;
   border-color: #30ae40;
   color: #fff;
 }
+.toast.toast-success a {
+  color: #fff;
+}
+.toast.toast-success a:hover,
+.toast.toast-success a:focus,
+.toast.toast-success a:active {
+  opacity: .75;
+}
 .toast.toast-danger {
   background: #e85600;
   border-color: #de5200;
   color: #fff;
+}
+.toast.toast-danger a {
+  color: #fff;
+}
+.toast.toast-danger a:hover,
+.toast.toast-danger a:focus,
+.toast.toast-danger a:active {
+  opacity: .75;
 }
 .toast.toast-primary .btn-clear,
 .toast.toast-success .btn-clear,

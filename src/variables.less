@@ -43,6 +43,16 @@
   background: @color;
   border-color: darken(@color, 2%);
   color: @core-light-color;
+
+  a {
+    color: @core-light-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: .75;
+    }
+  }
 }
 .label-base() {
   border-radius: .2rem;
