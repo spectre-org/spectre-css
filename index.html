@@ -855,7 +855,6 @@
                 <div class="btn-group">
                     <a href="#grid" class="btn btn-primary">flexbox grid</a>
                     <a href="#responsive" class="btn btn-primary">responsive</a>
-                    <a href="#navbar" class="btn btn-primary">navbar</a>
                     <a href="#empty" class="btn btn-primary">empty states</a>
                 </div>
             </section>
@@ -1035,69 +1034,6 @@
                 <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or online.</p>
                 <p><a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
             </section>
-        </section>
-
-        <section id="navbar" class="container grid-960">
-            <header class="text-center"><h4>navbar</h4></header>
-            <section class="notes">
-                <p><strong>Navbar</strong> is a layout container that appear in the header of apps and websites. </p>
-            </section>
-            <div class="columns">
-                <div class="column">
-                    <header class="navbar bg-grey">
-                        <section class="navbar-section">
-                            <a href="#navbar" class="btn btn-link btn-lg"><i class="icon icon-menu"></i></a>
-                            <a href="#navbar" class="navbar-brand">Spectre.css</a>
-                        </section>
-                        <section class="navbar-section">
-                            <input class="form-input input-inline" type="text" placeholder="search" />
-                            <a href="#navbar" class="btn btn-link">documents</a>
-                            <a href="#navbar" class="btn btn-link">login</a>
-                            <a href="#navbar" class="btn btn-primary">signup</a>
-                        </section>
-                    </header>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <header class="navbar">
-                        <section class="navbar-section">
-                            <a href="#navbar" class="btn btn-link btn-lg"><i class="icon icon-menu"></i></a>
-                            <a href="#navbar" class="navbar-brand">Spectre.css</a>
-                        </section>
-                        <section class="navbar-section">
-                            <input class="form-input input-inline" type="text" placeholder="search" />
-                            <figure class="avatar ml-10 mr-10">
-                                <img src="demo/img/avatar-4.png" />
-                            </figure>
-                            <a href="#navbar" class="btn btn-primary">share</a>
-                        </section>
-                    </header>
-                </div>
-            </div>
-
-            <section class="notes">
-                <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. By default, there is no grey background.</p>
-            </section>
-
-            <!-- navbar example -->
-<pre class="code lang-html">
-&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
-    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link btn-lg&quot;</span>&gt;
-            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
-        &lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/section</span>&gt;
-    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-        &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input input-inline&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;login&lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;signup&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/section</span>&gt;
-&lt;<span class="tag">/header</span>&gt;
-</pre>
-
         </section>
 
         <section id="empty" class="container grid-960">
@@ -1595,13 +1531,13 @@
                 <div class="column">
                     <div class="toast">
                         <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit.
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
                 <div class="column">
                     <div class="toast toast-primary">
                         <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit.
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
             </div>
@@ -1609,13 +1545,13 @@
                 <div class="column">
                     <div class="toast toast-success">
                         <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit.
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
                 <div class="column">
                     <div class="toast toast-danger">
                         <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit.
+                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
             </div>
