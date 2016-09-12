@@ -687,11 +687,13 @@ pre code {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -webkit-inline-box;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .btn-group .btn {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -717,6 +719,7 @@ pre code {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
@@ -849,6 +852,7 @@ textarea.form-input {
   padding: 0;
   position: absolute;
   top: .5rem;
+  -webkit-transition: all .15s ease;
   transition: all .15s ease;
   vertical-align: top;
   width: 1.4rem;
@@ -878,6 +882,7 @@ textarea.form-input {
   position: absolute;
   top: 50%;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   width: .6rem;
 }
@@ -928,6 +933,7 @@ textarea.form-input {
   left: 0;
   position: absolute;
   top: 0;
+  -webkit-transition: left .15s ease;
   transition: left .15s ease;
   width: 1.4rem;
 }
@@ -942,6 +948,7 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
 }
 .input-group .input-group-addon {
   background: #f9f9f9;
@@ -961,6 +968,7 @@ textarea.form-input {
 }
 .input-group .input-group-addon,
 .input-group .input-group-btn {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1010,6 +1018,7 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -1027,6 +1036,7 @@ textarea.form-input {
   flex-wrap: wrap;
 }
 .column {
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1044,6 +1054,7 @@ textarea.form-input {
 .column.col-3,
 .column.col-2,
 .column.col-1 {
+  -webkit-box-flex: 0;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -1097,6 +1108,7 @@ textarea.form-input {
   .col-xs-3,
   .col-xs-2,
   .col-xs-1 {
+    -webkit-box-flex: 0;
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
@@ -1151,6 +1163,7 @@ textarea.form-input {
   .col-sm-3,
   .col-sm-2,
   .col-sm-1 {
+    -webkit-box-flex: 0;
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
@@ -1205,6 +1218,7 @@ textarea.form-input {
   .col-md-3,
   .col-md-2,
   .col-md-1 {
+    -webkit-box-flex: 0;
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
@@ -1254,6 +1268,7 @@ textarea.form-input {
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
+    display: -webkit-box;
   }
   .form-horizontal .form-label {
     margin-bottom: 0;
@@ -1366,6 +1381,7 @@ textarea.form-input {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 @-webkit-keyframes loading {
@@ -1484,6 +1500,7 @@ textarea.form-input {
   padding: .2rem .5rem;
   text-align: center;
   -webkit-transform: translate(-.2rem, -.8rem);
+  -ms-transform: translate(-.2rem, -.8rem);
   transform: translate(-.2rem, -.8rem);
   white-space: nowrap;
 }
@@ -1540,9 +1557,11 @@ textarea.form-input {
   align-items: center;
   border: .1rem solid transparent;
   border-radius: .3rem;
+  -webkit-box-align: center;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   list-style: none;
@@ -1550,11 +1569,13 @@ textarea.form-input {
   padding: .5rem 0;
 }
 .chip .chip-icon {
+  -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 .chip .chip-content {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -1564,6 +1585,7 @@ textarea.form-input {
   white-space: nowrap;
 }
 .chip .chip-action {
+  -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -1580,10 +1602,12 @@ textarea.form-input {
   align-items: center;
   background: #eff1fa;
   border-radius: .3rem;
+  -webkit-box-align: center;
   color: #666;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   display: -webkit-inline-flex;
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
   -ms-flex-align: center;
   font-size: 1.2rem;
   height: 2.4rem;
@@ -1706,6 +1730,7 @@ textarea.form-input {
   display: block;
   height: .1rem;
   -webkit-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
   transform: translateY(-1rem);
   width: 100%;
 }
@@ -1713,6 +1738,8 @@ textarea.form-input {
   -webkit-align-items: center;
   align-items: center;
   bottom: 0;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
   display: none;
   -ms-flex-align: center;
   -ms-flex-pack: center;
@@ -1730,6 +1757,7 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
   opacity: 1;
   z-index: 1988;
 }
@@ -1816,6 +1844,7 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
 }
 .tab .tab-item {
   margin-bottom: -.1rem;
@@ -1838,6 +1867,7 @@ textarea.form-input {
   color: #3b49af;
 }
 .tab.tab-block .tab-item {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1848,6 +1878,7 @@ textarea.form-input {
   right: 1.5rem;
   top: .6rem;
   -webkit-transform: translate(50%, -.8rem);
+  -ms-transform: translate(50%, -.8rem);
   transform: translate(50%, -.8rem);
 }
 .pagination {
@@ -1950,7 +1981,9 @@ textarea.form-input {
   position: absolute;
   text-overflow: ellipsis;
   -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+  -webkit-transition: all .216s ease;
   transition: all .216s ease;
   z-index: 99;
 }
@@ -1958,6 +1991,7 @@ textarea.form-input {
 .tooltip:focus::after {
   opacity: 1;
   -webkit-transform: translate(-50%, -.5rem);
+  -ms-transform: translate(-50%, -.5rem);
   transform: translate(-50%, -.5rem);
 }
 .tooltip[disabled],
@@ -1968,22 +2002,26 @@ textarea.form-input {
   bottom: 50%;
   left: 100%;
   -webkit-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
 .tooltip.tooltip-right:hover::after,
 .tooltip.tooltip-right:focus::after {
   -webkit-transform: translate(.5rem, 50%);
+  -ms-transform: translate(.5rem, 50%);
   transform: translate(.5rem, 50%);
 }
 .tooltip.tooltip-bottom::after {
   bottom: auto;
   top: 100%;
   -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 .tooltip.tooltip-bottom:hover::after,
 .tooltip.tooltip-bottom:focus::after {
   -webkit-transform: translate(-50%, .5rem);
+  -ms-transform: translate(-50%, .5rem);
   transform: translate(-50%, .5rem);
 }
 .tooltip.tooltip-left::after {
@@ -1991,11 +2029,13 @@ textarea.form-input {
   left: auto;
   right: 100%;
   -webkit-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
 .tooltip.tooltip-left:hover::after,
 .tooltip.tooltip-left:focus::after {
   -webkit-transform: translate(-.5rem, 50%);
+  -ms-transform: translate(-.5rem, 50%);
   transform: translate(-.5rem, 50%);
 }
 .clearfix::after,
@@ -2086,11 +2126,13 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
 }
 .inline-flex {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -webkit-inline-box;
 }
 .hide {
   display: none !important;
