@@ -1349,7 +1349,9 @@ textarea.form-input {
 .avatar img {
   border-radius: 50%;
   height: 100%;
+  position: relative;
   width: 100%;
+  z-index: 99;
 }
 .avatar .avatar-icon {
   background: #fff;
@@ -1369,6 +1371,7 @@ textarea.form-input {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 0;
 }
 @-webkit-keyframes loading {
   0% {
