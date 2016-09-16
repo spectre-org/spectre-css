@@ -5,7 +5,7 @@ var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 
-var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 3 versions", "> 5%"] });
+var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 3 versions"] });
 
 gulp.task('watch', function() {
     gulp.watch('./**/*.less', ['build']);
