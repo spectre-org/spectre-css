@@ -989,14 +989,14 @@
 
         <section id="responsive" class="container grid-960">
             <header class="text-center"><h4>responsive grid</h4></header>
-            <div class="columns">
-                <div class="column col-md-6">
+            <div class="columns col-multiline">
+                <div class="column col-md-6 col-xs-12">
                     <div class="bg-grey">col-md-6</div>
                 </div>
-                <div class="column col-md-3">
+                <div class="column col-md-3 col-xs-12">
                     <div class="bg-grey">col-md-3</div>
                 </div>
-                <div class="column col-md-3">
+                <div class="column col-md-3 col-xs-12">
                     <div class="bg-grey">col-md-3</div>
                 </div>
             </div>
@@ -1026,12 +1026,13 @@
             </div>
 
             <section class="notes">
-                <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code>, <code>.col-md-[1-12]</code> and <code>.col-lg-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
                 <ul>
                     <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
-                    <li><code>col-xs-[1-12]</code> apply to window width greater than or equal to <strong>481px</strong>. </li>
-                    <li><code>col-sm-[1-12]</code> apply to window width greater than or equal to <strong>601px</strong>. </li>
-                    <li><code>col-md-[1-12]</code> apply to window width greater than or equal to <strong>841px</strong>. </li>
+                    <li><code>col-xs-[1-12]</code> apply to window width smaller than or equal to <strong>480px</strong>. </li>
+                    <li><code>col-sm-[1-12]</code> apply to window width smaller than or equal to <strong>600px</strong>. </li>
+                    <li><code>col-md-[1-12]</code> apply to window width smaller than or equal to <strong>840px</strong>. </li>
+                    <li><code>col-lg-[1-12]</code> apply to window width smaller than or equal to <strong>960px</strong>. </li>
                 </ul>
             </section>
 
@@ -1049,11 +1050,11 @@
             <section class="notes">
                 <p>For hiding elements on specific viewport sizes, there are classes <code>.hide-xs</code>, <code>.hide-sm</code>, <code>.hide-md</code>, <code>.hide-lg</code> and <code>.hide-xl</code> available.</p>
                 <ul>
-                    <li><code>hide-xs</code> hides elements when the viewport is smaller than or equal to <strong>480px</strong>. </li>
-                    <li><code>hide-sm</code> hides elements when the viewport is smaller than or equal to <strong>600px</strong>. </li>
-                    <li><code>hide-md</code> hides elements when the viewport is smaller than or equal to <strong>840px</strong>. </li>
-                    <li><code>hide-lg</code> hides elements when the viewport is smaller than or equal to <strong>960px</strong>. </li>
-                    <li><code>hide-xl</code> hides elements when the viewport is smaller than or equal to <strong>1280px</strong>. </li>
+                    <li><code>hide-xs</code> hides elements when the window width is smaller than or equal to <strong>480px</strong>. </li>
+                    <li><code>hide-sm</code> hides elements when the window width is smaller than or equal to <strong>600px</strong>. </li>
+                    <li><code>hide-md</code> hides elements when the window width is smaller than or equal to <strong>840px</strong>. </li>
+                    <li><code>hide-lg</code> hides elements when the window width is smaller than or equal to <strong>960px</strong>. </li>
+                    <li><code>hide-xl</code> hides elements when the window width is smaller than or equal to <strong>1280px</strong>. </li>
                 </ul>
                 <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or online.</p>
                 <p><a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
