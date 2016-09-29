@@ -1314,23 +1314,21 @@ textarea.form-input {
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: 840px) {
-  .form-horizontal {
-    padding: 1rem;
-  }
-  .form-horizontal .form-group {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-  }
-  .form-horizontal .form-label {
-    margin-bottom: 0;
-    padding: .8rem .4rem;
-  }
-  .form-horizontal .form-checkbox,
-  .form-horizontal .form-radio {
-    margin: .5rem 0;
-  }
+.form-horizontal {
+  padding: 1rem;
+}
+.form-horizontal .form-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.form-horizontal .form-label {
+  margin-bottom: 0;
+  padding: .8rem .4rem;
+}
+.form-horizontal .form-checkbox,
+.form-horizontal .form-radio {
+  margin: .5rem 0;
 }
 @media screen and (max-width: 480px) {
   .hide-xs {
