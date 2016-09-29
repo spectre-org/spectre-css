@@ -679,6 +679,92 @@
 </pre>
 
             <section class="notes">
+                <p>You can use <code>:indeterminate</code> pseudo class for indeterminate state of checkboxes.</p>
+            </section>
+
+            <div class="columns">
+                <div class="column col-12">
+                    <form class="form-horizontal" action="#forms">
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-4">Name</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-5">Email</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label">Gender</label>
+                            </div>
+                            <div class="col-9">
+                                <label class="form-radio">
+                                    <input type="radio" name="gender" />
+                                    <i class="form-icon"></i> Male
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" name="gender" checked />
+                                    <i class="form-icon"></i> Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <select class="form-select">
+                                    <option>Choose an option</option>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-switch">
+                                    <input type="checkbox" />
+                                    <i class="form-icon"></i> Send me emails with news and tips
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-6">Message</label>
+                            </div>
+                            <div class="col-9">
+                                <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" />
+                                    <i class="form-icon"></i> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                                <button class="btn btn-link" type="reset">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <section class="notes">
                 <p>If you want to have a horizontal form, add the class <code>form-horizontal</code> to the &lt;form&gt; container. And add the class <code>col-[1-12]</code> to the child elements for form row layout. Please note <code>form-horizontal</code> only works in viewports that are at least 840px wide.</p>
             </section>
 
@@ -2477,7 +2563,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.26
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.27
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

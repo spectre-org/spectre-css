@@ -153,7 +153,8 @@
   &:hover .form-icon {
     border-color: darken(@control-color, 15%);
   }
-  input:checked + .form-icon {
+  input:checked + .form-icon,
+  input:indeterminate + .form-icon {
     background: @core-color;
     border-color: @core-color;
   }
@@ -178,6 +179,19 @@
       top: 50%;
       transform: rotate(45deg);
       width: .6rem;
+    }
+  }
+  input:indeterminate + .form-icon {
+    &::after {
+      background: #fff;
+      content: "";
+      height: .2rem;
+      left: 50%;
+      margin-left: -.4rem;
+      margin-top: -.1rem;
+      position: absolute;
+      top: 50%;
+      width: .8rem;
     }
   }
 }
