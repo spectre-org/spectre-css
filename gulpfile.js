@@ -25,4 +25,19 @@ gulp.task('build', function() {
         .pipe(gulp.dest('./dist'))
 });
 
+gulp.task('tools', function() {
+    gulp.src('tools/**/*.less')
+        .pipe(less({
+            plugins: [autoprefix]
+        }))
+        .pipe(csscomb())
+        .pipe(cleancss())
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest(function(file) {
+          return file.base;
+        }))
+});
+
 gulp.task('default', ['build']);
