@@ -499,12 +499,12 @@ mark,
 }
 pre {
   background: #f9f9f9;
-  border-left: .2rem solid #e5e5e5;
+  border-left: .2rem solid #e2e2e2;
   line-height: 1.8rem;
   margin-bottom: 1em;
   margin-top: 1em;
   overflow: auto;
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem;
 }
 code {
   background: #efefef;
@@ -779,6 +779,19 @@ textarea.form-input {
 .has-danger .form-input,
 .form-input.is-danger {
   border-color: #e85600;
+}
+.form-input-hint {
+  color: #888;
+  display: inline-block;
+  margin-top: .4rem;
+}
+.has-success .form-input-hint,
+.is-success + .form-input-hint {
+  color: #32b643;
+}
+.has-danger .form-input-hint,
+.is-danger + .form-input-hint {
+  color: #e85600;
 }
 .form-label {
   display: block;

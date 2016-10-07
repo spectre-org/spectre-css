@@ -55,21 +55,43 @@
   }
 
   // Form status
+
   .has-success &,
   &.is-success {
     border-color: @control-color-success;
   }
+
   .has-danger &,
   &.is-danger {
     border-color: @control-color-danger;
   }
 }
+
+// Form element: Input note
+.form-input-hint {
+  color: @core-meta-color;
+  display: inline-block;
+  margin-top: .4rem;
+
+  .has-success &,
+  .is-success + & {
+    color: @control-color-success;
+  }
+
+  .has-danger &,
+  .is-danger + & {
+    color: @control-color-danger;
+  }
+}
+
+
 // Form element: Label
 .form-label {
   display: block;
   line-height: 1.6rem;
   margin-bottom: .5rem;
 }
+
 // Form element: Select
 .form-select {
   appearance: none;
