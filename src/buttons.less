@@ -127,7 +127,9 @@
 // Button groups
 .btn-group {
   display: inline-flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
 
   .btn {
     flex: 1 0 auto;
@@ -151,12 +153,6 @@
     &.active {
       z-index: 99;
     }
-  }
-
-  &.is-scrollable {
-    flex-wrap: nowrap;
-    max-width: 100%;
-    overflow-x: auto;
   }
 
   &.btn-group-block {

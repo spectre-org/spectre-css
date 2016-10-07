@@ -155,7 +155,7 @@
                 </ul>
             </section>
             <section class="notes text-center">
-                <div class="btn-group is-scrollable">
+                <div class="btn-group">
                     <a href="#typography" class="btn btn-primary">typography</a>
                     <a href="#tables" class="btn btn-primary">tables</a>
                     <a href="#buttons" class="btn btn-primary">buttons</a>
@@ -934,7 +934,7 @@
                 </ul>
             </section>
             <section class="notes text-center">
-                <div class="btn-group is-scrollable">
+                <div class="btn-group">
                     <a href="#grid" class="btn btn-primary">flexbox grid</a>
                     <a href="#responsive" class="btn btn-primary">responsive</a>
                     <a href="#empty" class="btn btn-primary">empty states</a>
@@ -1195,7 +1195,7 @@
                 </ul>
             </section>
             <section class="notes text-center">
-                <div class="btn-group is-scrollable">
+                <div class="btn-group">
                     <a href="#avatars" class="btn btn-primary">avatars</a>
                     <a href="#chips" class="btn btn-primary">chips</a>
                     <a href="#autocomplete" class="btn btn-primary">autocomplete</a>
@@ -1292,6 +1292,7 @@
 
             <!-- avatars example -->
 <pre class="code lang-html">
+<span class="com">&lt;!-- Basic avatar examples --&gt;</span>
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
     &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
 &lt;<span class="tag">/figure</span>&gt;
@@ -1897,31 +1898,23 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code>tab</code>. And add child elements with the classname <code>tab-item</code>. You can add the class <code>tab-block</code> for a full-width tab.</p>
+                <p>Add a container element with the class <code>tab</code>. And add child elements with the classname <code>tab-item</code>. You can add the class <code>tab-block</code> for a full-width tab. The <code>tab-item</code> or its child <code>&lt;a&gt;</code> with the class <code>active</code> will be highlighted.</p>
             </section>
 
             <!-- tabs example -->
 <pre class="code lang-html">
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item active&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            Music
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Music&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            Playlists
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;active&quot;</span>&gt;Playlists&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            Radio
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Radio&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            Connect
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Connect&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
 </pre>
@@ -1934,7 +1927,7 @@
                             </a>
                         </li>
                         <li class="tab-item">
-                            <a href="#tabs">
+                            <a href="#tabs" class="badge" data-badge="99">
                                 Playlists
                             </a>
                         </li>
@@ -1958,7 +1951,7 @@
                             </a>
                         </li>
                         <li class="tab-item">
-                            <a href="#tabs">
+                            <a href="#tabs" class="badge" data-badge="99">
                                 Playlists
                             </a>
                         </li>
@@ -1995,82 +1988,56 @@
                 <div class="column col-xs-12">
                     <ul class="pagination">
                         <li class="page-item">
-                            <a href="#pagination">
-                                Previous
-                            </a>
+                            <a href="#pagination">Previous</a>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                1
-                            </a>
+                            <a href="#pagination">1</a>
                         </li>
                         <li class="page-item">
                             <span>...</span>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                6
-                            </a>
+                            <a href="#pagination">6</a>
                         </li>
                         <li class="page-item active">
-                            <a href="#pagination">
-                                7
-                            </a>
+                            <a href="#pagination">7</a>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                8
-                            </a>
+                            <a href="#pagination">8</a>
                         </li>
                         <li class="page-item">
                             <span>...</span>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                12
-                            </a>
+                            <a href="#pagination">12</a>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                Next
-                            </a>
+                            <a href="#pagination">Next</a>
                         </li>
                     </ul>
                 </div>
                 <div class="column col-xs-12">
                     <ul class="pagination">
                         <li class="page-item">
-                            <a href="#pagination" class="disabled">
-                                Previous
-                            </a>
+                            <a href="#pagination" disabled>Previous</a>
                         </li>
                         <li class="page-item active">
-                            <a href="#pagination">
-                                1
-                            </a>
+                            <a href="#pagination">1</a>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                2
-                            </a>
+                            <a href="#pagination">2</a>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                3
-                            </a>
+                            <a href="#pagination">3</a>
                         </li>
                         <li class="page-item">
                             <span>...</span>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                12
-                            </a>
+                            <a href="#pagination">12</a>
                         </li>
                         <li class="page-item">
-                            <a href="#pagination">
-                                Next
-                            </a>
+                            <a href="#pagination">Next</a>
                         </li>
                     </ul>
                 </div>
@@ -2083,37 +2050,25 @@
 <pre class="code lang-html">
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;disabled&quot;</span>&gt;
-            Previous
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">disabled</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item active&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            1
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;1&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            2
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;2&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            3
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;3&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
         &lt;<span class="tag">span</span>&gt;...&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            12
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;12&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            Next
-        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Next&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
 </pre>
@@ -2370,7 +2325,7 @@
                 </ul>
             </section>
             <section class="notes text-center">
-                <div class="btn-group is-scrollable">
+                <div class="btn-group">
                     <a href="#position" class="btn btn-primary">position</a>
                     <a href="#display" class="btn btn-primary">display</a>
                     <a href="#text" class="btn btn-primary">text</a>

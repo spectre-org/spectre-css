@@ -660,9 +660,11 @@ pre code {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .btn-group .btn {
   -webkit-flex: 1 0 auto;
@@ -687,13 +689,6 @@ pre code {
 .btn-group .btn:active,
 .btn-group .btn.active {
   z-index: 99;
-}
-.btn-group.is-scrollable {
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
 }
 .btn-group.btn-group-block {
   display: flex;
@@ -1882,43 +1877,50 @@ textarea.form-input {
   padding: 0 .4rem;
 }
 .tab {
-  border-bottom: .1rem solid #c5c5c5;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .tab .tab-item {
-  margin-bottom: -.1rem;
+  border-bottom: .1rem solid #c5c5c5;
   margin-top: 0;
 }
 .tab .tab-item a {
   border-bottom: .2rem solid transparent;
   color: #333;
   display: block;
-  padding: .5rem 1.2rem;
+  margin-bottom: -.1rem;
+  margin-top: 0;
+  padding: .8rem 1.4rem;
   text-decoration: none;
 }
 .tab .tab-item a:focus,
 .tab .tab-item a:hover {
   color: #5764c6;
 }
-.tab .tab-item.active a {
+.tab .tab-item.active a,
+.tab .tab-item a.active {
   border-bottom-color: #3b49af;
   color: #3b49af;
+}
+.tab .tab-item .badge[data-badge]::after {
+  position: absolute;
+  right: -1.4rem;
+  top: 1rem;
+  -webkit-transform: translate(-50%, -1rem);
+  -ms-transform: translate(-50%, -1rem);
+  transform: translate(-50%, -1rem);
 }
 .tab.tab-block .tab-item {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: center;
-}
-.tab.tab-block .tab-item .badge[data-badge]::after {
-  position: absolute;
-  right: 1.5rem;
-  top: .6rem;
-  -webkit-transform: translate(50%, -.8rem);
-  -ms-transform: translate(50%, -.8rem);
-  transform: translate(50%, -.8rem);
 }
 .pagination {
   display: inline-block;
