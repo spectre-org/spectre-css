@@ -382,7 +382,7 @@ html {
 body {
   background: #fff;
   color: #333;
-  font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   overflow-x: hidden;
 }
@@ -390,8 +390,8 @@ a {
   color: #5764c6;
   text-decoration: underline;
 }
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   color: #283176;
 }
 [disabled],
@@ -499,7 +499,7 @@ mark,
 }
 pre {
   background: #f9f9f9;
-  border-left: .2rem solid #5764c6;
+  border-left: .2rem solid #e5e5e5;
   line-height: 1.8rem;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -618,16 +618,18 @@ pre code {
   color: #fff;
 }
 .btn.btn-primary:focus {
-  background: #4f5dc3;
+  background: #4856c1;
+  border-color: #3b49af;
+  color: #fff;
 }
 .btn.btn-primary:hover {
-  background: #4452c0;
-  border-color: #3b49af;
+  background: #404fbe;
+  border-color: #35419c;
   color: #fff;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  background: #3b49af;
+  background: #3e4cb6;
   border-color: #35419c;
   color: #fff;
 }
@@ -641,12 +643,14 @@ pre code {
   border-color: transparent;
   color: #5764c6;
 }
-.btn.btn-link:hover,
-.btn.btn-link:focus {
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+  background: #f4f4f4;
   color: #35419c;
 }
 .btn.btn-link:active,
 .btn.btn-link.active {
+  background: #efefef;
   color: #283176;
 }
 .btn.btn-sm {
@@ -710,7 +714,9 @@ pre code {
   margin-left: -.1rem;
 }
 .btn-group .btn:hover,
-.btn-group .btn:focus {
+.btn-group .btn:focus,
+.btn-group .btn:active,
+.btn-group .btn.active {
   z-index: 99;
 }
 .btn-group.btn-group-block {
@@ -818,16 +824,11 @@ textarea.form-input {
 .form-radio input,
 .form-switch input {
   clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
+  height: .1rem;
+  margin: -.1rem;
   overflow: hidden;
   position: absolute;
-  width: 1px;
-}
-.form-checkbox input:focus + .form-icon,
-.form-radio input:focus + .form-icon,
-.form-switch input:focus + .form-icon {
-  box-shadow: 0 0 .3rem .1rem #efefef;
+  width: .1rem;
 }
 .form-checkbox,
 .form-radio {
@@ -855,14 +856,20 @@ textarea.form-input {
 }
 .form-checkbox:hover .form-icon,
 .form-radio:hover .form-icon {
-  border-color: #9f9f9f;
+  border-color: #929292;
+}
+.form-checkbox input:focus + .form-icon,
+.form-radio input:focus + .form-icon {
+  border-color: #5764c6;
 }
 .form-checkbox input:checked + .form-icon,
-.form-radio input:checked + .form-icon,
-.form-checkbox input:indeterminate + .form-icon,
-.form-radio input:indeterminate + .form-icon {
+.form-radio input:checked + .form-icon {
   background: #5764c6;
   border-color: #5764c6;
+}
+.form-checkbox input:active + .form-icon,
+.form-radio input:active + .form-icon {
+  background: #efefef;
 }
 .form-checkbox .form-icon {
   border-radius: .2rem;
@@ -883,6 +890,10 @@ textarea.form-input {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   width: .6rem;
+}
+.form-checkbox input:indeterminate + .form-icon {
+  background: #5764c6;
+  border-color: #5764c6;
 }
 .form-checkbox input:indeterminate + .form-icon::after {
   background: #fff;
@@ -913,7 +924,7 @@ textarea.form-input {
 .form-switch {
   cursor: pointer;
   display: inline-block;
-  line-height: 1.8rem;
+  line-height: 2rem;
   padding: .3rem 2rem .3rem 3.6rem;
   position: relative;
 }
@@ -923,34 +934,37 @@ textarea.form-input {
   border: .1rem solid #c5c5c5;
   border-radius: .9rem;
   display: inline-block;
-  height: 1.6rem;
+  height: 1.8rem;
   left: 0;
-  line-height: 2.4rem;
+  line-height: 2.6rem;
   outline: none;
   padding: 0;
   position: absolute;
   top: .4rem;
   vertical-align: top;
-  width: 2.6rem;
+  width: 3rem;
 }
 .form-switch .form-icon::after {
   background: #fff;
   border-radius: .8rem;
   content: "";
   display: block;
-  height: 1.4rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
   top: 0;
   transition: left .15s ease;
-  width: 1.4rem;
+  width: 1.6rem;
 }
 .form-switch input:checked + .form-icon {
   background: #5764c6;
   border-color: #5764c6;
 }
 .form-switch input:checked + .form-icon::after {
-  left: 1rem;
+  left: 1.2rem;
+}
+.form-switch input:active + .form-icon::after {
+  background: #efefef;
 }
 .input-group {
   display: flex;
@@ -1738,8 +1752,8 @@ textarea.form-input {
   padding: .2rem 1rem;
   text-decoration: none;
 }
-.menu .menu-item a:hover,
-.menu .menu-item a:focus {
+.menu .menu-item a:focus,
+.menu .menu-item a:hover {
   color: #5764c6;
 }
 .menu .menu-item a:active,
@@ -1892,9 +1906,8 @@ textarea.form-input {
   padding: .5rem 1.5rem;
   text-decoration: none;
 }
-.tab .tab-item a:hover,
-.tab .tab-item a:focus {
-  border-bottom-color: #5764c6;
+.tab .tab-item a:focus,
+.tab .tab-item a:hover {
   color: #5764c6;
 }
 .tab .tab-item.active a {
@@ -1933,8 +1946,8 @@ textarea.form-input {
   padding: .6rem 1.2rem;
   text-decoration: none;
 }
-.pagination .page-item a:hover,
-.pagination .page-item a:focus {
+.pagination .page-item a:focus,
+.pagination .page-item a:hover {
   background: #eff1fa;
 }
 .pagination .page-item.active a {
@@ -2020,8 +2033,8 @@ textarea.form-input {
   transition: all .216s ease;
   z-index: 99;
 }
-.tooltip:hover::after,
-.tooltip:focus::after {
+.tooltip:focus::after,
+.tooltip:hover::after {
   opacity: 1;
   -webkit-transform: translate(-50%, -.5rem);
   -ms-transform: translate(-50%, -.5rem);
@@ -2038,8 +2051,8 @@ textarea.form-input {
   -ms-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
-.tooltip.tooltip-right:hover::after,
-.tooltip.tooltip-right:focus::after {
+.tooltip.tooltip-right:focus::after,
+.tooltip.tooltip-right:hover::after {
   -webkit-transform: translate(.5rem, 50%);
   -ms-transform: translate(.5rem, 50%);
   transform: translate(.5rem, 50%);
@@ -2051,8 +2064,8 @@ textarea.form-input {
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-.tooltip.tooltip-bottom:hover::after,
-.tooltip.tooltip-bottom:focus::after {
+.tooltip.tooltip-bottom:focus::after,
+.tooltip.tooltip-bottom:hover::after {
   -webkit-transform: translate(-50%, .5rem);
   -ms-transform: translate(-50%, .5rem);
   transform: translate(-50%, .5rem);
@@ -2065,8 +2078,8 @@ textarea.form-input {
   -ms-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
-.tooltip.tooltip-left:hover::after,
-.tooltip.tooltip-left:focus::after {
+.tooltip.tooltip-left:focus::after,
+.tooltip.tooltip-left:hover::after {
   -webkit-transform: translate(-.5rem, 50%);
   -ms-transform: translate(-.5rem, 50%);
   transform: translate(-.5rem, 50%);

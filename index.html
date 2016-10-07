@@ -5,7 +5,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="https://github.com/picturepan2/spectre" />
+    <meta name="author" content="https://github.com/picturepan2/" />
     <title>Spectre.css - a lightweight, responsive and modern CSS framework</title>
     <link rel="stylesheet" href="dist/spectre.css" />
     <link rel="stylesheet" href="demo/font/style.css" />
@@ -37,6 +37,9 @@
         }
         .grid-footer a {
             color: #666;
+        }
+        .container header {
+          padding-top: 3rem;
         }
         .notes {
             margin: 4rem 0;
@@ -169,12 +172,12 @@
             </section>
 
             <header class="text-center"><h5>headings</h5></header>
-            <h1>H1 Title <small class="label">5rem</small></h1>
-            <h2>H2 Title <small class="label">4rem</small></h2>
-            <h3>H3 Title <small class="label">3rem</small></h3>
-            <h4>H4 Title <small class="label">2.4rem</small></h4>
-            <h5>H5 Title <small class="label">2rem</small></h5>
-            <h6>H6 Title <small class="label">1.6rem</small></h6>
+            <h1>H1 Heading <small class="label">5rem</small></h1>
+            <h2>H2 Heading <small class="label">4rem</small></h2>
+            <h3>H3 Heading <small class="label">3rem</small></h3>
+            <h4>H4 Heading <small class="label">2.4rem</small></h4>
+            <h5>H5 Heading <small class="label">2rem</small></h5>
+            <h6>H6 Heading <small class="label">1.6rem</small></h6>
 
             <!-- headings example -->
 <pre class="code lang-html">
@@ -284,7 +287,7 @@
                 <p><strong>Tables</strong> include default styles for tables and data sets.</p>
             </section>
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>name</th>
@@ -316,7 +319,7 @@
                         <td>Se7en</td>
                         <td>2h 7min</td>
                         <td>Crime, Drama, Mystery</td>
-                        <td>24 March 1972 <span class="label">USA</span></td>
+                        <td>22 September 1995 <span class="label">USA</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -327,24 +330,24 @@
 
             <!-- tables example -->
 <pre class="code lang-html">
-&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
-    &lt;<span class="tag">thead</span>&gt;
-        &lt;<span class="tag">tr</span>&gt;
-            &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
-            &lt;<span class="tag">th</span>&gt;duration&lt;<span class="tag">/th</span>&gt;
-            &lt;<span class="tag">th</span>&gt;genre&lt;<span class="tag">/th</span>&gt;
-            &lt;<span class="tag">th</span>&gt;release date&lt;<span class="tag">/th</span>&gt;
-        &lt;<span class="tag">/tr</span>&gt;
-    &lt;<span class="tag">/thead</span>&gt;
-    &lt;<span class="tag">tbody</span>&gt;
-        &lt;<span class="tag">tr</span> <span class="atn">class</span>=<span class="atv">&quot;selected&quot;</span>&gt;
-            &lt;<span class="tag">td</span>&gt;The Shawshank Redemption&lt;<span class="tag">/td</span>&gt;
-            &lt;<span class="tag">td</span>&gt;2h 22min&lt;<span class="tag">/td</span>&gt;
-            &lt;<span class="tag">td</span>&gt;Crime, Drama&lt;<span class="tag">/td</span>&gt;
-            &lt;<span class="tag">td</span>&gt;14 October 1994&lt;<span class="tag">/td</span>&gt;
-        &lt;<span class="tag">/tr</span>&gt;
-    &lt;<span class="tag">/tbody</span>&gt;
-&lt;<span class="tag">/table</span>&gt;
+  &lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
+      &lt;<span class="tag">thead</span>&gt;
+          &lt;<span class="tag">tr</span>&gt;
+              &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
+              &lt;<span class="tag">th</span>&gt;duration&lt;<span class="tag">/th</span>&gt;
+              &lt;<span class="tag">th</span>&gt;genre&lt;<span class="tag">/th</span>&gt;
+              &lt;<span class="tag">th</span>&gt;release date&lt;<span class="tag">/th</span>&gt;
+          &lt;<span class="tag">/tr</span>&gt;
+      &lt;<span class="tag">/thead</span>&gt;
+      &lt;<span class="tag">tbody</span>&gt;
+          &lt;<span class="tag">tr</span> <span class="atn">class</span>=<span class="atv">&quot;selected&quot;</span>&gt;
+              &lt;<span class="tag">td</span>&gt;The Shawshank Redemption&lt;<span class="tag">/td</span>&gt;
+              &lt;<span class="tag">td</span>&gt;2h 22min&lt;<span class="tag">/td</span>&gt;
+              &lt;<span class="tag">td</span>&gt;Crime, Drama&lt;<span class="tag">/td</span>&gt;
+              &lt;<span class="tag">td</span>&gt;14 October 1994&lt;<span class="tag">/td</span>&gt;
+          &lt;<span class="tag">/tr</span>&gt;
+      &lt;<span class="tag">/tbody</span>&gt;
+  &lt;<span class="tag">/table</span>&gt;
 </pre>
 
         </section>
@@ -461,9 +464,16 @@
             <div class="columns">
                 <div class="column">
                     <div class="btn-group">
-                        <button class="btn btn-sm">first button</button>
+                        <button class="btn btn-sm active">first button</button>
                         <button class="btn btn-sm">second button</button>
                         <button class="btn btn-sm">third button</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="btn-group btn-group-block">
+                        <button class="btn btn-primary active">first button</button>
+                        <button class="btn btn-primary">second button</button>
+                        <button class="btn btn-primary">third button</button>
                     </div>
                 </div>
             </div>
@@ -506,7 +516,7 @@
                                 <i class="form-icon"></i> Male
                             </label>
                             <label class="form-radio">
-                                <input type="radio" name="gender" checked />
+                                <input type="radio" name="gender"  />
                                 <i class="form-icon"></i> Female
                             </label>
                         </div>
@@ -605,7 +615,7 @@
             </section>
 
             <div class="columns">
-                <div class="column col-6">
+                <div class="column col-6 col-sm-12">
                     <form class="form-horizontal" action="#forms">
                         <div class="form-group">
                             <div class="col-3">
@@ -690,10 +700,10 @@
 <pre class="code lang-html">
 &lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-sm-3&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-3&quot;</span>&gt;
             &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-sm-9&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-9&quot;</span>&gt;
             &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
         &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
@@ -721,20 +731,23 @@
             </section>
 
             <div class="columns">
-                <div class="column">
+                <div class="column col-4">
                     <input class="form-input input-sm" type="text" placeholder="Name" />
                 </div>
-                <div class="column">
-                    <input class="form-input input-lg" type="text" placeholder="Name" />
-                </div>
-                <div class="column">
+                <div class="column col-4">
                     <select class="form-select select-sm">
                         <option>Choose an option</option>
                         <option>Slack</option>
                         <option>Skype</option>
                         <option>Hipchat</option>
                     </select>
-
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-4">
+                    <input class="form-input input-lg" type="text" placeholder="Name" />
+                </div>
+                <div class="column col-4">
                     <select class="form-select select-lg">
                         <option>Choose an option</option>
                         <option>Slack</option>
@@ -2481,7 +2494,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.27
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.28
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>
