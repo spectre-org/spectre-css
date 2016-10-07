@@ -22,6 +22,7 @@
 // Responsive grid system
 .columns {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -@layout-gutter;
   margin-right: -@layout-gutter;
 
@@ -34,8 +35,9 @@
       padding-right: 0;
     }
   }
-  &.col-multiline {
-    flex-wrap: wrap;
+  &.col-oneline {
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 }
 .column {

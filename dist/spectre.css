@@ -688,6 +688,13 @@ pre code {
 .btn-group .btn.active {
   z-index: 99;
 }
+.btn-group.is-scrollable {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
+}
 .btn-group.btn-group-block {
   display: flex;
   display: -ms-flexbox;
@@ -1074,6 +1081,9 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -1085,10 +1095,11 @@ textarea.form-input {
   padding-left: 0;
   padding-right: 0;
 }
-.columns.col-multiline {
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.columns.col-oneline {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .column {
   -webkit-flex: 1;
@@ -1884,7 +1895,7 @@ textarea.form-input {
   border-bottom: .2rem solid transparent;
   color: #333;
   display: block;
-  padding: .5rem 1.5rem;
+  padding: .5rem 1.2rem;
   text-decoration: none;
 }
 .tab .tab-item a:focus,

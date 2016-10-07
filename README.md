@@ -37,6 +37,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [tables](http://picturepan2.github.io/spectre/#tables) - organize and display data
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
 - [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
+- [labels](http://picturepan2.github.io/spectre/#labels) - formatted text tags for highlighted, informative information
 - [media](http://picturepan2.github.io/spectre/#media) - responsive image and video class
 
 #### Layout
@@ -50,7 +51,6 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [chips](http://picturepan2.github.io/spectre/#chips) - complex entities in small blocks
 - [autocomplete](http://picturepan2.github.io/spectre/#autocomplete) - form component provides suggestions while you type
 - [tooltips](http://picturepan2.github.io/spectre/#tooltips) - simple tooltip built entirely in CSS
-- [labels](http://picturepan2.github.io/spectre/#labels) - formatted text tags for highlighted, informative information
 - [badges](http://picturepan2.github.io/spectre/#badges) - unread number indicators
 - [toasts](http://picturepan2.github.io/spectre/#toasts) - showing alerts or notifications
 - [menus](http://picturepan2.github.io/spectre/#menus) - list of links or buttons for actions and navigation
