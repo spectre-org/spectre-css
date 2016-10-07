@@ -1,7 +1,6 @@
 // Tooltips
 .tooltip {
   position: relative;
-
   &::after {
     background: fade(#333, 90%);
     border-radius: .3rem;
@@ -23,14 +22,13 @@
     transition: all .216s ease;
     z-index: 99;
   }
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     &::after {
       opacity: 1;
       transform: translate(-50%, -.5rem);
     }
   }
-
   &[disabled],
   &.disabled {
     pointer-events: auto;
@@ -42,8 +40,8 @@
       left: 100%;
       transform: translate(0, 50%);
     }
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       &::after {
         transform: translate(.5rem, 50%);
       }
@@ -55,8 +53,8 @@
       top: 100%;
       transform: translate(-50%, 0);
     }
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       &::after {
         transform: translate(-50%, .5rem);
       }
@@ -69,8 +67,8 @@
       right: 100%;
       transform: translate(0, 50%);
     }
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       &::after {
         transform: translate(-.5rem, 50%);
       }
