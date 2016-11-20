@@ -2110,6 +2110,34 @@ textarea.form-input {
     opacity: 1;
   }
 }
+.divider {
+  border-bottom: .1rem solid #efefef;
+  display: block;
+  margin: .5rem 0;
+}
+.loading {
+  color: transparent !important;
+  min-height: 1.6rem;
+  pointer-events: none;
+  position: relative;
+}
+.loading::after {
+  -webkit-animation: loading 500ms infinite linear;
+  animation: loading 500ms infinite linear;
+  border: .2rem solid #5764c6;
+  border-radius: .8rem;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1.6rem;
+  left: 50%;
+  margin-left: -.8rem;
+  margin-top: -.8rem;
+  position: absolute;
+  top: 50%;
+  width: 1.6rem;
+}
 .clearfix::after,
 .container::after {
   clear: both;
@@ -2281,32 +2309,4 @@ textarea.form-input {
 }
 .circle {
   border-radius: 50%;
-}
-.divider {
-  border-bottom: .1rem solid #efefef;
-  display: block;
-  margin: .5rem;
-}
-.loading {
-  color: transparent !important;
-  min-height: 1.6rem;
-  pointer-events: none;
-  position: relative;
-}
-.loading::after {
-  -webkit-animation: loading 500ms infinite linear;
-  animation: loading 500ms infinite linear;
-  border: .2rem solid #5764c6;
-  border-radius: .8rem;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  content: "";
-  display: block;
-  height: 1.6rem;
-  left: 50%;
-  margin-left: -.8rem;
-  margin-top: -.8rem;
-  position: absolute;
-  top: 50%;
-  width: 1.6rem;
 }
