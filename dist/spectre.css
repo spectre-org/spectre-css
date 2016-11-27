@@ -753,7 +753,7 @@ textarea.form-input {
 }
 .form-input-hint {
   color: #888;
-  display: inline-block;
+  display: block;
   margin-top: .4rem;
 }
 .has-success .form-input-hint,
@@ -803,6 +803,14 @@ textarea.form-input {
   height: 4.2rem;
   line-height: 2rem;
   padding: 1rem 2.4rem 1rem .8rem;
+}
+.has-success .form-select,
+.form-select.is-success {
+  border-color: #32b643;
+}
+.has-danger .form-select,
+.form-select.is-danger {
+  border-color: #e85600;
 }
 .form-checkbox input,
 .form-radio input,

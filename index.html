@@ -718,18 +718,38 @@
 
             <div class="columns">
                 <div class="column col-6 col-xs-12">
-                    <form action="#forms">
-                        <div class="form-group">
-                            <label class="form-label" for="input-example-1">Name</label>
-                            <input class="form-input is-danger" type="text" id="input-example-1" placeholder="Name" />
-                            <span class="form-input-hint">The name is invaild.</span>
-                        </div>
-                        <div class="form-group has-success">
-                            <label class="form-label" for="input-example-2">Email</label>
-                            <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
-                            <span class="form-input-hint">The email is available.</span>
-                        </div>
-                    </form>
+                    <div class="form-group">
+                        <label class="form-label" for="input-example-1">Name</label>
+                        <input class="form-input is-danger" type="text" id="input-example-1" placeholder="Name" />
+                        <p class="form-input-hint">The name is invaild.</p>
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="form-label" for="input-example-2">Email</label>
+                        <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+                        <p class="form-input-hint">The email is available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-6 col-xs-12">
+                    <div class="form-group">
+                        <select class="form-select is-danger">
+                            <option>Choose an option</option>
+                            <option>Slack</option>
+                            <option>Skype</option>
+                            <option>Hipchat</option>
+                        </select>
+                        <p class="form-input-hint">The email is available.</p>
+                    </div>
+                    <div class="form-group has-success">
+                        <select class="form-select">
+                            <option>Choose an option</option>
+                            <option>Slack</option>
+                            <option>Skype</option>
+                            <option>Hipchat</option>
+                        </select>
+                        <p class="form-input-hint">The email is available.</p>
+                    </div>
                 </div>
             </div>
 
@@ -740,14 +760,14 @@
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
-        &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/span</span>&gt;
+        &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
 
     <span class="com">&lt;!-- form validation class: is-success --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
-        &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/span</span>&gt;
+        &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/form</span>&gt;
 </pre>

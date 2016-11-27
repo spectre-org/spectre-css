@@ -55,7 +55,6 @@
   }
 
   // Form status
-
   .has-success &,
   &.is-success {
     border-color: @control-color-success;
@@ -70,7 +69,7 @@
 // Form element: Input note
 .form-input-hint {
   color: @core-meta-color;
-  display: inline-block;
+  display: block;
   margin-top: .4rem;
 
   .has-success &,
@@ -83,7 +82,6 @@
     color: @control-color-danger;
   }
 }
-
 
 // Form element: Label
 .form-label {
@@ -126,6 +124,17 @@
     height: 4.2rem;
     line-height: 2rem;
     padding: 1rem 2.4rem 1rem .8rem;
+  }
+
+  // Select status
+  .has-success &,
+  &.is-success {
+    border-color: @control-color-success;
+  }
+
+  .has-danger &,
+  &.is-danger {
+    border-color: @control-color-danger;
   }
 }
 // Form element: Checkbox and radio
