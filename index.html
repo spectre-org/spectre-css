@@ -17,7 +17,7 @@
         }
         .bg-grey {
             background-color: #efefef;
-            padding: 1rem;
+            padding: 1rem .5rem;
             border-radius: .3rem;
         }
         .grid-hero {
@@ -173,12 +173,12 @@
             </section>
 
             <header class="text-center"><h5>headings</h5></header>
-            <h1>H1 Heading <small class="label">5rem</small></h1>
-            <h2>H2 Heading <small class="label">4rem</small></h2>
-            <h3>H3 Heading <small class="label">3rem</small></h3>
-            <h4>H4 Heading <small class="label">2.4rem</small></h4>
-            <h5>H5 Heading <small class="label">2rem</small></h5>
-            <h6>H6 Heading <small class="label">1.6rem</small></h6>
+            <h1>H1 Title <small class="label">5rem</small></h1>
+            <h2>H2 Title <small class="label">4rem</small></h2>
+            <h3>H3 Title <small class="label">3rem</small></h3>
+            <h4>H4 Title <small class="label">2.4rem</small></h4>
+            <h5>H5 Title <small class="label">2rem</small></h5>
+            <h6>H6 Title <small class="label">1.6rem</small></h6>
 
             <!-- headings example -->
 <pre class="code lang-html">
@@ -718,18 +718,38 @@
 
             <div class="columns">
                 <div class="column col-6 col-xs-12">
-                    <form action="#forms">
-                        <div class="form-group">
-                            <label class="form-label" for="input-example-1">Name</label>
-                            <input class="form-input is-danger" type="text" id="input-example-1" placeholder="Name" />
-                            <span class="form-input-hint">The name is invaild.</span>
-                        </div>
-                        <div class="form-group has-success">
-                            <label class="form-label" for="input-example-2">Email</label>
-                            <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
-                            <span class="form-input-hint">The email is available.</span>
-                        </div>
-                    </form>
+                    <div class="form-group">
+                        <label class="form-label" for="input-example-1">Name</label>
+                        <input class="form-input is-danger" type="text" id="input-example-1" placeholder="Name" />
+                        <p class="form-input-hint">The name is invaild.</p>
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="form-label" for="input-example-2">Email</label>
+                        <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+                        <p class="form-input-hint">The email is available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-6 col-xs-12">
+                    <div class="form-group">
+                        <select class="form-select is-danger">
+                            <option>Choose an option</option>
+                            <option>Slack</option>
+                            <option>Skype</option>
+                            <option>Hipchat</option>
+                        </select>
+                        <p class="form-input-hint">The option is invaild.</p>
+                    </div>
+                    <div class="form-group has-success">
+                        <select class="form-select">
+                            <option>Choose an option</option>
+                            <option>Slack</option>
+                            <option>Skype</option>
+                            <option>Hipchat</option>
+                        </select>
+                        <p class="form-input-hint">The option is available.</p>
+                    </div>
                 </div>
             </div>
 
@@ -740,14 +760,14 @@
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
-        &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/span</span>&gt;
+        &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
 
     <span class="com">&lt;!-- form validation class: is-success --&gt;</span>
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
         &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
         &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
-        &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/span</span>&gt;
+        &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/form</span>&gt;
 </pre>
@@ -1092,13 +1112,14 @@
             </div>
 
             <section class="notes">
-                <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code>, <code>.col-md-[1-12]</code> and <code>.col-lg-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+                <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code>, <code>.col-md-[1-12]</code>, <code>.col-lg-[1-12]</code> and <code>.col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
                 <ul>
                     <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
                     <li><code>col-xs-[1-12]</code> apply to window width smaller than or equal to <strong>480px</strong>. </li>
                     <li><code>col-sm-[1-12]</code> apply to window width smaller than or equal to <strong>600px</strong>. </li>
                     <li><code>col-md-[1-12]</code> apply to window width smaller than or equal to <strong>840px</strong>. </li>
                     <li><code>col-lg-[1-12]</code> apply to window width smaller than or equal to <strong>960px</strong>. </li>
+                    <li><code>col-xl-[1-12]</code> apply to window width smaller than or equal to <strong>1280px</strong>. </li>
                 </ul>
             </section>
 
@@ -1128,7 +1149,7 @@
         </section>
 
         <section id="empty" class="container grid-960">
-            <header class="text-center"><h4>empty states/blank slates</h4></header>
+            <header class="text-center"><h4>empty states / blank slates</h4></header>
             <section class="notes">
                 <p><strong>Empty states/blank slates</strong> are commonly used as placeholders for first time use, empty data and error screens.</p>
             </section>
@@ -1550,16 +1571,16 @@
             </section>
             <div class="columns text-center">
                 <div class="column col-xs-12">
-                    <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." data-tooltip-pos="top">top tooltip</button>
+                    <button class="btn btn-primary tooltip" data-tooltip="Lorem ipsum" data-tooltip-pos="top">top tooltip</button>
                 </div>
                 <div class="column col-xs-12">
-                    <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Lorem ipsum dolor sit amet">right tooltip</button>
+                    <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Lorem ipsum">right tooltip</button>
                 </div>
                 <div class="column col-xs-12">
-                    <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Lorem ipsum dolor sit amet">bottom tooltip</button>
+                    <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Lorem ipsum">bottom tooltip</button>
                 </div>
                 <div class="column col-xs-12">
-                    <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Lorem ipsum dolor sit amet">left tooltip</button>
+                    <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Lorem ipsum">left tooltip</button>
                 </div>
             </div>
             <section class="notes">
@@ -2344,10 +2365,10 @@
 <pre class="code lang-html">
 <span class="com">&lt;!-- clear float --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;clearfix&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- float: left and right--&gt;</span>
+<span class="com">&lt;!-- float: left and right --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- position: relative, absolute and fixed--&gt;</span>
+<span class="com">&lt;!-- position: relative, absolute and fixed --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rel&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;abs&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;fixed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
@@ -2453,7 +2474,7 @@
             </section>
             <div class="columns">
                 <div class="column">
-                    <div class="divider"></div>
+                    <div class="divider mt-10"></div>
                 </div>
             </div>
 
@@ -2485,7 +2506,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.28
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.29
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

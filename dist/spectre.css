@@ -753,7 +753,6 @@ textarea.form-input {
 }
 .form-input-hint {
   color: #888;
-  display: inline-block;
   margin-top: .4rem;
 }
 .has-success .form-input-hint,
@@ -803,6 +802,14 @@ textarea.form-input {
   height: 4.2rem;
   line-height: 2rem;
   padding: 1rem 2.4rem 1rem .8rem;
+}
+.has-success .form-select,
+.form-select.is-success {
+  border-color: #32b643;
+}
+.has-danger .form-select,
+.form-select.is-danger {
+  border-color: #e85600;
 }
 .form-checkbox input,
 .form-radio input,
@@ -1153,6 +1160,60 @@ textarea.form-input {
 }
 .col-1 {
   width: 8.33333333%;
+}
+@media screen and (max-width: 1280px) {
+  .col-xl-12,
+  .col-xl-11,
+  .col-xl-10,
+  .col-xl-9,
+  .col-xl-8,
+  .col-xl-7,
+  .col-xl-6,
+  .col-xl-5,
+  .col-xl-4,
+  .col-xl-3,
+  .col-xl-2,
+  .col-xl-1 {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+  .col-xl-11 {
+    width: 91.66666667%;
+  }
+  .col-xl-10 {
+    width: 83.33333333%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-8 {
+    width: 66.66666667%;
+  }
+  .col-xl-7 {
+    width: 58.33333333%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-5 {
+    width: 41.66666667%;
+  }
+  .col-xl-4 {
+    width: 33.33333333%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-2 {
+    width: 16.66666667%;
+  }
+  .col-xl-1 {
+    width: 8.33333333%;
+  }
 }
 @media screen and (max-width: 960px) {
   .col-lg-12,
@@ -2110,6 +2171,34 @@ textarea.form-input {
     opacity: 1;
   }
 }
+.divider {
+  border-bottom: .1rem solid #efefef;
+  display: block;
+  margin: .5rem 0;
+}
+.loading {
+  color: transparent !important;
+  min-height: 1.6rem;
+  pointer-events: none;
+  position: relative;
+}
+.loading::after {
+  -webkit-animation: loading 500ms infinite linear;
+  animation: loading 500ms infinite linear;
+  border: .2rem solid #5764c6;
+  border-radius: .8rem;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1.6rem;
+  left: 50%;
+  margin-left: -.8rem;
+  margin-top: -.8rem;
+  position: absolute;
+  top: 50%;
+  width: 1.6rem;
+}
 .clearfix::after,
 .container::after {
   clear: both;
@@ -2281,32 +2370,4 @@ textarea.form-input {
 }
 .circle {
   border-radius: 50%;
-}
-.divider {
-  border-bottom: .1rem solid #efefef;
-  display: block;
-  margin: .5rem;
-}
-.loading {
-  color: transparent !important;
-  min-height: 1.6rem;
-  pointer-events: none;
-  position: relative;
-}
-.loading::after {
-  -webkit-animation: loading 500ms infinite linear;
-  animation: loading 500ms infinite linear;
-  border: .2rem solid #5764c6;
-  border-radius: .8rem;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  content: "";
-  display: block;
-  height: 1.6rem;
-  left: 50%;
-  margin-left: -.8rem;
-  margin-top: -.8rem;
-  position: absolute;
-  top: 50%;
-  width: 1.6rem;
 }
