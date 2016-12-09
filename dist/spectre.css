@@ -1472,6 +1472,23 @@ textarea.form-input {
     display: none !important;
   }
 }
+.navbar {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navbar .navbar-brand {
+  font-size: 2rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
 .empty {
   background: #f8f8f8;
   border-radius: .3rem;
