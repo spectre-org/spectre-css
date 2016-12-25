@@ -557,7 +557,7 @@ pre code {
   height: 3.2rem;
   line-height: 1.6rem;
   outline: 0;
-  padding: .7rem 1.5rem;
+  padding: .7rem 1rem;
   text-align: center;
   text-decoration: none;
   -webkit-user-select: none;
@@ -627,14 +627,14 @@ pre code {
   font-size: 1.2rem;
   height: 2.4rem;
   line-height: 1.4rem;
-  padding: .4rem 1rem;
+  padding: .4rem .8rem;
 }
 .btn.btn-lg {
   border-radius: .4rem;
   font-size: 1.8rem;
   height: 4.2rem;
   line-height: 2rem;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1.5rem;
 }
 .btn.btn-block {
   display: block;
@@ -1007,6 +1007,11 @@ textarea.form-input {
 .input-group .input-group-addon:focus,
 .input-group .input-group-btn:focus {
   z-index: 99;
+}
+.input-group.input-inline {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
 }
 .label {
   background: #efefef;
@@ -1480,14 +1485,20 @@ textarea.form-input {
   display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 1rem;
 }
-.navbar .navbar-brand {
-  font-size: 2rem;
-  text-decoration: none;
-  vertical-align: middle;
+.navbar .navbar-section {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  padding: 1rem 0;
 }
 .empty {
   background: #f8f8f8;

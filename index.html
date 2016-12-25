@@ -20,8 +20,18 @@
             padding: 1rem .5rem;
             border-radius: .3rem;
         }
-        .navbar.bg-grey {
-            padding: 1rem;
+        .navbar-brand {
+          font-size: 2rem;
+          font-weight: bold;
+          padding-right: 2rem;
+          text-decoration: none;
+          vertical-align: middle;
+        }
+        .navbar-brand .icon {
+          font-size: 1.3333em;
+          line-height: .8em;
+          margin-right: .2rem;
+          vertical-align: -20%;
         }
         .grid-hero {
             margin-top: 10rem;
@@ -1159,56 +1169,43 @@
             </section>
             <div class="columns">
                 <div class="column">
-                    <section class="navbar bg-grey">
-                        <div class="navbar-section">
-                            <a href="#navbar" class="btn btn-link btn-lg"><i class="icon icon-menu"></i></a>
-                            <a href="#navbar" class="navbar-brand">Spectre.css</a>
-                        </div>
-                        <div class="navbar-section">
-                            <input class="form-input input-inline" type="text" placeholder="search" />
-                            <a href="#navbar" class="btn btn-link">documents</a>
-                            <a href="#navbar" class="btn btn-link">login</a>
-                            <a href="#navbar" class="btn btn-primary">signup</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
                     <section class="navbar">
-                        <div class="navbar-section">
-                            <a href="#navbar" class="btn btn-link btn-lg"><i class="icon icon-menu"></i></a>
-                            <a href="#navbar" class="navbar-brand">Spectre.css</a>
-                        </div>
-                        <div class="navbar-section">
-                            <input class="form-input input-inline" type="text" placeholder="search" />
-                            <figure class="avatar ml-10 mr-10">
-                                <img src="demo/img/avatar-4.png" />
-                            </figure>
-                            <a href="#navbar" class="btn btn-primary">profile</a>
-                        </div>
+                        <section class="navbar-section">
+                            <a href="#navbar" class="navbar-brand">
+                                <i class="icon icon-pages"></i> Spectre.css
+                            </a>
+                            <a href="#navbar" class="btn btn-link">features</a>
+                            <a href="#navbar" class="btn btn-link">documents</a>
+                        </section>
+                        <section class="navbar-section">
+                            <div class="input-group input-inline">
+                                <input class="form-input" type="text" placeholder="search" />
+                                <button class="btn btn-primary input-group-btn">Search</button>
+                            </div>
+                        </section>
                     </section>
                 </div>
             </div>
 
             <section class="notes">
-                <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. By default, there is no grey background.</p>
+                <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the class <code>navbar-section</code> will be evenly distributed in the container.</p>
             </section>
 
             <!-- navbar example -->
 <pre class="code lang-html">
 &lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
     &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link btn-lg&quot;</span>&gt;
-            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-pages&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Spectre.css
         &lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;features&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/section</span>&gt;
     &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-        &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input input-inline&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;login&lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;signup&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
+            &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Search&lt;<span class="tag">/button</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/section</span>&gt;
 &lt;<span class="tag">/header</span>&gt;
 </pre>
