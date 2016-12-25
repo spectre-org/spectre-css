@@ -525,6 +525,7 @@ pre code {
 .table {
   border-collapse: collapse;
   border-spacing: 0;
+  text-align: left;
   width: 100%;
 }
 .table.table-striped tbody tr:nth-of-type(odd) {
@@ -540,7 +541,6 @@ pre code {
 .table td {
   border-bottom: .1rem solid #efefef;
   padding: 1.5rem 1rem;
-  text-align: left;
 }
 .table th {
   border-color: #c9c9c9;
