@@ -525,6 +525,7 @@ pre code {
 .table {
   border-collapse: collapse;
   border-spacing: 0;
+  text-align: left;
   width: 100%;
 }
 .table.table-striped tbody tr:nth-of-type(odd) {
@@ -540,7 +541,6 @@ pre code {
 .table td {
   border-bottom: .1rem solid #efefef;
   padding: 1.5rem 1rem;
-  text-align: left;
 }
 .table th {
   border-color: #c9c9c9;
@@ -557,7 +557,7 @@ pre code {
   height: 3.2rem;
   line-height: 1.6rem;
   outline: 0;
-  padding: .7rem 1.5rem;
+  padding: .7rem 1rem;
   text-align: center;
   text-decoration: none;
   -webkit-user-select: none;
@@ -627,14 +627,14 @@ pre code {
   font-size: 1.2rem;
   height: 2.4rem;
   line-height: 1.4rem;
-  padding: .4rem 1rem;
+  padding: .4rem .8rem;
 }
 .btn.btn-lg {
   border-radius: .4rem;
   font-size: 1.8rem;
   height: 4.2rem;
   line-height: 2rem;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1.5rem;
 }
 .btn.btn-block {
   display: block;
@@ -648,6 +648,7 @@ pre code {
   margin-left: .3rem;
   opacity: .45;
   padding: 0;
+  text-decoration: none;
 }
 .btn.btn-clear:hover {
   opacity: .85;
@@ -1008,6 +1009,11 @@ textarea.form-input {
 .input-group .input-group-btn:focus {
   z-index: 99;
 }
+.input-group.input-inline {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+}
 .label {
   background: #efefef;
   border-radius: .2rem;
@@ -1019,17 +1025,8 @@ textarea.form-input {
   white-space: nowrap;
 }
 .label.label-primary {
-  background: #5764c6;
-  border-color: #4f5dc3;
-  color: #fff;
-}
-.label.label-primary a {
-  color: #fff;
-}
-.label.label-primary a:hover,
-.label.label-primary a:focus,
-.label.label-primary a:active {
-  opacity: .75;
+  background: rgba(87, 100, 198, .9);
+  border-color: #5764c6;
 }
 .img-responsive {
   display: block;
@@ -1472,6 +1469,29 @@ textarea.form-input {
     display: none !important;
   }
 }
+.navbar {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.navbar .navbar-section {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  padding: 1rem 0;
+}
 .empty {
   background: #f8f8f8;
   border-radius: .3rem;
@@ -1793,56 +1813,37 @@ textarea.form-input {
   white-space: nowrap;
 }
 .toast {
-  background: #efefef;
-  border: .1rem solid #eaeaea;
+  background: rgba(51, 51, 51, .9);
+  border: .1rem solid #333;
+  border-color: #333;
   border-radius: .3rem;
-  color: #666;
+  color: #fff;
   display: block;
   padding: 1.4rem;
   width: 100%;
 }
 .toast.toast-primary {
-  background: #5764c6;
-  border-color: #4f5dc3;
-  color: #fff;
-}
-.toast.toast-primary a {
-  color: #fff;
-}
-.toast.toast-primary a:hover,
-.toast.toast-primary a:focus,
-.toast.toast-primary a:active {
-  opacity: .75;
+  background: rgba(87, 100, 198, .9);
+  border-color: #5764c6;
 }
 .toast.toast-success {
-  background: #32b643;
-  border-color: #30ae40;
-  color: #fff;
-}
-.toast.toast-success a {
-  color: #fff;
-}
-.toast.toast-success a:hover,
-.toast.toast-success a:focus,
-.toast.toast-success a:active {
-  opacity: .75;
+  background: rgba(50, 182, 67, .9);
+  border-color: #32b643;
 }
 .toast.toast-danger {
-  background: #e85600;
-  border-color: #de5200;
-  color: #fff;
+  background: rgba(232, 86, 0, .9);
+  border-color: #e85600;
 }
-.toast.toast-danger a {
+.toast a {
   color: #fff;
+  text-decoration: underline;
 }
-.toast.toast-danger a:hover,
-.toast.toast-danger a:focus,
-.toast.toast-danger a:active {
+.toast a:hover,
+.toast a:focus,
+.toast a:active {
   opacity: .75;
 }
-.toast.toast-primary .btn-clear,
-.toast.toast-success .btn-clear,
-.toast.toast-danger .btn-clear {
+.toast .btn-clear {
   color: #fff;
 }
 .menu {
@@ -1998,7 +1999,7 @@ textarea.form-input {
   border-radius: .3rem;
   display: inline-block;
   margin: 0 .1rem;
-  padding: .6rem 1.2rem;
+  padding: .6rem .8rem;
   text-decoration: none;
 }
 .pagination .page-item a:focus,

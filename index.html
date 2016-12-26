@@ -20,6 +20,19 @@
             padding: 1rem .5rem;
             border-radius: .3rem;
         }
+        .navbar-brand {
+          font-size: 2rem;
+          font-weight: bold;
+          padding-right: 2rem;
+          text-decoration: none;
+          vertical-align: middle;
+        }
+        .navbar-brand .icon {
+          font-size: 1.3333em;
+          line-height: .8em;
+          margin-right: .2rem;
+          vertical-align: -20%;
+        }
         .grid-hero {
             margin-top: 10rem;
             margin-bottom: 10rem;
@@ -429,9 +442,9 @@
 
             <div class="columns">
                 <div class="column">
-                    <button class="btn btn-primary btn-lg"><span class="icon icon-markunread"></span> large</button>
-                    <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal</button>
-                    <button class="btn btn-primary btn-sm"><span class="icon icon-markunread"></span> small</button>
+                    <button class="btn btn-primary btn-lg"><i class="icon icon-markunread"></i> large</button>
+                    <button class="btn btn-primary"><i class="icon icon-markunread"></i> normal</button>
+                    <button class="btn btn-primary btn-sm"><i class="icon icon-markunread"></i> small</button>
                 </div>
             </div>
             <section class="notes">
@@ -440,9 +453,9 @@
 
             <!-- buttons example -->
 <pre class="code lang-html">
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; large&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
 </pre>
 
             <header class="text-center"><h5>button groups</h5></header>
@@ -839,7 +852,11 @@
                     </div>
                 </div>
                 <div class="column">
-
+                    <div class="input-group">
+                        <span class="input-group-addon addon-lg">slack.com/</span>
+                        <input type="text" class="form-input input-lg" placeholder="site name" />
+                        <button class="btn btn-primary input-group-btn btn-lg">Submit</button>
+                    </div>
                 </div>
             </div>
             <section class="notes">
@@ -957,6 +974,7 @@
                 <div class="btn-group">
                     <a href="#grid" class="btn btn-primary">flexbox grid</a>
                     <a href="#responsive" class="btn btn-primary">responsive</a>
+                    <a href="#navbar" class="btn btn-primary">navbar</a>
                     <a href="#empty" class="btn btn-primary">empty states</a>
                 </div>
             </section>
@@ -1146,6 +1164,56 @@
                 <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or online.</p>
                 <p><a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
             </section>
+        </section>
+
+        <section id="navbar" class="container grid-960">
+            <header class="text-center"><h4>navbar</h4></header>
+            <section class="notes">
+                <p><strong>Navbar</strong> is a layout container that appears in the header of apps and websites. </p>
+            </section>
+            <div class="columns">
+                <div class="column">
+                    <section class="navbar">
+                        <section class="navbar-section">
+                            <a href="#navbar" class="navbar-brand">
+                                <i class="icon icon-pages"></i> Spectre.css
+                            </a>
+                            <a href="#navbar" class="btn btn-link">features</a>
+                            <a href="#navbar" class="btn btn-link">documents</a>
+                        </section>
+                        <section class="navbar-section">
+                            <div class="input-group input-inline">
+                                <input class="form-input" type="text" placeholder="search" />
+                                <button class="btn btn-primary input-group-btn">Search</button>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the class <code>navbar-section</code> will be evenly distributed in the container.</p>
+            </section>
+
+            <!-- navbar example -->
+<pre class="code lang-html">
+&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-pages&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Spectre.css
+        &lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;features&lt;<span class="tag">/a</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/section</span>&gt;
+    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
+            &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
+            &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Search&lt;<span class="tag">/button</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/section</span>&gt;
+&lt;<span class="tag">/header</span>&gt;
+</pre>
+
         </section>
 
         <section id="empty" class="container grid-960">
@@ -1345,7 +1413,7 @@
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip-sm">
-                        <span class="icon icon-favorite_border"></span>
+                        <i class="icon icon-favorite_border"></i>
                         <span class="chip-name">Drama</span>
                         <button class="btn btn-clear"></button>
                     </div>
@@ -1389,7 +1457,7 @@
 &lt;<span class="tag">/div</span>&gt;
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-favorite_border&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-favorite_border&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Drama&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
@@ -1642,35 +1710,37 @@
                 <p><strong>Toasts</strong> are used to show alert or information to users.</p>
             </section>
             <div class="columns">
-                <div class="column col-xs-12">
+                <div class="column col-sm-12 col-6">
                     <div class="toast">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </div>
-                <div class="column col-xs-12">
-                    <div class="toast toast-primary">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column col-xs-12">
-                    <div class="toast toast-success">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </div>
-                <div class="column col-xs-12">
-                    <div class="toast toast-danger">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <a class="btn btn-clear float-right"></a>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
             </div>
             <section class="notes">
                 <p>Add a container element with the class <code>toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code>btn-clear</code> if you need. </p>
+            </section>
+            <div class="columns">
+                <div class="column col-sm-12">
+                    <div class="toast toast-primary">
+                        <button class="btn btn-clear float-right"></button>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <div class="column col-sm-12">
+                    <div class="toast toast-success">
+                        <button class="btn btn-clear float-right"></button>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <div class="column col-sm-12">
+                    <div class="toast toast-danger">
+                        <button class="btn btn-clear float-right"></button>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
                 <p>And you can add the class <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> for additional toast colors.</p>
             </section>
 
@@ -1683,7 +1753,7 @@
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast toast-primary&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;<span class="tag">/div</span>&gt;
 </pre>
@@ -1760,16 +1830,16 @@
                         </li>
                         <li class="menu-item">
                             <a href="#menus">
-                                <span class="icon icon-link"></span> Slack
+                                <i class="icon icon-link"></i> Slack
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="#menus">
-                                <span class="icon icon-link"></span> Hipchat
+                                <i class="icon icon-link"></i> Hipchat
                             </a>
                         </li>
                         <li class="menu-item">
-                            <span class="icon icon-link"></span> Skype
+                            <i class="icon icon-link"></i> Skype
                         </li>
                     </ul>
                 </div>
@@ -1790,24 +1860,24 @@
     <span class="com">&lt;!-- menu item --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Slack
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Hipchat
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Skype
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     <span class="com">&lt;!-- menu divider --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Settings
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Settings
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
@@ -2292,6 +2362,54 @@
                         <div class="card-image">
                             <img class="img-responsive" src="demo/img/osx-yosemite-2.jpg" />
                         </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Search</a>
+                            <a href="#" class="btn btn-link">Share</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-4 col-xs-12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-responsive" src="demo/img/osx-el-capitan.jpg" />
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Buy</a>
+                            <a href="#" class="btn btn-link">Share</a>
+                        </div>
+                        <div class="card-body">
+                            <strong>Surface Studio</strong>. Turn your desk into a Studio. Surface Studio is designed for the creative process.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column col-4 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Apple</h4>
+                            <h6 class="card-meta">Hardware and software</h6>
+                        </div>
+                        <div class="card-body">
+                            To make a contribution to the world by making tools for the mind that advance humankind.
+                        </div>
+                        <div class="card-image">
+                            <img class="img-responsive" src="demo/img/osx-yosemite.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-4 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Google I/O</h4>
+                        </div>
+                        <div class="card-body">
+                            An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Add to calendar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2506,7 +2624,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.29
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.30
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

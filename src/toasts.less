@@ -1,11 +1,11 @@
 // Toasts
 .toast {
-  background: @core-border-color;
-  border: .1rem solid darken(@core-border-color, 2%);
+  border: .1rem solid @core-dark-color;
   border-radius: .3rem;
-  color: #666;
+  color: @core-light-color;
   display: block;
   padding: 1.4rem;
+  .toast-variant(@core-dark-color);
   width: 100%;
 
   &.toast-primary {
@@ -20,11 +20,18 @@
     .toast-variant(@control-color-danger);
   }
 
-  &.toast-primary,
-  &.toast-success,
-  &.toast-danger {
-    .btn-clear {
-      color: @core-light-color;
+  a {
+    color: @core-light-color;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: .75;
     }
+  }
+
+  .btn-clear {
+    color: @core-light-color;
   }
 }
