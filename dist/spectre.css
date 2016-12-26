@@ -1025,8 +1025,8 @@ textarea.form-input {
   white-space: nowrap;
 }
 .label.label-primary {
-  background: rgba(87, 100, 198, .9);
-  border-color: #5764c6;
+  background: #5764c6;
+  color: #fff;
 }
 .img-responsive {
   display: block;
