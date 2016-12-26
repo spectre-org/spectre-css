@@ -1027,7 +1027,6 @@ textarea.form-input {
 .label.label-primary {
   background: rgba(87, 100, 198, .9);
   border-color: #5764c6;
-  color: #fff;
 }
 .img-responsive {
   display: block;
@@ -1826,17 +1825,14 @@ textarea.form-input {
 .toast.toast-primary {
   background: rgba(87, 100, 198, .9);
   border-color: #5764c6;
-  color: #fff;
 }
 .toast.toast-success {
   background: rgba(50, 182, 67, .9);
   border-color: #32b643;
-  color: #fff;
 }
 .toast.toast-danger {
   background: rgba(232, 86, 0, .9);
   border-color: #e85600;
-  color: #fff;
 }
 .toast a {
   color: #fff;
