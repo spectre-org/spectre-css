@@ -442,9 +442,9 @@
 
             <div class="columns">
                 <div class="column">
-                    <button class="btn btn-primary btn-lg"><span class="icon icon-markunread"></span> large</button>
-                    <button class="btn btn-primary"><span class="icon icon-markunread"></span> normal</button>
-                    <button class="btn btn-primary btn-sm"><span class="icon icon-markunread"></span> small</button>
+                    <button class="btn btn-primary btn-lg"><i class="icon icon-markunread"></i> large</button>
+                    <button class="btn btn-primary"><i class="icon icon-markunread"></i> normal</button>
+                    <button class="btn btn-primary btn-sm"><i class="icon icon-markunread"></i> small</button>
                 </div>
             </div>
             <section class="notes">
@@ -453,9 +453,9 @@
 
             <!-- buttons example -->
 <pre class="code lang-html">
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; large&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
 </pre>
 
             <header class="text-center"><h5>button groups</h5></header>
@@ -1413,7 +1413,7 @@
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip-sm">
-                        <span class="icon icon-favorite_border"></span>
+                        <i class="icon icon-favorite_border"></i>
                         <span class="chip-name">Drama</span>
                         <button class="btn btn-clear"></button>
                     </div>
@@ -1457,7 +1457,7 @@
 &lt;<span class="tag">/div</span>&gt;
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-favorite_border&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-favorite_border&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip-name&quot;</span>&gt;Drama&lt;<span class="tag">/span</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
@@ -1710,35 +1710,37 @@
                 <p><strong>Toasts</strong> are used to show alert or information to users.</p>
             </section>
             <div class="columns">
-                <div class="column col-xs-12">
+                <div class="column col-sm-12 col-6">
                     <div class="toast">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </div>
-                <div class="column col-xs-12">
-                    <div class="toast toast-primary">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column col-xs-12">
-                    <div class="toast toast-success">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </div>
-                <div class="column col-xs-12">
-                    <div class="toast toast-danger">
-                        <button class="btn btn-clear float-right"></button>
-                        <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <a class="btn btn-clear float-right"></a>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div>
                 </div>
             </div>
             <section class="notes">
                 <p>Add a container element with the class <code>toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code>btn-clear</code> if you need. </p>
+            </section>
+            <div class="columns">
+                <div class="column col-sm-12">
+                    <div class="toast toast-primary">
+                        <button class="btn btn-clear float-right"></button>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <div class="column col-sm-12">
+                    <div class="toast toast-success">
+                        <button class="btn btn-clear float-right"></button>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+                <div class="column col-sm-12">
+                    <div class="toast toast-danger">
+                        <button class="btn btn-clear float-right"></button>
+                        <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
                 <p>And you can add the class <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> for additional toast colors.</p>
             </section>
 
@@ -1751,7 +1753,7 @@
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast toast-primary&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;<span class="tag">/div</span>&gt;
 </pre>
@@ -1828,16 +1830,16 @@
                         </li>
                         <li class="menu-item">
                             <a href="#menus">
-                                <span class="icon icon-link"></span> Slack
+                                <i class="icon icon-link"></i> Slack
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="#menus">
-                                <span class="icon icon-link"></span> Hipchat
+                                <i class="icon icon-link"></i> Hipchat
                             </a>
                         </li>
                         <li class="menu-item">
-                            <span class="icon icon-link"></span> Skype
+                            <i class="icon icon-link"></i> Skype
                         </li>
                     </ul>
                 </div>
@@ -1858,24 +1860,24 @@
     <span class="com">&lt;!-- menu item --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Slack
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Hipchat
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Skype
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
     <span class="com">&lt;!-- menu divider --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-            &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/span</span>&gt; Settings
+            &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Settings
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
