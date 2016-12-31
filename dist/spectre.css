@@ -1038,6 +1038,14 @@ textarea.form-input {
   background: #5764c6;
   color: #fff;
 }
+.label.label-success {
+  background: #32b643;
+  color: #fff;
+}
+.label.label-danger {
+  background: #e85600;
+  color: #fff;
+}
 .img-responsive {
   display: block;
   height: auto;
