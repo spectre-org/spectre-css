@@ -1,0 +1,20 @@
+// Dropdown
+.dropdown {
+  position: relative;
+
+  .menu {
+    animation: slide-down .216s;
+    display: none;
+    left: 0;
+    min-width: 18rem;
+    position: absolute;
+    top: 100%;
+    transform: translateY(.5rem);
+  }
+
+  &.active .menu,
+  .dropdown-toggle:focus + .menu,
+  .menu:hover {
+    display: block;
+  }
+}

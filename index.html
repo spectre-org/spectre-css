@@ -1292,6 +1292,7 @@
                     <a href="#badges" class="btn btn-primary">badges</a>
                     <a href="#toasts" class="btn btn-primary">toasts</a>
                     <a href="#menus" class="btn btn-primary">menus</a>
+                    <a href="#dropdowns" class="btn btn-primary">dropdowns</a>
                     <a href="#navigation" class="btn btn-primary">navigation</a>
                     <a href="#modals" class="btn btn-primary">modals</a>
                     <a href="#cards" class="btn btn-primary">cards</a>
@@ -1881,6 +1882,131 @@
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="dropdowns" class="container grid-960">
+            <header class="text-center"><h4>dropdowns</h4></header>
+            <section class="notes">
+                <p>A <strong>dropdown</strong> is a combination of buttons and menus.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-xs-6">
+                    <div class="dropdown">
+                        <div class="btn-group">
+                            <a class="btn">dropdown button</a>
+                            <a class="btn dropdown-toggle" tabindex="0"><i class="icon-caret"></i></a>
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#dropdowns">
+                                        Slack
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#dropdowns">
+                                        Hipchat
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#dropdowns">
+                                        Skype
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-xs-6">
+                    <div class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button</a>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Slack
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Hipchat
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Skype
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column col-xs-6">
+                    <div class="dropdown">
+                        <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Slack
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Hipchat
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Skype
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
+                <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
+                <p>Add a container element with the class <code>dropdown</code>. And add a focusable element with the classname <code>dropdown-toggle</code> for the button and a <code>menu</code> component right next to it. </p>
+            </section>
+            <section class="notes">
+                <p>Also, you can implement your JS to interact with the dropdown menus by adding the class <code>active</code> to the <code>dropdown</code>.</p>
+            </section>
+
+            <!-- dropdowns example -->
+<pre class="code lang-html">
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+      <span class="com">&lt;!-- basic dropdown button --&gt;</span>
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+          dropdown menu &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/a</span>&gt;
+      <span class="com">&lt;!-- menu component --&gt;</span>
+      &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+          &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+              &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Slack&lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">/li</span>&gt;
+          &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+              &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Hipchat&lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">/li</span>&gt;
+          &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+              &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Skype&lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+      <span class="com">&lt;!-- dropdown button group --&gt;</span>
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group&quot;</span>&gt;
+          &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;
+              dropdown button
+          &lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+              &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+          &lt;<span class="tag">/a</span>&gt;
+
+          <span class="com">&lt;!-- menu component --&gt;</span>
+          &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+              ...
+          &lt;<span class="tag">/ul</span>&gt;
+      &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
 </pre>
 
         </section>
@@ -2624,7 +2750,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.30
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.31
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

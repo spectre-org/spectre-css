@@ -408,6 +408,16 @@ a:hover {
   margin-right: .2rem;
   vertical-align: -20%;
 }
+.icon-caret {
+  border-left: .4rem solid transparent;
+  border-right: .4rem solid transparent;
+  border-top: .4rem solid currentColor;
+  display: inline-block;
+  height: 0;
+  margin: 0 .2rem;
+  vertical-align: middle;
+  width: 0;
+}
 h1,
 h2,
 h3,
@@ -672,15 +682,15 @@ pre code {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
-.btn-group .btn:first-child:not(:last-child) {
+.btn-group .btn:first-of-type:not(:last-of-type) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-.btn-group .btn:not(:first-child):not(:last-child) {
+.btn-group .btn:not(:first-of-type):not(:last-of-type) {
   border-radius: 0;
   margin-left: -.1rem;
 }
-.btn-group .btn:last-child:not(:first-child) {
+.btn-group .btn:last-of-type:not(:first-of-type) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -.1rem;
@@ -1911,6 +1921,26 @@ textarea.form-input {
   -ms-transform: translateY(-1rem);
   transform: translateY(-1rem);
   width: 100%;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown .menu {
+  -webkit-animation: slide-down .216s;
+  animation: slide-down .216s;
+  display: none;
+  left: 0;
+  min-width: 18rem;
+  position: absolute;
+  top: 100%;
+  -webkit-transform: translateY(.5rem);
+  -ms-transform: translateY(.5rem);
+  transform: translateY(.5rem);
+}
+.dropdown.active .menu,
+.dropdown .dropdown-toggle:focus + .menu,
+.dropdown .menu:hover {
+  display: block;
 }
 .breadcrumb,
 .tab,
