@@ -64,6 +64,11 @@
   &.is-danger {
     border-color: @control-color-danger;
   }
+
+  // Input types
+  &[type=file] {
+    height: auto;
+  }
 }
 
 // Form element: Input note
@@ -96,9 +101,15 @@
   border-radius: .3rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
+  min-width: @control-min-width;
   outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
+  &[multiple] {
+    option {
+      padding: .2rem .4rem;
+    }
+  }
   &:not([multiple]) {
     background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
@@ -118,6 +129,7 @@
     height: 2.4rem;
     padding: .4rem 2rem .4rem .6rem;
   }
+
   &.select-lg {
     font-size: 1.6rem;
     height: 4.2rem;

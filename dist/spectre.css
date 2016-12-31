@@ -762,6 +762,9 @@ textarea.form-input {
 .form-input.is-danger {
   border-color: #e85600;
 }
+.form-input[type=file] {
+  height: auto;
+}
 .form-input-hint {
   color: #888;
   margin-top: .4rem;
@@ -787,9 +790,13 @@ textarea.form-input {
   border-radius: .3rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
+  min-width: 18rem;
   outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
+}
+.form-select[multiple] option {
+  padding: .2rem .4rem;
 }
 .form-select:not([multiple]) {
   background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
