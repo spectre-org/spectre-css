@@ -38,7 +38,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
 - [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
 - [labels](http://picturepan2.github.io/spectre/#labels) - formatted text tags for highlighted, informative information
-- [media](http://picturepan2.github.io/spectre/#media) - responsive image and video class
+- [media](http://picturepan2.github.io/spectre/#media) - responsive images, figures and video classes
 
 #### Layout
 - [flexbox-grid](http://picturepan2.github.io/spectre/#grid) - flexbox based responsive grid system
