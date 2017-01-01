@@ -1033,15 +1033,30 @@
         <section id="media" class="container grid-960">
             <header class="text-center"><h4>media</h4></header>
             <section class="notes">
-                <p><strong>Media</strong> include responsive image and video class. </p>
+                <p><strong>Media</strong> include responsive images, figures and video classes. </p>
+                <p>Add the class <code>img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
             </section>
             <div class="columns">
                 <div class="column col-6 col-xs-12">
                     <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded" />
                 </div>
             </div>
+
             <section class="notes">
-                <p>Add the class <code>img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
+                <p>You can use the element <code>&lt;figure&gt;</code> for an image with a caption. Add the class <code>figure</code> to &lt;figure&gt; element. The images with the class <code>img-responsive</code> will be responsive. And the included class <code>figure-caption</code> will provide basic style for caption. Also, you can use <code>text-left</code>, <code>text-center</code> and <code>text-right</code> for caption alignment.  </p>
+            </section>
+            <div class="columns">
+                <div class="column col-6 col-xs-12">
+                    <figure class="figure">
+                        <img src="demo/img/osx-yosemite-2.jpg" class="img-responsive rounded" />
+                        <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>.video-responsive-4-3</code> for 4:3 ratio video container.</p>
             </section>
             <div class="columns">
                 <div class="column col-6 col-xs-12">
@@ -1050,13 +1065,15 @@
                     </div>
                 </div>
             </div>
-            <section class="notes">
-                <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>.video-responsive-4-3</code> for 4:3 ratio video container.</p>
-            </section>
 
             <!-- media example -->
 <pre class="code lang-html">
 &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;figure&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-yosemite-2.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+    &lt;<span class="tag">figcaption</span> <span class="atn">class</span>=<span class="atv">&quot;figure-caption text-center&quot;</span>&gt;macOS Yosemite wallpaper&lt;<span class="tag">/figcaption</span>&gt;
+&lt;<span class="tag">/figure</span>&gt;
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;video-responsive&quot;</span>&gt;
     &lt;<span class="tag">iframe</span> <span class="atn">src</span>=<span class="atv">&quot;https://www.youtube.com/embed/vBfBa-gCMQk&quot;</span> <span class="atn">width</span>=<span class="atv">&quot;560&quot;</span> <span class="atn">height</span>=<span class="atv">&quot;315&quot;</span> <span class="atn">frameborder</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">allowfullscreen</span>&gt;&lt;<span class="tag">/iframe</span>&gt;
