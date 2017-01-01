@@ -725,6 +725,111 @@
 &lt;<span class="tag">/form</span>&gt;
 </pre>
 
+            <div class="columns">
+                <div class="column col-6 col-sm-12">
+                    <form class="form-horizontal" action="#forms">
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-8">Email</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="email" id="input-example-8" placeholder="Email" value="spectre@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-9">URL</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="url" id="input-example-9" placeholder="URL" value="https://github.com/picturepan2/spectre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-10">Search</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="search" id="input-example-10" placeholder="Search" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-11">Tel</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="tel" id="input-example-11" placeholder="Tel" value="1-(888)-888-8888" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-12">Password</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="password" id="input-example-12" placeholder="Password" value="123456789" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-13">Number</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="number" id="input-example-13" placeholder="00" value="66" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-14">Date</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="date" id="input-example-14" value="2016-12-31" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-15">Color</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="color" id="input-example-15" value="#5764c6" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-16">File</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="file" id="input-example-16" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group hide">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-17">Slider</label>
+                            </div>
+                            <div class="col-9">
+                                <input class="form-input" type="range" min="0" max="50" value="25" />
+                            </div>
+                        </div>
+                        <div class="form-group hide">
+                            <div class="col-3">
+                                <label class="form-label" for="input-example-18">Progress</label>
+                            </div>
+                            <div class="col-9">
+                                <progress class="progress" value="50" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <select class="form-select" multiple>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <section class="notes">
                 <p>To use form validation styles, add <code>is-success</code> and <code>is-danger</code> to the controls or add <code>has-success</code> and <code>has-danger</code> to parent elements. You can use the class <code>form-input-hint</code> to provide form validation success and error messages.</p>
             </section>
@@ -820,6 +925,27 @@
             <div class="columns">
                 <div class="column col-xs-12">
                     <div class="input-group">
+                        <span class="input-group-addon addon-sm">slack.com/</span>
+                        <input type="text" class="form-input input-sm" placeholder="site name" />
+                    </div>
+                </div>
+                <div class="column col-xs-12">
+                    <div class="input-group">
+                        <input type="text" class="form-input input-sm" placeholder="username" />
+                        <span class="input-group-addon addon-sm">@slack.com</span>
+                    </div>
+                </div>
+                <div class="column col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon addon-sm">slack.com/</span>
+                        <input type="text" class="form-input input-sm" placeholder="site name" />
+                        <button class="btn btn-primary input-group-btn btn-sm">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-xs-12">
+                    <div class="input-group">
                         <span class="input-group-addon">slack.com/</span>
                         <input type="text" class="form-input" placeholder="site name" />
                     </div>
@@ -841,8 +967,8 @@
             <div class="columns">
                 <div class="column col-xs-12">
                     <div class="input-group">
-                        <span class="input-group-addon addon-sm">slack.com/</span>
-                        <input type="text" class="form-input input-sm" placeholder="site name" />
+                        <span class="input-group-addon addon-lg">slack.com/</span>
+                        <input type="text" class="form-input input-lg" placeholder="site name" />
                     </div>
                 </div>
                 <div class="column col-xs-12">
@@ -896,10 +1022,12 @@
                 <div class="column">
                     <span class="label">default label</span>
                     <span class="label label-primary">primary label</span>
+                    <span class="label label-success">success label</span>
+                    <span class="label label-danger">danger label</span>
                 </div>
             </div>
             <section class="notes">
-                <p>Add the class <code>label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code> for a primary colored label.</p>
+                <p>Add the class <code>label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code> and <code>label-danger</code> for a primary colored label.</p>
             </section>
 
             <!-- labels example -->
@@ -913,15 +1041,30 @@
         <section id="media" class="container grid-960">
             <header class="text-center"><h4>media</h4></header>
             <section class="notes">
-                <p><strong>Media</strong> include responsive image and video class. </p>
+                <p><strong>Media</strong> include responsive images, figures and video classes. </p>
+                <p>Add the class <code>img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
             </section>
             <div class="columns">
                 <div class="column col-6 col-xs-12">
                     <img src="demo/img/osx-el-capitan.jpg" class="img-responsive rounded" />
                 </div>
             </div>
+
             <section class="notes">
-                <p>Add the class <code>img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
+                <p>You can use the element <code>&lt;figure&gt;</code> for an image with a caption. Add the class <code>figure</code> to &lt;figure&gt; element. The images with the class <code>img-responsive</code> will be responsive. And the included class <code>figure-caption</code> will provide basic style for caption. Also, you can use <code>text-left</code>, <code>text-center</code> and <code>text-right</code> for caption alignment.  </p>
+            </section>
+            <div class="columns">
+                <div class="column col-6 col-xs-12">
+                    <figure class="figure">
+                        <img src="demo/img/osx-yosemite-2.jpg" class="img-responsive rounded" />
+                        <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <section class="notes">
+                <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>.video-responsive-4-3</code> for 4:3 ratio video container.</p>
             </section>
             <div class="columns">
                 <div class="column col-6 col-xs-12">
@@ -930,13 +1073,15 @@
                     </div>
                 </div>
             </div>
-            <section class="notes">
-                <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>.video-responsive-4-3</code> for 4:3 ratio video container.</p>
-            </section>
 
             <!-- media example -->
 <pre class="code lang-html">
 &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;figure&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-yosemite-2.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> /&gt;
+    &lt;<span class="tag">figcaption</span> <span class="atn">class</span>=<span class="atv">&quot;figure-caption text-center&quot;</span>&gt;macOS Yosemite wallpaper&lt;<span class="tag">/figcaption</span>&gt;
+&lt;<span class="tag">/figure</span>&gt;
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;video-responsive&quot;</span>&gt;
     &lt;<span class="tag">iframe</span> <span class="atn">src</span>=<span class="atv">&quot;https://www.youtube.com/embed/vBfBa-gCMQk&quot;</span> <span class="atn">width</span>=<span class="atv">&quot;560&quot;</span> <span class="atn">height</span>=<span class="atv">&quot;315&quot;</span> <span class="atn">frameborder</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">allowfullscreen</span>&gt;&lt;<span class="tag">/iframe</span>&gt;
@@ -1292,6 +1437,7 @@
                     <a href="#badges" class="btn btn-primary">badges</a>
                     <a href="#toasts" class="btn btn-primary">toasts</a>
                     <a href="#menus" class="btn btn-primary">menus</a>
+                    <a href="#dropdowns" class="btn btn-primary">dropdowns</a>
                     <a href="#navigation" class="btn btn-primary">navigation</a>
                     <a href="#modals" class="btn btn-primary">modals</a>
                     <a href="#cards" class="btn btn-primary">cards</a>
@@ -1881,6 +2027,131 @@
         &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
+</pre>
+
+        </section>
+
+        <section id="dropdowns" class="container grid-960">
+            <header class="text-center"><h4>dropdowns</h4></header>
+            <section class="notes">
+                <p>A <strong>dropdown</strong> is a combination of buttons and menus.</p>
+            </section>
+            <div class="columns">
+                <div class="column col-xs-6">
+                    <div class="dropdown">
+                        <div class="btn-group">
+                            <a class="btn">dropdown button</a>
+                            <a class="btn dropdown-toggle" tabindex="0"><i class="icon-caret"></i></a>
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#dropdowns">
+                                        Slack
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#dropdowns">
+                                        Hipchat
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#dropdowns">
+                                        Skype
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-xs-6">
+                    <div class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button</a>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Slack
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Hipchat
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Skype
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column col-xs-6">
+                    <div class="dropdown">
+                        <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Slack
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Hipchat
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#dropdowns">
+                                    Skype
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="notes">
+                <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
+                <p>Add a container element with the class <code>dropdown</code>. And add a focusable element with the classname <code>dropdown-toggle</code> for the button and a <code>menu</code> component right next to it. </p>
+            </section>
+            <section class="notes">
+                <p>Also, you can implement your JS to interact with the dropdown menus by adding the class <code>active</code> to the <code>dropdown</code>.</p>
+            </section>
+
+            <!-- dropdowns example -->
+<pre class="code lang-html">
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+      <span class="com">&lt;!-- basic dropdown button --&gt;</span>
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+          dropdown menu &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/a</span>&gt;
+      <span class="com">&lt;!-- menu component --&gt;</span>
+      &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+          &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+              &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Slack&lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">/li</span>&gt;
+          &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+              &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Hipchat&lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">/li</span>&gt;
+          &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+              &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Skype&lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+      <span class="com">&lt;!-- dropdown button group --&gt;</span>
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group&quot;</span>&gt;
+          &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;
+              dropdown button
+          &lt;<span class="tag">/a</span>&gt;
+          &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+              &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+          &lt;<span class="tag">/a</span>&gt;
+
+          <span class="com">&lt;!-- menu component --&gt;</span>
+          &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+              ...
+          &lt;<span class="tag">/ul</span>&gt;
+      &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
 </pre>
 
         </section>
@@ -2624,7 +2895,7 @@
     <footer class="bg-grey">
         <section id="copyright" class="grid-footer container grid-960">
             <p>
-                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.30
+                <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="#">Back to top</a> | version: 0.1.31
             </p>
             <p>Designed and built with love by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </section>

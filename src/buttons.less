@@ -135,15 +135,15 @@
   .btn {
     flex: 1 0 auto;
 
-    &:first-child:not(:last-child) {
+    &:first-of-type:not(:last-of-type) {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
-    &:not(:first-child):not(:last-child) {
+    &:not(:first-of-type):not(:last-of-type) {
       border-radius: 0;
       margin-left: -.1rem;
     }
-    &:last-child:not(:first-child) {
+    &:last-of-type:not(:first-of-type) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       margin-left: -.1rem;

@@ -6,6 +6,14 @@
   white-space: nowrap;
 
   &.label-primary {
-    .toast-variant(@core-color);
+    .label-variant(@core-color);
+  }
+
+  &.label-success {
+    .label-variant(@control-color-success);
+  }
+
+  &.label-danger {
+    .label-variant(@control-color-danger);
   }
 }
