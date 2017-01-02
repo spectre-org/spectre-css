@@ -18,9 +18,13 @@
         &:hover {
           background: lighten(@core-border-color, 2%);
         }
-        &.selected {
-          background: lighten(@core-border-color, 1%);
-        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      &.selected {
+        background: lighten(@core-border-color, 3%);
       }
     }
   }
@@ -30,6 +34,6 @@
     padding: 1.5rem 1rem;
   }
   th {
-    border-color: darken(@core-border-color, 15%);
+    border-color: darken(@core-border-color, 4%);
   }
 }

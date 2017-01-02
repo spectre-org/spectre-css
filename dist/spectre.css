@@ -578,8 +578,8 @@ pre code {
 .table.table-hover tbody tr:hover {
   background: #f4f4f4;
 }
-.table.table-hover tbody tr.selected {
-  background: #f2f2f2;
+.table tbody tr.selected {
+  background: #f7f7f7;
 }
 .table th,
 .table td {
@@ -587,7 +587,7 @@ pre code {
   padding: 1.5rem 1rem;
 }
 .table th {
-  border-color: #c9c9c9;
+  border-color: #e5e5e5;
 }
 .btn {
   -webkit-appearance: none;
@@ -687,7 +687,7 @@ pre code {
 .btn.btn-clear {
   background: transparent;
   border: 0;
-  color: #666;
+  color: currentColor;
   height: 2rem;
   margin-left: .3rem;
   opacity: .45;
@@ -1910,9 +1910,6 @@ textarea.form-input {
 .toast a:focus,
 .toast a:active {
   opacity: .75;
-}
-.toast .btn-clear {
-  color: #fff;
 }
 .menu {
   background: #fff;
