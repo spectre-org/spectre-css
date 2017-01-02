@@ -32,27 +32,21 @@
 // Small chips
 .chip-sm {
   align-items: center;
-  background: @core-secondary-color;
+  background: @core-border-color;
   border-radius: .3rem;
   color: #666;
   display: inline-flex;
-  font-size: 1.2rem;
-  height: 2.4rem;
+  height: 3rem;
+  margin-bottom: .1rem;
+  margin-top: .1rem;
   max-width: 100%;
-  padding: .3rem .6rem;
+  padding: .4rem .8rem;
   text-decoration: none;
   vertical-align: middle;
 
-  &:hover,
-  &:focus {
-    background: darken(@core-secondary-color, 2%);
-  }
-
   .btn-clear {
-    margin-top: -.2rem;
-
     &::before {
-      color: darken(@core-color, 10%);
+      color: currentColor;
       font-size: 1.6rem;
     }
   }
@@ -60,22 +54,16 @@
   &.selected {
     background: @core-color;
     color: @core-light-color;
-
-    .btn-clear {
-      &::before {
-        color: lighten(@core-color, 40%);
-      }
-    }
   }
 
   .chip-name {
-    margin-left: .4rem;
+    margin: 0 .4rem;
     .text-ellipsis;
   }
 
   .avatar {
-    font-size: .8rem;
-    height: 1.6rem;
-    width: 1.6rem;
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
   }
 }

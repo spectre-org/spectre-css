@@ -1559,7 +1559,6 @@
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip-sm">
-                        <i class="icon icon-favorite_border"></i>
                         <span class="chip-name">Drama</span>
                         <button class="btn btn-clear"></button>
                     </div>
@@ -1574,19 +1573,34 @@
                 </div>
                 <div class="column col-xs-12">
                     <div class="chip-sm">
-                        <img src="demo/img/avatar-1.png" class="avatar" />
+                        <figure class="avatar" data-initial="TS" style="background-color: #5764c6;"></figure>
                         <span class="chip-name">Tony Stark</span>
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip-sm">
-                        <img src="demo/img/avatar-2.png" class="avatar" />
+                        <img src="demo/img/avatar-1.png" class="avatar" />
                         <span class="chip-name">Thor Odinson</span>
                         <button class="btn btn-clear"></button>
                     </div>
                     <div class="chip-sm">
                         <img src="demo/img/avatar-4.png" class="avatar" />
                         <span class="chip-name">Steve Rogers</span>
-                        <button class="btn btn-clear"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="columns hide">
+                <div class="column col-4 col-xs-12">
+                    <div class="chip">
+                        <div class="chip-icon">
+                            <img src="demo/img/avatar-1.png" class="avatar" />
+                        </div>
+                        <div class="chip-content">
+                            <div class="chip-title">Tony Stark</div>
+                            <div class="chip-meta">Iron Man</div>
+                        </div>
+                        <div class="chip-action">
+                            <button class="btn btn-clear"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1628,12 +1642,12 @@
                         <div class="form-autocomplete">
                             <div class="form-autocomplete-input">
                                 <div class="chip-sm">
-                                    <img src="demo/img/avatar-1.png" class="avatar" />
+                                    <figure class="avatar" data-initial="TS" style="background-color: #A2A8E1;"></figure>
                                     <span class="chip-name">Tony Stark</span>
                                     <button class="btn btn-clear"></button>
                                 </div>
                                 <div class="chip-sm">
-                                    <img src="demo/img/avatar-2.png" class="avatar" />
+                                    <img src="demo/img/avatar-1.png" class="avatar" />
                                     <span class="chip-name">Thor Odinson</span>
                                     <button class="btn btn-clear"></button>
                                 </div>
@@ -1643,12 +1657,10 @@
                                     <button class="btn btn-clear"></button>
                                 </div>
                                 <div class="chip-sm">
-                                    <img src="demo/img/avatar-1.png" class="avatar" />
                                     <span class="chip-name">Bruce Banner</span>
                                     <button class="btn btn-clear"></button>
                                 </div>
                                 <div class="chip-sm selected">
-                                    <img src="demo/img/avatar-2.png" class="avatar" />
                                     <span class="chip-name">Natasha Romanoff</span>
                                     <button class="btn btn-clear"></button>
                                 </div>
@@ -1689,37 +1701,38 @@
                         <div class="form-autocomplete">
                             <div class="form-autocomplete-input">
                                 <div class="chip-sm">
-                                    <img src="demo/img/avatar-1.png" class="avatar" />
-                                    <span class="chip-name">Tony Stark</span>
+                                    <span class="chip-name">Bruce Banner</span>
                                     <button class="btn btn-clear"></button>
                                 </div>
                                 <div class="chip-sm">
-                                    <img src="demo/img/avatar-2.png" class="avatar" />
+                                    <img src="demo/img/avatar-1.png" class="avatar" />
                                     <span class="chip-name">Thor Odinson</span>
                                     <button class="btn btn-clear"></button>
                                 </div>
-                                <input class="form-input" type="text" placeholder="typing here" />
+                                <input class="form-input" type="text" placeholder="typing here" value="S" />
                             </div>
-                            <ul class="form-autocomplete-list">
-                                <li class="form-autocomplete-item">
-                                    <div class="chip hand">
-                                        <div class="chip-icon">
-                                            <img src="demo/img/avatar-4.png" class="avatar" />
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#autocomplete">
+                                        <div class="chip">
+                                            <div class="chip-icon">
+                                                <img src="demo/img/avatar-4.png" class="avatar" />
+                                            </div>
+                                            <div class="chip-content">
+                                                Steve Rogers
+                                            </div>
                                         </div>
-                                        <div class="chip-content">
-                                            Steve Rogers
+                                    </a>
+                                    <a href="#autocomplete">
+                                        <div class="chip">
+                                            <div class="chip-icon">
+                                                <figure class="avatar" data-initial="TS" style="background-color: #A2A8E1;"></figure>
+                                            </div>
+                                            <div class="chip-content">
+                                                Tony Stark
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="form-autocomplete-item">
-                                    <div class="chip hand">
-                                        <div class="chip-icon">
-                                            <img src="demo/img/avatar-2.png" class="avatar" />
-                                        </div>
-                                        <div class="chip-content">
-                                            Yan Zhu
-                                        </div>
-                                    </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -1727,7 +1740,7 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>form-autocomplete-list</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below. </p>
+                <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>menu</code> component. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below. </p>
             </section>
 
             <!-- autocomplete example -->
@@ -1750,27 +1763,31 @@
         &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span> /&gt;
     &lt;<span class="tag">/div</span>&gt;
     <span class="com">&lt;!-- autocomplete suggestion list --&gt;</span>
-    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-list&quot;</span>&gt;
-        <span class="com">&lt;!-- autocomplete list chips --&gt;</span>
-        &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-item&quot;</span>&gt;
-            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip hand&quot;</span>&gt;
-                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
-                    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+        <span class="com">&lt;!-- menu list chips --&gt;</span>
+        &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+            &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+                    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
+                        &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+                    &lt;<span class="tag">/div</span>&gt;
+                    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+                        Steve Rogers
+                    &lt;<span class="tag">/div</span>&gt;
                 &lt;<span class="tag">/div</span>&gt;
-                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
-                    Steve Rogers
-                &lt;<span class="tag">/div</span>&gt;
-            &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">/a</span>&gt;
         &lt;<span class="tag">/li</span>&gt;
-        &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-item&quot;</span>&gt;
-            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip hand&quot;</span>&gt;
-                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
-                    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+        &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+            &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+                    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
+                        &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+                    &lt;<span class="tag">/div</span>&gt;
+                    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+                        Yan Zhu
+                    &lt;<span class="tag">/div</span>&gt;
                 &lt;<span class="tag">/div</span>&gt;
-                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
-                    Yan Zhu
-                &lt;<span class="tag">/div</span>&gt;
-            &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">/a</span>&gt;
         &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">/ul</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
