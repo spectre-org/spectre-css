@@ -536,8 +536,6 @@ mark,
 .highlight {
   background: #ffe5a3;
   border-radius: .2rem;
-  display: inline;
-  font-size: 1em;
   padding: .1em .3em;
   vertical-align: baseline;
 }
@@ -553,8 +551,6 @@ pre {
 code {
   background: #efefef;
   border-radius: .2rem;
-  display: inline;
-  font-size: 1em;
   padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
@@ -1071,8 +1067,6 @@ textarea.form-input {
   background: #efefef;
   border-radius: .2rem;
   color: #666;
-  display: inline;
-  font-size: 1em;
   padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
@@ -1890,8 +1884,12 @@ textarea.form-input {
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
   margin: 0;
+  min-width: 18rem;
   padding: .5rem;
   text-align: left;
+  -webkit-transform: translateY(.5rem);
+  -ms-transform: translateY(.5rem);
+  transform: translateY(.5rem);
   z-index: 999;
 }
 .menu .menu-item {
@@ -1958,12 +1956,8 @@ textarea.form-input {
   animation: slide-down .216s;
   display: none;
   left: 0;
-  min-width: 18rem;
   position: absolute;
   top: 100%;
-  -webkit-transform: translateY(.5rem);
-  -ms-transform: translateY(.5rem);
-  transform: translateY(.5rem);
 }
 .dropdown.active .menu,
 .dropdown .dropdown-toggle:focus + .menu,

@@ -188,10 +188,10 @@
             <header class="text-center"><h5>headings</h5></header>
             <h1>H1 Title <small class="label">5rem</small></h1>
             <h2>H2 Title <small class="label">4rem</small></h2>
-            <h3>H3 Title <small class="label">3rem</small></h3>
-            <h4>H4 Title <small class="label">2.4rem</small></h4>
-            <h5>H5 Title <small class="label">2rem</small></h5>
-            <h6>H6 Title <small class="label">1.6rem</small></h6>
+            <h3>H3 Title <span class="label">3rem</span></h3>
+            <h4>H4 Title <span class="label">2.4rem</span></h4>
+            <h5>H5 Title <span class="label">2rem</span></h5>
+            <h6>H6 Title <span class="label">1.6rem</span></h6>
 
             <!-- headings example -->
 <pre class="code lang-html">
@@ -665,8 +665,7 @@
                         <div class="form-group">
                             <div class="col-3"></div>
                             <div class="col-9">
-                                <select class="form-select">
-                                    <option>Choose an option</option>
+                                <select class="form-select" multiple>
                                     <option>Slack</option>
                                     <option>Skype</option>
                                     <option>Hipchat</option>
@@ -814,16 +813,6 @@
                             </div>
                             <div class="col-9">
                                 <progress class="progress" value="50" max="100"></progress>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-3"></div>
-                            <div class="col-9">
-                                <select class="form-select" multiple>
-                                    <option>Slack</option>
-                                    <option>Skype</option>
-                                    <option>Hipchat</option>
-                                </select>
                             </div>
                         </div>
                     </form>
@@ -1740,7 +1729,8 @@
                 </div>
             </div>
             <section class="notes">
-                <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>menu</code> component. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below. </p>
+                <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>menu</code> component. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. </p>
+                <p>The autocomplete HTML structure is exampled below.</p>
             </section>
 
             <!-- autocomplete example -->
