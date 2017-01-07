@@ -35,13 +35,11 @@
 
 // Tabs
 .tab {
+  border-bottom: .1rem solid @control-color;
   display: flex;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
+  flex-wrap: wrap;
 
   .tab-item {
-    border-bottom: .1rem solid @control-color;
     margin-top: 0;
 
     a {
@@ -62,21 +60,21 @@
       border-bottom-color: darken(@core-color, 10%);
       color: darken(@core-link-color, 10%);
     }
-
-    .badge {
-      &[data-badge]::after {
-        position: absolute;
-        right: -1.4rem;
-        top: 1rem;
-        transform: translate(-50%, -1rem);
-      }
-    }
   }
 
   &.tab-block {
     .tab-item {
       flex: 1 0 auto;
       text-align: center;
+
+      .badge {
+        &[data-badge]::after {
+          position: absolute;
+          right: -1.4rem;
+          top: 1rem;
+          transform: translate(-50%, -1rem);
+        }
+      }
     }
   }
 }

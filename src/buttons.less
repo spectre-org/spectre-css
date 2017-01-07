@@ -69,12 +69,12 @@
     color: @core-link-color;
     &:focus,
     &:hover {
-      background: lighten(@core-border-color, 2%);
+      background: fade(@core-border-color, 25%);
       color: darken(@core-link-color, 15%);
     }
     &:active,
     &.active {
-      background: @core-border-color;
+      background: fade(@core-border-color, 50%);
       color: darken(@core-link-color, 25%);
     }
   }
@@ -130,7 +130,6 @@
 
   .btn {
     flex: 1 0 auto;
-
     &:first-of-type:not(:last-of-type) {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -149,6 +148,10 @@
     &:active,
     &.active {
       z-index: 99;
+    }
+
+    &.btn-link {
+      margin-left: 0;
     }
   }
 
