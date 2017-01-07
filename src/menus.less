@@ -1,7 +1,7 @@
 // Menus
 .menu {
   background: #fff;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   display: block;
   margin: 0;
   min-width: @control-min-width;
@@ -12,21 +12,21 @@
   z-index: 999;
 
   .menu-item {
-    border-radius: .3rem;
+    border-radius: @border-radius;
     color: @body-font-color;
     display: block;
     line-height: 2.4rem;
     margin-top: .1rem;
-    padding: .2rem 1rem;
+    padding: .2rem .8rem;
     text-decoration: none;
     user-select: none;
 
     a {
-      border-radius: .3rem;
+      border-radius: @border-radius;
       color: inherit;
       display: block;
-      margin: -.2rem -1rem;
-      padding: .2rem 1rem;
+      margin: -.2rem -.8rem;
+      padding: .2rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {

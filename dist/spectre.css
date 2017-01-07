@@ -589,7 +589,7 @@ pre code {
   -webkit-appearance: none;
   background: #fff;
   border: .1rem solid #5764c6;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: #5764c6;
   cursor: pointer;
   display: inline-block;
@@ -663,14 +663,12 @@ pre code {
   color: #283176;
 }
 .btn.btn-sm {
-  border-radius: .2rem;
   font-size: 1.2rem;
   height: 2.4rem;
   line-height: 1.4rem;
   padding: .4rem .8rem;
 }
 .btn.btn-lg {
-  border-radius: .4rem;
   font-size: 1.8rem;
   height: 4.2rem;
   line-height: 2rem;
@@ -701,11 +699,9 @@ pre code {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .btn-group .btn {
   -webkit-flex: 1 0 auto;
@@ -746,15 +742,15 @@ pre code {
   background: #fff;
   background-image: none;
   border: .1rem solid #c5c5c5;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: #333;
   display: block;
   font-size: 1.4rem;
   height: 3.2rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   max-width: 100%;
   outline: 0;
-  padding: .7rem .8rem;
+  padding: .6rem .8rem;
   position: relative;
   width: 100%;
 }
@@ -765,13 +761,11 @@ pre code {
   background: #eeeff2;
 }
 .form-input.input-sm {
-  border-radius: .2rem;
   font-size: 1.2rem;
   height: 2.4rem;
   padding: .3rem .6rem;
 }
 .form-input.input-lg {
-  border-radius: .4rem;
   font-size: 1.6rem;
   height: 4.2rem;
   line-height: 2rem;
@@ -819,7 +813,7 @@ textarea.form-input {
   -moz-appearance: none;
   appearance: none;
   border: .1rem solid #c5c5c5;
-  border-radius: .3rem;
+  border-radius: .2rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
   min-width: 18rem;
@@ -842,7 +836,6 @@ textarea.form-input {
   display: none;
 }
 .form-select.select-sm {
-  border-radius: .2rem;
   font-size: 1.2rem;
   height: 2.4rem;
   padding: .4rem 2rem .4rem .6rem;
@@ -1015,7 +1008,7 @@ textarea.form-input {
 .input-group .input-group-addon {
   background: #f9f9f9;
   border: .1rem solid #c5c5c5;
-  border-radius: .3rem;
+  border-radius: .2rem;
   line-height: 1.6rem;
   padding: .7rem .8rem;
 }
@@ -1504,7 +1497,7 @@ textarea.form-input {
 }
 .form-horizontal .form-checkbox,
 .form-horizontal .form-radio {
-  margin: .5rem 0;
+  margin: .4rem 0;
 }
 @media screen and (max-width: 480px) {
   .hide-xs {
@@ -1556,7 +1549,7 @@ textarea.form-input {
 }
 .empty {
   background: #f8f8f8;
-  border-radius: .3rem;
+  border-radius: .2rem;
   padding: 4rem;
   text-align: center;
 }
@@ -1635,7 +1628,7 @@ textarea.form-input {
   -webkit-align-items: center;
   align-items: center;
   border: .1rem solid transparent;
-  border-radius: .3rem;
+  border-radius: .2rem;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1675,38 +1668,39 @@ textarea.form-input {
   -webkit-align-items: center;
   align-items: center;
   background: #efefef;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: #666;
-  display: inline-flex;
   display: -ms-inline-flexbox;
+  display: inline-flex;
   display: -webkit-inline-flex;
   -ms-flex-align: center;
   height: 3rem;
-  margin-bottom: .1rem;
-  margin-top: .1rem;
+  margin: .1rem .2rem .1rem 0;
   max-width: 100%;
-  padding: .4rem .8rem;
+  padding: .5rem .7rem;
   text-decoration: none;
   vertical-align: middle;
-}
-.chip-sm .btn-clear::before {
-  color: currentColor;
-  font-size: 1.6rem;
 }
 .chip-sm.selected {
   background: #5764c6;
   color: #fff;
 }
-.chip-sm .chip-name {
-  margin: 0 .4rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .chip-sm .avatar {
   font-size: 1rem;
   height: 2rem;
   width: 2rem;
+}
+.chip-sm .chip-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chip-sm .chip-name:not(:first-child) {
+  margin-left: .4rem;
+}
+.chip-sm .btn-clear::before {
+  color: currentColor;
+  font-size: 1.6rem;
 }
 .form-autocomplete {
   position: relative;
@@ -1716,36 +1710,27 @@ textarea.form-input {
   align-content: flex-start;
   background: #fff;
   border: .1rem solid #c5c5c5;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: #333;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   display: -webkit-flex;
   -ms-flex-line-pack: start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 100%;
-  min-height: 4rem;
+  min-height: 3.6rem;
   outline: 0;
-  padding: .4rem .4rem 0 .4rem;
+  padding: .1rem 0 .1rem .2rem;
   width: 100%;
 }
-.form-autocomplete .form-autocomplete-input .chip-sm {
-  margin-bottom: .4rem;
-  margin-right: .4rem;
-}
 .form-autocomplete .form-autocomplete-input .form-input {
-  background: #fff;
   border-color: transparent;
   display: inline-block;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  height: 3rem;
-  margin-bottom: .3rem;
   padding: .3rem;
-  vertical-align: top;
   width: auto;
 }
 .tooltip {
@@ -1753,7 +1738,7 @@ textarea.form-input {
 }
 .tooltip::after {
   background: rgba(51, 51, 51, .9);
-  border-radius: .3rem;
+  border-radius: .2rem;
   bottom: 100%;
   color: #fff;
   content: attr(data-tooltip);
@@ -1851,7 +1836,7 @@ textarea.form-input {
   background: rgba(51, 51, 51, .9);
   border: .1rem solid #333;
   border-color: #333;
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: #fff;
   display: block;
   padding: 1.4rem;
@@ -1880,7 +1865,7 @@ textarea.form-input {
 }
 .menu {
   background: #fff;
-  border-radius: .3rem;
+  border-radius: .2rem;
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
   margin: 0;
@@ -1893,12 +1878,12 @@ textarea.form-input {
   z-index: 999;
 }
 .menu .menu-item {
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: #333;
   display: block;
   line-height: 2.4rem;
   margin-top: .1rem;
-  padding: .2rem 1rem;
+  padding: .2rem .8rem;
   text-decoration: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1906,11 +1891,11 @@ textarea.form-input {
   user-select: none;
 }
 .menu .menu-item a {
-  border-radius: .3rem;
+  border-radius: .2rem;
   color: inherit;
   display: block;
-  margin: -.2rem -1rem;
-  padding: .2rem 1rem;
+  margin: -.2rem -.8rem;
+  padding: .2rem .8rem;
   text-decoration: none;
 }
 .menu .menu-item a:focus,
@@ -2036,10 +2021,6 @@ textarea.form-input {
   flex: 1 0 auto;
   text-align: center;
 }
-.pagination {
-  display: inline-block;
-  padding: 1.2rem;
-}
 .pagination .page-item {
   display: inline-block;
 }
@@ -2048,7 +2029,7 @@ textarea.form-input {
   padding: .6rem .5rem;
 }
 .pagination .page-item a {
-  border-radius: .3rem;
+  border-radius: .2rem;
   display: inline-block;
   margin: 0 .1rem;
   padding: .6rem .8rem;
@@ -2103,7 +2084,7 @@ textarea.form-input {
   -webkit-animation: slide-up .216s;
   animation: slide-up .216s;
   background: #fff;
-  border-radius: .3rem;
+  border-radius: .2rem;
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
   display: block;
   margin: 0 auto;
@@ -2141,7 +2122,7 @@ textarea.form-input {
 .card {
   background: #fff;
   border: .1rem solid #efefef;
-  border-radius: .3rem;
+  border-radius: .2rem;
   display: block;
   margin: 0;
   padding: 0;
@@ -2165,8 +2146,8 @@ textarea.form-input {
   padding-top: 0;
 }
 .card .card-image:first-child img {
-  border-top-left-radius: .3rem;
-  border-top-right-radius: .3rem;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
 }
 .card .card-image:last-child img {
   border-bottom-left-radius: .3rem;
@@ -2419,7 +2400,7 @@ textarea.form-input {
   box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .15);
 }
 .rounded {
-  border-radius: .3rem;
+  border-radius: .2rem;
 }
 .circle {
   border-radius: 50%;

@@ -3,7 +3,7 @@
   -webkit-appearance: none;
   background: #fff;
   border: .1rem solid @core-color;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   color: @core-link-color;
   cursor: pointer;
   display: inline-block;
@@ -81,7 +81,6 @@
 
   // Button Small
   &.btn-sm {
-    border-radius: .2rem;
     font-size: 1.2rem;
     height: 2.4rem;
     line-height: 1.4rem;
@@ -90,7 +89,6 @@
 
   // Button Large
   &.btn-lg {
-    border-radius: .4rem;
     font-size: 1.8rem;
     height: 4.2rem;
     line-height: 2rem;
@@ -128,9 +126,7 @@
 // Button groups
 .btn-group {
   display: inline-flex;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
+  flex-wrap: wrap;
 
   .btn {
     flex: 1 0 auto;

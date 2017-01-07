@@ -78,4 +78,4 @@ Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make mos
 - Opera (last two)
 - Safari 6+
 
-Currently maintained by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
+Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
