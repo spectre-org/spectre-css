@@ -682,7 +682,9 @@ pre code {
   background: transparent;
   border: 0;
   color: currentColor;
+  font-family: sans-serif;
   height: 2rem;
+  line-height: 1.8rem;
   margin-left: .4rem;
   opacity: .45;
   padding: 0;
@@ -725,10 +727,7 @@ pre code {
 .btn-group .btn:focus,
 .btn-group .btn:active,
 .btn-group .btn.active {
-  z-index: 99;
-}
-.btn-group .btn.btn-link {
-  margin-left: 0;
+  z-index: 9;
 }
 .btn-group.btn-group-block {
   display: flex;
@@ -1568,6 +1567,7 @@ textarea.form-input {
 }
 .avatar {
   border-radius: 50%;
+  color: #fff;
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 300;
@@ -1615,7 +1615,7 @@ textarea.form-input {
   width: 50%;
 }
 .avatar[data-initial]::after {
-  color: #fff;
+  color: currentColor;
   content: attr(data-initial);
   left: 50%;
   position: absolute;
@@ -1979,7 +1979,7 @@ textarea.form-input {
   padding: 0 .4rem;
 }
 .tab {
-  border-bottom: .1rem solid #c5c5c5;
+  border-bottom: .1rem solid #efefef;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1996,7 +1996,7 @@ textarea.form-input {
   display: block;
   margin-bottom: -.1rem;
   margin-top: 0;
-  padding: .8rem 1.4rem;
+  padding: .8rem 1rem;
   text-decoration: none;
 }
 .tab .tab-item a:focus,
@@ -2005,8 +2005,8 @@ textarea.form-input {
 }
 .tab .tab-item.active a,
 .tab .tab-item a.active {
-  border-bottom-color: #3b49af;
-  color: #3b49af;
+  border-bottom-color: #5764c6;
+  color: #5764c6;
 }
 .tab.tab-block .tab-item {
   -webkit-flex: 1 0 auto;
@@ -2069,7 +2069,7 @@ textarea.form-input {
   z-index: 1988;
 }
 .modal.active .modal-overlay {
-  background: rgba(0, 0, 0, .75);
+  background: rgba(51, 51, 51, .5);
   bottom: 0;
   display: block;
   left: 0;
@@ -2128,7 +2128,6 @@ textarea.form-input {
   margin: 0;
   padding: 0;
   text-align: left;
-  z-index: 999;
 }
 .card .card-header,
 .card .card-body,

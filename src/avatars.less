@@ -1,6 +1,7 @@
 // Avatars
 .avatar {
   border-radius: 50%;
+  color: @core-light-color;
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 300;
@@ -51,7 +52,7 @@
   }
 
   &[data-initial]::after {
-    color: @core-light-color;
+    color: currentColor;
     content: attr(data-initial);
     left: 50%;
     position: absolute;

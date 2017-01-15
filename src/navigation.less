@@ -35,7 +35,7 @@
 
 // Tabs
 .tab {
-  border-bottom: .1rem solid @control-color;
+  border-bottom: .1rem solid @core-border-color;
   display: flex;
   flex-wrap: wrap;
 
@@ -48,7 +48,7 @@
       display: block;
       margin-bottom: -.1rem;
       margin-top: 0;
-      padding: .8rem 1.4rem;
+      padding: .8rem 1rem;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -57,8 +57,8 @@
     }
     &.active a,
     a.active {
-      border-bottom-color: darken(@core-color, 10%);
-      color: darken(@core-link-color, 10%);
+      border-bottom-color: @core-color;
+      color: @core-link-color;
     }
   }
 
