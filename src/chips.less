@@ -2,7 +2,6 @@
 .chip {
   align-content: space-around;
   align-items: center;
-  border: .1rem solid transparent;
   border-radius: @border-radius;
   display: flex;
   list-style: none;
@@ -14,18 +13,25 @@
   }
   .chip-content {
     flex: 1 1 auto;
-    padding: 0 1rem;
     .text-ellipsis;
+    &:not(:first-child) {
+      padding-left: 1rem;
+    }
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
   }
   .chip-action {
     flex: 0 0 auto;
   }
   .chip-title {
     font-size: 1.4rem;
+    line-height: 1.6rem;
   }
   .chip-meta {
     color: lighten(@body-font-color, 50%);
     font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -51,14 +57,8 @@
   .avatar {
     font-size: 1rem;
     height: 2rem;
+    margin-right: .4rem;
     width: 2rem;
-  }
-
-  .chip-name {
-    .text-ellipsis;
-    &:not(:first-child) {
-      margin-left: .4rem;
-    }
   }
 
   .btn-clear {

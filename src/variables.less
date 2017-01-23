@@ -44,12 +44,19 @@
     display: table;
   }
 }
+.control-shadow() {
+  box-shadow: 0 0 .4rem fade(@core-color, 25%);
+}
+.control-transition() {
+  transition: all .15s ease;
+}
 .toast-variant(@color) {
   background: fade(@color, 90%);
   border-color: @color;
 }
 .label-base() {
   border-radius: .2rem;
+  font-size: .9em;
   padding: .1em .3em;
   vertical-align: baseline;
 }

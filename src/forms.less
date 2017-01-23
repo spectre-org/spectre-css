@@ -10,6 +10,7 @@
   border: .1rem solid @control-color;
   border-radius: @border-radius;
   color: @body-font-color;
+  .control-transition();
   display: block;
   font-size: 1.4rem;
   height: 3.2rem;
@@ -21,6 +22,7 @@
   width: 100%;
   &:focus {
     border-color: @core-color;
+    .control-shadow();
   }
   &[disabled] {
     background: #eeeff2;
@@ -115,6 +117,7 @@
   }
   &:focus {
     border-color: @core-color;
+    .control-shadow();
   }
   &::-ms-expand {
     display: none;
@@ -156,6 +159,10 @@
     overflow: hidden;
     position: absolute;
     width: .1rem;
+    &:focus + .form-icon {
+      border-color: @core-color;
+      .control-shadow();
+    }
   }
 }
 .form-checkbox,
@@ -168,6 +175,7 @@
 
   .form-icon {
     border: .1rem solid @control-color;
+    .control-transition();
     display: inline-block;
     font-size: 1.4rem;
     height: 1.4rem;
@@ -177,7 +185,6 @@
     padding: 0;
     position: absolute;
     top: .5rem;
-    transition: all .15s ease;
     vertical-align: top;
     width: 1.4rem;
   }
@@ -186,9 +193,6 @@
   }
 
   input {
-    &:focus + .form-icon {
-      border-color: @core-color;
-    }
     &:checked + .form-icon {
       background: @core-color;
       border-color: @core-color;

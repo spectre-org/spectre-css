@@ -536,6 +536,7 @@ mark,
 .highlight {
   background: #ffe5a3;
   border-radius: .2rem;
+  font-size: .9em;
   padding: .1em .3em;
   vertical-align: baseline;
 }
@@ -551,6 +552,7 @@ pre {
 code {
   background: #efefef;
   border-radius: .2rem;
+  font-size: .9em;
   padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
@@ -600,6 +602,7 @@ pre code {
   padding: .7rem 1rem;
   text-align: center;
   text-decoration: none;
+  transition: all .15s ease;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -609,6 +612,7 @@ pre code {
 }
 .btn:focus {
   background: #f3f4fb;
+  box-shadow: 0 0 .4rem rgba(87, 100, 198, .25);
 }
 .btn:hover {
   background: #5764c6;
@@ -654,12 +658,10 @@ pre code {
 }
 .btn.btn-link:focus,
 .btn.btn-link:hover {
-  background: rgba(239, 239, 239, .25);
   color: #35419c;
 }
 .btn.btn-link:active,
 .btn.btn-link.active {
-  background: rgba(239, 239, 239, .5);
   color: #283176;
 }
 .btn.btn-sm {
@@ -685,10 +687,12 @@ pre code {
   font-family: sans-serif;
   height: 2rem;
   line-height: 1.8rem;
-  margin-left: .4rem;
+  margin-left: .2rem;
+  margin-right: -.4rem;
   opacity: .45;
-  padding: 0;
+  padding: 0 .4rem;
   text-decoration: none;
+  width: 2rem;
 }
 .btn.btn-clear:hover {
   opacity: .85;
@@ -754,10 +758,12 @@ pre code {
   outline: 0;
   padding: .6rem .8rem;
   position: relative;
+  transition: all .15s ease;
   width: 100%;
 }
 .form-input:focus {
   border-color: #5764c6;
+  box-shadow: 0 0 .4rem rgba(87, 100, 198, .25);
 }
 .form-input[disabled] {
   background: #eeeff2;
@@ -833,6 +839,7 @@ textarea.form-input {
 }
 .form-select:focus {
   border-color: #5764c6;
+  box-shadow: 0 0 .4rem rgba(87, 100, 198, .25);
 }
 .form-select::-ms-expand {
   display: none;
@@ -866,6 +873,12 @@ textarea.form-input {
   position: absolute;
   width: .1rem;
 }
+.form-checkbox input:focus + .form-icon,
+.form-radio input:focus + .form-icon,
+.form-switch input:focus + .form-icon {
+  border-color: #5764c6;
+  box-shadow: 0 0 .4rem rgba(87, 100, 198, .25);
+}
 .form-checkbox,
 .form-radio {
   cursor: pointer;
@@ -893,10 +906,6 @@ textarea.form-input {
 .form-checkbox:hover .form-icon,
 .form-radio:hover .form-icon {
   border-color: #929292;
-}
-.form-checkbox input:focus + .form-icon,
-.form-radio input:focus + .form-icon {
-  border-color: #5764c6;
 }
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon {
@@ -1062,6 +1071,7 @@ textarea.form-input {
   background: #efefef;
   border-radius: .2rem;
   color: #666;
+  font-size: .9em;
   padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
@@ -1630,7 +1640,6 @@ textarea.form-input {
   align-content: space-around;
   -webkit-align-items: center;
   align-items: center;
-  border: .1rem solid transparent;
   border-radius: .2rem;
   display: flex;
   display: -ms-flexbox;
@@ -1651,9 +1660,14 @@ textarea.form-input {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow: hidden;
-  padding: 0 1rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.chip .chip-content:not(:first-child) {
+  padding-left: 1rem;
+}
+.chip .chip-content:not(:last-child) {
+  padding-right: 1rem;
 }
 .chip .chip-action {
   -webkit-flex: 0 0 auto;
@@ -1662,10 +1676,12 @@ textarea.form-input {
 }
 .chip .chip-title {
   font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 .chip .chip-meta {
   color: #b3b3b3;
   font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 .chip-sm {
   -webkit-align-items: center;
@@ -1691,15 +1707,8 @@ textarea.form-input {
 .chip-sm .avatar {
   font-size: 1rem;
   height: 2rem;
+  margin-right: .4rem;
   width: 2rem;
-}
-.chip-sm .chip-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.chip-sm .chip-name:not(:first-child) {
-  margin-left: .4rem;
 }
 .chip-sm .btn-clear::before {
   color: currentColor;
@@ -1729,6 +1738,7 @@ textarea.form-input {
 }
 .form-autocomplete .form-autocomplete-input .form-input {
   border-color: transparent;
+  box-shadow: none;
   display: inline-block;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -1916,7 +1926,7 @@ textarea.form-input {
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin-top: 0;
-  padding: .2rem 1rem;
+  padding: .2rem .8rem;
 }
 .menu .menu-header .menu-header-text {
   background: #fff;

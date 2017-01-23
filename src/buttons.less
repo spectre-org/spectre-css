@@ -5,6 +5,7 @@
   border: .1rem solid @core-color;
   border-radius: @border-radius;
   color: @core-link-color;
+  .control-transition();
   cursor: pointer;
   display: inline-block;
   font-size: 1.4rem;
@@ -19,6 +20,7 @@
   white-space: nowrap;
   &:focus {
     background: lighten(@core-secondary-color, 1%);
+    .control-shadow();
   }
   &:hover {
     background: @core-color;
@@ -69,12 +71,10 @@
     color: @core-link-color;
     &:focus,
     &:hover {
-      background: fade(@core-border-color, 25%);
       color: darken(@core-link-color, 15%);
     }
     &:active,
     &.active {
-      background: fade(@core-border-color, 50%);
       color: darken(@core-link-color, 25%);
     }
   }
@@ -109,10 +109,12 @@
     font-family: sans-serif;
     height: 2rem;
     line-height: 1.8rem;
-    margin-left: .4rem;
+    margin-left: .2rem;
+    margin-right: -.4rem;
     opacity: .45;
-    padding: 0;
+    padding: 0 .4rem;
     text-decoration: none;
+    width: 2rem;
 
     &:hover {
       opacity: .85;
