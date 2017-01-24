@@ -67,12 +67,8 @@ main { /* 1 */
 }
 
 /**
- * Add the correct margin in IE 8.
+ * Add the correct margin in IE 8 (removed).
  */
-
-figure {
-  margin: 1em 40px;
-}
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -120,14 +116,8 @@ a:hover {
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. (removed)
  */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
@@ -168,13 +158,8 @@ dfn {
 }
 
 /**
- * Add the correct background and color in IE 9-.
+ * Add the correct background and color in IE 9-. (Removed)
  */
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
 
 /**
  * Add the correct font size in all browsers.
@@ -255,9 +240,9 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  font-family: inherit; /* 1 (changed) */
+  font-size: inherit; /* 1 (changed) */
+  line-height: inherit; /* 1 (changed) */
   margin: 0; /* 2 */
 }
 
@@ -318,13 +303,13 @@ button:-moz-focusring,
 }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Change the border, margin, and padding in all browsers (opinionated) (changed).
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /**
