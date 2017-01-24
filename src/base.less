@@ -16,6 +16,7 @@ body {
   font-family: @body-font-family;
   font-size: @body-font-size;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 a {
   color: @core-link-color;
@@ -30,7 +31,7 @@ a {
 &[disabled],
 .disabled {
   cursor: default;
-  opacity: .75;
+  opacity: .5;
   pointer-events: none;
 }
 

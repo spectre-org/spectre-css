@@ -1,0 +1,23 @@
+// Optimized for East Asian CJK
+:lang(zh),
+:lang(ja),
+:lang(ko),
+.cjk {
+  font-family: @cjk-font-family;
+}
+
+:lang(zh),
+:lang(ja),
+.cjk {
+  // Credit: https://github.com/ethantw/Han
+  del + del,
+  del + s,
+  ins + ins,
+  ins + u,
+  s + del,
+  s + s,
+  u + ins,
+  u + u {
+    margin-left: .125em;
+  }
+}

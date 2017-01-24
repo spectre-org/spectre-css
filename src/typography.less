@@ -81,19 +81,29 @@ dl {
     margin: .5rem 0 1.5rem 0;
   }
 }
-.lead {
-  font-size: 120%;
-}
-mark,
-.highlight {
+mark {
   background: lighten(@control-color-warning, 32%);
   .label-base();
+}
+kbd {
+  background: @core-dark-color;
+  color: @core-light-color;
+  .label-base();
+}
+abbr[title] {
+  border-bottom: .1rem dotted;
+  cursor: help;
+  text-decoration: none;
+}
+ins,
+u {
+  border-bottom: .1rem solid;
+  text-decoration: none;
 }
 
 // Code
 pre {
   background: lighten(@core-border-color, 4%);
-  border-left: .2rem solid darken(@core-border-color, 5%);
   line-height: 1.8rem;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -102,6 +112,7 @@ pre {
 }
 code {
   background: @core-border-color;
+  color: lighten(@body-font-color, 20%);
   .label-base();
   white-space: nowrap;
 

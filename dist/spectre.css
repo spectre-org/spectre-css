@@ -1,4 +1,6 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! Spectre.css | MIT License | github.com/picturepan2/spectre */
+/* Manually forked from Normalize.css */
+/* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
@@ -416,9 +418,10 @@ html {
 body {
   background: #fff;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 a {
   color: #5764c6;
@@ -431,7 +434,7 @@ a:hover {
 [disabled],
 .disabled {
   cursor: default;
-  opacity: .75;
+  opacity: .5;
   pointer-events: none;
 }
 .btn .icon,
@@ -529,20 +532,33 @@ dl dt {
 dl dd {
   margin: .5rem 0 1.5rem 0;
 }
-.lead {
-  font-size: 120%;
-}
-mark,
-.highlight {
+mark {
   background: #ffe5a3;
   border-radius: .2rem;
-  font-size: .9em;
+  font-size: .95em;
   padding: .1em .3em;
   vertical-align: baseline;
 }
+kbd {
+  background: #333;
+  border-radius: .2rem;
+  color: #fff;
+  font-size: .95em;
+  padding: .1em .3em;
+  vertical-align: baseline;
+}
+abbr[title] {
+  border-bottom: .1rem dotted;
+  cursor: help;
+  text-decoration: none;
+}
+ins,
+u {
+  border-bottom: .1rem solid;
+  text-decoration: none;
+}
 pre {
   background: #f9f9f9;
-  border-left: .2rem solid #e2e2e2;
   line-height: 1.8rem;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -552,7 +568,8 @@ pre {
 code {
   background: #efefef;
   border-radius: .2rem;
-  font-size: .9em;
+  color: #666;
+  font-size: .95em;
   padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
@@ -563,6 +580,38 @@ pre code {
   line-height: 1.8rem;
   margin-bottom: 0;
   margin-top: 0;
+}
+:lang(zh),
+:lang(ja),
+:lang(ko),
+.cjk {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", "Helvetica Neue", sans-serif;
+}
+:lang(zh) del + del,
+:lang(ja) del + del,
+.cjk del + del,
+:lang(zh) del + s,
+:lang(ja) del + s,
+.cjk del + s,
+:lang(zh) ins + ins,
+:lang(ja) ins + ins,
+.cjk ins + ins,
+:lang(zh) ins + u,
+:lang(ja) ins + u,
+.cjk ins + u,
+:lang(zh) s + del,
+:lang(ja) s + del,
+.cjk s + del,
+:lang(zh) s + s,
+:lang(ja) s + s,
+.cjk s + s,
+:lang(zh) u + ins,
+:lang(ja) u + ins,
+.cjk u + ins,
+:lang(zh) u + u,
+:lang(ja) u + u,
+.cjk u + u {
+  margin-left: .125em;
 }
 .table {
   border-collapse: collapse;
@@ -1071,7 +1120,7 @@ textarea.form-input {
   background: #efefef;
   border-radius: .2rem;
   color: #666;
-  font-size: .9em;
+  font-size: .95em;
   padding: .1em .3em;
   vertical-align: baseline;
   white-space: nowrap;
@@ -1094,19 +1143,26 @@ textarea.form-input {
   max-width: 100%;
 }
 .video-responsive {
-  height: 0;
+  display: block;
   overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.video-responsive::before {
+  content: "";
+  display: block;
   padding-bottom: 56.25%;
   /* Default 16:9, you can calculate this value by dividing 9 by 16 */
-  padding-top: 3rem;
-  position: relative;
 }
 .video-responsive iframe,
 .video-responsive object,
 .video-responsive embed {
+  bottom: 0;
   height: 100%;
   left: 0;
   position: absolute;
+  right: 0;
   top: 0;
   width: 100%;
 }
@@ -1115,9 +1171,13 @@ textarea.form-input {
   max-width: 100%;
   width: 100%;
 }
-.video-responsive-4-3 {
+.video-responsive-4-3::before {
   padding-bottom: 75%;
   /* 4:3 */
+}
+.video-responsive-1-1::before {
+  padding-bottom: 100%;
+  /* 1:1 */
 }
 .figure {
   margin: 0 0 1rem 0;
@@ -2382,6 +2442,9 @@ textarea.form-input {
 }
 .text-italic {
   font-style: italic;
+}
+.text-large {
+  font-size: 1.2em;
 }
 .text-ellipsis {
   overflow: hidden;

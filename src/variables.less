@@ -6,8 +6,11 @@
 @body-bg: #fff;
 @body-font-color: #333;
 @body-font-size: 1.4rem;
-// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-@body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", "Helvetica Neue", sans-serif;
+// Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+@base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+@fallback-font-family: "Helvetica Neue", sans-serif;
+@cjk-font-family: @base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", @fallback-font-family;
+@body-font-family: @base-font-family, @fallback-font-family;
 
 // Sizes
 @layout-gutter: 1rem;
@@ -56,7 +59,7 @@
 }
 .label-base() {
   border-radius: .2rem;
-  font-size: .9em;
+  font-size: .95em;
   padding: .1em .3em;
   vertical-align: baseline;
 }
