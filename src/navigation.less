@@ -19,8 +19,7 @@
     &:last-child {
       &,
       a {
-        color: lighten(@body-font-color, 20%);
-        pointer-events: none;
+        color: @body-font-color;
       }
     }
     &:not(:last-child) {
@@ -35,13 +34,11 @@
 
 // Tabs
 .tab {
+  border-bottom: .1rem solid @core-border-color;
   display: flex;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
+  flex-wrap: wrap;
 
   .tab-item {
-    border-bottom: .1rem solid @control-color;
     margin-top: 0;
 
     a {
@@ -50,7 +47,7 @@
       display: block;
       margin-bottom: -.1rem;
       margin-top: 0;
-      padding: .8rem 1.4rem;
+      padding: .8rem 1rem;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -59,17 +56,8 @@
     }
     &.active a,
     a.active {
-      border-bottom-color: darken(@core-color, 10%);
-      color: darken(@core-link-color, 10%);
-    }
-
-    .badge {
-      &[data-badge]::after {
-        position: absolute;
-        right: -1.4rem;
-        top: 1rem;
-        transform: translate(-50%, -1rem);
-      }
+      border-bottom-color: @core-color;
+      color: @core-link-color;
     }
   }
 
@@ -77,32 +65,38 @@
     .tab-item {
       flex: 1 0 auto;
       text-align: center;
+
+      .badge {
+        &[data-badge]::after {
+          position: absolute;
+          right: -1.4rem;
+          top: 1rem;
+          transform: translate(-50%, -1rem);
+        }
+      }
     }
   }
 }
 
 // Pagination
 .pagination {
-  display: inline-block;
-  padding: 1.2rem;
-
   .page-item {
     display: inline-block;
 
     span {
       display: inline-block;
-      padding: .6rem .5rem;
+      padding: .6rem;
     }
 
     a {
-      border-radius: .3rem;
+      border-radius: @border-radius;
+      color: @body-font-color;
       display: inline-block;
-      margin: 0 .1rem;
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
-        background: @core-secondary-color;
+        color: @core-color;
       }
     }
 

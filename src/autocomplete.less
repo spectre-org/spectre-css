@@ -3,62 +3,25 @@
   position: relative;
 
   .form-autocomplete-input {
+    align-content: flex-start;
     background: #fff;
     border: .1rem solid @control-color;
-    border-radius: .3rem;
+    border-radius: @border-radius;
     color: @body-font-color;
-    display: block;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    max-width: 100%;
-    min-height: 3.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 3.6rem;
     outline: 0;
-    padding: .3rem .3rem 0 .3rem;
+    padding: .1rem 0 .1rem .2rem;
     width: 100%;
-
-    .chip-sm {
-      margin-bottom: .3rem;
-    }
 
     .form-input {
-      background: #fff;
       border-color: transparent;
+      box-shadow: none;
       display: inline-block;
-      height: 2.4rem;
-      margin-bottom: .3rem;
+      flex: 1 0 auto;
       padding: .3rem;
-      vertical-align: top;
       width: auto;
-    }
-  }
-
-  .form-autocomplete-list {
-    background: #fff;
-    border: .1rem solid lighten(@control-color, 5%);
-    border-radius: .3rem;
-    display: block;
-    height: auto;
-    left: 0;
-    .light-shadow;
-    margin: .3rem 0 0 0;
-    padding: .5rem;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    z-index: 1988;
-  }
-  .form-autocomplete-item {
-    border-radius: .3rem;
-    display: block;
-    margin-top: .1rem;
-    padding: .2rem 1rem;
-
-    &:hover,
-    &:focus {
-      background: lighten(@core-secondary-color, 5%);
-    }
-    &.active {
-      background: @core-secondary-color;
     }
   }
 }

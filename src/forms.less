@@ -8,19 +8,21 @@
   background: #fff;
   background-image: none;
   border: .1rem solid @control-color;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   color: @body-font-color;
+  .control-transition();
   display: block;
   font-size: 1.4rem;
   height: 3.2rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   max-width: 100%;
   outline: 0;
-  padding: .7rem .8rem;
+  padding: .6rem .8rem;
   position: relative;
   width: 100%;
   &:focus {
     border-color: @core-color;
+    .control-shadow();
   }
   &[disabled] {
     background: #eeeff2;
@@ -28,14 +30,12 @@
 
   // Input sizes
   &.input-sm {
-    border-radius: .2rem;
     font-size: 1.2rem;
     height: 2.4rem;
     padding: .3rem .6rem;
   }
 
   &.input-lg {
-    border-radius: .4rem;
     font-size: 1.6rem;
     height: 4.2rem;
     line-height: 2rem;
@@ -98,7 +98,7 @@
 .form-select {
   appearance: none;
   border: .1rem solid @control-color;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   font-size: 1.4rem;
   line-height: 1.6rem;
   min-width: @control-min-width;
@@ -117,6 +117,7 @@
   }
   &:focus {
     border-color: @core-color;
+    .control-shadow();
   }
   &::-ms-expand {
     display: none;
@@ -124,7 +125,6 @@
 
   // Select sizes
   &.select-sm {
-    border-radius: .2rem;
     font-size: 1.2rem;
     height: 2.4rem;
     padding: .4rem 2rem .4rem .6rem;
@@ -159,6 +159,10 @@
     overflow: hidden;
     position: absolute;
     width: .1rem;
+    &:focus + .form-icon {
+      border-color: @core-color;
+      .control-shadow();
+    }
   }
 }
 .form-checkbox,
@@ -171,6 +175,7 @@
 
   .form-icon {
     border: .1rem solid @control-color;
+    .control-transition();
     display: inline-block;
     font-size: 1.4rem;
     height: 1.4rem;
@@ -180,7 +185,6 @@
     padding: 0;
     position: absolute;
     top: .5rem;
-    transition: all .15s ease;
     vertical-align: top;
     width: 1.4rem;
   }
@@ -189,9 +193,6 @@
   }
 
   input {
-    &:focus + .form-icon {
-      border-color: @core-color;
-    }
     &:checked + .form-icon {
       background: @core-color;
       border-color: @core-color;
@@ -203,7 +204,7 @@
 }
 .form-checkbox {
   .form-icon {
-    border-radius: .2rem;
+    border-radius: @border-radius;
   }
 
   input {
@@ -249,7 +250,7 @@
   input:checked + .form-icon {
     &::after {
       background: #fff;
-      border-radius: .2rem;
+      border-radius: @border-radius;
       content: "";
       height: .4rem;
       left: 50%;
@@ -320,7 +321,7 @@
   .input-group-addon {
     background: lighten(@core-border-color, 4%);
     border: .1rem solid @control-color;
-    border-radius: .3rem;
+    border-radius: @border-radius;
     line-height: 1.6rem;
     padding: .7rem .8rem;
 

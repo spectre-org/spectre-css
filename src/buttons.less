@@ -3,8 +3,9 @@
   -webkit-appearance: none;
   background: #fff;
   border: .1rem solid @core-color;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   color: @core-link-color;
+  .control-transition();
   cursor: pointer;
   display: inline-block;
   font-size: 1.4rem;
@@ -19,6 +20,7 @@
   white-space: nowrap;
   &:focus {
     background: lighten(@core-secondary-color, 1%);
+    .control-shadow();
   }
   &:hover {
     background: @core-color;
@@ -69,19 +71,16 @@
     color: @core-link-color;
     &:focus,
     &:hover {
-      background: lighten(@core-border-color, 2%);
       color: darken(@core-link-color, 15%);
     }
     &:active,
     &.active {
-      background: @core-border-color;
       color: darken(@core-link-color, 25%);
     }
   }
 
   // Button Small
   &.btn-sm {
-    border-radius: .2rem;
     font-size: 1.2rem;
     height: 2.4rem;
     line-height: 1.4rem;
@@ -90,7 +89,6 @@
 
   // Button Large
   &.btn-lg {
-    border-radius: .4rem;
     font-size: 1.8rem;
     height: 4.2rem;
     line-height: 2rem;
@@ -107,12 +105,16 @@
   &.btn-clear {
     background: transparent;
     border: 0;
-    color: #666;
+    color: currentColor;
+    font-family: sans-serif;
     height: 2rem;
-    margin-left: .3rem;
+    line-height: 1.8rem;
+    margin-left: .2rem;
+    margin-right: -.4rem;
     opacity: .45;
-    padding: 0;
+    padding: 0 .4rem;
     text-decoration: none;
+    width: 2rem;
 
     &:hover {
       opacity: .85;
@@ -128,13 +130,10 @@
 // Button groups
 .btn-group {
   display: inline-flex;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
+  flex-wrap: wrap;
 
   .btn {
     flex: 1 0 auto;
-
     &:first-of-type:not(:last-of-type) {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -152,7 +151,7 @@
     &:focus,
     &:active,
     &.active {
-      z-index: 99;
+      z-index: 9;
     }
   }
 

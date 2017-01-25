@@ -2,8 +2,7 @@
 .chip {
   align-content: space-around;
   align-items: center;
-  border: .1rem solid transparent;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   display: flex;
   list-style: none;
   margin: 0;
@@ -14,68 +13,58 @@
   }
   .chip-content {
     flex: 1 1 auto;
-    padding: 0 1rem;
     .text-ellipsis;
+    &:not(:first-child) {
+      padding-left: 1rem;
+    }
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
   }
   .chip-action {
     flex: 0 0 auto;
   }
   .chip-title {
     font-size: 1.4rem;
+    line-height: 1.6rem;
   }
   .chip-meta {
     color: lighten(@body-font-color, 50%);
     font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 }
 
 // Small chips
 .chip-sm {
   align-items: center;
-  background: @core-secondary-color;
-  border-radius: .3rem;
+  background: @core-border-color;
+  border-radius: @border-radius;
   color: #666;
   display: inline-flex;
-  font-size: 1.2rem;
-  height: 2.4rem;
+  height: 3rem;
+  margin: .1rem .2rem .1rem 0;
   max-width: 100%;
-  padding: .3rem .6rem;
+  padding: .5rem .7rem;
   text-decoration: none;
   vertical-align: middle;
-
-  &:hover,
-  &:focus {
-    background: darken(@core-secondary-color, 2%);
-  }
-
-  .btn-clear {
-    margin-top: -.2rem;
-
-    &::before {
-      color: darken(@core-color, 10%);
-      font-size: 1.6rem;
-    }
-  }
 
   &.selected {
     background: @core-color;
     color: @core-light-color;
-
-    .btn-clear {
-      &::before {
-        color: lighten(@core-color, 40%);
-      }
-    }
-  }
-
-  .chip-name {
-    margin-left: .4rem;
-    .text-ellipsis;
   }
 
   .avatar {
-    font-size: .8rem;
-    height: 1.6rem;
-    width: 1.6rem;
+    font-size: 1rem;
+    height: 2rem;
+    margin-right: .4rem;
+    width: 2rem;
+  }
+
+  .btn-clear {
+    &::before {
+      color: currentColor;
+      font-size: 1.6rem;
+    }
   }
 }

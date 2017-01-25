@@ -2,12 +2,11 @@
 .card {
   background: #fff;
   border: .1rem solid @core-border-color;
-  border-radius: .3rem;
+  border-radius: @border-radius;
   display: block;
   margin: 0;
   padding: 0;
   text-align: left;
-  z-index: 999;
 
   .card-header,
   .card-body,
@@ -25,15 +24,15 @@
       padding-top: 0;
 
       img {
-        border-top-left-radius: .3rem;
-        border-top-right-radius: .3rem;
+        border-top-left-radius: @border-radius;
+        border-top-right-radius: @border-radius;
       }
     }
 
     &:last-child {
       img {
-        border-bottom-left-radius: .3rem;
-        border-bottom-right-radius: .3rem;
+        border-bottom-left-radius: @border-radius;
+        border-bottom-right-radius: @border-radius;
       }
     }
   }
