@@ -19,8 +19,7 @@
     &:last-child {
       &,
       a {
-        color: lighten(@body-font-color, 20%);
-        pointer-events: none;
+        color: @body-font-color;
       }
     }
     &:not(:last-child) {
@@ -86,18 +85,18 @@
 
     span {
       display: inline-block;
-      padding: .6rem .5rem;
+      padding: .6rem;
     }
 
     a {
       border-radius: @border-radius;
+      color: @body-font-color;
       display: inline-block;
-      margin: 0 .1rem;
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
-        background: @core-secondary-color;
+        color: @core-color;
       }
     }
 
