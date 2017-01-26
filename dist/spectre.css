@@ -2009,7 +2009,8 @@ textarea.form-input {
 }
 .breadcrumb,
 .tab,
-.pagination {
+.pagination,
+.nav {
   list-style: none;
   margin: .5rem 0;
 }
@@ -2086,17 +2087,44 @@ textarea.form-input {
 .pagination .page-item a {
   border-radius: .2rem;
   color: #333;
-  display: inline-block;
   padding: .6rem .8rem;
   text-decoration: none;
 }
 .pagination .page-item a:focus,
 .pagination .page-item a:hover {
+  background: #eff1fa;
   color: #5764c6;
 }
 .pagination .page-item.active a {
   background: #5764c6;
   color: #fff;
+}
+.nav {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.nav .nav-item a {
+  border-radius: .2rem;
+  color: #333;
+  padding: .6rem .8rem;
+  text-decoration: none;
+}
+.nav .nav-item a:focus,
+.nav .nav-item a:hover {
+  color: #5764c6;
+}
+.nav .nav-item.active a {
+  color: #5764c6;
+}
+.nav .nav {
+  margin-left: 2rem;
+}
+.nav .nav a {
+  color: #808080;
 }
 .modal {
   -webkit-align-items: center;

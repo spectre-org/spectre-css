@@ -1,7 +1,8 @@
 // Navigation
 .breadcrumb,
 .tab,
-.pagination {
+.pagination,
+.nav {
   list-style: none;
   margin: .5rem 0;
 }
@@ -91,11 +92,11 @@
     a {
       border-radius: @border-radius;
       color: @body-font-color;
-      display: inline-block;
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
+        background: @core-secondary-color;
         color: @core-color;
       }
     }
@@ -105,6 +106,37 @@
         background: @core-color;
         color: @core-light-color;
       }
+    }
+  }
+}
+
+// Nav
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  .nav-item {
+    a {
+      border-radius: @border-radius;
+      color: @body-font-color;
+      padding: .6rem .8rem;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        color: @core-color;
+      }
+    }
+    &.active {
+      a {
+        color: @core-color;
+      }
+    }
+  }
+
+  & .nav {
+    margin-left: 2rem;
+    a {
+      color: lighten(@body-font-color, 30%);
     }
   }
 }
