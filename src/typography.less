@@ -30,7 +30,7 @@ h6 {
   font-size: 1.6rem;
 }
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
 }
 blockquote {
   border-left: .2rem solid #ddd;
@@ -97,30 +97,38 @@ abbr[title] {
 }
 ins,
 u {
-  border-bottom: .1rem solid;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 // Code
+code {
+  background: @core-border-color;
+  color: lighten(@body-font-color, 20%);
+  .label-base();
+}
 pre {
   background: lighten(@core-border-color, 4%);
   line-height: 1.8rem;
   margin-bottom: 1em;
   margin-top: 1em;
   overflow: auto;
-  padding: 1.5rem 2.5rem;
-}
-code {
-  background: @core-border-color;
-  color: lighten(@body-font-color, 20%);
-  .label-base();
-  white-space: nowrap;
+  padding: 2rem 2.5rem;
+  position: relative;
 
-  pre & {
+  > code {
     background: transparent;
     border-left: 0;
+    font-size: 1em;
     line-height: 1.8rem;
-    margin-bottom: 0;
-    margin-top: 0;
+    padding: 0;
+
+    &::before {
+      content: attr(data-lang);
+      color: @control-color;
+      font-size: 1.2rem;
+      position: absolute;
+      right: 1rem;
+      top: .2rem;
+    }
   }
 }

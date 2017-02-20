@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="https://github.com/picturepan2/" />
+    <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
+    <link rel="stylesheet" href="../dist/spectre.css" />
+    <link rel="stylesheet" href="css/docs.min.css" />
+    <link rel="stylesheet" href="font/style.css" />
+</head>
+<body>
+  <section class="section bg-grey">
+    <section id="overview" class="grid-hero container grid-960 text-center">
+      <h1>Spectre.css</h1>
+      <h2>The <u>lightweight</u>, <u>responsive</u> and <u>modern</u> CSS framework</h2>
+      <div class="notes">
+        <a href="index.html#introduction" class="btn btn-primary">Documents</a>
+        <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub Repo</a>
+      </div>
+
+      <div class="columns">
+        <div class="column col-4 col-xs-12">
+          <div class="card text-center">
+            <div class="card-header">
+              <span class="card-title">Lightweight</span>
+            </div>
+            <div class="card-body">
+              Lightweight  (~10KB gzipped) starting point for your projects
+            </div>
+          </div>
+        </div>
+        <div class="column col-4 col-xs-12">
+          <div class="card text-center">
+            <div class="card-header">
+              <span class="card-title">Responsive</span>
+            </div>
+            <div class="card-body">
+              Flexbox-based, responsive and mobile-friendly layout
+            </div>
+          </div>
+        </div>
+        <div class="column col-4 col-xs-12">
+          <div class="card text-center">
+            <div class="card-header">
+              <span class="card-title">Modern</span>
+            </div>
+            <div class="card-body">
+              Carefully designed elements and components
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="grid-docs container grid-960">
+    <section class="columns">
+      <div class="docs-sidebar column col-3 col-sm-12">
+        <ul class="docs-nav nav">
+          <li class="nav-item active">
+            <a href="index.html">Getting started</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html#introduction">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#installation">Installation</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#compiling">Custom version</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#browsers">Browser support</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#whatsnew">What's new</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="elements.html">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a href="layout.html">Layout</a>
+          </li>
+          <li class="nav-item">
+            <a href="components.html">Components</a>
+          </li>
+          <li class="nav-item">
+            <a href="utilities.html">Utilities</a>
+          </li>
+        </ul>
+      </div>
+      <div class="docs-content column col-9 col-sm-12">
+        <section id="introduction" class="container">
+          <header class="text-center"><h3>Introduction</h3></header>
+          <section class="notes">
+            <p><strong>Spectre.css</strong> is a lightweight and responsive and modern CSS framework for faster and extensible development.</p>
+            <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
+          </section>
+        </section>
+
+        <section id="installation" class="container">
+          <header class="text-center"><h3>Installation</h3></header>
+          <section class="notes">
+            <p>There are 3 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM and Bower.</p>
+            <h4>Install manually</h4>
+            <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
+            <p><a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+            <h4>Install with NPM</h4>
+<!-- install with npm example -->
+<pre>
+<code class="code"><span class="tag">$</span> npm install <span class="atv">spectre.css</span> --save</code>
+</pre>
+            <h4>Install with Bower</h4>
+<!-- install with bower example -->
+<pre>
+<code class="code"><span class="tag">$</span> bower install <span class="atv">spectre.css</span> --save</code>
+</pre>
+            <p>And include it in your website or Web app <code>&lt;head&gt;</code></p>
+<!-- install manually example -->
+<pre>
+<code class="code">&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;</code>
+</pre>
+
+          </section>
+        </section>
+
+        <section id="compiling" class="container">
+          <header class="text-center"><h3>Custom version</h3></header>
+          <section class="notes">
+            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>.</p>
+            <p>Then, you can build the CSS file from the command line:</p>
+            <ol>
+              <li>Navigate to the root directory of Spectre where you can find <code>package.json</code> file.</li>
+              <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
+              <li>When completed, run <code>gulp build</code> to compile LESS to CSS and minify files.</li>
+              <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
+            </ol>
+            <p>You can watch file changes and rebuild CSS files by using <code>gulp watch</code>.</p>
+          </section>
+        </section>
+
+        <section id="browsers" class="container">
+          <header class="text-center"><h3>Browser support</h3></header>
+          <section class="notes">
+            <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
+            <ul>
+              <li>Chrome (last three)</li>
+              <li>Microsoft Edge (last three)</li>
+              <li>Firefox (last three)</li>
+              <li>Safari (last three)</li>
+              <li>Opera (last three)</li>
+              <li>Internet Explorer 10+</li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="whatsnew" class="container">
+          <header class="text-center"><h3>What's new</h3></header>
+          <section class="notes">
+            <p><strong>February 2017</strong></p>
+            <ul>
+              <li>New Documents experience</li>
+            </ul>
+            <p><strong>March 2016</strong></p>
+            <ul>
+              <li>Initial commit</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <footer class="bg-grey">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+      </p>
+      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+    </section>
+  </footer>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2702768-8', 'auto');
+      ga('send', 'pageview');
+  </script>
+</body>
+</html>

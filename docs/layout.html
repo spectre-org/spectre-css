@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="https://github.com/picturepan2/" />
+  <title>Layout - Spectre.css</title>
+  <link rel="stylesheet" href="../dist/spectre.css" />
+  <link rel="stylesheet" href="css/docs.min.css" />
+  <link rel="stylesheet" href="font/style.css" />
+</head>
+<body>
+  <section class="section bg-grey">
+    <section class="grid-header container grid-960">
+      <nav class="navbar">
+        <section class="navbar-section">
+          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html#introduction" class="btn btn-link">Documents</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+        </section>
+      </nav>
+    </section>
+  </section>
+
+  <section class="container grid-960">
+    <section class="columns">
+      <div class="docs-sidebar column col-3 col-sm-12">
+        <ul class="docs-nav nav">
+          <li class="nav-item">
+            <a href="index.html">Getting started</a>
+          </li>
+          <li class="nav-item">
+            <a href="elements.html">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a href="layout.html"><strong>Layout</strong></a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="layout.html#grid">Flexbox grid</a>
+              </li>
+              <li class="nav-item">
+                <a href="layout.html#responsive">Responsive</a>
+              </li>
+              <li class="nav-item">
+                <a href="layout.html#navbar">Navbar</a>
+              </li>
+              <li class="nav-item">
+                <a href="layout.html#empty">Empty states</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="components.html">Components</a>
+          </li>
+          <li class="nav-item">
+            <a href="utilities.html">Utilities</a>
+          </li>
+        </ul>
+      </div>
+      <div class="docs-content column col-9 col-sm-12">
+        <section id="grid" class="container">
+          <header class="text-center"><h3>Flexbox grid</h3></header>
+          <section class="notes">
+            <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+              <div class="bg-grey"></div>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column col-12">
+              <div class="bg-grey">col-12 (100%)</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-9">
+              <div class="bg-grey">col-9 (75%)</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-6">
+              <div class="bg-grey">col-6 (50%)</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-3">
+              <div class="bg-grey">col-3 (25%)</div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
+            <p>And you can add the class <code>col-gapless</code> to have gapless columns.</p>
+          </section>
+
+          <div class="columns col-gapless">
+            <div class="column col-6">
+              <div class="bg-grey">col-6 (gapless)</div>
+            </div>
+            <div class="column col-6">
+              <div class="bg-grey">col-6 (gapless)</div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>By default, Spectre grid has multi-line flexbox enabled. You can add the class <code>col-oneline</code> to <code>columns</code> to make all its child columns positioned in the same single row.</p>
+          </section>
+
+          <div class="columns col-oneline">
+            <div class="column col-8">
+              <div class="bg-grey">col-8</div>
+            </div>
+            <div class="column col-8">
+              <div class="bg-grey">col-8</div>
+            </div>
+          </div>
+
+<!-- layout example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns col-gapless&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="responsive" class="container">
+          <header class="text-center"><h3>Responsive grid</h3></header>
+          <div class="columns col-multiline">
+            <div class="column col-md-6 col-xs-12">
+              <div class="bg-grey">col-md-6</div>
+            </div>
+            <div class="column col-md-3 col-xs-12">
+              <div class="bg-grey">col-md-3</div>
+            </div>
+            <div class="column col-md-3 col-xs-12">
+              <div class="bg-grey">col-md-3</div>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column col-sm-6">
+              <div class="bg-grey">col-sm-6</div>
+            </div>
+            <div class="column col-sm-3">
+              <div class="bg-grey">col-sm-3</div>
+            </div>
+            <div class="column col-sm-3">
+              <div class="bg-grey">col-sm-3</div>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column col-xs-6">
+              <div class="bg-grey">col-xs-6</div>
+            </div>
+            <div class="column col-xs-3">
+              <div class="bg-grey">col-xs-3</div>
+            </div>
+            <div class="column col-xs-3">
+              <div class="bg-grey">col-xs-3</div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code>, <code>.col-md-[1-12]</code>, <code>.col-lg-[1-12]</code> and <code>.col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+            <ul>
+              <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
+              <li><code>col-xs-[1-12]</code> apply to window width smaller than or equal to <strong>480px</strong>. </li>
+              <li><code>col-sm-[1-12]</code> apply to window width smaller than or equal to <strong>600px</strong>. </li>
+              <li><code>col-md-[1-12]</code> apply to window width smaller than or equal to <strong>840px</strong>. </li>
+              <li><code>col-lg-[1-12]</code> apply to window width smaller than or equal to <strong>960px</strong>. </li>
+              <li><code>col-xl-[1-12]</code> apply to window width smaller than or equal to <strong>1280px</strong>. </li>
+            </ul>
+          </section>
+
+<!-- layout example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>For hiding elements on specific viewport sizes, there are classes <code>.hide-xs</code>, <code>.hide-sm</code>, <code>.hide-md</code>, <code>.hide-lg</code> and <code>.hide-xl</code> available.</p>
+            <ul>
+              <li><code>hide-xs</code> hides elements when the window width is smaller than or equal to <strong>480px</strong>. </li>
+              <li><code>hide-sm</code> hides elements when the window width is smaller than or equal to <strong>600px</strong>. </li>
+              <li><code>hide-md</code> hides elements when the window width is smaller than or equal to <strong>840px</strong>. </li>
+              <li><code>hide-lg</code> hides elements when the window width is smaller than or equal to <strong>960px</strong>. </li>
+              <li><code>hide-xl</code> hides elements when the window width is smaller than or equal to <strong>1280px</strong>. </li>
+            </ul>
+            <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or online.</p>
+            <p><a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
+          </section>
+        </section>
+
+        <section id="navbar" class="container">
+          <header class="text-center"><h3>Navbar</h3></header>
+          <section class="notes">
+            <p><strong>Navbar</strong> is a layout container that appears in the header of apps and websites. </p>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <section class="navbar">
+                <section class="navbar-section">
+                  <a href="#navbar" class="navbar-brand">
+                    <i class="icon icon-pages"></i> Spectre.css
+                  </a>
+                  <a href="#navbar" class="btn btn-link">features</a>
+                  <a href="#navbar" class="btn btn-link">documents</a>
+                </section>
+                <section class="navbar-section">
+                  <div class="input-group input-inline">
+                    <input class="form-input" type="text" placeholder="search" />
+                    <button class="btn btn-primary input-group-btn">Search</button>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>A navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the class <code>navbar-section</code> will be evenly distributed in the container.</p>
+          </section>
+
+<!-- navbar example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-pages&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Spectre.css
+    &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;features&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Search&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
+&lt;<span class="tag">/header</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="empty" class="container">
+          <header class="text-center"><h3>Empty states / blank slates</h3></header>
+          <section class="notes">
+            <p><strong>Empty states/blank slates</strong> are commonly used as placeholders for first time use, empty data and error screens.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
+              <section class="empty">
+                <i class="icon icon-markunread"></i>
+                <p class="empty-title">You have no new messages</p>
+                <p class="empty-meta">Click the button to start a conversation.</p>
+                <button class="empty-action btn btn-primary">Send a message</button>
+              </section>
+            </div>
+            <div class="column col-8 col-xs-12">
+              <section class="empty">
+                <i class="icon icon-people"></i>
+                <p class="empty-title">You are not following anyone</p>
+                <div class="empty-action input-group">
+                  <input type="text" class="form-input" placeholder="" />
+                  <button class="btn btn-primary input-group-btn">Search</button>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>An empty state component can include icons, messages(title and meta messages) and action buttons or any combination of those elements. Add <code>empty-title</code>, <code>empty-meta</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
+          </section>
+
+<!-- empty states example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty&quot;</span>&gt;
+  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title&quot;</span>&gt;You have no new messages&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-meta&quot;</span>&gt;Click the button to start a conversation.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;empty-action btn btn-primary&quot;</span>&gt;Send a message&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <footer class="bg-grey">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+      </p>
+      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+    </section>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2702768-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

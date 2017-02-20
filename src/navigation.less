@@ -15,12 +15,13 @@
     margin: 0;
 
     a {
+      border: none;
       text-decoration: none;
     }
     &:last-child {
       &,
       a {
-        color: @body-font-color;
+        color: lighten(@body-font-color, 30%);
       }
     }
     &:not(:last-child) {
@@ -91,12 +92,11 @@
 
     a {
       border-radius: @border-radius;
-      color: @body-font-color;
+      color: lighten(@body-font-color, 20%);
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
-        background: @core-secondary-color;
         color: @core-color;
       }
     }
@@ -114,11 +114,10 @@
 .nav {
   display: flex;
   flex-direction: column;
-
+  
   .nav-item {
     a {
-      border-radius: @border-radius;
-      color: @body-font-color;
+      color: lighten(@body-font-color, 20%);
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
@@ -127,14 +126,21 @@
       }
     }
     &.active {
-      a {
-        color: @core-color;
+      & > a {
+        color: @body-font-color;
+        font-weight: bold;
+        &:focus,
+        &:hover {
+          color: @core-color;
+        }
       }
     }
   }
 
   & .nav {
+    margin-bottom: 1rem;
     margin-left: 2rem;
+
     a {
       color: lighten(@body-font-color, 30%);
     }

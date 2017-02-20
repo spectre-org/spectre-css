@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="https://github.com/picturepan2/" />
+  <title>Elements - Spectre.css</title>
+  <link rel="stylesheet" href="../dist/spectre.css" />
+  <link rel="stylesheet" href="css/docs.min.css" />
+  <link rel="stylesheet" href="font/style.css" />
+</head>
+<body>
+  <section class="section bg-grey">
+    <section class="grid-header container grid-960">
+      <nav class="navbar">
+        <section class="navbar-section">
+          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="#" class="btn btn-link">Documents</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+        </section>
+      </nav>
+    </section>
+  </section>
+
+  <section class="container grid-960">
+    <section class="columns">
+      <div class="docs-sidebar column col-3 col-sm-12">
+        <ul class="docs-nav nav nav-vertical">
+          <li class="nav-item">
+            <a href="index.html">Getting started</a>
+          </li>
+          <li class="nav-item active">
+            <a href="elements.html">Elements</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="elements.html#typography">Typography</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#tables">Tables</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#buttons">Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#forms">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#labels">Labels</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#media">Media</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="layout.html">Layout</a>
+          </li>
+          <li class="nav-item">
+            <a href="components.html">Components</a>
+          </li>
+          <li class="nav-item">
+            <a href="utilities.html">Utilities</a>
+          </li>
+        </ul>
+        <div class="docs-backtotop hide-xs">
+          <a href="#">Back to top</a>
+        </div>
+      </div>
+      <div class="docs-content column col-9 col-sm-12">
+        <section id="typography" class="container">
+          <header class="text-center"><h3>Typography</h3></header>
+          <section class="notes">
+            <p><strong>Typography</strong> sets default styles for headings, paragraphs, semantic text, blockquote, lists and code elements. </p>
+          </section>
+
+          <header class="text-center"><h4>Headings</h4></header>
+          <h1>H1 Title <small class="label">5rem</small></h1>
+          <h2>H2 Title <small class="label">4rem</small></h2>
+          <h3>H3 Title <span class="label">3rem</span></h3>
+          <h4>H4 Title <span class="label">2.4rem</span></h4>
+          <h5>H5 Title <span class="label">2rem</span></h5>
+          <h6>H6 Title <span class="label">1.6rem</span></h6>
+
+<!-- headings example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">h1</span>&gt;H1 Title&lt;<span class="tag">/h1</span>&gt;
+&lt;<span class="tag">h2</span>&gt;H2 Title &lt;<span class="tag">small</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;4rem&lt;<span class="tag">/small</span>&gt;&lt;<span class="tag">/h2</span>&gt;</code>
+</pre>
+
+          <header class="text-center"><h4>Paragraphs</h4></header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, <a href="#typography">dictum in vehicula sit amet</a>, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+          <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+
+<!-- paragraphs example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;dictum in vehicula sit amet&lt;<span class="tag">/a</span>&gt;, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.&lt;<span class="tag">/p</span>&gt;</code>
+</pre>
+
+          <header class="text-center"><h4>Semantic text elements</h4></header>
+          <div class="columns">
+            <div class="column col-4 col-xs-12">
+              <abbr title="Internationalization">I18N</abbr>
+              <code class="ml-10">&lt;abbr&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <strong>Bold</strong>
+              <code class="ml-10">&lt;strong&gt;</code> <code>&lt;b&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <cite>Citation</cite>
+              <code class="ml-10">&lt;cite&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <code>Hello World!</code>
+              <code class="ml-10">&lt;code&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <del>Deleted</del>
+              <code class="ml-10">&lt;del&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <em>Emphasis</em>
+              <code class="ml-10">&lt;em&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <i>Italic</i>
+              <code class="ml-10">&lt;i&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <ins>Inserted</ins>
+              <code class="ml-10">&lt;ins&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <kbd>Ctrl + S</kbd>
+              <code class="ml-10">&lt;kbd&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <mark>Highlighted</mark>
+              <code class="ml-10">&lt;mark&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <ruby>
+                漢 <rt>kan</rt>
+                字 <rt>ji</rt>
+              </ruby>
+              <code class="ml-10">&lt;ruby&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <s>Strikethrough</s>
+              <code class="ml-10">&lt;s&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <samp>Sample</samp>
+              <code class="ml-10">&lt;samp&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              Text <sub>Subscripted</sub>
+              <code class="ml-10">&lt;sub&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              Text <sup>Superscripted</sup>
+              <code class="ml-10">&lt;sup&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <time>20:00</time>
+              <code class="ml-10">&lt;time&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <u>Underline</u>
+              <code class="ml-10">&lt;u&gt;</code>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <var>x</var> = <var>y</var> + 2
+              <code class="ml-10">&lt;var&gt;</code>
+            </div>
+          </div>
+
+          <header class="text-center"><h4>Optimized for east asian fonts</h4></header>
+          <p class="text-large text-center"><span lang="zh-Hans">你好</span>, <span lang="ja">こんにちは</span>, <span lang="ko">안녕하세요</span></p>
+          <h5>Chinese (Simplified)</h5>
+          <p lang="zh-Hans">革命不是请客吃饭，不是做文章，不是绘画绣花，不能那样雅致，那样从容不迫，“文质彬彬”，那样“温良恭俭让”。革命就是暴动，是一个阶级推翻一个阶级的暴烈的行动。</p>
+          <h5>Chinese (Tranditional)</h5>
+          <p lang="zh-Hant">山不在高，有仙則名；水不在深，有龍則靈。斯是陋室，惟吾德馨。苔痕上階綠，草色入簾青；談笑有鴻儒，往來無白丁。可以調素琴，閱金經。無絲竹之亂耳，無案牘之勞形。南陽諸葛廬，西蜀子雲亭。孔子云：「何陋之有？」</p>
+          <h5>Japanese</h5>
+          <p lang="ja"><u>祇園</u><u>精舎</u>の鐘の声、諸行無常の響きあり。沙羅双樹の花の色、盛者必衰の理をあらはす。おごれる人も久しからず。ただ春の夜の夢のごとし。たけき者も遂にはほろびぬ、ひとへ‌​に風の前の塵に同じ。</p>
+          <h5>Korean</h5>
+          <p lang="ko">나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로, 어리석은 백성들이 말하고자 하는 바가 있어도, 끝내 제 뜻을 펴지 못하는 사람이 많다. 내가 이를 불쌍히 여겨, 새로 스물 여덟 글자를 만드니, 사람마다 하여금 쉽게 익혀, 날마다 씀에 편하게 하고자 할 따름이다.</p>
+
+          <section class="notes">
+            <p>Use the attribute <code>lang</code> or add the class <code>cjk</code> to the container element to have better Asian CJK (Chinese, Japanese and Korean) support.</p>
+          </section>
+
+<!-- east asian example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ja&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;</code>
+</pre>
+
+          <header class="text-center"><h4>Blockquote</h4></header>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <cite>- Source</cite>
+          </blockquote>
+
+<!-- blockquote example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">blockquote</span>&gt;
+  &lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">cite</span>&gt;- Source&lt;<span class="tag">/cite</span>&gt;
+&lt;<span class="tag">/blockquote</span>&gt;</code>
+</pre>
+
+          <header class="text-center"><h4>Lists</h4></header>
+          <div class="columns">
+            <div class="column col-4 col-xs-12">
+              <ul class="list">
+                <li>list item 1</li>
+                <li>list item 2
+                  <ul>
+                    <li>list item 2.1</li>
+                    <li>list item 2.2</li>
+                    <li>list item 2.3</li>
+                  </ul>
+                </li>
+                <li>list item 3</li>
+              </ul>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <ol class="list">
+                <li>list item 1</li>
+                <li>list item 2
+                  <ol>
+                    <li>list item 2.1</li>
+                    <li>list item 2.2</li>
+                    <li>list item 2.3</li>
+                  </ol>
+                </li>
+                <li>list item 3</li>
+              </ol>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <dl class="list">
+                <dt>description list term 1</dt>
+                <dd>description list description 1</dd>
+                <dt>description list term 2</dt>
+                <dd>description list description 2</dd>
+                <dt>description list term 3</dt>
+                <dd>description list description 3</dd>
+              </dl>
+            </div>
+          </div>
+
+<!-- lists example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- unordered list --&gt;</span>
+&lt;<span class="tag">ul</span>&gt;
+  &lt;<span class="tag">li</span>&gt;list item 1&lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span>&gt;list item 2
+    &lt;<span class="tag">ul</span>&gt;
+      &lt;<span class="tag">li</span>&gt;list item 2.1&lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span>&gt;list item 2.2&lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span>&gt;list item 2.3&lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span>&gt;list item 3&lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+
+<span class="com">&lt;!-- description list --&gt;</span>
+&lt;<span class="tag">dl</span>&gt;
+  &lt;<span class="tag">dt</span>&gt;description list term&lt;<span class="tag">/dt</span>&gt;
+  &lt;<span class="tag">dd</span>&gt;description list description&lt;<span class="tag">/dd</span>&gt;
+&lt;<span class="tag">/dl</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="tables" class="container">
+          <header class="text-center"><h3>Tables</h3></header>
+          <section class="notes">
+            <p><strong>Tables</strong> include default styles for tables and data sets.</p>
+          </section>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>duration</th>
+                <th>genre</th>
+                <th>release date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Shawshank Redemption</td>
+                <td>2h 22min</td>
+                <td>Crime, Drama</td>
+                <td>14 October 1994</td>
+              </tr>
+              <tr>
+                <td>The Godfather</td>
+                <td>2h 55min</td>
+                <td>Crime, Drama</td>
+                <td>24 March 1972</td>
+              </tr>
+              <tr>
+                <td>Schindler's List</td>
+                <td>3h 15min</td>
+                <td>Biography, Drama, History</td>
+                <td>4 February 1994</td>
+              </tr>
+              <tr>
+                <td>Se7en</td>
+                <td>2h 7min</td>
+                <td>Crime, Drama, Mystery</td>
+                <td>22 September 1995</td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="notes">
+            <p>Add the class <code>table</code> to any &lt;table&gt; element. The class will add padding, border and emphasized table header. Use <code>table-striped</code> to &lt;table&gt; to add zebra striped style. For hoverable table rows, you can add the class <code>table-hover</code> to enable hover style. </p>
+            <p>Use the class <code>selected</code> to make &lt;tr&gt; element highlighted. </p>
+          </section>
+
+<!-- tables example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
+  &lt;<span class="tag">thead</span>&gt;
+    &lt;<span class="tag">tr</span>&gt;
+      &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;duration&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;genre&lt;<span class="tag">/th</span>&gt;
+      &lt;<span class="tag">th</span>&gt;release date&lt;<span class="tag">/th</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/thead</span>&gt;
+  &lt;<span class="tag">tbody</span>&gt;
+    &lt;<span class="tag">tr</span> <span class="atn">class</span>=<span class="atv">&quot;selected&quot;</span>&gt;
+      &lt;<span class="tag">td</span>&gt;The Shawshank Redemption&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;2h 22min&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;Crime, Drama&lt;<span class="tag">/td</span>&gt;
+      &lt;<span class="tag">td</span>&gt;14 October 1994&lt;<span class="tag">/td</span>&gt;
+    &lt;<span class="tag">/tr</span>&gt;
+  &lt;<span class="tag">/tbody</span>&gt;
+&lt;<span class="tag">/table</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="buttons" class="container">
+          <header class="text-center"><h3>Buttons</h3></header>
+          <section class="notes">
+            <p><strong>Buttons</strong> include simple button styles for actions in different types and sizes. </p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn">default button</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary">primary button</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-link">link button</button>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn loading">default button</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary loading">primary button</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-link loading">link button</button>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add the class <code>btn</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. A button with the class <code>loading</code> can show loading indicator.  </p>
+          </section>
+
+<!-- buttons example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
+
+<span class="com">&lt;!-- a button with loading state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>Add the class <code>disabled</code> or the attribute <code>disabled</code> for a disabled button.</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn disabled">default button</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary" disabled>primary button</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-link" disabled>link button</button>
+            </div>
+          </div>
+
+          <header class="text-center"><h4>Button sizes</h4></header>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn btn-lg">large button</button>
+              <button class="btn">normal button</button>
+              <button class="btn btn-sm">small button</button>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add the class <code>btn-sm</code> or <code>btn-lg</code> for small or large button size. Also, you can add the class <code>btn-block</code> for a full-width button. </p>
+          </section>
+
+<!-- buttons example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;</code>
+</pre>
+
+          <div class="columns">
+            <div class="column">
+              <button class="btn btn-primary btn-lg"><i class="icon icon-markunread"></i> large</button>
+              <button class="btn btn-primary"><i class="icon icon-markunread"></i> normal</button>
+              <button class="btn btn-primary btn-sm"><i class="icon icon-markunread"></i> small</button>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Icons with the class <code>icon</code> can be correctly rendered in each button size. </p>
+          </section>
+
+<!-- buttons example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;</code>
+</pre>
+
+          <header class="text-center"><h4>Button groups</h4></header>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <div class="btn-group">
+                <button class="btn tooltip" data-tooltip="Lorem ipsum">first button</button>
+                <button class="btn tooltip" data-tooltip="Lorem ipsum">second button</button>
+                <button class="btn tooltip" data-tooltip="Lorem ipsum">third button</button>
+              </div>
+            </div>
+            <div class="column col-xs-12">
+              <div class="btn-group btn-group-block">
+                <button class="btn btn-primary">first button</button>
+                <button class="btn btn-primary">second button</button>
+                <button class="btn btn-primary">third button</button>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <div class="btn-group">
+                <button class="btn btn-sm active">first button</button>
+                <button class="btn btn-sm">second button</button>
+                <button class="btn btn-sm">third button</button>
+              </div>
+            </div>
+            <div class="column col-xs-12">
+              <div class="btn-group btn-group-block">
+                <button class="btn btn-primary btn-sm active">first button</button>
+                <button class="btn btn-primary btn-sm">second button</button>
+                <button class="btn btn-primary btn-sm">third button</button>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>If you want to use buttons as a group, add the class <code>btn-group</code> to the container. You can add the class <code>btn-group-block</code> for a full-width button group.</p>
+          </section>
+
+<!-- button groups example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group btn-group-block&quot;</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;first button&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;second button&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;third button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="forms" class="container">
+          <header class="text-center"><h3>Forms</h3></header>
+          <section class="notes">
+            <p><strong>Forms</strong> provide the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
+          </section>
+          <div class="columns">
+            <div class="column col-9 col-xs-12">
+              <form action="#forms">
+                <div class="form-group">
+                  <label class="form-label" for="input-example-1">Name</label>
+                  <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="input-example-2">Email</label>
+                  <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Gender</label>
+                  <label class="form-radio">
+                    <input type="radio" name="gender" />
+                    <i class="form-icon"></i> Male
+                  </label>
+                  <label class="form-radio">
+                    <input type="radio" name="gender"  />
+                    <i class="form-icon"></i> Female
+                  </label>
+                </div>
+                <div class="form-group">
+                  <select class="form-select">
+                    <option>Choose an option</option>
+                    <option>Slack</option>
+                    <option>Skype</option>
+                    <option>Hipchat</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-switch">
+                    <input type="checkbox" />
+                    <i class="form-icon"></i> Send me emails with news and tips
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="input-example-3">Message</label>
+                  <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input type="checkbox" />
+                    <i class="form-icon"></i> Remember me
+                  </label>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                  <button class="btn btn-link" type="reset">Cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+<!-- forms example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">form</span>&gt;
+  <span class="com">&lt;!-- form input control --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form radio control --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> /&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Male
+    &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Female
+    &lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form select control --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
+      &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
+      &lt;<span class="tag">option</span>&gt;Slack&lt;<span class="tag">/option</span>&gt;
+      &lt;<span class="tag">option</span>&gt;Skype&lt;<span class="tag">/option</span>&gt;
+      &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">/select</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form switch control --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Send me emails with news and tips
+    &lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form textarea control --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form checkbox control --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
+    &lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/form</span>&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>You can use <code>:indeterminate</code> pseudo class for indeterminate state of checkboxes.</p>
+            <p>If you want to have a horizontal form, add the class <code>form-horizontal</code> to the &lt;form&gt; container. And add the class <code>col-[1-12]</code> to the child elements for form row layout. </p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-9 col-sm-12">
+              <form class="form-horizontal" action="#forms">
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-4">Name</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="text" id="input-example-4" placeholder="Name" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-5">Email</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="email" id="input-example-5" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label">Gender</label>
+                  </div>
+                  <div class="col-9">
+                    <label class="form-radio">
+                      <input type="radio" name="gender" />
+                      <i class="form-icon"></i> Male
+                    </label>
+                    <label class="form-radio">
+                      <input type="radio" name="gender" checked />
+                      <i class="form-icon"></i> Female
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3"></div>
+                  <div class="col-9">
+                    <select class="form-select" multiple>
+                      <option>Slack</option>
+                      <option>Skype</option>
+                      <option>Hipchat</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3"></div>
+                  <div class="col-9">
+                    <label class="form-switch">
+                      <input type="checkbox" />
+                      <i class="form-icon"></i> Send me emails with news and tips
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-6">Message</label>
+                  </div>
+                  <div class="col-9">
+                    <textarea class="form-input" id="input-example-6" placeholder="Textarea" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3"></div>
+                  <div class="col-9">
+                    <label class="form-checkbox">
+                      <input type="checkbox" />
+                      <i class="form-icon"></i> Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3"></div>
+                  <div class="col-9">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-link" type="reset">Cancel</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+<!-- forms example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-3&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-9&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- form structure --&gt;</span>
+&lt;<span class="tag">/form</span>&gt;</code>
+</pre>
+
+          <div class="columns">
+            <div class="column col-9 col-sm-12">
+              <form class="form-horizontal" action="#forms">
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-8">Email</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="email" id="input-example-8" placeholder="Email" value="spectre@example.com" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-9">URL</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="url" id="input-example-9" placeholder="URL" value="https://github.com/picturepan2/spectre">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-10">Search</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="search" id="input-example-10" placeholder="Search" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-11">Tel</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="tel" id="input-example-11" placeholder="Tel" value="1-(888)-888-8888" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-12">Password</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="password" id="input-example-12" placeholder="Password" value="123456789" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-13">Number</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="number" id="input-example-13" placeholder="00" value="66" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-14">Date</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="date" id="input-example-14" value="2016-12-31" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-15">Color</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="color" id="input-example-15" value="#5764c6" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-16">File</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="file" id="input-example-16" value="" />
+                  </div>
+                </div>
+                <div class="form-group hide">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-17">Slider</label>
+                  </div>
+                  <div class="col-9">
+                    <input class="form-input" type="range" min="0" max="50" value="25" />
+                  </div>
+                </div>
+                <div class="form-group hide">
+                  <div class="col-3">
+                    <label class="form-label" for="input-example-18">Progress</label>
+                  </div>
+                  <div class="col-9">
+                    <progress class="progress" value="50" max="100"></progress>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>To use form validation styles, add <code>is-success</code> and <code>is-danger</code> to the controls or add <code>has-success</code> and <code>has-danger</code> to parent elements. You can use the class <code>form-input-hint</code> to provide form validation success and error messages.</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label" for="input-example-1">Name</label>
+                <input class="form-input is-danger" type="text" id="input-example-19" placeholder="Name" />
+                <p class="form-input-hint">The name is invaild.</p>
+              </div>
+              <div class="form-group has-success">
+                <label class="form-label" for="input-example-2">Email</label>
+                <input class="form-input" type="email" id="input-example-20" placeholder="Email" />
+                <p class="form-input-hint">The email is available.</p>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <select class="form-select is-danger">
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+                <p class="form-input-hint">The option is invaild.</p>
+              </div>
+              <div class="form-group has-success">
+                <select class="form-select">
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+                <p class="form-input-hint">The option is available.</p>
+              </div>
+            </div>
+          </div>
+
+<!-- forms example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">form</span>&gt;
+  <span class="com">&lt;!-- form validation class: has-success --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  <span class="com">&lt;!-- form validation class: is-success --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/form</span>&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>For smaller or larger input and select controls, you could add <code>input-sm</code>/<code>input-lg</code> and <code>select-sm</code>/<code>select-lg</code> to the elements.</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-4">
+              <input class="form-input input-sm" type="text" placeholder="Name" />
+            </div>
+            <div class="column col-4">
+              <select class="form-select select-sm">
+                <option>Choose an option</option>
+                <option>Slack</option>
+                <option>Skype</option>
+                <option>Hipchat</option>
+              </select>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4">
+              <input class="form-input input-lg" type="text" placeholder="Name" />
+            </div>
+            <div class="column col-4">
+              <select class="form-select select-lg">
+                <option>Choose an option</option>
+                <option>Slack</option>
+                <option>Skype</option>
+                <option>Hipchat</option>
+              </select>
+            </div>
+          </div>
+
+          <header class="text-center"><h4>Input groups</h4></header>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <div class="input-group">
+                <input type="text" class="form-input input-sm" placeholder="username" />
+                <span class="input-group-addon addon-sm">@slack.com</span>
+              </div>
+            </div>
+            <div class="column col-xs-12">
+              <div class="input-group">
+                <span class="input-group-addon addon-sm">slack.com/</span>
+                <input type="text" class="form-input input-sm" placeholder="site name" />
+                <button class="btn btn-primary input-group-btn btn-sm">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <div class="input-group">
+                <input type="text" class="form-input" placeholder="username" />
+                <span class="input-group-addon">@slack.com</span>
+              </div>
+            </div>
+            <div class="column col-xs-12">
+              <div class="input-group">
+                <span class="input-group-addon">slack.com/</span>
+                <input type="text" class="form-input" placeholder="site name" />
+                <button class="btn btn-primary input-group-btn">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <div class="input-group">
+                <input type="text" class="form-input input-lg" placeholder="username" />
+                <span class="input-group-addon addon-lg">@slack.com</span>
+              </div>
+            </div>
+            <div class="column">
+              <div class="input-group">
+                <span class="input-group-addon addon-lg">slack.com/</span>
+                <input type="text" class="form-input input-lg" placeholder="site name" />
+                <button class="btn btn-primary input-group-btn btn-lg">Submit</button>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>If you want to attach text and button along with an input, add the class <code>input-group</code> to the input container. And add the class <code>input-group-addon</code> to the text element and <code>input-group-btn</code> to the button element.</p>
+          </section>
+
+<!-- input groups example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- normal input group --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
+  &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- large input group --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
+  &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon addon-lg&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input input-lg&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- normal input group with button --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
+  &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Submit&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="labels" class="container">
+          <header class="text-center"><h3>Labels</h3></header>
+          <section class="notes">
+            <p><strong>Labels</strong> are formatted text tags for highlighted, informative information.</p>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <span class="label">default label</span>
+              <span class="label label-primary">primary label</span>
+              <span class="label label-success">success label</span>
+              <span class="label label-danger">danger label</span>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add the class <code>label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code> and <code>label-danger</code> for a primary colored label.</p>
+          </section>
+
+<!-- labels example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;default label&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;primary label&lt;<span class="tag">/span</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="media" class="container">
+          <header class="text-center"><h3>Media</h3></header>
+          <section class="notes">
+            <p><strong>Media</strong> include responsive images, figures and video classes. </p>
+            <p>Add the class <code>img-responsive</code> to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-9 col-xs-12">
+              <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS El Capitan Wallpaper" />
+            </div>
+          </div>
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>You can use the element <code>&lt;figure&gt;</code> for an image with a caption. Add the class <code>figure</code> to &lt;figure&gt; element. The images with the class <code>img-responsive</code> will be responsive. And the included class <code>figure-caption</code> will provide basic style for caption. Also, you can use <code>text-left</code>, <code>text-center</code> and <code>text-right</code> for caption alignment.  </p>
+          </section>
+          <div class="columns">
+            <div class="column col-9 col-xs-12">
+              <figure class="figure">
+                <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper"/>
+                <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
+              </figure>
+            </div>
+          </div>
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;figure&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-yosemite-2.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS Yosemite Wallpaper&quot;</span> /&gt;
+  &lt;<span class="tag">figcaption</span> <span class="atn">class</span>=<span class="atv">&quot;figure-caption text-center&quot;</span>&gt;macOS Yosemite wallpaper&lt;<span class="tag">/figcaption</span>&gt;
+&lt;<span class="tag">/figure</span>&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>video-responsive-4-3</code> for 4:3 ratio video container or <code>video-responsive-1-1</code> for 1:1 ratio.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-9 col-xs-12">
+              <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BzMLA8YIgG0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+<!-- media example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;video-responsive&quot;</span>&gt;
+  &lt;<span class="tag">iframe</span> <span class="atn">src</span>=<span class="atv">&quot;https://www.youtube.com/embed/BzMLA8YIgG0&quot;</span> <span class="atn">width</span>=<span class="atv">&quot;560&quot;</span> <span class="atn">height</span>=<span class="atv">&quot;315&quot;</span> <span class="atn">frameborder</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">allowfullscreen</span>&gt;&lt;<span class="tag">/iframe</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <footer class="bg-grey">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+      </p>
+      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+    </section>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2702768-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="https://github.com/picturepan2/" />
+  <title>Components - Spectre.css</title>
+  <link rel="stylesheet" href="../dist/spectre.css" />
+  <link rel="stylesheet" href="css/docs.min.css" />
+  <link rel="stylesheet" href="font/style.css" />
+</head>
+<body>
+  <section class="section bg-grey">
+    <section class="grid-header container grid-960">
+      <nav class="navbar">
+        <section class="navbar-section">
+          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html#introduction" class="btn btn-link">Documents</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+        </section>
+      </nav>
+    </section>
+  </section>
+
+  <section class="container grid-960">
+    <section class="columns">
+      <div class="docs-sidebar column col-3 col-sm-12">
+        <ul class="docs-nav nav">
+          <li class="nav-item">
+            <a href="index.html">Getting started</a>
+          </li>
+          <li class="nav-item">
+            <a href="elements.html">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a href="layout.html">Layout</a>
+          </li>
+          <li class="nav-item active">
+            <a href="components.html">Components</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="components.html#autocomplete">Autocomplete</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#avatars">Avatars</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#badges">Badges</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#cards">Cards</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#chips">Chips</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#dropdowns">Dropdowns</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#menus">Menus</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#modals">Modals</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#navigation">Navigation</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#toasts">Toasts</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#tooltips">Tooltips</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="utilities.html">Utilities</a>
+          </li>
+        </ul>
+      </div>
+      <div class="docs-content column col-9 col-sm-12">
+        <section id="autocomplete" class="container">
+          <header class="text-center"><h3>Autocomplete</h3></header>
+          <section class="notes">
+            <p><strong>Autocomplete</strong> form component provides suggestions while you type. It is often used for tags and contacts input. </p>
+          </section>
+          <div class="columns">
+            <div class="column col-9 col-xs-12">
+              <div class="form-group">
+                <div class="form-autocomplete">
+                  <div class="form-autocomplete-input">
+                    <div class="chip-sm">
+                      Bruce Banner
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip-sm">
+                      <img src="img/avatar-1.png" class="avatar" />
+                      Thor Odinson
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip-sm">
+                      <img src="img/avatar-4.png" class="avatar" />
+                      Steve Rogers
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip-sm">
+                      <figure class="avatar" data-initial="TS" style="background-color: #A2A8E1;"></figure>
+                      Tony Stark
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip-sm selected">
+                      Natasha Romanoff
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <input class="form-input" type="text" placeholder="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-9 col-xs-12">
+              <div class="form-group">
+                <div class="form-autocomplete">
+                  <div class="form-autocomplete-input">
+                    <div class="chip-sm">
+                      Bruce Banner
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <div class="chip-sm">
+                      <img src="img/avatar-1.png" class="avatar" />
+                      Thor Odinson
+                      <button class="btn btn-clear"></button>
+                    </div>
+                    <input class="form-input" type="text" placeholder="typing here" value="S" />
+                  </div>
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#autocomplete">
+                        <div class="chip">
+                          <div class="chip-icon">
+                            <img src="img/avatar-4.png" class="avatar avatar-sm" />
+                          </div>
+                          <div class="chip-content">
+                            Steve Rogers
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#autocomplete">
+                        <div class="chip">
+                          <div class="chip-icon">
+                            <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #A2A8E1;"></figure>
+                          </div>
+                          <div class="chip-content">
+                            Tony Stark
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>menu</code> component. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. </p>
+            <p>The autocomplete HTML structure is exampled below.</p>
+          </section>
+
+<!-- autocomplete example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
+  <span class="com">&lt;!-- autocomplete input container --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input&quot;</span>&gt;
+    <span class="com">&lt;!-- autocomplete chips --&gt;</span>
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+      Yan Zhu
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm selected&quot;</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-2.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+      Yan Zhu
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
+    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span> /&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- autocomplete suggestion list --&gt;</span>
+  &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+    <span class="com">&lt;!-- menu list chips --&gt;</span>
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
+            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+          &lt;<span class="tag">/div</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+            Steve Rogers
+          &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
+            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+          &lt;<span class="tag">/div</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+            Yan Zhu
+          &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">/ul</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="avatars" class="container">
+          <header class="text-center"><h3>Avatars</h3></header>
+          <section class="notes">
+            <p><strong>Avatars</strong> are user profile pictures. </p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;">
+                <img src="img/avatar-1.png" />
+              </figure>
+              <figure class="avatar avatar-lg" data-initial="YZ" style="background-color: #5764c6;">
+                <img src="img/avatar-2.png" />
+              </figure>
+              <figure class="avatar" data-initial="YZ" style="background-color: #5764c6;">
+                <img src="img/avatar-3.png" />
+              </figure>
+              <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #5764c6;">
+                <img src="img/avatar-4.png" />
+              </figure>
+              <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;">
+                <img src="img/avatar-5.png" />
+              </figure>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;"></figure>
+              <figure class="avatar avatar-lg" data-initial="YZ" style="background-color: #5764c6;"></figure>
+              <figure class="avatar" data-initial="YZ" style="background-color: #5764c6;"></figure>
+              <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #5764c6;"></figure>
+              <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;"></figure>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>Add the class <code>avatar</code> to &lt;img&gt; element. There are 4 additional sizes available, including <code>avatar-xl</code> (64px), <code>avatar-lg</code> (48px), <code>avatar-sm</code> (24px), and <code>avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
+            <p>For users who don't have profile pictures, you may use their initials for avatars. Add the class <code>avatar</code> and avatar size class to &lt;div&gt; element. The attribute <code>data-initial</code> is the name appear inside the avatar.</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <figure class="avatar avatar-xl">
+                <img src="img/avatar-1.png" />
+                <img src="img/avatar-2.png" class="avatar-icon" />
+              </figure>
+              <figure class="avatar avatar-lg">
+                <img src="img/avatar-2.png" />
+                <img src="img/avatar-3.png" class="avatar-icon" />
+              </figure>
+              <figure class="avatar">
+                <img src="img/avatar-3.png" />
+                <img src="img/avatar-4.png" class="avatar-icon" />
+              </figure>
+              <figure class="avatar avatar-sm">
+                <img src="img/avatar-4.png" />
+                <img src="img/avatar-5.png" class="avatar-icon" />
+              </figure>
+              <figure class="avatar avatar-xs">
+                <img src="img/avatar-5.png" />
+                <img src="img/avatar-1.png" class="avatar-icon" />
+              </figure>
+            </div>
+          </div>
+
+<!-- avatars example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- Basic avatar examples --&gt;</span>
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
+
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-5.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-icon&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
+
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;&lt;<span class="tag">/figure</span>&gt;
+
+<span class="com">&lt;!-- Show initals when avatar image is unavailable or not fully loaded --&gt;</span>
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="badges" class="container">
+          <header class="text-center"><h3>Badges</h3></header>
+          <section class="notes">
+            <p><strong>Badges</strong> are often used as unread number indicators.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-xs-6">
+              <span class="badge" data-badge="">
+                Notifications
+              </span>
+            </div>
+            <div class="column col-xs-6">
+              <span class="badge" data-badge="1">
+                Notifications
+              </span>
+            </div>
+            <div class="column col-xs-6">
+              <span class="badge" data-badge="99">
+                Notifications
+              </span>
+            </div>
+            <div class="column col-xs-6">
+              <span class="badge" data-badge="999">
+                Notifications
+              </span>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add the class <code>badge</code> to non self closing elements. And add the attribute <code>data-badge</code> to define the content of a badge. The badge will appear in the top-right direction of the element. </p>
+            <p>If there is no <code>data-badge</code> or the attribute is empty, the badge will appear as a dot.</p>
+          </section>
+
+<!-- badges example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;&quot;</span>&gt;
+  Notifications
+&lt;<span class="tag">/span</span>&gt;
+
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;99&quot;</span>&gt;
+  Notifications
+&lt;<span class="tag">/span</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="cards" class="container">
+          <header class="text-center"><h3>Cards</h3></header>
+          <section class="notes">
+            <p><strong>Cards</strong> are flexible content containers.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-el-capitan.jpg" />
+                </div>
+                <div class="card-header">
+                  <h4 class="card-title">Microsoft</h4>
+                  <h6 class="card-meta">Software and hardware</h6>
+                </div>
+                <div class="card-body">
+                  Empower every person and every organization on the planet to achieve more.
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">Do</a>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Apple</h4>
+                  <h6 class="card-meta">Hardware and software</h6>
+                </div>
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-yosemite.jpg" />
+                </div>
+                <div class="card-body">
+                  To make a contribution to the world by making tools for the mind that advance humankind.
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group btn-group-block">
+                    <button class="btn btn-primary">Buy</button>
+                    <button class="btn">Buy</button>
+                    <button class="btn">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Google</h4>
+                  <h6 class="card-meta">Software and hardware</h6>
+                </div>
+                <div class="card-body">
+                  Organize the world’s information and make it universally accessible and useful.
+                </div>
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-yosemite-2.jpg" />
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">Search</a>
+                  <a href="#" class="btn btn-link">Share</a>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-el-capitan.jpg" />
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">Buy</a>
+                  <a href="#" class="btn btn-link">Share</a>
+                </div>
+                <div class="card-body">
+                  <strong>Surface Studio</strong>. Turn your desk into a Studio. Surface Studio is designed for the creative process.
+                </div>
+
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Apple</h4>
+                  <h6 class="card-meta">Hardware and software</h6>
+                </div>
+                <div class="card-body">
+                  To make a contribution to the world by making tools for the mind that advance humankind.
+                </div>
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-yosemite.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Google I/O</h4>
+                </div>
+                <div class="card-body">
+                  An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
+                </div>
+                <div class="card-footer">
+                  <div class="chip">
+                    <div class="chip-content">
+                      <div class="chip-title">Google</div>
+                      <div class="chip-meta">Software and hardware</div>
+                    </div>
+                    <div class="chip-action">
+                      <button class="btn btn-primary"><i class="icon icon-playlist_add"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>card</code>. And add child elements with the class name <code>card-image</code>, <code>card-header</code>, <code>card-content</code> and/or <code>card-footer</code>. The <code>card-image</code> can be placed in any position. </p>
+          </section>
+<!-- cards example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-image&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive&quot;</span> /&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
+    &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;card-title&quot;</span>&gt;Microsoft&lt;<span class="tag">/h4</span>&gt;
+    &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-meta&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
+    To make a contribution to the world by making tools for the mind that advance humankind.
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Do&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="chips" class="container">
+          <header class="text-center"><h3>Chips</h3></header>
+          <section class="notes">
+            <p><strong>Chips</strong> are complex entities in small blocks. </p>
+          </section>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
+              <div class="chip-sm">
+                Crime
+                <button class="btn btn-clear"></button>
+              </div>
+              <div class="chip-sm">
+                Drama
+                <button class="btn btn-clear"></button>
+              </div>
+              <div class="chip-sm">
+                Biography
+                <button class="btn btn-clear"></button>
+              </div>
+              <div class="chip-sm">
+                Mystery
+                <button class="btn btn-clear"></button>
+              </div>
+            </div>
+            <div class="column col-8 col-xs-12">
+              <div class="chip-sm">
+                <figure class="avatar" data-initial="TS" style="background-color: #5764c6;"></figure>
+                Tony Stark
+                <button class="btn btn-clear"></button>
+              </div>
+              <div class="chip-sm">
+                <img src="img/avatar-1.png" class="avatar" />
+                Thor Odinson
+                <button class="btn btn-clear"></button>
+              </div>
+              <div class="chip-sm">
+                <img src="img/avatar-4.png" class="avatar" />
+                Steve Rogers
+              </div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>Add a container element with the class <code>chip-sm</code>. And add child text element, buttons or avatars with the class <code>avatar</code>.</p>
+          </section>
+
+          <div class="columns hide">
+            <div class="column col-4 col-xs-12">
+              <div class="chip">
+                <div class="chip-icon">
+                  <img src="img/avatar-1.png" class="avatar" />
+                </div>
+                <div class="chip-content">
+                  <div class="chip-title">Tony Stark</div>
+                  <div class="chip-meta">Iron man</div>
+                </div>
+                <div class="chip-action">
+                  <button class="btn btn-primary"><i class="icon icon-playlist_add"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- chips example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
+  Crime
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+  Yan Zhu
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+        </section>
+
+        <section id="dropdowns" class="container">
+          <header class="text-center"><h3>Dropdowns</h3></header>
+          <section class="notes">
+            <p>A <strong>dropdown</strong> is a combination of buttons and menus.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-xs-6">
+              <div class="dropdown">
+                <div class="btn-group">
+                  <a class="btn btn-primary">dropdown button</a>
+                  <a class="btn btn-primary dropdown-toggle" tabindex="0"><i class="icon-caret"></i></a>
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#dropdowns">
+                        Slack
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#dropdowns">
+                        Hipchat
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#dropdowns">
+                        Skype
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column col-xs-6">
+              <div class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Slack
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Hipchat
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Skype
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="column col-xs-6">
+              <div class="dropdown">
+                <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Slack
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Hipchat
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">
+                      Skype
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
+            <p>Add a container element with the class <code>dropdown</code>. And add a focusable element with the classname <code>dropdown-toggle</code> for the button and a <code>menu</code> component right next to it. </p>
+          </section>
+          <section class="notes">
+            <p>Also, you can implement your JS to interact with the dropdown menus by adding the class <code>active</code> to the <code>dropdown</code>.</p>
+          </section>
+<!-- dropdowns example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- basic dropdown button --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+  &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+    dropdown menu &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  &lt;<span class="tag">/a</span>&gt;
+  <span class="com">&lt;!-- menu component --&gt;</span>
+  &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Slack&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Hipchat&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">/ul</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- dropdown button group --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;
+      dropdown button
+    &lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    &lt;<span class="tag">/a</span>&gt;
+
+    <span class="com">&lt;!-- menu component --&gt;</span>
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+      ...
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="menus" class="container">
+          <header class="text-center"><h3>Menus</h3></header>
+          <section class="notes">
+            <p>A <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-xs-6">
+              <ul class="menu">
+                <li class="menu-item">
+                  <div class="chip">
+                    <div class="chip-icon">
+                      <img src="img/avatar-4.png" class="avatar" />
+                    </div>
+                    <div class="chip-content">
+                      Steve Rogers
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-item">
+                  <a href="#menus" class="active">
+                    My profile
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    Settings
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="column col-xs-6">
+              <ul class="menu">
+                <li class="menu-header">
+                  <span class="menu-header-text">
+                    Go to
+                  </span>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    <i class="icon icon-link"></i> Slack
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    <i class="icon icon-link"></i> Hipchat
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    <i class="icon icon-link"></i> Skype
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>menu</code>. And add child elements with the classname <code>menu-item</code>. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
+          </section>
+
+<!-- menus example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+  <span class="com">&lt;!-- menu header --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
+      Go to
+    &lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu item --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu divider --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Settings
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="modals" class="container">
+          <header class="text-center"><h3>Modals</h3></header>
+          <section class="notes">
+            <p><strong>Modals</strong> are flexible dialog prompts.</p>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <div class="modal-temp">
+                <div class="modal-overlay"></div>
+                <div class="modal-container" role="document">
+                  <div class="modal-header">
+                    <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
+                    <div class="modal-title">Modal title</div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="content">
+                      <p>This is the content inside the modal.</p>
+                      <h4>Lorem ipsum</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                      <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+                      <h4>Cupcake ipsum</h4>
+                      <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.</p>
+                      <p>De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.</p>
+                      <h4>Candy ipsum</h4>
+                      <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.</p>
+                      <p>Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-link">Close</button>
+                    <button class="btn btn-primary">Share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>modal</code>. And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it. You can add child elements with the class name <code>modal-header</code>, <code>modal-content</code> and <code>modal-footer</code> - any or all of them. </p>
+            <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the class <code>active</code> to the <code>modal</code> container</p>
+          </section>
+<!-- modals example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal active&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-header&quot;</span>&gt;
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-body&quot;</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;content&quot;</span>&gt;
+        <span class="com">&lt;!-- content here --&gt;</span>
+      &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-footer&quot;</span>&gt;
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Close&lt;<span class="tag">/button</span>&gt;
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Share&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+          <header class="text-center"><h4>Modal sizes</h4></header>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="modal-temp modal-sm">
+                <div class="modal-overlay"></div>
+                <div class="modal-container" role="document">
+                  <div class="modal-header">
+                    <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
+                    <div class="modal-title">Modal title</div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-link">Close</button>
+                    <button class="btn btn-primary">Share</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="modal-temp modal-sm">
+                <div class="modal-overlay"></div>
+                <div class="modal-container" role="document">
+                  <div class="modal-header">
+                    <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
+                    <div class="modal-title">Modal title</div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="content">
+                      <form>
+                        <div class="form-group">
+                          <label class="form-label" for="input-example-7">Name</label>
+                          <input class="form-input" type="text" id="input-example-7" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label">Gender</label>
+                          <label class="form-radio">
+                            <input type="radio" name="gender" />
+                            <i class="form-icon"></i> Male
+                          </label>
+                          <label class="form-radio">
+                            <input type="radio" name="gender" checked />
+                            <i class="form-icon"></i> Female
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-link">Close</button>
+                    <button class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add the class <code>modal-sm</code> for a smaller modal dialog. </p>
+          </section>
+<!-- modals example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal modal-sm&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+    <span class="com">&lt;!-- modal structure here --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="navigation" class="container">
+          <header class="text-center"><h3>Navigation</h3></header>
+          <section class="notes">
+            <p><strong>Navigation</strong> includes several components, including breadcrumbs, tabs, pagination and nav.</p>
+          </section>
+          <header id="breadcrumbs" class="text-center"><h4>Breadcrumbs</h4></header>
+          <div class="columns">
+            <div class="column">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs">
+                    Profile
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs">
+                    Change avatar
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>breadcrumb</code>. And add child elements with the classname <code>breadcrumb-item</code>.</p>
+          </section>
+
+<!-- breadcrumbs example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      Home
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      Profile
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      Change avatar
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+
+          <header id="tabs" class="text-center"><h4>Tabs</h4></header>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <ul class="tab">
+                <li class="tab-item active">
+                  <a href="#tabs">
+                    Music
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Playlists
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Radio
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-xs-12">
+              <ul class="tab tab-block">
+                <li class="tab-item active">
+                  <a href="#tabs">
+                    Music
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Playlists
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Radio
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>tab</code>. And add child elements with the classname <code>tab-item</code>. You can add the class <code>tab-block</code> for a full-width tab. The <code>tab-item</code> or its child <code>&lt;a&gt;</code> with the class <code>active</code> will be highlighted.</p>
+          </section>
+<!-- tabs example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Music&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;active&quot;</span>&gt;Playlists&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Radio&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Connect&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <ul class="tab">
+                <li class="tab-item active">
+                  <a href="#tabs" class="badge" data-badge="9">
+                    Music
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs" class="badge" data-badge="99">
+                    Playlists
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Radio
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-xs-12">
+              <ul class="tab tab-block">
+                <li class="tab-item active">
+                  <a href="#tabs" class="badge" data-badge="9">
+                    Music
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs" class="badge" data-badge="99">
+                    Playlists
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Radio
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>If you need <code>badges</code> on tabs, you can add badge class to the element within <code>tab-item</code>. </p>
+          </section>
+<!-- tabs with badges example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;9&quot;</span>&gt;
+      Music
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+
+          <header id="pagination" class="text-center"><h4>Pagination</h4></header>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="#pagination">Previous</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">1</a>
+                </li>
+                <li class="page-item">
+                  <span>...</span>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">6</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#pagination">7</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">8</a>
+                </li>
+                <li class="page-item">
+                  <span>...</span>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">12</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">Next</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-xs-12">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="#pagination" disabled>Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#pagination">1</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">2</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">3</a>
+                </li>
+                <li class="page-item">
+                  <span>...</span>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">12</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>pagination</code>. And add child elements with the classname <code>page-item</code>. The <code>page-item</code> with the class <code>active</code> will be highlighted.</p>
+          </section>
+<!-- pagination example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">disabled</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;1&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;2&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;3&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">span</span>&gt;...&lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;12&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Next&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+
+          <header id="navs" class="text-center"><h4>Navs</h4></header>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#nav">Elements</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav"><strong>Layout</strong></a>
+                  <ul class="nav nav-vertical">
+                    <li class="nav-item">
+                      <a href="#nav">Flexbox grid</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Responsive</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Navbar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Empty states</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Components</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Utilities</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#nav">Elements</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav"><strong>Layout</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Components</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>nav</code>. And add child elements with the classname <code>nav-item</code>. The <code>nav-item</code> with the class <code>active</code> will be highlighted.</p>
+          </section>
+        </section>
+
+        <section id="toasts" class="container">
+          <header class="text-center"><h3>Toasts</h3></header>
+          <section class="notes">
+            <p><strong>Toasts</strong> are used to show alert or information to users.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-sm-12 col-8">
+              <div class="toast">
+                <button class="btn btn-clear float-right"></button>
+                <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>toast</code>. You can add any text within the container, and even icons. You may also add a close button with the class <code>btn-clear</code> if you need. </p>
+          </section>
+          <div class="columns">
+            <div class="column col-sm-12">
+              <div class="toast toast-primary">
+                <i class="icon icon-error_outline"></i> Toast primary
+              </div>
+            </div>
+            <div class="column col-sm-12">
+              <div class="toast toast-success">
+                <i class="icon icon-error_outline"></i> Toast success
+              </div>
+            </div>
+            <div class="column col-sm-12">
+              <div class="toast toast-danger">
+                <i class="icon icon-error_outline"></i> Toast danger
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>And you can add the class <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> for additional toast colors.</p>
+          </section>
+
+<!-- toasts example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast&quot;</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast toast-primary&quot;</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="tooltips" class="container">
+          <header class="text-center"><h3>Tooltips</h3></header>
+          <section class="notes">
+            <p><strong>Tooltips</strong> provide context information labels that appear on hover and focus.</p>
+          </section>
+          <div class="columns text-center">
+            <div class="column col-xs-12">
+              <button class="btn btn-primary tooltip" data-tooltip="Tooltip text" data-tooltip-pos="top">top tooltip</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip text">right tooltip</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Tooltip text">bottom tooltip</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Tooltip text">left tooltip</button>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Tooltip component is built entirely in CSS.</p>
+            <p>Add the class <code>tooltip</code> and the attribute <code>data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
+          </section>
+
+<!-- tooltips example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;top tooltip&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip tooltip-right&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;right tooltip&lt;<span class="tag">/button</span>&gt;</code>
+</pre>
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <footer class="bg-grey">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+      </p>
+      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+    </section>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2702768-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
