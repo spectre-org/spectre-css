@@ -1962,8 +1962,6 @@ small.label {
   animation: slide-down .216s;
 }
 .modal-container {
-  -webkit-animation: slide-up .216s;
-  animation: slide-up .216s;
   background: #fff;
   border-radius: .2rem;
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
@@ -2305,22 +2303,26 @@ small.label {
 }
 @-webkit-keyframes slide-down {
   0% {
-    margin-top: -3rem;
     opacity: 0;
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
   }
   100% {
-    margin-top: 0;
     opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes slide-down {
   0% {
-    margin-top: -3rem;
     opacity: 0;
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
   }
   100% {
-    margin-top: 0;
     opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .divider {
