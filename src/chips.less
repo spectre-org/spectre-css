@@ -1,42 +1,5 @@
 // Chips
 .chip {
-  align-content: space-around;
-  align-items: center;
-  border-radius: @border-radius;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: .5rem 0;
-
-  .chip-icon {
-    flex: 0 0 auto;
-  }
-  .chip-content {
-    flex: 1 1 auto;
-    .text-ellipsis;
-    &:not(:first-child) {
-      padding-left: 1rem;
-    }
-    &:not(:last-child) {
-      padding-right: 1rem;
-    }
-  }
-  .chip-action {
-    flex: 0 0 auto;
-  }
-  .chip-title {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-  }
-  .chip-meta {
-    color: lighten(@body-font-color, 50%);
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-}
-
-// Small chips
-.chip-sm {
   align-items: center;
   background: @core-border-color;
   border-radius: @border-radius;
@@ -49,7 +12,7 @@
   text-decoration: none;
   vertical-align: middle;
 
-  &.selected {
+  &.is-selected {
     background: @core-color;
     color: @core-light-color;
   }

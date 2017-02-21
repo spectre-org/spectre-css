@@ -68,6 +68,9 @@
                 <a href="components.html#navigation">Navigation</a>
               </li>
               <li class="nav-item">
+                <a href="components.html#tiles">Tiles</a>
+              </li>
+              <li class="nav-item">
                 <a href="components.html#toasts">Toasts</a>
               </li>
               <li class="nav-item">
@@ -87,30 +90,30 @@
             <p><strong>Autocomplete</strong> form component provides suggestions while you type. It is often used for tags and contacts input. </p>
           </section>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-8 col-xs-12">
               <div class="form-group">
                 <div class="form-autocomplete">
                   <div class="form-autocomplete-input">
-                    <div class="chip-sm">
+                    <div class="chip">
                       Bruce Banner
                       <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip-sm">
+                    <div class="chip">
                       <img src="img/avatar-1.png" class="avatar" />
                       Thor Odinson
                       <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip-sm">
+                    <div class="chip">
                       <img src="img/avatar-4.png" class="avatar" />
                       Steve Rogers
                       <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip-sm">
+                    <div class="chip">
                       <figure class="avatar" data-initial="TS" style="background-color: #A2A8E1;"></figure>
                       Tony Stark
                       <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip-sm selected">
+                    <div class="chip is-selected">
                       Natasha Romanoff
                       <button class="btn btn-clear"></button>
                     </div>
@@ -119,16 +122,16 @@
                 </div>
               </div>
             </div>
-            <div class="column col-9 col-xs-12">
+            <div class="column col-8 col-xs-12">
               <div class="form-group">
                 <div class="form-autocomplete">
-                  <div class="form-autocomplete-input">
-                    <div class="chip-sm">
+                  <div class="form-autocomplete-input is-focused">
+                    <div class="chip">
                       Bruce Banner
                       <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip-sm">
-                      <img src="img/avatar-1.png" class="avatar" />
+                    <div class="chip">
+                      <img src="img/avatar-1.png" class="avatar" alt="Thor Odinson"/>
                       Thor Odinson
                       <button class="btn btn-clear"></button>
                     </div>
@@ -137,21 +140,21 @@
                   <ul class="menu">
                     <li class="menu-item">
                       <a href="#autocomplete">
-                        <div class="chip">
-                          <div class="chip-icon">
-                            <img src="img/avatar-4.png" class="avatar avatar-sm" />
+                        <div class="tile tile-centered">
+                          <div class="tile-icon">
+                            <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Steve Rogers" />
                           </div>
-                          <div class="chip-content">
+                          <div class="tile-content">
                             Steve Rogers
                           </div>
                         </div>
                       </a>
                       <a href="#autocomplete">
-                        <div class="chip">
-                          <div class="chip-icon">
+                        <div class="tile tile-centered">
+                          <div class="tile-icon">
                             <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #A2A8E1;"></figure>
                           </div>
-                          <div class="chip-content">
+                          <div class="tile-content">
                             Tony Stark
                           </div>
                         </div>
@@ -163,8 +166,8 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is  <code>form-autocomplete-input</code>, another is <code>menu</code> component. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the autocomplete. </p>
-            <p>The autocomplete HTML structure is exampled below.</p>
+            <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is <code>form-autocomplete-input</code>, another is <code>menu</code> component. You may add the class <code>is-focus</code> to <code>form-autocomplete-input</code> to make it appear as focus state.</p>
+            <p>Spectre.css does NOT include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below.</p>
           </section>
 
 <!-- autocomplete example -->
@@ -173,14 +176,9 @@
   <span class="com">&lt;!-- autocomplete input container --&gt;</span>
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input&quot;</span>&gt;
     <span class="com">&lt;!-- autocomplete chips --&gt;</span>
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
-      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
-      Yan Zhu
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm selected&quot;</span>&gt;
-      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-2.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
-      Yan Zhu
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip is-selected&quot;</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span> /&gt;
+      Thor Odinson
       &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
     <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
@@ -191,11 +189,11 @@
     <span class="com">&lt;!-- menu list chips --&gt;</span>
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
       &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
-            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
+            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-4.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Steve Rogers&quot;</span> /&gt;
           &lt;<span class="tag">/div</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
             Steve Rogers
           &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
@@ -203,11 +201,11 @@
     &lt;<span class="tag">/li</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
       &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-icon&quot;</span>&gt;
-            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
+            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Yan Zhu&quot;</span> /&gt;
           &lt;<span class="tag">/div</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-content&quot;</span>&gt;
+          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
             Yan Zhu
           &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">/div</span>&gt;
@@ -357,22 +355,22 @@
                   <img class="img-responsive" src="img/osx-el-capitan.jpg" />
                 </div>
                 <div class="card-header">
-                  <h4 class="card-title">Microsoft</h4>
-                  <h6 class="card-meta">Software and hardware</h6>
+                  <div class="card-title">Microsoft</div>
+                  <div class="card-meta">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Empower every person and every organization on the planet to achieve more.
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Do</a>
+                  <a href="#cards" class="btn btn-primary">Do</a>
                 </div>
               </div>
             </div>
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Apple</h4>
-                  <h6 class="card-meta">Hardware and software</h6>
+                  <div class="card-title">Apple</div>
+                  <div class="card-meta">Hardware and software</div>
                 </div>
                 <div class="card-image">
                   <img class="img-responsive" src="img/osx-yosemite.jpg" />
@@ -392,8 +390,8 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Google</h4>
-                  <h6 class="card-meta">Software and hardware</h6>
+                  <div class="card-title">Google</div>
+                  <div class="card-meta">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Organize the world’s information and make it universally accessible and useful.
@@ -402,8 +400,8 @@
                   <img class="img-responsive" src="img/osx-yosemite-2.jpg" />
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Search</a>
-                  <a href="#" class="btn btn-link">Share</a>
+                  <a href="#cards" class="btn btn-primary">Search</a>
+                  <a href="#cards" class="btn btn-link">Share</a>
                 </div>
               </div>
             </div>
@@ -413,8 +411,8 @@
                   <img class="img-responsive" src="img/osx-el-capitan.jpg" />
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Buy</a>
-                  <a href="#" class="btn btn-link">Share</a>
+                  <a href="#cards" class="btn btn-primary">Buy</a>
+                  <a href="#cards" class="btn btn-link">Share</a>
                 </div>
                 <div class="card-body">
                   <strong>Surface Studio</strong>. Turn your desk into a Studio. Surface Studio is designed for the creative process.
@@ -425,8 +423,8 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Apple</h4>
-                  <h6 class="card-meta">Hardware and software</h6>
+                  <div class="card-title">Apple</div>
+                  <div class="card-meta">Hardware and software</div>
                 </div>
                 <div class="card-body">
                   To make a contribution to the world by making tools for the mind that advance humankind.
@@ -439,21 +437,18 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Google I/O</h4>
-                </div>
-                <div class="card-body">
-                  An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
-                </div>
-                <div class="card-footer">
-                  <div class="chip">
-                    <div class="chip-content">
-                      <div class="chip-title">Google</div>
-                      <div class="chip-meta">Software and hardware</div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Google I/O</div>
+                      <div class="tile-meta">Software and hardware</div>
                     </div>
-                    <div class="chip-action">
+                    <div class="tile-action">
                       <button class="btn btn-primary"><i class="icon icon-playlist_add"></i></button>
                     </div>
                   </div>
+                </div>
+                <div class="card-body">
+                  An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
                 </div>
               </div>
             </div>
@@ -488,35 +483,35 @@
           </section>
           <div class="columns">
             <div class="column col-8 col-xs-12">
-              <div class="chip-sm">
+              <div class="chip">
                 Crime
                 <button class="btn btn-clear"></button>
               </div>
-              <div class="chip-sm">
+              <div class="chip">
                 Drama
                 <button class="btn btn-clear"></button>
               </div>
-              <div class="chip-sm">
+              <div class="chip">
                 Biography
                 <button class="btn btn-clear"></button>
               </div>
-              <div class="chip-sm">
+              <div class="chip">
                 Mystery
                 <button class="btn btn-clear"></button>
               </div>
             </div>
             <div class="column col-8 col-xs-12">
-              <div class="chip-sm">
+              <div class="chip">
                 <figure class="avatar" data-initial="TS" style="background-color: #5764c6;"></figure>
                 Tony Stark
                 <button class="btn btn-clear"></button>
               </div>
-              <div class="chip-sm">
+              <div class="chip">
                 <img src="img/avatar-1.png" class="avatar" />
                 Thor Odinson
                 <button class="btn btn-clear"></button>
               </div>
-              <div class="chip-sm">
+              <div class="chip">
                 <img src="img/avatar-4.png" class="avatar" />
                 Steve Rogers
               </div>
@@ -524,34 +519,17 @@
           </div>
 
           <section class="notes">
-            <p>Add a container element with the class <code>chip-sm</code>. And add child text element, buttons or avatars with the class <code>avatar</code>.</p>
+            <p>Add a container element with the class <code>chip</code>. And add child text element, buttons or avatars with the class <code>avatar</code>.</p>
           </section>
-
-          <div class="columns hide">
-            <div class="column col-4 col-xs-12">
-              <div class="chip">
-                <div class="chip-icon">
-                  <img src="img/avatar-1.png" class="avatar" />
-                </div>
-                <div class="chip-content">
-                  <div class="chip-title">Tony Stark</div>
-                  <div class="chip-meta">Iron man</div>
-                </div>
-                <div class="chip-action">
-                  <button class="btn btn-primary"><i class="icon icon-playlist_add"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
 
 <!-- chips example -->
 <pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   Crime
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip-sm&quot;</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> /&gt;
   Yan Zhu
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
@@ -689,11 +667,11 @@
             <div class="column col-xs-6">
               <ul class="menu">
                 <li class="menu-item">
-                  <div class="chip">
-                    <div class="chip-icon">
+                  <div class="tile tile-centered">
+                    <div class="tile-icon">
                       <img src="img/avatar-4.png" class="avatar" />
                     </div>
-                    <div class="chip-content">
+                    <div class="tile-content">
                       Steve Rogers
                     </div>
                   </div>
@@ -924,7 +902,7 @@
           </section>
           <header id="breadcrumbs" class="text-center"><h4>Breadcrumbs</h4></header>
           <div class="columns">
-            <div class="column">
+            <div class="column col-8 col-sm-12">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
                   <a href="#breadcrumbs">
@@ -1121,7 +1099,7 @@
             <div class="column col-xs-12">
               <ul class="pagination">
                 <li class="page-item">
-                  <a href="#pagination" disabled>Previous</a>
+                  <a href="#pagination" disabled tabindex="-1">Previous</a>
                 </li>
                 <li class="page-item active">
                   <a href="#pagination">1</a>
@@ -1151,7 +1129,7 @@
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">disabled</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item active&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;1&lt;<span class="tag">/a</span>&gt;
@@ -1210,6 +1188,110 @@
           <section class="notes">
             <p>Add a container element with the class <code>nav</code>. And add child elements with the classname <code>nav-item</code>. The <code>nav-item</code> with the class <code>active</code> will be highlighted.</p>
           </section>
+        </section>
+
+        <section id="tiles" class="container">
+          <header class="text-center"><h3>Tiles</h3></header>
+          <section class="notes">
+            <p><strong>Tiles</strong> are repeatable or embeddable information blocks.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-sm-12 col-8">
+              <div class="tile">
+                <div class="tile-icon">
+                  <figure class="avatar avatar-lg">
+                    <img src="img/avatar-3.png" />
+                  </figure>
+                </div>
+                <div class="tile-content">
+                  <p class="tile-title">The Avengers</p>
+                  <p>Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                </div>
+                <div class="tile-action">
+                  <button class="btn btn-primary">Join</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-sm-12 col-8">
+              <div class="tile">
+                <div class="tile-icon">
+                  <figure class="avatar avatar-lg">
+                    <img src="img/avatar-2.png" />
+                  </figure>
+                </div>
+                <div class="tile-content">
+                  <p class="tile-title">The S.H.I.E.L.D.</p>
+                  <p>The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                  <p><button class="btn btn-primary btn-sm">Join</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container with the class <code>tile</code>. And add child elements with the class name <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code>. The <code>tile-icon</code> and <code>tile-action</code> are optional.</p>
+            <p>There are <code>tile-title</code> and <code>tile-meta</code> classes for title and meta text styles.</p>
+          </section>
+
+<!-- tiles example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;example-tile-icon&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-explore centered&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;The Avengers&lt;<span class="tag">/p</span>&gt;
+    &lt;<span class="tag">p</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Join&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+
+          <section class="notes">
+            <p>There is compact version of Tiles component, which is often used as contact and file info blocks.</p>
+            <p>Add the class <code>tile-centered</code> to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-sm-12 col-8">
+              <div class="tile tile-centered">
+                <div class="tile-icon">
+                  <div class="example-tile-icon">
+                    <i class="icon icon-explore centered"></i>
+                  </div>
+                </div>
+                <div class="tile-content">
+                  <div class="tile-title text-ellipsis">spectre-docs.pdf</div>
+                  <div class="tile-meta text-ellipsis">14MB · Public · 1 Jan, 2017</div>
+                </div>
+                <div class="tile-action">
+                  <button class="btn btn-link"><i class="icon icon-more_vert"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- tiles example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;example-tile-icon&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-explore centered&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title text-ellipsis&quot;</span>&gt;spectre-docs.pdf&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-meta text-ellipsis&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-more_vert&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    &lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
         </section>
 
         <section id="toasts" class="container">

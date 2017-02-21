@@ -1,0 +1,40 @@
+// Tiles
+.tile {
+  align-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  margin: 0;
+  padding: .5rem 0;
+
+  .tile-icon {
+    flex: 0 0 auto;
+  }
+  .tile-content {
+    flex: 1 1 auto;
+    &:not(:first-child) {
+      padding-left: 1rem;
+    }
+    &:not(:last-child) {
+      padding-right: 1rem;
+    }
+  }
+  .tile-action {
+    flex: 0 0 auto;
+  }
+  .tile-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .tile-meta {
+    color: @core-meta-color;
+    font-size: 1.3rem;
+  }
+
+  &.tile-centered {
+    align-items: center;
+
+    .tile-content {
+      overflow: hidden;
+    }
+  }
+}

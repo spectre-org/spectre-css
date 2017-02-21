@@ -5,7 +5,7 @@
   display: block;
   margin: 0;
   min-width: @control-min-width;
-  padding: .5rem;
+  padding: .8rem;
   .shadow;
   text-align: left;
   transform: translateY(.5rem);
@@ -15,8 +15,8 @@
     border-radius: @border-radius;
     display: block;
     line-height: 2.4rem;
-    margin-top: .1rem;
-    padding: .2rem .8rem;
+    margin-top: 0;
+    padding: .3rem .8rem;
     text-decoration: none;
     user-select: none;
 
@@ -24,8 +24,8 @@
       border-radius: @border-radius;
       color: inherit;
       display: block;
-      margin: -.2rem -.8rem;
-      padding: .2rem .8rem;
+      margin: -.3rem -.8rem;
+      padding: .3rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -46,6 +46,14 @@
     line-height: 1.8rem;
     margin-top: 0;
     padding: .2rem .8rem;
+    &::after {
+      border-bottom: .1rem solid @core-border-color;
+      content: "";
+      display: block;
+      height: .1rem;
+      transform: translateY(-1rem);
+      width: 100%;
+    }
 
     .menu-header-text {
       background: #fff;
@@ -54,15 +62,6 @@
       padding: 0 .6rem;
       position: relative;
       z-index: 99;
-    }
-
-    &::after {
-      border-bottom: .1rem solid @core-border-color;
-      content: "";
-      display: block;
-      height: .1rem;
-      transform: translateY(-1rem);
-      width: 100%;
     }
   }
 }

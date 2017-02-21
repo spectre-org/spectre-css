@@ -136,6 +136,18 @@ header {
   margin-bottom: 2rem;
 }
 
+.example-tile-icon {
+  align-content: space-around;
+  align-items: center;
+  background: #5764c6;
+  border-radius: .2rem;
+  color: #fff;
+  display: flex;
+  font-size: 2.4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
 @media screen and (min-width: 480px) {
   .docs-sidebar {
     padding: 7rem 0;
@@ -148,18 +160,12 @@ header {
       .docs-nav {
         position: sticky;
         top: 5rem;
-      }
-    }
 
-    .docs-backtotop {
-      bottom: 5rem;
-      display: none;
-      padding: 0 1rem;
-      position: fixed;
-      z-index: 49;
-    }
-    .docs-backtotop a {
-      color: #666;
+        // A position: sticky; bug casues box-shadow generates width to the elements
+        .nav-item a:focus {
+          box-shadow: none;
+        }
+      }
     }
   }
 }
