@@ -1,0 +1,30 @@
+// Progress
+// Credit: https://css-tricks.com/html5-progress-element/
+.progress {
+  appearance: none;
+  border: 0;
+  color: @core-color;
+  height: .6rem;
+  width: 100%;
+
+  &::-webkit-progress-bar {
+    background: @core-border-color;
+    border-radius: @border-radius;
+  }
+
+  &::-webkit-progress-value {
+    background: @core-color;
+    border-radius: @border-radius;
+  }
+
+  &::-moz-progress-bar {
+    background: @core-color;
+    border-radius: @border-radius;
+  }
+
+  &.progress-lg {
+    &::after {
+      content: attr(value) '%';
+    }
+  }
+}
