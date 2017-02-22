@@ -1639,6 +1639,13 @@ small.label {
   -ms-flex-align: center;
   padding: 1rem 0;
 }
+.navbar .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-right: 2rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
 .empty {
   background: #f8f8f8;
   border-radius: .2rem;
