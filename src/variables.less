@@ -38,32 +38,3 @@
 @size-md: 840px;
 @size-lg: 960px;
 @size-xl: 1280px;
-
-// Mixins
-.clearfix() {
-  &::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-}
-.control-shadow() {
-  box-shadow: 0 0 0 .2rem fade(@core-color, 15%);
-}
-.control-transition() {
-  transition: all .15s ease;
-}
-.toast-variant(@color) {
-  background: fade(@color, 90%);
-  border-color: @color;
-}
-.label-base() {
-  border-radius: .2rem;
-  font-size: 95%;
-  padding: .1em .3em;
-  vertical-align: baseline;
-}
-.label-variant(@color) {
-  background: @color;
-  color: @core-light-color;
-}

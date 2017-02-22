@@ -447,9 +447,9 @@ h5,
 h6 {
   color: inherit;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 h1 {
   font-size: 5rem;
@@ -1120,7 +1120,6 @@ textarea.form-input {
   font-size: 95%;
   padding: .1em .3em;
   vertical-align: baseline;
-  white-space: nowrap;
 }
 .label.label-primary {
   background: #5764c6;
@@ -1157,9 +1156,6 @@ small.label {
 .progress::-moz-progress-bar {
   background: #5764c6;
   border-radius: .2rem;
-}
-.progress.progress-lg::after {
-  content: attr(value) "%";
 }
 .img-responsive {
   display: block;
