@@ -2142,6 +2142,67 @@ small.label {
 .nav .nav a {
   color: #808080;
 }
+.step {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: .5rem 0;
+  width: 100%;
+}
+.step .step-item {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  margin-top: 0;
+  min-height: 2rem;
+  position: relative;
+  text-align: center;
+}
+.step .step-item:not(:first-child)::before {
+  background: #5764c6;
+  content: "";
+  height: .4rem;
+  left: -50%;
+  position: absolute;
+  top: .8rem;
+  width: 100%;
+}
+.step .step-item a {
+  color: #888;
+  display: inline-block;
+  padding: 2rem 1rem 0;
+  text-decoration: none;
+}
+.step .step-item a::before {
+  background: #5764c6;
+  border: .2rem solid #fff;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1.4rem;
+  left: 50%;
+  position: absolute;
+  top: .3rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 1.4rem;
+  z-index: 99;
+}
+.step .step-item.active a::before {
+  background: #fff;
+  border: .4rem solid #5764c6;
+}
+.step .step-item.active ~ .step-item::before {
+  background: #efefef;
+}
+.step .step-item.active ~ .step-item a::before {
+  background: #c5c5c5;
+}
 .tile {
   -webkit-align-content: space-between;
   align-content: space-between;
@@ -2248,6 +2309,7 @@ small.label {
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   transition: all .216s ease;
+  white-space: nowrap;
   z-index: 99;
 }
 .tooltip:focus::after,
@@ -2480,8 +2542,19 @@ small.label {
   background: transparent;
   border: 0;
   color: transparent;
-  font: 0/0 a;
+  font-size: 0;
+  line-height: 0;
   text-shadow: none;
+}
+.text-assistive {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: .1rem;
+  margin: -.1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: .1rem;
 }
 .text-left {
   text-align: left;

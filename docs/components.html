@@ -68,6 +68,9 @@
                 <a href="components.html#navigation">Navigation</a>
               </li>
               <li class="nav-item">
+                <a href="components.html#steps">Steps</a>
+              </li>
+              <li class="nav-item">
                 <a href="components.html#tiles">Tiles</a>
               </li>
               <li class="nav-item">
@@ -899,7 +902,7 @@
         <section id="navigation" class="container">
           <header class="text-center"><h3>Navigation</h3></header>
           <section class="notes">
-            <p><strong>Navigation</strong> includes several components, including breadcrumbs, tabs, pagination and nav.</p>
+            <p><strong>Navigation</strong> includes several components, including breadcrumbs, tabs, pagination and navs.</p>
           </section>
           <header id="breadcrumbs" class="text-center"><h4>Breadcrumbs</h4></header>
           <div class="columns">
@@ -1160,9 +1163,9 @@
                 <li class="nav-item">
                   <a href="#nav">Elements</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#nav"><strong>Layout</strong></a>
-                  <ul class="nav nav-vertical">
+                <li class="nav-item active">
+                  <a href="#nav">Layout</a>
+                  <ul class="nav">
                     <li class="nav-item">
                       <a href="#nav">Flexbox grid</a>
                     </li>
@@ -1189,6 +1192,98 @@
           <section class="notes">
             <p>Add a container element with the class <code>nav</code>. And add child elements with the classname <code>nav-item</code>. The <code>nav-item</code> with the class <code>active</code> will be highlighted.</p>
           </section>
+<!-- navs example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Elements&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Flexbox grid&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Responsive&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Navbar&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Empty states&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Components&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Utilities&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="steps" class="container">
+          <header class="text-center"><h3>Steps</h3></header>
+          <section class="notes">
+            <p><strong>Steps</strong> are progress indicators of a sequence of task steps.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-12">
+              <ul class="step">
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 1 Tooltip"></a>
+                </li>
+                <li class="step-item active">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 2 Tooltip"></a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 3 Tooltip"></a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 4 Tooltip"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-12">
+              <ul class="step">
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 1 Tooltip">Step 1</a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 2 Tooltip">Step 2</a>
+                </li>
+                <li class="step-item active">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 3 Tooltip">Step 3</a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 4 Tooltip">Step 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>step</code>. And add child elements with the classname <code>step-item</code>. The <code>step-item</code> with the class <code>active</code> will be highlighted and indicate the current state of progress.</p>
+          </section>
+<!-- steps example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;step&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 1&quot;</span>&gt;Step 1&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 2&quot;</span>&gt;Step 2&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 3&quot;</span>&gt;Step 3&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 4&quot;</span>&gt;Step 4&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
         </section>
 
         <section id="tiles" class="container">
@@ -1223,7 +1318,10 @@
                 <div class="tile-content">
                   <p class="tile-title">The S.H.I.E.L.D.</p>
                   <p>The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
-                  <p><button class="btn btn-primary btn-sm">Join</button></p>
+                  <p>
+                    <button class="btn btn-primary btn-sm">Join</button>
+                    <button class="btn btn-sm">Contact</button>
+                  </p>
                 </div>
               </div>
             </div>

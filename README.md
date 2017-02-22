@@ -55,6 +55,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Menus](http://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
 - [Modals](http://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
 - [Navigation](http://picturepan2.github.io/spectre/components.html#navigation) - breadcrumb, tabs, pagination and navs
+- [Steps](http://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
 - [Tiles](http://picturepan2.github.io/spectre/components.html#tiles) - repeatable or embeddable information blocks
 - [Toasts](http://picturepan2.github.io/spectre/components.html#toasts) - showing alerts or notifications
 - [Tooltips](http://picturepan2.github.io/spectre/components.html#tooltips) - simple tooltip built entirely in CSS
