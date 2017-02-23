@@ -2182,10 +2182,10 @@ small.label {
 .step .step-item:not(:first-child)::before {
   background: #5764c6;
   content: "";
-  height: .4rem;
+  height: .2rem;
   left: -50%;
   position: absolute;
-  top: .8rem;
+  top: .9rem;
   width: 100%;
 }
 .step .step-item a {
@@ -2200,19 +2200,19 @@ small.label {
   border-radius: 50%;
   content: "";
   display: block;
-  height: 1.4rem;
+  height: 1.2rem;
   left: 50%;
   position: absolute;
-  top: .3rem;
+  top: .4rem;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 1.4rem;
+  width: 1.2rem;
   z-index: 99;
 }
 .step .step-item.active a::before {
   background: #fff;
-  border: .4rem solid #5764c6;
+  border: .2rem solid #5764c6;
 }
 .step .step-item.active ~ .step-item::before {
   background: #efefef;
