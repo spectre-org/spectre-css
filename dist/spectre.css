@@ -426,7 +426,6 @@ a:hover {
 .menu .icon {
   font-size: 1.3333em;
   line-height: .8em;
-  margin-right: .2rem;
   vertical-align: -20%;
 }
 .icon-caret {
@@ -727,6 +726,17 @@ pre > code::before {
 .btn.btn-block {
   display: block;
   width: 100%;
+}
+.btn.btn-action {
+  padding-left: .2rem;
+  padding-right: .2rem;
+  width: 3.2rem;
+}
+.btn.btn-action.btn-sm {
+  width: 2.4rem;
+}
+.btn.btn-action.btn-lg {
+  width: 4.2rem;
 }
 .btn.btn-clear {
   background: transparent;

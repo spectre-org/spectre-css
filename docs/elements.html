@@ -408,14 +408,25 @@
           <header class="text-center"><h4>Button sizes</h4></header>
 
           <div class="columns">
-            <div class="column col-xs-12">
-              <button class="btn btn-lg">large button</button>
-              <button class="btn">normal button</button>
-              <button class="btn btn-sm">small button</button>
+            <div class="column col-6 col-xs-12">
+              <button class="btn btn-primary btn-lg">large</button>
+              <button class="btn btn-primary">normal</button>
+              <button class="btn btn-primary btn-sm">small</button>
+            </div>
+            <div class="column col-3 col-xs-12">
+              <button class="btn btn-action btn-primary btn-lg"><i class="icon icon-markunread"></i></button>
+              <button class="btn btn-action btn-primary"><i class="icon icon-markunread"></i></button>
+              <button class="btn btn-action btn-primary btn-sm"><i class="icon icon-markunread"></i></button>
+            </div>
+            <div class="column col-3 col-xs-12">
+              <button class="btn btn-action btn-primary btn-lg circle"><i class="icon icon-markunread"></i></button>
+              <button class="btn btn-action btn-primary circle"><i class="icon icon-markunread"></i></button>
+              <button class="btn btn-action btn-primary btn-sm circle"><i class="icon icon-markunread"></i></button>
             </div>
           </div>
           <section class="notes">
             <p>Add the class <code>btn-sm</code> or <code>btn-lg</code> for small or large button size. Also, you can add the class <code>btn-block</code> for a full-width button. </p>
+            <p>Please note that you could use the class <code>btn-action</code> for a square button, or add another class <code>circle</code> for a round button, which is often used as a Float Action Button (FAB).</p>
           </section>
 
 <!-- buttons example -->
@@ -423,7 +434,10 @@
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
 
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;</code>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;</code>
 </pre>
 
           <div class="columns">
@@ -432,6 +446,7 @@
               <button class="btn btn-primary"><i class="icon icon-markunread"></i> normal</button>
               <button class="btn btn-primary btn-sm"><i class="icon icon-markunread"></i> small</button>
             </div>
+
           </div>
           <section class="notes">
             <p>Icons with the class <code>icon</code> can be correctly rendered in each button size. </p>
