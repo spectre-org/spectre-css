@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
-  <section class="section bg-grey">
+  <section class="section section-header bg-grey">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
           <a href="index.html" class="navbar-brand">Spectre.css</a>
-          <a href="index.html#introduction" class="btn btn-link">Documents</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section show-xs">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
         </section>
       </nav>
     </section>
@@ -26,7 +29,7 @@
 
   <section class="container grid-960">
     <section class="columns">
-      <div class="docs-sidebar column col-3 col-sm-12">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav">
           <li class="nav-item">
             <a href="index.html">Getting started</a>
@@ -62,6 +65,8 @@
           </li>
         </ul>
       </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
       <div class="docs-content column col-9 col-sm-12">
         <section id="position" class="container">
           <header class="text-center"><h3>Position utilities</h3></header>

@@ -64,7 +64,6 @@
   .icon {
     font-size: 1.3333em;
     line-height: .8em;
-    margin-right: .2rem;
     vertical-align: -20%;
   }
 }
@@ -94,14 +93,10 @@
   }
 }
 
-.notes {
-  margin: 4rem 0;
-  color: #666;
-}
-
 .empty .icon {
   font-size: 4rem;
 }
+
 .code {
   color: #666;
 
@@ -117,21 +112,25 @@
   .atv {
     color: #e06870;
   }
-
 }
 
 .docs-content {
-  pre {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-
   .container {
     padding: 2rem 1rem;
   }
 
   header {
     padding-top: 2rem;
+  }
+
+  pre {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .notes {
+    margin: 4rem 0;
+    color: #666;
   }
 
   h3,
@@ -154,7 +153,7 @@
   width: 4rem;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .docs-sidebar {
     padding: 6rem 0;
 
@@ -173,5 +172,83 @@
         }
       }
     }
+  }
+}
+
+.docs-nav-clear {
+  display: none;
+}
+.show-xs {
+  display: none !important;
+}
+
+
+// Spectre.css Docs Mobile experience
+
+@media screen and (max-width: 480px) {
+  .show-xs {
+    display: block !important;
+  }
+
+  .grid-hero {
+    h2 {
+      font-size: 1.8rem;
+    }
+    .card {
+      padding: 0;
+    }
+  }
+
+  .section-header {
+    padding: 0 .5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 299;
+
+    .btn-link {
+      padding-left: .6rem;
+      padding-right: .6rem;
+    }
+  }
+
+  .docs-sidebar {
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 3rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform .216s ease;
+    width: 24rem;
+    z-index: 999;
+
+    &:target {
+      transform: translateX(0);
+
+      & + .docs-nav-clear {
+        display: block;
+      }
+    }
+  }
+
+  .docs-content {
+    header {
+      padding-top: 6rem;
+    }
+  }
+
+  .docs-nav-clear {
+    background: rgba(0,0,0,.15);
+    display: none;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 499;
   }
 }

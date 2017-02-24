@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
-  <section class="section bg-grey">
+  <section class="section section-header bg-grey">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
           <a href="index.html" class="navbar-brand">Spectre.css</a>
-          <a href="#" class="btn btn-link">Documents</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section show-xs">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
         </section>
       </nav>
     </section>
@@ -26,7 +29,7 @@
 
   <section class="container grid-960">
     <section class="columns">
-      <div class="docs-sidebar column col-3 col-sm-12">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav nav-vertical">
           <li class="nav-item">
             <a href="index.html">Getting started</a>
@@ -68,6 +71,8 @@
           </li>
         </ul>
       </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
       <div class="docs-content column col-9 col-sm-12">
         <section id="typography" class="container">
           <header class="text-center"><h3>Typography</h3></header>
@@ -286,7 +291,6 @@
             <thead>
               <tr>
                 <th>name</th>
-                <th>duration</th>
                 <th>genre</th>
                 <th>release date</th>
               </tr>
@@ -294,25 +298,21 @@
             <tbody>
               <tr>
                 <td>The Shawshank Redemption</td>
-                <td>2h 22min</td>
                 <td>Crime, Drama</td>
                 <td>14 October 1994</td>
               </tr>
               <tr>
                 <td>The Godfather</td>
-                <td>2h 55min</td>
                 <td>Crime, Drama</td>
                 <td>24 March 1972</td>
               </tr>
               <tr>
                 <td>Schindler's List</td>
-                <td>3h 15min</td>
                 <td>Biography, Drama, History</td>
                 <td>4 February 1994</td>
               </tr>
               <tr>
                 <td>Se7en</td>
-                <td>2h 7min</td>
                 <td>Crime, Drama, Mystery</td>
                 <td>22 September 1995</td>
               </tr>
@@ -329,7 +329,6 @@
   &lt;<span class="tag">thead</span>&gt;
     &lt;<span class="tag">tr</span>&gt;
       &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
-      &lt;<span class="tag">th</span>&gt;duration&lt;<span class="tag">/th</span>&gt;
       &lt;<span class="tag">th</span>&gt;genre&lt;<span class="tag">/th</span>&gt;
       &lt;<span class="tag">th</span>&gt;release date&lt;<span class="tag">/th</span>&gt;
     &lt;<span class="tag">/tr</span>&gt;
@@ -337,7 +336,6 @@
   &lt;<span class="tag">tbody</span>&gt;
     &lt;<span class="tag">tr</span> <span class="atn">class</span>=<span class="atv">&quot;active&quot;</span>&gt;
       &lt;<span class="tag">td</span>&gt;The Shawshank Redemption&lt;<span class="tag">/td</span>&gt;
-      &lt;<span class="tag">td</span>&gt;2h 22min&lt;<span class="tag">/td</span>&gt;
       &lt;<span class="tag">td</span>&gt;Crime, Drama&lt;<span class="tag">/td</span>&gt;
       &lt;<span class="tag">td</span>&gt;14 October 1994&lt;<span class="tag">/td</span>&gt;
     &lt;<span class="tag">/tr</span>&gt;

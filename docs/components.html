@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
-  <section class="section bg-grey">
+  <section class="section section-header bg-grey">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
           <a href="index.html" class="navbar-brand">Spectre.css</a>
-          <a href="index.html#introduction" class="btn btn-link">Documents</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section show-xs">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
         </section>
       </nav>
     </section>
@@ -26,7 +29,7 @@
 
   <section class="container grid-960">
     <section class="columns">
-      <div class="docs-sidebar column col-3 col-sm-12">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav">
           <li class="nav-item">
             <a href="index.html">Getting started</a>
@@ -86,6 +89,8 @@
           </li>
         </ul>
       </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
       <div class="docs-content column col-9 col-sm-12">
         <section id="autocomplete" class="container">
           <header class="text-center"><h3>Autocomplete</h3></header>
@@ -544,7 +549,7 @@
             <p>A <strong>dropdown</strong> is a combination of buttons and menus.</p>
           </section>
           <div class="columns">
-            <div class="column col-xs-6">
+            <div class="column col-xs-12">
               <div class="dropdown">
                 <div class="btn-group">
                   <a class="btn btn-primary">dropdown button</a>
@@ -569,7 +574,7 @@
                 </div>
               </div>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-xs-12">
               <div class="dropdown">
                 <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
                 <ul class="menu">
@@ -591,7 +596,7 @@
                 </ul>
               </div>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-xs-12">
               <div class="dropdown">
                 <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
                 <ul class="menu">
@@ -1137,7 +1142,7 @@
             <div class="column col-xs-12">
               <ul class="pagination">
                 <li class="page-item">
-                  <a href="#pagination">Previous</a>
+                  <a href="#pagination">Prev</a>
                 </li>
                 <li class="page-item">
                   <a href="#pagination">1</a>
@@ -1146,19 +1151,19 @@
                   <span>...</span>
                 </li>
                 <li class="page-item">
-                  <a href="#pagination">6</a>
+                  <a href="#pagination">4</a>
                 </li>
                 <li class="page-item active">
-                  <a href="#pagination">7</a>
+                  <a href="#pagination">5</a>
                 </li>
                 <li class="page-item">
-                  <a href="#pagination">8</a>
+                  <a href="#pagination">6</a>
                 </li>
                 <li class="page-item">
                   <span>...</span>
                 </li>
                 <li class="page-item">
-                  <a href="#pagination">12</a>
+                  <a href="#pagination">9</a>
                 </li>
                 <li class="page-item">
                   <a href="#pagination">Next</a>
@@ -1168,7 +1173,7 @@
             <div class="column col-xs-12">
               <ul class="pagination">
                 <li class="page-item">
-                  <a href="#pagination" disabled tabindex="-1">Previous</a>
+                  <a href="#pagination" disabled tabindex="-1">Prev</a>
                 </li>
                 <li class="page-item active">
                   <a href="#pagination">1</a>
@@ -1183,7 +1188,7 @@
                   <span>...</span>
                 </li>
                 <li class="page-item">
-                  <a href="#pagination">12</a>
+                  <a href="#pagination">9</a>
                 </li>
                 <li class="page-item">
                   <a href="#pagination">Next</a>

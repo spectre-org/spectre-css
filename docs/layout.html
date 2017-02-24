@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
-  <section class="section bg-grey">
+  <section class="section section-header bg-grey">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
           <a href="index.html" class="navbar-brand">Spectre.css</a>
-          <a href="index.html#introduction" class="btn btn-link">Documents</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section show-xs">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
         </section>
       </nav>
     </section>
@@ -26,7 +29,7 @@
 
   <section class="container grid-960">
     <section class="columns">
-      <div class="docs-sidebar column col-3 col-sm-12">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav">
           <li class="nav-item">
             <a href="index.html">Getting started</a>
@@ -59,6 +62,8 @@
           </li>
         </ul>
       </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
       <div class="docs-content column col-9 col-sm-12">
         <section id="grid" class="container">
           <header class="text-center"><h3>Flexbox grid</h3></header>
@@ -210,7 +215,7 @@
           </div>
 
           <section class="notes">
-            <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code>, <code>.col-md-[1-12]</code>, <code>.col-lg-[1-12]</code> and <code>.col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+            <p>Spectre provides a neat responsive layout grid system. There are <code>col-xs-[1-12]</code>, <code>col-sm-[1-12]</code>, <code>col-md-[1-12]</code>, <code>col-lg-[1-12]</code> and <code>col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
             <ul>
               <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
               <li><code>col-xs-[1-12]</code> apply to window width smaller than or equal to <strong>480px</strong>. </li>
@@ -233,7 +238,7 @@
 </pre>
 
           <section class="notes">
-            <p>For hiding elements on specific viewport sizes, there are classes <code>.hide-xs</code>, <code>.hide-sm</code>, <code>.hide-md</code>, <code>.hide-lg</code> and <code>.hide-xl</code> available.</p>
+            <p>For hiding elements on specific viewport sizes, there are classes <code>hide-xs</code>, <code>hide-sm</code>, <code>hide-md</code>, <code>hide-lg</code> and <code>hide-xl</code> available.</p>
             <ul>
               <li><code>hide-xs</code> hides elements when the window width is smaller than or equal to <strong>480px</strong>. </li>
               <li><code>hide-sm</code> hides elements when the window width is smaller than or equal to <strong>600px</strong>. </li>

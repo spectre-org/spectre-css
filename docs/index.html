@@ -16,9 +16,11 @@
     <section id="overview" class="grid-hero container grid-960 text-center">
       <h1>Spectre.css</h1>
       <h2>The <u>lightweight</u>, <u>responsive</u> and <u>modern</u> CSS framework</h2>
-      <div class="notes">
-        <a href="index.html#introduction" class="btn btn-primary">Documents</a>
-        <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub Repo</a>
+      <div class="columns">
+        <div class="column">
+          <a href="index.html#introduction" class="btn btn-primary">Documents</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub Repo</a>
+        </div>
       </div>
 
       <div class="columns">
@@ -56,21 +58,24 @@
     </section>
   </section>
 
-  <section class="section bg-grey">
+  <section class="section section-header bg-grey show-xs">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
           <a href="index.html" class="navbar-brand">Spectre.css</a>
-          <a href="#" class="btn btn-link">Documents</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub Repo</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
         </section>
       </nav>
     </section>
   </section>
 
-  <section class="grid-docs container grid-960">
+  <section class="container grid-960">
     <section class="columns">
-      <div class="docs-sidebar column col-3 col-sm-12">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav">
           <li class="nav-item active">
             <a href="index.html">Getting started</a>
@@ -106,6 +111,8 @@
           </li>
         </ul>
       </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
       <div class="docs-content column col-9 col-sm-12">
         <section id="introduction" class="container">
           <header class="text-center"><h3>Introduction</h3></header>
