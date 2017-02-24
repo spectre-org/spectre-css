@@ -1,11 +1,9 @@
 # Spectre.css
 Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development.
 
-- lightweight and clean starting point for your project and prototype
-- flexbox, responsive and mobile-friendly layout
-- carefully designed elements
-- built in useful components and utilities
-- responsive email templates (soon)
+- Lightweight (~10KB gzipped) starting point for your projects
+- Flexbox-based, responsive and mobile-friendly layout
+- Carefully designed elements and components
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 
@@ -27,42 +25,44 @@ And include it in your website or Web app &lt;head&gt; part.
 
 ### Compiling custom version
 
-You can compile your custom version of Spectre.css. Read [the documentation](http://picturepan2.github.io/spectre/#compiling).
+You can compile your custom version of Spectre.css. Read [the documentation](http://picturepan2.github.io/spectre/index.html#compiling).
 
 ### Documentation and demos
 
 #### Elements
 
-- [typography](http://picturepan2.github.io/spectre/#typography) - headings, paragraphs, semantic text, blockquote, lists and code elements, optimized for east asian fonts
-- [tables](http://picturepan2.github.io/spectre/#tables) - organize and display data
-- [buttons](http://picturepan2.github.io/spectre/#buttons) - button styles in different types and sizes, and even button groups
-- [forms](http://picturepan2.github.io/spectre/#forms) - input, radio, checkbox, switch and other form elements
-- [labels](http://picturepan2.github.io/spectre/#labels) - formatted text tags for highlighted, informative information
-- [media](http://picturepan2.github.io/spectre/#media) - responsive images, figures and video classes
+- [Typography](http://picturepan2.github.io/spectre/elements.html#typography) - headings, paragraphs, semantic text, blockquote, lists and code elements, optimized for east asian fonts
+- [Tables](http://picturepan2.github.io/spectre/elements.html#tables) - organize and display data
+- [Buttons](http://picturepan2.github.io/spectre/elements.html#buttons) - button styles in different types and sizes, and even button groups
+- [Forms](http://picturepan2.github.io/spectre/elements.html#forms) - input, radio, checkbox, switch and other form elements
+- [Labels](http://picturepan2.github.io/spectre/elements.html#labels) - formatted text tags for highlighted, informative information
+- [Media](http://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video classes
 
 #### Layout
-- [flexbox-grid](http://picturepan2.github.io/spectre/#grid) - flexbox based responsive grid system
-- [responsive](http://picturepan2.github.io/spectre/#responsive) - responsive grid and utilities
-- [navbar](http://picturepan2.github.io/spectre/#navbar) - layout container that appears in the header of apps and websites
-- [empty states](http://picturepan2.github.io/spectre/#empty) - empty states/blank slates for first time use, empty data and error screens
+- [Flexbox-grid](http://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
+- [Responsive](http://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
+- [Navbar](http://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
+- [Empty states](http://picturepan2.github.io/spectre/layout.html#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
 
-- [avatars](http://picturepan2.github.io/spectre/#avatars) - user profile pictures or name initials rendered avatar
-- [chips](http://picturepan2.github.io/spectre/#chips) - complex entities in small blocks
-- [autocomplete](http://picturepan2.github.io/spectre/#autocomplete) - form component provides suggestions while you type
-- [tooltips](http://picturepan2.github.io/spectre/#tooltips) - simple tooltip built entirely in CSS
-- [badges](http://picturepan2.github.io/spectre/#badges) - unread number indicators
-- [toasts](http://picturepan2.github.io/spectre/#toasts) - showing alerts or notifications
-- [menus](http://picturepan2.github.io/spectre/#menus) - list of links or buttons for actions and navigation
-- [dropdowns](http://picturepan2.github.io/spectre/#dropdowns) - combination of buttons and menus
-- [navigation](http://picturepan2.github.io/spectre/#navigation) - breadcrumb, tabs and pagination
-- [modals](http://picturepan2.github.io/spectre/#modals) - flexible dialog prompts
-- [cards](http://picturepan2.github.io/spectre/#cards) - flexible content containers
+- [Autocomplete](http://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
+- [Avatars](http://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
+- [Badges](http://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
+- [Cards](http://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
+- [Chips](http://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
+- [Dropdowns](http://picturepan2.github.io/spectre/components.html#dropdowns) - combination of buttons and menus
+- [Menus](http://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
+- [Modals](http://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
+- [Navigation](http://picturepan2.github.io/spectre/components.html#navigation) - breadcrumb, tabs, pagination and navs
+- [Steps](http://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
+- [Tiles](http://picturepan2.github.io/spectre/components.html#tiles) - repeatable or embeddable information blocks
+- [Toasts](http://picturepan2.github.io/spectre/components.html#toasts) - showing alerts or notifications
+- [Tooltips](http://picturepan2.github.io/spectre/components.html#tooltips) - simple tooltip built entirely in CSS
 
 #### Utilities
 
-- [utilities](http://picturepan2.github.io/spectre/#utilities) - layout, positions, display, text, shapes, loading things
+- [Utilities](http://picturepan2.github.io/spectre/utilities.html) - layout, positions, display, text, shapes, loading things
 
 ### Tools
 
@@ -70,12 +70,11 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 
 ### Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
-- Chrome (last two)
-- Edge (last two)
-- Firefox (last two)
+- Chrome (last three)
+- Microsoft Edge (last three)
+- Firefox (last three)
+- Safari (last three)
+- Opera (last three)
 - Internet Explorer 10+
-- Microsoft Edge
-- Opera (last two)
-- Safari 6+
 
 Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.

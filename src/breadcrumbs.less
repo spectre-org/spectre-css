@@ -1,0 +1,20 @@
+// Breadcrumbs
+.breadcrumb {
+  padding: 1.2rem;
+
+  .breadcrumb-item {
+    display: inline-block;
+    margin: 0;
+
+    &:last-child {
+      color: @core-meta-color;
+    }
+    &:not(:first-child) {
+      &::before {
+        color: @control-color;
+        content: "/";
+        padding: 0 .4rem;
+      }
+    }
+  }
+}

@@ -15,6 +15,11 @@
     padding: .1rem 0 .1rem .2rem;
     width: 100%;
 
+    &.is-focused {
+      border-color: @core-color;
+      .control-shadow();
+    }
+
     .form-input {
       border-color: transparent;
       box-shadow: none;
@@ -23,5 +28,10 @@
       padding: .3rem;
       width: auto;
     }
+  }
+
+  mark {
+    font-size: 1;
+    padding: .1em 0;
   }
 }

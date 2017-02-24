@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="https://github.com/picturepan2/" />
+  <title>Utilities - Spectre.css </title>
+  <link rel="stylesheet" href="../dist/spectre.css" />
+  <link rel="stylesheet" href="css/docs.min.css" />
+  <link rel="stylesheet" href="font/style.css" />
+</head>
+<body>
+  <section class="section section-header bg-grey">
+    <section class="grid-header container grid-960">
+      <nav class="navbar">
+        <section class="navbar-section">
+          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section show-xs">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </section>
+      </nav>
+    </section>
+  </section>
+
+  <section class="container grid-960">
+    <section class="columns">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
+        <ul class="docs-nav nav">
+          <li class="nav-item">
+            <a href="index.html">Getting started</a>
+          </li>
+          <li class="nav-item">
+            <a href="elements.html">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a href="layout.html">Layout</a>
+          </li>
+          <li class="nav-item">
+            <a href="components.html">Components</a>
+          </li>
+          <li class="nav-item active">
+            <a href="utilities.html">Utilities</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="utilities.html#position">Position</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#display">Display</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#text">Text</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#shapes">Shapes</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#loading">Loading</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
+      <div class="docs-content column col-9 col-sm-12">
+        <section id="position" class="container">
+          <header class="text-center"><h3>Position utilities</h3></header>
+          <section class="notes">
+            <p><strong>Position utilities</strong> are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
+          </section>
+<!-- position utilities example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- clear float --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;clearfix&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- float: left and right --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- position: relative, absolute and fixed --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rel&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;abs&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;fixed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- centered block --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;centered&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- margin: 10px and 5px in 4 directions. mt-10 = margin-top: 10px; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- padding: 10px and 5px in 4 directions. pt-10 = padding-top: 10px; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="display" class="container">
+          <header class="text-center"><h3>Display utilities</h3></header>
+          <section class="notes">
+            <p><strong>Display utilities</strong> are used for display and hidden things.</p>
+          </section>
+<!-- display utilities example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- display: block; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;block&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- display: inline; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;inline&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- display: inline-block; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;inline-block&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- display: flex; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;flex&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- display: inline-flex; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;inline-flex&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- display: none; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;hide&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- visibility: visible; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;visible&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- visibility: hidden; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;invisible&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- hide text contents --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-hide&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="text" class="container">
+          <header class="text-center"><h3>Text utilities</h3></header>
+          <section class="notes">
+            <p><strong>Text utilities</strong> are used for text alignment, styles and overflow things.</p>
+          </section>
+<!-- text utilities example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- left-aligned text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- center-aligned text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-center&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- right-aligned text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- justified text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-justify&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Lowercased text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-lowercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Uppercased text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-uppercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Capitalized text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-capitalize&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Normal weight text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-normal&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Bold text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-bold&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Italicized text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-italic&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Larger text (120%) --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-large&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Overflow behavior: display an ellipsis to represent clipped text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-ellipsis&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Overflow behavior: truncate the text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-clip&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Text may be broken at arbitrary points --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-break&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="shapes" class="container">
+          <section class="notes">
+            <p><strong>Shape utilities</strong> are used for change element shapes.</p>
+          </section>
+<!-- shape utilities example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- rounded element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rounded&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- circle element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;circle&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="divider" class="container">
+          <header class="text-center"><h3>Divider</h3></header>
+          <section class="notes">
+            <p>A <strong>Divider</strong> is used for separating elements.</p>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <div class="divider mt-10"></div>
+            </div>
+          </div>
+<!-- shape utilities example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- divider element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="loading" class="container">
+          <header class="text-center"><h3>Loading</h3></header>
+          <section class="notes">
+            <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code>loading</code> to buttons for loading status.</p>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <div class="loading"></div>
+            </div>
+          </div>
+<!-- loading example -->
+<pre>
+<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- loading element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;</code>
+</pre>
+        </section>
+
+        <section class="container">
+          <div class="divider"></div>
+          <ul class="pagination">
+            <li class="page-item page-prev">
+              <a href="components.html">
+                <p class="page-item-meta">Previous</p>
+                <h3 class="page-item-title">Components</h3>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <footer class="bg-grey">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+      </p>
+      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+    </section>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2702768-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

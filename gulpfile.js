@@ -9,6 +9,7 @@ var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 3 versions"] });
 
 gulp.task('watch', function() {
     gulp.watch('./**/*.less', ['build']);
+    gulp.watch('./**/*.less', ['docs']);
 });
 
 gulp.task('build', function() {
@@ -25,8 +26,8 @@ gulp.task('build', function() {
         .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('tools', function() {
-    gulp.src('tools/**/*.less')
+gulp.task('docs', function() {
+    gulp.src('docs/**/*.less')
         .pipe(less({
             plugins: [autoprefix]
         }))

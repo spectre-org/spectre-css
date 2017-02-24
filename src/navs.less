@@ -1,0 +1,36 @@
+// Navs
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  .nav-item {
+    a {
+      color: lighten(@body-font-color, 20%);
+      padding: .6rem .8rem;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        color: @core-color;
+      }
+    }
+    &.active {
+      & > a {
+        color: @body-font-color;
+        font-weight: bold;
+        &:focus,
+        &:hover {
+          color: @core-color;
+        }
+      }
+    }
+  }
+
+  & .nav {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+
+    a {
+      color: lighten(@body-font-color, 30%);
+    }
+  }
+}

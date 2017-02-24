@@ -1,0 +1,50 @@
+// Pagination
+.pagination {
+  display: flex;
+
+  .page-item {
+    margin: 1rem .1rem;
+
+    span {
+      display: inline-block;
+      padding: .6rem .4rem;
+    }
+
+    a {
+      border-radius: @border-radius;
+      color: lighten(@body-font-color, 20%);
+      display: inline-block;
+      padding: .6rem .8rem;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        color: @core-color;
+      }
+    }
+
+    &.active {
+      a {
+        background: @core-color;
+        color: @core-light-color;
+      }
+    }
+
+    &.page-prev,
+    &.page-next {
+      flex: 1 0 50%;
+    }
+
+    &.page-next {
+      text-align: right;
+    }
+
+    .page-item-title {
+      margin: 0;
+    }
+
+    .page-item-meta {
+      margin: 0;
+      opacity: .5;
+    }
+  }
+}
