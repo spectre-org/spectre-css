@@ -116,7 +116,7 @@
                       Tony Stark
                       <button class="btn btn-clear"></button>
                     </div>
-                    <div class="chip is-selected">
+                    <div class="chip active">
                       Natasha Romanoff
                       <button class="btn btn-clear"></button>
                     </div>
@@ -148,7 +148,7 @@
                             <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Steve Rogers" />
                           </div>
                           <div class="tile-content">
-                            Steve Rogers
+                            <mark>S</mark>teve Roger<mark>s</mark>
                           </div>
                         </div>
                       </a>
@@ -158,7 +158,7 @@
                             <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #A2A8E1;"></figure>
                           </div>
                           <div class="tile-content">
-                            Tony Stark
+                            Tony <mark>S</mark>tark
                           </div>
                         </div>
                       </a>
@@ -179,7 +179,7 @@
   <span class="com">&lt;!-- autocomplete input container --&gt;</span>
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input&quot;</span>&gt;
     <span class="com">&lt;!-- autocomplete chips --&gt;</span>
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip is-selected&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
       &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span> /&gt;
       Thor Odinson
       &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
@@ -439,16 +439,13 @@
             </div>
             <div class="column col-6 col-xs-12">
               <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-yosemite.jpg" />
+                </div>
                 <div class="card-header">
-                  <div class="tile tile-centered">
-                    <div class="tile-content">
-                      <div class="tile-title">Google I/O</div>
-                      <div class="tile-meta">Software and hardware</div>
-                    </div>
-                    <div class="tile-action">
-                      <button class="btn btn-primary"><i class="icon icon-playlist_add"></i></button>
-                    </div>
-                  </div>
+                  <button class="btn btn-primary float-right"><i class="icon icon-playlist_add"></i></button>
+                  <div class="card-title">Google I/O</div>
+                  <div class="card-meta">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
@@ -485,7 +482,7 @@
             <p><strong>Chips</strong> are complex entities in small blocks. </p>
           </section>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-12">
               <div class="chip">
                 Crime
                 <button class="btn btn-clear"></button>
@@ -503,20 +500,20 @@
                 <button class="btn btn-clear"></button>
               </div>
             </div>
-            <div class="column col-9 col-xs-12">
+            <div class="column col-12">
               <div class="chip">
                 <figure class="avatar" data-initial="TS" style="background-color: #5764c6;"></figure>
                 Tony Stark
-                <button class="btn btn-clear"></button>
+                <span class="chip-meta">Iron Man</span>
               </div>
               <div class="chip">
                 <img src="img/avatar-1.png" class="avatar" />
                 Thor Odinson
-                <button class="btn btn-clear"></button>
               </div>
               <div class="chip">
                 <img src="img/avatar-4.png" class="avatar" />
                 Steve Rogers
+                <span class="chip-meta">American Captain</span>
               </div>
             </div>
           </div>
@@ -667,7 +664,7 @@
             <p>A <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
           </section>
           <div class="columns">
-            <div class="column col-xs-6">
+            <div class="column col-xs-12">
               <ul class="menu">
                 <li class="menu-item">
                   <div class="tile tile-centered">
@@ -698,7 +695,7 @@
               </ul>
             </div>
 
-            <div class="column col-xs-6">
+            <div class="column col-xs-12">
               <ul class="menu">
                 <li class="menu-header">
                   <span class="menu-header-text">
@@ -906,7 +903,7 @@
           </section>
           <header id="breadcrumbs" class="text-center"><h4>Breadcrumbs</h4></header>
           <div class="columns">
-            <div class="column col-9 col-sm-12">
+            <div class="column col-6 col-sm-12">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
                   <a href="#breadcrumbs">
@@ -919,8 +916,21 @@
                   </a>
                 </li>
                 <li class="breadcrumb-item">
+                  Change avatar
+                </li>
+              </ul>
+            </div>
+            <div class="column col-6 col-sm-12">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
                   <a href="#breadcrumbs">
-                    Change avatar
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  Search result:
+                  <a href="#breadcrumbs">
+                    Spectre
                   </a>
                 </li>
               </ul>
@@ -944,16 +954,14 @@
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      Change avatar
-    &lt;<span class="tag">/a</span>&gt;
+    Change avatar
   &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;</code>
 </pre>
 
           <header id="tabs" class="text-center"><h4>Tabs</h4></header>
           <div class="columns">
-            <div class="column col-xs-12">
+            <div class="column col-6 col-xs-12">
               <ul class="tab">
                 <li class="tab-item active">
                   <a href="#tabs">
@@ -970,9 +978,14 @@
                     Radio
                   </a>
                 </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Store
+                  </a>
+                </li>
               </ul>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-6 col-xs-12">
               <ul class="tab tab-block">
                 <li class="tab-item active">
                   <a href="#tabs">
@@ -1067,6 +1080,58 @@
 &lt;<span class="tag">/ul</span>&gt;</code>
 </pre>
 
+          <div class="columns">
+            <div class="column col-12">
+              <ul class="tab">
+                <li class="tab-item active">
+                  <a href="#tabs">
+                    Music
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Playlists
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Radio
+                  </a>
+                </li>
+                <li class="tab-item">
+                  <a href="#tabs">
+                    Store
+                  </a>
+                </li>
+                <li class="tab-item tab-action">
+                  <div class="input-group input-inline">
+                    <input class="form-input input-sm" type="text" placeholder="search" />
+                    <button class="btn btn-primary btn-sm input-group-btn">Search</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>You could add a search box or buttons inside a tab. Add the class <code>tab-action</code> to the <code>tab-item</code>. </p>
+          </section>
+<!-- tabs with badges example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;9&quot;</span>&gt;
+      Music
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item tab-action&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input input-sm&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;search&quot;</span> /&gt;
+      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm input-group-btn&quot;</span>&gt;Search&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+
           <header id="pagination" class="text-center"><h4>Pagination</h4></header>
           <div class="columns">
             <div class="column col-xs-12">
@@ -1154,6 +1219,43 @@
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Next&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;</code>
+</pre>
+          <div class="columns">
+            <div class="column col-12">
+              <ul class="pagination">
+                <li class="page-item page-prev">
+                  <a href="#pagination">
+                    <p class="page-item-meta">Previous</p>
+                    <h3 class="page-item-title">Getting started</h3>
+                  </a>
+                </li>
+                <li class="page-item page-next">
+                  <a href="#pagination">
+                    <p class="page-item-meta">Next</p>
+                    <h3 class="page-item-title">Layout</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="notes">
+            <p>You could use previous and next pagination to navigate. </p>
+          </div>
+<!-- pagination example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-meta&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-meta&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;</code>
 </pre>
 
           <header id="navs" class="text-center"><h4>Navs</h4></header>
@@ -1474,6 +1576,24 @@
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;top tooltip&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip tooltip-right&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;right tooltip&lt;<span class="tag">/button</span>&gt;</code>
 </pre>
+        </section>
+
+        <section class="container">
+          <div class="divider"></div>
+          <ul class="pagination">
+            <li class="page-item page-prev">
+              <a href="layout.html">
+                <p class="page-item-meta">Previous</p>
+                <h3 class="page-item-title">Layout</h3>
+              </a>
+            </li>
+            <li class="page-item page-next">
+              <a href="utilities.html">
+                <p class="page-item-meta">Next</p>
+                <h3 class="page-item-title">Utilities</h3>
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
     </section>

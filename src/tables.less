@@ -8,7 +8,7 @@
   &.table-striped {
     tbody {
       tr:nth-of-type(odd) {
-        background: lighten(@core-border-color, 5%);
+        background: @core-bg-color;
       }
     }
   }
@@ -16,15 +16,18 @@
     tbody {
       tr {
         &:hover {
-          background: lighten(@core-border-color, 2%);
+          background: darken(@core-bg-color, 3%);
         }
       }
     }
   }
-  tbody {
-    tr {
-      &.is-selected {
-        background: lighten(@core-border-color, 3%);
+  &,
+  &.table-striped {
+    tbody {
+      tr {
+        &.active {
+          background: darken(@core-bg-color, 3%);
+        }
       }
     }
   }
@@ -34,6 +37,6 @@
     padding: 1.5rem 1rem;
   }
   th {
-    border-color: darken(@core-border-color, 4%);
+    border-color: darken(@core-border-color, 5%);
   }
 }

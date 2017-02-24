@@ -1,5 +1,6 @@
 // Tabs
 .tab {
+  align-items: center;
   border-bottom: .1rem solid @core-border-color;
   display: flex;
   flex-wrap: wrap;
@@ -7,17 +8,25 @@
   .tab-item {
     margin-top: 0;
 
+    &.tab-action {
+      flex: 1 0 auto;
+      text-align: right;
+    }
+
     a {
       border-bottom: .2rem solid transparent;
       color: @body-font-color;
       display: block;
       margin-bottom: -.1rem;
       margin-top: 0;
-      padding: .8rem 1rem;
+      padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
         color: @core-link-color;
+      }
+      &.badge {
+        padding-right: 0;
       }
     }
     &.active a,

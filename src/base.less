@@ -4,12 +4,14 @@
 *::after {
   box-sizing: inherit;
 }
+
 html {
   box-sizing: border-box;
   font-size: @html-font-size;
   line-height: @html-line-height;
   -webkit-tap-highlight-color: transparent;
 }
+
 body {
   background: @body-bg;
   color: @body-font-color;
@@ -18,12 +20,15 @@ body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
+
 a {
   color: @core-link-color;
-  text-decoration: underline;
+  text-decoration: none;
+
   &:focus,
   &:hover {
-    color: darken(@core-link-color, 25%);
+    color: darken(@core-link-color, 10%);
+    text-decoration: underline;
   }
 }
 

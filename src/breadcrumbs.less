@@ -6,18 +6,11 @@
     display: inline-block;
     margin: 0;
 
-    a {
-      border: none;
-      text-decoration: none;
-    }
     &:last-child {
-      &,
-      a {
-        color: @core-meta-color;
-      }
+      color: @core-meta-color;
     }
-    &:not(:last-child) {
-      &::after {
+    &:not(:first-child) {
+      &::before {
         color: @control-color;
         content: "/";
         padding: 0 .4rem;

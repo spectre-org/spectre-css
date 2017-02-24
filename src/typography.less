@@ -30,7 +30,8 @@ h6 {
   font-size: 1.6rem;
 }
 p {
-  margin: 0 0 1rem;
+  line-height: 2.4rem;
+  margin: 0 0 .5em;
 }
 blockquote {
   border-left: .2rem solid #ddd;
@@ -82,7 +83,7 @@ dl {
   }
 }
 mark {
-  background: lighten(@control-color-warning, 32%);
+  background: lighten(@control-color-warning, 35%);
   .label-base();
 }
 kbd {
@@ -94,10 +95,6 @@ abbr[title] {
   border-bottom: .1rem dotted;
   cursor: help;
   text-decoration: none;
-}
-ins,
-u {
-  text-decoration: underline;
 }
 
 // Code
@@ -118,7 +115,6 @@ pre {
   > code {
     background: transparent;
     border-left: 0;
-    font-size: 1em;
     line-height: 1.8rem;
     padding: 0;
 

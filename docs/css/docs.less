@@ -18,6 +18,7 @@
     color: #666;
     font-size: 1.8rem;
     font-weight: 400;
+    line-height: 3rem;
     margin-bottom: 5rem;
 
     u {
@@ -119,15 +120,26 @@
 
 }
 
-header {
-  padding-top: 3rem;
-}
+.docs-content {
+  pre {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
 
-.docs-content header > h3,
-.docs-content header > h4,
-.docs-content header > h5 {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  header {
+    padding-top: 2rem;
+  }
+
+  h3,
+  h4,
+  h5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .example-tile-icon {
@@ -144,7 +156,7 @@ header {
 
 @media screen and (min-width: 480px) {
   .docs-sidebar {
-    padding: 7rem 0;
+    padding: 6rem 0;
 
     .docs-nav {
       position: relative;
@@ -153,7 +165,7 @@ header {
     @supports (position: sticky) {
       .docs-nav {
         position: sticky;
-        top: 5rem;
+        top: 6rem;
 
         // A position: sticky; bug casues box-shadow generates width to the elements
         .nav-item a:focus {
