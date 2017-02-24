@@ -27,18 +27,12 @@ gulp.task('build', function() {
 });
 
 gulp.task('docs', function() {
-    gulp.src('docs/**/*.less')
+    gulp.src(['./docs/css/*.less', './*.less'])
         .pipe(less({
             plugins: [autoprefix]
         }))
         .pipe(csscomb())
-        .pipe(cleancss())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest(function(file) {
-          return file.base;
-        }))
+        .pipe(gulp.dest('./docs/css'))
 });
 
 gulp.task('default', ['build']);
