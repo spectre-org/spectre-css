@@ -25,9 +25,9 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.6",
-    "gulp-csscomb": "^3.0.7",
-    "gulp-less": "^3.0.5",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "less-plugin-autoprefix": "^1.5.1"
   }

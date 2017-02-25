@@ -752,13 +752,10 @@ pre > code::before {
 .btn-group {
   display: inline-flex;
   display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .btn-group .btn {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
@@ -784,7 +781,6 @@ pre > code::before {
 .btn-group.btn-group-block {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
@@ -977,7 +973,6 @@ textarea.form-input {
   margin-top: -.6rem;
   position: absolute;
   top: 50%;
-  -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   width: .6rem;
@@ -1060,7 +1055,6 @@ textarea.form-input {
 .input-group {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .input-group .input-group-addon {
   background: #f9f9f9;
@@ -1080,7 +1074,6 @@ textarea.form-input {
 }
 .input-group .input-group-addon,
 .input-group .input-group-btn {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
@@ -1111,7 +1104,6 @@ textarea.form-input {
 .input-group.input-inline {
   display: inline-flex;
   display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
 }
 .label {
   background: #efefef;
@@ -1222,8 +1214,6 @@ textarea.form-input {
 .columns {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -1rem;
@@ -1238,13 +1228,11 @@ textarea.form-input {
   padding-right: 0;
 }
 .columns.col-oneline {
-  -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
 .column {
-  -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   padding: 1rem;
@@ -1261,7 +1249,6 @@ textarea.form-input {
 .column.col-3,
 .column.col-2,
 .column.col-1 {
-  -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
@@ -1314,7 +1301,6 @@ textarea.form-input {
   .col-xl-3,
   .col-xl-2,
   .col-xl-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1368,7 +1354,6 @@ textarea.form-input {
   .col-lg-3,
   .col-lg-2,
   .col-lg-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1422,7 +1407,6 @@ textarea.form-input {
   .col-md-3,
   .col-md-2,
   .col-md-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1476,7 +1460,6 @@ textarea.form-input {
   .col-sm-3,
   .col-sm-2,
   .col-sm-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1530,7 +1513,6 @@ textarea.form-input {
   .col-xs-3,
   .col-xs-2,
   .col-xs-1 {
-    -webkit-flex: none;
     -ms-flex: none;
     flex: none;
   }
@@ -1577,7 +1559,6 @@ textarea.form-input {
 .form-horizontal .form-group {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .form-horizontal .form-label {
   margin-bottom: 0;
@@ -1613,25 +1594,19 @@ textarea.form-input {
   }
 }
 .navbar {
-  -webkit-align-items: center;
   align-items: center;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 .navbar .navbar-section {
-  -webkit-align-items: center;
   align-items: center;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
   padding: 1rem 0;
 }
@@ -1662,7 +1637,6 @@ textarea.form-input {
   position: relative;
 }
 .form-autocomplete .form-autocomplete-input {
-  -webkit-align-content: flex-start;
   align-content: flex-start;
   background: #fff;
   border: .1rem solid #c5c5c5;
@@ -1670,9 +1644,7 @@ textarea.form-input {
   color: #333;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-flex;
   -ms-flex-line-pack: start;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 3.6rem;
@@ -1688,7 +1660,6 @@ textarea.form-input {
   border-color: transparent;
   box-shadow: none;
   display: inline-block;
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   padding: .3rem;
@@ -1753,7 +1724,6 @@ textarea.form-input {
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -1771,7 +1741,6 @@ textarea.form-input {
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
-  -webkit-transform: translate(-.2rem, -.8rem);
   -ms-transform: translate(-.2rem, -.8rem);
   transform: translate(-.2rem, -.8rem);
 }
@@ -1833,14 +1802,12 @@ textarea.form-input {
   font-size: 1.3rem;
 }
 .chip {
-  -webkit-align-items: center;
   align-items: center;
   background: #efefef;
   border-radius: .2rem;
   color: #666;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  display: -webkit-inline-flex;
   -ms-flex-align: center;
   height: 3rem;
   margin: .1rem .2rem .1rem 0;
@@ -1876,7 +1843,6 @@ textarea.form-input {
   position: relative;
 }
 .dropdown .menu {
-  -webkit-animation: slide-down .216s;
   animation: slide-down .216s;
   display: none;
   left: 0;
@@ -1897,7 +1863,6 @@ textarea.form-input {
   min-width: 18rem;
   padding: .8rem;
   text-align: left;
-  -webkit-transform: translateY(.5rem);
   -ms-transform: translateY(.5rem);
   transform: translateY(.5rem);
   z-index: 999;
@@ -1944,7 +1909,6 @@ textarea.form-input {
   content: "";
   display: block;
   height: .1rem;
-  -webkit-transform: translateY(-1rem);
   -ms-transform: translateY(-1rem);
   transform: translateY(-1rem);
   width: 100%;
@@ -1958,14 +1922,11 @@ textarea.form-input {
   z-index: 99;
 }
 .modal {
-  -webkit-align-items: center;
   align-items: center;
   bottom: 0;
   display: none;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  -ms-grid-row-align: center;
-  -webkit-justify-content: center;
   justify-content: center;
   left: 0;
   opacity: 0;
@@ -1979,7 +1940,6 @@ textarea.form-input {
 .modal.active {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   opacity: 1;
   z-index: 1988;
 }
@@ -1995,7 +1955,6 @@ textarea.form-input {
 }
 .modal:target .modal-container,
 .modal.active .modal-container {
-  -webkit-animation: slide-down .216s;
   animation: slide-down .216s;
   max-width: 64rem;
 }
@@ -2052,14 +2011,11 @@ textarea.form-input {
   padding: 0 .4rem;
 }
 .tab {
-  -webkit-align-items: center;
   align-items: center;
   border-bottom: .1rem solid #efefef;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2067,7 +2023,6 @@ textarea.form-input {
   margin-top: 0;
 }
 .tab .tab-item.tab-action {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: right;
@@ -2094,7 +2049,6 @@ textarea.form-input {
   color: #5764c6;
 }
 .tab.tab-block .tab-item {
-  -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: center;
@@ -2103,14 +2057,12 @@ textarea.form-input {
   position: absolute;
   right: -1.4rem;
   top: 1rem;
-  -webkit-transform: translate(-50%, -1rem);
   -ms-transform: translate(-50%, -1rem);
   transform: translate(-50%, -1rem);
 }
 .pagination {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .pagination .page-item {
   margin: 1rem .1rem;
@@ -2136,7 +2088,6 @@ textarea.form-input {
 }
 .pagination .page-item.page-prev,
 .pagination .page-item.page-next {
-  -webkit-flex: 1 0 50%;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
 }
@@ -2153,8 +2104,6 @@ textarea.form-input {
 .nav {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
@@ -2185,8 +2134,6 @@ textarea.form-input {
 .step {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   list-style: none;
@@ -2194,7 +2141,6 @@ textarea.form-input {
   width: 100%;
 }
 .step .step-item {
-  -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0;
   flex: 1 1 0;
   margin-top: 0;
@@ -2227,7 +2173,6 @@ textarea.form-input {
   left: 50%;
   position: absolute;
   top: .4rem;
-  -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 1.2rem;
@@ -2244,25 +2189,20 @@ textarea.form-input {
   background: #c5c5c5;
 }
 .tile {
-  -webkit-align-content: space-between;
   align-content: space-between;
-  -webkit-align-items: flex-start;
   align-items: flex-start;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: start;
   -ms-flex-line-pack: justify;
   margin: 0;
   padding: .5rem 0;
 }
 .tile .tile-icon {
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 .tile .tile-content {
-  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
@@ -2273,7 +2213,6 @@ textarea.form-input {
   padding-right: 1rem;
 }
 .tile .tile-action {
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
@@ -2286,10 +2225,8 @@ textarea.form-input {
   font-size: 1.3rem;
 }
 .tile.tile-centered {
-  -webkit-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  -ms-grid-row-align: center;
 }
 .tile.tile-centered .tile-content {
   overflow: hidden;
@@ -2345,7 +2282,6 @@ textarea.form-input {
   pointer-events: none;
   position: absolute;
   text-overflow: ellipsis;
-  -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   transition: all .216s ease;
@@ -2355,7 +2291,6 @@ textarea.form-input {
 .tooltip:focus::after,
 .tooltip:hover::after {
   opacity: 1;
-  -webkit-transform: translate(-50%, -.5rem);
   -ms-transform: translate(-50%, -.5rem);
   transform: translate(-50%, -.5rem);
 }
@@ -2366,26 +2301,22 @@ textarea.form-input {
 .tooltip.tooltip-right::after {
   bottom: 50%;
   left: 100%;
-  -webkit-transform: translate(0, 50%);
   -ms-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
 .tooltip.tooltip-right:focus::after,
 .tooltip.tooltip-right:hover::after {
-  -webkit-transform: translate(.5rem, 50%);
   -ms-transform: translate(.5rem, 50%);
   transform: translate(.5rem, 50%);
 }
 .tooltip.tooltip-bottom::after {
   bottom: auto;
   top: 100%;
-  -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 .tooltip.tooltip-bottom:focus::after,
 .tooltip.tooltip-bottom:hover::after {
-  -webkit-transform: translate(-50%, .5rem);
   -ms-transform: translate(-50%, .5rem);
   transform: translate(-50%, .5rem);
 }
@@ -2393,57 +2324,29 @@ textarea.form-input {
   bottom: 50%;
   left: auto;
   right: 100%;
-  -webkit-transform: translate(0, 50%);
   -ms-transform: translate(0, 50%);
   transform: translate(0, 50%);
 }
 .tooltip.tooltip-left:focus::after,
 .tooltip.tooltip-left:hover::after {
-  -webkit-transform: translate(-.5rem, 50%);
   -ms-transform: translate(-.5rem, 50%);
   transform: translate(-.5rem, 50%);
 }
-@-webkit-keyframes loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 @keyframes loading {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-3rem);
-    transform: translateY(-3rem);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
   }
 }
 @keyframes slide-down {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-3rem);
     transform: translateY(-3rem);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -2459,7 +2362,6 @@ textarea.form-input {
   position: relative;
 }
 .loading::after {
-  -webkit-animation: loading 500ms infinite linear;
   animation: loading 500ms infinite linear;
   border: .2rem solid #5764c6;
   border-radius: .8rem;
@@ -2562,12 +2464,10 @@ textarea.form-input {
 .flex {
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
 }
 .inline-flex {
   display: inline-flex;
   display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
 }
 .hide {
   display: none !important;
