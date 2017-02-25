@@ -1859,16 +1859,6 @@ textarea.form-input {
   margin-right: .4rem;
   width: 2rem;
 }
-.chip .chip-meta {
-  background: rgba(0, 0, 0, .1);
-  font-size: 80%;
-  height: 3rem;
-  line-height: 2rem;
-  margin-left: .8rem;
-  margin-right: -.8rem;
-  opacity: .75;
-  padding: .5rem .8rem;
-}
 .chip .btn-clear::before {
   font-size: 1.6rem;
 }
