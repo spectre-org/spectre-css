@@ -33,6 +33,11 @@ gulp.task('docs', function() {
         }))
         .pipe(csscomb())
         .pipe(gulp.dest('./docs/css'))
+        .pipe(cleancss())
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('./docs/css'))
 });
 
 gulp.task('default', ['build']);
