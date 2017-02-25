@@ -115,15 +115,16 @@
   margin-top: 2rem;
 }
 .example-tile-icon {
+  -webkit-align-content: space-around;
   align-content: space-around;
+  -webkit-align-items: center;
   align-items: center;
   background: #5764c6;
   border-radius: .2rem;
-  -webkit-box-align: center;
   color: #fff;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   font-size: 2.4rem;
@@ -186,7 +187,6 @@
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: -webkit-transform .216s ease;
     transition: transform .216s ease, -webkit-transform .216s ease;
     transition: transform .216s ease;
     transition: -webkit-transform .216s ease;
