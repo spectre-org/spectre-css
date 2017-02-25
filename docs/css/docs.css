@@ -18,7 +18,7 @@
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .grid-hero h2 u {
   border-bottom: .2rem solid #666;
@@ -119,9 +119,11 @@
   align-items: center;
   background: #5764c6;
   border-radius: .2rem;
+  -webkit-box-align: center;
   color: #fff;
   display: flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   font-size: 2.4rem;
@@ -181,13 +183,18 @@
     position: fixed;
     right: 0;
     top: 0;
+    -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: -webkit-transform .216s ease;
+    transition: transform .216s ease, -webkit-transform .216s ease;
     transition: transform .216s ease;
+    transition: -webkit-transform .216s ease;
     width: 24rem;
     z-index: 999;
   }
   .docs-sidebar:target {
+    -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
