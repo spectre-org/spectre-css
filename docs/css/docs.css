@@ -39,17 +39,17 @@
 .bg-grey {
   background-color: #f6f6f6;
   border-radius: .2rem;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 .bg-dark {
   background: #2d3354;
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 .bg-primary {
   background: #5764c6;
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 .navbar-brand .icon {
   font-size: 1.3333em;
@@ -108,9 +108,12 @@
   color: #666;
   margin: 4rem 0;
 }
+.docs-content h1,
+.docs-content h2,
 .docs-content h3,
 .docs-content h4,
-.docs-content h5 {
+.docs-content h5,
+.docs-content h6 {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -187,9 +190,9 @@
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
-    transition: transform .216s ease, -webkit-transform .216s ease;
-    transition: transform .216s ease;
-    transition: -webkit-transform .216s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: -webkit-transform .2s ease;
     width: 24rem;
     z-index: 999;
   }
@@ -197,6 +200,9 @@
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: -webkit-transform .2s ease;
   }
   .docs-sidebar:target + .docs-nav-clear {
     display: block;

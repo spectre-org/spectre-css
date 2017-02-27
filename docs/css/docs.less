@@ -44,20 +44,20 @@
 
 .bg-grey {
   background-color: #f6f6f6;
-  padding: 1rem .5rem;
+  padding: 1rem;
   border-radius: .2rem;
 }
 
 .bg-dark {
   background: #2d3354;
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 
 .bg-primary {
   background: #5764c6;
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 
 .navbar-brand {
@@ -133,9 +133,12 @@
     color: #666;
   }
 
+  h1,
+  h2,
   h3,
   h4,
-  h5 {
+  h5,
+  h6 {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -182,9 +185,7 @@
   display: none !important;
 }
 
-
 // Spectre.css Docs Mobile experience
-
 @media screen and (max-width: 480px) {
   .show-xs {
     display: block !important;
@@ -221,12 +222,13 @@
     right: 0;
     top: 0;
     transform: translateX(100%);
-    transition: transform .216s ease;
+    transition: transform .2s ease;
     width: 24rem;
     z-index: 999;
 
     &:target {
       transform: translateX(0);
+      transition: transform .2s ease;
 
       & + .docs-nav-clear {
         display: block;

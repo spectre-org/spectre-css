@@ -19,14 +19,11 @@
       display: block;
       margin-bottom: -.1rem;
       margin-top: 0;
-      padding: .6rem .8rem;
+      padding: .6rem 1.2rem;
       text-decoration: none;
       &:focus,
       &:hover {
         color: @core-link-color;
-      }
-      &.badge {
-        padding-right: 0;
       }
     }
     &.active a,
@@ -44,10 +41,20 @@
       .badge {
         &[data-badge]::after {
           position: absolute;
-          right: -1.4rem;
-          top: 1rem;
-          transform: translate(-50%, -1rem);
+          right: -.4rem;
+          top: -.4rem;
+          transform: translate(0, 0);
         }
+      }
+    }
+  }
+
+  &:not(.tab-block) {
+    a.badge {
+      padding-right: 0;
+      &::after {
+        position: static;
+        transform: translate(-.2rem, -1rem);
       }
     }
   }

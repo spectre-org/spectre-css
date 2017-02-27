@@ -99,23 +99,22 @@ abbr[title] {
 
 // Code
 code {
-  background: @core-border-color;
+  background: @core-bg-color;
   color: lighten(@body-font-color, 20%);
   .label-base();
 }
 pre {
   background: lighten(@core-border-color, 4%);
-  line-height: 1.8rem;
+  line-height: 2rem;
   margin-bottom: 1em;
   margin-top: 1em;
   overflow: auto;
   padding: 2rem 2.5rem;
   position: relative;
 
-  > code {
+  & > code {
     background: transparent;
-    border-left: 0;
-    line-height: 1.8rem;
+    line-height: 2rem;
     padding: 0;
 
     &::before {
