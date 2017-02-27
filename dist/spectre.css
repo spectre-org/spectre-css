@@ -1869,6 +1869,7 @@ textarea.form-input {
   margin-right: .4rem;
 }
 .dropdown {
+  display: inline-block;
   position: relative;
 }
 .dropdown .menu {
@@ -1878,6 +1879,10 @@ textarea.form-input {
   left: 0;
   position: absolute;
   top: 100%;
+}
+.dropdown.dropdown-right .menu {
+  left: auto;
+  right: 0;
 }
 .dropdown.active .menu,
 .dropdown .dropdown-toggle:focus + .menu,

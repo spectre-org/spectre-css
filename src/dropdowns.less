@@ -1,5 +1,6 @@
 // Dropdown
 .dropdown {
+  display: inline-block;
   position: relative;
 
   .menu {
@@ -8,6 +9,13 @@
     left: 0;
     position: absolute;
     top: 100%;
+  }
+
+  &.dropdown-right {
+    .menu {
+      left: auto;
+      right: 0;
+    }
   }
 
   &.active .menu,
