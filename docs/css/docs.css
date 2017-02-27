@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.1";
+  content: "0.2.2";
 }
 /* Spectre docs style */
 .grid-hero {
