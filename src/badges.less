@@ -3,8 +3,7 @@
   position: relative;
 
   &[data-badge],
-  &:not([data-badge]),
-  &[data-badge=''] {
+  &:not([data-badge]) {
     &::after {
       background: @core-color;
       background-clip: padding-box;
@@ -13,16 +12,19 @@
       color: @core-light-color;
       content: attr(data-badge);
       display: inline-block;
-      transform: translate(-.2rem, -.8rem);
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(100%, -50%);
     }
   }
   &[data-badge] {
     &::after {
-      font-size: 1.1rem;
-      height: 1.8rem;
-      line-height: 1.2rem;
-      min-width: 1.8rem;
-      padding: .2rem .4rem;
+      font-size: 1.2rem;
+      height: 2rem;
+      line-height: 1.4rem;
+      min-width: 2rem;
+      padding: .2rem .5rem;
       text-align: center;
       white-space: nowrap;
     }

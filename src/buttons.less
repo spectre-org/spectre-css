@@ -10,8 +10,8 @@
   display: inline-block;
   font-size: 1.4rem;
   height: 3.2rem;
-  line-height: 1.6rem;
-  padding: .7rem 1.2rem;
+  line-height: 2rem;
+  padding: .5rem 1.2rem;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -79,20 +79,17 @@
     }
   }
 
-  // Button Small
+  // Button Sizes
   &.btn-sm {
     font-size: 1.2rem;
     height: 2.4rem;
-    line-height: 1.4rem;
-    padding: .4rem .8rem;
+    padding: .1rem .8rem;
   }
 
-  // Button Large
   &.btn-lg {
     font-size: 1.8rem;
-    height: 4.2rem;
-    line-height: 2rem;
-    padding: 1rem 1.5rem;
+    height: 4rem;
+    padding: .9rem 1.5rem;
   }
 
   // Button Block
@@ -121,9 +118,7 @@
     background: transparent;
     border: 0;
     color: currentColor;
-    font-family: sans-serif;
     height: 2rem;
-    line-height: 1.8rem;
     margin-left: .2rem;
     margin-right: -.4rem;
     opacity: .45;
@@ -137,6 +132,8 @@
 
     &::before {
       content: '\00d7';
+      display: inline-block;
+      font-family: sans-serif;
       font-size: 2rem;
     }
   }

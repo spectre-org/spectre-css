@@ -1,13 +1,21 @@
 // Dropdown
 .dropdown {
+  display: inline-block;
   position: relative;
 
   .menu {
-    animation: slide-down .216s;
+    animation: slide-down .2s;
     display: none;
     left: 0;
     position: absolute;
     top: 100%;
+  }
+
+  &.dropdown-right {
+    .menu {
+      left: auto;
+      right: 0;
+    }
   }
 
   &.active .menu,
