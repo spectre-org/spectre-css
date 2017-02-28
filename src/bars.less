@@ -3,6 +3,7 @@
   background: @core-border-color;
   border-radius: @border-radius;
   display: flex;
+  flex-wrap: nowrap;
   height: 1.6rem;
   width: 100%;
 
@@ -16,6 +17,7 @@
     color: @core-light-color;
     display: block;
     font-size: 1.2rem;
+    flex-shrink: 0;
     line-height: 1;
     height: 100%;
     padding: .2rem 0;
@@ -29,6 +31,7 @@
     &:last-of-type {
       border-bottom-right-radius: @border-radius;
       border-top-right-radius: @border-radius;
+      flex-shrink: 1;
     }
   }
 }

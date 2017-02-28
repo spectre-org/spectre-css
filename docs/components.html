@@ -90,6 +90,9 @@
           <li class="nav-item">
             <a href="utilities.html">Utilities</a>
           </li>
+          <li class="nav-item">
+            <a href="utilities.html">EXP</a>
+          </li>
         </ul>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
@@ -370,32 +373,34 @@
         </section>
 
         <section id="bars" class="container">
-          <header class="text-center"><h3>Bars <small class="label">experimental</small></h3></header>
+          <header class="text-center"><h3>Bars</h3></header>
           <section class="notes">
             <p><strong>Bars</strong> represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code> and <code>meter</code> elements.</p>
           </section>
           <div class="columns">
-            <div class="column col-3 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <div class="bar bar-sm">
                 <div class="bar-item tooltip" data-tooltip="25%" role="progressbar" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-            <div class="column col-3 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <div class="bar">
                 <div class="bar-item tooltip" data-tooltip="50%" style="width:50%;"></div>
               </div>
             </div>
-            <div class="column col-6 col-xs-12">
+          </div>
+          <div class="columns">
+            <div class="column col-12 col-xs-12">
               <div class="bar">
                 <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;">25%</div>
-                <div class="bar-item tooltip" data-tooltip="15%" style="width:15%;background:#818BD5;">15%</div>
-                <div class="bar-item tooltip" data-tooltip="10%" style="width:10%;background:#ABB1E2;">10%</div>
-                <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;background:#D5D8F1;">25%</div>
+                <div class="bar-item tooltip" data-tooltip="15%" style="width:15%;background:#818bd5;">15%</div>
+                <div class="bar-item tooltip" data-tooltip="10%" style="width:10%;background:#abb1e2;">10%</div>
+                <div class="bar-item tooltip" data-tooltip="15%" style="width:15%;">15%</div>
               </div>
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the class <code>bar</code>. And add child elements with the class <code>bar-item</code>. The width value is needed for every <code>bar-item</code>.</p>
+            <p>Add a container element with the class <code>bar</code>. And add child elements with the class <code>bar-item</code>. The width percentage value is needed for every <code>bar-item</code>.</p>
             <p>There is a class <code>bar-sm</code> for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for each <code>bar-item</code>.</p>
           </section>
 <!-- bars example -->

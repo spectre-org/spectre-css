@@ -1815,6 +1815,9 @@ textarea.form-input {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   height: 1.6rem;
   width: 100%;
 }
@@ -1825,6 +1828,9 @@ textarea.form-input {
   background: #5764c6;
   color: #fff;
   display: block;
+  -ms-flex-negative: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
   font-size: 1.2rem;
   height: 100%;
   line-height: 1;
@@ -1839,6 +1845,9 @@ textarea.form-input {
 .bar .bar-item:last-of-type {
   border-bottom-right-radius: .2rem;
   border-top-right-radius: .2rem;
+  -ms-flex-negative: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
 }
 .card {
   background: #fff;
