@@ -53,6 +53,9 @@
                 <a href="components.html#badges">Badges</a>
               </li>
               <li class="nav-item">
+                <a href="components.html#bars">Bars</a>
+              </li>
+              <li class="nav-item">
                 <a href="components.html#cards">Cards</a>
               </li>
               <li class="nav-item">
@@ -176,7 +179,6 @@
             <p>Add a container element with the class <code>form-autocomplete</code>. There are 2 parts of it, one is <code>form-autocomplete-input</code>, another is <code>menu</code> component. You may add the class <code>is-focused</code> to <code>form-autocomplete-input</code> to make it appear as focus state.</p>
             <p>Spectre.css does NOT include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below.</p>
           </section>
-
 <!-- autocomplete example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
@@ -254,12 +256,10 @@
               <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;"></figure>
             </div>
           </div>
-
           <section class="notes">
             <p>Add the class <code>avatar</code> to &lt;img&gt; element. There are 4 additional sizes available, including <code>avatar-xl</code> (64px), <code>avatar-lg</code> (48px), <code>avatar-sm</code> (24px), and <code>avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
             <p>For users who don't have profile pictures, you may use their initials for avatars. Add the class <code>avatar</code> and avatar size class to &lt;div&gt; element. The attribute <code>data-initial</code> is the name appear inside the avatar.</p>
           </section>
-
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <figure class="avatar avatar-xl">
@@ -284,7 +284,6 @@
               </figure>
             </div>
           </div>
-
 <!-- avatars example -->
 <pre>
 <code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- Basic avatar examples --&gt;</span>
@@ -337,16 +336,78 @@
             <p>Add the class <code>badge</code> to non self closing elements. And add the attribute <code>data-badge</code> to define the content of a badge. The badge will appear in the top-right direction of the element. </p>
             <p>If there is no <code>data-badge</code> or the attribute is empty, the badge will appear as a dot.</p>
           </section>
-
+          <div class="columns">
+            <div class="column col-xs-6">
+              <button class="btn badge" data-badge="">Button</button>
+            </div>
+            <div class="column col-xs-6">
+              <button class="btn badge" data-badge="8">Button</button>
+            </div>
+            <div class="column col-xs-6">
+              <button class="btn btn-primary badge" data-badge="">Button</button>
+            </div>
+            <div class="column col-xs-6">
+              <button class="btn btn-primary badge" data-badge="8">Button</button>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Badges support <code>button</code> elements as well. </p>
+          </section>
 <!-- badges example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;&quot;</span>&gt;
   Notifications
 &lt;<span class="tag">/span</span>&gt;
 
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;99&quot;</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;88&quot;</span>&gt;
   Notifications
-&lt;<span class="tag">/span</span>&gt;</code>
+&lt;<span class="tag">/span</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;88&quot;</span>&gt;
+  Button
+&lt;<span class="tag">/button</span>&gt;</code>
+</pre>
+        </section>
+
+        <section id="bars" class="container">
+          <header class="text-center"><h3>Bars <small class="label">experimental</small></h3></header>
+          <section class="notes">
+            <p><strong>Bars</strong> represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code> and <code>meter</code> elements.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-3 col-xs-12">
+              <div class="bar bar-sm">
+                <div class="bar-item tooltip" data-tooltip="25%" role="progressbar" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="column col-3 col-xs-12">
+              <div class="bar">
+                <div class="bar-item tooltip" data-tooltip="50%" style="width:50%;"></div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="bar">
+                <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;">25%</div>
+                <div class="bar-item tooltip" data-tooltip="15%" style="width:15%;background:#818BD5;">15%</div>
+                <div class="bar-item tooltip" data-tooltip="10%" style="width:10%;background:#ABB1E2;">10%</div>
+                <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;background:#D5D8F1;">25%</div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>bar</code>. And add child elements with the class <code>bar-item</code>. The width value is needed for every <code>bar-item</code>.</p>
+            <p>There is a class <code>bar-sm</code> for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for each <code>bar-item</code>.</p>
+          </section>
+<!-- bars example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-sm&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span> <span class="atn">aria-valuenow</span>=<span class="atv">&quot;25&quot;</span> <span class="atn">aria-valuemin</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">aria-valuemax</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;25%&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;25%&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818BD5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code>
 </pre>
         </section>
 
@@ -424,7 +485,6 @@
                 <div class="card-body">
                   <strong>Surface Studio</strong>. Turn your desk into a Studio. Surface Studio is designed for the creative process.
                 </div>
-
               </div>
             </div>
             <div class="column col-6 col-xs-12">
@@ -519,11 +579,9 @@
               </div>
             </div>
           </div>
-
           <section class="notes">
             <p>Add a container element with the class <code>chip</code>. And add child text element, buttons or avatars with the class <code>avatar</code>.</p>
           </section>
-
 <!-- chips example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
@@ -537,7 +595,6 @@
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/div</span>&gt;</code>
 </pre>
-
         </section>
 
         <section id="dropdowns" class="container">
@@ -696,7 +753,6 @@
                 </li>
               </ul>
             </div>
-
             <div class="column col-xs-12">
               <ul class="menu">
                 <li class="menu-header">
@@ -725,7 +781,6 @@
           <section class="notes">
             <p>Add a container element with the class <code>menu</code>. And add child elements with the classname <code>menu-item</code>. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
           </section>
-
 <!-- menus example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
@@ -941,7 +996,6 @@
           <section class="notes">
             <p>Add a container element with the class <code>breadcrumb</code>. And add child elements with the classname <code>breadcrumb-item</code>.</p>
           </section>
-
 <!-- breadcrumbs example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb&quot;</span>&gt;
@@ -1067,7 +1121,6 @@
               </ul>
             </div>
           </div>
-
           <section class="notes">
             <p>If you need <code>badges</code> on tabs, you can add badge class to the element within <code>tab-item</code>. </p>
           </section>
@@ -1434,7 +1487,6 @@
             <p>Add a container with the class <code>tile</code>. And add child elements with the class name <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code>. The <code>tile-icon</code> and <code>tile-action</code> are optional.</p>
             <p>There are <code>tile-title</code> and <code>tile-meta</code> classes for title and meta text styles.</p>
           </section>
-
 <!-- tiles example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile&quot;</span>&gt;
@@ -1452,7 +1504,6 @@
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;</code>
 </pre>
-
           <section class="notes">
             <p>There is compact version of Tiles component, which is often used as contact and file info blocks.</p>
             <p>Add the class <code>tile-centered</code> to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
@@ -1475,7 +1526,6 @@
               </div>
             </div>
           </div>
-
 <!-- tiles example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
@@ -1536,7 +1586,6 @@
           <section class="notes">
             <p>And you can add the class <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> for additional toast colors.</p>
           </section>
-
 <!-- toasts example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast&quot;</span>&gt;
@@ -1572,10 +1621,9 @@
             </div>
           </div>
           <section class="notes">
-            <p>Tooltip component is built entirely in CSS.</p>
+            <p>Tooltips component is built entirely in CSS.</p>
             <p>Add the class <code>tooltip</code> and the attribute <code>data-tooltip</code>, which contains the tooltip content, to non self closing elements. And add the class name <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> to define the position of a tooltip. By default, the tooltip appears above the element.</p>
           </section>
-
 <!-- tooltips example -->
 <pre>
 <code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;top tooltip&lt;<span class="tag">/button</span>&gt;

@@ -1,0 +1,34 @@
+// Bars
+.bar {
+  background: @core-border-color;
+  border-radius: @border-radius;
+  display: flex;
+  height: 1.6rem;
+  width: 100%;
+
+  &.bar-sm {
+    height: .4rem;
+  }
+
+  // TODO: attr() support
+  .bar-item {
+    background: @core-color;
+    color: @core-light-color;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1;
+    height: 100%;
+    padding: .2rem 0;
+    text-align: center;
+    width: 0;
+
+    &:first-of-type {
+      border-bottom-left-radius: @border-radius;
+      border-top-left-radius: @border-radius;
+    }
+    &:last-of-type {
+      border-bottom-right-radius: @border-radius;
+      border-top-right-radius: @border-radius;
+    }
+  }
+}
