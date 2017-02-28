@@ -2,6 +2,7 @@
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
 }
+
 // Form element: Input boxes
 .form-input {
   appearance: none;
@@ -70,7 +71,7 @@
   }
 }
 
-// Form element: Input note
+// Form element: Input hint
 .form-input-hint {
   color: @core-meta-color;
   margin-top: .4rem;
@@ -146,7 +147,8 @@
     border-color: @control-color-danger;
   }
 }
-// Form element: Checkbox and radio
+
+// Form element: Checkbox and Radio
 .form-checkbox,
 .form-radio,
 .form-switch {
@@ -260,12 +262,13 @@
     }
   }
 }
+
 // Form element: Switch
 .form-switch {
   cursor: pointer;
   display: inline-block;
   line-height: 2rem;
-  padding: .3rem 2rem .3rem 3.6rem;
+  padding: .2rem 2rem .2rem 3.6rem;
   position: relative;
 
   .form-icon {
@@ -280,7 +283,7 @@
     outline: none;
     padding: 0;
     position: absolute;
-    top: .4rem;
+    top: .3rem;
     vertical-align: top;
     width: 3rem;
     &::after {
@@ -312,6 +315,7 @@
     }
   }
 }
+
 // Form element: Input groups
 .input-group {
   display: flex;
@@ -361,5 +365,23 @@
 
   &.input-inline {
     display: inline-flex;
+  }
+}
+
+// Form Horizontal
+.form-horizontal {
+  padding: 1rem;
+
+  .form-group {
+    display: flex;
+  }
+  .form-label {
+    padding: .8rem .4rem;
+    margin-bottom: 0;
+  }
+  .form-checkbox,
+  .form-radio,
+  .form-switch {
+    margin: .4rem 0;
   }
 }

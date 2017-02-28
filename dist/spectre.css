@@ -1019,7 +1019,7 @@ textarea.form-input {
   cursor: pointer;
   display: inline-block;
   line-height: 2rem;
-  padding: .3rem 2rem .3rem 3.6rem;
+  padding: .2rem 2rem .2rem 3.6rem;
   position: relative;
 }
 .form-switch .form-icon {
@@ -1034,7 +1034,7 @@ textarea.form-input {
   outline: none;
   padding: 0;
   position: absolute;
-  top: .4rem;
+  top: .3rem;
   vertical-align: top;
   width: 3rem;
 }
@@ -1116,6 +1116,23 @@ textarea.form-input {
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
 }
+.form-horizontal {
+  padding: 1rem;
+}
+.form-horizontal .form-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.form-horizontal .form-label {
+  margin-bottom: 0;
+  padding: .8rem .4rem;
+}
+.form-horizontal .form-checkbox,
+.form-horizontal .form-radio,
+.form-horizontal .form-switch {
+  margin: .4rem 0;
+}
 .label {
   background: #f8f8f8;
   border-radius: .2rem;
@@ -1136,27 +1153,6 @@ textarea.form-input {
 .label.label-danger {
   background: #e85600;
   color: #fff;
-}
-.progress {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  color: #5764c6;
-  height: .4rem;
-  width: 100%;
-}
-.progress::-webkit-progress-bar {
-  background: #efefef;
-  border-radius: .2rem;
-}
-.progress::-webkit-progress-value {
-  background: #5764c6;
-  border-radius: .2rem;
-}
-.progress::-moz-progress-bar {
-  background: #5764c6;
-  border-radius: .2rem;
 }
 .img-responsive {
   display: block;
@@ -1576,22 +1572,6 @@ textarea.form-input {
     width: 8.33333333%;
   }
 }
-.form-horizontal {
-  padding: 1rem;
-}
-.form-horizontal .form-group {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-}
-.form-horizontal .form-label {
-  margin-bottom: 0;
-  padding: .8rem .4rem;
-}
-.form-horizontal .form-checkbox,
-.form-horizontal .form-radio {
-  margin: .4rem 0;
-}
 @media screen and (max-width: 480px) {
   .hide-xs {
     display: none !important;
@@ -1769,6 +1749,7 @@ textarea.form-input {
   transform: translate(-50%, -50%) scale(.65);
 }
 .badge {
+  display: inline-block;
   position: relative;
 }
 .badge[data-badge]::after,
@@ -1780,12 +1761,9 @@ textarea.form-input {
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translate(100%, -50%);
-  -ms-transform: translate(100%, -50%);
-  transform: translate(100%, -50%);
+  -webkit-transform: translate(-.4rem, -1rem);
+  -ms-transform: translate(-.4rem, -1rem);
+  transform: translate(-.4rem, -1rem);
 }
 .badge[data-badge]::after {
   font-size: 1.2rem;
@@ -1802,6 +1780,54 @@ textarea.form-input {
   min-width: .8rem;
   padding: 0;
   width: .8rem;
+}
+.badge.btn::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.bar {
+  background: #efefef;
+  border-radius: .2rem;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 1.6rem;
+  width: 100%;
+}
+.bar.bar-sm {
+  height: .4rem;
+}
+.bar .bar-item {
+  background: #5764c6;
+  color: #fff;
+  display: block;
+  -ms-flex-negative: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  height: 100%;
+  line-height: 1;
+  padding: .2rem 0;
+  text-align: center;
+  width: 0;
+}
+.bar .bar-item:first-of-type {
+  border-bottom-left-radius: .2rem;
+  border-top-left-radius: .2rem;
+}
+.bar .bar-item:last-of-type {
+  border-bottom-right-radius: .2rem;
+  border-top-right-radius: .2rem;
+  -ms-flex-negative: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
 }
 .card {
   background: #fff;
@@ -1866,6 +1892,7 @@ textarea.form-input {
   color: #fff;
 }
 .chip .avatar {
+  margin-left: -.4rem;
   margin-right: .4rem;
 }
 .dropdown {
@@ -2104,14 +2131,8 @@ textarea.form-input {
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.tab:not(.tab-block) a.badge {
+.tab:not(.tab-block) .badge {
   padding-right: 0;
-}
-.tab:not(.tab-block) a.badge::after {
-  position: static;
-  -webkit-transform: translate(-.2rem, -1rem);
-  -ms-transform: translate(-.2rem, -1rem);
-  transform: translate(-.2rem, -1rem);
 }
 .pagination {
   display: flex;
