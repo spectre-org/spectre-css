@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="https://github.com/picturepan2/" />
+  <title>Experimentals - Spectre.css</title>
+  <link rel="stylesheet" href="css/spectre.css" />
+  <link rel="stylesheet" href="css/docs.css" />
+  <link rel="stylesheet" href="font/style.css" />
+</head>
+<body>
+  <section class="section section-header bg-grey">
+    <section class="grid-header container grid-960">
+      <nav class="navbar">
+        <section class="navbar-section">
+          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="btn btn-link">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
+        </section>
+        <section class="navbar-section show-xs">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </section>
+      </nav>
+    </section>
+  </section>
+
+  <section class="container grid-960">
+    <section class="columns">
+      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
+        <ul class="docs-nav nav nav-vertical">
+          <li class="nav-item">
+            <a href="index.html">Getting started</a>
+          </li>
+          <li class="nav-item active">
+            <a href="elements.html">Elements</a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="elements.html#typography">Typography</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#tables">Tables</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#buttons">Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#forms">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#labels">Labels</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#media">Media</a>
+              </li>
+              <li class="nav-item active">
+                <a href="experimentals.html">Experimentals</a>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="experimentals.html#progress">Progress</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="layout.html">Layout</a>
+          </li>
+          <li class="nav-item">
+            <a href="components.html">Components</a>
+          </li>
+          <li class="nav-item">
+            <a href="utilities.html">Utilities</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+
+      <div class="docs-content column col-9 col-sm-12">
+        <section id="progress" class="container">
+          <header class="text-center"><h3>Progress</h3></header>
+          <section class="notes">
+            <p>The <strong>Progress</strong> indicates the progress completion of a task.</p>
+          </section>
+          <div class="columns text-center">
+            <div class="column col-3 col-xs-12">
+              <progress class="progress" value="75" max="100"></progress>
+            </div>
+            <div class="column col-3 col-xs-12">
+              <progress class="progress" value="50" max="100"></progress>
+            </div>
+            <div class="column col-3 col-xs-12">
+              <progress class="progress" value="25" max="100"></progress>
+            </div>
+            <div class="column col-3 col-xs-12">
+              <progress class="progress" value="0" max="100"></progress>
+            </div>
+          </div>
+          <section class="notes">
+            <p></p>
+          </section>
+<!-- progress example -->
+<pre>
+<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">progress</span> <span class="atn">class</span>=<span class="atv">&quot;progress&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;25&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/progress</span>&gt;</code>
+</pre>
+        </section>
+
+        <section class="container">
+          <div class="divider"></div>
+          <ul class="pagination">
+            <li class="page-item page-prev">
+              <a href="layout.html">
+                <p class="page-item-meta">Previous</p>
+                <h4 class="page-item-title">Elements</h4>
+              </a>
+            </li>
+            <li class="page-item page-next">
+              <a href="layout.html">
+                <p class="page-item-meta">Next</p>
+                <h4 class="page-item-title">Layout</h4>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <footer class="bg-grey">
+    <section id="copyright" class="grid-footer container grid-960">
+      <p>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+      </p>
+      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+    </section>
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-2702768-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
