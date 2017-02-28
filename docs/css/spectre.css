@@ -1019,7 +1019,7 @@ textarea.form-input {
   cursor: pointer;
   display: inline-block;
   line-height: 2rem;
-  padding: .3rem 2rem .3rem 3.6rem;
+  padding: .2rem 2rem .2rem 3.6rem;
   position: relative;
 }
 .form-switch .form-icon {
@@ -1034,7 +1034,7 @@ textarea.form-input {
   outline: none;
   padding: 0;
   position: absolute;
-  top: .4rem;
+  top: .3rem;
   vertical-align: top;
   width: 3rem;
 }
@@ -1115,6 +1115,23 @@ textarea.form-input {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+}
+.form-horizontal {
+  padding: 1rem;
+}
+.form-horizontal .form-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.form-horizontal .form-label {
+  margin-bottom: 0;
+  padding: .8rem .4rem;
+}
+.form-horizontal .form-checkbox,
+.form-horizontal .form-radio,
+.form-horizontal .form-switch {
+  margin: .4rem 0;
 }
 .label {
   background: #f8f8f8;
@@ -1554,22 +1571,6 @@ textarea.form-input {
   .col-xs-1 {
     width: 8.33333333%;
   }
-}
-.form-horizontal {
-  padding: 1rem;
-}
-.form-horizontal .form-group {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-}
-.form-horizontal .form-label {
-  margin-bottom: 0;
-  padding: .8rem .4rem;
-}
-.form-horizontal .form-checkbox,
-.form-horizontal .form-radio {
-  margin: .4rem 0;
 }
 @media screen and (max-width: 480px) {
   .hide-xs {
