@@ -75,8 +75,7 @@
 .progress:indeterminate {
   -webkit-animation: progress-indeterminate 1.5s linear infinite;
   animation: progress-indeterminate 1.5s linear infinite;
-  background: #efefef linear-gradient(to right, #5764c6 30%, #efefef 30%) no-repeat;
-  background-size: 150% 150%;
+  background: #efefef linear-gradient(to right, #5764c6 30%, #efefef 30%) top left / 150% 150% no-repeat;
 }
 .progress:indeterminate::-moz-progress-bar {
   background: transparent;
