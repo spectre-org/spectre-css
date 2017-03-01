@@ -533,37 +533,6 @@ abbr[title] {
   cursor: help;
   text-decoration: none;
 }
-code {
-  background: #f8f8f8;
-  border-radius: .2rem;
-  color: #666;
-  display: inline-block;
-  line-height: 1;
-  padding: .3rem;
-  vertical-align: baseline;
-}
-pre {
-  background: #f9f9f9;
-  line-height: 2rem;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  overflow: auto;
-  padding: 2rem 2.5rem;
-  position: relative;
-}
-pre > code {
-  background: transparent;
-  line-height: 2rem;
-  padding: 0;
-}
-pre > code::before {
-  color: #c5c5c5;
-  content: attr(data-lang);
-  font-size: 1.2rem;
-  position: absolute;
-  right: 1rem;
-  top: .2rem;
-}
 :lang(zh),
 :lang(ja),
 :lang(ko),
@@ -1153,6 +1122,49 @@ textarea.form-input {
 .label.label-danger {
   background: #e85600;
   color: #fff;
+}
+code {
+  background: #f8f8f8;
+  border-radius: .2rem;
+  color: #e06870;
+  display: inline-block;
+  line-height: 1;
+  padding: .3rem;
+  vertical-align: baseline;
+}
+.code {
+  border-radius: .2rem;
+  color: #666;
+  line-height: 2rem;
+  position: relative;
+}
+.code::before {
+  color: #c5c5c5;
+  content: attr(data-lang);
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1rem;
+  top: .2rem;
+}
+.code code {
+  color: inherit;
+  display: block;
+  line-height: inherit;
+  overflow-x: auto;
+  padding: 2rem;
+  width: 100%;
+}
+.code .com {
+  color: #c5c5c5;
+}
+.code .tag {
+  color: #5764c6;
+}
+.code .atn {
+  color: #666;
+}
+.code .atv {
+  color: #e06870;
 }
 .img-responsive {
   display: block;

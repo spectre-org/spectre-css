@@ -39,17 +39,17 @@
 .bg-grey {
   background-color: #f6f6f6;
   border-radius: .2rem;
-  padding: 1rem;
+  padding: 1rem .5rem;
 }
 .bg-dark {
   background: #2d3354;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem .5rem;
 }
 .bg-primary {
   background: #5764c6;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem .5rem;
 }
 .navbar-brand .icon {
   font-size: 1.3333em;
@@ -78,21 +78,6 @@
 }
 .empty .icon {
   font-size: 4rem;
-}
-.code {
-  color: #666;
-}
-.code .com {
-  color: #adadad;
-}
-.code .tag {
-  color: #4452c0;
-}
-.code .atn {
-  color: #666;
-}
-.code .atv {
-  color: #e06870;
 }
 .docs-content .container {
   padding: 2rem 1rem;

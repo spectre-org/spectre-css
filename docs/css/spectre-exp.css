@@ -33,32 +33,32 @@
   -webkit-appearance: none;
   background: #5764c6;
   border-radius: 50%;
-  height: 1.4rem;
-  margin-top: -.5rem;
+  height: 1.2rem;
+  margin-top: -.4rem;
   transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
   transition: -webkit-transform .2s ease;
-  width: 1.4rem;
+  width: 1.2rem;
 }
 .slider::-moz-range-thumb {
   background: #5764c6;
   border: 0;
   border-radius: 50%;
-  height: 1.4rem;
+  height: 1.2rem;
   transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
   transition: -webkit-transform .2s ease;
-  width: 1.4rem;
+  width: 1.2rem;
 }
 .slider::-ms-thumb {
   background: #5764c6;
   border: 0;
   border-radius: 50%;
-  height: 1.4rem;
+  height: 1.2rem;
   transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
   transition: -webkit-transform .2s ease;
-  width: 1.4rem;
+  width: 1.2rem;
 }
 .slider:active::-webkit-slider-thumb {
   -webkit-transform: scale(1.25);
