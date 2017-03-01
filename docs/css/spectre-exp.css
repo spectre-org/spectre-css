@@ -1,4 +1,53 @@
 /*! Spectre.css Experimentals | MIT License | github.com/picturepan2/spectre */
+.meter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f8f8f8;
+  border: 0;
+  display: block;
+  height: 1.6rem;
+  width: 100%;
+}
+.meter::-webkit-meter-inner-element {
+  display: block;
+}
+.meter::-webkit-meter-bar,
+.meter::-webkit-meter-optimum-value,
+.meter::-webkit-meter-suboptimum-value,
+.meter::-webkit-meter-even-less-good-value {
+  border-radius: .2rem;
+}
+.meter::-webkit-meter-bar {
+  background: #f8f8f8;
+}
+.meter::-webkit-meter-optimum-value {
+  background: #32b643;
+}
+.meter::-webkit-meter-suboptimum-value {
+  background: #ffb700;
+}
+.meter::-webkit-meter-even-less-good-value {
+  background: #e85600;
+}
+.meter::-moz-meter-bar,
+.meter::-moz-meter-optimum,
+.meter::-moz-meter-sub-optimum,
+.meter::-moz-meter-sub-sub-optimum {
+  border-radius: .2rem;
+}
+.meter::-moz-meter-bar {
+  background: #f8f8f8;
+}
+.meter:-moz-meter-optimum {
+  background: #32b643;
+}
+.meter:-moz-meter-sub-optimum {
+  background: #ffb700;
+}
+.meter:-moz-meter-sub-sub-optimum {
+  background: #e85600;
+}
 .progress {
   -webkit-appearance: none;
   -moz-appearance: none;
