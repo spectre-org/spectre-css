@@ -33,6 +33,11 @@ p {
   line-height: 2.4rem;
   margin: 0 0 1em;
 }
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
 blockquote {
   border-left: .2rem solid #ddd;
   margin-left: 0;
@@ -95,35 +100,4 @@ abbr[title] {
   border-bottom: .1rem dotted;
   cursor: help;
   text-decoration: none;
-}
-
-// Code
-code {
-  background: @core-bg-color;
-  color: lighten(@body-font-color, 20%);
-  .label-base();
-}
-pre {
-  background: lighten(@core-border-color, 4%);
-  line-height: 2rem;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  overflow: auto;
-  padding: 2rem 2.5rem;
-  position: relative;
-
-  & > code {
-    background: transparent;
-    line-height: 2rem;
-    padding: 0;
-
-    &::before {
-      content: attr(data-lang);
-      color: @control-color;
-      font-size: 1.2rem;
-      position: absolute;
-      right: 1rem;
-      top: .2rem;
-    }
-  }
 }

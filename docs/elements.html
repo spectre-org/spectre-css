@@ -53,6 +53,9 @@
                 <a href="elements.html#labels">Labels</a>
               </li>
               <li class="nav-item">
+                <a href="elements.html#codes">Codes</a>
+              </li>
+              <li class="nav-item">
                 <a href="elements.html#media">Media</a>
               </li>
               <li class="nav-item">
@@ -88,21 +91,21 @@
             <h5>H5 Title <span class="label">2rem</span></h5>
             <h6>H6 Title <span class="label">1.6rem</span></h6>
           </section>
+
 <!-- headings example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">h1</span>&gt;H1 Title&lt;<span class="tag">/h1</span>&gt;
-&lt;<span class="tag">h2</span>&gt;H2 Title &lt;<span class="tag">small</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;4rem&lt;<span class="tag">/small</span>&gt;&lt;<span class="tag">/h2</span>&gt;</code>
-</pre>
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">h1</span>&gt;H1 Title&lt;<span class="tag">/h1</span>&gt;
+&lt;<span class="tag">h2</span>&gt;H2 Title &lt;<span class="tag">small</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;4rem&lt;<span class="tag">/small</span>&gt;&lt;<span class="tag">/h2</span>&gt;
+</code></pre>
 
           <header class="text-center"><h4>Paragraphs</h4></header>
           <section class="notes">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, <a href="#typography">dictum in vehicula sit amet</a>, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur <a href="#typography">adipiscing elit. Praesent risus leo, dictum in vehicula sit amet</a>, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
             <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
           </section>
+
 <!-- paragraphs example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;dictum in vehicula sit amet&lt;<span class="tag">/a</span>&gt;, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.&lt;<span class="tag">/p</span>&gt;</code>
-</pre>
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;dictum in vehicula sit amet&lt;<span class="tag">/a</span>&gt;, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.&lt;<span class="tag">/p</span>&gt;
+</code></pre>
 
           <header class="text-center"><h4>Semantic text elements</h4></header>
           <div class="columns">
@@ -182,6 +185,7 @@
               <code class="ml-10">&lt;var&gt;</code>
             </div>
           </div>
+
           <header class="text-center"><h4>Optimized for east asian fonts</h4></header>
           <section class="notes">
             <p class="text-large text-center"><span lang="zh-Hans">你好</span>, <span lang="ja">こんにちは</span>, <span lang="ko">안녕하세요</span></p>
@@ -197,24 +201,25 @@
           <section class="notes">
             <p>Use the attribute <code>lang</code> or add the class <code>cjk</code> to the container element to have better Asian CJK (Chinese, Japanese and Korean) support.</p>
           </section>
+
 <!-- east asian example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
-&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ja&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;</code>
-</pre>
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ja&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
+</code></pre>
 
           <header class="text-center"><h4>Blockquote</h4></header>
           <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             <cite>- Source</cite>
           </blockquote>
+
 <!-- blockquote example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">blockquote</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">blockquote</span>&gt;
   &lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">cite</span>&gt;- Source&lt;<span class="tag">/cite</span>&gt;
-&lt;<span class="tag">/blockquote</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/blockquote</span>&gt;
+</code></pre>
+
           <header class="text-center"><h4>Lists</h4></header>
           <div class="columns">
             <div class="column col-4 col-xs-12">
@@ -254,9 +259,9 @@
               </dl>
             </div>
           </div>
+
 <!-- lists example -->
-<pre>
-<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- unordered list --&gt;</span>
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- unordered list --&gt;</span>
 &lt;<span class="tag">ul</span>&gt;
   &lt;<span class="tag">li</span>&gt;list item 1&lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span>&gt;list item 2
@@ -273,8 +278,9 @@
 &lt;<span class="tag">dl</span>&gt;
   &lt;<span class="tag">dt</span>&gt;description list term&lt;<span class="tag">/dt</span>&gt;
   &lt;<span class="tag">dd</span>&gt;description list description&lt;<span class="tag">/dd</span>&gt;
-&lt;<span class="tag">/dl</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/dl</span>&gt;
+</code></pre>
+
         </section>
 
         <section id="tables" class="container">
@@ -317,9 +323,9 @@
             <p>Add the class <code>table</code> to any &lt;table&gt; element. The class will add padding, border and emphasized table header. Use <code>table-striped</code> to &lt;table&gt; to add zebra striped style. For hoverable table rows, you can add the class <code>table-hover</code> to enable hover style. </p>
             <p>Use the class <code>active</code> to make &lt;tr&gt; element highlighted. </p>
           </section>
+
 <!-- tables example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
   &lt;<span class="tag">thead</span>&gt;
     &lt;<span class="tag">tr</span>&gt;
       &lt;<span class="tag">th</span>&gt;name&lt;<span class="tag">/th</span>&gt;
@@ -334,8 +340,9 @@
       &lt;<span class="tag">td</span>&gt;14 October 1994&lt;<span class="tag">/td</span>&gt;
     &lt;<span class="tag">/tr</span>&gt;
   &lt;<span class="tag">/tbody</span>&gt;
-&lt;<span class="tag">/table</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/table</span>&gt;
+</code></pre>
+
         </section>
 
         <section id="buttons" class="container">
@@ -368,15 +375,16 @@
           <section class="notes">
             <p>Add the class <code>btn</code> to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. A button with the class <code>loading</code> can show loading indicator.  </p>
           </section>
+
 <!-- buttons example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
 
 <span class="com">&lt;!-- a button with loading state --&gt;</span>
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;</code>
-</pre>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
           <section class="notes">
             <p>Add the class <code>disabled</code> or the attribute <code>disabled</code> for a disabled button.</p>
           </section>
@@ -414,16 +422,17 @@
             <p>Add the class <code>btn-sm</code> or <code>btn-lg</code> for small or large button size. Also, you can add the class <code>btn-block</code> for a full-width button. </p>
             <p>Please note that you could use the class <code>btn-action</code> for a square button, or add another class <code>circle</code> for a round button, which is often used as a Float Action Button (FAB).</p>
           </section>
+
 <!-- buttons example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
 
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
 
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;</code>
-</pre>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
           <div class="columns">
             <div class="column">
               <button class="btn btn-primary btn-lg"><i class="icon icon-markunread"></i> large</button>
@@ -434,12 +443,13 @@
           <section class="notes">
             <p>Icons with the class <code>icon</code> can be correctly rendered in each button size. </p>
           </section>
+
 <!-- buttons example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;</code>
-</pre>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
           <header class="text-center"><h4>Button groups</h4></header>
           <div class="columns">
             <div class="column col-xs-12">
@@ -476,14 +486,15 @@
           <section class="notes">
             <p>If you want to use buttons as a group, add the class <code>btn-group</code> to the container. You can add the class <code>btn-group-block</code> for a full-width button group.</p>
           </section>
+
 <!-- button groups example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group btn-group-block&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group btn-group-block&quot;</span>&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;first button&lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;second button&lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;third button&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/div</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
         </section>
 
         <section id="forms" class="container">
@@ -544,9 +555,9 @@
               </form>
             </div>
           </div>
+
 <!-- forms example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">form</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
   <span class="com">&lt;!-- form input control --&gt;</span>
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
     &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
@@ -592,8 +603,9 @@
       &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
     &lt;<span class="tag">/label</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/form</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/form</span>&gt;
+</code></pre>
+
           <section class="notes">
             <p>You can use <code>:indeterminate</code> pseudo class for indeterminate state of checkboxes.</p>
             <p>If you want to have a horizontal form, add the class <code>form-horizontal</code> to the &lt;form&gt; container. And add the class <code>col-[1-12]</code> to the child elements for form row layout. </p>
@@ -678,9 +690,9 @@
               </form>
             </div>
           </div>
+
 <!-- forms example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-3&quot;</span>&gt;
       &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
@@ -690,8 +702,9 @@
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   <span class="com">&lt;!-- form structure --&gt;</span>
-&lt;<span class="tag">/form</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/form</span>&gt;
+</code></pre>
+
           <div class="columns">
             <div class="column col-9 col-sm-12">
               <form class="form-horizontal" action="#forms">
@@ -809,9 +822,9 @@
               </div>
             </div>
           </div>
+
 <!-- forms example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">form</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
   <span class="com">&lt;!-- form validation class: has-success --&gt;</span>
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
     &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
@@ -825,8 +838,9 @@
     &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
     &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invaild.&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/form</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/form</span>&gt;
+</code></pre>
+
           <section class="notes">
             <p>For smaller or larger input and select controls, you could add <code>input-sm</code>/<code>input-lg</code> and <code>select-sm</code>/<code>select-lg</code> to the elements.</p>
           </section>
@@ -905,9 +919,9 @@
           <section class="notes">
             <p>If you want to attach text and button along with an input, add the class <code>input-group</code> to the input container. And add the class <code>input-group-addon</code> to the text element and <code>input-group-btn</code> to the button element.</p>
           </section>
+
 <!-- input groups example -->
-<pre>
-<code class="code lang-html" data-lang="HTML"><span class="com">&lt;!-- normal input group --&gt;</span>
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- normal input group --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
   &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
   &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
@@ -924,8 +938,9 @@
   &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;slack.com/&lt;<span class="tag">/span</span>&gt;
   &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;site name&quot;</span> /&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary input-group-btn&quot;</span>&gt;Submit&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/div</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
         </section>
 
         <section id="labels" class="container">
@@ -944,11 +959,29 @@
           <section class="notes">
             <p>Add the class <code>label</code> to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code> and <code>label-danger</code> for a primary colored label.</p>
           </section>
+
 <!-- labels example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;default label&lt;<span class="tag">/span</span>&gt;
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;primary label&lt;<span class="tag">/span</span>&gt;</code>
-</pre>
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;default label&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;primary label&lt;<span class="tag">/span</span>&gt;
+</code></pre>
+
+        </section>
+
+        <section id="codes" class="container">
+          <header class="text-center"><h3>Codes</h3></header>
+          <section class="notes">
+            <p><strong>Codes</strong> are inline and multiline code snippets.</p>
+            <p>For inline code, you can use the element <code>&lt;code&gt;</code>. For multiline code snippet blocks, you can use <code>&lt;pre&gt;</code> with the class <code>code</code> as a container, and add <code>&lt;code&gt;</code> inside it. The attribute <code>data-lang</code> is rendered as the language name in the top right.</p>
+          </section>
+
+<!-- codes example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">pre</span> <span class="atn">class</span>=<span class="atv">&quot;code&quot;</span> <span class="atn">data-lang</span>=<span class="atv">&quot;HTML&quot;</span>&gt;&lt;<span class="tag">code</span>&gt;<span class="com">&lt;!-- code snippets --&gt;</span>
+&amp;lt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;tag&quot;</span>&gt;button&lt;<span class="tag">/span</span>&gt; &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;atn&quot;</span>&gt;class&lt;<span class="tag">/span</span>&gt;=&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;atv&quot;</span>&gt;&amp;quot;btn&amp;quot;</span>&lt;<span class="tag">/span</span>&gt;&amp;gt;
+  Submit
+&amp;lt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;tag&quot;</span>&gt;/button&lt;<span class="tag">/span</span>&gt;&amp;gt;
+&lt;<span class="tag">/code</span>&gt;&lt;<span class="tag">/pre</span>&gt;
+</code></pre>
+
         </section>
 
         <section id="media" class="container">
@@ -962,9 +995,10 @@
               <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS El Capitan Wallpaper" />
             </div>
           </div>
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;</code>
-</pre>
+
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;
+</code></pre>
+
           <section class="notes">
             <p>You can use the element <code>&lt;figure&gt;</code> for an image with a caption. Add the class <code>figure</code> to &lt;figure&gt; element. The images with the class <code>img-responsive</code> will be responsive. And the included class <code>figure-caption</code> will provide basic style for caption. Also, you can use <code>text-left</code>, <code>text-center</code> and <code>text-right</code> for caption alignment.  </p>
           </section>
@@ -976,12 +1010,12 @@
               </figure>
             </div>
           </div>
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;figure&quot;</span>&gt;
+
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;figure&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-yosemite-2.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS Yosemite Wallpaper&quot;</span> /&gt;
   &lt;<span class="tag">figcaption</span> <span class="atn">class</span>=<span class="atv">&quot;figure-caption text-center&quot;</span>&gt;macOS Yosemite wallpaper&lt;<span class="tag">/figcaption</span>&gt;
-&lt;<span class="tag">/figure</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/figure</span>&gt;
+</code></pre>
 
           <section class="notes">
             <p>For responsive video, add a container with the class <code>video-responsive</code>. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>video-responsive-4-3</code> for 4:3 ratio video container or <code>video-responsive-1-1</code> for 1:1 ratio.</p>
@@ -995,11 +1029,11 @@
           </div>
 
 <!-- media example -->
-<pre>
-<code class="code lang-html" data-lang="HTML">&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;video-responsive&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;video-responsive&quot;</span>&gt;
   &lt;<span class="tag">iframe</span> <span class="atn">src</span>=<span class="atv">&quot;https://www.youtube.com/embed/BzMLA8YIgG0&quot;</span> <span class="atn">width</span>=<span class="atv">&quot;560&quot;</span> <span class="atn">height</span>=<span class="atv">&quot;315&quot;</span> <span class="atn">frameborder</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">allowfullscreen</span>&gt;&lt;<span class="tag">/iframe</span>&gt;
-&lt;<span class="tag">/div</span>&gt;</code>
-</pre>
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
         </section>
 
         <section class="container">

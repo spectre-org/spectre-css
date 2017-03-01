@@ -467,6 +467,12 @@ p {
   line-height: 2.4rem;
   margin: 0 0 1em;
 }
+a,
+ins,
+u {
+  -webkit-text-decoration-skip: ink edges;
+  text-decoration-skip: ink edges;
+}
 blockquote {
   border-left: .2rem solid #ddd;
   margin-left: 0;
@@ -532,37 +538,6 @@ abbr[title] {
   border-bottom: .1rem dotted;
   cursor: help;
   text-decoration: none;
-}
-code {
-  background: #f8f8f8;
-  border-radius: .2rem;
-  color: #666;
-  display: inline-block;
-  line-height: 1;
-  padding: .3rem;
-  vertical-align: baseline;
-}
-pre {
-  background: #f9f9f9;
-  line-height: 2rem;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  overflow: auto;
-  padding: 2rem 2.5rem;
-  position: relative;
-}
-pre > code {
-  background: transparent;
-  line-height: 2rem;
-  padding: 0;
-}
-pre > code::before {
-  color: #c5c5c5;
-  content: attr(data-lang);
-  font-size: 1.2rem;
-  position: absolute;
-  right: 1rem;
-  top: .2rem;
 }
 :lang(zh),
 :lang(ja),
@@ -1153,6 +1128,37 @@ textarea.form-input {
 .label.label-danger {
   background: #e85600;
   color: #fff;
+}
+code {
+  background: #f8f8f8;
+  border-radius: .2rem;
+  color: #e06870;
+  display: inline-block;
+  line-height: 1;
+  padding: .3rem;
+  vertical-align: baseline;
+}
+.code {
+  border-radius: .2rem;
+  color: #666;
+  line-height: 2rem;
+  position: relative;
+}
+.code::before {
+  color: #c5c5c5;
+  content: attr(data-lang);
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1rem;
+  top: .2rem;
+}
+.code code {
+  color: inherit;
+  display: block;
+  line-height: inherit;
+  overflow-x: auto;
+  padding: 2rem;
+  width: 100%;
 }
 .img-responsive {
   display: block;
@@ -2378,7 +2384,7 @@ textarea.form-input {
   transition: transform .2s ease;
   transition: -webkit-transform .2s ease;
   white-space: nowrap;
-  z-index: 99;
+  z-index: 999;
 }
 .tooltip:focus::after,
 .tooltip:hover::after {
