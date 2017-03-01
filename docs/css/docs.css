@@ -85,10 +85,6 @@
 .docs-content header {
   padding-top: 2rem;
 }
-.docs-content pre {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
 .docs-content .notes {
   color: #666;
   margin: 4rem 0;
@@ -101,6 +97,18 @@
 .docs-content h6 {
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+.docs-content .code .com {
+  color: #c5c5c5;
+}
+.docs-content .code .tag {
+  color: #5764c6;
+}
+.docs-content .code .atn {
+  color: #666;
+}
+.docs-content .code .atv {
+  color: #e06870;
 }
 .example-tile-icon {
   -webkit-align-content: space-around;

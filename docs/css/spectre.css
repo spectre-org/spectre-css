@@ -1154,18 +1154,6 @@ code {
   padding: 2rem;
   width: 100%;
 }
-.code .com {
-  color: #c5c5c5;
-}
-.code .tag {
-  color: #5764c6;
-}
-.code .atn {
-  color: #666;
-}
-.code .atv {
-  color: #e06870;
-}
 .img-responsive {
   display: block;
   height: auto;
