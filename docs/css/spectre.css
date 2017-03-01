@@ -467,6 +467,12 @@ p {
   line-height: 2.4rem;
   margin: 0 0 1em;
 }
+a,
+ins,
+u {
+  -webkit-text-decoration-skip: ink edges;
+  text-decoration-skip: ink edges;
+}
 blockquote {
   border-left: .2rem solid #ddd;
   margin-left: 0;
