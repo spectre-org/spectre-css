@@ -52,13 +52,16 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #efefef;
   border: 0;
+  border-radius: .2rem;
   color: #5764c6;
   height: .4rem;
+  position: relative;
   width: 100%;
 }
 .progress::-webkit-progress-bar {
-  background: #efefef;
+  background: transparent;
   border-radius: .2rem;
 }
 .progress::-webkit-progress-value {
@@ -68,6 +71,31 @@
 .progress::-moz-progress-bar {
   background: #5764c6;
   border-radius: .2rem;
+}
+.progress:indeterminate {
+  -webkit-animation: progress-indeterminate 1.5s linear infinite;
+  animation: progress-indeterminate 1.5s linear infinite;
+  background: #efefef linear-gradient(to right, #5764c6 30%, #efefef 30%) no-repeat;
+  background-size: 150% 150%;
+}
+.progress:indeterminate::-moz-progress-bar {
+  background: transparent;
+}
+@-webkit-keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+@keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 .slider {
   -webkit-appearance: none;
