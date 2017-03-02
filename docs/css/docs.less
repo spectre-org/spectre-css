@@ -5,6 +5,46 @@
 }
 
 /* Spectre docs style */
+.bg-grey {
+  background-color: #f6f6f6;
+  padding: 1rem .5rem;
+  border-radius: .2rem;
+}
+
+.bg-dark {
+  background: #2d3354;
+  color: #fff;
+  padding: 1rem .5rem;
+}
+
+.bg-primary {
+  background: #5764c6;
+  color: #fff;
+  padding: 1rem .5rem;
+}
+
+.grid-header {
+  .navbar-brand {
+    color: #444;
+
+    .icon {
+      font-size: 1.3333em;
+      line-height: .8em;
+      vertical-align: -20%;
+    }
+  }
+
+  .btn {
+    color: #666;
+    &:hover,
+    &:focus,
+    &:active {
+      color: #444;
+      opacity: .75;
+    }
+  }
+}
+
 .grid-hero {
   margin-top: 10rem;
   margin-bottom: 4rem;
@@ -42,47 +82,6 @@
   }
 }
 
-.bg-grey {
-  background-color: #f6f6f6;
-  padding: 1rem .5rem;
-  border-radius: .2rem;
-}
-
-.bg-dark {
-  background: #2d3354;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-
-.bg-primary {
-  background: #5764c6;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-
-.navbar-brand {
-  .icon {
-    font-size: 1.3333em;
-    line-height: .8em;
-    vertical-align: -20%;
-  }
-}
-
-.grid-header {
-  .btn {
-    color: #666;
-    &:hover,
-    &:focus,
-    &:active {
-      color: #444;
-      opacity: .75;
-    }
-  }
-  .navbar-brand {
-    color: #444;
-  }
-}
-
 .grid-footer {
   color: #888;
   margin-top: 4rem;
@@ -93,8 +92,14 @@
   }
 }
 
-.empty .icon {
-  font-size: 4rem;
+.grid-ads {
+  border-radius: .2rem;
+  display: block;
+  height: 12rem;
+  margin: 2rem auto;
+  max-width: 64rem;
+  padding: 1rem;
+  width: 100%
 }
 
 .docs-content {
@@ -135,18 +140,22 @@
       color: #e06870;
     }
   }
-}
 
-.example-tile-icon {
-  align-content: space-around;
-  align-items: center;
-  background: #5764c6;
-  border-radius: .2rem;
-  color: #fff;
-  display: flex;
-  font-size: 2.4rem;
-  height: 4rem;
-  width: 4rem;
+  .empty .icon {
+    font-size: 4rem;
+  }
+
+  .example-tile-icon {
+    align-content: space-around;
+    align-items: center;
+    background: #5764c6;
+    border-radius: .2rem;
+    color: #fff;
+    display: flex;
+    font-size: 2.4rem;
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -154,7 +163,7 @@
     padding-bottom: 6rem;
     padding-top: 6rem;
 
-    .docs-nav {
+      .docs-nav {
       position: relative;
     }
 

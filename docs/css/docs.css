@@ -4,6 +4,38 @@
   content: "0.2.4";
 }
 /* Spectre docs style */
+.bg-grey {
+  background-color: #f6f6f6;
+  border-radius: .2rem;
+  padding: 1rem .5rem;
+}
+.bg-dark {
+  background: #2d3354;
+  color: #fff;
+  padding: 1rem .5rem;
+}
+.bg-primary {
+  background: #5764c6;
+  color: #fff;
+  padding: 1rem .5rem;
+}
+.grid-header .navbar-brand {
+  color: #444;
+}
+.grid-header .navbar-brand .icon {
+  font-size: 1.3333em;
+  line-height: .8em;
+  vertical-align: -20%;
+}
+.grid-header .btn {
+  color: #666;
+}
+.grid-header .btn:hover,
+.grid-header .btn:focus,
+.grid-header .btn:active {
+  color: #444;
+  opacity: .75;
+}
 .grid-hero {
   margin-bottom: 4rem;
   margin-top: 10rem;
@@ -36,38 +68,6 @@
   font-size: 1.8rem;
   margin-bottom: 0;
 }
-.bg-grey {
-  background-color: #f6f6f6;
-  border-radius: .2rem;
-  padding: 1rem .5rem;
-}
-.bg-dark {
-  background: #2d3354;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-.bg-primary {
-  background: #5764c6;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-.navbar-brand .icon {
-  font-size: 1.3333em;
-  line-height: .8em;
-  vertical-align: -20%;
-}
-.grid-header .btn {
-  color: #666;
-}
-.grid-header .btn:hover,
-.grid-header .btn:focus,
-.grid-header .btn:active {
-  color: #444;
-  opacity: .75;
-}
-.grid-header .navbar-brand {
-  color: #444;
-}
 .grid-footer {
   color: #888;
   margin-bottom: 3rem;
@@ -76,8 +76,14 @@
 .grid-footer a {
   color: #666;
 }
-.empty .icon {
-  font-size: 4rem;
+.grid-ads {
+  border-radius: .2rem;
+  display: block;
+  height: 12rem;
+  margin: 2rem auto;
+  max-width: 64rem;
+  padding: 1rem;
+  width: 100%;
 }
 .docs-content .container {
   padding: 2rem 1rem;
@@ -110,7 +116,10 @@
 .docs-content .code .atv {
   color: #e06870;
 }
-.example-tile-icon {
+.docs-content .empty .icon {
+  font-size: 4rem;
+}
+.docs-content .example-tile-icon {
   -webkit-align-content: space-around;
   align-content: space-around;
   -webkit-align-items: center;

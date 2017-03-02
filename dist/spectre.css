@@ -1957,7 +1957,7 @@ code {
 }
 .menu .menu-item a:active,
 .menu .menu-item a.active {
-  background: #eff1fa;
+  background: #f7f8fc;
   color: #4452c0;
 }
 .menu .menu-header {
