@@ -2,7 +2,7 @@
 .btn {
   -webkit-appearance: none;
   background: #fff;
-  border: .1rem solid @core-color;
+  border: .1rem solid @core-primary-color;
   border-radius: @border-radius;
   color: @core-link-color;
   .control-transition();
@@ -22,37 +22,37 @@
     text-decoration: none;
   }
   &:hover {
-    background: @core-color;
-    border-color: darken(@core-color, 5%);
+    background: @core-primary-color;
+    border-color: @core-dark-primary-color;
     color: @core-light-color;
     text-decoration: none;
   }
   &:active,
   &.active {
-    background: darken(@core-color, 5%);
-    border-color: darken(@core-color, 10%);
+    background: @core-dark-primary-color;
+    border-color: darken(@core-dark-primary-color, 5%);
     color: @core-light-color;
   }
 
   // Button Primary
   &.btn-primary {
-    background: @core-color;
-    border-color: darken(@core-color, 5%);
+    background: @core-primary-color;
+    border-color: @core-dark-primary-color;
     color: @core-light-color;
     &:focus {
-      background: darken(@core-color, 4%);
-      border-color: darken(@core-color, 10%);
+      background: @core-dark-primary-color;
+      border-color: darken(@core-dark-primary-color, 5%);
       color: @core-light-color;
     }
     &:hover {
-      background: darken(@core-color, 6%);
-      border-color: darken(@core-color, 15%);
+      background: darken(@core-dark-primary-color, 2%);
+      border-color: darken(@core-dark-primary-color, 5%);
       color: @core-light-color;
     }
     &:active,
     &.active {
-      background: darken(@core-color, 8%);
-      border-color: darken(@core-color, 15%);
+      background: darken(@core-dark-primary-color, 4%);
+      border-color: darken(@core-dark-primary-color, 7%);
       color: @core-light-color;
     }
     &.loading {
@@ -71,11 +71,11 @@
     color: @core-link-color;
     &:focus,
     &:hover {
-      color: darken(@core-link-color, 15%);
+      color: @core-dark-link-color;
     }
     &:active,
     &.active {
-      color: darken(@core-link-color, 25%);
+      color: darken(@core-dark-link-color, 10%);
     }
   }
 

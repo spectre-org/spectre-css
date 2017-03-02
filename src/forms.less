@@ -22,7 +22,7 @@
   position: relative;
   width: 100%;
   &:focus {
-    border-color: @core-color;
+    border-color: @core-primary-color;
   }
   &[disabled] {
     background: @core-bg-color;
@@ -73,7 +73,7 @@
 
 // Form element: Input hint
 .form-input-hint {
-  color: @core-meta-color;
+  color: @core-gray-color;
   margin-top: .4rem;
 
   .has-success &,
@@ -116,7 +116,7 @@
     padding-right: 2.4rem;
   }
   &:focus {
-    border-color: @core-color;
+    border-color: @core-primary-color;
   }
   &::-ms-expand {
     display: none;
@@ -160,7 +160,7 @@
     position: absolute;
     width: .1rem;
     &:focus + .form-icon {
-      border-color: @core-color;
+      border-color: @core-primary-color;
       .control-shadow();
     }
   }
@@ -188,14 +188,11 @@
     vertical-align: top;
     width: 1.4rem;
   }
-  &:hover .form-icon {
-    border-color: darken(@control-color, 20%);
-  }
 
   input {
     &:checked + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: @core-primary-color;
+      border-color: @core-primary-color;
     }
     &:active + .form-icon {
       background: @core-border-color;
@@ -226,8 +223,8 @@
       }
     }
     &:indeterminate + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: @core-primary-color;
+      border-color: @core-primary-color;
       &::after {
         background: #fff;
         content: "";
@@ -302,8 +299,8 @@
 
   input {
     &:checked + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: @core-primary-color;
+      border-color: @core-primary-color;
       &::after {
         left: 1.2rem;
       }
@@ -321,7 +318,7 @@
   display: flex;
 
   .input-group-addon {
-    background: lighten(@core-border-color, 4%);
+    background: @core-bg-color;
     border: .1rem solid @control-color;
     border-radius: @border-radius;
     line-height: 1.6rem;

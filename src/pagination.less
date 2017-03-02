@@ -12,19 +12,19 @@
 
     a {
       border-radius: @border-radius;
-      color: lighten(@body-font-color, 20%);
+      color: @core-dark-gray-color;
       display: inline-block;
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
-        color: @core-color;
+        color: @core-primary-color;
       }
     }
 
     &.active {
       a {
-        background: @core-color;
+        background: @core-primary-color;
         color: @core-light-color;
       }
     }

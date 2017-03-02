@@ -482,7 +482,7 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 blockquote cite {
-  color: #b3b3b3;
+  color: #999;
 }
 ul,
 ol {
@@ -648,19 +648,19 @@ abbr[title] {
   color: #fff;
 }
 .btn.btn-primary:focus {
-  background: #4856c1;
+  background: #4452c0;
   border-color: #3b49af;
   color: #fff;
 }
 .btn.btn-primary:hover {
-  background: #404fbe;
-  border-color: #35419c;
+  background: #3f4eba;
+  border-color: #3b49af;
   color: #fff;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  background: #3e4cb6;
-  border-color: #35419c;
+  background: #3d4ab3;
+  border-color: #3946a7;
   color: #fff;
 }
 .btn.btn-primary.loading::after {
@@ -675,11 +675,11 @@ abbr[title] {
 }
 .btn.btn-link:focus,
 .btn.btn-link:hover {
-  color: #35419c;
+  color: #4452c0;
 }
 .btn.btn-link:active,
 .btn.btn-link.active {
-  color: #283176;
+  color: #35419c;
 }
 .btn.btn-sm {
   font-size: 1.2rem;
@@ -825,7 +825,7 @@ textarea.form-input {
   height: auto;
 }
 .form-input-hint {
-  color: #888;
+  color: #999;
   margin-top: .4rem;
 }
 .has-success .form-input-hint,
@@ -926,10 +926,6 @@ textarea.form-input {
   transition: all .2s ease;
   vertical-align: top;
   width: 1.4rem;
-}
-.form-checkbox:hover .form-icon,
-.form-radio:hover .form-icon {
-  border-color: #929292;
 }
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon {
@@ -1041,7 +1037,7 @@ textarea.form-input {
   display: -webkit-flex;
 }
 .input-group .input-group-addon {
-  background: #f9f9f9;
+  background: #f8f8f8;
   border: .1rem solid #c5c5c5;
   border-radius: .2rem;
   line-height: 1.6rem;
@@ -1111,7 +1107,7 @@ textarea.form-input {
 .label {
   background: #f8f8f8;
   border-radius: .2rem;
-  color: #888;
+  color: #666;
   display: inline-block;
   line-height: 1;
   padding: .3rem;
@@ -1206,7 +1202,7 @@ code {
   margin: 0 0 1rem 0;
 }
 .figure .figure-caption {
-  color: #888;
+  color: #666;
   margin-top: 1rem;
 }
 .container {
@@ -1644,7 +1640,7 @@ code {
   margin: 1.5rem 0 .5rem 0;
 }
 .empty .empty-meta {
-  color: #888;
+  color: #999;
 }
 .empty .empty-action {
   margin-top: 1.5rem;
@@ -1865,10 +1861,10 @@ code {
 }
 .card .card-title {
   font-size: 2rem;
-  line-height: 1;
+  line-height: 1.4;
 }
 .card .card-meta {
-  color: #888;
+  color: #999;
   font-size: 1.3rem;
 }
 .chip {
@@ -2072,7 +2068,7 @@ code {
   margin: 0;
 }
 .breadcrumb .breadcrumb-item:last-child {
-  color: #888;
+  color: #999;
 }
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
   color: #c5c5c5;
@@ -2208,7 +2204,7 @@ code {
   margin-left: 2rem;
 }
 .nav .nav a {
-  color: #808080;
+  color: #999;
 }
 .step {
   display: flex;
@@ -2240,7 +2236,7 @@ code {
   width: 100%;
 }
 .step .step-item a {
-  color: #888;
+  color: #999;
   display: inline-block;
   padding: 2rem 1rem 0;
   text-decoration: none;
@@ -2310,7 +2306,7 @@ code {
   font-weight: 500;
 }
 .tile .tile-meta {
-  color: #888;
+  color: #999;
   font-size: 1.3rem;
 }
 .tile.tile-centered {

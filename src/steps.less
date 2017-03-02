@@ -14,7 +14,7 @@
     position: relative;
 
     &:not(:first-child)::before {
-      background: @core-color;
+      background: @core-primary-color;
       content: "";
       height: .2rem;
       left: -50%;
@@ -24,13 +24,13 @@
     }
 
     a {
-      color: @core-meta-color;
+      color: @core-gray-color;
       display: inline-block;
       padding: 2rem 1rem 0;
       text-decoration: none;
 
       &::before {
-        background: @core-color;
+        background: @core-primary-color;
         border: .2rem solid @core-light-color;
         border-radius: 50%;
         content: "";
@@ -49,7 +49,7 @@
       a {
         &::before {
           background: @core-light-color;
-          border: .2rem solid @core-color;
+          border: .2rem solid @core-primary-color;
         }
       }
 
