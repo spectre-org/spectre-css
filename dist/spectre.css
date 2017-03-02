@@ -1679,6 +1679,7 @@ code {
   padding: .1em 0;
 }
 .avatar {
+  background: #5764c6;
   border-radius: 50%;
   color: #fff;
   display: inline-block;
@@ -1692,12 +1693,12 @@ code {
   width: 3.2rem;
 }
 .avatar.avatar-xs {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   height: 1.6rem;
   width: 1.6rem;
 }
 .avatar.avatar-sm {
-  font-size: 1.2rem;
+  font-size: 1rem;
   height: 2.4rem;
   width: 2.4rem;
 }
@@ -1707,7 +1708,7 @@ code {
   width: 4.8rem;
 }
 .avatar.avatar-xl {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   height: 6.4rem;
   width: 6.4rem;
 }
@@ -1736,12 +1737,13 @@ code {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  vertical-align: middle;
   z-index: 1;
 }
 .avatar.avatar-xs[data-initial]::before {
-  -webkit-transform: translate(-50%, -50%) scale(.65);
-  -ms-transform: translate(-50%, -50%) scale(.65);
-  transform: translate(-50%, -50%) scale(.65);
+  -webkit-transform: translate(-50%, -50%) scale(.5);
+  -ms-transform: translate(-50%, -50%) scale(.5);
+  transform: translate(-50%, -50%) scale(.5);
 }
 .badge {
   display: inline-block;

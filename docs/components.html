@@ -105,28 +105,28 @@
               <div class="form-group">
                 <div class="form-autocomplete">
                   <div class="form-autocomplete-input form-input">
-                    <div class="chip">
+                    <label class="chip">
                       Bruce Banner
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" />
                       Thor Odinson
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       <img src="img/avatar-4.png" class="avatar avatar-sm" />
                       Steve Rogers
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       Tony Stark
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip active">
+                    </label>
+                    <label class="chip active">
                       Natasha Romanoff
                       <button class="btn btn-clear"></button>
-                    </div>
+                    </label>
                     <input class="form-input" type="text" placeholder="" />
                   </div>
                 </div>
@@ -136,16 +136,16 @@
               <div class="form-group">
                 <div class="form-autocomplete">
                   <div class="form-autocomplete-input form-input is-focused">
-                    <div class="chip">
+                    <label class="chip">
                       Bruce Banner
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson"/>
                       Thor Odinson
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <input class="form-input" type="text" placeholder="typing here" value="S" />
+                    </label>
+                    <input class="form-input" type="text" placeholder="" value="S" />
                   </div>
                   <ul class="menu">
                     <li class="menu-item">
@@ -184,15 +184,18 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
   <span class="com">&lt;!-- autocomplete input container --&gt;</span>
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input form-input&quot;</span>&gt;
+
     <span class="com">&lt;!-- autocomplete chips --&gt;</span>
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
       &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span> /&gt;
       Thor Odinson
       &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/label</span>&gt;
+
     <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
     &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span> /&gt;
   &lt;<span class="tag">/div</span>&gt;
+
   <span class="com">&lt;!-- autocomplete suggestion list --&gt;</span>
   &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
     <span class="com">&lt;!-- menu list chips --&gt;</span>
@@ -556,36 +559,36 @@
           </section>
           <div class="columns">
             <div class="column col-12">
-              <div class="chip">
+              <label class="chip">
                 Crime
                 <button class="btn btn-clear"></button>
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 Drama
                 <button class="btn btn-clear"></button>
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 Biography
                 <button class="btn btn-clear"></button>
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 Mystery
                 <button class="btn btn-clear"></button>
-              </div>
+              </label>
             </div>
             <div class="column col-12">
-              <div class="chip">
+              <label class="chip">
                 <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5764c6;"></figure>
                 Tony Stark
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 <img src="img/avatar-1.png" class="avatar avatar-sm" />
                 Thor Odinson
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 <img src="img/avatar-4.png" class="avatar avatar-sm" />
                 Steve Rogers
-              </div>
+              </label>
             </div>
           </div>
           <section class="notes">
@@ -593,16 +596,16 @@
           </section>
 
 <!-- chips example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   Crime
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/label</span>&gt;
 
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> /&gt;
   Yan Zhu
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/div</span>&gt;</code>
+&lt;<span class="tag">/label</span>&gt;</code>
 </pre>
 
         </section>

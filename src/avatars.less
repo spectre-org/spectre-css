@@ -1,5 +1,6 @@
 // Avatars
 .avatar {
+  background: @core-primary-color;
   border-radius: 50%;
   color: @core-light-color;
   display: inline-block;
@@ -13,12 +14,12 @@
   width: 3.2rem;
 
   &.avatar-xs {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     height: 1.6rem;
     width: 1.6rem;
   }
   &.avatar-sm {
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 2.4rem;
     width: 2.4rem;
   }
@@ -28,7 +29,7 @@
     width: 4.8rem;
   }
   &.avatar-xl {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     height: 6.4rem;
     width: 6.4rem;
   }
@@ -58,12 +59,13 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    vertical-align: middle;
     z-index: 1;
   }
 
   &.avatar-xs {
     &[data-initial]::before {
-      transform: translate(-50%, -50%) scale(.65);
+      transform: translate(-50%, -50%) scale(.5);
     }
   }
 }
