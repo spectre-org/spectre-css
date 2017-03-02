@@ -6,7 +6,7 @@
 // Form element: Input boxes
 .form-input {
   appearance: none;
-  background: #fff;
+  background: @core-light-bg-color;
   background-image: none;
   border: .1rem solid @control-color;
   border-radius: @border-radius;
@@ -111,7 +111,7 @@
     }
   }
   &:not([multiple]) {
-    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
+    background: @core-light-bg-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
     padding-right: 2.4rem;
   }
@@ -208,7 +208,7 @@
     &:checked + .form-icon {
       &::after {
         background-clip: padding-box;
-        border: .2rem solid #fff;
+        border: .2rem solid @core-light-color;
         border-left-width: 0;
         border-top-width: 0;
         content: "";
@@ -226,7 +226,7 @@
       background: @core-primary-color;
       border-color: @core-primary-color;
       &::after {
-        background: #fff;
+        background: @core-light-bg-color;
         content: "";
         height: .2rem;
         left: 50%;
@@ -246,7 +246,7 @@
 
   input:checked + .form-icon {
     &::after {
-      background: #fff;
+      background: @core-light-bg-color;
       border-radius: @border-radius;
       content: "";
       height: .4rem;
@@ -284,7 +284,7 @@
     vertical-align: top;
     width: 3rem;
     &::after {
-      background: #fff;
+      background: @core-light-bg-color;
       border-radius: .8rem;
       content: "";
       display: block;
