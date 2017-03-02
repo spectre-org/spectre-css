@@ -6,7 +6,8 @@
   margin: 0;
   padding: .5rem 0;
 
-  .tile-icon {
+  .tile-icon,
+  .tile-action {
     flex: 0 0 auto;
   }
   .tile-content {
@@ -18,16 +19,12 @@
       padding-right: 1rem;
     }
   }
-  .tile-action {
-    flex: 0 0 auto;
-  }
   .tile-title {
     font-size: 1.6rem;
     font-weight: 500;
   }
   .tile-meta {
     color: @core-gray-color;
-    font-size: 1.3rem;
   }
 
   &.tile-centered {
@@ -35,6 +32,11 @@
 
     .tile-content {
       overflow: hidden;
+    }
+
+    .tile-title,
+    .tile-meta {
+      .text-ellipsis;
     }
   }
 }
