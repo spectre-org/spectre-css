@@ -474,7 +474,7 @@ u {
   text-decoration-skip: ink edges;
 }
 blockquote {
-  border-left: .2rem solid #ddd;
+  border-left: .2rem solid #efefef;
   margin-left: 0;
   padding: 1rem 2rem;
 }
