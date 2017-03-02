@@ -108,6 +108,7 @@
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #5764c6;
+  border: 0;
   border-radius: 50%;
   height: 1.2rem;
   margin-top: -.4rem;

@@ -791,7 +791,7 @@ abbr[title] {
   border-color: #5764c6;
 }
 .form-input[disabled] {
-  background: #eeeff2;
+  background: #f8f8f8;
 }
 .form-input.input-sm {
   font-size: 1.2rem;
@@ -1655,21 +1655,16 @@ code {
 .form-autocomplete .form-autocomplete-input {
   -webkit-align-content: flex-start;
   align-content: flex-start;
-  background: #fff;
-  border: .1rem solid #c5c5c5;
-  border-radius: .2rem;
-  color: #333;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   display: -webkit-flex;
   -ms-flex-line-pack: start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  height: auto;
   min-height: 3.6rem;
-  outline: 0;
   padding: .1rem 0 .1rem .2rem;
-  width: 100%;
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
   border-color: #5764c6;
@@ -1966,7 +1961,7 @@ code {
   color: #4452c0;
 }
 .menu .menu-header {
-  color: #ccc;
+  color: #c5c5c5;
   display: block;
   font-size: 1.2rem;
   line-height: 1.8rem;
