@@ -4,9 +4,10 @@
   content: "0.2.4";
 }
 /* Spectre docs style */
-.bg-grey {
+.bg-gray {
   background-color: #f6f6f6;
   border-radius: .2rem;
+  color: #666;
   padding: 1rem .5rem;
 }
 .bg-dark {
@@ -89,6 +90,7 @@
   padding: 2rem 1rem;
 }
 .docs-content header {
+  color: #444;
   padding-top: 2rem;
 }
 .docs-content .notes {
@@ -117,7 +119,7 @@
   color: #e06870;
 }
 .docs-content .empty .icon {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 .docs-content .example-tile-icon {
   -webkit-align-content: space-around;

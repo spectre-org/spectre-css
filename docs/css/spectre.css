@@ -1630,12 +1630,13 @@ code {
 .empty {
   background: #f8f8f8;
   border-radius: .2rem;
+  color: #666;
   padding: 4rem;
   text-align: center;
 }
-.empty .empty-title {
-  font-size: 1.8rem;
-  margin: 1.5rem 0 .5rem 0;
+.empty .empty-title,
+.empty .empty-meta {
+  margin: 1rem auto;
 }
 .empty .empty-meta {
   color: #999;
