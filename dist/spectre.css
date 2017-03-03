@@ -1569,29 +1569,51 @@ code {
     width: 8.33333333%;
   }
 }
+.show-xs,
+.show-sm,
+.show-md,
+.show-lg,
+.show-xl {
+  display: none !important;
+}
 @media screen and (max-width: 480px) {
   .hide-xs {
     display: none !important;
+  }
+  .show-xs {
+    display: block !important;
   }
 }
 @media screen and (max-width: 600px) {
   .hide-sm {
     display: none !important;
   }
+  .show-sm {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 840px) {
   .hide-md {
     display: none !important;
+  }
+  .show-md {
+    display: block !important;
   }
 }
 @media screen and (max-width: 960px) {
   .hide-lg {
     display: none !important;
   }
+  .show-lg {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 1280px) {
   .hide-xl {
     display: none !important;
+  }
+  .show-xl {
+    display: block !important;
   }
 }
 .navbar {

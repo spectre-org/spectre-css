@@ -6,22 +6,21 @@
 
 /* Spectre docs style */
 .bg-gray {
-  background-color: #f6f6f6;
+  background: #f6f6f6;
   color: #666;
-  padding: 1rem .5rem;
-  border-radius: .2rem;
+  padding: 1rem;
 }
 
 .bg-dark {
-  background: #2d3354;
+  background: #333;
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 
 .bg-primary {
   background: #5764c6;
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 
 .grid-header {
@@ -118,6 +117,27 @@
     color: #666;
   }
 
+  .docs-block {
+    border-radius: .2rem;
+    padding: 1rem .5rem;
+  }
+
+  .docs-dot {
+    border-radius: 50%;
+    display: block;
+    height: 1rem;
+    margin: auto;
+    padding: 0;
+    width: 1rem;
+  }
+
+  .docs-table {
+    th,
+    td {
+      padding: 1rem .5rem;
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -186,16 +206,9 @@
 .docs-nav-clear {
   display: none;
 }
-.show-xs {
-  display: none !important;
-}
 
 // Spectre.css Docs Mobile experience
 @media screen and (max-width: 480px) {
-  .show-xs {
-    display: block !important;
-  }
-
   .grid-hero {
     h2 {
       font-size: 1.8rem;

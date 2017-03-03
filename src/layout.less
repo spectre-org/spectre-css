@@ -350,28 +350,50 @@
 }
 
 // Responsive breakpoint system
+.show-xs,
+.show-sm,
+.show-md,
+.show-lg,
+.show-xl {
+  display: none !important;
+}
 @media screen and (max-width: @size-xs) {
   .hide-xs {
     display: none !important;
+  }
+  .show-xs {
+    display: block !important;
   }
 }
 @media screen and (max-width: @size-sm) {
   .hide-sm {
     display: none !important;
   }
+  .show-sm {
+    display: block !important;
+  }
 }
 @media screen and (max-width: @size-md) {
   .hide-md {
     display: none !important;
+  }
+  .show-md {
+    display: block !important;
   }
 }
 @media screen and (max-width: @size-lg) {
   .hide-lg {
     display: none !important;
   }
+  .show-lg {
+    display: block !important;
+  }
 }
 @media screen and (max-width: @size-xl) {
   .hide-xl {
     display: none !important;
+  }
+  .show-xl {
+    display: block !important;
   }
 }
