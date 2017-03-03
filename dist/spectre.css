@@ -1210,15 +1210,8 @@ code {
   padding-right: 1rem;
   width: 100%;
 }
-@media screen and (min-width: 980px) {
-  .grid-960 {
-    width: 98rem;
-  }
-}
-@media screen and (min-width: 500px) {
-  .grid-480 {
-    width: 50rem;
-  }
+.container.grid-960 {
+  max-width: 98rem;
 }
 .columns {
   display: flex;

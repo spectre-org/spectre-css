@@ -1,6 +1,6 @@
 // Menus
 .menu {
-  background: @core-light-bg-color;
+  background: @light-bg-color;
   border-radius: @border-radius;
   list-style: none;
   margin: 0;
@@ -28,12 +28,12 @@
       text-decoration: none;
       &:focus,
       &:hover {
-        color: @core-link-color;
+        color: @link-color;
       }
       &:active,
       &.active {
-        background: @core-secondary-color;
-        color: @core-dark-link-color;
+        background: @secondary-color;
+        color: @dark-link-color;
       }
     }
   }
@@ -47,7 +47,7 @@
     position: relative;
 
     &::after {
-      border-bottom: .1rem solid @core-border-color;
+      border-bottom: .1rem solid @border-color;
       content: "";
       display: block;
       height: .1rem;
@@ -57,7 +57,7 @@
     }
 
     .menu-header-text {
-      background: @core-light-bg-color;
+      background: @light-bg-color;
       display: inline-block;
       padding: 0 .8rem;
       position: relative;

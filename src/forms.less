@@ -6,7 +6,7 @@
 // Form element: Input boxes
 .form-input {
   appearance: none;
-  background: @core-light-bg-color;
+  background: @light-bg-color;
   background-image: none;
   border: .1rem solid @control-color;
   border-radius: @border-radius;
@@ -22,10 +22,10 @@
   position: relative;
   width: 100%;
   &:focus {
-    border-color: @core-primary-color;
+    border-color: @primary-color;
   }
   &[disabled] {
-    background: @core-bg-color;
+    background: @bg-color;
   }
 
   // Input sizes
@@ -72,7 +72,7 @@
 
 // Form element: Input hint
 .form-input-hint {
-  color: @core-gray-color;
+  color: @gray-color;
   margin-top: .4rem;
 
   .has-success &,
@@ -110,12 +110,12 @@
     }
   }
   &:not([multiple]) {
-    background: @core-light-bg-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
+    background: @light-bg-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
     padding-right: 2.4rem;
   }
   &:focus {
-    border-color: @core-primary-color;
+    border-color: @primary-color;
   }
   &::-ms-expand {
     display: none;
@@ -158,7 +158,7 @@
     position: absolute;
     width: .1rem;
     &:focus + .form-icon {
-      border-color: @core-primary-color;
+      border-color: @primary-color;
       .control-shadow();
     }
   }
@@ -189,11 +189,11 @@
 
   input {
     &:checked + .form-icon {
-      background: @core-primary-color;
-      border-color: @core-primary-color;
+      background: @primary-color;
+      border-color: @primary-color;
     }
     &:active + .form-icon {
-      background: @core-border-color;
+      background: @border-color;
     }
   }
 }
@@ -206,7 +206,7 @@
     &:checked + .form-icon {
       &::after {
         background-clip: padding-box;
-        border: .2rem solid @core-light-color;
+        border: .2rem solid @light-color;
         border-left-width: 0;
         border-top-width: 0;
         content: "";
@@ -221,10 +221,10 @@
       }
     }
     &:indeterminate + .form-icon {
-      background: @core-primary-color;
-      border-color: @core-primary-color;
+      background: @primary-color;
+      border-color: @primary-color;
       &::after {
-        background: @core-light-bg-color;
+        background: @light-bg-color;
         content: "";
         height: .2rem;
         left: 50%;
@@ -244,7 +244,7 @@
 
   input:checked + .form-icon {
     &::after {
-      background: @core-light-bg-color;
+      background: @light-bg-color;
       border-radius: @border-radius;
       content: "";
       height: .4rem;
@@ -282,7 +282,7 @@
     vertical-align: top;
     width: 3rem;
     &::after {
-      background: @core-light-bg-color;
+      background: @light-bg-color;
       border-radius: .8rem;
       content: "";
       display: block;
@@ -297,15 +297,15 @@
 
   input {
     &:checked + .form-icon {
-      background: @core-primary-color;
-      border-color: @core-primary-color;
+      background: @primary-color;
+      border-color: @primary-color;
       &::after {
         left: 1.2rem;
       }
     }
     &:active + .form-icon {
       &::after {
-        background: @core-border-color;
+        background: @border-color;
       }
     }
   }
@@ -316,7 +316,7 @@
   display: flex;
 
   .input-group-addon {
-    background: @core-bg-color;
+    background: @bg-color;
     border: .1rem solid @control-color;
     border-radius: @border-radius;
     line-height: 2rem;
