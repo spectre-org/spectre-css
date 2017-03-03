@@ -27,12 +27,12 @@
   line-height: .8em;
   vertical-align: -20%;
 }
-.grid-header .btn {
+.grid-header .btn-link {
   color: #666;
 }
-.grid-header .btn:hover,
-.grid-header .btn:focus,
-.grid-header .btn:active {
+.grid-header .btn-link:hover,
+.grid-header .btn-link:focus,
+.grid-header .btn-link:active {
   color: #444;
   opacity: .75;
 }
