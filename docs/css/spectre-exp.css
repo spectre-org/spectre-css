@@ -5,6 +5,7 @@
   appearance: none;
   background: #f8f8f8;
   border: 0;
+  border-radius: .2rem;
   display: block;
   height: 1.6rem;
   width: 100%;
@@ -31,21 +32,18 @@
   background: #e85600;
 }
 .meter::-moz-meter-bar,
-.meter::-moz-meter-optimum,
-.meter::-moz-meter-sub-optimum,
-.meter::-moz-meter-sub-sub-optimum {
+.meter:-moz-meter-optimum,
+.meter:-moz-meter-sub-optimum,
+.meter:-moz-meter-sub-sub-optimum {
   border-radius: .2rem;
 }
-.meter::-moz-meter-bar {
-  background: #f8f8f8;
-}
-.meter:-moz-meter-optimum {
+.meter:-moz-meter-optimum::-moz-meter-bar {
   background: #32b643;
 }
-.meter:-moz-meter-sub-optimum {
+.meter:-moz-meter-sub-optimum::-moz-meter-bar {
   background: #ffb700;
 }
-.meter:-moz-meter-sub-sub-optimum {
+.meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
   background: #e85600;
 }
 .progress {

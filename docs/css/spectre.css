@@ -1119,6 +1119,10 @@ textarea.form-input {
   background: #32b643;
   color: #fff;
 }
+.label.label-warning {
+  background: #ffb700;
+  color: #fff;
+}
 .label.label-danger {
   background: #e85600;
   color: #fff;
