@@ -2216,7 +2216,7 @@ code {
   color: #5764c6;
 }
 .nav .nav-item.active > a {
-  color: #333;
+  color: #666;
   font-weight: bold;
 }
 .nav .nav-item.active > a:focus,
