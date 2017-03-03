@@ -6,40 +6,39 @@
 // Form element: Input boxes
 .form-input {
   appearance: none;
-  background: #fff;
+  background: @light-bg-color;
   background-image: none;
-  border: .1rem solid @control-color;
+  border: .1rem solid @light-gray-color;
   border-radius: @border-radius;
   color: @body-font-color;
   .control-transition();
   display: block;
   font-size: 1.4rem;
   height: 3.2rem;
-  line-height: 1.8rem;
+  line-height: 2rem;
   max-width: 100%;
   outline: 0;
-  padding: .6rem .8rem;
+  padding: .5rem .8rem;
   position: relative;
   width: 100%;
   &:focus {
-    border-color: @core-color;
+    border-color: @primary-color;
   }
   &[disabled] {
-    background: #eeeff2;
+    background: @bg-color;
   }
 
   // Input sizes
   &.input-sm {
     font-size: 1.2rem;
     height: 2.4rem;
-    padding: .3rem .6rem;
+    padding: .1rem .6rem;
   }
 
   &.input-lg {
     font-size: 1.6rem;
-    height: 4.2rem;
-    line-height: 2rem;
-    padding: 1rem .8rem;
+    height: 4rem;
+    padding: .9rem .8rem;
   }
 
   &.input-inline {
@@ -73,7 +72,7 @@
 
 // Form element: Input hint
 .form-input-hint {
-  color: @core-meta-color;
+  color: @gray-color;
   margin-top: .4rem;
 
   .has-success &,
@@ -97,10 +96,10 @@
 // Form element: Select
 .form-select {
   appearance: none;
-  border: .1rem solid @control-color;
+  border: .1rem solid @light-gray-color;
   border-radius: @border-radius;
   font-size: 1.4rem;
-  line-height: 1.6rem;
+  line-height: 2rem;
   min-width: @control-min-width;
   outline: 0;
   padding: .5rem .8rem;
@@ -111,12 +110,12 @@
     }
   }
   &:not([multiple]) {
-    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
+    background: @light-bg-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
     padding-right: 2.4rem;
   }
   &:focus {
-    border-color: @core-color;
+    border-color: @primary-color;
   }
   &::-ms-expand {
     display: none;
@@ -126,14 +125,13 @@
   &.select-sm {
     font-size: 1.2rem;
     height: 2.4rem;
-    padding: .4rem 2rem .4rem .6rem;
+    padding: .1rem 2rem .1rem .6rem;
   }
 
   &.select-lg {
     font-size: 1.6rem;
-    height: 4.2rem;
-    line-height: 2rem;
-    padding: 1rem 2.4rem 1rem .8rem;
+    height: 4rem;
+    padding: .9rem 2.4rem .9rem .8rem;
   }
 
   // Select status
@@ -160,7 +158,7 @@
     position: absolute;
     width: .1rem;
     &:focus + .form-icon {
-      border-color: @core-color;
+      border-color: @primary-color;
       .control-shadow();
     }
   }
@@ -174,7 +172,7 @@
   position: relative;
 
   .form-icon {
-    border: .1rem solid @control-color;
+    border: .1rem solid @light-gray-color;
     .control-transition();
     display: inline-block;
     font-size: 1.4rem;
@@ -188,17 +186,14 @@
     vertical-align: top;
     width: 1.4rem;
   }
-  &:hover .form-icon {
-    border-color: darken(@control-color, 20%);
-  }
 
   input {
     &:checked + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: @primary-color;
+      border-color: @primary-color;
     }
     &:active + .form-icon {
-      background: @core-border-color;
+      background: @border-color;
     }
   }
 }
@@ -211,7 +206,7 @@
     &:checked + .form-icon {
       &::after {
         background-clip: padding-box;
-        border: .2rem solid #fff;
+        border: .2rem solid @light-color;
         border-left-width: 0;
         border-top-width: 0;
         content: "";
@@ -226,10 +221,10 @@
       }
     }
     &:indeterminate + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: @primary-color;
+      border-color: @primary-color;
       &::after {
-        background: #fff;
+        background: @light-bg-color;
         content: "";
         height: .2rem;
         left: 50%;
@@ -249,7 +244,7 @@
 
   input:checked + .form-icon {
     &::after {
-      background: #fff;
+      background: @light-bg-color;
       border-radius: @border-radius;
       content: "";
       height: .4rem;
@@ -272,9 +267,9 @@
   position: relative;
 
   .form-icon {
-    background: @control-color;
+    background: @light-gray-color;
     background-clip: padding-box;
-    border: .1rem solid @control-color;
+    border: .1rem solid @light-gray-color;
     border-radius: .9rem;
     display: inline-block;
     height: 1.8rem;
@@ -287,7 +282,7 @@
     vertical-align: top;
     width: 3rem;
     &::after {
-      background: #fff;
+      background: @light-bg-color;
       border-radius: .8rem;
       content: "";
       display: block;
@@ -302,15 +297,15 @@
 
   input {
     &:checked + .form-icon {
-      background: @core-color;
-      border-color: @core-color;
+      background: @primary-color;
+      border-color: @primary-color;
       &::after {
         left: 1.2rem;
       }
     }
     &:active + .form-icon {
       &::after {
-        background: @core-border-color;
+        background: @border-color;
       }
     }
   }
@@ -321,20 +316,20 @@
   display: flex;
 
   .input-group-addon {
-    background: lighten(@core-border-color, 4%);
-    border: .1rem solid @control-color;
+    background: @bg-color;
+    border: .1rem solid @light-gray-color;
     border-radius: @border-radius;
-    line-height: 1.6rem;
-    padding: .7rem .8rem;
+    line-height: 2rem;
+    padding: .5rem .8rem;
 
     &.addon-sm {
       font-size: 1.2rem;
-      padding: .3rem .6rem;
+      padding: .1rem .6rem;
     }
     &.addon-lg {
       font-size: 1.6rem;
       line-height: 2rem;
-      padding: 1rem .8rem;
+      padding: .9rem .8rem;
     }
   }
   .input-group-addon,

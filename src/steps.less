@@ -14,7 +14,7 @@
     position: relative;
 
     &:not(:first-child)::before {
-      background: @core-color;
+      background: @primary-color;
       content: "";
       height: .2rem;
       left: -50%;
@@ -24,14 +24,14 @@
     }
 
     a {
-      color: @core-meta-color;
+      color: @gray-color;
       display: inline-block;
       padding: 2rem 1rem 0;
       text-decoration: none;
 
       &::before {
-        background: @core-color;
-        border: .2rem solid @core-light-color;
+        background: @primary-color;
+        border: .2rem solid @light-color;
         border-radius: 50%;
         content: "";
         display: block;
@@ -48,20 +48,20 @@
     &.active {
       a {
         &::before {
-          background: @core-light-color;
-          border: .2rem solid @core-color;
+          background: @light-color;
+          border: .2rem solid @primary-color;
         }
       }
 
       & ~ .step-item {
         &::before {
-          background: @core-border-color;
+          background: @border-color;
         }
 
         a {
 
           &::before {
-            background: @control-color;
+            background: @light-gray-color;
           }
         }
       }

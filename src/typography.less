@@ -31,7 +31,7 @@ h6 {
 }
 p {
   line-height: 2.4rem;
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
 }
 a,
 ins,
@@ -39,7 +39,7 @@ u {
   text-decoration-skip: ink edges;
 }
 blockquote {
-  border-left: .2rem solid #ddd;
+  border-left: .2rem solid @border-color;
   margin-left: 0;
   padding: 1rem 2rem;
 
@@ -48,7 +48,7 @@ blockquote {
   }
 
   cite {
-    color: lighten(@body-font-color, 50%);
+    color: @gray-color;
   }
 }
 ul,
@@ -88,12 +88,12 @@ dl {
   }
 }
 mark {
-  background: lighten(@control-color-warning, 35%);
+  background: @highlight-color;
   .label-base();
 }
 kbd {
-  background: @core-dark-color;
-  color: @core-light-color;
+  background: @dark-color;
+  color: @light-color;
   .label-base();
 }
 abbr[title] {

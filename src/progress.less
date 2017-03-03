@@ -2,10 +2,10 @@
 // Credit: https://css-tricks.com/html5-progress-element/
 .progress {
   appearance: none;
-  background: @core-border-color;
+  background: @border-color;
   border: 0;
   border-radius: @border-radius;
-  color: @core-color;
+  color: @primary-color;
   height: .4rem;
   position: relative;
   width: 100%;
@@ -16,18 +16,18 @@
   }
 
   &::-webkit-progress-value {
-    background: @core-color;
+    background: @primary-color;
     border-radius: @border-radius;
   }
 
   &::-moz-progress-bar {
-    background: @core-color;
+    background: @primary-color;
     border-radius: @border-radius;
   }
 
   &:indeterminate {
     animation: progress-indeterminate 1.5s linear infinite;
-    background: @core-border-color linear-gradient(to right, @core-color 30%, @core-border-color 30%) top left / 150% 150% no-repeat;
+    background: @border-color linear-gradient(to right, @primary-color 30%, @border-color 30%) top left / 150% 150% no-repeat;
 
     &::-moz-progress-bar {
       background: transparent;

@@ -12,20 +12,20 @@
 
     a {
       border-radius: @border-radius;
-      color: lighten(@body-font-color, 20%);
+      color: @dark-gray-color;
       display: inline-block;
       padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
-        color: @core-color;
+        color: @primary-color;
       }
     }
 
     &.active {
       a {
-        background: @core-color;
-        color: @core-light-color;
+        background: @primary-color;
+        color: @light-color;
       }
     }
 

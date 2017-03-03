@@ -1,10 +1,50 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.4";
+  content: "0.2.5";
 }
 
 /* Spectre docs style */
+.bg-gray {
+  background: #f6f6f6;
+  color: #666;
+  padding: 1rem;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.bg-primary {
+  background: #5764c6;
+  color: #fff;
+  padding: 1rem;
+}
+
+.grid-header {
+  .navbar-brand {
+    color: #444;
+
+    .icon {
+      font-size: 1.3333em;
+      line-height: .8em;
+      vertical-align: -20%;
+    }
+  }
+
+  .btn {
+    color: #666;
+    &:hover,
+    &:focus,
+    &:active {
+      color: #444;
+      opacity: .75;
+    }
+  }
+}
+
 .grid-hero {
   margin-top: 10rem;
   margin-bottom: 4rem;
@@ -42,47 +82,6 @@
   }
 }
 
-.bg-grey {
-  background-color: #f6f6f6;
-  padding: 1rem .5rem;
-  border-radius: .2rem;
-}
-
-.bg-dark {
-  background: #2d3354;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-
-.bg-primary {
-  background: #5764c6;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-
-.navbar-brand {
-  .icon {
-    font-size: 1.3333em;
-    line-height: .8em;
-    vertical-align: -20%;
-  }
-}
-
-.grid-header {
-  .btn {
-    color: #666;
-    &:hover,
-    &:focus,
-    &:active {
-      color: #444;
-      opacity: .75;
-    }
-  }
-  .navbar-brand {
-    color: #444;
-  }
-}
-
 .grid-footer {
   color: #888;
   margin-top: 4rem;
@@ -93,8 +92,14 @@
   }
 }
 
-.empty .icon {
-  font-size: 4rem;
+.grid-ads {
+  border-radius: .2rem;
+  display: block;
+  height: 12rem;
+  margin: 2rem auto;
+  max-width: 64rem;
+  padding: 1rem;
+  width: 100%
 }
 
 .docs-content {
@@ -103,12 +108,34 @@
   }
 
   header {
+    color: #444;
     padding-top: 2rem;
   }
 
   .notes {
     margin: 4rem 0;
     color: #666;
+  }
+
+  .docs-block {
+    border-radius: .2rem;
+    padding: 1rem .5rem;
+  }
+
+  .docs-dot {
+    border-radius: 50%;
+    display: block;
+    height: 1rem;
+    margin: auto;
+    padding: 0;
+    width: 1rem;
+  }
+
+  .docs-table {
+    th,
+    td {
+      padding: 1.5rem .5rem;
+    }
   }
 
   h1,
@@ -135,18 +162,22 @@
       color: #e06870;
     }
   }
-}
 
-.example-tile-icon {
-  align-content: space-around;
-  align-items: center;
-  background: #5764c6;
-  border-radius: .2rem;
-  color: #fff;
-  display: flex;
-  font-size: 2.4rem;
-  height: 4rem;
-  width: 4rem;
+  .empty .icon {
+    font-size: 6rem;
+  }
+
+  .example-tile-icon {
+    align-content: space-around;
+    align-items: center;
+    background: #5764c6;
+    border-radius: .2rem;
+    color: #fff;
+    display: flex;
+    font-size: 2.4rem;
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -154,7 +185,7 @@
     padding-bottom: 6rem;
     padding-top: 6rem;
 
-    .docs-nav {
+      .docs-nav {
       position: relative;
     }
 
@@ -175,16 +206,9 @@
 .docs-nav-clear {
   display: none;
 }
-.show-xs {
-  display: none !important;
-}
 
 // Spectre.css Docs Mobile experience
 @media screen and (max-width: 480px) {
-  .show-xs {
-    display: block !important;
-  }
-
   .grid-hero {
     h2 {
       font-size: 1.8rem;

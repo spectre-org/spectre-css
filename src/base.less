@@ -22,12 +22,14 @@ body {
 }
 
 a {
-  color: @core-link-color;
+  color: @link-color;
   text-decoration: none;
 
   &:focus,
-  &:hover {
-    color: darken(@core-link-color, 10%);
+  &:hover,
+  &:active,
+  &.active {
+    color: @dark-link-color;
     text-decoration: underline;
   }
 }

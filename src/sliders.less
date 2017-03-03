@@ -10,7 +10,8 @@
   // Slider Thumb
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: @core-color;
+    background: @primary-color;
+    border: 0;
     border-radius: 50%;
     height: 1.2rem;
     margin-top: -.4rem;
@@ -18,7 +19,7 @@
     width: 1.2rem;
   }
   &::-moz-range-thumb {
-    background: @core-color;
+    background: @primary-color;
     border: 0;
     border-radius: 50%;
     height: 1.2rem;
@@ -26,7 +27,7 @@
     width: 1.2rem;
   }
   &::-ms-thumb {
-    background: @core-color;
+    background: @primary-color;
     border: 0;
     border-radius: 50%;
     height: 1.2rem;
@@ -48,24 +49,24 @@
 
   // Slider Track
   &::-webkit-slider-runnable-track {
-    background: @core-border-color;
+    background: @border-color;
     border-radius: @border-radius;
     height: .4rem;
     width: 100%;
   }
   &::-moz-range-track {
-    background: @core-border-color;
+    background: @border-color;
     border-radius: @border-radius;
     height: .4rem;
     width: 100%;
   }
   &::-ms-track {
-    background: @core-border-color;
+    background: @border-color;
     border-radius: @border-radius;
     height: .4rem;
     width: 100%;
   }
   &::-ms-fill-lower {
-    background: @core-color;
+    background: @primary-color;
   }
 }

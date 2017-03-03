@@ -19,21 +19,30 @@
 @control-min-width: 18rem;
 @border-radius: .2rem;
 
-// Colors
-@core-color: #5764c6;
-@core-secondary-color: lighten(@core-color, 40%);
-@core-dark-color: #333;
-@core-grey-color: #666;
-@core-light-color: #fff;
-@core-meta-color: #888;
-@core-link-color: #5764c6;
-@core-border-color: #efefef;
-@core-bg-color: #f8f8f8;
-@control-color: #c5c5c5;
+// Core colors
+@primary-color: #5764c6;
+@dark-primary-color: darken(@primary-color, 5%);
+@light-primary-color: lighten(@primary-color, 42%);
+@dark-color: #333;
+@dark-gray-color: #666;
+@gray-color: #999;
+@light-gray-color: #ccc;
+@light-color: #fff;
+@link-color: @primary-color;
+@dark-link-color: darken(@link-color, 10%);
+@border-color: #efefef;
+@bg-color: #f8f8f8;
+@dark-bg-color: darken(@bg-color, 3%);
+@light-bg-color: #fff;
+
+// Control colors
 @control-color-success: #32b643;
 @control-color-warning: #ffb700;
 @control-color-danger: #e85600;
+
+// Meta colors
 @code-color: #e06870;
+@highlight-color: #ffe9b3;
 
 // Responsive breakpoints
 @size-xs: 480px;
@@ -41,3 +50,4 @@
 @size-md: 840px;
 @size-lg: 960px;
 @size-xl: 1280px;
+@size-2x: 1440px;

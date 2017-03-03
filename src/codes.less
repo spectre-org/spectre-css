@@ -1,19 +1,19 @@
 // Codes
 code {
-  background: @core-bg-color;
+  background: @bg-color;
   color: @code-color;
   .label-base();
 }
 
 .code {
   border-radius: @border-radius;
-  color: @core-grey-color;
+  color: @dark-gray-color;
   line-height: 2rem;
   position: relative;
 
   &::before {
     content: attr(data-lang);
-    color: @control-color;
+    color: @light-gray-color;
     font-size: 1.2rem;
     position: absolute;
     right: 1rem;

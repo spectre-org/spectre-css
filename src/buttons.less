@@ -1,10 +1,10 @@
 // Buttons
 .btn {
   -webkit-appearance: none;
-  background: #fff;
-  border: .1rem solid @core-color;
+  background: @light-bg-color;
+  border: .1rem solid @primary-color;
   border-radius: @border-radius;
-  color: @core-link-color;
+  color: @link-color;
   .control-transition();
   cursor: pointer;
   display: inline-block;
@@ -18,46 +18,46 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    background: lighten(@core-secondary-color, 2%);
+    background: @light-primary-color;
     text-decoration: none;
   }
   &:hover {
-    background: @core-color;
-    border-color: darken(@core-color, 5%);
-    color: @core-light-color;
+    background: @primary-color;
+    border-color: @dark-primary-color;
+    color: @light-color;
     text-decoration: none;
   }
   &:active,
   &.active {
-    background: darken(@core-color, 5%);
-    border-color: darken(@core-color, 10%);
-    color: @core-light-color;
+    background: @dark-primary-color;
+    border-color: darken(@dark-primary-color, 5%);
+    color: @light-color;
   }
 
   // Button Primary
   &.btn-primary {
-    background: @core-color;
-    border-color: darken(@core-color, 5%);
-    color: @core-light-color;
+    background: @primary-color;
+    border-color: @dark-primary-color;
+    color: @light-color;
     &:focus {
-      background: darken(@core-color, 4%);
-      border-color: darken(@core-color, 10%);
-      color: @core-light-color;
+      background: @dark-primary-color;
+      border-color: darken(@dark-primary-color, 5%);
+      color: @light-color;
     }
     &:hover {
-      background: darken(@core-color, 6%);
-      border-color: darken(@core-color, 15%);
-      color: @core-light-color;
+      background: darken(@dark-primary-color, 2%);
+      border-color: darken(@dark-primary-color, 5%);
+      color: @light-color;
     }
     &:active,
     &.active {
-      background: darken(@core-color, 8%);
-      border-color: darken(@core-color, 15%);
-      color: @core-light-color;
+      background: darken(@dark-primary-color, 4%);
+      border-color: darken(@dark-primary-color, 7%);
+      color: @light-color;
     }
     &.loading {
       &::after {
-        border-color: @core-light-color;
+        border-color: @light-color;
         border-right-color: transparent;
         border-top-color: transparent;
       }
@@ -68,14 +68,12 @@
   &.btn-link {
     background: transparent;
     border-color: transparent;
-    color: @core-link-color;
+    color: @link-color;
     &:focus,
-    &:hover {
-      color: darken(@core-link-color, 15%);
-    }
+    &:hover,
     &:active,
     &.active {
-      color: darken(@core-link-color, 25%);
+      color: @dark-link-color;
     }
   }
 

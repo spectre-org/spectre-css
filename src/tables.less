@@ -8,7 +8,7 @@
   &.table-striped {
     tbody {
       tr:nth-of-type(odd) {
-        background: @core-bg-color;
+        background: @bg-color;
       }
     }
   }
@@ -16,7 +16,7 @@
     tbody {
       tr {
         &:hover {
-          background: darken(@core-bg-color, 3%);
+          background: @dark-bg-color;
         }
       }
     }
@@ -26,17 +26,19 @@
     tbody {
       tr {
         &.active {
-          background: darken(@core-bg-color, 3%);
+          background: @dark-bg-color;
         }
       }
     }
   }
-  th,
+
   td {
-    border-bottom: .1rem solid @core-border-color;
+    border-bottom: .1rem solid @border-color;
     padding: 1.5rem 1rem;
   }
+  
   th {
-    border-color: darken(@core-border-color, 5%);
+    border-bottom: .2rem solid @dark-color;
+    padding: 1.5rem 1rem;
   }
 }

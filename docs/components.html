@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
-  <section class="section section-header bg-grey">
+  <section class="section section-header bg-gray">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
@@ -104,29 +104,29 @@
             <div class="column col-9 col-xs-12">
               <div class="form-group">
                 <div class="form-autocomplete">
-                  <div class="form-autocomplete-input">
-                    <div class="chip">
+                  <div class="form-autocomplete-input form-input">
+                    <label class="chip">
                       Bruce Banner
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" />
                       Thor Odinson
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       <img src="img/avatar-4.png" class="avatar avatar-sm" />
                       Steve Rogers
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       Tony Stark
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip active">
+                    </label>
+                    <label class="chip active">
                       Natasha Romanoff
                       <button class="btn btn-clear"></button>
-                    </div>
+                    </label>
                     <input class="form-input" type="text" placeholder="" />
                   </div>
                 </div>
@@ -135,17 +135,17 @@
             <div class="column col-9 col-xs-12">
               <div class="form-group">
                 <div class="form-autocomplete">
-                  <div class="form-autocomplete-input is-focused">
-                    <div class="chip">
+                  <div class="form-autocomplete-input form-input is-focused">
+                    <label class="chip">
                       Bruce Banner
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <div class="chip">
+                    </label>
+                    <label class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson"/>
                       Thor Odinson
                       <button class="btn btn-clear"></button>
-                    </div>
-                    <input class="form-input" type="text" placeholder="typing here" value="S" />
+                    </label>
+                    <input class="form-input" type="text" placeholder="" value="S" />
                   </div>
                   <ul class="menu">
                     <li class="menu-item">
@@ -183,16 +183,19 @@
 <!-- autocomplete example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
   <span class="com">&lt;!-- autocomplete input container --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input form-input&quot;</span>&gt;
+
     <span class="com">&lt;!-- autocomplete chips --&gt;</span>
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
       &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span> /&gt;
       Thor Odinson
       &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/label</span>&gt;
+
     <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
     &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span> /&gt;
   &lt;<span class="tag">/div</span>&gt;
+
   <span class="com">&lt;!-- autocomplete suggestion list --&gt;</span>
   &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
     <span class="com">&lt;!-- menu list chips --&gt;</span>
@@ -378,19 +381,21 @@
             <p><strong>Bars</strong> represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code> and <code>meter</code> elements.</p>
           </section>
           <div class="columns">
-            <div class="column col-6 col-xs-12">
+            <div class="column col-8 col-xs-12">
               <div class="bar bar-sm">
                 <div class="bar-item tooltip" data-tooltip="25%" role="progressbar" style="width:25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-            <div class="column col-6 col-xs-12">
+          </div>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
               <div class="bar">
                 <div class="bar-item tooltip" data-tooltip="50%" style="width:50%;"></div>
               </div>
             </div>
           </div>
           <div class="columns">
-            <div class="column col-12 col-xs-12">
+            <div class="column col-8 col-xs-12">
               <div class="bar">
                 <div class="bar-item tooltip" data-tooltip="25%" style="width:25%;">25%</div>
                 <div class="bar-item tooltip" data-tooltip="15%" style="width:15%;background:#818bd5;">15%</div>
@@ -554,36 +559,36 @@
           </section>
           <div class="columns">
             <div class="column col-12">
-              <div class="chip">
+              <label class="chip">
                 Crime
                 <button class="btn btn-clear"></button>
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 Drama
                 <button class="btn btn-clear"></button>
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 Biography
                 <button class="btn btn-clear"></button>
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 Mystery
                 <button class="btn btn-clear"></button>
-              </div>
+              </label>
             </div>
             <div class="column col-12">
-              <div class="chip">
+              <label class="chip">
                 <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5764c6;"></figure>
                 Tony Stark
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 <img src="img/avatar-1.png" class="avatar avatar-sm" />
                 Thor Odinson
-              </div>
-              <div class="chip">
+              </label>
+              <label class="chip">
                 <img src="img/avatar-4.png" class="avatar avatar-sm" />
                 Steve Rogers
-              </div>
+              </label>
             </div>
           </div>
           <section class="notes">
@@ -591,16 +596,16 @@
           </section>
 
 <!-- chips example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   Crime
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/label</span>&gt;
 
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> /&gt;
   Yan Zhu
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/div</span>&gt;</code>
+&lt;<span class="tag">/label</span>&gt;</code>
 </pre>
 
         </section>
@@ -729,7 +734,7 @@
         <section id="menus" class="container">
           <header class="text-center"><h3>Menus</h3></header>
           <section class="notes">
-            <p>The <strong>menu</strong> is a vertical list of links or buttons for actions and navigation.</p>
+            <p><strong>Menus</strong> are vertical list of links or buttons for actions and navigation.</p>
           </section>
           <div class="columns">
             <div class="column col-xs-12">
@@ -746,6 +751,9 @@
                 </li>
                 <li class="divider"></li>
                 <li class="menu-item">
+                  <div class="menu-badge">
+                    <label class="label label-primary">2</label>
+                  </div>
                   <a href="#menus" class="active">
                     My profile
                   </a>
@@ -766,7 +774,7 @@
               <ul class="menu">
                 <li class="menu-header">
                   <span class="menu-header-text">
-                    Go to
+                    LINKS
                   </span>
                 </li>
                 <li class="menu-item">
@@ -796,7 +804,7 @@
   <span class="com">&lt;!-- menu header --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
     &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
-      Go to
+      LINKS
     &lt;<span class="tag">/span</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   <span class="com">&lt;!-- menu item --&gt;</span>
@@ -818,6 +826,9 @@
   <span class="com">&lt;!-- menu divider --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu-badge&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;2&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
       &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Settings
     &lt;<span class="tag">/a</span>&gt;
@@ -1473,10 +1484,11 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The Avengers</p>
-                  <p>Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                  <p class="tile-meta">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-primary">Join</button>
+                  <button class="btn">Contact</button>
                 </div>
               </div>
             </div>
@@ -1489,7 +1501,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The S.H.I.E.L.D.</p>
-                  <p>The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                  <p class="tile-meta">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
                   <p>
                     <button class="btn btn-primary btn-sm">Join</button>
                     <button class="btn btn-sm">Contact</button>
@@ -1525,7 +1537,7 @@
             <p>Add the class <code>tile-centered</code> to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
           </section>
           <div class="columns">
-            <div class="column col-6 col-sm-12">
+            <div class="column col-6 col-md-9 col-xs-12">
               <div class="tile tile-centered">
                 <div class="tile-icon">
                   <div class="example-tile-icon">
@@ -1533,8 +1545,8 @@
                   </div>
                 </div>
                 <div class="tile-content">
-                  <div class="tile-title text-ellipsis">spectre-docs.pdf</div>
-                  <div class="tile-meta text-ellipsis">14MB · Public · 1 Jan, 2017</div>
+                  <div class="tile-title">spectre-docs.pdf</div>
+                  <div class="tile-meta">14MB · Public · 1 Jan, 2017</div>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-link btn-action"><i class="icon icon-more_vert"></i></button>
@@ -1551,8 +1563,8 @@
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title text-ellipsis&quot;</span>&gt;spectre-docs.pdf&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-meta text-ellipsis&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;spectre-docs.pdf&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-meta&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;
@@ -1671,7 +1683,22 @@
     </section>
   </section>
 
-  <footer class="bg-grey">
+  <section class="container grid-960">
+    <section class="grid-ads">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Spectre.css -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2225124559530218"
+           data-ad-slot="5007685125"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+  </section>
+
+  <footer class="bg-gray">
     <section id="copyright" class="grid-footer container grid-960">
       <p>
         <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>

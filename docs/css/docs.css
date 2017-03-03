@@ -1,9 +1,41 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.4";
+  content: "0.2.5";
 }
 /* Spectre docs style */
+.bg-gray {
+  background: #f6f6f6;
+  color: #666;
+  padding: 1rem;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+.bg-primary {
+  background: #5764c6;
+  color: #fff;
+  padding: 1rem;
+}
+.grid-header .navbar-brand {
+  color: #444;
+}
+.grid-header .navbar-brand .icon {
+  font-size: 1.3333em;
+  line-height: .8em;
+  vertical-align: -20%;
+}
+.grid-header .btn {
+  color: #666;
+}
+.grid-header .btn:hover,
+.grid-header .btn:focus,
+.grid-header .btn:active {
+  color: #444;
+  opacity: .75;
+}
 .grid-hero {
   margin-bottom: 4rem;
   margin-top: 10rem;
@@ -36,38 +68,6 @@
   font-size: 1.8rem;
   margin-bottom: 0;
 }
-.bg-grey {
-  background-color: #f6f6f6;
-  border-radius: .2rem;
-  padding: 1rem .5rem;
-}
-.bg-dark {
-  background: #2d3354;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-.bg-primary {
-  background: #5764c6;
-  color: #fff;
-  padding: 1rem .5rem;
-}
-.navbar-brand .icon {
-  font-size: 1.3333em;
-  line-height: .8em;
-  vertical-align: -20%;
-}
-.grid-header .btn {
-  color: #666;
-}
-.grid-header .btn:hover,
-.grid-header .btn:focus,
-.grid-header .btn:active {
-  color: #444;
-  opacity: .75;
-}
-.grid-header .navbar-brand {
-  color: #444;
-}
 .grid-footer {
   color: #888;
   margin-bottom: 3rem;
@@ -76,18 +76,41 @@
 .grid-footer a {
   color: #666;
 }
-.empty .icon {
-  font-size: 4rem;
+.grid-ads {
+  border-radius: .2rem;
+  display: block;
+  height: 12rem;
+  margin: 2rem auto;
+  max-width: 64rem;
+  padding: 1rem;
+  width: 100%;
 }
 .docs-content .container {
   padding: 2rem 1rem;
 }
 .docs-content header {
+  color: #444;
   padding-top: 2rem;
 }
 .docs-content .notes {
   color: #666;
   margin: 4rem 0;
+}
+.docs-content .docs-block {
+  border-radius: .2rem;
+  padding: 1rem .5rem;
+}
+.docs-content .docs-dot {
+  border-radius: 50%;
+  display: block;
+  height: 1rem;
+  margin: auto;
+  padding: 0;
+  width: 1rem;
+}
+.docs-content .docs-table th,
+.docs-content .docs-table td {
+  padding: 1.5rem .5rem;
 }
 .docs-content h1,
 .docs-content h2,
@@ -110,7 +133,10 @@
 .docs-content .code .atv {
   color: #e06870;
 }
-.example-tile-icon {
+.docs-content .empty .icon {
+  font-size: 6rem;
+}
+.docs-content .example-tile-icon {
   -webkit-align-content: space-around;
   align-content: space-around;
   -webkit-align-items: center;
@@ -149,13 +175,7 @@
 .docs-nav-clear {
   display: none;
 }
-.show-xs {
-  display: none !important;
-}
 @media screen and (max-width: 480px) {
-  .show-xs {
-    display: block !important;
-  }
   .grid-hero h2 {
     font-size: 1.8rem;
   }

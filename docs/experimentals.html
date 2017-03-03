@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
-  <section class="section section-header bg-grey">
+  <section class="section section-header bg-gray">
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
@@ -61,6 +61,9 @@
                 <ul class="nav">
                   <li class="nav-item">
                     <a href="experimentals.html#meters">Meters</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="experimentals.html#parallax">Parallax</a>
                   </li>
                   <li class="nav-item">
                     <a href="experimentals.html#progress">Progress</a>
@@ -125,6 +128,41 @@
 <span class="com">&lt;!-- Meter is red when value &lt; low &lt; high &lt; optimum or optimum &lt; low &lt; high &lt; value --&gt;</span>
 &lt;<span class="tag">meter</span> <span class="atn">class</span>=<span class="atv">&quot;meter&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;20&quot;</span> <span class="atn">optimum</span>=<span class="atv">&quot;90&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">low</span>=<span class="atv">&quot;30&quot;</span> <span class="atn">high</span>=<span class="atv">&quot;80&quot;</span>&gt;&lt;<span class="tag">/meter</span>&gt;
 </code></pre>
+
+        </section>
+
+        <section id="parallax" class="container">
+          <header class="text-center"><h3>Parallax</h3></header>
+          <section class="notes">
+            <p>The <strong>Parallax</strong> acts like Apple TV parallax effect. It is pure CSS Parallax effect.</p>
+          </section>
+          <div class="columns text-center">
+            <div class="column col-12">
+              <div class="parallax">
+                <div class="parallax-top-left"></div>
+                <div class="parallax-top-right"></div>
+                <div class="parallax-bottom-left"></div>
+                <div class="parallax-bottom-right"></div>
+                <div class="parallax-content">
+                  <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p></p>
+          </section>
+
+<!-- parallax example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-top-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-top-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-bottom-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-bottom-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-content&quot;</span>&gt;
+    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>
@@ -199,7 +237,22 @@
     </section>
   </section>
 
-  <footer class="bg-grey">
+  <section class="container grid-960">
+    <section class="grid-ads">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Spectre.css -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2225124559530218"
+           data-ad-slot="5007685125"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+  </section>
+
+  <footer class="bg-gray">
     <section id="copyright" class="grid-footer container grid-960">
       <p>
         <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
