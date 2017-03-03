@@ -26,8 +26,10 @@ a {
   text-decoration: none;
 
   &:focus,
-  &:hover {
-    color: darken(@link-color, 10%);
+  &:hover,
+  &:active,
+  &.active {
+    color: @dark-link-color;
     text-decoration: underline;
   }
 }

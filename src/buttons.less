@@ -18,7 +18,7 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    background: @secondary-color;
+    background: @light-primary-color;
     text-decoration: none;
   }
   &:hover {
@@ -70,12 +70,10 @@
     border-color: transparent;
     color: @link-color;
     &:focus,
-    &:hover {
-      color: @dark-link-color;
-    }
+    &:hover,
     &:active,
     &.active {
-      color: darken(@dark-link-color, 10%);
+      color: @dark-link-color;
     }
   }
 
