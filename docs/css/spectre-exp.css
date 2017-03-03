@@ -55,8 +55,8 @@
 .parallax .parallax-content {
   box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, .45);
   height: auto;
-  -webkit-transform: perspective(600px);
-  transform: perspective(600px);
+  -webkit-transform: perspective(50rem);
+  transform: perspective(50rem);
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: all .4s ease;
@@ -80,8 +80,8 @@
   z-index: 99;
 }
 .parallax .parallax-top-left:hover ~ .parallax-content {
-  -webkit-transform: perspective(600px) rotateX(3deg) rotateY(-3deg);
-  transform: perspective(600px) rotateX(3deg) rotateY(-3deg);
+  -webkit-transform: perspective(50rem) rotateX(3deg) rotateY(-3deg);
+  transform: perspective(50rem) rotateX(3deg) rotateY(-3deg);
 }
 .parallax .parallax-top-left:hover ~ .parallax-content::before {
   background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -95,8 +95,8 @@
   z-index: 99;
 }
 .parallax .parallax-top-right:hover ~ .parallax-content {
-  -webkit-transform: perspective(600px) rotateX(3deg) rotateY(3deg);
-  transform: perspective(600px) rotateX(3deg) rotateY(3deg);
+  -webkit-transform: perspective(50rem) rotateX(3deg) rotateY(3deg);
+  transform: perspective(50rem) rotateX(3deg) rotateY(3deg);
 }
 .parallax .parallax-top-right:hover ~ .parallax-content::before {
   background: linear-gradient(-135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -110,8 +110,8 @@
   z-index: 99;
 }
 .parallax .parallax-bottom-left:hover ~ .parallax-content {
-  -webkit-transform: perspective(600px) rotateX(-3deg) rotateY(-3deg);
-  transform: perspective(600px) rotateX(-3deg) rotateY(-3deg);
+  -webkit-transform: perspective(50rem) rotateX(-3deg) rotateY(-3deg);
+  transform: perspective(50rem) rotateX(-3deg) rotateY(-3deg);
 }
 .parallax .parallax-bottom-left:hover ~ .parallax-content::before {
   background: linear-gradient(45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -125,8 +125,8 @@
   z-index: 99;
 }
 .parallax .parallax-bottom-right:hover ~ .parallax-content {
-  -webkit-transform: perspective(600px) rotateX(-3deg) rotateY(3deg);
-  transform: perspective(600px) rotateX(-3deg) rotateY(3deg);
+  -webkit-transform: perspective(50rem) rotateX(-3deg) rotateY(3deg);
+  transform: perspective(50rem) rotateX(-3deg) rotateY(3deg);
 }
 .parallax .parallax-bottom-right:hover ~ .parallax-content::before {
   background: linear-gradient(-45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);

@@ -10,7 +10,7 @@
   .parallax-content {
     box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, .45);
     height: auto;
-    transform: perspective(600px);
+    transform: perspective(50rem);
     transform-style: preserve-3d;
     transition: all .4s ease;
     width: 100%;
@@ -32,7 +32,7 @@
     top: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(600px) rotateX(@parallax-deg) rotateY(-@parallax-deg);
+      transform: perspective(50rem) rotateX(@parallax-deg) rotateY(-@parallax-deg);
 
       &::before {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -46,7 +46,7 @@
     top: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(600px) rotateX(@parallax-deg) rotateY(@parallax-deg);
+      transform: perspective(50rem) rotateX(@parallax-deg) rotateY(@parallax-deg);
 
       &::before {
         background: linear-gradient(-135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -60,7 +60,7 @@
     left: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(600px) rotateX(-@parallax-deg) rotateY(-@parallax-deg);
+      transform: perspective(50rem) rotateX(-@parallax-deg) rotateY(-@parallax-deg);
 
       &::before {
         background: linear-gradient(45deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -74,7 +74,7 @@
     right: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(600px) rotateX(-@parallax-deg) rotateY(@parallax-deg);
+      transform: perspective(50rem) rotateX(-@parallax-deg) rotateY(@parallax-deg);
 
       &::before {
         background: linear-gradient(-45deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
@@ -84,7 +84,6 @@
 }
 
 .parallax-dir() {
-  //background: rgba(0,0,0,.15);
   height: 50%;
   position: absolute;
   width: 50%;
