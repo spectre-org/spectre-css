@@ -816,9 +816,17 @@ textarea.form-input {
 .form-input.is-success {
   border-color: #32b643;
 }
+.has-success .form-input:focus,
+.form-input.is-success:focus {
+  box-shadow: 0 0 0 .2rem rgba(50, 182, 67, .15);
+}
 .has-danger .form-input,
 .form-input.is-danger {
   border-color: #e85600;
+}
+.has-danger .form-input:focus,
+.form-input.is-danger:focus {
+  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
 }
 .form-input[type=file] {
   height: auto;
