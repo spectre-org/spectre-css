@@ -16,12 +16,12 @@
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
           <a href="index.html" class="navbar-brand">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
         </section>
         <section class="navbar-section">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-xs"><i class="icon icon-menu"></i></a>
         </section>
       </nav>
     </section>
@@ -177,42 +177,32 @@
 
         <section id="responsive" class="container">
           <header class="text-center"><h3>Responsive grid</h3></header>
-          <div class="columns col-multiline">
-            <div class="column col-md-6 col-xs-12">
+          <div class="notes">
+            <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities. </p>
+          </div>
+          <div class="columns">
+            <div class="column col-lg-6">
+              <div class="bg-gray docs-block">col-lg-6</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-md-6">
               <div class="bg-gray docs-block">col-md-6</div>
-            </div>
-            <div class="column col-md-3 col-xs-12">
-              <div class="bg-gray docs-block">col-md-3</div>
-            </div>
-            <div class="column col-md-3 col-xs-12">
-              <div class="bg-gray docs-block">col-md-3</div>
             </div>
           </div>
           <div class="columns">
             <div class="column col-sm-6">
               <div class="bg-gray docs-block">col-sm-6</div>
             </div>
-            <div class="column col-sm-3">
-              <div class="bg-gray docs-block">col-sm-3</div>
-            </div>
-            <div class="column col-sm-3">
-              <div class="bg-gray docs-block">col-sm-3</div>
-            </div>
           </div>
           <div class="columns">
             <div class="column col-xs-6">
               <div class="bg-gray docs-block">col-xs-6</div>
             </div>
-            <div class="column col-xs-3">
-              <div class="bg-gray docs-block">col-xs-3</div>
-            </div>
-            <div class="column col-xs-3">
-              <div class="bg-gray docs-block">col-xs-3</div>
-            </div>
           </div>
 
           <section class="notes">
-            <p>Spectre provides a neat responsive layout grid system. There are <code>col-xs-[1-12]</code>, <code>col-sm-[1-12]</code>, <code>col-md-[1-12]</code>, <code>col-lg-[1-12]</code> and <code>col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+            <p>There are <code>col-xs-[1-12]</code>, <code>col-sm-[1-12]</code>, <code>col-md-[1-12]</code>, <code>col-lg-[1-12]</code> and <code>col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
             <ul>
               <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
               <li><code>col-xs-[1-12]</code> apply to window width smaller than or equal to <strong>480px</strong>. </li>
@@ -234,6 +224,9 @@
 </code></pre>
 
           <header class="text-center"><h4>Responsive visibility</h4></header>
+          <div class="notes">
+            <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities. </p>
+          </div>
           <table class="docs-table table">
             <thead>
               <tr class="text-center">

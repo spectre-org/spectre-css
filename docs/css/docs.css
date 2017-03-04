@@ -19,16 +19,30 @@
   color: #fff;
   padding: 1rem;
 }
+.section-header {
+  padding: 1rem .5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 499;
+}
+.section-hero {
+  position: relative;
+  z-index: 999;
+}
+.grid-header .navbar {
+  height: 4rem;
+}
+.grid-header .navbar-section {
+  padding: 0;
+}
 .grid-header .navbar-brand {
   color: #444;
 }
-.grid-header .navbar-brand .icon {
-  font-size: 1.3333em;
-  line-height: .8em;
-  vertical-align: -20%;
-}
 .grid-header .btn-link {
   color: #666;
+  padding-left: .6rem;
+  padding-right: .6rem;
 }
 .grid-header .btn-link:hover,
 .grid-header .btn-link:focus,
@@ -86,11 +100,11 @@
   width: 100%;
 }
 .docs-content .container {
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 .docs-content header {
   color: #444;
-  padding-top: 2rem;
+  padding-top: 6rem;
 }
 .docs-content .notes {
   color: #666;
@@ -134,7 +148,7 @@
   color: #e06870;
 }
 .docs-content .empty .icon {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .docs-content .example-tile-icon {
   -webkit-align-content: space-around;
@@ -153,10 +167,12 @@
   height: 4rem;
   width: 4rem;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 601px) {
+  .navbar .navbar-section {
+    padding: 0 .5rem;
+  }
   .docs-sidebar {
-    padding-bottom: 6rem;
-    padding-top: 6rem;
+    padding: 6rem 1rem;
   }
   .docs-sidebar .docs-nav {
     position: relative;
@@ -165,7 +181,7 @@
     .docs-sidebar .docs-nav {
       position: sticky;
       position: -webkit-sticky;
-      top: 6rem;
+      top: 9rem;
     }
     .docs-sidebar .docs-nav .nav-item a:focus {
       box-shadow: none;
@@ -175,35 +191,24 @@
 .docs-nav-clear {
   display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .grid-hero h2 {
     font-size: 1.8rem;
   }
   .grid-hero .card {
     padding: 0;
   }
-  .section-header {
-    padding: 0 .5rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 299;
-  }
-  .section-header .btn-link {
-    padding-left: .6rem;
-    padding-right: .6rem;
-  }
   .docs-sidebar {
     background: #fff;
     height: 100%;
+    left: 0;
     overflow-y: auto;
-    padding-left: 3rem;
+    padding: 6rem 3rem;
     position: fixed;
-    right: 0;
     top: 0;
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
     transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
     transition: -webkit-transform .2s ease;
@@ -220,9 +225,6 @@
   }
   .docs-sidebar:target + .docs-nav-clear {
     display: block;
-  }
-  .docs-content header {
-    padding-top: 6rem;
   }
   .docs-nav-clear {
     background: rgba(0, 0, 0, .15);
