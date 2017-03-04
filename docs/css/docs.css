@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.5";
+  content: "0.2.6";
 }
 /* Spectre docs style */
 .bg-gray {
