@@ -6,8 +6,8 @@
     display: table;
   }
 }
-.control-shadow() {
-  box-shadow: 0 0 0 .2rem fade(@primary-color, 15%);
+.control-shadow(@color: @primary-color) {
+  box-shadow: 0 0 0 .2rem fade(@color, 15%);
 }
 .control-transition() {
   transition: all .2s ease;

@@ -17,12 +17,12 @@
     <section class="grid-header container grid-960">
       <nav class="navbar">
         <section class="navbar-section">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
           <a href="index.html" class="navbar-brand">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-link">GitHub</a>
         </section>
-        <section class="navbar-section show-xs">
-          <a href="#sidebar" class="btn btn-lg btn-link btn-action"><i class="icon icon-menu"></i></a>
+        <section class="navbar-section">
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
         </section>
       </nav>
     </section>
@@ -54,11 +54,17 @@
                 <a href="elements.html#labels">Labels</a>
               </li>
               <li class="nav-item">
+                <a href="elements.html#codes">Codes</a>
+              </li>
+              <li class="nav-item">
                 <a href="elements.html#media">Media</a>
               </li>
               <li class="nav-item active">
                 <a href="experimentals.html">Experimentals</a>
                 <ul class="nav">
+                  <li class="nav-item">
+                    <a href="experimentals.html#carousels">Carousels</a>
+                  </li>
                   <li class="nav-item">
                     <a href="experimentals.html#meters">Meters</a>
                   </li>
@@ -94,6 +100,44 @@
           <section class="notes">
             <p>The Experimentals include experimental elements and features, mostly are not yet ready for wide use. These elements and components are limited inside <code>spectre-exp.less</code> before browsers fully support them. Sometimes, there are some specific browsers targeted components.</p>
           </section>
+        </section>
+
+        <section id="carousels" class="container">
+          <header class="text-center"><h3>Carousels</h3></header>
+          <section class="notes">
+            <p><strong>Carousels</strong> are slideshows for cycling images. It is built in pure CSS and not perfect.</p>
+          </section>
+          <div class="columns text-center">
+            <div class="column col-12">
+              <div class="carousel">
+                <input type="radio" id="slide-1" name="carousel-radio" class="carousel-locator" checked>
+              	<input type="radio" id="slide-2" name="carousel-radio" class="carousel-locator">
+                <input type="radio" id="slide-3" name="carousel-radio" class="carousel-locator">
+              	<input type="radio" id="slide-4" name="carousel-radio" class="carousel-locator">
+                <div class="carousel-container">
+                  <figure class="carousel-item">
+                    <img src="img/osx-yosemite.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                  </figure>
+                  <figure class="carousel-item">
+                    <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                  </figure>
+                  <figure class="carousel-item">
+                    <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                  </figure>
+                  <figure class="carousel-item">
+                    <img src="img/osx-el-capitan-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                  </figure>
+                </div>
+                <div class="carousel-nav">
+                  <label class="nav-item text-hide hand" for="slide-1">1</label>
+                  <label class="nav-item text-hide hand" for="slide-2">2</label>
+                  <label class="nav-item text-hide hand" for="slide-3">3</label>
+                  <label class="nav-item text-hide hand" for="slide-4">4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         <section id="meters" class="container">
@@ -134,7 +178,7 @@
         <section id="parallax" class="container">
           <header class="text-center"><h3>Parallax</h3></header>
           <section class="notes">
-            <p>The <strong>Parallax</strong> acts like Apple TV parallax effect. It is pure CSS Parallax effect.</p>
+            <p>The <strong>Parallax</strong> acts like Apple TV/tvOS hover parallax effect. It is built in pure CSS.</p>
           </section>
           <div class="columns text-center">
             <div class="column col-12">
@@ -237,25 +281,10 @@
     </section>
   </section>
 
-  <section class="container grid-960">
-    <section class="grid-ads">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Spectre.css -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2225124559530218"
-           data-ad-slot="5007685125"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </section>
-  </section>
-
   <footer class="bg-gray">
     <section id="copyright" class="grid-footer container grid-960">
       <p>
-        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | Version <span class="version"></span>
+        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | Version <span class="version"></span>
       </p>
       <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
     </section>

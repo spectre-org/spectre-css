@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.5";
+  content: "0.2.6";
 }
 
 /* Spectre docs style */
@@ -23,19 +23,37 @@
   padding: 1rem;
 }
 
-.grid-header {
-  .navbar-brand {
-    color: #444;
+.section-header {
+  padding: 1rem .5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 499;
+}
 
-    .icon {
-      font-size: 1.3333em;
-      line-height: .8em;
-      vertical-align: -20%;
-    }
+.section-hero {
+  position: relative;
+  z-index: 999;
+}
+
+.grid-header {
+  .navbar {
+    height: 4rem;
   }
 
-  .btn {
+  .navbar-section {
+    padding: 0;
+  }
+
+  .navbar-brand {
+    color: #444;
+  }
+
+  .btn-link {
     color: #666;
+    padding-left: .6rem;
+    padding-right: .6rem;
+
     &:hover,
     &:focus,
     &:active {
@@ -104,12 +122,12 @@
 
 .docs-content {
   .container {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   header {
     color: #444;
-    padding-top: 2rem;
+    padding-top: 6rem;
   }
 
   .notes {
@@ -164,7 +182,7 @@
   }
 
   .empty .icon {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .example-tile-icon {
@@ -180,19 +198,24 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 601px) {
+  .navbar {
+    .navbar-section {
+      padding: 0 .5rem;
+    }
+  }
+
   .docs-sidebar {
-    padding-bottom: 6rem;
-    padding-top: 6rem;
+    padding: 6rem 1rem;
 
       .docs-nav {
-      position: relative;
+        position: relative;
     }
 
     @supports (position: sticky) {
       .docs-nav {
         position: sticky;
-        top: 6rem;
+        top: 9rem;
 
         // A position: sticky; bug casues box-shadow generates width to the elements
         .nav-item a:focus {
@@ -208,7 +231,7 @@
 }
 
 // Spectre.css Docs Mobile experience
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .grid-hero {
     h2 {
       font-size: 1.8rem;
@@ -218,28 +241,15 @@
     }
   }
 
-  .section-header {
-    padding: 0 .5rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 299;
-
-    .btn-link {
-      padding-left: .6rem;
-      padding-right: .6rem;
-    }
-  }
-
   .docs-sidebar {
     background: #fff;
     height: 100%;
     overflow-y: auto;
-    padding-left: 3rem;
+    padding: 6rem 3rem;
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: transform .2s ease;
     width: 24rem;
     z-index: 999;
@@ -254,14 +264,8 @@
     }
   }
 
-  .docs-content {
-    header {
-      padding-top: 6rem;
-    }
-  }
-
   .docs-nav-clear {
-    background: rgba(0,0,0,.15);
+    background: rgba(0, 0, 0, .15);
     display: none;
     height: 100%;
     left: 0;
