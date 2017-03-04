@@ -53,23 +53,6 @@
     line-height: 2rem;
   }
 
-  // Form status
-  .has-success &,
-  &.is-success {
-    border-color: @control-color-success;
-    &:focus {
-      .control-shadow(@control-color-success);
-    }
-  }
-
-  .has-danger &,
-  &.is-danger {
-    border-color: @control-color-danger;
-    &:focus {
-      .control-shadow(@control-color-danger);
-    }
-  }
-
   // Input types
   &[type=file] {
     height: auto;
@@ -139,16 +122,25 @@
     height: 4rem;
     padding: .9rem 2.4rem .9rem .8rem;
   }
+}
 
-  // Select status
+// Form validation states
+.form-input,
+.form-select {
   .has-success &,
   &.is-success {
     border-color: @control-color-success;
+    &:focus {
+      .control-shadow(@control-color-success);
+    }
   }
 
   .has-danger &,
   &.is-danger {
     border-color: @control-color-danger;
+    &:focus {
+      .control-shadow(@control-color-danger);
+    }
   }
 }
 
