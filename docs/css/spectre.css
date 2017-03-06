@@ -651,18 +651,18 @@ abbr[title] {
 }
 .btn.btn-primary:focus {
   background: #4452c0;
-  border-color: #3b49af;
+  border-color: #3f4eba;
   color: #fff;
 }
 .btn.btn-primary:hover {
   background: #3f4eba;
-  border-color: #3b49af;
+  border-color: #3946a7;
   color: #fff;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active {
   background: #3d4ab3;
-  border-color: #3946a7;
+  border-color: #36429f;
   color: #fff;
 }
 .btn.btn-primary.loading::after {
