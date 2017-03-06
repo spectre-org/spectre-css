@@ -1225,6 +1225,9 @@ code {
 .container.grid-960 {
   max-width: 98rem;
 }
+.container.grid-480 {
+  max-width: 50rem;
+}
 .columns {
   display: flex;
   display: -ms-flexbox;
