@@ -63,6 +63,9 @@
                 <a href="experimentals.html">Experimentals</a>
                 <ul class="nav">
                   <li class="nav-item">
+                    <a href="experimentals.html#calendars">Calendars</a>
+                  </li>
+                  <li class="nav-item">
                     <a href="experimentals.html#carousels">Carousels</a>
                   </li>
                   <li class="nav-item">
@@ -100,6 +103,141 @@
           <section class="notes">
             <p>The Experimentals include experimental elements and features, mostly are not yet ready for wide use. These elements and components are limited inside <code>spectre-exp.less</code> before browsers fully support them. Sometimes, there are some specific browsers targeted components.</p>
           </section>
+        </section>
+
+        <section id="calendars" class="container">
+          <header class="text-center"><h3>Calendars</h3></header>
+          <section class="notes">
+            <p><strong>Calendars</strong> are designed for date or date range picker and events display. It is made with flex layout.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-md-12">
+              <div class="calendar">
+                <div class="calendar-nav navbar">
+                  <button class="btn btn-action btn-link btn-lg">
+                    <i class="icon icon-keyboard_arrow_left"></i>
+                  </button>
+                  <div class="navbar-section">March 2017</div>
+                  <button class="btn btn-action btn-link btn-lg">
+                    <i class="icon icon-keyboard_arrow_right"></i>
+                  </button>
+                </div>
+                <div class="calendar-container">
+                  <div class="calendar-header">
+                    <div class="calendar-date">Sun</div>
+                    <div class="calendar-date">Mon</div>
+                    <div class="calendar-date">Tue</div>
+                    <div class="calendar-date">Wed</div>
+                    <div class="calendar-date">Thu</div>
+                    <div class="calendar-date">Fri</div>
+                    <div class="calendar-date">Sat</div>
+                  </div>
+                  <div class="calendar-body">
+                    <div class="calendar-date prev-month"><button class="date-item" disabled>26</button></div>
+                    <div class="calendar-date prev-month"><button class="date-item" disabled>27</button></div>
+                    <div class="calendar-date prev-month"><button class="date-item" disabled>28</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">1</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">2</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">3</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="Today"><button class="date-item date-today">4</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="Not available"><button class="date-item" disabled>5</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">6</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">7</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="You have appointments."><button class="date-item badge">8</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">9</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">10</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">11</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">12</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">13</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">14</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">15</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item active">16</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item">17</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item">18</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item">19</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item active">20</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">21</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">22</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">23</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">24</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">25</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">26</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">27</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">28</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">29</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">30</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">31</button></div>
+                    <div class="calendar-date next-month"><button class="date-item" disabled>1</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column col-12">
+              <div class="calendar calendar-lg">
+                <div class="calendar-nav navbar">
+                  <button class="btn btn-action btn-link btn-lg">
+                    <i class="icon icon-keyboard_arrow_left"></i>
+                  </button>
+                  <div class="navbar-section">March 2017</div>
+                  <button class="btn btn-action btn-link btn-lg">
+                    <i class="icon icon-keyboard_arrow_right"></i>
+                  </button>
+                </div>
+                <div class="calendar-container">
+                  <div class="calendar-header">
+                    <div class="calendar-date">Sun</div>
+                    <div class="calendar-date">Mon</div>
+                    <div class="calendar-date">Tue</div>
+                    <div class="calendar-date">Wed</div>
+                    <div class="calendar-date">Thu</div>
+                    <div class="calendar-date">Fri</div>
+                    <div class="calendar-date">Sat</div>
+                  </div>
+                  <div class="calendar-body">
+                    <div class="calendar-date prev-month"><button class="date-item" disabled>26</button></div>
+                    <div class="calendar-date prev-month"><button class="date-item" disabled>27</button></div>
+                    <div class="calendar-date prev-month"><button class="date-item" disabled>28</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">1</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">2</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">3</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="Today"><button class="date-item date-today">4</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="Not available"><button class="date-item" disabled>5</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">6</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">7</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="You have appointments."><button class="date-item badge">8</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">9</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">10</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">11</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">12</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">13</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">14</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">15</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item active">16</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item">17</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item">18</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item">19</button></div>
+                    <div class="calendar-date current-month calendar-range"><button class="date-item active">20</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">21</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">22</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">23</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">24</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">25</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">26</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">27</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">28</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">29</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">30</button></div>
+                    <div class="calendar-date current-month"><button class="date-item">31</button></div>
+                    <div class="calendar-date next-month"><button class="date-item" disabled>1</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         <section id="carousels" class="container">

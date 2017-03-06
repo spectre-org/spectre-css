@@ -1,0 +1,135 @@
+// Calendars
+.calendar {
+  border: .1rem solid @border-color;
+  border-radius: @border-radius;
+  display: block;
+  text-align: center;
+
+  .calendar-nav {
+    align-content: space-between;
+    align-items: center;
+    background: @bg-color;
+    border-top-left-radius: @border-radius;
+    border-top-right-radius: @border-radius;
+    display: flex;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .calendar-header,
+  .calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+
+    .calendar-date {
+      flex: 0 0 14%;
+    }
+  }
+
+  .calendar-header {
+    border-bottom: .1rem solid @border-color;
+    color: @gray-color;
+  }
+
+  .calendar-body {
+    color: @dark-gray-color;
+
+    .calendar-date {
+      & {
+        border: 0;
+        padding: .5rem;
+
+        .date-item {
+          color: @dark-gray-color;
+        }
+      }
+
+      &.calendar-range {
+        position: relative;
+
+        .date-item {
+          &::before {
+            background: @secondary-color;
+            content: "";
+            height: 3.2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
+            width: 50%;
+            z-index: -9;
+          }
+        }
+
+        & + .calendar-range {
+          .date-item {
+            &::before {
+              left: 0;
+              width: 100%;
+            }
+            &.active {
+              &::before {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      &.prev-month,
+      &.next-month {
+        .date-item {
+          opacity: .25;
+        }
+      }
+    }
+
+    .date-item {
+      appearance: none;
+      background: transparent;
+      border: .1rem solid transparent;
+      border-radius: 50%;
+      .control-transition();
+      cursor: pointer;
+      display: inline-block;
+      height: 3.2rem;
+      line-height: 2rem;
+      padding: .5rem;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 3.2rem;
+
+      &:focus,
+      &:hover {
+        background: @light-secondary-color;
+        border-color: @dark-secondary-color;
+        color: @primary-color;
+        text-decoration: none;
+      }
+      &:active,
+      &.active {
+        background: @dark-primary-color;
+        border-color: darken(@dark-primary-color, 5%);
+        color: @light-color;
+      }
+      &.date-today {
+        background: @secondary-color;
+        color: @primary-color;
+      }
+
+      // Calendar badge support
+      &.badge {
+        &::after {
+          position: absolute;
+          top: .4rem;
+          right: .4rem;
+          transform: translate(50%, -50%);
+        }
+      }
+    }
+  }
+}

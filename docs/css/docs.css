@@ -99,6 +99,9 @@
   padding: 1rem;
   width: 100%;
 }
+.docs-content {
+  padding-top: 0;
+}
 .docs-content .container {
   padding: 1rem;
 }
@@ -180,7 +183,7 @@
     .docs-sidebar .docs-nav {
       position: sticky;
       position: -webkit-sticky;
-      top: 7rem;
+      top: 8rem;
     }
     .docs-sidebar .docs-nav .nav-item a:focus {
       box-shadow: none;
