@@ -24,7 +24,7 @@
     padding: 1rem 0;
 
     .calendar-date {
-      flex: 0 0 14.25%;
+      flex: 0 0 14.28%;
     }
   }
 
@@ -147,6 +147,9 @@
 
         &:nth-child(7n) {
           border-right: 0;
+        }
+        &:nth-last-child(-n+7) {
+          border-bottom: 0;
         }
       }
 

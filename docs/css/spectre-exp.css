@@ -36,9 +36,9 @@
 }
 .calendar .calendar-header .calendar-date,
 .calendar .calendar-body .calendar-date {
-  -webkit-flex: 0 0 14.25%;
-  -ms-flex: 0 0 14.25%;
-  flex: 0 0 14.25%;
+  -webkit-flex: 0 0 14.28%;
+  -ms-flex: 0 0 14.28%;
+  flex: 0 0 14.28%;
 }
 .calendar .calendar-header {
   background: #f8f8f8;
@@ -139,6 +139,9 @@
 }
 .calendar.calendar-lg .calendar-body .calendar-date:nth-child(7n) {
   border-right: 0;
+}
+.calendar.calendar-lg .calendar-body .calendar-date:nth-last-child(-n+7) {
+  border-bottom: 0;
 }
 .calendar.calendar-lg .calendar-body .date-item {
   height: 2.4rem;
