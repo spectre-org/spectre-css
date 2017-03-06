@@ -36,46 +36,26 @@
 }
 .calendar .calendar-header .calendar-date,
 .calendar .calendar-body .calendar-date {
-  -webkit-flex: 0 0 14%;
-  -ms-flex: 0 0 14%;
-  flex: 0 0 14%;
+  -webkit-flex: 0 0 14.25%;
+  -ms-flex: 0 0 14.25%;
+  flex: 0 0 14.25%;
 }
 .calendar .calendar-header {
+  background: #f8f8f8;
   border-bottom: .1rem solid #efefef;
   color: #999;
+  font-size: 1.2rem;
 }
 .calendar .calendar-body {
   color: #666;
 }
 .calendar .calendar-body .calendar-date {
   border: 0;
+  overflow: hidden;
   padding: .5rem;
 }
 .calendar .calendar-body .calendar-date .date-item {
   color: #666;
-}
-.calendar .calendar-body .calendar-date.calendar-range {
-  position: relative;
-}
-.calendar .calendar-body .calendar-date.calendar-range .date-item::before {
-  background: #eff1fa;
-  content: "";
-  height: 3.2rem;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 50%;
-  z-index: -9;
-}
-.calendar .calendar-body .calendar-date.calendar-range + .calendar-range .date-item::before {
-  left: 0;
-  width: 100%;
-}
-.calendar .calendar-body .calendar-date.calendar-range + .calendar-range .date-item.active::before {
-  width: 50%;
 }
 .calendar .calendar-body .calendar-date.prev-month .date-item,
 .calendar .calendar-body .calendar-date.next-month .date-item {
@@ -100,6 +80,10 @@
   white-space: nowrap;
   width: 3.2rem;
 }
+.calendar .calendar-body .date-item.date-today {
+  background: #eff1fa;
+  color: #5764c6;
+}
 .calendar .calendar-body .date-item:focus,
 .calendar .calendar-body .date-item:hover {
   background: #f7f8fc;
@@ -113,10 +97,6 @@
   border-color: #3b49af;
   color: #fff;
 }
-.calendar .calendar-body .date-item.date-today {
-  background: #eff1fa;
-  color: #5764c6;
-}
 .calendar .calendar-body .date-item.badge::after {
   position: absolute;
   right: .4rem;
@@ -124,6 +104,81 @@
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
+}
+.calendar .calendar-range {
+  position: relative;
+}
+.calendar .calendar-range .date-item::before {
+  background: #eff1fa;
+  content: "";
+  height: 3.2rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+  z-index: -9;
+}
+.calendar .calendar-range + .calendar-range .date-item::before {
+  left: 0;
+  width: 100%;
+}
+.calendar .calendar-range + .calendar-range .date-item.active::before {
+  width: 50%;
+}
+.calendar.calendar-lg .calendar-body {
+  padding: 0;
+}
+.calendar.calendar-lg .calendar-body .calendar-date {
+  border-bottom: .1rem solid #efefef;
+  border-right: .1rem solid #efefef;
+  height: 10rem;
+  text-align: right;
+}
+.calendar.calendar-lg .calendar-body .calendar-date:nth-child(7n) {
+  border-right: 0;
+}
+.calendar.calendar-lg .calendar-body .date-item {
+  height: 2.4rem;
+  padding: .1rem;
+  width: 2.4rem;
+}
+.calendar.calendar-lg .calendar-body .date-item.badge::after {
+  right: .25rem;
+  top: .25rem;
+}
+.calendar.calendar-lg .calendar-body .calendar-range .date-item::before {
+  height: 2.4rem;
+  left: auto;
+  right: 0;
+  top: 1.7rem;
+  width: 2.2rem;
+}
+.calendar.calendar-lg .calendar-body .calendar-range + .calendar-range .date-item::before {
+  left: 0;
+  width: 100%;
+}
+.calendar.calendar-lg .calendar-body .calendar-range + .calendar-range .date-item.active::before {
+  right: 1.7rem;
+  width: auto;
+}
+.calendar.calendar-lg .calendar-event {
+  background: #eff1fa;
+  border-radius: .2rem;
+  color: #5764c6;
+  display: inline-block;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: .2rem auto;
+  overflow: hidden;
+  padding: .3rem .4rem;
+  text-align: left;
+  text-overflow: ellipsis;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 .carousel {
   background: #f8f8f8;
