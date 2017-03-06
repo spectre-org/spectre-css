@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Components - Spectre.css</title>
@@ -688,7 +688,7 @@
           </div>
           <section class="notes">
             <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
-            <p>Add a container element with the class <code>dropdown</code>. And add a focusable element with the classname <code>dropdown-toggle</code> for the button and a <code>menu</code> component right next to it. If the dropdown is close to the right edge of the browser, you can add the class <code>dropdown-right</code> to the container to prevent it appearing off screen.</p>
+            <p>Add a container element with the class <code>dropdown</code>. And add a focusable element with the classname <code>dropdown-toggle</code> for the button and a <code>menu</code> component right next to it. You also need to add <code>tabindex</code> to make the buttons focusable. If the dropdown is close to the right edge of the browser, you can add the class <code>dropdown-right</code> to the container to prevent it appearing off screen.</p>
           </section>
           <section class="notes">
             <p>Also, you can implement your JS to interact with the dropdown menus by adding the class <code>active</code> to the <code>dropdown</code>.</p>

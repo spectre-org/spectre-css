@@ -1,4 +1,188 @@
 /*! Spectre.css Experimentals | MIT License | github.com/picturepan2/spectre */
+.calendar {
+  border: .1rem solid #efefef;
+  border-radius: .2rem;
+  display: block;
+  text-align: center;
+}
+.calendar .calendar-nav {
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #f8f8f8;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -ms-flex-line-pack: justify;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.calendar .calendar-header,
+.calendar .calendar-body {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-pack: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.calendar .calendar-header .calendar-date,
+.calendar .calendar-body .calendar-date {
+  -webkit-flex: 0 0 14.28%;
+  -ms-flex: 0 0 14.28%;
+  flex: 0 0 14.28%;
+}
+.calendar .calendar-header {
+  background: #f8f8f8;
+  border-bottom: .1rem solid #efefef;
+  color: #999;
+  font-size: 1.2rem;
+}
+.calendar .calendar-body {
+  color: #666;
+}
+.calendar .calendar-body .calendar-date {
+  border: 0;
+  overflow: hidden;
+  padding: .5rem;
+}
+.calendar .calendar-body .calendar-date .date-item {
+  color: #666;
+}
+.calendar .calendar-body .calendar-date.prev-month .date-item,
+.calendar .calendar-body .calendar-date.next-month .date-item {
+  opacity: .25;
+}
+.calendar .calendar-body .date-item {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: .1rem solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 2rem;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 3.2rem;
+}
+.calendar .calendar-body .date-item.date-today {
+  background: #eff1fa;
+  color: #5764c6;
+}
+.calendar .calendar-body .date-item:focus,
+.calendar .calendar-body .date-item:hover {
+  background: #f7f8fc;
+  border-color: #dcdff3;
+  color: #5764c6;
+  text-decoration: none;
+}
+.calendar .calendar-body .date-item:active,
+.calendar .calendar-body .date-item.active {
+  background: #4452c0;
+  border-color: #3b49af;
+  color: #fff;
+}
+.calendar .calendar-body .date-item.badge::after {
+  position: absolute;
+  right: .4rem;
+  top: .4rem;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.calendar .calendar-range {
+  position: relative;
+}
+.calendar .calendar-range .date-item::before {
+  background: #eff1fa;
+  content: "";
+  height: 3.2rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+  z-index: -9;
+}
+.calendar .calendar-range + .calendar-range .date-item::before {
+  left: 0;
+  width: 100%;
+}
+.calendar .calendar-range + .calendar-range .date-item.active::before {
+  width: 50%;
+}
+.calendar.calendar-lg .calendar-body {
+  padding: 0;
+}
+.calendar.calendar-lg .calendar-body .calendar-date {
+  border-bottom: .1rem solid #efefef;
+  border-right: .1rem solid #efefef;
+  height: 10rem;
+  text-align: right;
+}
+.calendar.calendar-lg .calendar-body .calendar-date:nth-child(7n) {
+  border-right: 0;
+}
+.calendar.calendar-lg .calendar-body .calendar-date:nth-last-child(-n+7) {
+  border-bottom: 0;
+}
+.calendar.calendar-lg .calendar-body .date-item {
+  height: 2.4rem;
+  padding: .1rem;
+  width: 2.4rem;
+}
+.calendar.calendar-lg .calendar-body .date-item.badge::after {
+  right: .25rem;
+  top: .25rem;
+}
+.calendar.calendar-lg .calendar-body .calendar-range .date-item::before {
+  height: 2.4rem;
+  left: auto;
+  right: 0;
+  top: 1.7rem;
+  width: 2.2rem;
+}
+.calendar.calendar-lg .calendar-body .calendar-range + .calendar-range .date-item::before {
+  left: 0;
+  width: 100%;
+}
+.calendar.calendar-lg .calendar-body .calendar-range + .calendar-range .date-item.active::before {
+  right: 1.7rem;
+  width: auto;
+}
+.calendar.calendar-lg .calendar-event {
+  background: #eff1fa;
+  border-radius: .2rem;
+  color: #5764c6;
+  display: inline-block;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: .2rem auto;
+  overflow: hidden;
+  padding: .3rem .4rem;
+  text-align: left;
+  text-overflow: ellipsis;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
 .carousel {
   background: #f8f8f8;
   display: block;

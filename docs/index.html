@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="https://github.com/picturepan2/" />
     <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
@@ -148,10 +148,11 @@
 <pre class="code"><code><span class="tag">$</span> bower install <span class="atv">spectre.css</span> --save
 </code></pre>
 
-            <p>And include it in your website or Web app <code>&lt;head&gt;</code></p>
+            <p>And include <code>spectre.css</code> in your website or Web app &lt;head&gt;. If you want the <a href="experimentals.html">Spectre Experimentals</a> components, you can add <code>spectre-exp.css</code> as well.</p>
 
 <!-- install manually example -->
 <pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre-exp.min.css&quot;</span> /&gt;
 </code></pre>
 
           </section>
@@ -170,6 +171,40 @@
             </ol>
             <p>You can watch file changes and rebuild CSS files by using <code>gulp watch</code>.</p>
           </section>
+
+<!-- file structure -->
+<pre class="code"><code>spectre/
+├── dist/
+│   ├── spectre-exp.css
+│   ├── spectre-exp.min.css
+│   ├── spectre.css
+│   └── spectre.min.css
+│
+├── docs/
+|   ├── css/
+│   │   ├── docs.less
+│   │   └── ...
+│   ├── ../
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── mixins.less
+│   ├── variables.less
+│   └── ...
+│
+├── spectre-exp.less
+└── spectre.less
+</code></pre>
+
+          <header id="colors" class="text-center"><h4>Colors</h4></header>
+          <section class="notes">
+            <p>Spectre.css has its consistent design language colors (primary color <span class="docs-dot bg-primary"></span> <span style="color:#5764c6;">#5764c6</span>), you can modify <code>variables.less</code> to create your new or match existing design. </p>
+          </section>
+        </section>
+
+        <section id="accessibility" class="container">
+          <header class="text-center"><h3>Accessibility <small class="label">coming soon</small></h3></header>
         </section>
 
         <section id="browsers" class="container">
@@ -177,11 +212,11 @@
           <section class="notes">
             <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
             <ul>
-              <li>Chrome (last three)</li>
-              <li>Microsoft Edge (last three)</li>
-              <li>Firefox (last three)</li>
-              <li>Safari (last three)</li>
-              <li>Opera (last three)</li>
+              <li>Chrome (last 4)</li>
+              <li>Microsoft Edge (last 4)</li>
+              <li>Firefox (last 4)</li>
+              <li>Safari (last 4)</li>
+              <li>Opera (last 4)</li>
               <li>Internet Explorer 10+</li>
             </ul>
           </section>

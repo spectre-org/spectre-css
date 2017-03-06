@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.6";
+  content: "0.2.7";
 }
 
 /* Spectre docs style */
@@ -121,6 +121,8 @@
 }
 
 .docs-content {
+  padding-top: 0;
+
   .container {
     padding: 1rem;
   }
@@ -142,9 +144,8 @@
 
   .docs-dot {
     border-radius: 50%;
-    display: block;
+    display: inline-block;
     height: 1rem;
-    margin: auto;
     padding: 0;
     width: 1rem;
   }
@@ -206,7 +207,7 @@
   }
 
   .docs-sidebar {
-    padding: 6rem 1rem;
+    padding: 7rem 1rem;
 
       .docs-nav {
         position: relative;
@@ -215,7 +216,7 @@
     @supports (position: sticky) {
       .docs-nav {
         position: sticky;
-        top: 9rem;
+        top: 8rem;
 
         // A position: sticky; bug casues box-shadow generates width to the elements
         .nav-item a:focus {

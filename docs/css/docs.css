@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.6";
+  content: "0.2.7";
 }
 /* Spectre docs style */
 .bg-gray {
@@ -99,6 +99,9 @@
   padding: 1rem;
   width: 100%;
 }
+.docs-content {
+  padding-top: 0;
+}
 .docs-content .container {
   padding: 1rem;
 }
@@ -116,9 +119,8 @@
 }
 .docs-content .docs-dot {
   border-radius: 50%;
-  display: block;
+  display: inline-block;
   height: 1rem;
-  margin: auto;
   padding: 0;
   width: 1rem;
 }
@@ -172,7 +174,7 @@
     padding: 0 .5rem;
   }
   .docs-sidebar {
-    padding: 6rem 1rem;
+    padding: 7rem 1rem;
   }
   .docs-sidebar .docs-nav {
     position: relative;
@@ -181,7 +183,7 @@
     .docs-sidebar .docs-nav {
       position: sticky;
       position: -webkit-sticky;
-      top: 9rem;
+      top: 8rem;
     }
     .docs-sidebar .docs-nav .nav-item a:focus {
       box-shadow: none;

@@ -651,18 +651,18 @@ abbr[title] {
 }
 .btn.btn-primary:focus {
   background: #4452c0;
-  border-color: #3b49af;
+  border-color: #3f4eba;
   color: #fff;
 }
 .btn.btn-primary:hover {
   background: #3f4eba;
-  border-color: #3b49af;
+  border-color: #3946a7;
   color: #fff;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active {
   background: #3d4ab3;
-  border-color: #3946a7;
+  border-color: #36429f;
   color: #fff;
 }
 .btn.btn-primary.loading::after {
@@ -812,22 +812,6 @@ textarea.form-input {
   height: auto;
   line-height: 2rem;
 }
-.has-success .form-input,
-.form-input.is-success {
-  border-color: #32b643;
-}
-.has-success .form-input:focus,
-.form-input.is-success:focus {
-  box-shadow: 0 0 0 .2rem rgba(50, 182, 67, .15);
-}
-.has-danger .form-input,
-.form-input.is-danger {
-  border-color: #e85600;
-}
-.has-danger .form-input:focus,
-.form-input.is-danger:focus {
-  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
-}
 .form-input[type=file] {
   height: auto;
 }
@@ -885,13 +869,29 @@ textarea.form-input {
   height: 4rem;
   padding: .9rem 2.4rem .9rem .8rem;
 }
+.has-success .form-input,
 .has-success .form-select,
+.form-input.is-success,
 .form-select.is-success {
   border-color: #32b643;
 }
+.has-success .form-input:focus,
+.has-success .form-select:focus,
+.form-input.is-success:focus,
+.form-select.is-success:focus {
+  box-shadow: 0 0 0 .2rem rgba(50, 182, 67, .15);
+}
+.has-danger .form-input,
 .has-danger .form-select,
+.form-input.is-danger,
 .form-select.is-danger {
   border-color: #e85600;
+}
+.has-danger .form-input:focus,
+.has-danger .form-select:focus,
+.form-input.is-danger:focus,
+.form-select.is-danger:focus {
+  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
 }
 .form-checkbox input,
 .form-radio input,
@@ -1224,6 +1224,9 @@ code {
 }
 .container.grid-960 {
   max-width: 98rem;
+}
+.container.grid-480 {
+  max-width: 50rem;
 }
 .columns {
   display: flex;
@@ -1981,7 +1984,7 @@ code {
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
   background: #f7f8fc;
-  color: #3b49af;
+  color: #5764c6;
 }
 .menu .menu-header {
   color: #ccc;

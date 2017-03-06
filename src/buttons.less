@@ -18,7 +18,7 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    background: @light-primary-color;
+    background: @light-secondary-color;
     text-decoration: none;
   }
   &:hover {
@@ -41,18 +41,18 @@
     color: @light-color;
     &:focus {
       background: @dark-primary-color;
-      border-color: darken(@dark-primary-color, 5%);
+      border-color: darken(@dark-primary-color, 2%);
       color: @light-color;
     }
     &:hover {
       background: darken(@dark-primary-color, 2%);
-      border-color: darken(@dark-primary-color, 5%);
+      border-color: darken(@dark-primary-color, 7%);
       color: @light-color;
     }
     &:active,
     &.active {
       background: darken(@dark-primary-color, 4%);
-      border-color: darken(@dark-primary-color, 7%);
+      border-color: darken(@dark-primary-color, 9%);
       color: @light-color;
     }
     &.loading {

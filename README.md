@@ -74,11 +74,11 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 
 ### Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
-- Chrome (last three)
-- Microsoft Edge (last three)
-- Firefox (last three)
-- Safari (last three)
-- Opera (last three)
+- Chrome (last 4)
+- Microsoft Edge (last 4)
+- Firefox (last 4)
+- Safari (last 4)
+- Opera (last 4)
 - Internet Explorer 10+
 
 Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
