@@ -51,7 +51,6 @@
 }
 .calendar .calendar-body .calendar-date {
   border: 0;
-  overflow: hidden;
   padding: .5rem;
 }
 .calendar .calendar-body .calendar-date .date-item {
@@ -132,10 +131,18 @@
   padding: 0;
 }
 .calendar.calendar-lg .calendar-body .calendar-date {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
   border-bottom: .1rem solid #efefef;
   border-right: .1rem solid #efefef;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -ms-flex-align: end;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 10rem;
-  text-align: right;
 }
 .calendar.calendar-lg .calendar-body .calendar-date:nth-child(7n) {
   border-right: 0;
@@ -144,13 +151,16 @@
   border-bottom: 0;
 }
 .calendar.calendar-lg .calendar-body .date-item {
+  -webkit-flex: 0 0 2.4rem;
+  -ms-flex: 0 0 2.4rem;
+  flex: 0 0 2.4rem;
   height: 2.4rem;
   padding: .1rem;
   width: 2.4rem;
 }
 .calendar.calendar-lg .calendar-body .date-item.badge::after {
-  right: .25rem;
-  top: .25rem;
+  right: 0;
+  top: 0;
 }
 .calendar.calendar-lg .calendar-body .calendar-range .date-item::before {
   height: 2.4rem;
@@ -167,6 +177,9 @@
   right: 1.7rem;
   width: auto;
 }
+.calendar.calendar-lg .calendar-events {
+  overflow-y: auto;
+}
 .calendar.calendar-lg .calendar-event {
   background: #eff1fa;
   border-radius: .2rem;
@@ -176,12 +189,11 @@
   font-size: 1.2rem;
   line-height: 1;
   margin: .2rem auto;
-  overflow: hidden;
+  overflow-y: hidden;
   padding: .3rem .4rem;
   text-align: left;
-  text-overflow: ellipsis;
   vertical-align: baseline;
-  white-space: nowrap;
+  width: 100%;
 }
 .carousel {
   background: #f8f8f8;

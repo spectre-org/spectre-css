@@ -40,7 +40,6 @@
 
     .calendar-date {
       border: 0;
-      overflow: hidden;
       padding: .5rem;
 
       .date-item {
@@ -140,10 +139,12 @@
       padding: 0;
 
       .calendar-date {
+        align-items: flex-end;
         border-bottom: .1rem solid @border-color;
         border-right: .1rem solid @border-color;
+        display: flex;
+        flex-direction: column;
         height: 10rem;
-        text-align: right;
 
         &:nth-child(7n) {
           border-right: 0;
@@ -154,14 +155,15 @@
       }
 
       .date-item {
+        flex: 0 0 2.4rem;
         height: 2.4rem;
         padding: .1rem;
         width: 2.4rem;
 
         &.badge {
           &::after {
-            top: .25rem;
-            right: .25rem;
+            top: 0;
+            right: 0;
           }
         }
       }
@@ -194,6 +196,10 @@
       }
     }
 
+    .calendar-events {
+      overflow-y: auto;
+    }
+
     .calendar-event {
       background: @secondary-color;
       color: @primary-color;
@@ -201,10 +207,9 @@
       font-size: 1.2rem;
       .label-base();
       margin: .2rem auto;
-      overflow: hidden;
+      overflow-y: hidden;
       text-align: left;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      width: 100%;
     }
   }
 }
