@@ -213,9 +213,6 @@
                         <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Product launch event</a>
                         <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Lunch</a>
                         <a class="calendar-event" href="#calendars" style="background:#e85600;color:#fff;">International Women's Day</a>
-                        <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Product launch event</a>
-                        <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Lunch</a>
-                        <a class="calendar-event" href="#calendars" style="background:#e85600;color:#fff;">International Women's Day</a>
                       </div>
                     </div>
                     <div class="calendar-date current-month"><button class="date-item">9</button></div>
@@ -258,26 +255,53 @@
         <section id="carousels" class="container">
           <header class="text-center"><h3>Carousels</h3></header>
           <section class="notes">
-            <p><strong>Carousels</strong> are slideshows for cycling images. It is built in pure CSS and not perfect.</p>
+            <p><strong>Carousels</strong> are slideshows for cycling images. It is built in pure CSS.</p>
           </section>
           <div class="columns text-center">
             <div class="column col-12">
-              <div class="carousel">
+              <div class="carousel carousel-autoplay">
                 <input type="radio" id="slide-1" name="carousel-radio" class="carousel-locator" checked>
               	<input type="radio" id="slide-2" name="carousel-radio" class="carousel-locator">
                 <input type="radio" id="slide-3" name="carousel-radio" class="carousel-locator">
               	<input type="radio" id="slide-4" name="carousel-radio" class="carousel-locator">
                 <div class="carousel-container">
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-4">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-2">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-yosemite.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
+
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-1">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-3">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
+
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-2">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-4">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
+                  
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-3">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-1">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-el-capitan-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
                 </div>
