@@ -139,12 +139,12 @@
       padding: 0;
 
       .calendar-date {
-        align-items: flex-end;
         border-bottom: .1rem solid @border-color;
         border-right: .1rem solid @border-color;
         display: flex;
         flex-direction: column;
-        height: 10rem;
+        height: 11rem;
+        overflow-x: hidden;
 
         &:nth-child(7n) {
           border-right: 0;
@@ -155,6 +155,7 @@
       }
 
       .date-item {
+        align-self: flex-end;
         flex: 0 0 2.4rem;
         height: 2.4rem;
         padding: .1rem;
@@ -197,18 +198,20 @@
     }
 
     .calendar-events {
+      line-height: 1;
       overflow-y: auto;
+      padding: .5rem 0;
     }
 
     .calendar-event {
       background: @secondary-color;
       color: @primary-color;
-      display: block;
       font-size: 1.2rem;
       .label-base();
-      margin: .2rem auto;
-      overflow-y: hidden;
+      overflow: hidden;
       text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       width: 100%;
     }
   }
