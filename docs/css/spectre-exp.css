@@ -58,7 +58,9 @@
 }
 .calendar .calendar-body .calendar-date.prev-month .date-item,
 .calendar .calendar-body .calendar-date.next-month .date-item {
+  cursor: default;
   opacity: .25;
+  pointer-events: none;
 }
 .calendar .calendar-body .date-item {
   -webkit-appearance: none;

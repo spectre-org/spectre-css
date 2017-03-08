@@ -412,12 +412,6 @@ a.active {
   box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
   outline: 0;
 }
-[disabled],
-.disabled {
-  cursor: default;
-  opacity: .5;
-  pointer-events: none;
-}
 .btn .icon,
 .toast .icon,
 .menu .icon {
@@ -644,6 +638,13 @@ abbr[title] {
   border-color: #3b49af;
   color: #fff;
 }
+.btn[disabled],
+.btn:disabled,
+.btn.disabled {
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
+}
 .btn.btn-primary {
   background: #5764c6;
   border-color: #4452c0;
@@ -789,9 +790,6 @@ abbr[title] {
 }
 .form-input:focus {
   border-color: #5764c6;
-}
-.form-input[disabled] {
-  background: #f8f8f8;
 }
 .form-input.input-sm {
   font-size: 1.2rem;
@@ -1092,6 +1090,39 @@ textarea.form-input {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+}
+.form-input:disabled,
+.form-select:disabled,
+.form-input.disabled,
+.form-select.disabled,
+[disabled] .form-input,
+[disabled] .form-select,
+.disabled .form-input,
+.disabled .form-select {
+  background-color: #f0f0f0;
+  cursor: default;
+  opacity: .5;
+}
+input:disabled,
+input.disabled,
+[disabled] input,
+.disabled input {
+  background: #f0f0f0;
+  cursor: default;
+  opacity: .5;
+}
+input:disabled + .form-icon,
+input.disabled + .form-icon,
+[disabled] input + .form-icon,
+.disabled input + .form-icon {
+  background: #f0f0f0;
+  border-color: #ccc;
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
+}
+.form-switch input:disabled + .form-icon::after {
+  background: #fff;
 }
 .form-horizontal {
   padding: 1rem;
@@ -2188,6 +2219,12 @@ code {
 .pagination .page-item a:focus,
 .pagination .page-item a:hover {
   color: #5764c6;
+}
+.pagination .page-item a[disabled],
+.pagination .page-item a.disabled {
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
 }
 .pagination .page-item.active a {
   background: #5764c6;
