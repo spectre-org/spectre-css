@@ -47,6 +47,22 @@
     }
   }
 
+  &:disabled,
+  &.disabled {
+    &::-webkit-slider-thumb {
+      background: @light-gray-color;
+      transform: scale(1);
+    }
+    &::-moz-range-thumb {
+      background: @light-gray-color;
+      transform: scale(1);
+    }
+    &::-ms-thumb {
+      background: @light-gray-color;
+      transform: scale(1);
+    }
+  }
+
   // Slider Track
   &::-webkit-slider-runnable-track {
     background: @border-color;

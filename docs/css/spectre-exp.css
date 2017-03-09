@@ -587,6 +587,23 @@
   -ms-transform: scale(1.25);
   transform: scale(1.25);
 }
+.slider:disabled::-webkit-slider-thumb,
+.slider.disabled::-webkit-slider-thumb {
+  background: #ccc;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.slider:disabled::-moz-range-thumb,
+.slider.disabled::-moz-range-thumb {
+  background: #ccc;
+  transform: scale(1);
+}
+.slider:disabled::-ms-thumb,
+.slider.disabled::-ms-thumb {
+  background: #ccc;
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
 .slider::-webkit-slider-runnable-track {
   background: #efefef;
   border-radius: .2rem;
