@@ -1094,34 +1094,21 @@ textarea.form-input {
 .form-input:disabled,
 .form-select:disabled,
 .form-input.disabled,
-.form-select.disabled,
-[disabled] .form-input,
-[disabled] .form-select,
-.disabled .form-input,
-.disabled .form-select {
+.form-select.disabled {
   background-color: #f0f0f0;
   cursor: default;
   opacity: .5;
 }
-input:disabled,
-input.disabled,
-[disabled] input,
-.disabled input {
-  background: #f0f0f0;
-  cursor: default;
-  opacity: .5;
-}
 input:disabled + .form-icon,
-input.disabled + .form-icon,
-[disabled] input + .form-icon,
-.disabled input + .form-icon {
+input.disabled + .form-icon {
   background: #f0f0f0;
   border-color: #ccc;
   cursor: default;
   opacity: .5;
   pointer-events: none;
 }
-.form-switch input:disabled + .form-icon::after {
+.form-switch input:disabled + .form-icon::after,
+.form-switch input.disabled + .form-icon::after {
   background: #fff;
 }
 .form-horizontal {
@@ -1740,6 +1727,12 @@ code {
   font-size: 1;
   padding: .1em 0;
 }
+.form-autocomplete .menu {
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
 .avatar {
   background: #5764c6;
   border-radius: 50%;
@@ -1959,8 +1952,8 @@ code {
   position: relative;
 }
 .dropdown .menu {
-  -webkit-animation: slide-down .2s;
-  animation: slide-down .2s;
+  -webkit-animation: slide-down .2s 1;
+  animation: slide-down .2s 1;
   display: none;
   left: 0;
   position: absolute;

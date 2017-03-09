@@ -62,9 +62,6 @@
                 <a href="components.html#chips">Chips</a>
               </li>
               <li class="nav-item">
-                <a href="components.html#dropdowns">Dropdowns</a>
-              </li>
-              <li class="nav-item">
                 <a href="components.html#menus">Menus</a>
               </li>
               <li class="nav-item">
@@ -610,8 +607,112 @@
 
         </section>
 
-        <section id="dropdowns" class="container">
-          <header class="text-center"><h3>Dropdowns</h3></header>
+        <section id="menus" class="container">
+          <header class="text-center"><h3>Menus</h3></header>
+          <section class="notes">
+            <p><strong>Menus</strong> are vertical list of links or buttons for actions and navigation.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <ul class="menu">
+                <li class="menu-item">
+                  <div class="tile tile-centered">
+                    <div class="tile-icon">
+                      <img src="img/avatar-4.png" class="avatar" />
+                    </div>
+                    <div class="tile-content">
+                      Steve Rogers
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li class="menu-item">
+                  <div class="menu-badge">
+                    <label class="label label-primary">2</label>
+                  </div>
+                  <a href="#menus" class="active">
+                    My profile
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    Settings
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-xs-12">
+              <ul class="menu">
+                <li class="menu-header">
+                  <span class="menu-header-text">
+                    LINKS
+                  </span>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    <i class="icon icon-link"></i> Slack
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    <i class="icon icon-link"></i> Hipchat
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">
+                    <i class="icon icon-link"></i> Skype
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Add a container element with the class <code>menu</code>. And add child elements with the classname <code>menu-item</code>. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
+          </section>
+
+<!-- menus example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+  <span class="com">&lt;!-- menu header --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
+    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
+      LINKS
+    &lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu item --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu divider --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu-badge&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;2&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Settings
+    &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</code></pre>
+
+          <header id="dropdowns" class="text-center"><h4>Dropdown menus</h4></header>
           <section class="notes">
             <p>The <strong>dropdown</strong> is a combination of buttons and menus.</p>
           </section>
@@ -727,113 +828,6 @@
     &lt;<span class="tag">/ul</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-        </section>
-
-        <section id="menus" class="container">
-          <header class="text-center"><h3>Menus</h3></header>
-          <section class="notes">
-            <p><strong>Menus</strong> are vertical list of links or buttons for actions and navigation.</p>
-          </section>
-          <div class="columns">
-            <div class="column col-xs-12">
-              <ul class="menu">
-                <li class="menu-item">
-                  <div class="tile tile-centered">
-                    <div class="tile-icon">
-                      <img src="img/avatar-4.png" class="avatar" />
-                    </div>
-                    <div class="tile-content">
-                      Steve Rogers
-                    </div>
-                  </div>
-                </li>
-                <li class="divider"></li>
-                <li class="menu-item">
-                  <div class="menu-badge">
-                    <label class="label label-primary">2</label>
-                  </div>
-                  <a href="#menus" class="active">
-                    My profile
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#menus">
-                    Settings
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#menus">
-                    Logout
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="column col-xs-12">
-              <ul class="menu">
-                <li class="menu-header">
-                  <span class="menu-header-text">
-                    LINKS
-                  </span>
-                </li>
-                <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Slack
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Hipchat
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Skype
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <section class="notes">
-            <p>Add a container element with the class <code>menu</code>. And add child elements with the classname <code>menu-item</code>. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
-          </section>
-
-<!-- menus example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
-  <span class="com">&lt;!-- menu header --&gt;</span>
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
-      LINKS
-    &lt;<span class="tag">/span</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  <span class="com">&lt;!-- menu item --&gt;</span>
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  <span class="com">&lt;!-- menu divider --&gt;</span>
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu-badge&quot;</span>&gt;
-      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;2&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Settings
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-&lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
         </section>

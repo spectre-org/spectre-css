@@ -152,6 +152,9 @@
 .docs-content .empty .icon {
   font-size: 4rem;
 }
+.docs-content .form-autocomplete .menu {
+  position: static;
+}
 .docs-content .example-tile-icon {
   -webkit-align-content: space-around;
   align-content: space-around;
