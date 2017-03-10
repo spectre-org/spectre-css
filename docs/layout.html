@@ -17,7 +17,7 @@
       <nav class="navbar">
         <section class="navbar-section">
           <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand">Spectre.css</a>
+          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
           <a href="index.html" class="btn btn-link">Docs</a>
         </section>
         <section class="navbar-section">
@@ -48,6 +48,9 @@
               </li>
               <li class="nav-item">
                 <a href="layout.html#navbar">Navbar</a>
+              </li>
+              <li class="nav-item">
+                <a href="layout.html#panels">Panels</a>
               </li>
               <li class="nav-item">
                 <a href="layout.html#empty">Empty states</a>
@@ -369,10 +372,10 @@
           <div class="columns">
             <div class="column">
               <section class="navbar">
+                <section class="navbar-primary">
+                  <a href="#navbar" class="navbar-brand mr-10">Spectre.css</a>
+                </section>
                 <section class="navbar-section">
-                  <a href="#navbar" class="navbar-brand">
-                    <i class="icon icon-pages"></i> Spectre.css
-                  </a>
                   <a href="#navbar" class="btn btn-link">features</a>
                   <a href="#navbar" class="btn btn-link">documents</a>
                 </section>
@@ -392,10 +395,10 @@
 
 <!-- navbar example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+  &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-primary&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-10&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/section</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-pages&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Spectre.css
-    &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;features&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;documents&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
@@ -406,6 +409,93 @@
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
 &lt;<span class="tag">/header</span>&gt;
+</code></pre>
+
+        </section>
+
+        <section id="panels" class="container">
+          <header class="text-center"><h3>Panels</h3></header>
+          <section class="notes">
+            <p><strong>Panels</strong> are flexible view container layout with auto-expand content section.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header text-center">
+                  <div class="navbar">
+                    <div class="navbar-section">
+                      <button class="btn btn-action btn-link btn-lg">
+                        <i class="icon icon-keyboard_arrow_left"></i>
+                      </button>
+                    </div>
+                    <div class="navbar-section navbar-primary">
+                      <div class="panel-title">Tony Stark</div>
+                    </div>
+                    <div class="navbar-section"></div>
+                  </div>
+                </div>
+                <nav class="panel-nav">
+                  <ul class="tab tab-block">
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Profile
+                      </a>
+                    </li>
+                    <li class="tab-item active">
+                      <a href="#panels">
+                        Files
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Tasks
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="panel-body">
+                  <div class="tile tile-centered">
+                    <div class="tile-icon">
+                      <div class="example-tile-icon">
+                        <i class="icon icon-face centered"></i>
+                      </div>
+                    </div>
+                    <div class="tile-content">
+                      <div class="tile-title">ironman-mark-1.pdf</div>
+                      <div class="tile-meta">14MB · Private · 1 Jan, 2017</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action"><i class="icon icon-more_vert"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-icon">
+                      <div class="example-tile-icon">
+                        <i class="icon icon-face centered"></i>
+                      </div>
+                    </div>
+                    <div class="tile-content">
+                      <div class="tile-title">ironman-mark-2.pdf</div>
+                      <div class="tile-meta">24MB · Private · 1 Jan, 2017</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action"><i class="icon icon-more_vert"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <button class="btn btn-primary btn-block">Manage</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p></p>
+          </section>
+
+<!-- panels example -->
+<pre class="code" data-lang="HTML"><code>
 </code></pre>
 
         </section>

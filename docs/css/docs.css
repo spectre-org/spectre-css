@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.8";
+  content: "0.2.9";
 }
 /* Spectre docs style */
 .bg-gray {
@@ -137,6 +137,9 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+.docs-content .panel {
+  height: 75vh;
+}
 .docs-content .code .com {
   color: #c5c5c5;
 }
@@ -173,7 +176,7 @@
   width: 4rem;
 }
 @media screen and (min-width: 601px) {
-  .navbar .navbar-section {
+  .section-header .navbar-section {
     padding: 0 .5rem;
   }
   .docs-sidebar {
