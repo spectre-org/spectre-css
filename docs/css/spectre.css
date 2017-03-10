@@ -2205,7 +2205,7 @@ code {
 }
 .tab .tab-item a {
   border-bottom: .2rem solid transparent;
-  color: #333;
+  color: inherit;
   display: block;
   margin-bottom: -.1rem;
   margin-top: 0;
@@ -2411,11 +2411,11 @@ code {
   padding-right: 1rem;
 }
 .tile .tile-title {
-  font-size: 1.6rem;
   font-weight: 500;
 }
 .tile .tile-meta {
   color: #999;
+  line-height: 2rem;
 }
 .tile.tile-centered {
   -webkit-align-items: center;

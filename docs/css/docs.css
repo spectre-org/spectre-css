@@ -100,6 +100,7 @@
   width: 100%;
 }
 .docs-content {
+  color: #666;
   padding-top: 0;
 }
 .docs-content .container {
@@ -110,7 +111,6 @@
   padding-top: 6rem;
 }
 .docs-content .notes {
-  color: #666;
   margin: 4rem 0;
 }
 .docs-content .docs-block {
