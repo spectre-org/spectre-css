@@ -51,13 +51,14 @@
 }
 .calendar .calendar-body .calendar-date {
   border: 0;
-  padding: .5rem;
+  padding: .6rem;
 }
 .calendar .calendar-body .calendar-date .date-item {
   color: #666;
 }
 .calendar .calendar-body .calendar-date.prev-month .date-item,
-.calendar .calendar-body .calendar-date.next-month .date-item {
+.calendar .calendar-body .calendar-date.next-month .date-item,
+.calendar .calendar-body .calendar-date .date-item:disabled {
   cursor: default;
   opacity: .25;
   pointer-events: none;

@@ -1736,7 +1736,7 @@ code {
 .avatar {
   background: #5764c6;
   border-radius: 50%;
-  color: #fff;
+  color: rgba(255, 255, 255, .75);
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 300;

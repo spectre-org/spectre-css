@@ -40,19 +40,18 @@
 
     .calendar-date {
       border: 0;
-      padding: .5rem;
+      padding: .6rem;
 
       .date-item {
         color: @dark-gray-color;
       }
 
-      &.prev-month,
-      &.next-month {
-        .date-item {
-          cursor: default;
-          opacity: .25;
-          pointer-events: none;
-        }
+      &.prev-month .date-item,
+      &.next-month .date-item,
+      .date-item:disabled {
+        cursor: default;
+        opacity: .25;
+        pointer-events: none;
       }
     }
 
