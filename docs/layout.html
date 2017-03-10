@@ -551,11 +551,24 @@
           </div>
 
           <section class="notes">
-            <p></p>
+            <p>Add a container element with the class <code>panel</code>. And add child elements with the class name <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code>. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
           </section>
 
 <!-- panels example -->
-<pre class="code" data-lang="HTML"><code>
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-title&quot;</span>&gt;Comments&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-nav&quot;</span>&gt;
+    <span class="com">&lt;!-- navigation components: tabs, breadcrumbs or pagination --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-body&quot;</span>&gt;
+    <span class="com">&lt;!-- contents --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-footer&quot;</span>&gt;
+    <span class="com">&lt;!-- buttons or inputs --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>
