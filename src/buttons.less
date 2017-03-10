@@ -33,6 +33,13 @@
     border-color: darken(@dark-primary-color, 5%);
     color: @light-color;
   }
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+  }
 
   // Button Primary
   &.btn-primary {

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Elements - Spectre.css</title>
   <link rel="stylesheet" href="css/spectre.css" />
@@ -705,6 +705,7 @@
 &lt;<span class="tag">/form</span>&gt;
 </code></pre>
 
+          <header class="text-center"><h4>Input types</h4></header>
           <div class="columns">
             <div class="column col-9 col-sm-12">
               <form class="form-horizontal" action="#forms">
@@ -783,19 +784,21 @@
               </form>
             </div>
           </div>
+
+          <header class="text-center"><h4>Form validation styles</h4></header>
           <section class="notes">
             <p>To use form validation styles, add <code>is-success</code> and <code>is-danger</code> to the controls or add <code>has-success</code> and <code>has-danger</code> to parent elements. You can use the class <code>form-input-hint</code> to provide form validation success and error messages.</p>
           </section>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <div class="form-group">
-                <label class="form-label" for="input-example-1">Name</label>
-                <input class="form-input is-danger" type="text" id="input-example-19" placeholder="Name" />
+                <label class="form-label" for="input-example-17">Name</label>
+                <input class="form-input is-danger" type="text" id="input-example-17" placeholder="Name" />
                 <p class="form-input-hint">The name is invaild.</p>
               </div>
               <div class="form-group has-success">
-                <label class="form-label" for="input-example-2">Email</label>
-                <input class="form-input" type="email" id="input-example-20" placeholder="Email" />
+                <label class="form-label" for="input-example-18">Email</label>
+                <input class="form-input" type="email" id="input-example-18" placeholder="Email" />
                 <p class="form-input-hint">The email is available.</p>
               </div>
             </div>
@@ -841,6 +844,7 @@
 &lt;<span class="tag">/form</span>&gt;
 </code></pre>
 
+          <header class="text-center"><h4>Form sizes</h4></header>
           <section class="notes">
             <p>For smaller or larger input and select controls, you could add <code>input-sm</code>/<code>input-lg</code> and <code>select-sm</code>/<code>select-lg</code> to the elements.</p>
           </section>
@@ -870,6 +874,7 @@
               </select>
             </div>
           </div>
+
           <header class="text-center"><h4>Input groups</h4></header>
           <div class="columns">
             <div class="column col-xs-12">
@@ -941,6 +946,54 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
+          <header class="text-center"><h4>Form disabled styles</h4></header>
+          <div class="columns">
+            <div class="column col-9 col-xs-12">
+              <form action="#forms">
+                <fieldset disabled>
+                  <div class="form-group">
+                    <label class="form-label" for="input-example-19">Name</label>
+                    <input class="form-input" type="text" id="input-example-19" placeholder="Name" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <label class="form-radio">
+                      <input type="radio" name="gender" disabled />
+                      <i class="form-icon"></i> Male
+                    </label>
+                    <label class="form-radio">
+                      <input type="radio" name="gender" disabled />
+                      <i class="form-icon"></i> Female
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-select" disabled>
+                      <option>Choose an option</option>
+                      <option>Slack</option>
+                      <option>Skype</option>
+                      <option>Hipchat</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-switch">
+                      <input type="checkbox" disabled />
+                      <i class="form-icon"></i> Send me emails with news and tips
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="input-example-20">Message</label>
+                    <textarea class="form-input" id="input-example-20" placeholder="Textarea" rows="3" disabled></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="form-icon"></i> Remember me
+                    </label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </section>
 
         <section id="labels" class="container">

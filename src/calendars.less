@@ -40,18 +40,18 @@
 
     .calendar-date {
       border: 0;
-      overflow: hidden;
-      padding: .5rem;
+      padding: .6rem;
 
       .date-item {
         color: @dark-gray-color;
       }
 
-      &.prev-month,
-      &.next-month {
-        .date-item {
-          opacity: .25;
-        }
+      &.prev-month .date-item,
+      &.next-month .date-item,
+      .date-item:disabled {
+        cursor: default;
+        opacity: .25;
+        pointer-events: none;
       }
     }
 
@@ -142,8 +142,11 @@
       .calendar-date {
         border-bottom: .1rem solid @border-color;
         border-right: .1rem solid @border-color;
-        height: 10rem;
-        text-align: right;
+        display: flex;
+        flex-direction: column;
+        height: 11rem;
+        overflow: hidden;
+        padding: 0;
 
         &:nth-child(7n) {
           border-right: 0;
@@ -154,14 +157,18 @@
       }
 
       .date-item {
+        align-self: flex-end;
+        flex: 0 0 2.4rem;
         height: 2.4rem;
+        margin-right: .5rem;
+        margin-top: .5rem;
         padding: .1rem;
         width: 2.4rem;
 
         &.badge {
           &::after {
-            top: .25rem;
-            right: .25rem;
+            top: .2rem;
+            right: .2rem;
           }
         }
       }
@@ -194,16 +201,25 @@
       }
     }
 
+    .calendar-events {
+      flex-grow: 1;
+      line-height: 1;
+      overflow-y: auto;
+      padding: .5rem;
+    }
+
     .calendar-event {
       background: @secondary-color;
+      border-radius: @border-radius;
       color: @primary-color;
-      display: block;
       font-size: 1.2rem;
-      .label-base();
+      display: block;
       margin: .2rem auto;
       overflow: hidden;
+      padding: .3rem .4rem;
       text-align: left;
       text-overflow: ellipsis;
+      vertical-align: baseline;
       white-space: nowrap;
     }
   }

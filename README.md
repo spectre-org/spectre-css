@@ -59,8 +59,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Badges](http://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
 - [Cards](http://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
 - [Chips](http://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
-- [Dropdowns](http://picturepan2.github.io/spectre/components.html#dropdowns) - combination of buttons and menus
-- [Menus](http://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
+- [Menus](http://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation 
 - [Modals](http://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
 - [Navigation](http://picturepan2.github.io/spectre/components.html#navigation) - breadcrumb, tabs, pagination and navs
 - [Steps](http://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps

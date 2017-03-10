@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Experimentals - Spectre.css</title>
   <link rel="stylesheet" href="css/spectre.css" />
@@ -174,6 +174,7 @@
             </div>
           </div>
 
+          <header class="text-center"><h4>Calendars large</h4></header>
           <div class="columns">
             <div class="column col-12">
               <div class="calendar calendar-lg">
@@ -207,10 +208,13 @@
                     <div class="calendar-date current-month tooltip" data-tooltip="Not available"><button class="date-item" disabled>5</button></div>
                     <div class="calendar-date current-month"><button class="date-item">6</button></div>
                     <div class="calendar-date current-month"><button class="date-item">7</button></div>
-                    <div class="calendar-date current-month tooltip" data-tooltip="You have appointments.">
+                    <div class="calendar-date current-month">
                       <button class="date-item badge">8</button>
-                      <a class="calendar-event" href="#calendars">Product launch event</a>
-                      <a class="calendar-event" href="#calendars">Meeting with CEO</a>
+                      <div class="calendar-events">
+                        <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Product launch event</a>
+                        <a class="calendar-event" href="#calendars" style="background:#5764c6;color:#fff;">Lunch</a>
+                        <a class="calendar-event" href="#calendars" style="background:#e85600;color:#fff;">International Women's Day</a>
+                      </div>
                     </div>
                     <div class="calendar-date current-month"><button class="date-item">9</button></div>
                     <div class="calendar-date current-month"><button class="date-item">10</button></div>
@@ -225,7 +229,9 @@
                     <div class="calendar-date current-month calendar-range"><button class="date-item">19</button></div>
                     <div class="calendar-date current-month calendar-range">
                       <button class="date-item active">20</button>
-                      <a class="calendar-event" href="#calendars">Spring Equinox</a>
+                      <div class="calendar-events">
+                        <a class="calendar-event" href="#calendars" style="background:#32b643;color:#fff;">Spring Equinox</a>
+                      </div>
                     </div>
                     <div class="calendar-date current-month"><button class="date-item">21</button></div>
                     <div class="calendar-date current-month"><button class="date-item">22</button></div>
@@ -250,26 +256,53 @@
         <section id="carousels" class="container">
           <header class="text-center"><h3>Carousels</h3></header>
           <section class="notes">
-            <p><strong>Carousels</strong> are slideshows for cycling images. It is built in pure CSS and not perfect.</p>
+            <p><strong>Carousels</strong> are slideshows for cycling images. It is built in pure CSS.</p>
           </section>
           <div class="columns text-center">
             <div class="column col-12">
-              <div class="carousel">
-                <input type="radio" id="slide-1" name="carousel-radio" class="carousel-locator" checked>
-              	<input type="radio" id="slide-2" name="carousel-radio" class="carousel-locator">
-                <input type="radio" id="slide-3" name="carousel-radio" class="carousel-locator">
-              	<input type="radio" id="slide-4" name="carousel-radio" class="carousel-locator">
+              <div class="carousel carousel-autoplay">
+                <input type="radio" id="slide-1" name="carousel-radio" hidden class="carousel-locator" checked>
+              	<input type="radio" id="slide-2" name="carousel-radio" hidden class="carousel-locator">
+                <input type="radio" id="slide-3" name="carousel-radio" hidden class="carousel-locator">
+              	<input type="radio" id="slide-4" name="carousel-radio" hidden class="carousel-locator">
                 <div class="carousel-container">
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-4">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-2">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-yosemite.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
+
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-1">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-3">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
+
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-2">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-4">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
+
                   <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-3">
+                      <i class="icon icon-keyboard_arrow_left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-1">
+                      <i class="icon icon-keyboard_arrow_right"></i>
+                    </label>
                     <img src="img/osx-el-capitan-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
                 </div>
@@ -392,12 +425,12 @@
           </section>
           <div class="columns text-center">
             <div class="column col-6 col-xs-12">
-              <input class="slider" type="range" min="0" max="100" value="50" />
+              <input class="slider tooltip" data-tooltip="50" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="column col-6 col-xs-12">
+              <input class="slider" type="range" min="0" max="100" value="50" disabled />
             </div>
           </div>
-          <section class="notes">
-            <p></p>
-          </section>
 
 <!-- sliders example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;slider&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;range&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;50&quot;</span> <span class="tag">/</span>&gt;

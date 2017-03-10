@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.7";
+  content: "0.2.8";
 }
 /* Spectre docs style */
 .bg-gray {
@@ -151,6 +151,9 @@
 }
 .docs-content .empty .icon {
   font-size: 4rem;
+}
+.docs-content .form-autocomplete .menu {
+  position: static;
 }
 .docs-content .example-tile-icon {
   -webkit-align-content: space-around;

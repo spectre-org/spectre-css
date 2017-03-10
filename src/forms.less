@@ -24,9 +24,6 @@
   &:focus {
     border-color: @primary-color;
   }
-  &[disabled] {
-    background: @bg-color;
-  }
 
   // Input sizes
   &.input-sm {
@@ -93,6 +90,7 @@
   outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
+
   &[multiple] {
     option {
       padding: .2rem .4rem;
@@ -361,6 +359,41 @@
   }
 }
 
+// Form disabled
+.form-input,
+.form-select {
+  &:disabled,
+  &.disabled {
+    background-color: @dark-bg-color;
+    cursor: default;
+    opacity: .5;
+  }
+}
+
+input {
+  &:disabled,
+  &.disabled {
+    & + .form-icon {
+      background: @dark-bg-color;
+      border-color: @light-gray-color;
+      cursor: default;
+      opacity: .5;
+      pointer-events: none;
+    }
+  }
+}
+
+.form-switch {
+  input {
+    &:disabled,
+    &.disabled {
+      & + .form-icon::after {
+        background: @light-bg-color;
+      }
+    }
+  }
+}
+
 // Form Horizontal
 .form-horizontal {
   padding: 1rem;
@@ -368,10 +401,12 @@
   .form-group {
     display: flex;
   }
+
   .form-label {
     padding: .8rem .4rem;
     margin-bottom: 0;
   }
+
   .form-checkbox,
   .form-radio,
   .form-switch {
