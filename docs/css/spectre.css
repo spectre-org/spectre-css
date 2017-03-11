@@ -909,7 +909,6 @@ textarea.form-input {
 }
 .form-checkbox,
 .form-radio {
-  cursor: pointer;
   display: inline-block;
   line-height: 1.8rem;
   padding: .3rem 2rem;
@@ -918,6 +917,7 @@ textarea.form-input {
 .form-checkbox .form-icon,
 .form-radio .form-icon {
   border: .1rem solid #ccc;
+  cursor: pointer;
   display: inline-block;
   font-size: 1.4rem;
   height: 1.4rem;
@@ -991,7 +991,6 @@ textarea.form-input {
   width: .4rem;
 }
 .form-switch {
-  cursor: pointer;
   display: inline-block;
   line-height: 2rem;
   padding: .2rem 2rem .2rem 3.6rem;
@@ -1002,6 +1001,7 @@ textarea.form-input {
   background-clip: padding-box;
   border: .1rem solid #ccc;
   border-radius: .9rem;
+  cursor: pointer;
   display: inline-block;
   height: 1.8rem;
   left: 0;
@@ -1096,16 +1096,15 @@ textarea.form-input {
 .form-input.disabled,
 .form-select.disabled {
   background-color: #f0f0f0;
-  cursor: default;
+  cursor: not-allowed;
   opacity: .5;
 }
 input:disabled + .form-icon,
 input.disabled + .form-icon {
   background: #f0f0f0;
   border-color: #ccc;
-  cursor: default;
+  cursor: not-allowed;
   opacity: .5;
-  pointer-events: none;
 }
 .form-switch input:disabled + .form-icon::after,
 .form-switch input.disabled + .form-icon::after {
