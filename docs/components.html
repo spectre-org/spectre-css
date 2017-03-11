@@ -208,18 +208,6 @@
         &lt;<span class="tag">/div</span>&gt;
       &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/li</span>&gt;
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
-            &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Yan Zhu&quot;</span> /&gt;
-          &lt;<span class="tag">/div</span>&gt;
-          &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
-            Yan Zhu
-          &lt;<span class="tag">/div</span>&gt;
-        &lt;<span class="tag">/div</span>&gt;
-      &lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">/ul</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
@@ -357,7 +345,7 @@
           </section>
 
 <!-- badges example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span>&gt;
   Notifications
 &lt;<span class="tag">/span</span>&gt;
 
@@ -689,18 +677,9 @@
       &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Hipchat
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Skype
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
   <span class="com">&lt;!-- menu divider --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu item with badge --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu-badge&quot;</span>&gt;
       &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;2&lt;<span class="tag">/label</span>&gt;
@@ -803,12 +782,7 @@
   &lt;<span class="tag">/a</span>&gt;
   <span class="com">&lt;!-- menu component --&gt;</span>
   &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Slack&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
-    &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
-      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Hipchat&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/li</span>&gt;
+    ...
   &lt;<span class="tag">/ul</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
@@ -888,8 +862,7 @@
       &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-footer&quot;</span>&gt;
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Close&lt;<span class="tag">/button</span>&gt;
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Share&lt;<span class="tag">/button</span>&gt;
+      ...
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
@@ -1078,7 +1051,7 @@
             </div>
           </div>
           <section class="notes">
-            <p>Add a container element with the <code>tab</code> class. And add child elements with the <code>tab-item</code> class. You can add the <code>tab-block</code> class for a full-width tab. The <code>tab-item</code> or its child <code>&lt;a&gt;</code> with the <code>active</code> class will be highlighted.</p>
+            <p>Add a container element with the <code>tab</code> class. And add child elements with the <code>tab-item</code> class. You can add the <code>tab-block</code> class for a full-width tab. The <code>tab-item</code> or its child &lt;a&gt; with the <code>active</code> class will be highlighted.</p>
           </section>
 
 <!-- tabs example -->

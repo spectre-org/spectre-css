@@ -741,15 +741,15 @@ abbr[title] {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
-.btn-group .btn:first-of-type:not(:last-of-type) {
+.btn-group .btn:first-child:not(:last-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-.btn-group .btn:not(:first-of-type):not(:last-of-type) {
+.btn-group .btn:not(:first-child):not(:last-child) {
   border-radius: 0;
   margin-left: -.1rem;
 }
-.btn-group .btn:last-of-type:not(:first-of-type) {
+.btn-group .btn:last-child:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -.1rem;

@@ -155,6 +155,9 @@
 .docs-content .empty .icon {
   font-size: 4rem;
 }
+.docs-content .navbar-brand .icon {
+  font-size: 3rem;
+}
 .docs-content .form-autocomplete .menu {
   position: static;
 }
