@@ -140,6 +140,9 @@
 .docs-content .panel {
   height: 75vh;
 }
+.docs-content .panel .tile {
+  margin: .5rem 0;
+}
 .docs-content .code .com {
   color: #c5c5c5;
 }

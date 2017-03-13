@@ -1,6 +1,8 @@
 // Forms
-.form-group:not(:last-child) {
-  margin-bottom: 1rem;
+.form-group {
+  &:not(:last-child) {
+    margin-bottom: @layout-gutter;
+  }
 }
 
 // Form element: Input boxes
@@ -84,10 +86,10 @@
   appearance: none;
   border: .1rem solid @light-gray-color;
   border-radius: @border-radius;
+  color: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
   min-width: @control-min-width;
-  outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
 
@@ -395,7 +397,7 @@ input {
 
 // Form Horizontal
 .form-horizontal {
-  padding: 1rem;
+  padding: @layout-gutter;
 
   .form-group {
     display: flex;

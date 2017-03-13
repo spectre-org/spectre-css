@@ -834,10 +834,10 @@ textarea.form-input {
   appearance: none;
   border: .1rem solid #ccc;
   border-radius: .2rem;
+  color: inherit;
   font-size: 1.4rem;
   line-height: 2rem;
   min-width: 18rem;
-  outline: 0;
   padding: .5rem .8rem;
   vertical-align: middle;
 }
@@ -2389,7 +2389,6 @@ code {
   display: -webkit-flex;
   -ms-flex-align: start;
   -ms-flex-line-pack: justify;
-  margin: .5rem 0;
   padding: .5rem 0;
 }
 .tile .tile-icon,
@@ -2612,6 +2611,7 @@ code {
   position: absolute;
   top: 50%;
   width: 1.6rem;
+  z-index: 99;
 }
 .clearfix::after,
 .container::after {
