@@ -713,8 +713,8 @@ abbr[title] {
   color: currentColor;
   height: 1.6rem;
   line-height: 1.6rem;
-  margin-left: .2rem;
-  margin-right: -.4rem;
+  margin-left: .4rem;
+  margin-right: -.2rem;
   opacity: .45;
   padding: 0 .2rem;
   text-decoration: none;
