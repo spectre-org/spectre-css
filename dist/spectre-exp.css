@@ -6,8 +6,6 @@
   text-align: center;
 }
 .calendar .calendar-nav {
-  -webkit-align-content: space-between;
-  align-content: space-between;
   -webkit-align-items: center;
   align-items: center;
   background: #f8f8f8;
@@ -17,7 +15,6 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   -ms-flex-align: center;
-  -ms-flex-line-pack: justify;
   font-size: 2rem;
   padding: 1rem;
 }
@@ -72,15 +69,15 @@
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
-  height: 3.2rem;
+  height: 2.4rem;
   line-height: 2rem;
-  padding: .5rem;
+  padding: .1rem;
   text-align: center;
   text-decoration: none;
   transition: all .2s ease;
   vertical-align: middle;
   white-space: nowrap;
-  width: 3.2rem;
+  width: 2.4rem;
 }
 .calendar .calendar-body .date-item.date-today {
   background: #eff1fa;
@@ -101,8 +98,8 @@
 }
 .calendar .calendar-body .date-item.badge::after {
   position: absolute;
-  right: .4rem;
-  top: .4rem;
+  right: .2rem;
+  top: .2rem;
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
@@ -113,7 +110,7 @@
 .calendar .calendar-range .date-item::before {
   background: #eff1fa;
   content: "";
-  height: 3.2rem;
+  height: 2.4rem;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -159,15 +156,8 @@
   -ms-flex: 0 0 2.4rem;
   flex: 0 0 2.4rem;
   -ms-flex-item-align: end;
-  height: 2.4rem;
   margin-right: .5rem;
   margin-top: .5rem;
-  padding: .1rem;
-  width: 2.4rem;
-}
-.calendar.calendar-lg .calendar-body .date-item.badge::after {
-  right: .2rem;
-  top: .2rem;
 }
 .calendar.calendar-lg .calendar-body .calendar-range .date-item::before {
   height: 2.4rem;

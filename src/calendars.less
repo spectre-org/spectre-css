@@ -6,7 +6,6 @@
   text-align: center;
 
   .calendar-nav {
-    align-content: space-between;
     align-items: center;
     background: @bg-color;
     border-top-left-radius: @border-radius;
@@ -63,14 +62,14 @@
       .control-transition();
       cursor: pointer;
       display: inline-block;
-      height: 3.2rem;
+      height: 2.4rem;
       line-height: 2rem;
-      padding: .5rem;
+      padding: .1rem;
       text-align: center;
       text-decoration: none;
       vertical-align: middle;
       white-space: nowrap;
-      width: 3.2rem;
+      width: 2.4rem;
 
       &.date-today {
         background: @secondary-color;
@@ -95,8 +94,8 @@
       &.badge {
         &::after {
           position: absolute;
-          top: .4rem;
-          right: .4rem;
+          top: .2rem;
+          right: .2rem;
           transform: translate(50%, -50%);
         }
       }
@@ -110,7 +109,7 @@
       &::before {
         background: @secondary-color;
         content: "";
-        height: 3.2rem;
+        height: 2.4rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -159,18 +158,8 @@
       .date-item {
         align-self: flex-end;
         flex: 0 0 2.4rem;
-        height: 2.4rem;
         margin-right: .5rem;
         margin-top: .5rem;
-        padding: .1rem;
-        width: 2.4rem;
-
-        &.badge {
-          &::after {
-            top: .2rem;
-            right: .2rem;
-          }
-        }
       }
 
       .calendar-range {
