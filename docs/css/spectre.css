@@ -711,22 +711,20 @@ abbr[title] {
   background: transparent;
   border: 0;
   color: currentColor;
-  height: 2rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
   margin-left: .2rem;
   margin-right: -.4rem;
   opacity: .45;
-  padding: 0 .4rem;
+  padding: 0 .2rem;
   text-decoration: none;
-  width: 2rem;
+  width: 1.6rem;
 }
 .btn.btn-clear:hover {
   opacity: .85;
 }
 .btn.btn-clear::before {
-  content: "\00d7";
-  display: inline-block;
-  font-family: sans-serif;
-  font-size: 2rem;
+  content: "\2715";
 }
 .btn-group {
   display: inline-flex;
@@ -1851,8 +1849,8 @@ code {
   transform: translate(-50%, -50%) scale(.5);
 }
 .badge {
-  display: inline-block;
   position: relative;
+  white-space: nowrap;
 }
 .badge[data-badge]::after,
 .badge:not([data-badge])::after {
@@ -1863,9 +1861,9 @@ code {
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
-  -webkit-transform: translate(-.4rem, -1rem);
-  -ms-transform: translate(-.4rem, -1rem);
-  transform: translate(-.4rem, -1rem);
+  -webkit-transform: translate(-.2rem, -1rem);
+  -ms-transform: translate(-.2rem, -1rem);
+  transform: translate(-.2rem, -1rem);
 }
 .badge[data-badge]::after {
   font-size: 1.2rem;
@@ -2209,9 +2207,8 @@ code {
   border-bottom: .2rem solid transparent;
   color: inherit;
   display: block;
-  margin-bottom: -.1rem;
   margin-top: 0;
-  padding: .6rem 1.2rem;
+  padding: .5rem 1.2rem;
   text-decoration: none;
 }
 .tab .tab-item a:focus,

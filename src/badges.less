@@ -1,7 +1,7 @@
 // Badges
 .badge {
-  display: inline-block;
   position: relative;
+  white-space: nowrap;
 
   &[data-badge],
   &:not([data-badge]) {
@@ -13,7 +13,7 @@
       color: @light-color;
       content: attr(data-badge);
       display: inline-block;
-      transform: translate(-.4rem, -1rem);
+      transform: translate(-.2rem, -1rem);
     }
   }
   &[data-badge] {
