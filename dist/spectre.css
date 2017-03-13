@@ -938,7 +938,7 @@ textarea.form-input {
 }
 .form-checkbox input:active + .form-icon,
 .form-radio input:active + .form-icon {
-  background: #efefef;
+  background: #f0f0f0;
 }
 .form-checkbox .form-icon {
   border-radius: .2rem;
@@ -1033,7 +1033,7 @@ textarea.form-input {
   left: 1.2rem;
 }
 .form-switch input:active + .form-icon::after {
-  background: #efefef;
+  background: #f0f0f0;
 }
 .input-group {
   display: flex;
@@ -1892,7 +1892,7 @@ code {
   transform: translate(50%, -50%);
 }
 .bar {
-  background: #efefef;
+  background: #f0f0f0;
   border-radius: .2rem;
   display: flex;
   display: -ms-flexbox;
@@ -1975,7 +1975,7 @@ code {
 .chip {
   -webkit-align-items: center;
   align-items: center;
-  background: #efefef;
+  background: #f0f0f0;
   border-radius: .2rem;
   color: #666;
   display: -ms-inline-flexbox;
