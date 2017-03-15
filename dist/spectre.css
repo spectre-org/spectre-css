@@ -611,7 +611,7 @@ abbr[title] {
   font-size: 1.4rem;
   height: 3.2rem;
   line-height: 2rem;
-  padding: .5rem 1.2rem;
+  padding: .5rem .8rem;
   text-align: center;
   text-decoration: none;
   transition: all .2s ease;
@@ -690,7 +690,7 @@ abbr[title] {
 .btn.btn-lg {
   font-size: 1.8rem;
   height: 4rem;
-  padding: .9rem 1.5rem;
+  padding: .9rem .8rem;
 }
 .btn.btn-block {
   display: block;
@@ -1721,7 +1721,6 @@ code {
 }
 .panel .panel-title {
   font-size: 2rem;
-  line-height: 1.4;
 }
 .empty {
   background: #f8f8f8;
@@ -1942,7 +1941,8 @@ code {
 .card .card-header,
 .card .card-body,
 .card .card-footer {
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  padding: 1.5rem;
+  padding-bottom: 0;
 }
 .card .card-header:last-child,
 .card .card-body:last-child,
@@ -1965,7 +1965,6 @@ code {
 }
 .card .card-title {
   font-size: 2rem;
-  line-height: 1.4;
 }
 .card .card-meta {
   color: #999;
