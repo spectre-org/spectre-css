@@ -410,7 +410,7 @@ a.active {
 }
 :focus {
   box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
-  outline: 0;
+  outline: none;
 }
 .btn .icon,
 .toast .icon,
@@ -847,7 +847,7 @@ textarea.form-input {
   padding: .2rem .4rem;
 }
 .form-select:not([multiple]) {
-  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center / .8rem 1rem;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center / .8rem 1rem;
   height: 3.2rem;
   padding-right: 2.4rem;
 }
