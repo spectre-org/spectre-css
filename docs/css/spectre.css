@@ -1915,6 +1915,7 @@ code {
   height: 100%;
   line-height: 1;
   padding: .2rem 0;
+  position: relative;
   text-align: center;
   width: 0;
 }
