@@ -1,8 +1,20 @@
 // Divider
 .divider {
-  border-bottom: @border-width solid @border-color;
+  border-top: @border-width solid @border-color;
   display: block;
-  margin: .8rem 0;
+  height: .1rem;
+  margin: 1rem 0;
+  position: relative;
+
+  &[data-content]::before {
+    background: @light-color;
+    color: @light-gray-color;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0 .8rem;
+    transform: translateY(-1.1rem);
+  }
 }
 
 // Loading
