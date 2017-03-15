@@ -5,7 +5,21 @@
   }
 }
 
-// Form element: Input boxes
+// Form element: Label
+.form-label {
+  display: block;
+  padding: .6rem 0;
+
+  &.label-sm {
+    padding: .2rem 0;
+  }
+
+  &.label-lg {
+    padding: 1rem 0;
+  }
+}
+
+// Form element: Input
 .form-input {
   appearance: none;
   background: @light-bg-color;
@@ -31,7 +45,7 @@
   &.input-sm {
     font-size: @sm-font-size;
     height: 2.4rem;
-    padding: .1rem .6rem;
+    padding: .1rem .8rem;
   }
 
   &.input-lg {
@@ -49,7 +63,6 @@
   // Textarea
   textarea& {
     height: auto;
-    line-height: 2rem;
   }
 
   // Input types
@@ -72,13 +85,6 @@
   .is-danger + & {
     color: @control-color-danger;
   }
-}
-
-// Form element: Label
-.form-label {
-  display: block;
-  line-height: 1.6rem;
-  margin-bottom: .5rem;
 }
 
 // Form element: Select
@@ -148,6 +154,10 @@
 .form-checkbox,
 .form-radio,
 .form-switch {
+  display: inline-block;
+  line-height: 2rem;
+  position: relative;
+
   input {
     clip: rect(0, 0, 0, 0);
     height: .1rem;
@@ -159,37 +169,33 @@
       border-color: @primary-color;
       .control-shadow();
     }
+    &:checked + .form-icon {
+      background: @primary-color;
+      border-color: @primary-color;
+    }
   }
-}
-.form-checkbox,
-.form-radio {
-  display: inline-block;
-  line-height: 1.8rem;
-  padding: .3rem 2rem;
-  position: relative;
 
   .form-icon {
     border: @border-width solid @light-gray-color;
     .control-transition();
     cursor: pointer;
     display: inline-block;
-    font-size: @font-size;
+    position: absolute;
+  }
+}
+
+.form-checkbox,
+.form-radio {
+  padding: .2rem 2rem;
+
+  .form-icon {
     height: 1.4rem;
     left: 0;
-    line-height: 2.4rem;
-    outline: none;
-    padding: 0;
-    position: absolute;
     top: .5rem;
-    vertical-align: top;
     width: 1.4rem;
   }
 
   input {
-    &:checked + .form-icon {
-      background: @primary-color;
-      border-color: @primary-color;
-    }
     &:active + .form-icon {
       background: @dark-bg-color;
     }
@@ -202,7 +208,7 @@
 
   input {
     &:checked + .form-icon {
-      &::after {
+      &::before {
         background-clip: padding-box;
         border: .2rem solid @light-color;
         border-left-width: 0;
@@ -221,7 +227,7 @@
     &:indeterminate + .form-icon {
       background: @primary-color;
       border-color: @primary-color;
-      &::after {
+      &::before {
         background: @light-bg-color;
         content: "";
         height: .2rem;
@@ -241,16 +247,15 @@
   }
 
   input:checked + .form-icon {
-    &::after {
+    &::before {
       background: @light-bg-color;
       border-radius: @border-radius;
       content: "";
       height: .4rem;
       left: 50%;
-      margin-left: -.2rem;
-      margin-top: -.2rem;
       position: absolute;
       top: 50%;
+      transform: translate(-50%, -50%);
       width: .4rem;
     }
   }
@@ -258,28 +263,17 @@
 
 // Form element: Switch
 .form-switch {
-  display: inline-block;
-  line-height: 2rem;
   padding: .2rem 2rem .2rem 3.6rem;
-  position: relative;
 
   .form-icon {
     background: @light-gray-color;
     background-clip: padding-box;
-    border: @border-width solid @light-gray-color;
     border-radius: .9rem;
-    cursor: pointer;
-    display: inline-block;
     height: 1.8rem;
     left: 0;
-    line-height: 2.6rem;
-    outline: none;
-    padding: 0;
-    position: absolute;
     top: .3rem;
-    vertical-align: top;
     width: 3rem;
-    &::after {
+    &::before {
       background: @light-bg-color;
       border-radius: .8rem;
       content: "";
@@ -288,21 +282,19 @@
       left: 0;
       position: absolute;
       top: 0;
-      transition: left .2s ease;
+      .control-transition();
       width: 1.6rem;
     }
   }
 
   input {
     &:checked + .form-icon {
-      background: @primary-color;
-      border-color: @primary-color;
-      &::after {
+      &::before {
         left: 1.2rem;
       }
     }
     &:active + .form-icon {
-      &::after {
+      &::before {
         background: @dark-bg-color;
       }
     }
@@ -322,7 +314,7 @@
 
     &.addon-sm {
       font-size: @sm-font-size;
-      padding: .1rem .6rem;
+      padding: .1rem .8rem;
     }
     &.addon-lg {
       font-size: @lg-font-size;
@@ -387,7 +379,7 @@ input {
   input {
     &:disabled,
     &.disabled {
-      & + .form-icon::after {
+      & + .form-icon::before {
         background: @light-bg-color;
       }
     }
@@ -400,11 +392,6 @@ input {
 
   .form-group {
     display: flex;
-  }
-
-  .form-label {
-    padding: .8rem .4rem;
-    margin-bottom: 0;
   }
 
   .form-checkbox,

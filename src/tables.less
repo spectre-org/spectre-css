@@ -12,6 +12,7 @@
       }
     }
   }
+
   &.table-hover {
     tbody {
       tr {
@@ -21,6 +22,7 @@
       }
     }
   }
+
   &,
   &.table-striped {
     tbody {
@@ -32,13 +34,17 @@
     }
   }
 
+  caption {
+
+  }
+
   td {
     border-bottom: @border-width solid @border-color;
     padding: 1.5rem 1rem;
   }
 
   th {
-    border-bottom: .2rem solid @dark-color;
+    border-bottom: .2rem solid @dark-gray-color;
     padding: 1.5rem 1rem;
   }
 }
