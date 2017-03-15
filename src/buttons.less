@@ -46,20 +46,16 @@
     background: @primary-color;
     border-color: @dark-primary-color;
     color: @light-color;
-    &:focus {
-      background: @dark-primary-color;
-      border-color: darken(@dark-primary-color, 2%);
-      color: @light-color;
-    }
+    &:focus,
     &:hover {
       background: darken(@dark-primary-color, 2%);
-      border-color: darken(@dark-primary-color, 7%);
+      border-color: darken(@dark-primary-color, 5%);
       color: @light-color;
     }
     &:active,
     &.active {
       background: darken(@dark-primary-color, 4%);
-      border-color: darken(@dark-primary-color, 9%);
+      border-color: darken(@dark-primary-color, 7%);
       color: @light-color;
     }
     &.loading {
@@ -162,8 +158,8 @@
       border-top-left-radius: 0;
       margin-left: -.1rem;
     }
-    &:hover,
     &:focus,
+    &:hover,
     &:active,
     &.active {
       z-index: 9;

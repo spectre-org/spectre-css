@@ -625,19 +625,19 @@ abbr[title] {
   white-space: nowrap;
 }
 .btn:focus {
-  background: #f7f8fc;
+  background: #fbfbfe;
   text-decoration: none;
 }
 .btn:hover {
   background: #5764c6;
-  border-color: #4452c0;
+  border-color: #4c59c2;
   color: #fff;
   text-decoration: none;
 }
 .btn:active,
 .btn.active {
-  background: #4452c0;
-  border-color: #3b49af;
+  background: #4c59c2;
+  border-color: #3e4cb6;
   color: #fff;
 }
 .btn[disabled],
@@ -649,23 +649,19 @@ abbr[title] {
 }
 .btn.btn-primary {
   background: #5764c6;
-  border-color: #4452c0;
+  border-color: #4c59c2;
   color: #fff;
 }
-.btn.btn-primary:focus {
-  background: #4452c0;
-  border-color: #3f4eba;
-  color: #fff;
-}
+.btn.btn-primary:focus,
 .btn.btn-primary:hover {
-  background: #3f4eba;
-  border-color: #3946a7;
+  background: #4452c0;
+  border-color: #3e4cb6;
   color: #fff;
 }
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  background: #3d4ab3;
-  border-color: #36429f;
+  background: #3f4eba;
+  border-color: #3b49af;
   color: #fff;
 }
 .btn.btn-primary.loading::after {
@@ -754,8 +750,8 @@ abbr[title] {
   border-top-left-radius: 0;
   margin-left: -.1rem;
 }
-.btn-group .btn:hover,
 .btn-group .btn:focus,
+.btn-group .btn:hover,
 .btn-group .btn:active,
 .btn-group .btn.active {
   z-index: 9;
@@ -977,11 +973,11 @@ textarea.form-input {
   content: "";
   height: .2rem;
   left: 50%;
-  margin-left: -.4rem;
+  margin-left: -.5rem;
   margin-top: -.1rem;
   position: absolute;
   top: 50%;
-  width: .8rem;
+  width: 1rem;
 }
 .form-radio .form-icon {
   border-radius: .7rem;
@@ -992,11 +988,10 @@ textarea.form-input {
   content: "";
   height: .4rem;
   left: 50%;
+  margin-left: -.2rem;
+  margin-top: -.2rem;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: .4rem;
 }
 .form-switch {
@@ -2046,7 +2041,7 @@ code {
 }
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
-  background: #f7f8fc;
+  background: #fbfbfe;
   color: #5764c6;
 }
 .menu .menu-badge {

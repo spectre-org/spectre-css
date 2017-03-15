@@ -85,15 +85,15 @@
 }
 .calendar .calendar-body .date-item:focus,
 .calendar .calendar-body .date-item:hover {
-  background: #f7f8fc;
-  border-color: #dcdff3;
+  background: #fbfbfe;
+  border-color: #e4e6f6;
   color: #5764c6;
   text-decoration: none;
 }
 .calendar .calendar-body .date-item:active,
 .calendar .calendar-body .date-item.active {
-  background: #4452c0;
-  border-color: #3b49af;
+  background: #4c59c2;
+  border-color: #3e4cb6;
   color: #fff;
 }
 .calendar .calendar-body .date-item.badge::after {
