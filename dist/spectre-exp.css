@@ -15,7 +15,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   -ms-flex-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1rem;
 }
 .calendar .calendar-header,

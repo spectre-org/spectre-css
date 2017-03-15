@@ -11,7 +11,7 @@
     border-top-left-radius: @border-radius;
     border-top-right-radius: @border-radius;
     display: flex;
-    font-size: 2rem;
+    font-size: @lg-font-size;
     padding: 1rem;
   }
 
@@ -23,7 +23,7 @@
     padding: 1rem 0;
 
     .calendar-date {
-      flex: 0 0 14.28%;
+      flex: 0 0 14.28%; // 7 calendar-item each row
     }
   }
 
@@ -31,7 +31,7 @@
     background: @bg-color;
     border-bottom: @border-width solid @border-color;
     color: @gray-color;
-    font-size: 1.2rem;
+    font-size: @sm-font-size;
   }
 
   .calendar-body {
@@ -201,7 +201,7 @@
       background: @secondary-color;
       border-radius: @border-radius;
       color: @primary-color;
-      font-size: 1.2rem;
+      font-size: @sm-font-size;
       display: block;
       margin: .2rem auto;
       overflow: hidden;

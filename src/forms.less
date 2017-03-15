@@ -15,7 +15,7 @@
   color: @body-font-color;
   .control-transition();
   display: block;
-  font-size: 1.4rem;
+  font-size: @font-size;
   height: 3.2rem;
   line-height: 2rem;
   max-width: 100%;
@@ -29,13 +29,13 @@
 
   // Input sizes
   &.input-sm {
-    font-size: 1.2rem;
+    font-size: @sm-font-size;
     height: 2.4rem;
     padding: .1rem .6rem;
   }
 
   &.input-lg {
-    font-size: 1.6rem;
+    font-size: @lg-font-size;
     height: 4rem;
     padding: .9rem .8rem;
   }
@@ -87,7 +87,7 @@
   border: @border-width solid @light-gray-color;
   border-radius: @border-radius;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: @font-size;
   line-height: 2rem;
   min-width: @control-min-width;
   padding: .5rem .8rem;
@@ -112,13 +112,13 @@
 
   // Select sizes
   &.select-sm {
-    font-size: 1.2rem;
+    font-size: @sm-font-size;
     height: 2.4rem;
     padding: .1rem 2rem .1rem .6rem;
   }
 
   &.select-lg {
-    font-size: 1.6rem;
+    font-size: @lg-font-size;
     height: 4rem;
     padding: .9rem 2.4rem .9rem .8rem;
   }
@@ -173,7 +173,7 @@
     .control-transition();
     cursor: pointer;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: @font-size;
     height: 1.4rem;
     left: 0;
     line-height: 2.4rem;
@@ -321,12 +321,11 @@
     padding: .5rem .8rem;
 
     &.addon-sm {
-      font-size: 1.2rem;
+      font-size: @sm-font-size;
       padding: .1rem .6rem;
     }
     &.addon-lg {
-      font-size: 1.6rem;
-      line-height: 2rem;
+      font-size: @lg-font-size;
       padding: .9rem .8rem;
     }
   }

@@ -688,7 +688,7 @@ abbr[title] {
   padding: .1rem .8rem;
 }
 .btn.btn-lg {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   height: 4rem;
   padding: .9rem .8rem;
 }
@@ -1051,7 +1051,6 @@ textarea.form-input {
 }
 .input-group .input-group-addon.addon-lg {
   font-size: 1.6rem;
-  line-height: 2rem;
   padding: .9rem .8rem;
 }
 .input-group .input-group-addon,
@@ -1715,12 +1714,13 @@ code {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   overflow-y: auto;
-}
-.panel .panel-body {
   padding: 0 1.5rem;
 }
 .panel .panel-title {
   font-size: 2rem;
+}
+.panel .panel-meta {
+  color: #999;
 }
 .empty {
   background: #f8f8f8;
@@ -1795,7 +1795,6 @@ code {
   width: 3.2rem;
 }
 .avatar.avatar-xs {
-  font-size: 1.4rem;
   height: 1.6rem;
   width: 1.6rem;
 }
@@ -1968,7 +1967,7 @@ code {
 }
 .card .card-meta {
   color: #999;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .chip {
   -webkit-align-items: center;
