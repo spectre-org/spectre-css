@@ -1,6 +1,6 @@
 // Calendars
 .calendar {
-  border: .1rem solid @border-color;
+  border: @border-width solid @border-color;
   border-radius: @border-radius;
   display: block;
   text-align: center;
@@ -29,7 +29,7 @@
 
   .calendar-header {
     background: @bg-color;
-    border-bottom: .1rem solid @border-color;
+    border-bottom: @border-width solid @border-color;
     color: @gray-color;
     font-size: 1.2rem;
   }
@@ -57,7 +57,7 @@
     .date-item {
       appearance: none;
       background: transparent;
-      border: .1rem solid transparent;
+      border: @border-width solid transparent;
       border-radius: 50%;
       .control-transition();
       cursor: pointer;
@@ -139,8 +139,8 @@
       padding: 0;
 
       .calendar-date {
-        border-bottom: .1rem solid @border-color;
-        border-right: .1rem solid @border-color;
+        border-bottom: @border-width solid @border-color;
+        border-right: @border-width solid @border-color;
         display: flex;
         flex-direction: column;
         height: 11rem;
