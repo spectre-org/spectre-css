@@ -665,9 +665,8 @@ abbr[title] {
   color: #fff;
 }
 .btn.btn-primary.loading::after {
-  border-color: #fff;
-  border-right-color: transparent;
-  border-top-color: transparent;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
 }
 .btn.btn-link {
   background: transparent;
@@ -711,8 +710,7 @@ abbr[title] {
   color: currentColor;
   height: 1.6rem;
   line-height: 1.6rem;
-  margin-left: .4rem;
-  margin-right: -.2rem;
+  margin: .2rem -.2rem .2rem .4rem;
   opacity: .45;
   padding: 0 .2rem;
   text-decoration: none;
@@ -780,7 +778,7 @@ abbr[title] {
   appearance: none;
   background: #fff;
   background-image: none;
-  border: .1rem solid #ccc;
+  border: .1rem solid #cecece;
   border-radius: .2rem;
   color: #333;
   display: block;
@@ -834,7 +832,7 @@ textarea.form-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: .1rem solid #ccc;
+  border: .1rem solid #cecece;
   border-radius: .2rem;
   color: inherit;
   font-size: 1.4rem;
@@ -923,7 +921,7 @@ textarea.form-input {
 .form-checkbox .form-icon,
 .form-radio .form-icon,
 .form-switch .form-icon {
-  border: .1rem solid #ccc;
+  border: .1rem solid #cecece;
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -1031,7 +1029,7 @@ textarea.form-input {
 }
 .input-group .input-group-addon {
   background: #f8f8f8;
-  border: .1rem solid #ccc;
+  border: .1rem solid #cecece;
   border-radius: .2rem;
   line-height: 2rem;
   padding: .5rem .8rem;
@@ -1920,9 +1918,6 @@ code {
   border: .1rem solid #efefef;
   border-radius: .2rem;
   display: block;
-  margin: 0;
-  padding: 0;
-  text-align: left;
 }
 .card .card-header,
 .card .card-body,
@@ -1986,8 +1981,8 @@ code {
   position: relative;
 }
 .dropdown .menu {
-  -webkit-animation: slide-down .2s 1;
-  animation: slide-down .2s 1;
+  -webkit-animation: slide-down .2s ease-in 1;
+  animation: slide-down .2s ease-in 1;
   display: none;
   left: 0;
   position: absolute;
@@ -2010,14 +2005,12 @@ code {
   margin: 0;
   min-width: 18rem;
   padding: 1rem;
-  text-align: left;
   -webkit-transform: translateY(.5rem);
   -ms-transform: translateY(.5rem);
   transform: translateY(.5rem);
   z-index: 999;
 }
 .menu .menu-item {
-  border-radius: .2rem;
   margin-top: 0;
   padding: 0 .8rem;
   text-decoration: none;
@@ -2030,9 +2023,8 @@ code {
   border-radius: .2rem;
   color: inherit;
   display: block;
-  line-height: 2.4rem;
   margin: 0 -.8rem;
-  padding: .4rem .8rem;
+  padding: .6rem .8rem;
   text-decoration: none;
 }
 .menu .menu-item > a:focus,
@@ -2046,10 +2038,10 @@ code {
 }
 .menu .menu-badge {
   float: right;
-  padding: .4rem 0;
+  padding: .6rem 0;
 }
-.menu .menu-badge .label {
-  margin: .2rem 0;
+.menu .menu-badge .btn {
+  margin-top: -.2rem;
 }
 .modal {
   -webkit-align-items: center;
@@ -2080,6 +2072,7 @@ code {
 .modal.active .modal-overlay {
   background: rgba(51, 51, 51, .5);
   bottom: 0;
+  cursor: default;
   display: block;
   left: 0;
   position: absolute;
@@ -2088,8 +2081,8 @@ code {
 }
 .modal:target .modal-container,
 .modal.active .modal-container {
-  -webkit-animation: slide-down .2s;
-  animation: slide-down .2s;
+  -webkit-animation: slide-down .2s ease-in 1;
+  animation: slide-down .2s ease-in 1;
   max-width: 64rem;
 }
 .modal.modal-sm .modal-container {

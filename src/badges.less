@@ -8,9 +8,9 @@
     &::after {
       background: @primary-color;
       background-clip: padding-box;
-      border: @border-width solid @light-bg-color;
+      border: @border-width solid @bg-color-light;
       border-radius: 1rem;
-      color: @light-color;
+      color: @gray-color-lighter;
       content: attr(data-badge);
       display: inline-block;
       transform: translate(-.2rem, -1rem);
@@ -18,7 +18,7 @@
   }
   &[data-badge] {
     &::after {
-      font-size: @sm-font-size;
+      font-size: @font-size-sm;
       height: 2rem;
       line-height: 1.4rem;
       min-width: 2rem;

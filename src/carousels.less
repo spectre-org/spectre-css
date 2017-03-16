@@ -32,9 +32,9 @@
 
     .item-prev,
     .item-next {
-      background: fade(@light-gray-color, 25%);
-      border-color: fade(@light-gray-color, 50%);
-      color: @light-gray-color;
+      background: fade(@gray-color-light, 25%);
+      border-color: fade(@gray-color-light, 50%);
+      color: @gray-color-light;
       opacity: 0;
       position: absolute;
       top: 50%;
@@ -63,7 +63,7 @@
     &:nth-of-type(2):checked ~ .carousel-nav .nav-item:nth-of-type(2),
     &:nth-of-type(3):checked ~ .carousel-nav .nav-item:nth-of-type(3),
     &:nth-of-type(4):checked ~ .carousel-nav .nav-item:nth-of-type(4) {
-      color: @light-gray-color;
+      color: @gray-color-light;
     }
   }
 
@@ -78,7 +78,7 @@
     z-index: 999;
 
     .nav-item {
-      color: fade(@light-gray-color, 50%);
+      color: fade(@gray-color-light, 50%);
       display: block;
       flex: 1 0 auto;
       height: 4rem;

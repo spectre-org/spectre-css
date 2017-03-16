@@ -22,9 +22,9 @@
 // Form element: Input
 .form-input {
   appearance: none;
-  background: @light-bg-color;
+  background: @bg-color-light;
   background-image: none;
-  border: @border-width solid @light-gray-color;
+  border: @border-width solid @border-color-dark;
   border-radius: @border-radius;
   color: @body-font-color;
   .control-transition();
@@ -43,13 +43,13 @@
 
   // Input sizes
   &.input-sm {
-    font-size: @sm-font-size;
+    font-size: @font-size-sm;
     height: 2.4rem;
     padding: .1rem .8rem;
   }
 
   &.input-lg {
-    font-size: @lg-font-size;
+    font-size: @font-size-lg;
     height: 4rem;
     padding: .9rem .8rem;
   }
@@ -90,7 +90,7 @@
 // Form element: Select
 .form-select {
   appearance: none;
-  border: @border-width solid @light-gray-color;
+  border: @border-width solid @border-color-dark;
   border-radius: @border-radius;
   color: inherit;
   font-size: @font-size;
@@ -105,7 +105,7 @@
     }
   }
   &:not([multiple]) {
-    background: @light-bg-color url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center / .8rem 1rem;
+    background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center / .8rem 1rem;
     height: 3.2rem;
     padding-right: 2.4rem;
   }
@@ -118,13 +118,13 @@
 
   // Select sizes
   &.select-sm {
-    font-size: @sm-font-size;
+    font-size: @font-size-sm;
     height: 2.4rem;
     padding: .1rem 2rem .1rem .6rem;
   }
 
   &.select-lg {
-    font-size: @lg-font-size;
+    font-size: @font-size-lg;
     height: 4rem;
     padding: .9rem 2.4rem .9rem .8rem;
   }
@@ -176,7 +176,7 @@
   }
 
   .form-icon {
-    border: @border-width solid @light-gray-color;
+    border: @border-width solid @border-color-dark;
     .control-transition();
     cursor: pointer;
     display: inline-block;
@@ -197,7 +197,7 @@
 
   input {
     &:active + .form-icon {
-      background: @dark-bg-color;
+      background: @bg-color-dark;
     }
   }
 }
@@ -210,7 +210,7 @@
     &:checked + .form-icon {
       &::before {
         background-clip: padding-box;
-        border: .2rem solid @light-color;
+        border: .2rem solid @gray-color-lighter;
         border-left-width: 0;
         border-top-width: 0;
         content: "";
@@ -228,7 +228,7 @@
       background: @primary-color;
       border-color: @primary-color;
       &::before {
-        background: @light-bg-color;
+        background: @bg-color-light;
         content: "";
         height: .2rem;
         left: 50%;
@@ -248,7 +248,7 @@
 
   input:checked + .form-icon {
     &::before {
-      background: @light-bg-color;
+      background: @bg-color-light;
       border-radius: @border-radius;
       content: "";
       height: .4rem;
@@ -267,7 +267,7 @@
   padding: .2rem 2rem .2rem 3.6rem;
 
   .form-icon {
-    background: @light-gray-color;
+    background: @gray-color-light;
     background-clip: padding-box;
     border-radius: .9rem;
     height: 1.8rem;
@@ -275,7 +275,7 @@
     top: .3rem;
     width: 3rem;
     &::before {
-      background: @light-bg-color;
+      background: @bg-color-light;
       border-radius: .8rem;
       content: "";
       display: block;
@@ -296,7 +296,7 @@
     }
     &:active + .form-icon {
       &::before {
-        background: @dark-bg-color;
+        background: @bg-color-dark;
       }
     }
   }
@@ -308,17 +308,17 @@
 
   .input-group-addon {
     background: @bg-color;
-    border: @border-width solid @light-gray-color;
+    border: @border-width solid @border-color-dark;
     border-radius: @border-radius;
     line-height: 2rem;
     padding: .5rem .8rem;
 
     &.addon-sm {
-      font-size: @sm-font-size;
+      font-size: @font-size-sm;
       padding: .1rem .8rem;
     }
     &.addon-lg {
-      font-size: @lg-font-size;
+      font-size: @font-size-lg;
       padding: .9rem .8rem;
     }
   }
@@ -358,7 +358,7 @@
 .form-select {
   &:disabled,
   &.disabled {
-    background-color: @dark-bg-color;
+    background-color: @bg-color-dark;
     cursor: not-allowed;
     opacity: .5;
   }
@@ -368,8 +368,8 @@ input {
   &:disabled,
   &.disabled {
     & + .form-icon {
-      background: @dark-bg-color;
-      border-color: @light-gray-color;
+      background: @bg-color-dark;
+      border-color: @gray-color-light;
       cursor: not-allowed;
       opacity: .5;
     }
@@ -381,7 +381,7 @@ input {
     &:disabled,
     &.disabled {
       & + .form-icon::before {
-        background: @light-bg-color;
+        background: @bg-color-light;
       }
     }
   }

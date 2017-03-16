@@ -2,13 +2,13 @@
 .tooltip {
   position: relative;
   &::after {
-    background: fade(@dark-color, 90%);
+    background: fade(@gray-color-darker, 90%);
     border-radius: @border-radius;
     bottom: 100%;
-    color: @light-color;
+    color: @gray-color-lighter;
     content: attr(data-tooltip);
     display: block;
-    font-size: @sm-font-size;
+    font-size: @font-size-sm;
     left: 50%;
     line-height: 1.6rem;
     max-width: 32rem;

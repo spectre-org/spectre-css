@@ -11,7 +11,7 @@
     border-top-left-radius: @border-radius;
     border-top-right-radius: @border-radius;
     display: flex;
-    font-size: @lg-font-size;
+    font-size: @font-size-lg;
     padding: 1rem;
   }
 
@@ -31,18 +31,18 @@
     background: @bg-color;
     border-bottom: @border-width solid @border-color;
     color: @gray-color;
-    font-size: @sm-font-size;
+    font-size: @font-size-sm;
   }
 
   .calendar-body {
-    color: @dark-gray-color;
+    color: @gray-color-dark;
 
     .calendar-date {
       border: 0;
       padding: .6rem;
 
       .date-item {
-        color: @dark-gray-color;
+        color: @gray-color-dark;
       }
 
       &.prev-month .date-item,
@@ -78,16 +78,16 @@
 
       &:focus,
       &:hover {
-        background: @light-secondary-color;
-        border-color: @dark-secondary-color;
+        background: @secondary-color-light;
+        border-color: @secondary-color-dark;
         color: @primary-color;
         text-decoration: none;
       }
       &:active,
       &.active {
-        background: @dark-primary-color;
-        border-color: darken(@dark-primary-color, 5%);
-        color: @light-color;
+        background: @primary-color-dark;
+        border-color: darken(@primary-color-dark, 5%);
+        color: @gray-color-lighter;
       }
 
       // Calendar badge support
@@ -201,7 +201,7 @@
       background: @secondary-color;
       border-radius: @border-radius;
       color: @primary-color;
-      font-size: @sm-font-size;
+      font-size: @font-size-sm;
       display: block;
       margin: .2rem auto;
       overflow: hidden;

@@ -1,18 +1,16 @@
 // Menus
 .menu {
-  background: @light-bg-color;
+  background: @bg-color-light;
   border-radius: @border-radius;
   list-style: none;
   margin: 0;
   min-width: @control-min-width;
   padding: 1rem;
   .shadow;
-  text-align: left;
   transform: translateY(.5rem);
   z-index: 999;
 
   .menu-item {
-    border-radius: @border-radius;
     margin-top: 0;
     padding: 0 .8rem;
     text-decoration: none;
@@ -22,9 +20,8 @@
       border-radius: @border-radius;
       color: inherit;
       display: block;
-      line-height: 2.4rem;
       margin: 0 -.8rem;
-      padding: .4rem .8rem;
+      padding: .6rem .8rem;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -32,7 +29,7 @@
       }
       &:active,
       &.active {
-        background: @light-secondary-color;
+        background: @secondary-color-light;
         color: @primary-color;
       }
     }
@@ -40,10 +37,10 @@
 
   .menu-badge {
     float: right;
-    padding: .4rem 0;
+    padding: .6rem 0;
 
-    .label {
-      margin: .2rem 0;
+    .btn {
+      margin-top: -.2rem;
     }
   }
 }
