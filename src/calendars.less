@@ -3,6 +3,7 @@
   border: @border-width solid @border-color;
   border-radius: @border-radius;
   display: block;
+  min-width: 28rem;
   text-align: center;
 
   .calendar-nav {
@@ -23,7 +24,7 @@
     padding: 1rem 0;
 
     .calendar-date {
-      flex: 0 0 14.28%; // 7 calendar-item each row
+      flex: 0 0 14.28%; // 7 calendar-items each row
     }
   }
 
@@ -36,43 +37,32 @@
 
   .calendar-body {
     color: @gray-color-dark;
+  }
 
-    .calendar-date {
-      border: 0;
-      padding: .6rem;
-
-      .date-item {
-        color: @gray-color-dark;
-      }
-
-      &.prev-month .date-item,
-      &.next-month .date-item,
-      .date-item:disabled {
-        cursor: default;
-        opacity: .25;
-        pointer-events: none;
-      }
-    }
+  .calendar-date {
+    border: 0;
+    padding: .4rem;
 
     .date-item {
       appearance: none;
       background: transparent;
       border: @border-width solid transparent;
       border-radius: 50%;
+      color: @gray-color-dark;
       .control-transition();
       cursor: pointer;
-      display: inline-block;
-      height: 2.4rem;
+      height: 2.8rem;
       line-height: 2rem;
-      padding: .1rem;
+      padding: .3rem;
+      position: relative;
       text-align: center;
       text-decoration: none;
       vertical-align: middle;
       white-space: nowrap;
-      width: 2.4rem;
+      width: 2.8rem;
 
       &.date-today {
-        background: @secondary-color;
+        border-color: @secondary-color-dark;
         color: @primary-color;
       }
 
@@ -94,43 +84,49 @@
       &.badge {
         &::after {
           position: absolute;
-          top: .2rem;
-          right: .2rem;
+          top: .3rem;
+          right: .3rem;
           transform: translate(50%, -50%);
         }
       }
+    }
+
+    &.disabled .date-item,
+    &.disabled .calendar-event,
+    .date-item:disabled,
+    .calendar-event:disabled {
+      cursor: default;
+      opacity: .25;
+      pointer-events: none;
     }
   }
 
   .calendar-range {
     position: relative;
 
-    .date-item {
+    &::before {
+      background: @secondary-color;
+      content: "";
+      height: 2.8rem;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &.range-start {
       &::before {
-        background: @secondary-color;
-        content: "";
-        height: 2.4rem;
-        position: absolute;
-        top: 50%;
         left: 50%;
-        transform: translateY(-50%);
-        width: 50%;
-        z-index: -9;
+      }
+    }
+    &.range-end {
+      &::before {
+        right: 50%;
       }
     }
 
-    & + .calendar-range {
-      .date-item {
-        &::before {
-          left: 0;
-          width: 100%;
-        }
-        &.active {
-          &::before {
-            width: 50%;
-          }
-        }
-      }
+    .date-item {
+      color: @primary-color;
     }
   }
 
@@ -154,38 +150,28 @@
           border-bottom: 0;
         }
       }
+    }
 
-      .date-item {
-        align-self: flex-end;
-        flex: 0 0 2.4rem;
-        margin-right: .5rem;
-        margin-top: .5rem;
+    .date-item {
+      align-self: flex-end;
+      flex: 0 0 2.8rem;
+      margin-right: .5rem;
+      margin-top: .5rem;
+    }
+
+    .calendar-range {
+      &::before {
+        top: 1.9rem;
       }
-
-      .calendar-range {
-        .date-item {
-          &::before {
-            height: 2.4rem;
-            left: auto;
-            right: 0;
-            top: 1.7rem;
-            width: 2.2rem;
-          }
+      &.range-start {
+        &::before {
+          left: auto;
+          width: 1.9rem;
         }
-
-        & + .calendar-range {
-          .date-item {
-            &::before {
-              left: 0;
-              width: 100%;
-            }
-            &.active {
-              &::before {
-                right: 1.7rem;
-                width: auto;
-              }
-            }
-          }
+      }
+      &.range-end {
+        &::before {
+          right: 1.9rem;
         }
       }
     }

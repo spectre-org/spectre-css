@@ -24,11 +24,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 499;
+  z-index: 200;
 }
 .section-hero {
   position: relative;
-  z-index: 999;
+  z-index: 300;
 }
 .grid-header .navbar {
   height: 4rem;
@@ -141,7 +141,7 @@
   height: 75vh;
 }
 .docs-content .panel .tile {
-  margin: .5rem 0;
+  margin: 1.5rem 0;
 }
 .docs-content .code .com {
   color: #c5c5c5;
@@ -227,7 +227,7 @@
     transition: transform .2s ease;
     transition: -webkit-transform .2s ease;
     width: 24rem;
-    z-index: 999;
+    z-index: 400;
   }
   .docs-sidebar:target {
     -webkit-transform: translateX(0);
@@ -249,6 +249,6 @@
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 499;
+    z-index: 300;
   }
 }

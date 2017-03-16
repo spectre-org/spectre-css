@@ -16,7 +16,7 @@
   &.active {
     display: flex;
     opacity: 1;
-    z-index: 1988;
+    z-index: @z-index-z4;
 
     .modal-overlay {
       background: fade(@gray-color-darker, 50%);
@@ -32,6 +32,7 @@
     .modal-container {
       animation: slide-down .2s ease-in 1;
       max-width: 64rem;
+      z-index: @z-index-z0;
     }
   }
 
@@ -50,7 +51,6 @@
   padding: 0;
   .shadow;
   text-align: left;
-  z-index: 1988;
 
   .modal-header {
     padding: @layout-padding;

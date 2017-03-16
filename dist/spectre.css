@@ -752,7 +752,7 @@ abbr[title] {
 .btn-group .btn:hover,
 .btn-group .btn:active,
 .btn-group .btn.active {
-  z-index: 9;
+  z-index: 1;
 }
 .btn-group.btn-group-block {
   display: flex;
@@ -778,7 +778,7 @@ abbr[title] {
   appearance: none;
   background: #fff;
   background-image: none;
-  border: .1rem solid #cecece;
+  border: .1rem solid #c9c9c9;
   border-radius: .2rem;
   color: #333;
   display: block;
@@ -832,7 +832,7 @@ textarea.form-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: .1rem solid #cecece;
+  border: .1rem solid #c9c9c9;
   border-radius: .2rem;
   color: inherit;
   font-size: 1.4rem;
@@ -921,7 +921,7 @@ textarea.form-input {
 .form-checkbox .form-icon,
 .form-radio .form-icon,
 .form-switch .form-icon {
-  border: .1rem solid #cecece;
+  border: .1rem solid #c9c9c9;
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -1029,7 +1029,7 @@ textarea.form-input {
 }
 .input-group .input-group-addon {
   background: #f8f8f8;
-  border: .1rem solid #cecece;
+  border: .1rem solid #c9c9c9;
   border-radius: .2rem;
   line-height: 2rem;
   padding: .5rem .8rem;
@@ -1070,7 +1070,7 @@ textarea.form-input {
 .input-group .form-input:focus,
 .input-group .input-group-addon:focus,
 .input-group .input-group-btn:focus {
-  z-index: 99;
+  z-index: 1;
 }
 .input-group.input-inline {
   display: inline-flex;
@@ -1768,7 +1768,7 @@ code {
 .avatar {
   background: #5764c6;
   border-radius: 50%;
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .85);
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 300;
@@ -1780,6 +1780,7 @@ code {
   width: 3.2rem;
 }
 .avatar.avatar-xs {
+  font-size: .8rem;
   height: 1.6rem;
   width: 1.6rem;
 }
@@ -1803,7 +1804,7 @@ code {
   height: 100%;
   position: relative;
   width: 100%;
-  z-index: 99;
+  z-index: 100;
 }
 .avatar .avatar-icon {
   background: #fff;
@@ -1823,13 +1824,7 @@ code {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  vertical-align: middle;
   z-index: 1;
-}
-.avatar.avatar-xs[data-initial]::before {
-  -webkit-transform: translate(-50%, -50%) scale(.5);
-  -ms-transform: translate(-50%, -50%) scale(.5);
-  transform: translate(-50%, -50%) scale(.5);
 }
 .badge {
   position: relative;
@@ -2008,7 +2003,7 @@ code {
   -webkit-transform: translateY(.5rem);
   -ms-transform: translateY(.5rem);
   transform: translateY(.5rem);
-  z-index: 999;
+  z-index: 100;
 }
 .menu .menu-item {
   margin-top: 0;
@@ -2066,7 +2061,7 @@ code {
   display: -ms-flexbox;
   display: -webkit-flex;
   opacity: 1;
-  z-index: 1988;
+  z-index: 400;
 }
 .modal:target .modal-overlay,
 .modal.active .modal-overlay {
@@ -2084,6 +2079,7 @@ code {
   -webkit-animation: slide-down .2s ease-in 1;
   animation: slide-down .2s ease-in 1;
   max-width: 64rem;
+  z-index: 1;
 }
 .modal.modal-sm .modal-container {
   max-width: 32rem;
@@ -2096,7 +2092,6 @@ code {
   margin: 0 auto;
   padding: 0;
   text-align: left;
-  z-index: 1988;
 }
 .modal-container .modal-header {
   padding: 1.5rem;
@@ -2322,7 +2317,7 @@ code {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 1.2rem;
-  z-index: 99;
+  z-index: 1;
 }
 .step .step-item.active a::before {
   background: #fff;
@@ -2344,7 +2339,6 @@ code {
   display: -webkit-flex;
   -ms-flex-align: start;
   -ms-flex-line-pack: justify;
-  padding: .5rem 0;
 }
 .tile .tile-icon,
 .tile .tile-action {
@@ -2393,6 +2387,7 @@ code {
   display: block;
   padding: 1.4rem;
   width: 100%;
+  z-index: 300;
 }
 .toast.toast-primary {
   background: rgba(87, 100, 198, .9);
@@ -2427,11 +2422,10 @@ code {
   display: block;
   font-size: 1.2rem;
   left: 50%;
-  line-height: 1.6rem;
   max-width: 32rem;
   opacity: 0;
   overflow: hidden;
-  padding: .6rem 1rem;
+  padding: .4rem .8rem;
   pointer-events: none;
   position: absolute;
   text-overflow: ellipsis;
@@ -2442,7 +2436,7 @@ code {
   transition: transform .2s ease;
   transition: -webkit-transform .2s ease;
   white-space: nowrap;
-  z-index: 999;
+  z-index: 200;
 }
 .tooltip:focus::after,
 .tooltip:hover::after {
@@ -2579,7 +2573,7 @@ code {
   position: absolute;
   top: 50%;
   width: 1.6rem;
-  z-index: 99;
+  z-index: 1;
 }
 .clearfix::after,
 .container::after {
