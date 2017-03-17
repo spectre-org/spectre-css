@@ -37,6 +37,7 @@
   -webkit-flex: 0 0 14.28%;
   -ms-flex: 0 0 14.28%;
   flex: 0 0 14.28%;
+  width: 14.28%;
 }
 .calendar .calendar-header {
   background: #f8f8f8;
@@ -141,7 +142,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   height: 11rem;
-  overflow: hidden;
   padding: 0;
 }
 .calendar.calendar-lg .calendar-body .calendar-date:nth-child(7n) {
@@ -153,10 +153,8 @@
 .calendar.calendar-lg .date-item {
   -webkit-align-self: flex-end;
   align-self: flex-end;
-  -webkit-flex: 0 0 2.8rem;
-  -ms-flex: 0 0 2.8rem;
-  flex: 0 0 2.8rem;
   -ms-flex-item-align: end;
+  height: 2.8rem;
   margin-right: .5rem;
   margin-top: .5rem;
 }

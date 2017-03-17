@@ -1,7 +1,7 @@
 // Forms
 .form-group {
   &:not(:last-child) {
-    margin-bottom: @layout-gutter;
+    margin-bottom: @layout-padding;
   }
 }
 
@@ -246,18 +246,20 @@
     border-radius: .7rem;
   }
 
-  input:checked + .form-icon {
-    &::before {
-      background: @bg-color-light;
-      border-radius: @border-radius;
-      content: "";
-      height: .4rem;
-      left: 50%;
-      margin-left: -.2rem;
-      margin-top: -.2rem;
-      position: absolute;
-      top: 50%;
-      width: .4rem;
+  input {
+    &:checked + .form-icon {
+      &::before {
+        background: @bg-color-light;
+        border-radius: @border-radius;
+        content: "";
+        height: .4rem;
+        left: 50%;
+        margin-left: -.2rem;
+        margin-top: -.2rem;
+        position: absolute;
+        top: 50%;
+        width: .4rem;
+      }
     }
   }
 }
@@ -389,7 +391,7 @@ input {
 
 // Form Horizontal
 .form-horizontal {
-  padding: @layout-gutter;
+  padding: @layout-padding;
 
   .form-group {
     display: flex;
