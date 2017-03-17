@@ -16,7 +16,7 @@
   &.active {
     display: flex;
     opacity: 1;
-    z-index: @z-index-z4;
+    z-index: @zindex-4;
 
     .modal-overlay {
       background: fade(@gray-color-darker, 50%);
@@ -30,9 +30,9 @@
     }
 
     .modal-container {
-      animation: slide-down .2s ease-in 1;
+      animation: slide-down .2s ease 1;
       max-width: 64rem;
-      z-index: @z-index-z0;
+      z-index: @zindex-0;
     }
   }
 
@@ -49,7 +49,7 @@
   display: block;
   margin: 0 auto;
   padding: 0;
-  .shadow;
+  box-shadow: @shadow-4;
   text-align: left;
 
   .modal-header {

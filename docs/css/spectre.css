@@ -1976,8 +1976,8 @@ code {
   position: relative;
 }
 .dropdown .menu {
-  -webkit-animation: slide-down .2s ease-in 1;
-  animation: slide-down .2s ease-in 1;
+  -webkit-animation: slide-down .2s ease 1;
+  animation: slide-down .2s ease 1;
   display: none;
   left: 0;
   position: absolute;
@@ -2076,8 +2076,8 @@ code {
 }
 .modal:target .modal-container,
 .modal.active .modal-container {
-  -webkit-animation: slide-down .2s ease-in 1;
-  animation: slide-down .2s ease-in 1;
+  -webkit-animation: slide-down .2s ease 1;
+  animation: slide-down .2s ease 1;
   max-width: 64rem;
   z-index: 1;
 }
@@ -2087,7 +2087,7 @@ code {
 .modal-container {
   background: #fff;
   border-radius: .2rem;
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .3);
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -2748,11 +2748,20 @@ code {
 .hand {
   cursor: pointer;
 }
-.shadow {
+.shadow-0 {
+  box-shadow: 0 0 .2rem rgba(0, 0, 0, .3);
+}
+.shadow-1 {
   box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
 }
-.light-shadow {
-  box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .15);
+.shadow-2 {
+  box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .3);
+}
+.shadow-3 {
+  box-shadow: 0 .3rem 1.2rem rgba(0, 0, 0, .3);
+}
+.shadow-4 {
+  box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .3);
 }
 .rounded {
   border-radius: .2rem;
