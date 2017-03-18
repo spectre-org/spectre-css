@@ -1,6 +1,6 @@
 /*! Spectre.css Experimentals | MIT License | github.com/picturepan2/spectre */
 .calendar {
-  border: .1rem solid #efefef;
+  border: .1rem solid #f0f1f4;
   border-radius: .2rem;
   display: block;
   min-width: 28rem;
@@ -9,7 +9,7 @@
 .calendar .calendar-nav {
   -webkit-align-items: center;
   align-items: center;
-  background: #f8f8f8;
+  background: #f8f9fa;
   border-top-left-radius: .2rem;
   border-top-right-radius: .2rem;
   display: flex;
@@ -40,13 +40,13 @@
   width: 14.28%;
 }
 .calendar .calendar-header {
-  background: #f8f8f8;
-  border-bottom: .1rem solid #efefef;
-  color: #999;
+  background: #f8f9fa;
+  border-bottom: .1rem solid #f0f1f4;
+  color: #acb3c2;
   font-size: 1.2rem;
 }
 .calendar .calendar-body {
-  color: #666;
+  color: #727e96;
 }
 .calendar .calendar-date {
   border: 0;
@@ -59,7 +59,7 @@
   background: transparent;
   border: .1rem solid transparent;
   border-radius: 50%;
-  color: #666;
+  color: #727e96;
   cursor: pointer;
   height: 2.8rem;
   line-height: 2rem;
@@ -133,8 +133,8 @@
   padding: 0;
 }
 .calendar.calendar-lg .calendar-body .calendar-date {
-  border-bottom: .1rem solid #efefef;
-  border-right: .1rem solid #efefef;
+  border-bottom: .1rem solid #f0f1f4;
+  border-right: .1rem solid #f0f1f4;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -191,7 +191,7 @@
   white-space: nowrap;
 }
 .carousel {
-  background: #f8f8f8;
+  background: #f8f9fa;
   display: block;
   height: 50vh;
   overflow: hidden;
@@ -220,9 +220,9 @@
 }
 .carousel .carousel-container .item-prev,
 .carousel .carousel-container .item-next {
-  background: rgba(204, 204, 204, .25);
-  border-color: rgba(204, 204, 204, .5);
-  color: #ccc;
+  background: rgba(231, 233, 237, .25);
+  border-color: rgba(231, 233, 237, .5);
+  color: #e7e9ed;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -251,7 +251,7 @@
 .carousel .carousel-locator:nth-of-type(2):checked ~ .carousel-nav .nav-item:nth-of-type(2),
 .carousel .carousel-locator:nth-of-type(3):checked ~ .carousel-nav .nav-item:nth-of-type(3),
 .carousel .carousel-locator:nth-of-type(4):checked ~ .carousel-nav .nav-item:nth-of-type(4) {
-  color: #ccc;
+  color: #e7e9ed;
 }
 .carousel .carousel-nav {
   bottom: 1rem;
@@ -270,7 +270,7 @@
   z-index: 200;
 }
 .carousel .carousel-nav .nav-item {
-  color: rgba(204, 204, 204, .5);
+  color: rgba(231, 233, 237, .5);
   display: block;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
@@ -344,7 +344,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f8f8f8;
+  background: #f8f9fa;
   border: 0;
   border-radius: .2rem;
   display: block;
@@ -361,7 +361,7 @@
   border-radius: .2rem;
 }
 .meter::-webkit-meter-bar {
-  background: #f8f8f8;
+  background: #f8f9fa;
 }
 .meter::-webkit-meter-optimum-value {
   background: #32b643;
@@ -476,7 +476,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f0f0f0;
+  background: #f0f1f4;
   border: 0;
   border-radius: .2rem;
   color: #5764c6;
@@ -499,7 +499,7 @@
 .progress:indeterminate {
   -webkit-animation: progress-indeterminate 1.5s linear infinite;
   animation: progress-indeterminate 1.5s linear infinite;
-  background: #f0f0f0 linear-gradient(to right, #5764c6 30%, #f0f0f0 30%) top left / 150% 150% no-repeat;
+  background: #f0f1f4 linear-gradient(to right, #5764c6 30%, #f0f1f4 30%) top left / 150% 150% no-repeat;
 }
 .progress:indeterminate::-moz-progress-bar {
   background: transparent;
@@ -574,35 +574,35 @@
 }
 .slider:disabled::-webkit-slider-thumb,
 .slider.disabled::-webkit-slider-thumb {
-  background: #ccc;
+  background: #e7e9ed;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 .slider:disabled::-moz-range-thumb,
 .slider.disabled::-moz-range-thumb {
-  background: #ccc;
+  background: #e7e9ed;
   transform: scale(1);
 }
 .slider:disabled::-ms-thumb,
 .slider.disabled::-ms-thumb {
-  background: #ccc;
+  background: #e7e9ed;
   -ms-transform: scale(1);
   transform: scale(1);
 }
 .slider::-webkit-slider-runnable-track {
-  background: #f0f0f0;
+  background: #f0f1f4;
   border-radius: .2rem;
   height: .4rem;
   width: 100%;
 }
 .slider::-moz-range-track {
-  background: #f0f0f0;
+  background: #f0f1f4;
   border-radius: .2rem;
   height: .4rem;
   width: 100%;
 }
 .slider::-ms-track {
-  background: #f0f0f0;
+  background: #f0f1f4;
   border-radius: .2rem;
   height: .4rem;
   width: 100%;

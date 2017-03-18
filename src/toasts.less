@@ -1,13 +1,12 @@
 // Toasts
 .toast {
-  border: @border-width solid @gray-color-darker;
+  border: @border-width solid @dark-color;
   border-radius: @border-radius;
-  color: @gray-color-lighter;
+  color: @light-color;
   display: block;
   padding: @layout-padding;
-  .toast-variant(@gray-color-darker);
+  .toast-variant(@dark-color);
   width: 100%;
-  z-index: @zindex-3;
 
   &.toast-primary {
     .toast-variant(@primary-color);
@@ -22,12 +21,12 @@
   }
 
   a {
-    color: @gray-color-lighter;
+    color: @light-color;
     text-decoration: underline;
-
-    &:hover,
     &:focus,
-    &:active {
+    &:hover,
+    &:active,
+    &.active {
       opacity: .75;
     }
   }

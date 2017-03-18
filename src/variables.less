@@ -4,7 +4,7 @@
 @html-font-size: 10px;
 @html-line-height: 1.428571429;
 @body-bg: #fff;
-@body-font-color: #333;
+@body-font-color: lighten(@dark-color, 5%);
 @font-size: 1.4rem;
 @font-size-sm: 1.2rem;
 @font-size-lg: 1.6rem;
@@ -32,27 +32,28 @@
 @secondary-color-dark: darken(@secondary-color, 3%);
 @secondary-color-light: lighten(@secondary-color, 3%);
 
-// Gray colors
-@gray-color: #999;
-@gray-color-darker: darken(@gray-color, 40%);
-@gray-color-dark: darken(@gray-color, 20%);
-@gray-color-light: lighten(@gray-color, 20%);
-@gray-color-lighter: lighten(@gray-color, 40%);
-
 @link-color: @primary-color;
 @link-color-dark: darken(@link-color, 10%);
-@border-color: #efefef;
+
+// Gray colors
+@dark-color: #454d5d;
+@light-color: #fff;
+@gray-color: lighten(@dark-color, 40%);
+@gray-color-dark: darken(@gray-color, 20%);
+@gray-color-light: lighten(@gray-color, 20%);
+
+@border-color: lighten(@gray-color-light, 3%);
 @border-color-dark: darken(@border-color, 15%);
-@bg-color: #f8f8f8;
+@bg-color: lighten(@dark-color, 66%);
 @bg-color-dark: darken(@bg-color, 3%);
-@bg-color-light: #fff;
+@bg-color-light: @light-color;
 
 // Control colors
 @control-color-success: #32b643;
 @control-color-warning: #ffb700;
 @control-color-danger: #e85600;
 
-// Meta colors
+// Other colors
 @code-color: #e06870;
 @highlight-color: #ffe9b3;
 

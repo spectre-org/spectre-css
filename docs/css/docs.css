@@ -5,12 +5,12 @@
 }
 /* Spectre docs style */
 .bg-gray {
-  background: #f6f6f6;
-  color: #666;
+  background: #f8f9fa;
+  color: #667189;
   padding: 1rem;
 }
 .bg-dark {
-  background: #333;
+  background: #50596c;
   color: #fff;
   padding: 1rem;
 }
@@ -37,17 +37,17 @@
   padding: 0;
 }
 .grid-header .navbar-brand {
-  color: #444;
+  color: #50596c;
 }
 .grid-header .btn-link {
-  color: #666;
+  color: #667189;
   padding-left: .6rem;
   padding-right: .6rem;
 }
-.grid-header .btn-link:hover,
 .grid-header .btn-link:focus,
+.grid-header .btn-link:hover,
 .grid-header .btn-link:active {
-  color: #444;
+  color: #50596c;
   opacity: .75;
 }
 .grid-hero {
@@ -55,26 +55,26 @@
   margin-top: 10rem;
 }
 .grid-hero h1 {
-  color: #555;
+  color: #5b657a;
   font-size: 3.2rem;
   font-weight: 400;
 }
 .grid-hero h2 {
-  color: #666;
+  color: #5b657a;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
   margin-bottom: 3rem;
 }
 .grid-hero h2 u {
-  border-bottom: .2rem solid #666;
+  border-bottom: .2rem solid #5b657a;
   padding-bottom: .1rem;
   text-decoration: none;
 }
 .grid-hero .card {
   background: none;
   border: 0;
-  color: #666;
+  color: #667189;
   padding: 1rem;
 }
 .grid-hero .card .card-title {
@@ -83,31 +83,22 @@
   margin-bottom: 0;
 }
 .grid-footer {
-  color: #888;
+  color: #acb3c2;
   margin-bottom: 3rem;
   margin-top: 4rem;
 }
 .grid-footer a {
-  color: #666;
-}
-.grid-ads {
-  border-radius: .2rem;
-  display: block;
-  height: 12rem;
-  margin: 2rem auto;
-  max-width: 64rem;
-  padding: 1rem;
-  width: 100%;
+  color: #727e96;
 }
 .docs-content {
-  color: #666;
+  color: #667189;
   padding-top: 0;
 }
 .docs-content .container {
   padding: 1rem;
 }
 .docs-content header {
-  color: #444;
+  color: #50596c;
   padding-top: 6rem;
 }
 .docs-content .notes {
@@ -137,20 +128,31 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+.docs-content .docs-color {
+  border-radius: .2rem;
+  padding: 1rem;
+}
+.docs-content .docs-color .color-subtitle {
+  font-size: 1.2rem;
+  opacity: .75;
+}
 .docs-content .panel {
   height: 75vh;
 }
 .docs-content .panel .tile {
   margin: 1.5rem 0;
 }
+.docs-content .code {
+  color: #667189;
+}
 .docs-content .code .com {
-  color: #c5c5c5;
+  color: #acb3c2;
 }
 .docs-content .code .tag {
   color: #5764c6;
 }
 .docs-content .code .atn {
-  color: #666;
+  color: #667189;
 }
 .docs-content .code .atv {
   color: #e06870;
@@ -213,7 +215,7 @@
     padding: 0;
   }
   .docs-sidebar {
-    background: #fff;
+    background: bg-color-light;
     height: 100%;
     left: 0;
     overflow-y: auto;
