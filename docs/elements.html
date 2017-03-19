@@ -58,9 +58,6 @@
               <li class="nav-item">
                 <a href="elements.html#media">Media</a>
               </li>
-              <li class="nav-item">
-                <a href="experimentals.html">Experimentals</a>
-              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -71,6 +68,9 @@
           </li>
           <li class="nav-item">
             <a href="utilities.html">Utilities</a>
+          </li>
+          <li class="nav-item">
+            <a href="experimentals.html">Experimentals</a>
           </li>
         </ul>
       </div>
@@ -291,9 +291,9 @@
           <table class="table table-striped">
             <thead>
               <tr>
-                <th>name</th>
-                <th>genre</th>
-                <th>release date</th>
+                <th>Name</th>
+                <th>Genre</th>
+                <th>Release date</th>
               </tr>
             </thead>
             <tbody>
@@ -403,7 +403,7 @@
           <header class="text-center"><h4>Button sizes</h4></header>
           <div class="columns">
             <div class="column col-6 col-xs-12">
-              <button class="btn btn-primary btn-lg">large</button>
+              <button class="btn btn-primary btn-lg">large button</button>
               <button class="btn btn-primary">normal</button>
               <button class="btn btn-primary btn-sm">small</button>
             </div>
@@ -454,9 +454,9 @@
           <div class="columns">
             <div class="column col-xs-12">
               <div class="btn-group">
-                <button class="btn tooltip" data-tooltip="Lorem ipsum">first button</button>
-                <button class="btn tooltip" data-tooltip="Lorem ipsum">second button</button>
-                <button class="btn tooltip" data-tooltip="Lorem ipsum">third button</button>
+                <button class="btn tooltip" data-tooltip="Tooltip text">first button</button>
+                <button class="btn tooltip" data-tooltip="Tooltip text">second button</button>
+                <button class="btn tooltip" data-tooltip="Tooltip text">third button</button>
               </div>
             </div>
             <div class="column col-xs-12">
@@ -500,7 +500,7 @@
         <section id="forms" class="container">
           <header class="text-center"><h3>Forms</h3></header>
           <section class="notes">
-            <p><strong>Forms</strong> provide the most common control styles used in forms, including label, input, textarea, select, checkbox, radio and switch.  </p>
+            <p><strong>Forms</strong> provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.  </p>
           </section>
           <div class="columns">
             <div class="column col-9 col-xs-12">
@@ -520,7 +520,7 @@
                     <i class="form-icon"></i> Male
                   </label>
                   <label class="form-radio">
-                    <input type="radio" name="gender"  />
+                    <input type="radio" name="gender" />
                     <i class="form-icon"></i> Female
                   </label>
                 </div>
@@ -846,7 +846,7 @@
 
           <header class="text-center"><h4>Form sizes</h4></header>
           <section class="notes">
-            <p>For smaller or larger input and select controls, you could add <code>input-sm</code>/<code>input-lg</code> and <code>select-sm</code>/<code>select-lg</code> to the elements.</p>
+            <p>For smaller or larger input and select controls, you could add the <code>input-sm</code>/<code>input-lg</code>, <code>select-sm</code>/<code>select-lg</code> and <code>label-sm</code>/<code>label-lg</code> classes to the elements.</p>
           </section>
           <div class="columns">
             <div class="column col-4">
@@ -860,6 +860,9 @@
                 <option>Hipchat</option>
               </select>
             </div>
+            <div class="column col-4">
+              <label class="form-label label-sm">Label</label>
+            </div>
           </div>
           <div class="columns">
             <div class="column col-4">
@@ -872,6 +875,9 @@
                 <option>Skype</option>
                 <option>Hipchat</option>
               </select>
+            </div>
+            <div class="column col-4">
+              <label class="form-label label-lg">Label</label>
             </div>
           </div>
 
@@ -1099,13 +1105,13 @@
           <ul class="pagination">
             <li class="page-item page-prev">
               <a href="index.html">
-                <p class="page-item-meta">Previous</p>
+                <p class="page-item-subtitle">Previous</p>
                 <h4 class="page-item-title">Getting started</h4>
               </a>
             </li>
             <li class="page-item page-next">
               <a href="layout.html">
-                <p class="page-item-meta">Next</p>
+                <p class="page-item-subtitle">Next</p>
                 <h4 class="page-item-title">Layout</h4>
               </a>
             </li>

@@ -1,6 +1,6 @@
 // Panels
 .panel {
-  border: .1rem solid @border-color;
+  border: @border-width solid @border-color;
   border-radius: @border-radius;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   .panel-header,
   .panel-footer {
     flex: 0 0 auto;
-    padding: 1.5rem;
+    padding: @layout-padding-lg;
   }
 
   .panel-nav {
@@ -18,14 +18,14 @@
   .panel-body {
     flex: 1 1 auto;
     overflow-y: auto;
-  }
-
-  .panel-body {
-    padding: 0 1.5rem;
+    padding: 0 @layout-padding-lg;
   }
 
   .panel-title {
     font-size: 2rem;
-    line-height: 1.4;
+  }
+
+  .panel-subtitle {
+    color: @gray-color;
   }
 }

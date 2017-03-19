@@ -87,6 +87,9 @@
           <li class="nav-item">
             <a href="utilities.html">Utilities</a>
           </li>
+          <li class="nav-item">
+            <a href="experimentals.html">Experimentals</a>
+          </li>
         </ul>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
@@ -156,6 +159,8 @@
                           </div>
                         </div>
                       </a>
+                    </li>
+                    <li class="menu-item">
                       <a href="#autocomplete">
                         <div class="tile tile-centered">
                           <div class="tile-icon">
@@ -301,22 +306,22 @@
             <p><strong>Badges</strong> are often used as unread number indicators.</p>
           </section>
           <div class="columns">
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="">
                 Notifications
               </span>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="8">
                 Notifications
               </span>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="88">
                 Notifications
               </span>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="888">
                 Notifications
               </span>
@@ -401,7 +406,7 @@
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;25%&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;25%&lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818BD5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818bd5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
@@ -420,7 +425,7 @@
                 </div>
                 <div class="card-header">
                   <div class="card-title">Microsoft</div>
-                  <div class="card-meta">Software and hardware</div>
+                  <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Empower every person and every organization on the planet to achieve more.
@@ -434,7 +439,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">Apple</div>
-                  <div class="card-meta">Hardware and software</div>
+                  <div class="card-subtitle">Hardware and software</div>
                 </div>
                 <div class="card-image">
                   <img class="img-responsive" src="img/osx-yosemite.jpg" />
@@ -455,7 +460,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">Google</div>
-                  <div class="card-meta">Software and hardware</div>
+                  <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Organize the world’s information and make it universally accessible and useful.
@@ -487,7 +492,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">Apple</div>
-                  <div class="card-meta">Hardware and software</div>
+                  <div class="card-subtitle">Hardware and software</div>
                 </div>
                 <div class="card-body">
                   To make a contribution to the world by making tools for the mind that advance humankind.
@@ -505,7 +510,7 @@
                 <div class="card-header">
                   <button class="btn btn-primary float-right"><i class="icon icon-playlist_add"></i></button>
                   <div class="card-title">Google I/O</div>
-                  <div class="card-meta">Software and hardware</div>
+                  <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
@@ -524,7 +529,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
     &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;card-title&quot;</span>&gt;Microsoft&lt;<span class="tag">/h4</span>&gt;
-    &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-meta&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
+    &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
     To make a contribution to the world by making tools for the mind that advance humankind.
@@ -636,11 +641,7 @@
             </div>
             <div class="column col-xs-12">
               <ul class="menu">
-                <li class="menu-header">
-                  <span class="menu-header-text">
-                    LINKS
-                  </span>
-                </li>
+                <li class="divider" data-content="LINKS"></li>
                 <li class="menu-item">
                   <a href="#menus">
                     <i class="icon icon-link"></i> Slack
@@ -665,11 +666,8 @@
 
 <!-- menus example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
-  <span class="com">&lt;!-- menu header --&gt;</span>
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header&quot;</span>&gt;
-    &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;menu-header-text&quot;</span>&gt;
-      LINKS
-    &lt;<span class="tag">/span</span>&gt;
+  <span class="com">&lt;!-- menu header text --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span> <span class="atn">data-content</span>=<span class="atv">&quot;LINKS&quot;</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   <span class="com">&lt;!-- menu item --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
@@ -815,7 +813,7 @@
             <div class="column">
               <a href="#example-modal-1" class="btn btn-primary">Open Modal</a>
               <div class="modal" id="example-modal-1">
-                <div class="modal-overlay"></div>
+                <a href="#modals" class="modal-overlay" aria-label="Close"></a>
                 <div class="modal-container" role="document">
                   <div class="modal-header">
                     <a href="#modals" class="btn btn-clear float-right" aria-label="Close"></a>
@@ -1136,6 +1134,7 @@
                 <li class="tab-item">
                   <a href="#tabs">
                     Playlists
+                    <button class="btn btn-clear"></button>
                   </a>
                 </li>
                 <li class="tab-item">
@@ -1271,13 +1270,13 @@
               <ul class="pagination">
                 <li class="page-item page-prev">
                   <a href="#pagination">
-                    <p class="page-item-meta">Previous</p>
+                    <p class="page-item-subtitle">Previous</p>
                     <h3 class="page-item-title">Getting started</h3>
                   </a>
                 </li>
                 <li class="page-item page-next">
                   <a href="#pagination">
-                    <p class="page-item-meta">Next</p>
+                    <p class="page-item-subtitle">Next</p>
                     <h3 class="page-item-title">Layout</h3>
                   </a>
                 </li>
@@ -1292,13 +1291,13 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-meta&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
       &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-meta&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
       &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
@@ -1452,7 +1451,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The Avengers</p>
-                  <p class="tile-meta">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                  <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-primary">Join</button>
@@ -1469,7 +1468,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The S.H.I.E.L.D.</p>
-                  <p class="tile-meta">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                  <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
                   <p>
                     <button class="btn btn-primary btn-sm">Join</button>
                     <button class="btn btn-sm">Contact</button>
@@ -1480,7 +1479,7 @@
           </div>
           <section class="notes">
             <p>Add a container with the <code>tile</code> class. And add child elements with the <code>tile-icon</code>, <code>tile-content</code> or/and <code>tile-action</code> classes. The <code>tile-icon</code> and <code>tile-action</code> are optional.</p>
-            <p>There are <code>tile-title</code> and <code>tile-meta</code> classes for title and meta text styles.</p>
+            <p>There are <code>tile-title</code> and <code>tile-subtitle</code> classes for title and subtitle text styles.</p>
           </section>
 
 <!-- tiles example -->
@@ -1492,7 +1491,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
     &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;The Avengers&lt;<span class="tag">/p</span>&gt;
-    &lt;<span class="tag">p</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle&quot;</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Join&lt;<span class="tag">/button</span>&gt;
@@ -1514,7 +1513,7 @@
                 </div>
                 <div class="tile-content">
                   <div class="tile-title">spectre-docs.pdf</div>
-                  <div class="tile-meta">14MB · Public · 1 Jan, 2017</div>
+                  <div class="tile-subtitle">14MB · Public · 1 Jan, 2017</div>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-link btn-action"><i class="icon icon-more_vert"></i></button>
@@ -1532,7 +1531,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;spectre-docs.pdf&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-meta&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;
@@ -1606,16 +1605,16 @@
           </section>
           <div class="columns text-center">
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip" data-tooltip="Tooltip text" data-tooltip-pos="top">top tooltip</button>
+              <button class="btn btn-primary tooltip" data-tooltip="Tooltip Text" data-tooltip-pos="top">top tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip text">right tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip Text">right tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Tooltip text">bottom tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Tooltip Text">bottom tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Tooltip text">left tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Tooltip Text">left tooltip</button>
             </div>
           </div>
           <section class="notes">
@@ -1635,13 +1634,13 @@
           <ul class="pagination">
             <li class="page-item page-prev">
               <a href="layout.html">
-                <p class="page-item-meta">Previous</p>
+                <p class="page-item-subtitle">Previous</p>
                 <h4 class="page-item-title">Layout</h4>
               </a>
             </li>
             <li class="page-item page-next">
               <a href="utilities.html">
-                <p class="page-item-meta">Next</p>
+                <p class="page-item-subtitle">Next</p>
                 <h4 class="page-item-title">Utilities</h4>
               </a>
             </li>
