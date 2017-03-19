@@ -130,6 +130,7 @@
 }
 .docs-content .docs-color {
   border-radius: .2rem;
+  margin: .5rem 0;
   padding: 1rem;
 }
 .docs-content .docs-color .color-subtitle {
