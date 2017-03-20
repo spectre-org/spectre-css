@@ -1469,11 +1469,27 @@
             </div>
           </div>
           <section class="notes">
-            <p></p>
+            <p>Wrap an element by a container with the <code>popover</code> class. And add a container with the <code>popover-container</code> next to the element. You can use <a href="#cards">Cards</a> component inside the <code>popover-container</code>. </p>
+            <p>Also, you can add the <code>popover-right</code>, <code>popover-bottom</code> or <code>popover-left</code> class to define the position. By default, the popovers appear above the element.</p>
           </section>
 
-<!-- steps example -->
-<pre class="code" data-lang="HTML"><code>
+<!-- popovers example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover popover-right&quot;</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;right popover&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover-container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>
