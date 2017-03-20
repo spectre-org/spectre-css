@@ -1705,7 +1705,7 @@ code {
   font-size: 2rem;
 }
 .panel .panel-subtitle {
-  color: #acb3c2;
+  opacity: .5;
 }
 .empty {
   background: #f8f9fa;
@@ -1719,7 +1719,7 @@ code {
   margin: 1rem auto;
 }
 .empty .empty-subtitle {
-  color: #acb3c2;
+  opacity: .5;
 }
 .empty .empty-action {
   margin-top: 1.5rem;
@@ -1943,8 +1943,8 @@ code {
   font-size: 2rem;
 }
 .card .card-subtitle {
-  color: #acb3c2;
   font-size: 1.2rem;
+  opacity: .5;
 }
 .chip {
   -webkit-align-items: center;
@@ -2267,6 +2267,74 @@ code {
 .nav .nav a {
   color: #acb3c2;
 }
+.popover {
+  display: inline-block;
+  position: relative;
+}
+.popover .popover-container {
+  content: attr(data-tooltip);
+  left: 50%;
+  opacity: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform .2s ease, -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  width: 32rem;
+  z-index: 400;
+}
+.popover :focus + .popover-container,
+.popover:hover .popover-container,
+.popover .popover-container:hover {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -100%) scale(1);
+  -ms-transform: translate(-50%, -100%) scale(1);
+  transform: translate(-50%, -100%) scale(1);
+}
+.popover.popover-right .popover-container {
+  left: 100%;
+  top: 50%;
+}
+.popover.popover-right :focus + .popover-container,
+.popover.popover-right:hover .popover-container,
+.popover.popover-right .popover-container:hover {
+  -webkit-transform: translate(0, -50%) scale(1);
+  -ms-transform: translate(0, -50%) scale(1);
+  transform: translate(0, -50%) scale(1);
+}
+.popover.popover-bottom .popover-container {
+  left: 50%;
+  top: 100%;
+}
+.popover.popover-bottom :focus + .popover-container,
+.popover.popover-bottom:hover .popover-container,
+.popover.popover-bottom .popover-container:hover {
+  -webkit-transform: translate(-50%, 0) scale(1);
+  -ms-transform: translate(-50%, 0) scale(1);
+  transform: translate(-50%, 0) scale(1);
+}
+.popover.popover-left .popover-container {
+  left: 0;
+  top: 50%;
+}
+.popover.popover-left :focus + .popover-container,
+.popover.popover-left:hover .popover-container,
+.popover.popover-left .popover-container:hover {
+  -webkit-transform: translate(-100%, -50%) scale(1);
+  -ms-transform: translate(-100%, -50%) scale(1);
+  transform: translate(-100%, -50%) scale(1);
+}
+.popover .card {
+  background: rgba(69, 77, 93, .95);
+  border: 0;
+  box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .3);
+  color: #fff;
+}
 .step {
   display: flex;
   display: -ms-flexbox;
@@ -2360,8 +2428,8 @@ code {
   font-weight: 500;
 }
 .tile .tile-subtitle {
-  color: #acb3c2;
   line-height: 2rem;
+  opacity: .5;
 }
 .tile.tile-centered {
   -webkit-align-items: center;
@@ -2428,12 +2496,10 @@ code {
   pointer-events: none;
   position: absolute;
   text-overflow: ellipsis;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  transition: transform .2s ease, -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: -webkit-transform .2s ease;
+  -webkit-transform: translate(-50%, 1rem);
+  -ms-transform: translate(-50%, 1rem);
+  transform: translate(-50%, 1rem);
+  transition: all .2s ease;
   white-space: nowrap;
   z-index: 200;
 }
@@ -2451,9 +2517,9 @@ code {
 .tooltip.tooltip-right::after {
   bottom: 50%;
   left: 100%;
-  -webkit-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-  transform: translate(0, 50%);
+  -webkit-transform: translate(-1rem, 50%);
+  -ms-transform: translate(-1rem, 50%);
+  transform: translate(-1rem, 50%);
 }
 .tooltip.tooltip-right:focus::after,
 .tooltip.tooltip-right:hover::after {
@@ -2464,9 +2530,9 @@ code {
 .tooltip.tooltip-bottom::after {
   bottom: auto;
   top: 100%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, -1rem);
+  -ms-transform: translate(-50%, -1rem);
+  transform: translate(-50%, -1rem);
 }
 .tooltip.tooltip-bottom:focus::after,
 .tooltip.tooltip-bottom:hover::after {
@@ -2478,9 +2544,9 @@ code {
   bottom: 50%;
   left: auto;
   right: 100%;
-  -webkit-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-  transform: translate(0, 50%);
+  -webkit-transform: translate(1rem, 50%);
+  -ms-transform: translate(1rem, 50%);
+  transform: translate(1rem, 50%);
 }
 .tooltip.tooltip-left:focus::after,
 .tooltip.tooltip-left:hover::after {
