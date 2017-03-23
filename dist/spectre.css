@@ -796,6 +796,18 @@ abbr[title] {
 .form-input:focus {
   border-color: #5764c6;
 }
+.form-input::-webkit-input-placeholder {
+  color: #acb3c2;
+}
+.form-input::-moz-placeholder {
+  color: #acb3c2;
+}
+.form-input:-ms-input-placeholder {
+  color: #acb3c2;
+}
+.form-input::placeholder {
+  color: #acb3c2;
+}
 .form-input.input-sm {
   font-size: 1.2rem;
   height: 2.4rem;
@@ -1995,7 +2007,7 @@ code {
 .menu {
   background: #fff;
   border-radius: .2rem;
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .1rem .4rem rgba(69, 77, 93, .3);
   list-style: none;
   margin: 0;
   min-width: 18rem;
@@ -2087,7 +2099,7 @@ code {
 .modal-container {
   background: #fff;
   border-radius: .2rem;
-  box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .4rem 1rem rgba(69, 77, 93, .3);
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -2330,10 +2342,8 @@ code {
   transform: translate(-100%, -50%) scale(1);
 }
 .popover .card {
-  background: rgba(69, 77, 93, .95);
   border: 0;
-  box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .3);
-  color: #fff;
+  box-shadow: 0 .4rem 1rem rgba(69, 77, 93, .3);
 }
 .step {
   display: flex;
@@ -2815,19 +2825,19 @@ code {
   cursor: pointer;
 }
 .shadow-0 {
-  box-shadow: 0 0 .2rem rgba(0, 0, 0, .3);
+  box-shadow: 0 0 .2rem rgba(69, 77, 93, .3);
 }
 .shadow-1 {
-  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .1rem .4rem rgba(69, 77, 93, .3);
 }
 .shadow-2 {
-  box-shadow: 0 .2rem .8rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .2rem .6rem rgba(69, 77, 93, .3);
 }
 .shadow-3 {
-  box-shadow: 0 .3rem 1.2rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .3rem .8rem rgba(69, 77, 93, .3);
 }
 .shadow-4 {
-  box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .3);
+  box-shadow: 0 .4rem 1rem rgba(69, 77, 93, .3);
 }
 .rounded {
   border-radius: .2rem;
