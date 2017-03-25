@@ -1,0 +1,63 @@
+// CSS Icons
+.icon {
+  font-size: inherit;
+  vertical-align: middle;
+}
+
+.icon-arrow-down,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-arrow-up {
+  display: inline-block;
+  height: 1em;
+  margin: 0;
+  position: relative;
+  width: 1em;
+
+  &::before {
+    border: .2rem solid currentColor;
+    border-bottom: 0;
+    border-right: 0;
+    content: "";
+    display: block;
+    height: .65em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: .65em;
+    transform: translate(-25%, -50%) rotate(-45deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+.icon-arrow-down {
+  transform: rotate(-90deg);
+}
+
+.icon-arrow-right {
+  transform: rotate(180deg);
+}
+
+.icon-arrow-up {
+  transform: rotate(90deg);
+}
+
+.icon-caret {
+  border-top: .4rem solid currentColor;
+  border-right: .4rem solid transparent;
+  border-left: .4rem solid transparent;
+  display: inline-block;
+  height: 0;
+  margin: 0;
+  vertical-align: middle;
+  width: 0;
+}
+
+// Components with icons
+.btn,
+.toast,
+.menu {
+  .icon {
+    vertical-align: -10%;
+  }
+}

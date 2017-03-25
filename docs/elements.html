@@ -9,7 +9,6 @@
   <title>Elements - Spectre.css</title>
   <link rel="stylesheet" href="css/spectre.css" />
   <link rel="stylesheet" href="css/docs.css" />
-  <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
   <section class="section section-header bg-gray">
@@ -48,6 +47,9 @@
               </li>
               <li class="nav-item">
                 <a href="elements.html#forms">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a href="elements.html#icons">Icons</a>
               </li>
               <li class="nav-item">
                 <a href="elements.html#labels">Labels</a>
@@ -408,14 +410,14 @@
               <button class="btn btn-primary btn-sm">small</button>
             </div>
             <div class="column col-3 col-xs-12">
-              <button class="btn btn-action btn-primary btn-lg"><i class="icon icon-markunread"></i></button>
-              <button class="btn btn-action btn-primary"><i class="icon icon-markunread"></i></button>
-              <button class="btn btn-action btn-primary btn-sm"><i class="icon icon-markunread"></i></button>
+              <button class="btn btn-action btn-primary btn-lg"><i class="icon icon-arrow-left"></i></button>
+              <button class="btn btn-action btn-primary"><i class="icon icon-arrow-left"></i></button>
+              <button class="btn btn-action btn-primary btn-sm"><i class="icon icon-arrow-left"></i></button>
             </div>
             <div class="column col-3 col-xs-12">
-              <button class="btn btn-action btn-primary btn-lg circle"><i class="icon icon-markunread"></i></button>
-              <button class="btn btn-action btn-primary circle"><i class="icon icon-markunread"></i></button>
-              <button class="btn btn-action btn-primary btn-sm circle"><i class="icon icon-markunread"></i></button>
+              <button class="btn btn-action btn-primary btn-lg circle"><i class="icon icon-arrow-up"></i></button>
+              <button class="btn btn-action btn-primary circle"><i class="icon icon-arrow-up"></i></button>
+              <button class="btn btn-action btn-primary btn-sm circle"><i class="icon icon-arrow-up"></i></button>
             </div>
           </div>
           <section class="notes">
@@ -429,15 +431,18 @@
 
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
 
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
           <div class="columns">
             <div class="column">
-              <button class="btn btn-primary btn-lg"><i class="icon icon-markunread"></i> large</button>
-              <button class="btn btn-primary"><i class="icon icon-markunread"></i> normal</button>
-              <button class="btn btn-primary btn-sm"><i class="icon icon-markunread"></i> small</button>
+              <button class="btn btn-primary btn-lg"><i class="icon icon-arrow-left"></i> large</button>
+              <button class="btn btn-primary btn-lg">large</button>
+              <button class="btn btn-primary"><i class="icon icon-arrow-left"></i> normal</button>
+              <button class="btn btn-primary">normal</button>
+              <button class="btn btn-primary btn-sm"><i class="icon icon-arrow-left"></i> small</button>
+              <button class="btn btn-primary btn-sm">small</button>
             </div>
           </div>
           <section class="notes">
@@ -445,9 +450,9 @@
           </section>
 
 <!-- buttons example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-markunread&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
           <header class="text-center"><h4>Button groups</h4></header>
@@ -1005,6 +1010,40 @@
           </div>
         </section>
 
+        <section id="icons" class="container">
+          <header class="text-center"><h3>Icons</h3></header>
+          <section class="notes">
+            <p><strong>Icons</strong> are pure CSS icons.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-3 col-md-6">
+              <div class="example-tile-icon">
+                <i class="icon icon-arrow-up centered"></i>
+              </div>
+              <p>icon-arrow-up</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <div class="example-tile-icon">
+                <i class="icon icon-arrow-right centered"></i>
+              </div>
+              <p>icon-arrow-right</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <div class="example-tile-icon">
+                <i class="icon icon-arrow-down centered"></i>
+              </div>
+              <p>icon-arrow-down</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <div class="example-tile-icon">
+                <i class="icon icon-arrow-left centered"></i>
+              </div>
+              <p>icon-arrow-left</p>
+            </div>
+          </div>
+
+        </section>
+
         <section id="labels" class="container">
           <header class="text-center"><h3>Labels</h3></header>
           <section class="notes">
@@ -1034,8 +1073,7 @@
           <header class="text-center"><h3>Codes</h3></header>
           <section class="notes">
             <p><strong>Codes</strong> are inline and multiline code snippets.</p>
-            <p>For inline code, you can use the element <code>&lt;code&gt;</code>. </p>
-            <p>For multiline code snippet blocks, you can use <code>&lt;pre&gt;</code> with the <code>code</code> class as a container, and add <code>&lt;code&gt;</code> inside it. The <code>data-lang</code> attribute is rendered as the language name in the top right.</p>
+            <p>For inline code, you can use the element <code>&lt;code&gt;</code>. For multiline code snippet blocks, you can use <code>&lt;pre&gt;</code> with the <code>code</code> class as a container, and add <code>&lt;code&gt;</code> inside it. The <code>data-lang</code> attribute is rendered as the language name in the top right.</p>
           </section>
 
 <!-- codes example -->
@@ -1055,7 +1093,7 @@
             <p>Add the <code>img-responsive</code> class to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
           </section>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-12">
               <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS El Capitan Wallpaper" />
             </div>
           </div>
@@ -1067,7 +1105,7 @@
             <p>You can use the element <code>&lt;figure&gt;</code> for an image with a caption. Add the <code>figure</code> class to &lt;figure&gt; element. The images with the <code>img-responsive</code> class will be responsive. And the included class <code>figure-caption</code> will provide basic style for caption. Also, you can use <code>text-left</code>, <code>text-center</code> and <code>text-right</code> for caption alignment.  </p>
           </section>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-12">
               <figure class="figure">
                 <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper"/>
                 <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
@@ -1085,7 +1123,7 @@
             <p>For responsive video, add a container with the <code>video-responsive</code> class. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>video-responsive-4-3</code> for 4:3 ratio video container or <code>video-responsive-1-1</code> for 1:1 ratio.</p>
           </section>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-12">
               <div class="video-responsive">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BzMLA8YIgG0" frameborder="0" allowfullscreen></iframe>
               </div>
