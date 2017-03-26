@@ -623,6 +623,7 @@ abbr[title] {
   background: #4c59c2;
   border-color: #3e4cb6;
   color: #fff;
+  text-decoration: none;
 }
 .btn[disabled],
 .btn:disabled,
@@ -1105,71 +1106,6 @@ input.disabled + .form-icon {
 .form-horizontal .form-radio,
 .form-horizontal .form-switch {
   margin: .4rem 0;
-}
-.icon {
-  font-size: inherit;
-  vertical-align: middle;
-}
-.icon-arrow-down,
-.icon-arrow-left,
-.icon-arrow-right,
-.icon-arrow-up {
-  display: inline-block;
-  height: 1em;
-  margin: 0;
-  position: relative;
-  width: 1em;
-}
-.icon-arrow-down::before,
-.icon-arrow-left::before,
-.icon-arrow-right::before,
-.icon-arrow-up::before {
-  border: .2rem solid currentColor;
-  border-bottom: 0;
-  border-right: 0;
-  content: "";
-  display: block;
-  height: .65em;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-25%, -50%) rotate(-45deg);
-  -ms-transform: translate(-25%, -50%) rotate(-45deg);
-  transform: translate(-25%, -50%) rotate(-45deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  width: .65em;
-}
-.icon-arrow-down {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-.icon-arrow-right {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.icon-arrow-up {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.icon-caret {
-  border-left: .4rem solid transparent;
-  border-right: .4rem solid transparent;
-  border-top: .4rem solid currentColor;
-  display: inline-block;
-  height: 0;
-  margin: 0;
-  vertical-align: middle;
-  width: 0;
-}
-.btn .icon,
-.toast .icon,
-.menu .icon {
-  vertical-align: -10%;
 }
 .label {
   background: #f8f9fa;

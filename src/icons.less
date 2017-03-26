@@ -1,32 +1,36 @@
 // CSS Icons
 .icon {
+  box-sizing: border-box;
+  display: inline-block;
   font-size: inherit;
+  height: 1em;
+  position: relative;
+  text-indent: -999rem;
   vertical-align: middle;
+  width: 1em;
+  &::before,
+  &::after {
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
+// Icon arrows
 .icon-arrow-down,
 .icon-arrow-left,
 .icon-arrow-right,
 .icon-arrow-up {
-  display: inline-block;
-  height: 1em;
-  margin: 0;
-  position: relative;
-  width: 1em;
-
   &::before {
-    border: .2rem solid currentColor;
+    border: @icon-border-width solid currentColor;
     border-bottom: 0;
     border-right: 0;
     content: "";
-    display: block;
     height: .65em;
-    left: 50%;
-    position: absolute;
-    top: 50%;
     width: .65em;
     transform: translate(-25%, -50%) rotate(-45deg);
-    transform-origin: 50% 50%;
   }
 }
 
@@ -42,15 +46,86 @@
   transform: rotate(90deg);
 }
 
+// Icon caret
 .icon-caret {
-  border-top: .4rem solid currentColor;
-  border-right: .4rem solid transparent;
-  border-left: .4rem solid transparent;
-  display: inline-block;
-  height: 0;
-  margin: 0;
-  vertical-align: middle;
-  width: 0;
+  &::before {
+    border-top: .3em solid currentColor;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    transform: translate(-50%, -25%);
+  }
+}
+
+// Icon menu
+.icon-menu {
+  &::before {
+    background: currentColor;
+    box-shadow: 0 -.35em, 0 .35em;
+    content: "";
+    height: @icon-border-width;
+    width: 100%;
+  }
+}
+
+// Icon more
+.icon-more-horiz,
+.icon-more-vert {
+  &::before {
+    background: currentColor;
+    box-shadow: -.4em 0, .4em 0;
+    border-radius: 50%;
+    content: "";
+    height: @icon-border-width * 2;
+    width: @icon-border-width * 2;
+  }
+}
+.icon-more-vert {
+  &::before {
+    box-shadow: 0 -.4em, 0 .4em;
+  }
+}
+
+// Icon plus, minus, cross
+.icon-plus,
+.icon-minus,
+.icon-cross {
+  &::before {
+    background: currentColor;
+    content: "";
+    height: @icon-border-width;
+    width: 100%;
+  }
+}
+.icon-plus,
+.icon-cross {
+  &::after {
+    background: currentColor;
+    content: "";
+    height: 100%;
+    width: @icon-border-width;
+  }
+}
+.icon-cross {
+  &::before,
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+// Icon check
+.icon-check {
+  &::before {
+    border: @icon-border-width solid currentColor;
+    border-right: 0;
+    border-top: 0;
+    content: "";
+    height: .6em;
+    width: 1em;
+    transform: translate(-50%, -75%) rotate(-45deg);
+  }
 }
 
 // Components with icons

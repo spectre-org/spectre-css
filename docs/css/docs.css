@@ -216,7 +216,7 @@
     padding: 0;
   }
   .docs-sidebar {
-    background: bg-color-light;
+    background: #fff;
     height: 100%;
     left: 0;
     overflow-y: auto;
