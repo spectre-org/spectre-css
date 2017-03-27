@@ -22,7 +22,11 @@
 .icon-arrow-down,
 .icon-arrow-left,
 .icon-arrow-right,
-.icon-arrow-up {
+.icon-arrow-up,
+.icon-downward,
+.icon-back,
+.icon-forward,
+.icon-upward {
   &::before {
     border: @icon-border-width solid currentColor;
     border-bottom: 0;
@@ -34,16 +38,35 @@
   }
 }
 
-.icon-arrow-down {
+.icon-arrow-down,
+.icon-downward {
   transform: rotate(-90deg);
 }
 
-.icon-arrow-right {
+.icon-arrow-right,
+.icon-forward {
   transform: rotate(180deg);
 }
 
-.icon-arrow-up {
+.icon-arrow-up,
+.icon-upward {
   transform: rotate(90deg);
+}
+
+.icon-downward,
+.icon-back,
+.icon-forward,
+.icon-upward {
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &::after {
+    background: currentColor;
+    content: "";
+    height: @icon-border-width;
+    left: 60%;
+    width: 80%;
+  }
 }
 
 // Icon caret
@@ -96,7 +119,7 @@
     background: currentColor;
     content: "";
     height: @icon-border-width;
-    width: 100%;
+    width: 90%;
   }
 }
 .icon-plus,
@@ -104,11 +127,17 @@
   &::after {
     background: currentColor;
     content: "";
-    height: 100%;
+    height: 90%;
     width: @icon-border-width;
   }
 }
 .icon-cross {
+  &::before {
+    width: 100%;
+  }
+  &::after {
+    height: 100%;
+  }
   &::before,
   &::after {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -122,9 +151,29 @@
     border-right: 0;
     border-top: 0;
     content: "";
-    height: .6em;
-    width: 1em;
+    height: .5em;
+    width: .9em;
     transform: translate(-50%, -75%) rotate(-45deg);
+  }
+}
+
+// Icon mail
+.icon-mail {
+  &::before {
+    border: @icon-border-width solid currentColor;
+    border-radius: @border-radius;
+    content: "";
+    height: 75%;
+    width: 100%;
+  }
+  &::after {
+    border: @icon-border-width solid currentColor;
+    border-right: 0;
+    border-top: 0;
+    content: "";
+    height: 50%;
+    transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+    width: 50%;
   }
 }
 

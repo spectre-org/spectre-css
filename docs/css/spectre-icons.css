@@ -22,7 +22,11 @@
 .icon-arrow-down::before,
 .icon-arrow-left::before,
 .icon-arrow-right::before,
-.icon-arrow-up::before {
+.icon-arrow-up::before,
+.icon-downward::before,
+.icon-back::before,
+.icon-forward::before,
+.icon-upward::before {
   border: .2rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
@@ -33,20 +37,41 @@
   transform: translate(-25%, -50%) rotate(-45deg);
   width: .65em;
 }
-.icon-arrow-down {
+.icon-arrow-down,
+.icon-downward {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.icon-arrow-right {
+.icon-arrow-right,
+.icon-forward {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.icon-arrow-up {
+.icon-arrow-up,
+.icon-upward {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+.icon-downward::before,
+.icon-back::before,
+.icon-forward::before,
+.icon-upward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.icon-downward::after,
+.icon-back::after,
+.icon-forward::after,
+.icon-upward::after {
+  background: currentColor;
+  content: "";
+  height: .2rem;
+  left: 60%;
+  width: 80%;
 }
 .icon-caret::before {
   border-left: .3em solid transparent;
@@ -84,14 +109,20 @@
   background: currentColor;
   content: "";
   height: .2rem;
-  width: 100%;
+  width: 90%;
 }
 .icon-plus::after,
 .icon-cross::after {
   background: currentColor;
   content: "";
-  height: 100%;
+  height: 90%;
   width: .2rem;
+}
+.icon-cross::before {
+  width: 100%;
+}
+.icon-cross::after {
+  height: 100%;
 }
 .icon-cross::before,
 .icon-cross::after {
@@ -104,11 +135,29 @@
   border-right: 0;
   border-top: 0;
   content: "";
-  height: .6em;
+  height: .5em;
   -webkit-transform: translate(-50%, -75%) rotate(-45deg);
   -ms-transform: translate(-50%, -75%) rotate(-45deg);
   transform: translate(-50%, -75%) rotate(-45deg);
-  width: 1em;
+  width: .9em;
+}
+.icon-mail::before {
+  border: .2rem solid currentColor;
+  border-radius: .2rem;
+  content: "";
+  height: 75%;
+  width: 100%;
+}
+.icon-mail::after {
+  border: .2rem solid currentColor;
+  border-right: 0;
+  border-top: 0;
+  content: "";
+  height: 50%;
+  -webkit-transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+  -ms-transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+  width: 50%;
 }
 .btn .icon,
 .toast .icon,
