@@ -396,8 +396,8 @@
 .parallax .parallax-content {
   box-shadow: 0 2rem 4.2rem rgba(69, 77, 93, .3);
   height: auto;
-  -webkit-transform: perspective(50rem);
-  transform: perspective(50rem);
+  -webkit-transform: perspective(100rem);
+  transform: perspective(100rem);
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: all .4s ease;
@@ -412,20 +412,47 @@
   top: 0;
   width: 100%;
 }
+.parallax .parallax-front {
+  -webkit-align-items: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 3rem rgba(69, 77, 93, .95);
+  top: 0;
+  -webkit-transform: translateZ(10rem);
+  transform: translateZ(10rem);
+  transition: all .4s ease;
+  width: 100%;
+  z-index: 1;
+}
 .parallax .parallax-top-left {
   height: 50%;
   left: 0;
   position: absolute;
   top: 0;
   width: 50%;
-  z-index: 1;
+  z-index: 300;
 }
 .parallax .parallax-top-left:hover ~ .parallax-content {
-  -webkit-transform: perspective(50rem) rotateX(3deg) rotateY(-3deg);
-  transform: perspective(50rem) rotateX(3deg) rotateY(-3deg);
+  -webkit-transform: perspective(100rem) rotateX(-3deg) rotateY(3deg);
+  transform: perspective(100rem) rotateX(-3deg) rotateY(3deg);
 }
 .parallax .parallax-top-left:hover ~ .parallax-content::before {
   background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+}
+.parallax .parallax-top-left:hover ~ .parallax-content .parallax-front {
+  -webkit-transform: translate3d(-.4rem, -.4rem, 10rem);
+  transform: translate3d(-.4rem, -.4rem, 10rem);
 }
 .parallax .parallax-top-right {
   height: 50%;
@@ -433,14 +460,18 @@
   right: 0;
   top: 0;
   width: 50%;
-  z-index: 1;
+  z-index: 300;
 }
 .parallax .parallax-top-right:hover ~ .parallax-content {
-  -webkit-transform: perspective(50rem) rotateX(3deg) rotateY(3deg);
-  transform: perspective(50rem) rotateX(3deg) rotateY(3deg);
+  -webkit-transform: perspective(100rem) rotateX(-3deg) rotateY(-3deg);
+  transform: perspective(100rem) rotateX(-3deg) rotateY(-3deg);
 }
 .parallax .parallax-top-right:hover ~ .parallax-content::before {
   background: linear-gradient(-135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+}
+.parallax .parallax-top-right:hover ~ .parallax-content .parallax-front {
+  -webkit-transform: translate3d(.4rem, -.4rem, 10rem);
+  transform: translate3d(.4rem, -.4rem, 10rem);
 }
 .parallax .parallax-bottom-left {
   bottom: 0;
@@ -448,14 +479,18 @@
   left: 0;
   position: absolute;
   width: 50%;
-  z-index: 1;
+  z-index: 300;
 }
 .parallax .parallax-bottom-left:hover ~ .parallax-content {
-  -webkit-transform: perspective(50rem) rotateX(-3deg) rotateY(-3deg);
-  transform: perspective(50rem) rotateX(-3deg) rotateY(-3deg);
+  -webkit-transform: perspective(100rem) rotateX(3deg) rotateY(3deg);
+  transform: perspective(100rem) rotateX(3deg) rotateY(3deg);
 }
 .parallax .parallax-bottom-left:hover ~ .parallax-content::before {
   background: linear-gradient(45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+}
+.parallax .parallax-bottom-left:hover ~ .parallax-content .parallax-front {
+  -webkit-transform: translate3d(-.4rem, .4rem, 10rem);
+  transform: translate3d(-.4rem, .4rem, 10rem);
 }
 .parallax .parallax-bottom-right {
   bottom: 0;
@@ -463,14 +498,18 @@
   position: absolute;
   right: 0;
   width: 50%;
-  z-index: 1;
+  z-index: 300;
 }
 .parallax .parallax-bottom-right:hover ~ .parallax-content {
-  -webkit-transform: perspective(50rem) rotateX(-3deg) rotateY(3deg);
-  transform: perspective(50rem) rotateX(-3deg) rotateY(3deg);
+  -webkit-transform: perspective(100rem) rotateX(3deg) rotateY(-3deg);
+  transform: perspective(100rem) rotateX(3deg) rotateY(-3deg);
 }
 .parallax .parallax-bottom-right:hover ~ .parallax-content::before {
   background: linear-gradient(-45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+}
+.parallax .parallax-bottom-right:hover ~ .parallax-content .parallax-front {
+  -webkit-transform: translate3d(.4rem, .4rem, 10rem);
+  transform: translate3d(.4rem, .4rem, 10rem);
 }
 .progress {
   -webkit-appearance: none;
