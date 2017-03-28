@@ -65,7 +65,7 @@
     content: "";
     height: @icon-border-width;
     left: 60%;
-    width: .8em;
+    width: .9em;
   }
 }
 
@@ -93,6 +93,17 @@
   }
 }
 
+// Icon apps
+.icon-apps {
+  &::before {
+    background: currentColor;
+    box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
+    content: "";
+    height: .3rem;
+    width: .3rem;
+  }
+}
+
 // Icon more
 .icon-more-horiz,
 .icon-more-vert {
@@ -101,8 +112,8 @@
     box-shadow: -.4em 0, .4em 0;
     border-radius: 50%;
     content: "";
-    height: @icon-border-width * 2;
-    width: @icon-border-width * 2;
+    height: .3rem;
+    width: .3rem;
   }
 }
 .icon-more-vert {
@@ -217,10 +228,34 @@
     border-right-color: transparent;
     content: "";
     height: 0;
-    left: 10%;
+    left: 5%;
     top: 95%;
     transform: translate(0, -100%);
     width: 0;
+  }
+}
+
+// Icon delete
+.icon-delete {
+  height: .7em;
+  margin: .15em .1em;
+  width: .8em;
+  &::before {
+    border: @icon-border-width solid currentColor;
+    border-bottom-left-radius: @border-radius;
+    border-bottom-right-radius: @border-radius;
+    border-top: 0;
+    content: "";
+    height: .7em;
+    top: 65%;
+    width: .75em;
+  }
+  &::after {
+    background: currentColor;
+    content: "";
+    height: @icon-border-width;
+    top: 10%;
+    width: .9em;
   }
 }
 
@@ -235,26 +270,49 @@
     border-bottom: 0;
     border-right: 0;
     content: "";
-    height: .4em;
+    height: .45em;
     left: 100%;
-    top: 35%;
+    top: 36%;
     transform: translate(-125%, -50%) rotate(135deg);
-    width: .4em;
+    width: .45em;
   }
   &::after {
     border: @icon-border-width solid currentColor;
     border-bottom: 0;
     border-right: 0;
-    border-top-left-radius: 50%;
+    border-radius: 75% 5%;
     content: "";
     height: .4em;
-    width: .5em;
+    width: .6em;
+  }
+}
+
+// Icon flag
+.icon-flag {
+  &::before {
+    background: currentColor;
+    content: "";
+    height: 1em;
+    left: 10%;
+    width: @icon-border-width;
+  }
+  &::after {
+    border: @icon-border-width solid currentColor;
+    border-bottom-right-radius: @border-radius;
+    border-left: 0;
+    border-top-right-radius: @border-radius;
+    content: "";
+    height: .65em;
+    top: 35%;
+    left: 55%;
+    width: .75em;
   }
 }
 
 // Icon download & upload
 .icon-download,
 .icon-upload {
+  border-bottom: @icon-border-width solid currentColor;
   &::before {
     border: @icon-border-width solid currentColor;
     border-bottom: 0;
@@ -262,7 +320,7 @@
     content: "";
     height: .5em;
     width: .5em;
-    transform: translate(-50%, -50%) rotate(-135deg);
+    transform: translate(-50%, -60%) rotate(-135deg);
   }
   &::after {
     background: currentColor;
@@ -273,17 +331,33 @@
   }
 }
 
-.icon-download {
-  border-bottom: @icon-border-width solid currentColor;
-}
-
 .icon-upload {
-  border-top: @icon-border-width solid currentColor;
   &::before {
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -60%) rotate(45deg);
   }
   &::after {
-    top: 60%;
+    top: 50%;
+  }
+}
+
+// Icon time
+.icon-time {
+  border: @icon-border-width solid currentColor;
+  border-radius: 50%;
+  &::before {
+    background: currentColor;
+    content: "";
+    height: .4em;
+    transform: translate(-50%, -75%);
+    width: @icon-border-width;
+  }
+  &::after {
+    background: currentColor;
+    content: "";
+    height: .3em;
+    transform: translate(-50%, -75%) rotate(90deg);
+    transform-origin: 50% 90%;
+    width: @icon-border-width;
   }
 }
 
@@ -327,6 +401,27 @@
   }
 }
 
+// Icon file
+.icon-file {
+  &::before {
+    border: @icon-border-width solid currentColor;
+    border-radius: @border-radius .4em @border-radius @border-radius;
+    content: "";
+    height: 1em;
+    width: .9em;
+  }
+  &::after {
+    border: .2em solid currentColor;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    content: "";
+    height: 0;
+    left: .8em;
+    top: .2em;
+    width: 0;
+  }
+}
+
 // Icon link
 .icon-link {
   &::before,
@@ -343,14 +438,5 @@
   }
   &::after {
     transform: translate(-30%, -55%) rotate(135deg);
-  }
-}
-
-// Components with icons
-.btn,
-.toast,
-.menu {
-  .icon {
-    vertical-align: -10%;
   }
 }
