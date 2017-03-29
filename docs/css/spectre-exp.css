@@ -289,13 +289,6 @@
   top: 2rem;
   width: 100%;
 }
-@supports (object-fit: cover) {
-  .carousel-item img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-}
 @-webkit-keyframes carousel-slidein {
   0% {
     -webkit-transform: translateX(100%);

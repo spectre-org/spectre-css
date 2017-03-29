@@ -1168,6 +1168,12 @@ code {
   height: auto;
   max-width: 100%;
 }
+.img-fit-cover {
+  object-fit: cover;
+}
+.img-fit-contain {
+  object-fit: contain;
+}
 .video-responsive {
   display: block;
   overflow: hidden;
@@ -1179,7 +1185,6 @@ code {
   content: "";
   display: block;
   padding-bottom: 56.25%;
-  /* Default 16:9, you can calculate this value by dividing 9 by 16 */
 }
 .video-responsive iframe,
 .video-responsive object,
@@ -1199,11 +1204,9 @@ code {
 }
 .video-responsive-4-3::before {
   padding-bottom: 75%;
-  /* 4:3 */
 }
 .video-responsive-1-1::before {
   padding-bottom: 100%;
-  /* 1:1 */
 }
 .figure {
   margin: 0 0 1rem 0;

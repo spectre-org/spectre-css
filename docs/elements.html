@@ -1253,7 +1253,27 @@
             </div>
           </div>
 
+          <section class="notes">
+            <p>Add the <code>img-fit-contain</code> or <code>img-fit-cover</code> class to &lt;img&gt; or &lt;video&gt; elements. The media will crop itself to fit inside the element (and you don't need another container). This feature can replace the background image trick. Microsoft Edge support is <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/" target="_blank">in development</a>.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <figure class="figure">
+                <img src="img/osx-yosemite.jpg" class="img-fit-contain rounded" alt="macOS Yosemite Wallpaper" style="background: #f8f9fa; height: 10rem; width: 100%;"/>
+                <figcaption class="figure-caption text-center">img-fit-contain</figcaption>
+              </figure>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <figure class="figure">
+                <img src="img/osx-yosemite-2.jpg" class="img-fit-cover rounded" alt="macOS Yosemite Wallpaper" style="background: #f8f9fa; height: 10rem; width: 100%;"/>
+                <figcaption class="figure-caption text-center">img-fit-cover</figcaption>
+              </figure>
+            </div>
+          </div>
+
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive ...&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-fit-contain ...&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+&lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-fit-cover ...&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
 </code></pre>
 
           <section class="notes">
