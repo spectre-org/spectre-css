@@ -9,8 +9,8 @@
   <title>Experimentals - Spectre.css</title>
   <link rel="stylesheet" href="css/spectre.css" />
   <link rel="stylesheet" href="css/spectre-exp.css" />
+  <link rel="stylesheet" href="css/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
-  <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
   <section class="section section-header bg-gray">
@@ -92,11 +92,11 @@
               <div class="calendar">
                 <div class="calendar-nav navbar">
                   <button class="btn btn-action btn-link btn-lg">
-                    <i class="icon icon-keyboard_arrow_left"></i>
+                    <i class="icon icon-arrow-left"></i>
                   </button>
                   <div class="navbar-primary">March 2017</div>
                   <button class="btn btn-action btn-link btn-lg">
-                    <i class="icon icon-keyboard_arrow_right"></i>
+                    <i class="icon icon-arrow-right"></i>
                   </button>
                 </div>
                 <div class="calendar-container">
@@ -157,11 +157,11 @@
               <div class="calendar calendar-lg">
                 <div class="calendar-nav navbar">
                   <button class="btn btn-action btn-link btn-lg">
-                    <i class="icon icon-keyboard_arrow_left"></i>
+                    <i class="icon icon-arrow-left"></i>
                   </button>
                   <div class="navbar-primary">March 2017</div>
                   <button class="btn btn-action btn-link btn-lg">
-                    <i class="icon icon-keyboard_arrow_right"></i>
+                    <i class="icon icon-arrow-right"></i>
                   </button>
                 </div>
                 <div class="calendar-container">
@@ -186,7 +186,7 @@
                     <div class="calendar-date current-month"><button class="date-item">1</button></div>
                     <div class="calendar-date current-month"><button class="date-item">2</button></div>
                     <div class="calendar-date current-month"><button class="date-item">3</button></div>
-                    <div class="calendar-date current-month"><button class="date-item date-today">4</button></div>
+                    <div class="calendar-date current-month tooltip" data-tooltip="Today"><button class="date-item date-today">4</button></div>
                     <div class="calendar-date current-month"><button class="date-item" disabled>5</button></div>
                     <div class="calendar-date current-month"><button class="date-item">6</button></div>
                     <div class="calendar-date current-month"><button class="date-item">7</button></div>
@@ -260,40 +260,40 @@
                 <div class="carousel-container">
                   <figure class="carousel-item">
                     <label class="item-prev btn btn-action btn-lg" for="slide-4">
-                      <i class="icon icon-keyboard_arrow_left"></i>
+                      <i class="icon icon-arrow-left"></i>
                     </label>
                     <label class="item-next btn btn-action btn-lg" for="slide-2">
-                      <i class="icon icon-keyboard_arrow_right"></i>
+                      <i class="icon icon-arrow-right"></i>
                     </label>
                     <img src="img/osx-yosemite.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
 
                   <figure class="carousel-item">
                     <label class="item-prev btn btn-action btn-lg" for="slide-1">
-                      <i class="icon icon-keyboard_arrow_left"></i>
+                      <i class="icon icon-arrow-left"></i>
                     </label>
                     <label class="item-next btn btn-action btn-lg" for="slide-3">
-                      <i class="icon icon-keyboard_arrow_right"></i>
+                      <i class="icon icon-arrow-right"></i>
                     </label>
                     <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
 
                   <figure class="carousel-item">
                     <label class="item-prev btn btn-action btn-lg" for="slide-2">
-                      <i class="icon icon-keyboard_arrow_left"></i>
+                      <i class="icon icon-arrow-left"></i>
                     </label>
                     <label class="item-next btn btn-action btn-lg" for="slide-4">
-                      <i class="icon icon-keyboard_arrow_right"></i>
+                      <i class="icon icon-arrow-right"></i>
                     </label>
                     <img src="img/osx-el-capitan.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
 
                   <figure class="carousel-item">
                     <label class="item-prev btn btn-action btn-lg" for="slide-3">
-                      <i class="icon icon-keyboard_arrow_left"></i>
+                      <i class="icon icon-arrow-left"></i>
                     </label>
                     <label class="item-next btn btn-action btn-lg" for="slide-1">
-                      <i class="icon icon-keyboard_arrow_right"></i>
+                      <i class="icon icon-arrow-right"></i>
                     </label>
                     <img src="img/osx-el-capitan-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
                   </figure>
@@ -358,14 +358,16 @@
                 <div class="parallax-bottom-left"></div>
                 <div class="parallax-bottom-right"></div>
                 <div class="parallax-content">
-                  <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                  <div class="parallax-front">
+                    <h2>tvOS parallax demo</h2>
+                  </div>
+                  <div class="parallax-back">
+                    <img src="img/osx-yosemite-2.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <section class="notes">
-            <p></p>
-          </section>
 
 <!-- parallax example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax&quot;</span>&gt;
@@ -374,7 +376,12 @@
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-bottom-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-bottom-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-content&quot;</span>&gt;
-    &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-front&quot;</span>&gt;
+      &lt;<span class="tag">h2</span>&gt;tvOS parallax demo&lt;<span class="tag">/h2</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-back&quot;</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;
+    &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>

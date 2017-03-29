@@ -36,3 +36,40 @@
     }
   }
 }
+
+// Slider bar
+.bar-slider {
+  height: .2rem;
+  margin: 1rem 0;
+  position: relative;
+
+  .bar-item {
+    left: 0;
+    padding: 0;
+    position: absolute;
+    &:not(:last-child):first-child {
+      background: @bg-color-dark;
+      z-index: @zindex-0;
+    }
+  }
+
+  .bar-slider-btn {
+    appearance: none;
+    background: @primary-color;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.2rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    transition: all .2s ease;
+    width: 1.2rem;
+
+    &:active {
+      box-shadow: 0 0 0 .2rem @primary-color;
+    }
+  }
+}

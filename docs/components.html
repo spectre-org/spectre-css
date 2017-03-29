@@ -8,8 +8,8 @@
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Components - Spectre.css</title>
   <link rel="stylesheet" href="css/spectre.css" />
+  <link rel="stylesheet" href="css/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
-  <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
   <section class="section section-header bg-gray">
@@ -69,6 +69,9 @@
               </li>
               <li class="nav-item">
                 <a href="components.html#navigation">Navigation</a>
+              </li>
+              <li class="nav-item">
+                <a href="components.html#popovers">Popovers</a>
               </li>
               <li class="nav-item">
                 <a href="components.html#steps">Steps</a>
@@ -396,7 +399,7 @@
           </div>
           <section class="notes">
             <p>Add a container element with the <code>bar</code> class. And add child elements with the <code>bar-item</code> class. The width percentage value is needed for every <code>bar-item</code>.</p>
-            <p>There is a class <code>bar-sm</code> for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.</p>
+            <p>There is the <code>bar-sm</code> class for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.</p>
           </section>
 
 <!-- bars example -->
@@ -407,6 +410,51 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;25%&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;25%&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818bd5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <header class="text-center"><h4>Slider bars</h4></header>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
+              <div class="bar bar-slider">
+                <div class="bar-item" role="progressbar" style="width:50%;">
+                  <button class="bar-slider-btn tooltip" data-tooltip="50%" role="slider"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
+              <div class="bar bar-slider">
+                <div class="bar-item" role="progressbar" style="width:15%;">
+                  <button class="bar-slider-btn tooltip" data-tooltip="25%" role="slider"></button>
+                </div>
+                <div class="bar-item" role="progressbar" style="width:65%;">
+                  <button class="bar-slider-btn tooltip" data-tooltip="65%" role="slider"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>You can add the <code>bar-slider</code> class to the Bars container. And add child elements with the <code>bar-item</code> class and <code>bar-slider-btn</code> inside bar-item. You need to set the <code>bar-item</code> width manually to have the slider point.</p>
+            <p>If there are two <code>bar-item</code> divs in one bar-slider, you will have a range slider.</p>
+          </section>
+
+<!-- slider bars example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:65%;&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
@@ -508,7 +556,7 @@
                   <img class="img-responsive" src="img/osx-el-capitan-2.jpg" />
                 </div>
                 <div class="card-header">
-                  <button class="btn btn-primary float-right"><i class="icon icon-playlist_add"></i></button>
+                  <button class="btn btn-primary float-right"><i class="icon icon-plus"></i></button>
                   <div class="card-title">Google I/O</div>
                   <div class="card-subtitle">Software and hardware</div>
                 </div>
@@ -532,7 +580,7 @@
     &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
-    To make a contribution to the world by making tools for the mind that advance humankind.
+    Empower every person and every organization on the planet to achieve more.
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Do&lt;<span class="tag">/button</span>&gt;
@@ -698,7 +746,7 @@
               <div class="dropdown">
                 <div class="btn-group">
                   <a class="btn btn-primary">dropdown button</a>
-                  <a class="btn btn-primary dropdown-toggle" tabindex="0"><i class="icon-caret"></i></a>
+                  <a class="btn btn-primary dropdown-toggle" tabindex="0"><i class="icon icon-caret"></i></a>
                   <ul class="menu">
                     <li class="menu-item">
                       <a href="#dropdowns">
@@ -721,7 +769,7 @@
             </div>
             <div class="column col-xs-12">
               <div class="dropdown dropdown-right">
-                <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
+                <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
                 <ul class="menu">
                   <li class="menu-item">
                     <a href="#dropdowns">
@@ -743,7 +791,7 @@
             </div>
             <div class="column col-xs-12">
               <div class="dropdown">
-                <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon-caret"></i></a>
+                <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
                 <ul class="menu">
                   <li class="menu-item">
                     <a href="#dropdowns">
@@ -776,7 +824,7 @@
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- basic dropdown button --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;dropdown&quot;</span>&gt;
   &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
-    dropdown menu &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+    dropdown menu &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
   &lt;<span class="tag">/a</span>&gt;
   <span class="com">&lt;!-- menu component --&gt;</span>
   &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
@@ -791,7 +839,7 @@
       dropdown button
     &lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn dropdown-toggle&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;0&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-caret&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
 
     <span class="com">&lt;!-- menu component --&gt;</span>
@@ -1374,6 +1422,123 @@
 
         </section>
 
+        <section id="popovers" class="container">
+          <header class="text-center"><h3>Popovers</h3></header>
+          <section class="notes">
+            <p><strong>Popovers</strong> are small overlay content containers. Popovers component is built entirely in CSS.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-3 col-sm-6">
+              <div class="popover">
+                <a href="#popovers" class="btn btn-primary">
+                  top popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-3 col-sm-6">
+              <div class="popover popover-right">
+                <a href="#popovers" class="btn btn-primary">
+                  right popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-3 col-sm-6">
+              <div class="popover popover-bottom">
+                <a href="#popovers" class="btn btn-primary">
+                  bottom popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-3 col-sm-6">
+              <div class="popover popover-left">
+                <a href="#popovers" class="btn btn-primary">
+                  left popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="notes">
+            <p>Wrap an element by a container with the <code>popover</code> class. And add a container with the <code>popover-container</code> next to the element. You can use <a href="#cards">Cards</a> component inside the <code>popover-container</code>. </p>
+            <p>Also, you can add the <code>popover-right</code>, <code>popover-bottom</code> or <code>popover-left</code> class to define the position. By default, the popovers appear above the element.</p>
+          </section>
+
+<!-- popovers example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover popover-right&quot;</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;right popover&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover-container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </section>
+
         <section id="steps" class="container">
           <header class="text-center"><h3>Steps</h3></header>
           <section class="notes">
@@ -1486,7 +1651,7 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;example-tile-icon&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-explore centered&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-file centered&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
@@ -1508,7 +1673,7 @@
               <div class="tile tile-centered">
                 <div class="tile-icon">
                   <div class="example-tile-icon">
-                    <i class="icon icon-explore centered"></i>
+                    <i class="icon icon-mail centered"></i>
                   </div>
                 </div>
                 <div class="tile-content">
@@ -1526,7 +1691,7 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile tile-centered&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;example-tile-icon&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-explore centered&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-file centered&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
@@ -1552,7 +1717,7 @@
             <div class="column col-9 col-sm-12">
               <div class="toast">
                 <button class="btn btn-clear float-right"></button>
-                <i class="icon icon-error_outline"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </div>
             </div>
           </div>
@@ -1605,7 +1770,7 @@
           </section>
           <div class="columns text-center">
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip" data-tooltip="Tooltip Text" data-tooltip-pos="top">top tooltip</button>
+              <button class="btn btn-primary tooltip" data-tooltip="Tooltip Text">top tooltip</button>
             </div>
             <div class="column col-xs-12">
               <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip Text">right tooltip</button>

@@ -49,7 +49,7 @@
   }
 
   .navbar-brand {
-    color: @body-font-color;
+    color: lighten(@body-font-color, 5%);
   }
 
   .btn-link {
@@ -219,6 +219,10 @@
     font-size: 2.4rem;
     height: 4rem;
     width: 4rem;
+
+    .icon {
+      margin: auto;
+    }
   }
 }
 
@@ -266,7 +270,7 @@
   }
 
   .docs-sidebar {
-    background: bg-color-light;
+    background: @bg-color-light;
     height: 100%;
     overflow-y: auto;
     padding: 6rem 3rem;

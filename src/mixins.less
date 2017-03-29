@@ -12,7 +12,7 @@
 .control-transition() {
   transition: all .2s ease;
 }
-.toast-variant(@color) {
+.toast-variant(@color: @dark-color) {
   background: fade(@color, 90%);
   border-color: @color;
 }
@@ -26,4 +26,7 @@
 .label-variant(@color) {
   background: @color;
   color: @light-color;
+}
+.shadow-variant(@offset) {
+  box-shadow: 0 @offset (@offset+.1rem)*2 fade(@dark-color, 30%);
 }

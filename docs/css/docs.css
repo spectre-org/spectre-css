@@ -37,7 +37,7 @@
   padding: 0;
 }
 .grid-header .navbar-brand {
-  color: #50596c;
+  color: #5b657a;
 }
 .grid-header .btn-link {
   color: #667189;
@@ -184,6 +184,9 @@
   height: 4rem;
   width: 4rem;
 }
+.docs-content .example-tile-icon .icon {
+  margin: auto;
+}
 @media screen and (min-width: 601px) {
   .section-header .navbar-section {
     padding: 0 .5rem;
@@ -216,7 +219,7 @@
     padding: 0;
   }
   .docs-sidebar {
-    background: bg-color-light;
+    background: #fff;
     height: 100%;
     left: 0;
     overflow-y: auto;

@@ -8,8 +8,8 @@
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
   <link rel="stylesheet" href="css/spectre.css" />
+  <link rel="stylesheet" href="css/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
-  <link rel="stylesheet" href="font/style.css" />
 </head>
 <body>
   <section class="section section-header bg-gray">
@@ -108,6 +108,9 @@
           <li class="nav-item">
             <a href="utilities.html">Utilities</a>
           </li>
+          <li class="nav-item">
+            <a href="experimentals.html">Experimentals</a>
+          </li>
         </ul>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
@@ -153,6 +156,7 @@
 <!-- install manually example -->
 <pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre-exp.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre-icons.min.css&quot;</span> /&gt;
 </code></pre>
 
           </section>
@@ -177,6 +181,8 @@
 ├── dist/
 │   ├── spectre-exp.css
 │   ├── spectre-exp.min.css
+│   ├── spectre-icons.css
+│   ├── spectre-icons.min.css
 │   ├── spectre.css
 │   └── spectre.min.css
 │
@@ -194,6 +200,7 @@
 │   └── ...
 │
 ├── spectre-exp.less
+├── spectre-icons.less
 └── spectre.less
 </code></pre>
 
@@ -291,11 +298,11 @@
           <section class="notes">
             <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
             <ul>
-              <li>Chrome (last 4)</li>
-              <li>Microsoft Edge (last 4)</li>
-              <li>Firefox (last 4)</li>
-              <li>Safari (last 4)</li>
-              <li>Opera (last 4)</li>
+              <li>Chrome <span class="label label-success">Last 4</span></li>
+              <li>Microsoft Edge <span class="label label-success">Last 4</span></li>
+              <li>Firefox <span class="label label-success">Last 4</span></li>
+              <li>Safari <span class="label label-success">Last 4</span></li>
+              <li>Opera <span class="label label-success">Last 4</span></li>
               <li>Internet Explorer 10+</li>
             </ul>
           </section>
@@ -306,6 +313,12 @@
           <section class="notes">
             <p><strong>March 2017</strong></p>
             <ul>
+              <li>
+                <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons <small class="label label-primary">NEW</small>
+              </li>
+              <li>
+                <a href="components.html#popovers">Popovers</a>: small overlay content containers <small class="label label-primary">NEW</small>
+              </li>
               <li>
                 <a href="layout.html#panels">Panels</a>: flexible view container layout with auto-expand content section <small class="label label-primary">NEW</small>
               </li>
