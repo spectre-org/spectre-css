@@ -1222,11 +1222,17 @@
           <header class="text-center"><h3>Codes</h3></header>
           <section class="notes">
             <p><strong>Codes</strong> are inline and multiline code snippets.</p>
-            <p>For inline code, you can use the element <code>&lt;code&gt;</code>. For multiline code snippet blocks, you can use <code>&lt;pre&gt;</code> with the <code>code</code> class as a container, and add <code>&lt;code&gt;</code> inside it. The <code>data-lang</code> attribute is rendered as the language name in the top right.</p>
+            <p>For inline code, you can use the element <code>&lt;code&gt;</code>. For multiline code snippet blocks, you can use &lt;pre&gt; with the <code>code</code> class as a container, and add &lt;code&gt; inside it. The <code>data-lang</code> attribute is rendered as the language name in the top right.</p>
           </section>
 
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- code snippets --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;
+  Submit
+&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
 <!-- codes example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">pre</span> <span class="atn">class</span>=<span class="atv">&quot;code&quot;</span> <span class="atn">data-lang</span>=<span class="atv">&quot;HTML&quot;</span>&gt;&lt;<span class="tag">code</span>&gt;<span class="com">&lt;!-- code snippets --&gt;</span>
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">pre</span> <span class="atn">class</span>=<span class="atv">&quot;code&quot;</span> <span class="atn">data-lang</span>=<span class="atv">&quot;HTML&quot;</span>&gt;&lt;<span class="tag">code</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;com&quot;</span>&gt;&amp;lt;!-- code snippets --&amp;gt;&lt;<span class="tag">/span</span>&gt;
 &amp;lt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;tag&quot;</span>&gt;button&lt;<span class="tag">/span</span>&gt; &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;atn&quot;</span>&gt;class&lt;<span class="tag">/span</span>&gt;=&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;atv&quot;</span>&gt;&amp;quot;btn&amp;quot;</span>&lt;<span class="tag">/span</span>&gt;&amp;gt;
   Submit
 &amp;lt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;tag&quot;</span>&gt;/button&lt;<span class="tag">/span</span>&gt;&amp;gt;

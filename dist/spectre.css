@@ -1907,6 +1907,42 @@ code {
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
 }
+.bar-slider {
+  height: .2rem;
+  margin: 1rem 0;
+  position: relative;
+}
+.bar-slider .bar-item {
+  left: 0;
+  padding: 0;
+  position: absolute;
+}
+.bar-slider .bar-item:not(:last-child):first-child {
+  background: #f0f1f4;
+  z-index: 1;
+}
+.bar-slider .bar-slider-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #5764c6;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1.2rem;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  transition: all .2s ease;
+  width: 1.2rem;
+}
+.bar-slider .bar-slider-btn:active {
+  box-shadow: 0 0 0 .2rem #5764c6;
+}
 .card {
   background: #fff;
   border: .1rem solid #f0f1f4;

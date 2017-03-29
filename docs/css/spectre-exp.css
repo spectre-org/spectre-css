@@ -451,8 +451,8 @@
   background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-top-left:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(-.4rem, -.4rem, 10rem);
-  transform: translate3d(-.4rem, -.4rem, 10rem);
+  -webkit-transform: translate3d(-.65rem, -.65rem, 10rem);
+  transform: translate3d(-.65rem, -.65rem, 10rem);
 }
 .parallax .parallax-top-right {
   height: 50%;
@@ -470,8 +470,8 @@
   background: linear-gradient(-135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-top-right:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(.4rem, -.4rem, 10rem);
-  transform: translate3d(.4rem, -.4rem, 10rem);
+  -webkit-transform: translate3d(.65rem, -.65rem, 10rem);
+  transform: translate3d(.65rem, -.65rem, 10rem);
 }
 .parallax .parallax-bottom-left {
   bottom: 0;
@@ -489,8 +489,8 @@
   background: linear-gradient(45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-bottom-left:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(-.4rem, .4rem, 10rem);
-  transform: translate3d(-.4rem, .4rem, 10rem);
+  -webkit-transform: translate3d(-.65rem, .65rem, 10rem);
+  transform: translate3d(-.65rem, .65rem, 10rem);
 }
 .parallax .parallax-bottom-right {
   bottom: 0;
@@ -508,8 +508,8 @@
   background: linear-gradient(-45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-bottom-right:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(.4rem, .4rem, 10rem);
-  transform: translate3d(.4rem, .4rem, 10rem);
+  -webkit-transform: translate3d(.65rem, .65rem, 10rem);
+  transform: translate3d(.65rem, .65rem, 10rem);
 }
 .progress {
   -webkit-appearance: none;
@@ -574,7 +574,7 @@
   border: 0;
   border-radius: 50%;
   height: 1.2rem;
-  margin-top: -.4rem;
+  margin-top: -.5rem;
   transition: transform .2s ease, -webkit-transform .2s ease;
   transition: transform .2s ease;
   transition: -webkit-transform .2s ease;
@@ -631,19 +631,19 @@
 .slider::-webkit-slider-runnable-track {
   background: #f0f1f4;
   border-radius: .2rem;
-  height: .4rem;
+  height: .2rem;
   width: 100%;
 }
 .slider::-moz-range-track {
   background: #f0f1f4;
   border-radius: .2rem;
-  height: .4rem;
+  height: .2rem;
   width: 100%;
 }
 .slider::-ms-track {
   background: #f0f1f4;
   border-radius: .2rem;
-  height: .4rem;
+  height: .2rem;
   width: 100%;
 }
 .slider::-ms-fill-lower {

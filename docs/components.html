@@ -399,7 +399,7 @@
           </div>
           <section class="notes">
             <p>Add a container element with the <code>bar</code> class. And add child elements with the <code>bar-item</code> class. The width percentage value is needed for every <code>bar-item</code>.</p>
-            <p>There is a class <code>bar-sm</code> for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.</p>
+            <p>There is the <code>bar-sm</code> class for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.</p>
           </section>
 
 <!-- bars example -->
@@ -410,6 +410,51 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;25%&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;25%&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818bd5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <header class="text-center"><h4>Slider bars</h4></header>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
+              <div class="bar bar-slider">
+                <div class="bar-item" role="progressbar" style="width:50%;">
+                  <button class="bar-slider-btn tooltip" data-tooltip="50%" role="slider"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-8 col-xs-12">
+              <div class="bar bar-slider">
+                <div class="bar-item" role="progressbar" style="width:15%;">
+                  <button class="bar-slider-btn tooltip" data-tooltip="25%" role="slider"></button>
+                </div>
+                <div class="bar-item" role="progressbar" style="width:65%;">
+                  <button class="bar-slider-btn tooltip" data-tooltip="65%" role="slider"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>You can add the <code>bar-slider</code> class to the Bars container. And add child elements with the <code>bar-item</code> class and <code>bar-slider-btn</code> inside bar-item. You need to set the <code>bar-item</code> width manually to have the slider point.</p>
+            <p>If there are two <code>bar-item</code> divs in one bar-slider, you will have a range slider.</p>
+          </section>
+
+<!-- slider bars example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:65%;&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
