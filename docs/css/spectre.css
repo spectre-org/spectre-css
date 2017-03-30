@@ -1810,11 +1810,14 @@ code {
 }
 .avatar .avatar-icon {
   background: #fff;
-  bottom: -.2em;
+  bottom: 14.64%;
   height: 50%;
-  padding: 5%;
+  padding: .2rem;
   position: absolute;
-  right: -.2em;
+  right: 14.64%;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
   width: 50%;
 }
 .avatar[data-initial]::before {
@@ -1848,9 +1851,9 @@ code {
 .badge[data-badge]::after {
   font-size: 1.2rem;
   height: 2rem;
-  line-height: 1.4rem;
+  line-height: 1;
   min-width: 2rem;
-  padding: .2rem .5rem;
+  padding: .3rem .5rem;
   text-align: center;
   white-space: nowrap;
 }
@@ -1868,6 +1871,22 @@ code {
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
+}
+.badge.avatar::after {
+  position: absolute;
+  right: 14.64%;
+  top: 14.64%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  z-index: 100;
+}
+.badge.avatar-xs::after {
+  content: "";
+  height: .8rem;
+  min-width: .8rem;
+  padding: 0;
+  width: .8rem;
 }
 .bar {
   background: #f0f1f4;
