@@ -1740,7 +1740,7 @@ code {
   flex-wrap: wrap;
   height: auto;
   min-height: 3.2rem;
-  padding: .1rem 0 .1rem .2rem;
+  padding: .1rem 0 0 .1rem;
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
   border-color: #5764c6;
@@ -1754,7 +1754,7 @@ code {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   height: 2.8rem;
-  padding: .3rem;
+  padding: .3rem .8rem;
   width: auto;
 }
 .form-autocomplete mark {
@@ -2013,8 +2013,8 @@ code {
   display: inline-flex;
   display: -webkit-inline-flex;
   -ms-flex-align: center;
-  height: 2.6rem;
-  margin: .1rem .2rem .1rem 0;
+  height: 2.8rem;
+  margin: 0 .1rem .1rem 0;
   max-width: 100%;
   padding: .1rem .8rem;
   text-decoration: none;
