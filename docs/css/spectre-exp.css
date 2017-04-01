@@ -360,9 +360,13 @@
 .comparison-slider .comparison-before {
   width: 100%;
 }
+.comparison-slider .comparison-before .comparison-label {
+  right: 1rem;
+}
 .comparison-slider .comparison-after {
   max-width: 100%;
   min-width: 0;
+  z-index: 1;
 }
 .comparison-slider .comparison-after::before {
   background: rgba(69, 77, 93, .35);
@@ -391,6 +395,9 @@
   width: .4rem;
   z-index: -1;
 }
+.comparison-slider .comparison-after .comparison-label {
+  left: 1rem;
+}
 .comparison-slider .comparison-resizer {
   -webkit-animation: first-run 1.5s 1 ease-in-out;
   animation: first-run 1.5s 1 ease-in-out;
@@ -409,6 +416,17 @@
   -ms-transform: translateY(-50%) scaleY(30);
   transform: translateY(-50%) scaleY(30);
   width: 0;
+}
+.comparison-slider .comparison-label {
+  background: rgba(69, 77, 93, .5);
+  bottom: 1rem;
+  color: #fff;
+  padding: .3rem .8rem;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @-webkit-keyframes first-run {
   0% {
