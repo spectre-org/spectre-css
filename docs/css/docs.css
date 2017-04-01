@@ -187,6 +187,10 @@
 .docs-content .example-tile-icon .icon {
   margin: auto;
 }
+.docs-content .comparison-slider .filter-grayscale {
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+}
 @media screen and (min-width: 601px) {
   .section-header .navbar-section {
     padding: 0 .5rem;

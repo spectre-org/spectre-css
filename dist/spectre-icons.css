@@ -411,12 +411,3 @@
 .menu .icon {
   vertical-align: -10%;
 }
-.slider[value="8"] ~ .s50 {
-  display: none;
-}
-.slider[value="1"] ~ .s1 {
-  display: none;
-}
-.slider[value="16"] ~ .s100 {
-  display: none;
-}

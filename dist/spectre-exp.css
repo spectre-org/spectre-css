@@ -242,8 +242,8 @@
 .carousel .carousel-locator:nth-of-type(2):checked ~ .carousel-container .carousel-item:nth-of-type(2),
 .carousel .carousel-locator:nth-of-type(3):checked ~ .carousel-container .carousel-item:nth-of-type(3),
 .carousel .carousel-locator:nth-of-type(4):checked ~ .carousel-container .carousel-item:nth-of-type(4) {
-  -webkit-animation: carousel-slidein .75s ease-in 1;
-  animation: carousel-slidein .75s ease-in 1;
+  -webkit-animation: carousel-slidein .75s ease-in-out 1;
+  animation: carousel-slidein .75s ease-in-out 1;
   opacity: 1;
   z-index: 100;
 }
@@ -331,6 +331,117 @@
     opacity: 1;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+}
+.comparison-slider {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.comparison-slider .comparison-before,
+.comparison-slider .comparison-after {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+.comparison-slider .comparison-before img,
+.comparison-slider .comparison-after img {
+  height: 100%;
+  object-fit: none;
+  object-position: left top;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.comparison-slider .comparison-before {
+  width: 100%;
+}
+.comparison-slider .comparison-after {
+  max-width: 100%;
+  min-width: 0;
+}
+.comparison-slider .comparison-after::before {
+  background: rgba(69, 77, 93, .35);
+  border-radius: .2rem;
+  color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1rem;
+}
+.comparison-slider .comparison-after::after {
+  background: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 -.6rem, 0 .6rem;
+  color: #fff;
+  content: "";
+  height: .4rem;
+  position: absolute;
+  right: .5rem;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  width: .4rem;
+  z-index: -1;
+}
+.comparison-slider .comparison-resizer {
+  -webkit-animation: first-run 1.5s 1 ease-in-out;
+  animation: first-run 1.5s 1 ease-in-out;
+  cursor: ew-resize;
+  height: 1.5rem;
+  left: 0;
+  margin: 0;
+  max-width: 100%;
+  min-width: 1rem;
+  opacity: 0;
+  outline: 0;
+  position: relative;
+  resize: horizontal;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scaleY(30);
+  -ms-transform: translateY(-50%) scaleY(30);
+  transform: translateY(-50%) scaleY(30);
+  width: 0;
+}
+@-webkit-keyframes first-run {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 4rem;
+  }
+  50% {
+    width: 1rem;
+  }
+  75% {
+    width: 2rem;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes first-run {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 4rem;
+  }
+  50% {
+    width: 1rem;
+  }
+  75% {
+    width: 2rem;
+  }
+  100% {
+    width: 0;
   }
 }
 .meter {
