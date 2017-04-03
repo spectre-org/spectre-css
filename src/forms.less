@@ -33,12 +33,13 @@
   height: 3.2rem;
   line-height: 2rem;
   max-width: 100%;
-  outline: 0;
+  outline: none;
   padding: .5rem .8rem;
   position: relative;
   width: 100%;
   &:focus {
     border-color: @primary-color;
+    .control-shadow();
   }
   &::placeholder {
     color: @gray-color;
@@ -98,6 +99,7 @@
   color: inherit;
   font-size: @font-size;
   line-height: 2rem;
+  outline: none;
   padding: .5rem .8rem;
   vertical-align: middle;
 
@@ -115,6 +117,7 @@
   }
   &:focus {
     border-color: @primary-color;
+    .control-shadow();
   }
   &::-ms-expand {
     display: none;

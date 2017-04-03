@@ -63,6 +63,7 @@
   cursor: pointer;
   height: 2.8rem;
   line-height: 2rem;
+  outline: none;
   padding: .3rem;
   position: relative;
   text-align: center;
@@ -75,6 +76,9 @@
 .calendar .calendar-date .date-item.date-today {
   border-color: #e4e6f6;
   color: #5764c6;
+}
+.calendar .calendar-date .date-item:focus {
+  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
 }
 .calendar .calendar-date .date-item:focus,
 .calendar .calendar-date .date-item:hover {
@@ -407,7 +411,7 @@
   max-width: 100%;
   min-width: 1.6rem;
   opacity: 0;
-  outline: 0;
+  outline: none;
   position: relative;
   resize: horizontal;
   top: 50%;
@@ -713,6 +717,10 @@
   display: block;
   height: 2.4rem;
   width: 100%;
+}
+.slider:focus {
+  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  outline: none;
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
