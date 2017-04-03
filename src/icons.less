@@ -338,6 +338,29 @@
   }
 }
 
+// Icon bookmark
+.icon-bookmark {
+  &::before {
+    border: @icon-border-width solid currentColor;
+    border-bottom: 0;
+    border-top-left-radius: @border-radius;
+    border-top-right-radius: @border-radius;
+    content: "";
+    height: 90%;
+    width: 90%;
+  }
+  &::after {
+    border: @icon-border-width solid currentColor;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: @border-radius;
+    content: "";
+    height: 50%;
+    transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+    width: 50%;
+  }
+}
+
 // Icon download & upload
 .icon-download,
 .icon-upload {

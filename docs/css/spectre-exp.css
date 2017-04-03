@@ -485,24 +485,6 @@
 .filter .filter-tag#tag-shooter:checked ~ .filter-body .column:not([data-tag~="tag-shooter"]),
 .filter .filter-tag#tag-sports:checked ~ .filter-body .column:not([data-tag~="tag-sports"]) {
   display: none;
-  opacity: 0;
-  transition: all .25s ease-in-out;
-}
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    width: 0;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    width: 0;
-  }
 }
 .meter {
   -webkit-appearance: none;

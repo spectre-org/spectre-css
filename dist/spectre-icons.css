@@ -312,6 +312,27 @@
   top: 35%;
   width: .75em;
 }
+.icon-bookmark::before {
+  border: .2rem solid currentColor;
+  border-bottom: 0;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+  content: "";
+  height: 90%;
+  width: 90%;
+}
+.icon-bookmark::after {
+  border: .2rem solid currentColor;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: .2rem;
+  content: "";
+  height: 50%;
+  -webkit-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  -ms-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  width: 50%;
+}
 .icon-download,
 .icon-upload {
   border-bottom: .2rem solid currentColor;
