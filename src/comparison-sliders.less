@@ -29,7 +29,7 @@
     width: 100%;
 
     .comparison-label {
-      right: 1rem;
+      right: 1.6rem;
     }
   }
 
@@ -39,34 +39,34 @@
     z-index: @zindex-0;
 
     &::before {
-      background: fade(@dark-color, 35%);
-      border-radius: @border-radius;
-      color: @light-color;
+      background: transparent;
       content: "";
+      cursor: default;
       height: 100%;
+      left: 0;
       position: absolute;
-      right: 0;
+      right: 1.6rem;
       top: 0;
-      width: 1rem;
+      z-index: @zindex-0;
     }
 
     &::after {
       background: currentColor;
       border-radius: 50%;
-      box-shadow: 0 -.6rem, 0 .6rem;
+      box-shadow: 0 -.5rem, 0 .5rem;
       color: @light-color;
       content: "";
-      height: .4rem;
+      height: .3rem;
       position: absolute;
-      right: .5rem;
+      right: .8rem;
       top: 50%;
       transform: translate(50%, -50%);
-      width: .4rem;
+      width: .3rem;
       z-index: -@zindex-0;
     }
 
     .comparison-label {
-      left: 1rem;
+      left: 1.6rem;
     }
   }
 
@@ -75,9 +75,8 @@
     cursor: ew-resize;
     height: 1.5rem;
     left: 0;
-    margin: 0;
     max-width: 100%;
-    min-width: 1rem;
+    min-width: 1.6rem;
     opacity: 0;
     outline: 0;
     position: relative;
@@ -88,8 +87,8 @@
   }
 
   .comparison-label {
-    background: fade(@dark-color,50%);
-    bottom: 1rem;
+    background: fade(@dark-color, 50%);
+    bottom: 1.6rem;
     color: @light-color;
     padding: .3rem .8rem;
     position: absolute;
@@ -102,13 +101,13 @@
     width: 0;
   }
   25% {
-    width: 4rem;
+    width: 4.8rem;
   }
   50% {
-    width: 1rem;
+    width: 1.6rem;
   }
   75% {
-    width: 2rem;
+    width: 2.4rem;
   }
   100% {
     width: 0;

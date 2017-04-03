@@ -361,7 +361,7 @@
   width: 100%;
 }
 .comparison-slider .comparison-before .comparison-label {
-  right: 1rem;
+  right: 1.6rem;
 }
 .comparison-slider .comparison-after {
   max-width: 100%;
@@ -369,34 +369,34 @@
   z-index: 1;
 }
 .comparison-slider .comparison-after::before {
-  background: rgba(69, 77, 93, .35);
-  border-radius: .2rem;
-  color: #fff;
+  background: transparent;
   content: "";
+  cursor: default;
   height: 100%;
+  left: 0;
   position: absolute;
-  right: 0;
+  right: 1.6rem;
   top: 0;
-  width: 1rem;
+  z-index: 1;
 }
 .comparison-slider .comparison-after::after {
   background: currentColor;
   border-radius: 50%;
-  box-shadow: 0 -.6rem, 0 .6rem;
+  box-shadow: 0 -.5rem, 0 .5rem;
   color: #fff;
   content: "";
-  height: .4rem;
+  height: .3rem;
   position: absolute;
-  right: .5rem;
+  right: .8rem;
   top: 50%;
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
-  width: .4rem;
+  width: .3rem;
   z-index: -1;
 }
 .comparison-slider .comparison-after .comparison-label {
-  left: 1rem;
+  left: 1.6rem;
 }
 .comparison-slider .comparison-resizer {
   -webkit-animation: first-run 1.5s 1 ease-in-out;
@@ -404,9 +404,8 @@
   cursor: ew-resize;
   height: 1.5rem;
   left: 0;
-  margin: 0;
   max-width: 100%;
-  min-width: 1rem;
+  min-width: 1.6rem;
   opacity: 0;
   outline: 0;
   position: relative;
@@ -419,7 +418,7 @@
 }
 .comparison-slider .comparison-label {
   background: rgba(69, 77, 93, .5);
-  bottom: 1rem;
+  bottom: 1.6rem;
   color: #fff;
   padding: .3rem .8rem;
   position: absolute;
@@ -433,13 +432,13 @@
     width: 0;
   }
   25% {
-    width: 4rem;
+    width: 4.8rem;
   }
   50% {
-    width: 1rem;
+    width: 1.6rem;
   }
   75% {
-    width: 2rem;
+    width: 2.4rem;
   }
   100% {
     width: 0;
@@ -450,13 +449,56 @@
     width: 0;
   }
   25% {
-    width: 4rem;
+    width: 4.8rem;
   }
   50% {
-    width: 1rem;
+    width: 1.6rem;
   }
   75% {
-    width: 2rem;
+    width: 2.4rem;
+  }
+  100% {
+    width: 0;
+  }
+}
+.filter .filter-nav {
+  margin: 1rem 0;
+}
+.filter .filter-body {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.filter .filter-tag#tag-all:checked ~ .filter-nav .chip[for="tag-all"],
+.filter .filter-tag#tag-action:checked ~ .filter-nav .chip[for="tag-action"],
+.filter .filter-tag#tag-roleplaying:checked ~ .filter-nav .chip[for="tag-roleplaying"],
+.filter .filter-tag#tag-shooter:checked ~ .filter-nav .chip[for="tag-shooter"],
+.filter .filter-tag#tag-sports:checked ~ .filter-nav .chip[for="tag-sports"] {
+  background: #5764c6;
+  color: #fff;
+}
+.filter .filter-tag#tag-action:checked ~ .filter-body .column:not([data-tag~="tag-action"]),
+.filter .filter-tag#tag-roleplaying:checked ~ .filter-body .column:not([data-tag~="tag-roleplaying"]),
+.filter .filter-tag#tag-shooter:checked ~ .filter-body .column:not([data-tag~="tag-shooter"]),
+.filter .filter-tag#tag-sports:checked ~ .filter-body .column:not([data-tag~="tag-sports"]) {
+  display: none;
+  opacity: 0;
+  transition: all .25s ease-in-out;
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
   }
   100% {
     width: 0;
