@@ -1662,7 +1662,7 @@ code {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
-.navbar .navbar-primary {
+.navbar .navbar-center {
   -webkit-align-items: center;
   align-items: center;
   display: flex;
