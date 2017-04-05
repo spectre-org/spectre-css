@@ -57,6 +57,12 @@
                 <a href="experimentals.html#carousels">Carousels</a>
               </li>
               <li class="nav-item">
+                <a href="experimentals.html#comparison">Comparison slider</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#filters">Filters</a>
+              </li>
+              <li class="nav-item">
                 <a href="experimentals.html#meters">Meters</a>
               </li>
               <li class="nav-item">
@@ -303,6 +309,154 @@
                   <label class="nav-item text-hide hand" for="slide-2">2</label>
                   <label class="nav-item text-hide hand" for="slide-3">3</label>
                   <label class="nav-item text-hide hand" for="slide-4">4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="comparison" class="container">
+          <header class="text-center"><h3>Comparison Sliders</h3></header>
+          <section class="notes">
+            <p><strong>Comparison Sliders</strong> are sliders for comparing two images. It is built in pure CSS.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-12">
+              <div class="comparison-slider">
+                <figure class="comparison-before">
+                  <img src="img/macos-sierra.jpg" class="rounded" alt="macOS Sierra Wallpaper" />
+                  <div class="comparison-label">Before</div>
+                </figure>
+                <figure class="comparison-after">
+                  <img src="img/macos-sierra.jpg" class="filter-grayscale rounded" alt="macOS Sierra Wallpaper" />
+                  <div class="comparison-label">After</div>
+                  <textarea class="comparison-resizer" readonly cols="0" rows="0"></textarea>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="filters" class="container">
+          <header class="text-center"><h3>Filters</h3></header>
+          <section class="notes">
+            <p><strong>Filters</strong> are CSS only content filters.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-12">
+              <div class="filter">
+                <input type="radio" id="tag-all" class="filter-tag" name="filter-radio" hidden checked />
+                <input type="radio" id="tag-action" class="filter-tag" name="filter-radio" hidden />
+              	<input type="radio" id="tag-roleplaying" class="filter-tag" name="filter-radio" hidden />
+                <input type="radio" id="tag-shooter" class="filter-tag" name="filter-radio" hidden />
+              	<input type="radio" id="tag-sports" class="filter-tag" name="filter-radio" hidden />
+
+                <div class="filter-nav">
+                  <label class="chip" for="tag-all">All</label>
+                  <label class="chip" for="tag-action">Action</label>
+                  <label class="chip" for="tag-roleplaying">Roleplaying</label>
+                  <label class="chip" for="tag-shooter">Shooter</label>
+                  <label class="chip" for="tag-sports">Sports</label>
+                </div>
+                <div class="filter-body columns">
+                  <div class="column col-4" data-tag="tag-roleplaying">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Fallout 4</div>
+                        <div class="card-subtitle">Roleplaying</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-shooter">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Halo 5</div>
+                        <div class="card-subtitle">Shooter</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-action">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Quantum Break</div>
+                        <div class="card-subtitle">Action</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-sports">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Forza Horizon 3</div>
+                        <div class="card-subtitle">Sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-roleplaying">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Final Fantasy XV</div>
+                        <div class="card-subtitle">Roleplaying</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-sports">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">NBA 2K17</div>
+                        <div class="card-subtitle">Sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-shooter">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Battlefield 1</div>
+                        <div class="card-subtitle">Shooter</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-action">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">GTA V</div>
+                        <div class="card-subtitle">Action</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-sports">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">FIFA 17</div>
+                        <div class="card-subtitle">Sports</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-shooter">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Overwatch</div>
+                        <div class="card-subtitle">Shooter</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-shooter">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Titanfall 2</div>
+                        <div class="card-subtitle">Shooter</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column col-4" data-tag="tag-shooter">
+                    <div class="filter-item card">
+                      <div class="card-header">
+                        <div class="card-title">Gears of Wars 4</div>
+                        <div class="card-subtitle">Shooter</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

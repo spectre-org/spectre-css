@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.9";
+  content: "0.2.12";
 }
 // Core variables and mixins
 @import '../../src/variables.less';
@@ -106,8 +106,8 @@
 
 .grid-footer {
   color: @gray-color;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 
   a {
     color: @gray-color-dark;
@@ -222,6 +222,12 @@
 
     .icon {
       margin: auto;
+    }
+  }
+
+  .comparison-slider {
+    .filter-grayscale {
+      filter: grayscale(75%);
     }
   }
 }

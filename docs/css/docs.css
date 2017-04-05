@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.9";
+  content: "0.2.12";
 }
 /* Spectre docs style */
 .bg-gray {
@@ -84,8 +84,8 @@
 }
 .grid-footer {
   color: #acb3c2;
-  margin-bottom: 3rem;
-  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .grid-footer a {
   color: #727e96;
@@ -186,6 +186,10 @@
 }
 .docs-content .example-tile-icon .icon {
   margin: auto;
+}
+.docs-content .comparison-slider .filter-grayscale {
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
 }
 @media screen and (min-width: 601px) {
   .section-header .navbar-section {

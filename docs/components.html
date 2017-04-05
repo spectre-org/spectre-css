@@ -335,21 +335,28 @@
             <p>If there is no <code>data-badge</code> or the attribute is not specified, the badge will appear as a dot.</p>
           </section>
           <div class="columns">
-            <div class="column col-xs-6">
+            <div class="column col-sm-12">
               <button class="btn badge" data-badge="">Button</button>
-            </div>
-            <div class="column col-xs-6">
               <button class="btn badge" data-badge="8">Button</button>
             </div>
-            <div class="column col-xs-6">
+            <div class="column col-sm-12">
               <button class="btn btn-primary badge" data-badge="">Button</button>
-            </div>
-            <div class="column col-xs-6">
               <button class="btn btn-primary badge" data-badge="8">Button</button>
+            </div>
+            <div class="column col-sm-12">
+              <figure class="avatar avatar-xl badge" data-badge="8" data-initial="YZ">
+                <img src="img/avatar-1.png" alt="YZ" />
+              </figure>
+              <figure class="avatar avatar-lg badge" data-badge="8" data-initial="YZ">
+                <img src="img/avatar-2.png" alt="YZ" />
+              </figure>
+              <figure class="avatar badge" data-badge="8" data-initial="YZ">
+                <img src="img/avatar-3.png" alt="YZ" />
+              </figure>
             </div>
           </div>
           <section class="notes">
-            <p>Badges support <code>button</code> elements as well. </p>
+            <p>Badges support <code>button</code> and <code>avatars</code> elements as well. </p>
           </section>
 
 <!-- badges example -->
@@ -357,13 +364,17 @@
   Notifications
 &lt;<span class="tag">/span</span>&gt;
 
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;88&quot;</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;8&quot;</span>&gt;
   Notifications
 &lt;<span class="tag">/span</span>&gt;
 
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;88&quot;</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;8&quot;</span>&gt;
   Button
 &lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar badge&quot;</span> <span class="atn">data-badge</span>=<span class="atv">&quot;8&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-3.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;YZ&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
         </section>
@@ -371,7 +382,7 @@
         <section id="bars" class="container">
           <header class="text-center"><h3>Bars</h3></header>
           <section class="notes">
-            <p><strong>Bars</strong> represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code> and <code>meter</code> elements.</p>
+            <p><strong>Bars</strong> represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code>, <code>meter</code> and <code>input range</code> elements.</p>
           </section>
           <div class="columns">
             <div class="column col-8 col-xs-12">
@@ -407,6 +418,7 @@
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span> <span class="atn">aria-valuenow</span>=<span class="atv">&quot;25&quot;</span> <span class="atn">aria-valuemin</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">aria-valuemax</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
+<span class="com">&lt;!-- multi-bars --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;25%&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;25%&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;background:#818bd5;&quot;</span>&gt;15%&lt;<span class="tag">/div</span>&gt;
@@ -418,7 +430,7 @@
             <div class="column col-8 col-xs-12">
               <div class="bar bar-slider">
                 <div class="bar-item" role="progressbar" style="width:50%;">
-                  <button class="bar-slider-btn tooltip" data-tooltip="50%" role="slider"></button>
+                  <button class="bar-slider-btn btn tooltip" data-tooltip="50%" role="slider"></button>
                 </div>
               </div>
             </div>
@@ -427,10 +439,10 @@
             <div class="column col-8 col-xs-12">
               <div class="bar bar-slider">
                 <div class="bar-item" role="progressbar" style="width:15%;">
-                  <button class="bar-slider-btn tooltip" data-tooltip="25%" role="slider"></button>
+                  <button class="bar-slider-btn btn tooltip" data-tooltip="25%" role="slider"></button>
                 </div>
                 <div class="bar-item" role="progressbar" style="width:65%;">
-                  <button class="bar-slider-btn tooltip" data-tooltip="65%" role="slider"></button>
+                  <button class="bar-slider-btn btn tooltip" data-tooltip="65%" role="slider"></button>
                 </div>
               </div>
             </div>
@@ -442,18 +454,20 @@
           </section>
 
 <!-- slider bars example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- slider --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:25%;&quot;</span>&gt;
-    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 
+<span class="com">&lt;!-- range slider --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-slider&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:15%;&quot;</span>&gt;
-    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar-item&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;progressbar&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width:65%;&quot;</span>&gt;
-    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;bar-slider-btn btn&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;slider&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
@@ -525,7 +539,7 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-el-capitan.jpg" />
+                  <img class="img-responsive" src="img/osx-el-capitan-2.jpg" />
                 </div>
                 <div class="card-footer">
                   <a href="#cards" class="btn btn-primary">Buy</a>
@@ -546,14 +560,14 @@
                   To make a contribution to the world by making tools for the mind that advance humankind.
                 </div>
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-yosemite.jpg" />
+                  <img class="img-responsive" src="img/macos-sierra.jpg" />
                 </div>
               </div>
             </div>
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-el-capitan-2.jpg" />
+                  <img class="img-responsive" src="img/macos-sierra-2.jpg" />
                 </div>
                 <div class="card-header">
                   <button class="btn btn-primary float-right"><i class="icon icon-plus"></i></button>
@@ -995,7 +1009,7 @@
           </section>
           <header id="breadcrumbs" class="text-center"><h4>Breadcrumbs</h4></header>
           <div class="columns">
-            <div class="column col-6 col-sm-12">
+            <div class="column col-6 col-md-12">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
                   <a href="#breadcrumbs">
@@ -1012,7 +1026,7 @@
                 </li>
               </ul>
             </div>
-            <div class="column col-6 col-sm-12">
+            <div class="column col-6 col-md-12">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item">
                   <a href="#breadcrumbs">
@@ -1052,7 +1066,7 @@
 
           <header id="tabs" class="text-center"><h4>Tabs</h4></header>
           <div class="columns">
-            <div class="column col-6 col-xs-12">
+            <div class="column col-6 col-sm-12">
               <ul class="tab">
                 <li class="tab-item active">
                   <a href="#tabs">
@@ -1076,7 +1090,7 @@
                 </li>
               </ul>
             </div>
-            <div class="column col-6 col-xs-12">
+            <div class="column col-6 col-sm-12">
               <ul class="tab tab-block">
                 <li class="tab-item active">
                   <a href="#tabs">
@@ -1118,7 +1132,7 @@
 </code></pre>
 
           <div class="columns">
-            <div class="column col-xs-12">
+            <div class="column col-sm-12">
               <ul class="tab">
                 <li class="tab-item active">
                   <a href="#tabs" class="badge" data-badge="9">
@@ -1137,7 +1151,7 @@
                 </li>
               </ul>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-sm-12">
               <ul class="tab tab-block">
                 <li class="tab-item active">
                   <a href="#tabs" class="badge" data-badge="9">
@@ -1681,7 +1695,7 @@
                   <div class="tile-subtitle">14MB · Public · 1 Jan, 2017</div>
                 </div>
                 <div class="tile-action">
-                  <button class="btn btn-link btn-action"><i class="icon icon-more_vert"></i></button>
+                  <button class="btn btn-link btn-action"><i class="icon icon-more-vert"></i></button>
                 </div>
               </div>
             </div>
@@ -1700,7 +1714,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-more_vert&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-more-vert&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
     &lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;

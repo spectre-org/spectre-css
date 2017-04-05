@@ -70,8 +70,8 @@
   background: currentColor;
   content: "";
   height: .2rem;
-  left: 60%;
-  width: .9em;
+  left: 55%;
+  width: .8em;
 }
 .icon-caret::before {
   border-left: .3em solid transparent;
@@ -97,6 +97,39 @@
   content: "";
   height: .3rem;
   width: .3rem;
+}
+.icon-resize-horiz::before,
+.icon-resize-vert::before,
+.icon-resize-horiz::after,
+.icon-resize-vert::after {
+  border: .2rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  content: "";
+  height: .45em;
+  width: .45em;
+}
+.icon-resize-horiz::before,
+.icon-resize-vert::before {
+  -webkit-transform: translate(-50%, -90%) rotate(45deg);
+  -ms-transform: translate(-50%, -90%) rotate(45deg);
+  transform: translate(-50%, -90%) rotate(45deg);
+}
+.icon-resize-horiz::after,
+.icon-resize-vert::after {
+  -webkit-transform: translate(-50%, -10%) rotate(225deg);
+  -ms-transform: translate(-50%, -10%) rotate(225deg);
+  transform: translate(-50%, -10%) rotate(225deg);
+}
+.icon-resize-horiz::before {
+  -webkit-transform: translate(-90%, -50%) rotate(-45deg);
+  -ms-transform: translate(-90%, -50%) rotate(-45deg);
+  transform: translate(-90%, -50%) rotate(-45deg);
+}
+.icon-resize-horiz::after {
+  -webkit-transform: translate(-10%, -50%) rotate(135deg);
+  -ms-transform: translate(-10%, -50%) rotate(135deg);
+  transform: translate(-10%, -50%) rotate(135deg);
 }
 .icon-more-horiz::before,
 .icon-more-vert::before {
@@ -204,7 +237,7 @@
   border-top-color: transparent;
   content: "";
   height: 0;
-  left: 5%;
+  left: 10%;
   top: 95%;
   -webkit-transform: translate(0, -100%);
   -ms-transform: translate(0, -100%);
@@ -278,6 +311,27 @@
   left: 55%;
   top: 35%;
   width: .75em;
+}
+.icon-bookmark::before {
+  border: .2rem solid currentColor;
+  border-bottom: 0;
+  border-top-left-radius: .2rem;
+  border-top-right-radius: .2rem;
+  content: "";
+  height: 90%;
+  width: 90%;
+}
+.icon-bookmark::after {
+  border: .2rem solid currentColor;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: .2rem;
+  content: "";
+  height: 50%;
+  -webkit-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  -ms-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  width: 50%;
 }
 .icon-download,
 .icon-upload {

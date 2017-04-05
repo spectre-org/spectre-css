@@ -23,7 +23,12 @@ body {
 
 a {
   color: @link-color;
+  outline: none;
   text-decoration: none;
+
+  &:focus {
+    .control-shadow();
+  }
 
   &:focus,
   &:hover,
@@ -32,10 +37,4 @@ a {
     color: @link-color-dark;
     text-decoration: underline;
   }
-}
-
-// Focus state
-:focus {
-  .control-shadow();
-  outline: none;
 }
