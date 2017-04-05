@@ -1,5 +1,5 @@
 .idea/
-dist/
+/dist/
 node_modules/
 .*
 !.gitignore
