@@ -803,3 +803,57 @@
 .slider::-ms-fill-lower {
   background: #5764c6;
 }
+.timeline .timeline-item {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+.timeline .timeline-item::before {
+  background: #f0f1f4;
+  content: "";
+  height: 100%;
+  left: 1.1rem;
+  position: absolute;
+  top: 2.4rem;
+  width: .2rem;
+}
+.timeline .timeline-item .timeline-left {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.timeline .timeline-item .timeline-content {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: .2rem 0 .2rem 1.5rem;
+}
+.timeline .timeline-item .timeline-icon {
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 2.4rem;
+  text-align: center;
+  width: 2.4rem;
+}
+.timeline .timeline-item .timeline-icon::before {
+  border: .2rem solid #5764c6;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: .8rem;
+  left: .8rem;
+  position: absolute;
+  top: .8rem;
+  width: .8rem;
+}
+.timeline .timeline-item .timeline-icon.icon-lg {
+  background: #5764c6;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.timeline .timeline-item .timeline-icon.icon-lg::before {
+  content: none;
+}

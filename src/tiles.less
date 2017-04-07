@@ -18,11 +18,11 @@
     }
   }
   .tile-title {
-    font-weight: 500;
+    line-height: 2rem;
   }
   .tile-subtitle {
+    color: lighten(@body-font-color, 40%);
     line-height: 2rem;
-    opacity: .5;
   }
 
   &.tile-centered {
@@ -34,6 +34,7 @@
 
     .tile-title,
     .tile-subtitle {
+      margin-bottom: 0;
       .text-ellipsis;
     }
   }

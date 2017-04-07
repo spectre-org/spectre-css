@@ -33,7 +33,7 @@
       <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav nav-vertical">
           <li class="nav-item">
-            <a href="index.html">Getting started</a>
+            <a href="index.html#introduction">Getting started</a>
           </li>
           <li class="nav-item">
             <a href="elements.html">Elements</a>
@@ -73,6 +73,9 @@
               </li>
               <li class="nav-item">
                 <a href="experimentals.html#sliders">Sliders</a>
+              </li>
+              <li class="nav-item">
+                <a href="experimentals.html#timelines">Timelines</a>
               </li>
             </ul>
           </li>
@@ -256,7 +259,7 @@
           <section class="notes">
             <p><strong>Carousels</strong> are slideshows for cycling images. It is built in pure CSS.</p>
           </section>
-          <div class="columns text-center">
+          <div class="columns">
             <div class="column col-12">
               <div class="carousel carousel-autoplay">
                 <input type="radio" id="slide-1" name="carousel-radio" hidden class="carousel-locator" checked>
@@ -469,7 +472,7 @@
           <section class="notes">
             <p><strong>Meters</strong> represent the value within the known range.</p>
           </section>
-          <div class="columns text-center">
+          <div class="columns">
             <div class="column col-3 col-xs-12">
               <meter class="meter" value="20" min="0" max="100"></meter>
             </div>
@@ -504,7 +507,7 @@
           <section class="notes">
             <p>The <strong>Parallax</strong> acts like Apple TV/tvOS hover parallax effect. It is built in pure CSS.</p>
           </section>
-          <div class="columns text-center">
+          <div class="columns">
             <div class="column col-12">
               <div class="parallax">
                 <div class="parallax-top-left"></div>
@@ -547,7 +550,7 @@
           <section class="notes">
             <p>The <strong>Progress</strong> indicates the progress completion of a task.</p>
           </section>
-          <div class="columns text-center">
+          <div class="columns">
             <div class="column col-3 col-xs-12">
               <progress class="progress" value="75" max="100"></progress>
             </div>
@@ -574,7 +577,7 @@
           <section class="notes">
             <p><strong>Sliders</strong> are for selecting values from ranges.</p>
           </section>
-          <div class="columns text-center">
+          <div class="columns">
             <div class="column col-6 col-xs-12">
               <input class="slider tooltip" data-tooltip="50" type="range" min="0" max="100" value="50" />
             </div>
@@ -586,6 +589,75 @@
 <!-- sliders example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;slider&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;range&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;50&quot;</span> <span class="tag">/</span>&gt;
 </code></pre>
+
+        </section>
+
+        <section id="timelines" class="container">
+          <header class="text-center"><h3>Timelines</h3></header>
+          <section class="notes">
+            <p><strong>Timelines</strong> are ordered sequences of activities.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-9 col-sm-12">
+              <div class="timeline">
+                <div class="timeline-item" id="timeline-example-1">
+                  <div class="timeline-left icon-lg">
+                    <a href="#timeline-example-1" class="timeline-icon tooltip" data-tooltip="March 2016"></a>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="tile">
+                      <div class="tile-content">
+                        <p class="tile-subtitle">March 2016</p>
+                        <p class="tile-title">Initial commit</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item" id="timeline-example-2">
+                  <div class="timeline-left">
+                    <a href="#timeline-example-2" class="timeline-icon icon-lg tooltip" data-tooltip="February 2017">
+                      <i class="icon icon-check"></i>
+                    </a>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="tile">
+                      <div class="tile-content">
+                        <p class="tile-subtitle">February 2017</p>
+                        <p class="tile-title">New Documents experience</p>
+                        <p class="tile-title"><a href="components.html#bars">Bars</a>: represent the progress of a task</p>
+                        <p class="tile-title"><a href="components.html#steps">Steps</a>: progress indicators of a sequence of task steps</p>
+                        <p class="tile-title"><a href="components.html#tiles">Tiles</a>: repeatable or embeddable information blocks</p>
+                      </div>
+                      <div class="tile-action">
+                        <button class="btn">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-item" id="timeline-example-3">
+                  <div class="timeline-left">
+                    <a href="#timeline-example-3" class="timeline-icon icon-lg tooltip" data-tooltip="March 2017">
+                      <i class="icon icon-check"></i>
+                    </a>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="tile">
+                      <div class="tile-content">
+                        <p class="tile-subtitle">March 2017</p>
+                        <p class="tile-title"><a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons</p>
+                        <p class="tile-title"><a href="components.html#popovers">Popovers</a>: small overlay content containers</p>
+                        <p class="tile-title"><a href="experimentals.html#calendars">Calendars</a>: date or date range picker and events display</p>
+                        <p class="tile-title"><a href="experimentals.html#carousels">Carousels</a>: slideshows for cycling images</p>
+                      </div>
+                      <div class="tile-action">
+                        <button class="btn">View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </section>
 

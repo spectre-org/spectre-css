@@ -1711,7 +1711,7 @@ code {
   font-size: 2rem;
 }
 .panel .panel-subtitle {
-  opacity: .5;
+  color: #bbc1cd;
 }
 .empty {
   background: #f8f9fa;
@@ -1725,7 +1725,7 @@ code {
   margin: 1rem auto;
 }
 .empty .empty-subtitle {
-  opacity: .5;
+  color: #bbc1cd;
 }
 .empty .empty-action {
   margin-top: 1.5rem;
@@ -2000,8 +2000,8 @@ code {
   font-size: 2rem;
 }
 .card .card-subtitle {
+  color: #bbc1cd;
   font-size: 1.2rem;
-  opacity: .5;
 }
 .chip {
   -webkit-align-items: center;
@@ -2479,11 +2479,11 @@ code {
   padding-right: 1rem;
 }
 .tile .tile-title {
-  font-weight: 500;
+  line-height: 2rem;
 }
 .tile .tile-subtitle {
+  color: #bbc1cd;
   line-height: 2rem;
-  opacity: .5;
 }
 .tile.tile-centered {
   -webkit-align-items: center;
@@ -2495,6 +2495,7 @@ code {
 }
 .tile.tile-centered .tile-title,
 .tile.tile-centered .tile-subtitle {
+  margin-bottom: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
