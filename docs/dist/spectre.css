@@ -2049,6 +2049,10 @@ code {
 .dropdown .menu:hover {
   display: block;
 }
+.dropdown .btn-group .dropdown-toggle:nth-last-child(2) {
+  border-bottom-right-radius: .2rem;
+  border-top-right-radius: .2rem;
+}
 .menu {
   background: #fff;
   border-radius: .2rem;
