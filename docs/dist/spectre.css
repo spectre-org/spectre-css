@@ -1115,7 +1115,7 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .2rem;
-  color: inherit;
+  color: #727e96;
   display: inline-block;
   line-height: 1;
   padding: .3rem .4rem;
