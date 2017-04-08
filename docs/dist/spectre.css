@@ -1089,6 +1089,9 @@ textarea.form-input {
   cursor: not-allowed;
   opacity: .5;
 }
+.form-input[readonly] {
+  background-color: #f8f9fa;
+}
 input:disabled + .form-icon,
 input.disabled + .form-icon {
   background: #f0f1f4;

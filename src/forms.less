@@ -362,7 +362,7 @@
   }
 }
 
-// Form disabled
+// Form disabled and readonly
 .form-input,
 .form-select {
   &:disabled,
@@ -370,6 +370,12 @@
     background-color: @bg-color-dark;
     cursor: not-allowed;
     opacity: .5;
+  }
+}
+
+.form-input {
+  &[readonly] {
+    background-color: @bg-color;
   }
 }
 

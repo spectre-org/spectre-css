@@ -554,6 +554,49 @@
   }
 }
 
+// Icon location
+.icon-location {
+  &::before {
+    border: @icon-border-width solid currentColor;
+    border-radius: 50% 50% 50% 0;
+    content: "";
+    height: .8em;
+    transform: translate(-50%, -60%) rotate(-45deg);
+    width: .8em;
+  }
+  &::after {
+    border: @icon-border-width solid currentColor;
+    border-radius: 50%;
+    content: "";
+    height: .2em;
+    transform: translate(-50%, -80%);
+    width: .2em;
+  }
+}
+
+// Icon emoji
+.icon-emoji {
+  border: @icon-border-width solid currentColor;
+  border-radius: 50%;
+  &::before {
+    border-radius: 50%;
+    box-shadow: -.17em -.15em, .17em -.15em;
+    content: "";
+    height: .1em;
+    width: .1em;
+  }
+  &::after {
+    border: @icon-border-width solid currentColor;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    border-right-color: transparent;
+    content: "";
+    height: .5em;
+    transform: translate(-50%, -40%) rotate(-135deg);
+    width: .5em;
+  }
+}
+
 // Component icon support
 .btn,
 .toast,

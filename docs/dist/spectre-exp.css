@@ -197,7 +197,6 @@
 .carousel {
   background: #f8f9fa;
   display: block;
-  height: 50vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -206,6 +205,11 @@
   height: 100%;
   left: 0;
   position: relative;
+}
+.carousel .carousel-container::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%;
 }
 .carousel .carousel-container .carousel-item {
   -webkit-animation: carousel-slideout 1s ease-in-out 1;
