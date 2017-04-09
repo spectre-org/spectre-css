@@ -2525,6 +2525,10 @@ code {
   background: rgba(50, 182, 67, .9);
   border-color: #32b643;
 }
+.toast.toast-warning {
+  background: rgba(255, 183, 0, .9);
+  border-color: #ffb700;
+}
 .toast.toast-error {
   background: rgba(232, 86, 0, .9);
   border-color: #e85600;
