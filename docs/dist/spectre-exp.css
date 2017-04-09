@@ -37,7 +37,7 @@
   -webkit-flex: 0 0 14.28%;
   -ms-flex: 0 0 14.28%;
   flex: 0 0 14.28%;
-  width: 14.28%;
+  max-width: 14.28%;
 }
 .calendar .calendar-header {
   background: #f8f9fa;

@@ -1264,6 +1264,7 @@ code {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  max-width: 100%;
   padding: 1rem;
 }
 .column.col-12,
