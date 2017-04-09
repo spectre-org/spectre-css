@@ -581,7 +581,7 @@ abbr[title] {
   padding: 1.5rem 1rem;
 }
 .table th {
-  border-bottom: .2rem solid #727e96;
+  border-bottom: .1rem solid #727e96;
   padding: 1.5rem 1rem;
 }
 .btn {
@@ -824,8 +824,8 @@ textarea.form-input {
 .is-success + .form-input-hint {
   color: #32b643;
 }
-.has-danger .form-input-hint,
-.is-danger + .form-input-hint {
+.has-error .form-input-hint,
+.is-error + .form-input-hint {
   color: #e85600;
 }
 .form-select {
@@ -881,16 +881,16 @@ textarea.form-input {
 .form-select.is-success:focus {
   box-shadow: 0 0 0 .2rem rgba(50, 182, 67, .15);
 }
-.has-danger .form-input,
-.has-danger .form-select,
-.form-input.is-danger,
-.form-select.is-danger {
+.has-error .form-input,
+.has-error .form-select,
+.form-input.is-error,
+.form-select.is-error {
   border-color: #e85600;
 }
-.has-danger .form-input:focus,
-.has-danger .form-select:focus,
-.form-input.is-danger:focus,
-.form-select.is-danger:focus {
+.has-error .form-input:focus,
+.has-error .form-select:focus,
+.form-input.is-error:focus,
+.form-select.is-error:focus {
   box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
 }
 .form-checkbox,
@@ -1136,7 +1136,7 @@ input.disabled + .form-icon {
   background: #ffb700;
   color: #fff;
 }
-.label.label-danger {
+.label.label-error {
   background: #e85600;
   color: #fff;
 }
@@ -2525,7 +2525,7 @@ code {
   background: rgba(50, 182, 67, .9);
   border-color: #32b643;
 }
-.toast.toast-danger {
+.toast.toast-error {
   background: rgba(232, 86, 0, .9);
   border-color: #e85600;
 }
