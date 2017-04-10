@@ -88,14 +88,12 @@ dl {
   }
 }
 mark {
-  background: @highlight-color;
-  color: @body-font-color;
   .label-base();
+  .label-variant(@body-font-color, @highlight-color);
 }
 kbd {
-  background: @dark-color;
-  color: @light-color;
   .label-base();
+  .label-variant(@light-color, @dark-color);
 }
 abbr[title] {
   border-bottom: .1rem dotted;

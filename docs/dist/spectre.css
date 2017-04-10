@@ -1118,7 +1118,7 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .2rem;
-  color: #727e96;
+  color: #6a768f;
   display: inline-block;
   line-height: 1;
   padding: .3rem .4rem;
@@ -1141,7 +1141,7 @@ input.disabled + .form-icon {
   color: #fff;
 }
 code {
-  background: #f8f9fa;
+  background: #fdf4f4;
   border-radius: .2rem;
   color: #e06870;
   display: inline-block;
@@ -1164,6 +1164,7 @@ code {
   top: .2rem;
 }
 .code code {
+  background: #f8f9fa;
   color: inherit;
   display: block;
   line-height: inherit;

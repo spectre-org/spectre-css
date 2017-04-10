@@ -1,22 +1,21 @@
 // Labels
 .label {
-  background: @bg-color;
-  color: lighten(@body-font-color, 15%);
   .label-base();
+  .label-variant(lighten(@body-font-color, 12%), @bg-color);
 
   &.label-primary {
-    .label-variant(@primary-color);
+    .label-variant(@light-color, @primary-color);
   }
 
   &.label-success {
-    .label-variant(@control-color-success);
+    .label-variant(@light-color, @control-color-success);
   }
 
   &.label-warning {
-    .label-variant(@control-color-warning);
+    .label-variant(@light-color, @control-color-warning);
   }
 
   &.label-error {
-    .label-variant(@control-color-error);
+    .label-variant(@light-color, @control-color-error);
   }
 }
