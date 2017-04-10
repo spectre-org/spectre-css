@@ -85,9 +85,9 @@
     color: @control-color-success;
   }
 
-  .has-danger &,
-  .is-danger + & {
-    color: @control-color-danger;
+  .has-error &,
+  .is-error + & {
+    color: @control-color-error;
   }
 }
 
@@ -148,11 +148,11 @@
     }
   }
 
-  .has-danger &,
-  &.is-danger {
-    border-color: @control-color-danger;
+  .has-error &,
+  &.is-error {
+    border-color: @control-color-error;
     &:focus {
-      .control-shadow(@control-color-danger);
+      .control-shadow(@control-color-error);
     }
   }
 }
@@ -362,7 +362,7 @@
   }
 }
 
-// Form disabled
+// Form disabled and readonly
 .form-input,
 .form-select {
   &:disabled,
@@ -370,6 +370,12 @@
     background-color: @bg-color-dark;
     cursor: not-allowed;
     opacity: .5;
+  }
+}
+
+.form-input {
+  &[readonly] {
+    background-color: @bg-color;
   }
 }
 

@@ -23,21 +23,27 @@ gulp.task('build', function() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('docs', function() {
-    gulp.src(['./docs/src/*.less', './*.less'])
+    gulp.src('./docs/src/*.less')
         .pipe(less({
             plugins: [autoprefix]
         }))
         .pipe(csscomb())
-        .pipe(gulp.dest('./docs/css'))
+        .pipe(gulp.dest('./docs/css'));
+    gulp.src('./*.less')
+        .pipe(less({
+            plugins: [autoprefix]
+        }))
+        .pipe(csscomb())
+        .pipe(gulp.dest('./docs/dist'))
         .pipe(cleancss())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./docs/css'))
+        .pipe(gulp.dest('./docs/dist'));
 });
 
 gulp.task('default', ['build']);

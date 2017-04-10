@@ -2,7 +2,6 @@
 .carousel {
   background: @bg-color;
   display: block;
-  height: 50vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -11,6 +10,11 @@
     height: 100%;
     left: 0;
     position: relative;
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 56.25%;
+    }
 
     .carousel-item {
       animation: carousel-slideout 1s ease-in-out 1;
@@ -95,12 +99,6 @@
         top: 2rem;
         width: 100%;
       }
-    }
-  }
-
-  &.carousel-autoplay {
-    .carousel-item {
-      //animation: carousel-autoplay .15s infinite;
     }
   }
 }

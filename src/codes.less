@@ -1,8 +1,7 @@
 // Codes
 code {
-  background: @bg-color;
-  color: @code-color;
   .label-base();
+  .label-variant(@code-color, lighten(@code-color, 33%));
 }
 
 .code {
@@ -21,6 +20,7 @@ code {
   }
 
   code {
+    background: @bg-color;
     color: inherit;
     display: block;
     line-height: inherit;

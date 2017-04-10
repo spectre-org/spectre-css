@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Elements - Spectre.css</title>
-  <link rel="stylesheet" href="css/spectre.css" />
-  <link rel="stylesheet" href="css/spectre-icons.css" />
+  <link rel="stylesheet" href="dist/spectre.css" />
+  <link rel="stylesheet" href="dist/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
@@ -32,7 +32,7 @@
       <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav nav-vertical">
           <li class="nav-item">
-            <a href="index.html">Getting started</a>
+            <a href="index.html#introduction">Getting started</a>
           </li>
           <li class="nav-item active">
             <a href="elements.html">Elements</a>
@@ -711,6 +711,43 @@
 &lt;<span class="tag">/form</span>&gt;
 </code></pre>
 
+          <header class="text-center"><h4>Form sizes</h4></header>
+          <section class="notes">
+            <p>For smaller or larger input and select controls, you could add the <code>input-sm</code>/<code>input-lg</code>, <code>select-sm</code>/<code>select-lg</code> and <code>label-sm</code>/<code>label-lg</code> classes to the elements.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-4">
+              <input class="form-input input-sm" type="text" placeholder="Name" />
+            </div>
+            <div class="column col-4">
+              <select class="form-select select-sm">
+                <option>Choose an option</option>
+                <option>Slack</option>
+                <option>Skype</option>
+                <option>Hipchat</option>
+              </select>
+            </div>
+            <div class="column col-4">
+              <label class="form-label label-sm">Label</label>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4">
+              <input class="form-input input-lg" type="text" placeholder="Name" />
+            </div>
+            <div class="column col-4">
+              <select class="form-select select-lg">
+                <option>Choose an option</option>
+                <option>Slack</option>
+                <option>Skype</option>
+                <option>Hipchat</option>
+              </select>
+            </div>
+            <div class="column col-4">
+              <label class="form-label label-lg">Label</label>
+            </div>
+          </div>
+
           <header class="text-center"><h4>Input types</h4></header>
           <div class="columns">
             <div class="column col-9 col-sm-12">
@@ -720,7 +757,7 @@
                     <label class="form-label" for="input-example-8">Email</label>
                   </div>
                   <div class="col-9">
-                    <input class="form-input" type="email" id="input-example-8" placeholder="Email" value="spectre@example.com" />
+                    <input class="form-input" type="email" id="input-example-8" placeholder="Email" value="spectre@example.com" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" />
                   </div>
                 </div>
                 <div class="form-group">
@@ -788,102 +825,6 @@
                   </div>
                 </div>
               </form>
-            </div>
-          </div>
-
-          <header class="text-center"><h4>Form validation styles</h4></header>
-          <section class="notes">
-            <p>To use form validation styles, add <code>is-success</code> or <code>is-danger</code> class to the controls or add <code>has-success</code> or <code>has-danger</code> class to parent elements. You can use the <code>form-input-hint</code> class to provide form validation success and error messages.</p>
-          </section>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <div class="form-group">
-                <label class="form-label" for="input-example-17">Name</label>
-                <input class="form-input is-danger" type="text" id="input-example-17" placeholder="Name" />
-                <p class="form-input-hint">The name is invalid.</p>
-              </div>
-              <div class="form-group has-success">
-                <label class="form-label" for="input-example-18">Email</label>
-                <input class="form-input" type="email" id="input-example-18" placeholder="Email" />
-                <p class="form-input-hint">The email is available.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <div class="form-group">
-                <select class="form-select is-danger">
-                  <option>Choose an option</option>
-                  <option>Slack</option>
-                  <option>Skype</option>
-                  <option>Hipchat</option>
-                </select>
-                <p class="form-input-hint">The option is invalid.</p>
-              </div>
-              <div class="form-group has-success">
-                <select class="form-select">
-                  <option>Choose an option</option>
-                  <option>Slack</option>
-                  <option>Skype</option>
-                  <option>Hipchat</option>
-                </select>
-                <p class="form-input-hint">The option is available.</p>
-              </div>
-            </div>
-          </div>
-
-<!-- forms example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
-  <span class="com">&lt;!-- form validation class: has-success --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
-    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invalid.&lt;<span class="tag">/p</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-
-  <span class="com">&lt;!-- form validation class: is-success --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
-    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invalid.&lt;<span class="tag">/p</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/form</span>&gt;
-</code></pre>
-
-          <header class="text-center"><h4>Form sizes</h4></header>
-          <section class="notes">
-            <p>For smaller or larger input and select controls, you could add the <code>input-sm</code>/<code>input-lg</code>, <code>select-sm</code>/<code>select-lg</code> and <code>label-sm</code>/<code>label-lg</code> classes to the elements.</p>
-          </section>
-          <div class="columns">
-            <div class="column col-4">
-              <input class="form-input input-sm" type="text" placeholder="Name" />
-            </div>
-            <div class="column col-4">
-              <select class="form-select select-sm">
-                <option>Choose an option</option>
-                <option>Slack</option>
-                <option>Skype</option>
-                <option>Hipchat</option>
-              </select>
-            </div>
-            <div class="column col-4">
-              <label class="form-label label-sm">Label</label>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-4">
-              <input class="form-input input-lg" type="text" placeholder="Name" />
-            </div>
-            <div class="column col-4">
-              <select class="form-select select-lg">
-                <option>Choose an option</option>
-                <option>Slack</option>
-                <option>Skype</option>
-                <option>Hipchat</option>
-              </select>
-            </div>
-            <div class="column col-4">
-              <label class="form-label label-lg">Label</label>
             </div>
           </div>
 
@@ -958,6 +899,65 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
+          <header class="text-center"><h4>Form validation styles</h4></header>
+          <section class="notes">
+            <p>To use form validation styles, add <code>is-success</code> or <code>is-error</code> class to the controls or add <code>has-success</code> or <code>has-error</code> class to parent elements. You can use the <code>form-input-hint</code> class to provide form validation success and error messages.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label" for="input-example-17">Name</label>
+                <input class="form-input is-error" type="text" id="input-example-17" placeholder="Name" />
+                <p class="form-input-hint">The name is invalid.</p>
+              </div>
+              <div class="form-group has-success">
+                <label class="form-label" for="input-example-18">Email</label>
+                <input class="form-input" type="email" id="input-example-18" placeholder="Email" />
+                <p class="form-input-hint">The email is available.</p>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <select class="form-select is-error">
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+                <p class="form-input-hint">The option is invalid.</p>
+              </div>
+              <div class="form-group has-success">
+                <select class="form-select">
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+                <p class="form-input-hint">The option is available.</p>
+              </div>
+            </div>
+          </div>
+
+<!-- forms example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
+  <span class="com">&lt;!-- form validation class: has-success --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invalid.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  <span class="com">&lt;!-- form validation class: is-success --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invalid.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/form</span>&gt;
+</code></pre>
+
           <header class="text-center"><h4>Form disabled styles</h4></header>
           <section class="notes">
             <p>Add the <code>disabled</code> attribute to the element or &lt;fieldset&gt; for a disabled form components style.</p>
@@ -1016,6 +1016,7 @@
           <section class="notes">
             <p><strong>Icons</strong> are single-element, responsive and pure CSS icons. You can include <code>spectre-icons.css</code> located in the <code>dist</code> folder to your web &lt;head&gt; to have these CSS icons.</p>
           </section>
+          <header class="text-center"><h4>Navigation</h4></header>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1067,6 +1068,12 @@
             </div>
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-caret"></i>
+              </button>
+              <p>icon-caret</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
                 <i class="icon icon-menu"></i>
               </button>
               <p>icon-menu</p>
@@ -1076,18 +1083,6 @@
                 <i class="icon icon-apps"></i>
               </button>
               <p>icon-apps</p>
-            </div>
-            <div class="column col-3 col-md-6">
-              <button class="btn btn-primary btn-action btn-lg">
-                <i class="icon icon-resize-horiz"></i>
-              </button>
-              <p>icon-resize-horiz</p>
-            </div>
-            <div class="column col-3 col-md-6">
-              <button class="btn btn-primary btn-action btn-lg">
-                <i class="icon icon-resize-vert"></i>
-              </button>
-              <p>icon-resize-vert</p>
             </div>
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1101,11 +1096,20 @@
               </button>
               <p>icon-more-vert</p>
             </div>
+          </div>
+          <header class="text-center"><h4>Action</h4></header>
+          <div class="columns">
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
-                <i class="icon icon-caret"></i>
+                <i class="icon icon-resize-horiz"></i>
               </button>
-              <p>icon-caret</p>
+              <p>icon-resize-horiz</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-resize-vert"></i>
+              </button>
+              <p>icon-resize-vert</p>
             </div>
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1130,6 +1134,18 @@
                 <i class="icon icon-check"></i>
               </button>
               <p>icon-check</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-stop"></i>
+              </button>
+              <p>icon-stop</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-shutdown"></i>
+              </button>
+              <p>icon-shutdown</p>
             </div>
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1163,6 +1179,12 @@
             </div>
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-delete"></i>
+              </button>
+              <p>icon-delete</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
                 <i class="icon icon-share"></i>
               </button>
               <p>icon-share</p>
@@ -1179,12 +1201,9 @@
               </button>
               <p>icon-upload</p>
             </div>
-            <div class="column col-3 col-md-6">
-              <button class="btn btn-primary btn-action btn-lg">
-                <i class="icon icon-time"></i>
-              </button>
-              <p>icon-time</p>
-            </div>
+          </div>
+          <header class="text-center"><h4>Object</h4></header>
+          <div class="columns">
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
                 <i class="icon icon-mail"></i>
@@ -1199,9 +1218,39 @@
             </div>
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-message"></i>
+              </button>
+              <p>icon-message</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-photo"></i>
+              </button>
+              <p>icon-photo</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-time"></i>
+              </button>
+              <p>icon-time</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-location"></i>
+              </button>
+              <p>icon-location</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
                 <i class="icon icon-link"></i>
               </button>
               <p>icon-link</p>
+            </div>
+            <div class="column col-3 col-md-6">
+              <button class="btn btn-primary btn-action btn-lg">
+                <i class="icon icon-emoji"></i>
+              </button>
+              <p>icon-emoji</p>
             </div>
           </div>
 
@@ -1222,11 +1271,11 @@
               <span class="label label-primary">primary label</span>
               <span class="label label-success">success label</span>
               <span class="label label-warning">warning label</span>
-              <span class="label label-danger">danger label</span>
+              <span class="label label-error">error label</span>
             </div>
           </div>
           <section class="notes">
-            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-danger</code> for a primary colored label.</p>
+            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for a primary colored label.</p>
           </section>
 
 <!-- labels example -->

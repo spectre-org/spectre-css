@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
-  <link rel="stylesheet" href="css/spectre.css" />
-  <link rel="stylesheet" href="css/spectre-icons.css" />
+  <link rel="stylesheet" href="dist/spectre.css" />
+  <link rel="stylesheet" href="dist/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
@@ -77,7 +77,7 @@
       <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav">
           <li class="nav-item active">
-            <a href="index.html">Getting started</a>
+            <a href="index.html#introduction">Getting started</a>
             <ul class="nav">
               <li class="nav-item">
                 <a href="index.html#introduction">Introduction</a>
@@ -131,27 +131,35 @@
           </section>
           <section class="notes">
             <h5>Install manually</h5>
-            <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
-            <p><a href="https://github.com/picturepan2/spectre/tree/master/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+            <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
+            <p><a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+          </section>
+          <section class="notes">
             <h5>Install with NPM</h5>
 
 <!-- install with npm example -->
 <pre class="code"><code><span class="tag">$</span> npm install <span class="atv">spectre.css</span> --save
 </code></pre>
 
+          </section>
+          <section class="notes">
             <h5>Install with Yarn</h5>
 
 <!-- install with yarn example -->
 <pre class="code"><code><span class="tag">$</span> yarn add <span class="atv">spectre.css</span>
 </code></pre>
 
+          </section>
+          <section class="notes">
             <h5>Install with Bower</h5>
 
 <!-- install with bower example -->
 <pre class="code"><code><span class="tag">$</span> bower install <span class="atv">spectre.css</span> --save
 </code></pre>
 
-            <p>And include <code>spectre.css</code> in your website or Web app &lt;head&gt;. If you want the <a href="experimentals.html">Spectre Experimentals</a> components, you can add <code>spectre-exp.css</code> as well.</p>
+          </section>
+          <section class="notes">
+            <p>And include <code>spectre.css</code> in your website or Web app &lt;head&gt;. If you want the <a href="experimentals.html">Spectre Experimentals</a> and <a href="elements.html#icons">Spectre Icons</a>, you can add <code>spectre-exp.css</code> and <code>spectre-icons.css</code> accordingly.</p>
 
 <!-- install manually example -->
 <pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
@@ -165,10 +173,10 @@
         <section id="compiling" class="container">
           <header class="text-center"><h3>Custom version</h3></header>
           <section class="notes">
-            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>.</p>
+            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>, <code>spectre-exp.less</code> and <code>spectre-icons.less</code>.</p>
             <p>Then, you can build the CSS file from the command line:</p>
             <ol>
-              <li>Navigate to the root directory of Spectre where you can find <code>package.json</code> file.</li>
+              <li>Navigate to the root directory of Spectre.</li>
               <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
               <li>When completed, run <code>gulp build</code> to compile LESS to CSS and minify files.</li>
               <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
@@ -178,7 +186,7 @@
 
 <!-- file structure -->
 <pre class="code"><code>spectre/
-├── dist/
+├── dist/                               <span class="com">// Build folder (Git ignored)</span>
 │   ├── spectre-exp.css
 │   ├── spectre-exp.min.css
 │   ├── spectre-icons.css
@@ -187,14 +195,22 @@
 │   └── spectre.min.css
 │
 ├── docs/
+│   ├── dist/                           <span class="com">// Pre-built CSS folder</span>
+│   │   ├── spectre-exp.css
+│   │   ├── spectre-exp.min.css
+│   │   ├── spectre-icons.css
+│   │   ├── spectre-icons.min.css
+│   │   ├── spectre.css
+│   │   └── spectre.min.css
+|   ├── css/                            <span class="com">// Docs CSS file</span>
+│   │   └── docs.css
 |   ├── src/
-│   │   ├── docs.less
-│   │   └── ...
+│   │   └── docs.less
 │   ├── ../
 │   ├── index.html
 │   └── ...
 │
-├── src/
+├── src/                                <span class="com">// Source LESS files</span>
 │   ├── mixins.less
 │   ├── variables.less
 │   └── ...
@@ -282,7 +298,7 @@
               <div class="column col-3 col-md-6">
                 <div class="docs-color" style="background:#e85600;color:#fff;">
                   <div class="color-title">#e85600</div>
-                  <div class="color-subtitle">Danger</div>
+                  <div class="color-subtitle">Error</div>
                 </div>
               </div>
             </div>
@@ -298,11 +314,11 @@
           <section class="notes">
             <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
             <ul>
-              <li>Chrome <span class="label label-success">Last 4</span></li>
-              <li>Microsoft Edge <span class="label label-success">Last 4</span></li>
-              <li>Firefox <span class="label label-success">Last 4</span></li>
-              <li>Safari <span class="label label-success">Last 4</span></li>
-              <li>Opera <span class="label label-success">Last 4</span></li>
+              <li>Chrome <span class="label label-secondary">Last 4</span></li>
+              <li>Microsoft Edge <span class="label label-secondary">Last 4</span></li>
+              <li>Firefox <span class="label label-secondary">Last 4</span></li>
+              <li>Safari <span class="label label-secondary">Last 4</span></li>
+              <li>Opera <span class="label label-secondary">Last 4</span></li>
               <li>Internet Explorer 10+</li>
             </ul>
           </section>
@@ -319,6 +335,9 @@
               <li>
                 <a href="experimentals.html#comparison">Comparison Sliders</a>: sliders for comparing two images <small class="label label-primary">NEW</small>
               </li>
+              <li>
+                <a href="experimentals.html#timelines">Timelines</a>: ordered sequences of activities <small class="label label-primary">NEW</small>
+              </li>
             </ul>
             <p><strong>March 2017</strong></p>
             <ul>
@@ -326,10 +345,10 @@
                 <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons <small class="label label-primary">NEW</small>
               </li>
               <li>
-                <a href="components.html#popovers">Popovers</a>: small overlay content containers <small class="label label-primary">NEW</small>
+                <a href="components.html#popovers">Popovers</a>: small overlay content containers
               </li>
               <li>
-                <a href="layout.html#panels">Panels</a>: flexible view container layout with auto-expand content section <small class="label label-primary">NEW</small>
+                <a href="layout.html#panels">Panels</a>: flexible view container layout with auto-expand content section
               </li>
               <li>
                 <a href="experimentals.html#carousels">Carousels</a>: slideshows for cycling images

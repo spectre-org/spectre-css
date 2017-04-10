@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Components - Spectre.css</title>
-  <link rel="stylesheet" href="css/spectre.css" />
-  <link rel="stylesheet" href="css/spectre-icons.css" />
+  <link rel="stylesheet" href="dist/spectre.css" />
+  <link rel="stylesheet" href="dist/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
@@ -32,7 +32,7 @@
       <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
         <ul class="docs-nav nav">
           <li class="nav-item">
-            <a href="index.html">Getting started</a>
+            <a href="index.html#introduction">Getting started</a>
           </li>
           <li class="nav-item">
             <a href="elements.html">Elements</a>
@@ -1734,17 +1734,17 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </div>
             </div>
+            <div class="column col-9 col-sm-12">
+              <div class="toast toast-primary">
+                <button class="btn btn-clear float-right"></button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
           </div>
           <section class="notes">
             <p>Add a container element with the <code>toast</code> class. You can add any text within the container, and even icons. You may also add a close button with the <code>btn-clear</code> class if you need. </p>
           </section>
           <div class="columns">
-            <div class="column col-sm-12">
-              <div class="toast toast-primary">
-                <button class="btn btn-clear float-right"></button>
-                Toast primary
-              </div>
-            </div>
             <div class="column col-sm-12">
               <div class="toast toast-success">
                 <button class="btn btn-clear float-right"></button>
@@ -1752,25 +1752,29 @@
               </div>
             </div>
             <div class="column col-sm-12">
-              <div class="toast toast-danger">
+              <div class="toast toast-warning">
                 <button class="btn btn-clear float-right"></button>
-                Toast danger
+                Toast warning
+              </div>
+            </div>
+            <div class="column col-sm-12">
+              <div class="toast toast-error">
+                <button class="btn btn-clear float-right"></button>
+                Toast error
               </div>
             </div>
           </div>
           <section class="notes">
-            <p>And you can add the <code>toast-primary</code>, <code>toast-success</code> or <code>toast-danger</code> class for additional toast colors.</p>
+            <p>And you can add the <code>toast-primary</code>, <code>toast-success</code>, <code>toast-warning</code> or <code>toast-error</code> class for additional toast colors.</p>
           </section>
 
 <!-- toasts example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast&quot;</span>&gt;
-  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;<span class="tag">/div</span>&gt;
 
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast toast-primary&quot;</span>&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-error_outline&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>

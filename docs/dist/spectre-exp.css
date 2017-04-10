@@ -37,7 +37,7 @@
   -webkit-flex: 0 0 14.28%;
   -ms-flex: 0 0 14.28%;
   flex: 0 0 14.28%;
-  width: 14.28%;
+  max-width: 14.28%;
 }
 .calendar .calendar-header {
   background: #f8f9fa;
@@ -197,7 +197,6 @@
 .carousel {
   background: #f8f9fa;
   display: block;
-  height: 50vh;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -206,6 +205,11 @@
   height: 100%;
   left: 0;
   position: relative;
+}
+.carousel .carousel-container::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%;
 }
 .carousel .carousel-container .carousel-item {
   -webkit-animation: carousel-slideout 1s ease-in-out 1;
@@ -802,4 +806,58 @@
 }
 .slider::-ms-fill-lower {
   background: #5764c6;
+}
+.timeline .timeline-item {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+.timeline .timeline-item::before {
+  background: #f0f1f4;
+  content: "";
+  height: 100%;
+  left: 1.1rem;
+  position: absolute;
+  top: 2.4rem;
+  width: .2rem;
+}
+.timeline .timeline-item .timeline-left {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.timeline .timeline-item .timeline-content {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: .2rem 0 .2rem 1.5rem;
+}
+.timeline .timeline-item .timeline-icon {
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 2.4rem;
+  text-align: center;
+  width: 2.4rem;
+}
+.timeline .timeline-item .timeline-icon::before {
+  border: .2rem solid #5764c6;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: .8rem;
+  left: .8rem;
+  position: absolute;
+  top: .8rem;
+  width: .8rem;
+}
+.timeline .timeline-item .timeline-icon.icon-lg {
+  background: #5764c6;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.timeline .timeline-item .timeline-icon.icon-lg::before {
+  content: none;
 }
