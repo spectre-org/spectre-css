@@ -123,6 +123,27 @@
 
   header {
     padding-top: 6rem;
+
+    &:hover {
+      .anchor {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+
+  .anchor {
+    height: 0;
+    margin-left: -1em;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    &:focus,
+    &:hover {
+      height: auto;
+      text-decoration: none;
+      width: auto;
+    }
   }
 
   .notes {

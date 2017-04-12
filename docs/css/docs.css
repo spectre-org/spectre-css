@@ -99,6 +99,23 @@
 .docs-content header {
   padding-top: 6rem;
 }
+.docs-content header:hover .anchor {
+  height: auto;
+  width: auto;
+}
+.docs-content .anchor {
+  height: 0;
+  margin-left: -1em;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+.docs-content .anchor:focus,
+.docs-content .anchor:hover {
+  height: auto;
+  text-decoration: none;
+  width: auto;
+}
 .docs-content .notes {
   margin: 4rem 0;
 }
