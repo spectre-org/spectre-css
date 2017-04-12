@@ -840,8 +840,6 @@ textarea.form-input {
   outline: none;
   padding: .5rem .8rem;
   vertical-align: middle;
-}
-.form-select[multiple] {
   width: 100%;
 }
 .form-select[multiple] option {
@@ -1118,7 +1116,7 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .2rem;
-  color: #6a768f;
+  color: #5b657a;
   display: inline-block;
   line-height: 1;
   padding: .3rem .4rem;
@@ -2200,7 +2198,6 @@ code {
 .tab {
   -webkit-align-items: center;
   align-items: center;
-  border-bottom: .1rem solid #f0f1f4;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -2223,7 +2220,7 @@ code {
   color: inherit;
   display: block;
   margin-top: 0;
-  padding: .5rem 1.2rem;
+  padding: .6rem 1.2rem .4rem 1.2rem;
   text-decoration: none;
 }
 .tab .tab-item a:focus,
@@ -2319,6 +2316,7 @@ code {
   color: #5764c6;
 }
 .nav .nav-item.active > a {
+  color: #50596c;
   font-weight: bold;
 }
 .nav .nav-item.active > a:focus,
