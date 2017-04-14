@@ -1230,6 +1230,9 @@ code {
   padding-right: 1rem;
   width: 100%;
 }
+.container.grid-1280 {
+  max-width: 130rem;
+}
 .container.grid-960 {
   max-width: 98rem;
 }
@@ -1718,6 +1721,7 @@ code {
   color: #bbc1cd;
 }
 .empty {
+  background: #f8f9fa;
   border-radius: .2rem;
   color: #727e96;
   padding: 4rem;
