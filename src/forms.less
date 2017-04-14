@@ -156,6 +156,18 @@
   }
 }
 
+// validation based on :placeholder-shown (Edge doesn't support it yet)
+.form-input {
+  &:not(:placeholder-shown) {
+    &:invalid {
+      border-color: @control-color-error;
+      &:focus {
+        .control-shadow(@control-color-error);
+      }
+    }
+  }
+}
+
 // Form element: Checkbox and Radio
 .form-checkbox,
 .form-radio,
@@ -337,6 +349,7 @@
   }
 
   .form-input,
+  .form-select,
   .input-group-addon,
   .input-group-btn {
     &:first-child:not(:last-child) {

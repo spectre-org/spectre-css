@@ -25,9 +25,9 @@ Download the compiled and minified [Spectre CSS file](https://github.com/picture
 ##### Install with Bower
 `$ bower install spectre.css --save`
 
-And include it in your website or Web app &lt;head&gt; part.
+And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
 
-`<link rel="stylesheet" href="dist/spectre.min.css" />`
+`<link rel="stylesheet" href="spectre.min.css" />`
 
 ### Compiling custom version
 
@@ -45,7 +45,6 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Labels](https://picturepan2.github.io/spectre/elements.html#labels) - formatted text tags for highlighted, informative information
 - [Codes](https://picturepan2.github.io/spectre/elements.html#codes) - inline and multiline code snippets
 - [Media](https://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video classes
-- [Experimentals](https://picturepan2.github.io/spectre/experimentals.html) - experimental elements and features, mostly are not yet ready for wide use
 
 #### Layout
 - [Flexbox-grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
@@ -74,6 +73,17 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 #### Utilities
 
 - [Utilities](https://picturepan2.github.io/spectre/utilities.html) - layout, positions, display, text, shapes, loading things
+
+#### Experimentals
+- [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars) - date or date range picker and events display
+- [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - slideshows for cycling images
+- [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - sliders for comparing two images, built entirely in CSS
+- [Filters](https://picturepan2.github.io/spectre/experimentals.html#carousels) - CSS only content filters
+- [Meters](https://picturepan2.github.io/spectre/experimentals.html#meters) - representing the value within the known range
+- [Parallax](https://picturepan2.github.io/spectre/experimentals.html#parallax) - acting like Apple TV/tvOS hover parallax effect, built entirely in CSS
+- [Progress](https://picturepan2.github.io/spectre/experimentals.html#progress) - indicators for the progress completion of a task
+- [Sliders](https://picturepan2.github.io/spectre/experimentals.html#sliders) - selecting values from ranges
+- [Timelines](https://picturepan2.github.io/spectre/experimentals.html#timelines) - ordered sequences of activities
 
 ### Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
