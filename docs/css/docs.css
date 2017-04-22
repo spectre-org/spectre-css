@@ -99,10 +99,6 @@
 .docs-content header {
   padding-top: 6rem;
 }
-.docs-content header:hover .anchor {
-  height: auto;
-  width: auto;
-}
 .docs-content .anchor {
   height: 0;
   margin-left: -1em;
@@ -142,6 +138,15 @@
 .docs-content h6 {
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+.docs-content h1:hover .anchor,
+.docs-content h2:hover .anchor,
+.docs-content h3:hover .anchor,
+.docs-content h4:hover .anchor,
+.docs-content h5:hover .anchor,
+.docs-content h6:hover .anchor {
+  height: auto;
+  width: auto;
 }
 .docs-content .docs-color {
   border-radius: .2rem;

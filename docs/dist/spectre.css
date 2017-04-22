@@ -697,7 +697,8 @@ abbr[title] {
   color: currentColor;
   height: 1.6rem;
   line-height: 1.6rem;
-  margin: .2rem -.2rem .2rem .4rem;
+  margin-left: .4rem;
+  margin-right: -.2rem;
   opacity: .45;
   padding: 0 .2rem;
   text-decoration: none;
@@ -745,6 +746,11 @@ abbr[title] {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+}
+.btn-group.btn-group-block .btn {
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 .form-group:not(:last-child) {
   margin-bottom: 1rem;
@@ -1861,8 +1867,8 @@ code {
 .badge:not([data-badge])::after {
   background: #5764c6;
   background-clip: padding-box;
-  border: .1rem solid #fff;
   border-radius: 1rem;
+  box-shadow: 0 0 0 .2rem #fff;
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
@@ -1872,19 +1878,19 @@ code {
 }
 .badge[data-badge]::after {
   font-size: 1.2rem;
-  height: 2rem;
+  height: 1.8rem;
   line-height: 1;
-  min-width: 2rem;
+  min-width: 1.8rem;
   padding: .3rem .5rem;
   text-align: center;
   white-space: nowrap;
 }
 .badge:not([data-badge])::after,
 .badge[data-badge=""]::after {
-  height: .8rem;
-  min-width: .8rem;
+  height: .6rem;
+  min-width: .6rem;
   padding: 0;
-  width: .8rem;
+  width: .6rem;
 }
 .badge.btn::after {
   position: absolute;
@@ -2261,7 +2267,7 @@ code {
   transform: translate(0, 0);
 }
 .tab:not(.tab-block) .badge {
-  padding-right: 0;
+  padding-right: .2rem;
 }
 .pagination {
   display: flex;

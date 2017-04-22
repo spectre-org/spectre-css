@@ -123,7 +123,8 @@
     color: currentColor;
     height: 1.6rem;
     line-height: 1.6rem;
-    margin: .2rem -.2rem .2rem .4rem;
+    margin-left: .4rem;
+    margin-right: -.2rem;
     opacity: .45;
     padding: 0 .2rem;
     text-decoration: none;
@@ -169,5 +170,9 @@
 
   &.btn-group-block {
     display: flex;
+
+    .btn {
+      flex: 1 0 0;
+    }
   }
 }
