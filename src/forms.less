@@ -164,7 +164,45 @@
       &:focus {
         .control-shadow(@control-color-error);
       }
+
+      & + .form-input-hint {
+        color: @control-color-error;
+      }
     }
+  }
+}
+
+// Form Icons
+.has-icon-left,
+.has-icon-right {
+  position: relative;
+
+  .form-icon {
+    margin: 0 .8rem;
+    min-width: 1.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.has-icon-left {
+  .form-icon {
+    left: 0;
+  }
+
+  .form-input {
+    padding-left: 3rem;
+  }
+}
+
+.has-icon-right {
+  .form-icon {
+    right: 0;
+  }
+
+  .form-input {
+    padding-right: 3rem;
   }
 }
 
@@ -368,6 +406,10 @@
     &:focus {
       z-index: @zindex-0;
     }
+  }
+
+  .form-select {
+    width: auto;
   }
 
   &.input-inline {

@@ -903,6 +903,35 @@ textarea.form-input {
 .form-input:not(:placeholder-shown):invalid:focus {
   box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
 }
+.form-input:not(:placeholder-shown):invalid + .form-input-hint {
+  color: #e85600;
+}
+.has-icon-left,
+.has-icon-right {
+  position: relative;
+}
+.has-icon-left .form-icon,
+.has-icon-right .form-icon {
+  margin: 0 .8rem;
+  min-width: 1.4rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.has-icon-left .form-icon {
+  left: 0;
+}
+.has-icon-left .form-input {
+  padding-left: 3rem;
+}
+.has-icon-right .form-icon {
+  right: 0;
+}
+.has-icon-right .form-input {
+  padding-right: 3rem;
+}
 .form-checkbox,
 .form-radio,
 .form-switch {
@@ -1090,6 +1119,9 @@ textarea.form-input {
 .input-group .input-group-addon:focus,
 .input-group .input-group-btn:focus {
   z-index: 1;
+}
+.input-group .form-select {
+  width: auto;
 }
 .input-group.input-inline {
   display: inline-flex;

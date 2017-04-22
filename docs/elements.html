@@ -714,6 +714,9 @@
           </section>
           <div class="columns">
             <div class="column col-4">
+              <label class="form-label label-sm">Label</label>
+            </div>
+            <div class="column col-4">
               <input class="form-input input-sm" type="text" placeholder="Name" />
             </div>
             <div class="column col-4">
@@ -724,11 +727,11 @@
                 <option>Hipchat</option>
               </select>
             </div>
-            <div class="column col-4">
-              <label class="form-label label-sm">Label</label>
-            </div>
           </div>
           <div class="columns">
+            <div class="column col-4">
+              <label class="form-label label-lg">Label</label>
+            </div>
             <div class="column col-4">
               <input class="form-input input-lg" type="text" placeholder="Name" />
             </div>
@@ -740,10 +743,92 @@
                 <option>Hipchat</option>
               </select>
             </div>
+          </div>
+
+          <header class="text-center"><h4>Form icons</h4></header>
+          <section class="notes">
+            <p>Add a wrapper with the <code>has-icon-left</code>/<code>has-icon-right</code> class to &lt;input&gt; element. And add the icon with <code>form-icon</code> class next to the &lt;input&gt;.</p>
+          </section>
+          <div class="columns">
             <div class="column col-4">
-              <label class="form-label label-lg">Label</label>
+              <div class="has-icon-left">
+                <input class="form-input input-sm" type="text" placeholder="Name" />
+                <i class="form-icon icon icon-cross"></i>
+              </div>
+            </div>
+            <div class="column col-4">
+              <div class="has-icon-left">
+                <input class="form-input" type="text" placeholder="Name" />
+                <i class="form-icon icon icon-cross"></i>
+              </div>
+            </div>
+            <div class="column col-4">
+              <div class="has-icon-left">
+                <input class="form-input input-lg" type="text" placeholder="Name" />
+                <i class="form-icon icon icon-cross"></i>
+              </div>
             </div>
           </div>
+          <div class="columns">
+            <div class="column col-4">
+              <div class="has-icon-right">
+                <input class="form-input input-sm" type="text" placeholder="Name" />
+                <i class="form-icon icon icon-check"></i>
+              </div>
+            </div>
+            <div class="column col-4">
+              <div class="has-icon-right">
+                <input class="form-input" type="text" placeholder="Name" />
+                <i class="form-icon icon icon-check"></i>
+              </div>
+            </div>
+            <div class="column col-4">
+              <div class="has-icon-right">
+                <input class="form-input input-lg" type="text" placeholder="Name" />
+                <i class="form-icon icon icon-check"></i>
+              </div>
+            </div>
+          </div>
+
+<!-- form icons example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form input with Spectre icon --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;has-icon-left&quot;</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon icon icon-check&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <section class="notes">
+            <p>You can use the <code>loading</code> class for loading or posting state.</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-4">
+              <div class="has-icon-right">
+                <input class="form-input input-sm" type="text" placeholder="Name" />
+                <i class="form-icon loading"></i>
+              </div>
+            </div>
+            <div class="column col-4">
+              <div class="has-icon-right">
+                <input class="form-input" type="text" placeholder="Name" />
+                <i class="form-icon loading"></i>
+              </div>
+            </div>
+            <div class="column col-4">
+              <div class="has-icon-right">
+                <input class="form-input input-lg" type="text" placeholder="Name" />
+                <i class="form-icon loading"></i>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form input with loading icon --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;has-icon-right&quot;</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon loading&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
 
           <header class="text-center"><h4>Input types</h4></header>
           <div class="columns">
