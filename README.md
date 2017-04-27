@@ -75,6 +75,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Utilities](https://picturepan2.github.io/spectre/utilities.html) - layout, positions, display, text, shapes, loading things
 
 #### Experimentals
+- [Accordions](https://picturepan2.github.io/spectre/experimentals.html#accordions) - used to toggle sections of content
 - [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars) - date or date range picker and events display
 - [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - slideshows for cycling images
 - [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - sliders for comparing two images, built entirely in CSS
