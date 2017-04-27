@@ -1,19 +1,47 @@
 // Divider
-.divider {
-  border-top: @border-width solid @border-color;
+.divider,
+.divider-vert {
   display: block;
-  height: .1rem;
-  margin: 1rem 0;
   position: relative;
 
-  &[data-content]::before {
-    background: @light-color;
+  &[data-content]::after {
+    background: @bg-color-light;
     color: @gray-color-light;
     content: attr(data-content);
     display: inline-block;
     font-size: @font-size-sm;
     padding: 0 .8rem;
     transform: translateY(-1.1rem);
+  }
+}
+
+.divider {
+  border-top: @border-width solid @border-color;
+  height: .1rem;
+  margin: 1rem 0;
+}
+
+.divider-vert {
+  display: block;
+  padding: @layout-padding;
+
+  &::before {
+    border-left: @border-width solid @border-color;
+    bottom: @layout-padding;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: @layout-padding;
+    transform: translateX(-50%);
+  }
+
+  &[data-content]::after {
+    left: 50%;
+    padding: .4rem 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

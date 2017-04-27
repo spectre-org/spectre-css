@@ -1,4 +1,20 @@
 /*! Spectre.css Experimentals | MIT License | github.com/picturepan2/spectre */
+.accordion .accordion-item input:checked ~ .accordion-body {
+  max-height: 100rem;
+  transition: max-height 3s ease;
+}
+.accordion .accordion-item .accordion-header {
+  background: #f8f9fa;
+  display: block;
+  padding: 1rem 1.6rem;
+}
+.accordion .accordion-item .accordion-body {
+  margin-bottom: .8rem;
+  max-height: 0;
+  overflow: hidden;
+  padding: .2rem .8rem;
+  transition: max-height .3s ease;
+}
 .calendar {
   border: .1rem solid #f0f1f4;
   border-radius: .2rem;
@@ -583,8 +599,8 @@
   text-align: center;
   text-shadow: 0 0 3rem rgba(69, 77, 93, .95);
   top: 0;
-  -webkit-transform: translateZ(10rem);
-  transform: translateZ(10rem);
+  -webkit-transform: translateZ(10rem) scale(.9);
+  transform: translateZ(10rem) scale(.9);
   transition: all .4s ease;
   width: 100%;
   z-index: 1;
@@ -605,8 +621,8 @@
   background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-top-left:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(-.65rem, -.65rem, 10rem);
-  transform: translate3d(-.65rem, -.65rem, 10rem);
+  -webkit-transform: translate3d(-.65rem, -.65rem, 10rem) scale(.9);
+  transform: translate3d(-.65rem, -.65rem, 10rem) scale(.9);
 }
 .parallax .parallax-top-right {
   height: 50%;
@@ -624,8 +640,8 @@
   background: linear-gradient(-135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-top-right:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(.65rem, -.65rem, 10rem);
-  transform: translate3d(.65rem, -.65rem, 10rem);
+  -webkit-transform: translate3d(.65rem, -.65rem, 10rem) scale(.9);
+  transform: translate3d(.65rem, -.65rem, 10rem) scale(.9);
 }
 .parallax .parallax-bottom-left {
   bottom: 0;
@@ -643,8 +659,8 @@
   background: linear-gradient(45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-bottom-left:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(-.65rem, .65rem, 10rem);
-  transform: translate3d(-.65rem, .65rem, 10rem);
+  -webkit-transform: translate3d(-.65rem, .65rem, 10rem) scale(.9);
+  transform: translate3d(-.65rem, .65rem, 10rem) scale(.9);
 }
 .parallax .parallax-bottom-right {
   bottom: 0;
@@ -662,8 +678,8 @@
   background: linear-gradient(-45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
 }
 .parallax .parallax-bottom-right:hover ~ .parallax-content .parallax-front {
-  -webkit-transform: translate3d(.65rem, .65rem, 10rem);
-  transform: translate3d(.65rem, .65rem, 10rem);
+  -webkit-transform: translate3d(.65rem, .65rem, 10rem) scale(.9);
+  transform: translate3d(.65rem, .65rem, 10rem) scale(.9);
 }
 .progress {
   -webkit-appearance: none;

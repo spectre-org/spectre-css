@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.13";
+  content: "0.2.14";
 }
 /* Spectre docs style */
 .bg-gray {
@@ -37,7 +37,7 @@
   padding: 0;
 }
 .grid-header .navbar-brand {
-  color: #5b657a;
+  color: #50596c;
 }
 .grid-header .btn-link {
   color: #667189;
@@ -55,7 +55,7 @@
   margin-top: 10rem;
 }
 .grid-hero h1 {
-  color: #5b657a;
+  color: #50596c;
   font-size: 3.2rem;
   font-weight: 400;
 }
@@ -67,7 +67,7 @@
   margin-bottom: 3rem;
 }
 .grid-hero h2 u {
-  border-bottom: .2rem solid #5b657a;
+  border-bottom: .2rem solid currentColor;
   padding-bottom: .1rem;
   text-decoration: none;
 }
@@ -91,15 +91,26 @@
   color: #727e96;
 }
 .docs-content {
-  color: #667189;
   padding-top: 0;
 }
 .docs-content .container {
   padding: 1rem;
 }
 .docs-content header {
-  color: #50596c;
   padding-top: 6rem;
+}
+.docs-content .anchor {
+  height: 0;
+  margin-left: -1em;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+.docs-content .anchor:focus,
+.docs-content .anchor:hover {
+  height: auto;
+  text-decoration: none;
+  width: auto;
 }
 .docs-content .notes {
   margin: 4rem 0;
@@ -127,6 +138,15 @@
 .docs-content h6 {
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+.docs-content h1:hover .anchor,
+.docs-content h2:hover .anchor,
+.docs-content h3:hover .anchor,
+.docs-content h4:hover .anchor,
+.docs-content h5:hover .anchor,
+.docs-content h6:hover .anchor {
+  height: auto;
+  width: auto;
 }
 .docs-content .docs-color {
   border-radius: .2rem;
@@ -161,9 +181,6 @@
 .docs-content .empty .icon {
   font-size: 4rem;
 }
-.docs-content .navbar-brand .icon {
-  font-size: 3rem;
-}
 .docs-content .form-autocomplete .menu {
   position: static;
 }
@@ -196,7 +213,7 @@
     padding: 0 .5rem;
   }
   .docs-sidebar {
-    padding: 7rem 1rem 3.5rem 1rem;
+    padding: 7rem 1rem 5rem 1rem;
   }
   .docs-sidebar .docs-nav {
     position: relative;

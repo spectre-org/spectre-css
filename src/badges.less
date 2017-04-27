@@ -8,8 +8,8 @@
     &::after {
       background: @primary-color;
       background-clip: padding-box;
-      border: @border-width solid @bg-color-light;
       border-radius: 1rem;
+      box-shadow: 0 0 0 .2rem @bg-color-light;
       color: @light-color;
       content: attr(data-badge);
       display: inline-block;
@@ -19,9 +19,9 @@
   &[data-badge] {
     &::after {
       font-size: @font-size-sm;
-      height: 2rem;
+      height: 1.8rem;
       line-height: 1;
-      min-width: 2rem;
+      min-width: 1.8rem;
       padding: .3rem .5rem;
       text-align: center;
       white-space: nowrap;
@@ -30,10 +30,10 @@
   &:not([data-badge]),
   &[data-badge=''] {
     &::after {
-      height: .8rem;
-      min-width: .8rem;
+      height: .6rem;
+      min-width: .6rem;
       padding: 0;
-      width: .8rem;
+      width: .6rem;
     }
   }
 

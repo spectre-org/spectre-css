@@ -2,6 +2,8 @@
 @parallax-deg: 3deg;
 @parallax-offset: .65rem;
 @parallax-offset-z: 10rem;
+@parallax-perspective: 100rem;
+@parallax-scale: 1 - unit(@parallax-offset-z / @parallax-perspective);
 
 .parallax {
   display: block;
@@ -12,7 +14,7 @@
   .parallax-content {
     height: auto;
     .shadow-variant(2rem);
-    transform: perspective(100rem);
+    transform: perspective(@parallax-perspective);
     transform-style: preserve-3d;
     transition: all .4s ease;
     width: 100%;
@@ -39,7 +41,7 @@
     text-align: center;
     text-shadow: 0 0 3rem fade(@dark-color, 95%);
     top: 0;
-    transform: translateZ(@parallax-offset-z);
+    transform: translateZ(@parallax-offset-z) scale(@parallax-scale);
     transition: all .4s ease;
     width: 100%;
     z-index: @zindex-0;
@@ -51,14 +53,14 @@
     top: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(100rem) rotateX(-@parallax-deg) rotateY(@parallax-deg);
+      transform: perspective(@parallax-perspective) rotateX(-@parallax-deg) rotateY(@parallax-deg);
 
       &::before {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d(-@parallax-offset, -@parallax-offset, @parallax-offset-z);
+        transform: translate3d(-@parallax-offset, -@parallax-offset, @parallax-offset-z) scale(@parallax-scale);
       }
     }
   }
@@ -69,14 +71,14 @@
     top: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(100rem) rotateX(-@parallax-deg) rotateY(-@parallax-deg);
+      transform: perspective(@parallax-perspective) rotateX(-@parallax-deg) rotateY(-@parallax-deg);
 
       &::before {
         background: linear-gradient(-135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d(@parallax-offset, -@parallax-offset, @parallax-offset-z);
+        transform: translate3d(@parallax-offset, -@parallax-offset, @parallax-offset-z) scale(@parallax-scale);
       }
     }
   }
@@ -87,14 +89,14 @@
     left: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(100rem) rotateX(@parallax-deg) rotateY(@parallax-deg);
+      transform: perspective(@parallax-perspective) rotateX(@parallax-deg) rotateY(@parallax-deg);
 
       &::before {
         background: linear-gradient(45deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d(-@parallax-offset, @parallax-offset, @parallax-offset-z);
+        transform: translate3d(-@parallax-offset, @parallax-offset, @parallax-offset-z) scale(@parallax-scale);
       }
     }
   }
@@ -105,19 +107,20 @@
     right: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective(100rem) rotateX(@parallax-deg) rotateY(-@parallax-deg);
+      transform: perspective(@parallax-perspective) rotateX(@parallax-deg) rotateY(-@parallax-deg);
 
       &::before {
         background: linear-gradient(-45deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d(@parallax-offset, @parallax-offset, @parallax-offset-z);
+        transform: translate3d(@parallax-offset, @parallax-offset, @parallax-offset-z) scale(@parallax-scale);
       }
     }
   }
 }
 
+// Mixin: Parallax direction
 .parallax-dir() {
   height: 50%;
   position: absolute;

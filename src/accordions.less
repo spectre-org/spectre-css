@@ -1,0 +1,25 @@
+// Accordions
+.accordion {
+  .accordion-item {
+    input {
+      &:checked ~ .accordion-body {
+        max-height: 100rem;
+        transition: max-height 3s ease;
+      }
+    }
+
+    .accordion-header {
+      background: @bg-color;
+      display: block;
+      padding: 1rem 1.6rem;
+    }
+
+    .accordion-body {
+      margin-bottom: .8rem;
+      max-height: 0;
+      overflow: hidden;
+      padding: .2rem .8rem;
+      transition: max-height .3s ease;
+    }
+  }
+}

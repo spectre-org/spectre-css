@@ -102,10 +102,9 @@
   outline: none;
   padding: .5rem .8rem;
   vertical-align: middle;
+  width: 100%;
 
   &[multiple] {
-    width: 100%;
-
     option {
       padding: .2rem .4rem;
     }
@@ -157,6 +156,56 @@
   }
 }
 
+// validation based on :placeholder-shown (Edge doesn't support it yet)
+.form-input {
+  &:not(:placeholder-shown) {
+    &:invalid {
+      border-color: @control-color-error;
+      &:focus {
+        .control-shadow(@control-color-error);
+      }
+
+      & + .form-input-hint {
+        color: @control-color-error;
+      }
+    }
+  }
+}
+
+// Form Icons
+.has-icon-left,
+.has-icon-right {
+  position: relative;
+
+  .form-icon {
+    margin: 0 .8rem;
+    min-width: 1.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.has-icon-left {
+  .form-icon {
+    left: 0;
+  }
+
+  .form-input {
+    padding-left: 3rem;
+  }
+}
+
+.has-icon-right {
+  .form-icon {
+    right: 0;
+  }
+
+  .form-input {
+    padding-right: 3rem;
+  }
+}
+
 // Form element: Checkbox and Radio
 .form-checkbox,
 .form-radio,
@@ -196,6 +245,7 @@
   padding: .2rem 2rem;
 
   .form-icon {
+    background: @bg-color-light;
     height: 1.4rem;
     left: 0;
     top: .5rem;
@@ -337,6 +387,7 @@
   }
 
   .form-input,
+  .form-select,
   .input-group-addon,
   .input-group-btn {
     &:first-child:not(:last-child) {
@@ -355,6 +406,10 @@
     &:focus {
       z-index: @zindex-0;
     }
+  }
+
+  .form-select {
+    width: auto;
   }
 
   &.input-inline {

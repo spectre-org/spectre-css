@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.13";
+  content: "0.2.14";
 }
 // Core variables and mixins
 @import '../../src/variables.less';
@@ -49,7 +49,7 @@
   }
 
   .navbar-brand {
-    color: lighten(@body-font-color, 5%);
+    color: @body-font-color;
   }
 
   .btn-link {
@@ -71,7 +71,7 @@
   margin-bottom: 4rem;
 
   h1 {
-    color: lighten(@body-font-color, 5%);
+    color: @body-font-color;
     font-size: 3.2rem;
     font-weight: 400;
   }
@@ -84,7 +84,7 @@
     margin-bottom: 3rem;
 
     u {
-      border-bottom: .2rem solid lighten(@body-font-color, 5%);
+      border-bottom: .2rem solid currentColor;
       padding-bottom: .1rem;
       text-decoration: none;
     }
@@ -115,7 +115,6 @@
 }
 
 .docs-content {
-  color: lighten(@body-font-color, 10%);
   padding-top: 0;
 
   .container {
@@ -123,8 +122,21 @@
   }
 
   header {
-    color: @body-font-color;
     padding-top: 6rem;
+  }
+
+  .anchor {
+    height: 0;
+    margin-left: -1em;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    &:focus,
+    &:hover {
+      height: auto;
+      text-decoration: none;
+      width: auto;
+    }
   }
 
   .notes {
@@ -159,6 +171,13 @@
   h6 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    &:hover {
+      .anchor {
+        height: auto;
+        width: auto;
+      }
+    }
   }
 
   .docs-color {
@@ -201,10 +220,6 @@
     font-size: 4rem;
   }
 
-  .navbar-brand .icon {
-    font-size: 3rem;
-  }
-
   .form-autocomplete .menu {
     position: static;
   }
@@ -240,7 +255,7 @@
   }
 
   .docs-sidebar {
-    padding: 7rem 1rem 3.5rem 1rem;
+    padding: 7rem 1rem 5rem 1rem;
 
       .docs-nav {
         position: relative;

@@ -117,7 +117,7 @@
 
       <div class="docs-content column col-9 col-sm-12">
         <section id="introduction" class="container">
-          <header class="text-center"><h3>Introduction</h3></header>
+          <header class="text-center"><h3><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3></header>
           <section class="notes">
             <p><strong>Spectre.css</strong> is a lightweight and responsive and modern CSS framework for faster and extensible development.</p>
             <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
@@ -125,7 +125,7 @@
         </section>
 
         <section id="installation" class="container">
-          <header class="text-center"><h3>Installation</h3></header>
+          <header class="text-center"><h3><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3></header>
           <section class="notes">
             <p>There are 4 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.</p>
           </section>
@@ -159,19 +159,19 @@
 
           </section>
           <section class="notes">
-            <p>And include <code>spectre.css</code> in your website or Web app &lt;head&gt;. If you want the <a href="experimentals.html">Spectre Experimentals</a> and <a href="elements.html#icons">Spectre Icons</a>, you can add <code>spectre-exp.css</code> and <code>spectre-icons.css</code> accordingly.</p>
+            <p>And include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. If you want the <a href="elements.html#icons">Spectre Icons</a> and <a href="experimentals.html">Experimentals</a>, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
 
 <!-- install manually example -->
-<pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre.min.css&quot;</span> /&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre-exp.min.css&quot;</span> /&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;dist/spectre-icons.min.css&quot;</span> /&gt;
+<pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span> /&gt;
 </code></pre>
 
           </section>
         </section>
 
         <section id="compiling" class="container">
-          <header class="text-center"><h3>Custom version</h3></header>
+          <header class="text-center"><h3><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3></header>
           <section class="notes">
             <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>, <code>spectre-exp.less</code> and <code>spectre-icons.less</code>.</p>
             <p>Then, you can build the CSS file from the command line:</p>
@@ -220,7 +220,7 @@
 └── spectre.less
 </code></pre>
 
-          <header id="variables" class="text-center"><h4>Variables</h4></header>
+          <header id="variables" class="text-center"><h4><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4></header>
           <section class="notes">
             <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.
             <h5>Colors</h5>
@@ -306,29 +306,32 @@
         </section>
 
         <section id="accessibility" class="container">
-          <header class="text-center"><h3>Accessibility <small class="label">coming soon</small></h3></header>
+          <header class="text-center"><h3><a href="#accessibility" class="anchor" aria-hidden="true">#</a>Accessibility <small class="label">coming soon</small></h3></header>
         </section>
 
         <section id="browsers" class="container">
-          <header class="text-center"><h3>Browser support</h3></header>
+          <header class="text-center"><h3><a href="#browsers" class="anchor" aria-hidden="true">#</a>Browser support</h3></header>
           <section class="notes">
             <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
             <ul>
-              <li>Chrome <span class="label label-secondary">Last 4</span></li>
-              <li>Microsoft Edge <span class="label label-secondary">Last 4</span></li>
-              <li>Firefox <span class="label label-secondary">Last 4</span></li>
-              <li>Safari <span class="label label-secondary">Last 4</span></li>
-              <li>Opera <span class="label label-secondary">Last 4</span></li>
+              <li>Chrome <span class="label label-success">Last 4</span></li>
+              <li>Microsoft Edge <span class="label label-success">Last 4</span></li>
+              <li>Firefox <span class="label label-success">Last 4</span></li>
+              <li>Safari <span class="label label-success">Last 4</span></li>
+              <li>Opera <span class="label label-success">Last 4</span></li>
               <li>Internet Explorer 10+</li>
             </ul>
           </section>
         </section>
 
         <section id="whatsnew" class="container">
-          <header class="text-center"><h3>What's new</h3></header>
+          <header class="text-center"><h3><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3></header>
           <section class="notes">
             <p><strong>April 2017</strong></p>
             <ul>
+              <li>
+                <a href="experimentals.html#accordions">Accordions</a>: used to toggle sections of content <small class="label label-primary">NEW</small>
+              </li>
               <li>
                 <a href="experimentals.html#filters">Filters</a>: CSS only content filters <small class="label label-primary">NEW</small>
               </li>
