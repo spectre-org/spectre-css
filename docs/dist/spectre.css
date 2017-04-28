@@ -576,13 +576,13 @@ abbr[title] {
 .table.table-striped tbody tr.active {
   background: #f0f1f4;
 }
-.table td {
+.table td,
+.table th {
   border-bottom: .1rem solid #f0f1f4;
   padding: 1.5rem 1rem;
 }
 .table th {
-  border-bottom: .1rem solid #727e96;
-  padding: 1.5rem 1rem;
+  border-bottom-color: #727e96;
 }
 .btn {
   -webkit-appearance: none;
