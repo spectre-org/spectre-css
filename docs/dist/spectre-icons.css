@@ -562,6 +562,7 @@
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
 }
+.accordion .icon,
 .btn .icon,
 .toast .icon,
 .menu .icon {

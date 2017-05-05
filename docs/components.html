@@ -44,6 +44,9 @@
             <a href="components.html">Components</a>
             <ul class="nav">
               <li class="nav-item">
+                <a href="components.html#accordions">Accordions</a>
+              </li>
+              <li class="nav-item">
                 <a href="components.html#autocomplete">Autocomplete</a>
               </li>
               <li class="nav-item">
@@ -98,6 +101,157 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div class="docs-content column col-9 col-sm-12">
+        <section id="accordions" class="container">
+          <header class="text-center"><h3><a href="#accordions" class="anchor" aria-hidden="true">#</a>Accordions</h3></header>
+          <section class="notes">
+            <p><strong>Accordions</strong> are used to toggle sections of content.</p>
+          </section>
+          <div class="columns">
+            <div class="column col-6 col-md-12">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <input type="radio" id="accordion-1" name="accordion-radio" hidden checked />
+                  <label class="accordion-header hand" for="accordion-1">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Elements
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Element 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Element 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="radio" id="accordion-2" name="accordion-radio" hidden />
+                  <label class="accordion-header hand" for="accordion-2">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Layout
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="radio" id="accordion-3" name="accordion-radio" hidden />
+                  <label class="accordion-header hand" for="accordion-3">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Components
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Component 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Component 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-md-12">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden checked />
+                  <label class="accordion-header hand" for="accordion-4">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Elements
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Element 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Element 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden />
+                  <label class="accordion-header hand" for="accordion-5">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Layout
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden />
+                  <label class="accordion-header hand" for="accordion-6">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Components
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Component 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Component 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- accordions example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- standard Accordions examples --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-item&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;accordion-1&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;accordion-checkbox&quot;</span> <span class="atn">hidden</span>/&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-header&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-right mr-5&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      Title
+    &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-body&quot;</span>&gt;
+      <span class="com">&lt;!-- Accordions content --&gt;</span>
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- Accordions item --&gt;</span>
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- mutually exclusive Accordions examples --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-item&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;accordion-1&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;accordion-radio&quot;</span> <span class="atn">hidden</span>/&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-header&quot;</span>&gt;
+      Title
+    &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-body&quot;</span>&gt;
+      <span class="com">&lt;!-- Accordions content --&gt;</span>
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- Accordions item --&gt;</span>
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </section>
+
         <section id="autocomplete" class="container">
           <header class="text-center"><h3><a href="#autocomplete" class="anchor" aria-hidden="true">#</a>Autocomplete</h3></header>
           <section class="notes">
@@ -702,22 +856,16 @@
               </ul>
             </div>
             <div class="column col-xs-12">
-              <ul class="menu">
+              <ul class="menu menu-nav">
                 <li class="divider" data-content="LINKS"></li>
                 <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Slack
-                  </a>
+                  <a href="#menus">Slack</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Hipchat
-                  </a>
+                  <a href="#menus">Hipchat</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Skype
-                  </a>
+                  <a href="#menus">Skype</a>
                 </li>
               </ul>
             </div>

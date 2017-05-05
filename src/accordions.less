@@ -2,23 +2,34 @@
 .accordion {
   .accordion-item {
     input {
-      &:checked ~ .accordion-body {
-        max-height: 100rem;
-        transition: max-height 3s ease;
+      &:checked {
+        & ~ .accordion-header {
+          .icon {
+            transform: rotate(270deg);
+            transition: all .25s ease;
+          }
+        }
+        & ~ .accordion-body {
+          max-height: 100rem;
+          transition: max-height 3s ease;
+        }
       }
     }
 
     .accordion-header {
       background: @bg-color;
       display: block;
-      padding: 1rem 1.6rem;
+      padding: 1rem;
+
+      .icon {
+        transition: all .25s ease;
+      }
     }
 
     .accordion-body {
-      margin-bottom: .8rem;
+      margin-bottom: 1rem;
       max-height: 0;
       overflow: hidden;
-      padding: .2rem .8rem;
       transition: max-height .3s ease;
     }
   }
