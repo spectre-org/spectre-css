@@ -2260,19 +2260,24 @@ code {
   margin: .5rem 0;
 }
 .breadcrumb {
-  padding: 1.2rem;
+  padding: .4rem 0;
 }
 .breadcrumb .breadcrumb-item {
+  color: #727e96;
   display: inline-block;
   margin: 0;
+  padding: .2rem 0;
 }
-.breadcrumb .breadcrumb-item:last-child {
-  color: #acb3c2;
+.breadcrumb .breadcrumb-item:not(:last-child) {
+  margin-right: .4rem;
+}
+.breadcrumb .breadcrumb-item:not(:last-child) a {
+  color: #727e96;
 }
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
   color: #e7e9ed;
   content: "/";
-  padding: 0 .4rem;
+  padding-right: .4rem;
 }
 .tab {
   -webkit-align-items: center;
