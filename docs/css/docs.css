@@ -6,11 +6,11 @@
 /* Spectre docs style */
 .bg-gray {
   background: #f8f9fa;
-  color: #667189;
+  color: #5b657a;
   padding: 1rem;
 }
 .bg-dark {
-  background: #50596c;
+  background: #454d5d;
   color: #fff;
   padding: 1rem;
 }
@@ -20,6 +20,7 @@
   padding: 1rem;
 }
 .section-header {
+  background: rgba(248, 249, 250, .9);
   padding: 1rem .5rem;
   position: fixed;
   top: 0;
@@ -37,17 +38,17 @@
   padding: 0;
 }
 .grid-header .navbar-brand {
-  color: #50596c;
+  color: #454d5d;
 }
 .grid-header .btn-link {
-  color: #667189;
+  color: #5b657a;
   padding-left: .6rem;
   padding-right: .6rem;
 }
 .grid-header .btn-link:focus,
 .grid-header .btn-link:hover,
 .grid-header .btn-link:active {
-  color: #50596c;
+  color: #454d5d;
   opacity: .75;
 }
 .grid-hero {
@@ -55,12 +56,12 @@
   margin-top: 10rem;
 }
 .grid-hero h1 {
-  color: #50596c;
+  color: #454d5d;
   font-size: 3.2rem;
   font-weight: 400;
 }
 .grid-hero h2 {
-  color: #5b657a;
+  color: #50596c;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
@@ -74,7 +75,7 @@
 .grid-hero .card {
   background: none;
   border: 0;
-  color: #667189;
+  color: #5b657a;
   padding: 1rem;
 }
 .grid-hero .card .card-title {
@@ -164,7 +165,7 @@
   margin: 1.5rem 0;
 }
 .docs-content .code {
-  color: #667189;
+  color: #5b657a;
 }
 .docs-content .code .com {
   color: #acb3c2;
@@ -173,7 +174,7 @@
   color: #5764c6;
 }
 .docs-content .code .atn {
-  color: #667189;
+  color: #5b657a;
 }
 .docs-content .code .atv {
   color: #e06870;

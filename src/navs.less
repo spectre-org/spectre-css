@@ -15,6 +15,7 @@
     }
     &.active {
       & > a {
+        color: darken(@gray-color-dark, 10%);
         font-weight: bold;
         &:focus,
         &:hover {
@@ -27,9 +28,5 @@
   & .nav {
     margin-bottom: 1rem;
     margin-left: 2rem;
-
-    a {
-      color: @gray-color;
-    }
   }
 }

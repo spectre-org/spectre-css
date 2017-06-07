@@ -391,7 +391,7 @@ html {
 }
 body {
   background: #fff;
-  color: #50596c;
+  color: #454d5d;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
   overflow-x: hidden;
@@ -403,7 +403,7 @@ a {
   text-decoration: none;
 }
 a:focus {
-  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
 }
 a:focus,
 a:hover,
@@ -419,7 +419,7 @@ h4,
 h5,
 h6 {
   color: inherit;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   margin-top: 0;
@@ -499,7 +499,7 @@ dl dd {
 mark {
   background: #ffe9b3;
   border-radius: .2rem;
-  color: #50596c;
+  color: #454d5d;
   display: inline-block;
   line-height: 1;
   padding: .3rem .4rem;
@@ -611,7 +611,7 @@ abbr[title] {
 }
 .btn:focus {
   background: #fbfbfe;
-  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
   text-decoration: none;
 }
 .btn:hover {
@@ -773,7 +773,7 @@ abbr[title] {
   background-image: none;
   border: .1rem solid #c4c9d3;
   border-radius: .2rem;
-  color: #50596c;
+  color: #454d5d;
   display: block;
   font-size: 1.4rem;
   height: 3.2rem;
@@ -787,7 +787,7 @@ abbr[title] {
 }
 .form-input:focus {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
 }
 .form-input::-webkit-input-placeholder {
   color: #acb3c2;
@@ -858,7 +858,7 @@ textarea.form-input {
 }
 .form-select:focus {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
 }
 .form-select::-ms-expand {
   display: none;
@@ -953,7 +953,7 @@ textarea.form-input {
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
 }
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon,
@@ -1165,7 +1165,7 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .2rem;
-  color: #5b657a;
+  color: #50596c;
   display: inline-block;
   line-height: 1;
   padding: .3rem .4rem;
@@ -1198,7 +1198,7 @@ code {
 }
 .code {
   border-radius: .2rem;
-  color: #50596c;
+  color: #454d5d;
   line-height: 2rem;
   position: relative;
 }
@@ -1766,7 +1766,7 @@ code {
   font-size: 2rem;
 }
 .panel .panel-subtitle {
-  color: #bbc1cd;
+  color: #acb3c2;
 }
 .empty {
   background: #f8f9fa;
@@ -1780,7 +1780,7 @@ code {
   margin: 1rem auto;
 }
 .empty .empty-subtitle {
-  color: #bbc1cd;
+  color: #acb3c2;
 }
 .empty .empty-action {
   margin-top: 1.5rem;
@@ -1828,7 +1828,7 @@ code {
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(87, 100, 198, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
 }
 .form-autocomplete .form-autocomplete-input .form-input {
   border-color: transparent;
@@ -2079,8 +2079,7 @@ code {
   font-size: 2rem;
 }
 .card .card-subtitle {
-  color: #bbc1cd;
-  font-size: 1.2rem;
+  color: #acb3c2;
 }
 .chip {
   -webkit-align-items: center;
@@ -2400,6 +2399,7 @@ code {
   color: #5764c6;
 }
 .nav .nav-item.active > a {
+  color: #5b657a;
   font-weight: bold;
 }
 .nav .nav-item.active > a:focus,
@@ -2409,9 +2409,6 @@ code {
 .nav .nav {
   margin-bottom: 1rem;
   margin-left: 2rem;
-}
-.nav .nav a {
-  color: #acb3c2;
 }
 .popover {
   display: inline-block;
@@ -2572,7 +2569,7 @@ code {
   line-height: 2rem;
 }
 .tile .tile-subtitle {
-  color: #bbc1cd;
+  color: #acb3c2;
   line-height: 2rem;
 }
 .tile.tile-centered {
