@@ -1789,9 +1789,9 @@ code {
   margin-top: 1.5rem;
 }
 .accordion .accordion-item input:checked ~ .accordion-header .icon {
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   transition: all .25s ease;
 }
 .accordion .accordion-item input:checked ~ .accordion-body {
