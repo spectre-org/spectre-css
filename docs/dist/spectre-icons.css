@@ -33,46 +33,73 @@
   border-right: 0;
   content: "";
   height: .65em;
+  width: .65em;
+}
+.icon-arrow-down::before {
+  -webkit-transform: translate(-50%, -75%) rotate(225deg);
+  -ms-transform: translate(-50%, -75%) rotate(225deg);
+  transform: translate(-50%, -75%) rotate(225deg);
+}
+.icon-arrow-left::before {
   -webkit-transform: translate(-25%, -50%) rotate(-45deg);
   -ms-transform: translate(-25%, -50%) rotate(-45deg);
   transform: translate(-25%, -50%) rotate(-45deg);
-  width: .65em;
 }
-.icon-arrow-down,
-.icon-downward {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+.icon-arrow-right::before {
+  -webkit-transform: translate(-75%, -50%) rotate(135deg);
+  -ms-transform: translate(-75%, -50%) rotate(135deg);
+  transform: translate(-75%, -50%) rotate(135deg);
 }
-.icon-arrow-right,
-.icon-forward {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+.icon-arrow-up::before {
+  -webkit-transform: translate(-50%, -25%) rotate(45deg);
+  -ms-transform: translate(-50%, -25%) rotate(45deg);
+  transform: translate(-50%, -25%) rotate(45deg);
 }
-.icon-arrow-up,
-.icon-upward {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+.icon-back::after,
+.icon-forward::after {
+  background: currentColor;
+  content: "";
+  height: .2rem;
+  width: .8em;
 }
-.icon-downward::before,
-.icon-back::before,
-.icon-forward::before,
-.icon-upward::before {
+.icon-downward::after,
+.icon-upward::after {
+  background: currentColor;
+  content: "";
+  height: .8em;
+  width: .2rem;
+}
+.icon-back::after {
+  left: 55%;
+}
+.icon-back::before {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.icon-downward::after,
-.icon-back::after,
-.icon-forward::after,
+.icon-downward::after {
+  top: 45%;
+}
+.icon-downward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) rotate(-135deg);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.icon-forward::after {
+  left: 45%;
+}
+.icon-forward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+  -ms-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
 .icon-upward::after {
-  background: currentColor;
-  content: "";
-  height: .2rem;
-  left: 55%;
-  width: .8em;
+  top: 55%;
+}
+.icon-upward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .icon-caret::before {
   border-left: .3em solid transparent;
