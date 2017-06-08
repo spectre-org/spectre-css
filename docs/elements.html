@@ -89,10 +89,10 @@
           <section class="notes">
             <h1>H1 Title <small class="label">5rem</small></h1>
             <h2>H2 Title <small class="label">4rem</small></h2>
-            <h3>H3 Title <span class="label">3rem</span></h3>
-            <h4>H4 Title <span class="label">2.4rem</span></h4>
-            <h5>H5 Title <span class="label">2rem</span></h5>
-            <h6>H6 Title <span class="label">1.6rem</span></h6>
+            <h3>H3 Title <small class="label">3rem</small></h3>
+            <h4>H4 Title <small class="label">2.4rem</small></h4>
+            <h5>H5 Title <small class="label">2rem</small></h5>
+            <h6>H6 Title <small class="label">1.6rem</small></h6>
           </section>
 
 <!-- headings example -->
@@ -355,15 +355,51 @@
           </section>
           <div class="columns">
             <div class="column col-xs-12">
-              <button class="btn">default button</button>
+              <button class="btn">default normal</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary">primary button</button>
+              <button class="btn btn-primary">primary normal</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-link">link button</button>
+              <button class="btn btn-link">link normal</button>
             </div>
           </div>
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn active">default active</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary active">primary active</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-link active">link active</button>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. </p>
+          </section>
+
+          <section class="notes">
+            <p>Add the <code>disabled</code> class or the <code>disabled</code> attribute for a disabled button.</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn disabled" tabindex="-1">default disabled</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-primary" disabled tabindex="-1">primary disabled</button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-link" disabled tabindex="-1">link disabled</button>
+            </div>
+          </div>
+
+          <section class="notes">
+            <p>A button with the <code>loading</code> class can show loading indicator.</p>
+          </section>
+
           <div class="columns">
             <div class="column col-xs-12">
               <button class="btn loading">default button</button>
@@ -375,67 +411,21 @@
               <button class="btn btn-link loading">link button</button>
             </div>
           </div>
-          <section class="notes">
-            <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. A button with the <code>loading</code> class can show loading indicator.  </p>
-          </section>
 
 <!-- buttons example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
 
+<span class="com">&lt;!-- buttons with disabled state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+
 <span class="com">&lt;!-- a button with loading state --&gt;</span>
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
-          <section class="notes">
-            <p>Add the <code>disabled</code> class or the <code>disabled</code> attribute for a disabled button.</p>
-          </section>
-          <div class="columns">
-            <div class="column col-xs-12">
-              <button class="btn disabled" tabindex="-1">default button</button>
-            </div>
-            <div class="column col-xs-12">
-              <button class="btn btn-primary" disabled tabindex="-1">primary button</button>
-            </div>
-            <div class="column col-xs-12">
-              <button class="btn btn-link" disabled tabindex="-1">link button</button>
-            </div>
-          </div>
-
           <header class="text-center"><h4>Button sizes</h4></header>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <button class="btn btn-primary btn-lg">large button</button>
-              <button class="btn btn-primary">normal</button>
-              <button class="btn btn-primary btn-sm">small</button>
-            </div>
-            <div class="column col-3 col-xs-12">
-              <button class="btn btn-action btn-primary btn-lg"><i class="icon icon-menu"></i></button>
-              <button class="btn btn-action btn-primary"><i class="icon icon-menu"></i></button>
-              <button class="btn btn-action btn-primary btn-sm"><i class="icon icon-menu"></i></button>
-            </div>
-            <div class="column col-3 col-xs-12">
-              <button class="btn btn-action btn-primary btn-lg circle"><i class="icon icon-arrow-up"></i></button>
-              <button class="btn btn-action btn-primary circle"><i class="icon icon-arrow-up"></i></button>
-              <button class="btn btn-action btn-primary btn-sm circle"><i class="icon icon-arrow-up"></i></button>
-            </div>
-          </div>
-          <section class="notes">
-            <p>Add the <code>btn-sm</code> or <code>btn-lg</code> class for small or large button size. Also, you can add the <code>btn-block</code> class for a full-width button. </p>
-            <p>Please note that you could use the <code>btn-action</code> class for a square button, or add another <code>circle</code> class for a round button, which is often used as a Float Action Button (FAB).</p>
-          </section>
-
-<!-- buttons example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
-
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
-
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
-</code></pre>
-
           <div class="columns">
             <div class="column">
               <button class="btn btn-primary btn-lg"><i class="icon icon-arrow-left"></i> large</button>
@@ -446,11 +436,41 @@
               <button class="btn btn-primary btn-sm">small</button>
             </div>
           </div>
+          <section class="notes">
+            <p>Add the <code>btn-sm</code> or <code>btn-lg</code> class for small or large button size. Also, you can add the <code>btn-block</code> class for a full-width button. </p>
+          </section>
 
 <!-- buttons example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-block&quot;</span>&gt;block button&lt;<span class="tag">/button</span>&gt;
+
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-lg&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; large&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; normal&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-sm&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; small&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+          <section class="notes">
+            <p>Please note that you could use the <code>btn-action</code> class for a square button, or add another <code>circle</code> class for a round button, which is often used as a Float Action Button (FAB).</p>
+          </section>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn btn-action btn-primary btn-lg"><i class="icon icon-menu"></i></button>
+              <button class="btn btn-action btn-primary"><i class="icon icon-menu"></i></button>
+              <button class="btn btn-action btn-primary btn-sm"><i class="icon icon-menu"></i></button>
+            </div>
+            <div class="column col-xs-12">
+              <button class="btn btn-action btn-primary btn-lg circle"><i class="icon icon-arrow-up"></i></button>
+              <button class="btn btn-action btn-primary circle"><i class="icon icon-arrow-up"></i></button>
+              <button class="btn btn-action btn-primary btn-sm circle"><i class="icon icon-arrow-up"></i></button>
+            </div>
+          </div>
+
+<!-- buttons example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
           <header class="text-center"><h4>Button groups</h4></header>
@@ -611,6 +631,10 @@
 
           <section class="notes">
             <p>You can use <code>:indeterminate</code> pseudo class for indeterminate state of checkboxes.</p>
+          </section>
+
+          <header class="text-center"><h4>Horizontal forms</h4></header>
+          <section class="notes">
             <p>If you want to have a horizontal form, add the <code>form-horizontal</code> class to the &lt;form&gt; container. And add the <code>col-[1-12]</code> class to the child elements for form row layout. </p>
           </section>
           <div class="columns">
@@ -1415,6 +1439,9 @@
           <header class="text-center"><h3><a href="#media" class="anchor" aria-hidden="true">#</a>Media</h3></header>
           <section class="notes">
             <p><strong>Media</strong> includes responsive images, figures and video classes. </p>
+          </section>
+          <header class="text-center"><h4>Images</h4></header>
+          <section class="notes">
             <p>Add the <code>img-responsive</code> class to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
           </section>
           <div class="columns">
@@ -1464,6 +1491,7 @@
 &lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
+          <header class="text-center"><h4>Video</h4></header>
           <section class="notes">
             <p>For responsive video, add a container with the <code>video-responsive</code> class. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>video-responsive-4-3</code> for 4:3 ratio video container or <code>video-responsive-1-1</code> for 1:1 ratio.</p>
           </section>

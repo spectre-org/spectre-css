@@ -403,7 +403,7 @@ a {
   text-decoration: none;
 }
 a:focus {
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
 }
 a:focus,
 a:hover,
@@ -452,6 +452,29 @@ u {
   -webkit-text-decoration-skip: ink edges;
   text-decoration-skip: ink edges;
 }
+abbr[title] {
+  border-bottom: .1rem dotted;
+  cursor: help;
+  text-decoration: none;
+}
+kbd {
+  background: #454d5d;
+  border-radius: .2rem;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: .3rem .4rem;
+  vertical-align: baseline;
+}
+mark {
+  background: #ffe9b3;
+  border-radius: .2rem;
+  color: #454d5d;
+  display: inline-block;
+  line-height: 1;
+  padding: .3rem .4rem;
+  vertical-align: baseline;
+}
 blockquote {
   border-left: .2rem solid #f0f1f4;
   margin-left: 0;
@@ -495,29 +518,6 @@ dl dt {
 }
 dl dd {
   margin: .5rem 0 1.5rem 0;
-}
-mark {
-  background: #ffe9b3;
-  border-radius: .2rem;
-  color: #454d5d;
-  display: inline-block;
-  line-height: 1;
-  padding: .3rem .4rem;
-  vertical-align: baseline;
-}
-kbd {
-  background: #454d5d;
-  border-radius: .2rem;
-  color: #fff;
-  display: inline-block;
-  line-height: 1;
-  padding: .3rem .4rem;
-  vertical-align: baseline;
-}
-abbr[title] {
-  border-bottom: .1rem dotted;
-  cursor: help;
-  text-decoration: none;
 }
 :lang(zh),
 :lang(ja),
@@ -611,7 +611,7 @@ abbr[title] {
 }
 .btn:focus {
   background: #fbfbfe;
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
   text-decoration: none;
 }
 .btn:hover {
@@ -787,7 +787,7 @@ abbr[title] {
 }
 .form-input:focus {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
 }
 .form-input::-webkit-input-placeholder {
   color: #acb3c2;
@@ -858,7 +858,7 @@ textarea.form-input {
 }
 .form-select:focus {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
 }
 .form-select::-ms-expand {
   display: none;
@@ -883,7 +883,7 @@ textarea.form-input {
 .has-success .form-select:focus,
 .form-input.is-success:focus,
 .form-select.is-success:focus {
-  box-shadow: 0 0 0 .2rem rgba(50, 182, 67, .15);
+  box-shadow: 0 0 0 .2rem rgba(50, 182, 67, .1);
 }
 .has-error .form-input,
 .has-error .form-select,
@@ -895,13 +895,13 @@ textarea.form-input {
 .has-error .form-select:focus,
 .form-input.is-error:focus,
 .form-select.is-error:focus {
-  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
+  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .1);
 }
 .form-input:not(:placeholder-shown):invalid {
   border-color: #e85600;
 }
 .form-input:not(:placeholder-shown):invalid:focus {
-  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .15);
+  box-shadow: 0 0 0 .2rem rgba(232, 86, 0, .1);
 }
 .form-input:not(:placeholder-shown):invalid + .form-input-hint {
   color: #e85600;
@@ -953,7 +953,7 @@ textarea.form-input {
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
 }
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon,
@@ -1775,6 +1775,9 @@ code {
   padding: 4rem;
   text-align: center;
 }
+.empty .empty-icon {
+  margin-bottom: 1.5rem;
+}
 .empty .empty-title,
 .empty .empty-subtitle {
   margin: 1rem auto;
@@ -1796,7 +1799,6 @@ code {
   transition: max-height 3s ease;
 }
 .accordion .accordion-item .accordion-header {
-  background: #f8f9fa;
   display: block;
   padding: 1rem;
 }
@@ -1828,7 +1830,7 @@ code {
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
   border-color: #5764c6;
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
 }
 .form-autocomplete .form-autocomplete-input .form-input {
   border-color: transparent;
@@ -2111,8 +2113,8 @@ code {
   position: relative;
 }
 .dropdown .menu {
-  -webkit-animation: slide-down .2s ease 1;
-  animation: slide-down .2s ease 1;
+  -webkit-animation: slide-down .15s ease 1;
+  animation: slide-down .15s ease 1;
   display: none;
   left: 0;
   position: absolute;
@@ -2622,6 +2624,9 @@ code {
 .toast a:active,
 .toast a.active {
   opacity: .75;
+}
+.toast .btn-clear {
+  margin: .2rem -.2rem .2rem .4rem;
 }
 .tooltip {
   position: relative;

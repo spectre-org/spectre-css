@@ -78,7 +78,7 @@
   color: #5764c6;
 }
 .calendar .calendar-date .date-item:focus {
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
 }
 .calendar .calendar-date .date-item:focus,
 .calendar .calendar-date .date-item:hover {
@@ -723,7 +723,7 @@
   width: 100%;
 }
 .slider:focus {
-  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .15);
+  box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
   outline: none;
 }
 .slider::-webkit-slider-thumb {
