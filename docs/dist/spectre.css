@@ -1840,7 +1840,7 @@ code {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   height: 2.8rem;
-  padding: .3rem .8rem;
+  line-height: 1.6rem;
   width: auto;
 }
 .form-autocomplete mark {
