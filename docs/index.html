@@ -127,13 +127,30 @@
         <section id="installation" class="container">
           <header class="text-center"><h3><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3></header>
           <section class="notes">
-            <p>There are 4 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.</p>
+            <p>There are 4 ways to get started with Spectre CSS framework in your projects. You can either install manually, from CDN or use NPM, Yarn and Bower.</p>
           </section>
           <section class="notes">
             <h5>Install manually</h5>
             <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
             <p><a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+            <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
           </section>
+
+<!-- install manually example -->
+<pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span> /&gt;
+</code></pre>
+
+          <section class="notes">
+            <h5>Install from CDN</h5>
+            <p>Alternatively, you can use the <a href="https://unpkg.com/" target="_blank">unpkg</a> CDN to load compiled Spectre.css.</p>
+          </section>
+
+<!-- install from CDN example -->
+<pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre.min.css&quot;</span> /&gt;
+</code></pre>
+
           <section class="notes">
             <h5>Install with NPM</h5>
 
@@ -158,16 +175,7 @@
 </code></pre>
 
           </section>
-          <section class="notes">
-            <p>And include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. If you want the <a href="elements.html#icons">Spectre Icons</a> and <a href="experimentals.html">Experimentals</a>, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
 
-<!-- install manually example -->
-<pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span> /&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp.min.css&quot;</span> /&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span> /&gt;
-</code></pre>
-
-          </section>
         </section>
 
         <section id="compiling" class="container">
