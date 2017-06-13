@@ -2117,6 +2117,8 @@ code {
   animation: slide-down .15s ease 1;
   display: none;
   left: 0;
+  max-height: 50vh;
+  overflow-y: auto;
   position: absolute;
   top: 100%;
 }
