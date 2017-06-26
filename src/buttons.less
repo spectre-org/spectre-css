@@ -19,14 +19,13 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    background: @secondary-color-light;
+    background: @secondary-color;
     .control-shadow();
     text-decoration: none;
   }
   &:hover {
-    background: @primary-color;
+    background: @secondary-color;
     border-color: @primary-color-dark;
-    color: @light-color;
     text-decoration: none;
   }
   &:active,
@@ -35,6 +34,12 @@
     border-color: darken(@primary-color-dark, 5%);
     color: @light-color;
     text-decoration: none;
+    &.loading {
+      &::after {
+        border-bottom-color: @light-color;
+        border-left-color: @light-color;
+      }
+    }
   }
   &[disabled],
   &:disabled,

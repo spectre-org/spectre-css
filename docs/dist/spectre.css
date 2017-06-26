@@ -610,14 +610,13 @@ dl dd {
   white-space: nowrap;
 }
 .btn:focus {
-  background: #fbfbfe;
+  background: #eff1fa;
   box-shadow: 0 0 0 .2rem rgba(69, 77, 93, .1);
   text-decoration: none;
 }
 .btn:hover {
-  background: #5764c6;
+  background: #eff1fa;
   border-color: #4c59c2;
-  color: #fff;
   text-decoration: none;
 }
 .btn:active,
@@ -626,6 +625,11 @@ dl dd {
   border-color: #3e4cb6;
   color: #fff;
   text-decoration: none;
+}
+.btn:active.loading::after,
+.btn.active.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
 }
 .btn[disabled],
 .btn:disabled,
