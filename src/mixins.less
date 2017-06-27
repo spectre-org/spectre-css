@@ -1,4 +1,5 @@
-// Core mixins
+// Mixins
+// Clearfix mixin
 .clearfix() {
   &::after {
     clear: both;
@@ -37,6 +38,23 @@
   color: @color;
 }
 
+// Shadow mixin
 .shadow-variant(@offset) {
   box-shadow: 0 @offset (@offset+.1rem)*2 fade(@dark-color, 30%);
+}
+
+// Colors mixin
+.text-color-variant(@color: @primary-color) {
+  color: @color;
+
+  a& {
+    &:focus,
+    &:hover {
+      color: darken(@color, 5%);
+    }
+  }
+}
+
+.bg-color-variant(@color: @primary-color) {
+  background: @color;
 }

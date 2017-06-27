@@ -47,22 +47,28 @@
             <a href="utilities.html">Utilities</a>
             <ul class="nav">
               <li class="nav-item">
-                <a href="utilities.html#position">Position</a>
+                <a href="utilities.html#colors">Colors</a>
               </li>
               <li class="nav-item">
                 <a href="utilities.html#display">Display</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#text">Text</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#shapes">Shapes</a>
               </li>
               <li class="nav-item">
                 <a href="utilities.html#divider">Divider</a>
               </li>
               <li class="nav-item">
                 <a href="utilities.html#loading">Loading</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#position">Position</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#shadow">Shadow</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#shapes">Shapes</a>
+              </li>
+              <li class="nav-item">
+                <a href="utilities.html#text">Text</a>
               </li>
             </ul>
           </li>
@@ -74,30 +80,77 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div class="docs-content column col-9 col-sm-12">
-        <section id="position" class="container">
-          <header class="text-center"><h3><a href="#position" class="anchor" aria-hidden="true">#</a>Position utilities</h3></header>
+        <section id="colors" class="container">
+          <header class="text-center"><h3><a href="#colors" class="anchor" aria-hidden="true">#</a>Color utilities</h3></header>
           <section class="notes">
-            <p><strong>Position utilities</strong> are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
+            <p><strong>Color utilities</strong> are used for changing colors for text, link and background.</p>
+          </section>
+          <header class="text-center"><h4>Text colors</h4></header>
+          <section class="notes">
+            <p>
+              <span class="text-primary p-5">primary color</span>
+              <span class="text-secondary bg-primary p-5 rounded">secondary color</span>
+              <span class="text-gray p-5">gray color</span>
+              <span class="text-light bg-dark p-5 rounded">light color</span>
+              <span class="text-success p-5">success color</span>
+              <span class="text-warning p-5">warning color</span>
+              <span class="text-error p-5">error color</span>
+            </p>
           </section>
 
-<!-- position utilities example -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- clear float --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;clearfix&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- float: left and right --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- position: relative, absolute and fixed --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rel&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;abs&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;fixed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- centered block --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;centered&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- margin: 10px and 5px in 4 directions. mt-10 = margin-top: 10px; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- padding: 10px and 5px in 4 directions. pt-10 = padding-top: 10px; --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<!-- colors example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-primary&quot;</span>&gt;primary color&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-secondary&quot;</span>&gt;secondary color&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-gray&quot;</span>&gt;gray color&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-light&quot;</span>&gt;light color&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-success&quot;</span>&gt;success color&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-warning&quot;</span>&gt;warning color&lt;<span class="tag">/span</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;text-error&quot;</span>&gt;error color&lt;<span class="tag">/span</span>&gt;
+</code></pre>
+
+          <section class="notes">
+            <p>
+              <a class="text-primary p-5" href="#colors">primary link</a>
+              <a class="text-secondary bg-primary p-5 rounded" href="#colors">secondary link</a>
+              <a class="text-gray p-5" href="#colors">gray link</a>
+              <a class="text-light bg-dark p-5 rounded" href="#colors">light link</a>
+              <a class="text-success p-5" href="#colors">success link</a>
+              <a class="text-warning p-5" href="#colors">warning link</a>
+              <a class="text-error p-5" href="#colors">error link</a>
+            </p>
+          </section>
+
+<!-- colors example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-primary&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;primary color&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-secondary&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;secondary color&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-gray&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;gray color&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-light&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;light color&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-success&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;success color&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-warning&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;warning color&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;text-error&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;error color&lt;<span class="tag">/a</span>&gt;
+</code></pre>
+
+          <header class="text-center"><h4>Background colors</h4></header>
+          <section class="notes">
+            <p>
+              <span class="bg-primary text-light p-5 rounded">primary bg</span>
+              <span class="bg-secondary text-primary p-5 rounded">secondary bg</span>
+              <span class="bg-dark text-light p-5 rounded">dark bg</span>
+              <span class="bg-gray p-5 rounded">gray bg</span>
+              <span class="bg-success text-light p-5 rounded">success bg</span>
+              <span class="bg-warning text-light p-5 rounded">warning bg</span>
+              <span class="bg-error text-light p-5 rounded">error bg</span>
+            </p>
+          </section>
+
+<!-- colors example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-primary&quot;</span>&gt;primary bg&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-secondary&quot;</span>&gt;secondary bg&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-dark&quot;</span>&gt;dark bg&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-gray&quot;</span>&gt;gray bg&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-success&quot;</span>&gt;success bg&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-warning&quot;</span>&gt;warning bg&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-error&quot;</span>&gt;error bg&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>
@@ -129,63 +182,6 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-hide&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- assistive text for screen reader --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-assistive&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-        </section>
-
-        <section id="text" class="container">
-          <header class="text-center"><h3><a href="#text" class="anchor" aria-hidden="true">#</a>Text utilities</h3></header>
-          <section class="notes">
-            <p><strong>Text utilities</strong> are used for text alignment, styles and overflow things.</p>
-          </section>
-
-<!-- text utilities example -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- left-aligned text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- center-aligned text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-center&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- right-aligned text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- justified text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-justify&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- Lowercased text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-lowercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Uppercased text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-uppercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Capitalized text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-capitalize&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- Normal weight text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-normal&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Bold text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-bold&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Italicized text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-italic&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Larger text (120%) --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-large&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-
-<span class="com">&lt;!-- Overflow behavior: display an ellipsis to represent clipped text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-ellipsis&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Overflow behavior: truncate the text --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-clip&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- Text may be broken at arbitrary points --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-break&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-        </section>
-
-        <section id="shapes" class="container">
-          <header class="text-center"><h3><a href="#shapes" class="anchor" aria-hidden="true">#</a>Shape utilities</h3></header>
-          <section class="notes">
-            <p><strong>Shape utilities</strong> are used for change element shapes.</p>
-          </section>
-
-<!-- shape utilities example -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- rounded element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rounded&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
-<span class="com">&lt;!-- circle element --&gt;</span>
-&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;circle&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>
@@ -243,7 +239,7 @@
             </div>
           </div>
 
-<!-- shape utilities example -->
+<!-- divider utilities example -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- divider element --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- divider element with text --&gt;</span>
@@ -276,6 +272,97 @@
 <!-- loading example -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- loading element --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </section>
+
+        <section id="position" class="container">
+          <header class="text-center"><h3><a href="#position" class="anchor" aria-hidden="true">#</a>Position utilities</h3></header>
+          <section class="notes">
+            <p><strong>Position utilities</strong> are used for useful layout and position things, including clearfix, float, position and margin/padding utilities.</p>
+          </section>
+
+<!-- position utilities example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- clear float --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;clearfix&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- float: left and right --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;float-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- position: relative, absolute and fixed --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rel&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;abs&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;fixed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- centered block --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;centered&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- margin: 10px and 5px in 4 directions. mt-10 = margin-top: 10px; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;mt-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- m-10 = margin: 10px; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;m-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;m-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- padding: 10px and 5px in 4 directions. pt-10 = padding-top: 10px; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;pt-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- p-10 = padding: 10px; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;p-10&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;p-5&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </section>
+
+        <section id="shapes" class="container">
+          <header class="text-center"><h3><a href="#shapes" class="anchor" aria-hidden="true">#</a>Shape utilities</h3></header>
+          <section class="notes">
+            <p><strong>Shape utilities</strong> are used for change element shapes.</p>
+          </section>
+
+<!-- shape utilities example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- rounded element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;rounded&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- circle element --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;circle&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </section>
+
+        <section id="text" class="container">
+          <header class="text-center"><h3><a href="#text" class="anchor" aria-hidden="true">#</a>Text utilities</h3></header>
+          <section class="notes">
+            <p><strong>Text utilities</strong> are used for text alignment, styles and overflow things.</p>
+          </section>
+
+<!-- text utilities example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- left-aligned text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- center-aligned text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-center&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- right-aligned text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- justified text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-justify&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Lowercased text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-lowercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Uppercased text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-uppercase&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Capitalized text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-capitalize&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Normal weight text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-normal&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Bold text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-bold&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Italicized text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-italic&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Larger text (120%) --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-large&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- Overflow behavior: display an ellipsis to represent clipped text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-ellipsis&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Overflow behavior: truncate the text --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-clip&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- Text may be broken at arbitrary points --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;text-break&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </section>

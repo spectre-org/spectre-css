@@ -54,7 +54,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Empty states](https://picturepan2.github.io/spectre/layout.html#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
-
+- [Accordions](https://picturepan2.github.io/spectre/experimentals.html#accordions) - used to toggle sections of content
 - [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
 - [Avatars](https://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
 - [Badges](https://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
@@ -72,10 +72,9 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 
 #### Utilities
 
-- [Utilities](https://picturepan2.github.io/spectre/utilities.html) - layout, positions, display, text, shapes, loading things
+- [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
 #### Experimentals
-- [Accordions](https://picturepan2.github.io/spectre/experimentals.html#accordions) - used to toggle sections of content
 - [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars) - date or date range picker and events display
 - [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - slideshows for cycling images
 - [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - sliders for comparing two images, built entirely in CSS

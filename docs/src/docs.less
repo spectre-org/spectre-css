@@ -8,24 +8,6 @@
 @import '../../src/mixins.less';
 
 /* Spectre docs style */
-.bg-gray {
-  background: @bg-color;
-  color: lighten(@body-font-color, 10%);
-  padding: 1rem;
-}
-
-.bg-dark {
-  background: @body-font-color;
-  color: @light-color;
-  padding: 1rem;
-}
-
-.bg-primary {
-  background: @primary-color;
-  color: @light-color;
-  padding: 1rem;
-}
-
 .section-header {
   background: fade(@bg-color, 90%);
   padding: 1rem .5rem;
@@ -36,6 +18,7 @@
 }
 
 .section-hero {
+  padding: 1rem;
   position: relative;
   z-index: 300;
 }
@@ -107,8 +90,7 @@
 
 .grid-footer {
   color: @gray-color;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  padding: 2rem 0 1rem 0;
 
   a {
     color: @gray-color-dark;
@@ -123,7 +105,7 @@
   }
 
   header {
-    padding-top: 6rem;
+    padding-top: 5.5rem;
   }
 
   .anchor {

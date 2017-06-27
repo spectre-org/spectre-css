@@ -409,7 +409,7 @@ a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #3b49af;
+  color: #4452c0;
   text-decoration: underline;
 }
 h1,
@@ -668,7 +668,7 @@ dl dd {
 .btn.btn-link:hover,
 .btn.btn-link:active,
 .btn.btn-link.active {
-  color: #3b49af;
+  color: #4452c0;
 }
 .btn.btn-sm {
   font-size: 1.2rem;
@@ -2755,6 +2755,125 @@ code {
     transform: translateY(0);
   }
 }
+.text-primary {
+  color: #5764c6;
+}
+a.text-primary:focus,
+a.text-primary:hover {
+  color: #4452c0;
+}
+.text-secondary {
+  color: #eff1fa;
+}
+a.text-secondary:focus,
+a.text-secondary:hover {
+  color: #dcdff3;
+}
+.text-gray {
+  color: #acb3c2;
+}
+a.text-gray:focus,
+a.text-gray:hover {
+  color: #9ea6b7;
+}
+.text-light {
+  color: #fff;
+}
+a.text-light:focus,
+a.text-light:hover {
+  color: #f2f2f2;
+}
+.text-success {
+  color: #32b643;
+}
+a.text-success:focus,
+a.text-success:hover {
+  color: #2da23c;
+}
+.text-warning {
+  color: #ffb700;
+}
+a.text-warning:focus,
+a.text-warning:hover {
+  color: #e6a500;
+}
+.text-error {
+  color: #e85600;
+}
+a.text-error:focus,
+a.text-error:hover {
+  color: #cf4d00;
+}
+.bg-primary {
+  background: #5764c6;
+}
+.bg-secondary {
+  background: #eff1fa;
+}
+.bg-dark {
+  background: #454d5d;
+}
+.bg-gray {
+  background: #f8f9fa;
+}
+.bg-success {
+  background: #32b643;
+}
+.bg-warning {
+  background: #ffb700;
+}
+.bg-error {
+  background: #e85600;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.inline-flex {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+}
+.hide {
+  display: none !important;
+}
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-shadow: none;
+}
+.text-assistive {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: .1rem;
+  margin: -.1rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: .1rem;
+}
+.hand {
+  cursor: pointer;
+}
 .divider,
 .divider-vert {
   display: block;
@@ -2865,6 +2984,9 @@ code {
 .ml-10 {
   margin-left: 1rem;
 }
+.m-10 {
+  margin: 1rem;
+}
 .mt-5 {
   margin-top: .5rem;
 }
@@ -2876,6 +2998,9 @@ code {
 }
 .ml-5 {
   margin-left: .5rem;
+}
+.m-5 {
+  margin: .5rem;
 }
 .pt-10 {
   padding-top: 1rem;
@@ -2889,6 +3014,9 @@ code {
 .pl-10 {
   padding-left: 1rem;
 }
+.p-10 {
+  padding: 1rem;
+}
 .pt-5 {
   padding-top: .5rem;
 }
@@ -2901,51 +3029,29 @@ code {
 .pl-5 {
   padding-left: .5rem;
 }
-.block {
-  display: block;
+.p-5 {
+  padding: .5rem;
 }
-.inline {
-  display: inline;
+.shadow-0 {
+  box-shadow: 0 0 .2rem rgba(69, 77, 93, .3);
 }
-.inline-block {
-  display: inline-block;
+.shadow-1 {
+  box-shadow: 0 .1rem .4rem rgba(69, 77, 93, .3);
 }
-.flex {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.shadow-2 {
+  box-shadow: 0 .2rem .6rem rgba(69, 77, 93, .3);
 }
-.inline-flex {
-  display: inline-flex;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
+.shadow-3 {
+  box-shadow: 0 .3rem .8rem rgba(69, 77, 93, .3);
 }
-.hide {
-  display: none !important;
+.shadow-4 {
+  box-shadow: 0 .4rem 1rem rgba(69, 77, 93, .3);
 }
-.visible {
-  visibility: visible;
+.rounded {
+  border-radius: .2rem;
 }
-.invisible {
-  visibility: hidden;
-}
-.text-hide {
-  background: transparent;
-  border: 0;
-  color: transparent;
-  font-size: 0;
-  line-height: 0;
-  text-shadow: none;
-}
-.text-assistive {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: .1rem;
-  margin: -.1rem;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: .1rem;
+.circle {
+  border-radius: 50%;
 }
 .text-left {
   text-align: left;
@@ -2996,28 +3102,4 @@ code {
   hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-}
-.hand {
-  cursor: pointer;
-}
-.shadow-0 {
-  box-shadow: 0 0 .2rem rgba(69, 77, 93, .3);
-}
-.shadow-1 {
-  box-shadow: 0 .1rem .4rem rgba(69, 77, 93, .3);
-}
-.shadow-2 {
-  box-shadow: 0 .2rem .6rem rgba(69, 77, 93, .3);
-}
-.shadow-3 {
-  box-shadow: 0 .3rem .8rem rgba(69, 77, 93, .3);
-}
-.shadow-4 {
-  box-shadow: 0 .4rem 1rem rgba(69, 77, 93, .3);
-}
-.rounded {
-  border-radius: .2rem;
-}
-.circle {
-  border-radius: 50%;
 }
