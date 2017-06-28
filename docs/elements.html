@@ -202,12 +202,26 @@
             <p lang="ko">나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로, 어리석은 백성들이 말하고자 하는 바가 있어도, 끝내 제 뜻을 펴지 못하는 사람이 많다. 내가 이를 불쌍히 여겨, 새로 스물 여덟 글자를 만드니, 사람마다 하여금 쉽게 익혀, 날마다 씀에 편하게 하고자 할 따름이다.</p>
           </section>
           <section class="notes">
-            <p>Use the <code>lang</code> attribute or add the <code>cjk</code> class to the container element to have better Asian CJK (Chinese, Japanese and Korean) support.</p>
+            <p>Use the <code>lang</code> attribute to the container element to have better Asian CJK (Chinese, Japanese and Korean) font support. </p>
           </section>
 
 <!-- east asian example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
-&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ja&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;zh-Hans&quot;</span>&gt;革命不是请客吃饭，不是做文章……&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ja&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり……&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ko&quot;</span>&gt;나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로……&lt;<span class="tag">/p</span>&gt;
+</code></pre>
+
+          <section class="notes">
+            <p>And you can use the <code>cjk</code> class or the <code>lang</code> attribute to add spacing between underlines and strike-through text for better Chinese and Japanese readability. </p>
+          </section>
+          <section class="notes">
+            <p lang="ja"><u>祇園</u><u>精舎</u>の鐘の声、諸行無常の響きあり。</p>
+            <p lang="ja"><del>祇園</del><del>精舎</del>の鐘の声、諸行無常の響きあり。</p>
+          </section>
+
+<!-- east asian example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;&lt;<span class="tag">u</span>&gt;祇園&lt;<span class="tag">/u</span>&gt;&lt;<span class="tag">u</span>&gt;精舎&lt;<span class="tag">/u</span>&gt;の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
+&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;&lt;<span class="tag">del</span>&gt;祇園&lt;<span class="tag">/del</span>&gt;&lt;<span class="tag">del</span>&gt;精舎&lt;<span class="tag">/del</span>&gt;の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
 </code></pre>
 
           <header class="text-center"><h4>Blockquote</h4></header>
