@@ -9,10 +9,10 @@
   cursor: pointer;
   display: inline-block;
   font-size: @font-size;
-  height: @unit-8;
+  height: @control-size;
   line-height: @line-height;
   outline: none;
-  padding: 5px 8px;
+  padding: @control-padding-v @control-padding-h;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -90,14 +90,14 @@
   // Button Sizes
   &.btn-sm {
     font-size: @font-size-sm;
-    height: @unit-6;
-    padding: 1px 8px;
+    height: @control-size-sm;
+    padding: @control-padding-v-sm @control-padding-h;
   }
 
   &.btn-lg {
     font-size: @font-size-lg;
-    height: @unit-10;
-    padding: 9px 8px;
+    height: @control-size-lg;
+    padding: @control-padding-v-lg @control-padding-h;
   }
 
   // Button Block
@@ -108,16 +108,16 @@
 
   // Button Action
   &.btn-action {
-    width: @unit-8;
+    width: @control-size;
     padding-left: 0;
     padding-right: 0;
 
     &.btn-sm {
-      width: @unit-6;
+      width: @control-size-sm;
     }
 
     &.btn-lg {
-      width: @unit-10;
+      width: @control-size-lg;
     }
   }
 

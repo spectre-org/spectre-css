@@ -1,7 +1,7 @@
 // Loading
 .loading {
   color: transparent !important;
-  min-height: @unit-4;
+  min-height: @control-icon-size;
   pointer-events: none;
   position: relative;
   &::after {
@@ -12,13 +12,13 @@
     border-top-color: transparent;
     content: "";
     display: block;
-    height: @unit-4;
+    height: @control-icon-size;
     left: 50%;
-    margin-left: -@unit-2;
-    margin-top: -@unit-2;
+    margin-left: -@control-icon-size / 2;
+    margin-top: -@control-icon-size / 2;
     position: absolute;
     top: 50%;
-    width: @unit-4;
+    width: @control-icon-size;
     z-index: @zindex-0;
   }
 }

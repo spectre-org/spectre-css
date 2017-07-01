@@ -859,9 +859,9 @@ textarea.form-input {
   padding: 2px 4px;
 }
 .form-select:not([multiple]) {
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 7.5px center / 8px 10px;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 7px center / 8px 10px;
   height: 32px;
-  padding-right: 24px;
+  padding-right: 22px;
 }
 .form-select:focus {
   border-color: #5764c6;
@@ -873,12 +873,12 @@ textarea.form-input {
 .form-select.select-sm {
   font-size: 12px;
   height: 24px;
-  padding: 1px 20px 1px 6px;
+  padding: 1px 22px 1px 8px;
 }
 .form-select.select-lg {
   font-size: 16px;
   height: 40px;
-  padding: 9px 24px 9px 8px;
+  padding: 9px 22px 9px 8px;
 }
 .has-success .form-input,
 .has-success .form-select,
@@ -919,31 +919,33 @@ textarea.form-input {
 }
 .has-icon-left .form-icon,
 .has-icon-right .form-icon {
-  margin: 0 8px;
-  min-width: 14px;
+  height: 14px;
+  margin: 0 5px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  width: 14px;
 }
 .has-icon-left .form-icon {
-  left: 0;
+  left: 1px;
 }
 .has-icon-left .form-input {
-  padding-left: 30px;
+  padding-left: 24px;
 }
 .has-icon-right .form-icon {
-  right: 0;
+  right: 1px;
 }
 .has-icon-right .form-input {
-  padding-right: 30px;
+  padding-right: 24px;
 }
 .form-checkbox,
 .form-radio,
 .form-switch {
   display: inline-block;
   line-height: 20px;
+  padding: 2px 22px;
   position: relative;
 }
 .form-checkbox input,
@@ -976,10 +978,6 @@ textarea.form-input {
   display: inline-block;
   position: absolute;
   transition: all .2s ease;
-}
-.form-checkbox,
-.form-radio {
-  padding: 2px 20px;
 }
 .form-checkbox .form-icon,
 .form-radio .form-icon {
@@ -1044,7 +1042,7 @@ textarea.form-input {
   width: 4px;
 }
 .form-switch {
-  padding: 2px 20px 2px 36px;
+  padding-left: 40px;
 }
 .form-switch .form-icon {
   background: #e7e9ed;
@@ -1053,7 +1051,7 @@ textarea.form-input {
   height: 18px;
   left: 0;
   top: 3px;
-  width: 30px;
+  width: 32px;
 }
 .form-switch .form-icon::before {
   background: #fff;
@@ -1068,7 +1066,7 @@ textarea.form-input {
   width: 16px;
 }
 .form-switch input:checked + .form-icon::before {
-  left: 12px;
+  left: 14px;
 }
 .form-switch input:active + .form-icon::before {
   background: #f8f9fa;
@@ -1167,7 +1165,7 @@ input.disabled + .form-icon {
 .form-horizontal .form-checkbox,
 .form-horizontal .form-radio,
 .form-horizontal .form-switch {
-  margin: 16px 0;
+  margin: 4px 0;
 }
 .label {
   background: #f8f9fa;
@@ -2925,7 +2923,7 @@ a.text-error:hover {
 }
 .loading {
   color: transparent !important;
-  min-height: 16px;
+  min-height: 14px;
   pointer-events: none;
   position: relative;
 }
@@ -2938,13 +2936,13 @@ a.text-error:hover {
   border-top-color: transparent;
   content: "";
   display: block;
-  height: 16px;
+  height: 14px;
   left: 50%;
-  margin-left: -8px;
-  margin-top: -8px;
+  margin-left: -7px;
+  margin-top: -7px;
   position: absolute;
   top: 50%;
-  width: 16px;
+  width: 14px;
   z-index: 1;
 }
 .clearfix::after,

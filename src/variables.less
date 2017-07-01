@@ -14,8 +14,8 @@
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 @base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 @fallback-font-family: "Helvetica Neue", sans-serif;
-@cjk-jp-font-family: @base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, @fallback-font-family;
 @cjk-zh-font-family: @base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", @fallback-font-family;
+@cjk-jp-font-family: @base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, @fallback-font-family;
 @cjk-ko-font-family: @base-font-family, "Malgun Gothic", @fallback-font-family;
 @body-font-family: @base-font-family, @fallback-font-family;
 
@@ -39,6 +39,14 @@
 @layout-spacing: 10px;
 @layout-spacing-sm: 5px;
 @layout-spacing-lg: 15px;
+@control-size: @unit-8;
+@control-size-sm: @unit-6;
+@control-size-lg: @unit-10;
+@control-padding-h: @unit-2;
+@control-padding-v: (@control-size - @line-height) / 2 - @border-width;
+@control-padding-v-sm: (@control-size-sm - @line-height) / 2 - @border-width;
+@control-padding-v-lg: (@control-size-lg - @line-height) / 2 - @border-width;
+@control-icon-size: 14px; 
 @control-min-width: 180px;
 @control-max-width: 320px;
 @border-radius: 2px;

@@ -8,14 +8,14 @@
 // Form element: Label
 .form-label {
   display: block;
-  padding: 6px 0;
+  padding: @control-padding-v + @border-width 0;
 
   &.label-sm {
-    padding: 2px 0;
+    padding: @control-padding-v-sm + @border-width 0;
   }
 
   &.label-lg {
-    padding: @layout-spacing 0;
+    padding: @control-padding-v-lg + @border-width 0;
   }
 }
 
@@ -30,11 +30,11 @@
   .control-transition();
   display: block;
   font-size: @font-size;
-  height: @unit-8;
+  height: @control-size;
   line-height: @line-height;
   max-width: 100%;
   outline: none;
-  padding: 5px 8px;
+  padding: @control-padding-v @control-padding-h;
   position: relative;
   width: 100%;
   &:focus {
@@ -48,14 +48,14 @@
   // Input sizes
   &.input-sm {
     font-size: @font-size-sm;
-    height: 24px;
-    padding: 1px 8px;
+    height: @control-size-sm;
+    padding: @control-padding-v-sm @control-padding-h;
   }
 
   &.input-lg {
     font-size: @font-size-lg;
-    height: 40px;
-    padding: 9px 8px;
+    height: @control-size-lg;
+    padding: @control-padding-v-lg @control-padding-h;
   }
 
   &.input-inline {
@@ -100,19 +100,19 @@
   font-size: @font-size;
   line-height: @line-height;
   outline: none;
-  padding: 5px 8px;
+  padding: @control-padding-v @control-padding-h;
   vertical-align: middle;
   width: 100%;
 
   &[multiple] {
     option {
-      padding: 2px 4px;
+      padding: @unit-h @unit-1;
     }
   }
   &:not([multiple]) {
-    background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 7.5px center / 8px 10px;
-    height: 32px;
-    padding-right: 24px;
+    background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right (@control-icon-size / 2) center / 8px 10px;
+    height: @control-size;
+    padding-right: @control-icon-size + @control-padding-h;
   }
   &:focus {
     border-color: @primary-color;
@@ -125,14 +125,14 @@
   // Select sizes
   &.select-sm {
     font-size: @font-size-sm;
-    height: 24px;
-    padding: 1px 20px 1px 6px;
+    height: @control-size-sm;
+    padding: @control-padding-v-sm (@control-icon-size + @control-padding-h) @control-padding-v-sm @control-padding-h;
   }
 
   &.select-lg {
     font-size: @font-size-lg;
-    height: 40px;
-    padding: 9px 24px 9px 8px;
+    height: @control-size-lg;
+    padding: @control-padding-v-lg (@control-icon-size + @control-padding-h) @control-padding-v-lg @control-padding-h;
   }
 }
 
@@ -178,31 +178,32 @@
   position: relative;
 
   .form-icon {
-    margin: 0 8px;
-    min-width: 14px;
+    height: @control-icon-size;
+    margin: 0 @control-padding-v;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: @control-icon-size;
   }
 }
 
 .has-icon-left {
   .form-icon {
-    left: 0;
+    left: @border-width;
   }
 
   .form-input {
-    padding-left: 30px;
+    padding-left: @control-icon-size + @control-padding-v * 2;
   }
 }
 
 .has-icon-right {
   .form-icon {
-    right: 0;
+    right: @border-width;
   }
 
   .form-input {
-    padding-right: 30px;
+    padding-right: @control-icon-size + @control-padding-v * 2;
   }
 }
 
@@ -212,6 +213,7 @@
 .form-switch {
   display: inline-block;
   line-height: @line-height;
+  padding: (@control-size-sm - @line-height) / 2  (@control-icon-size + @control-padding-h);
   position: relative;
 
   input {
@@ -242,14 +244,12 @@
 
 .form-checkbox,
 .form-radio {
-  padding: 2px 20px;
-
   .form-icon {
     background: @bg-color-light;
-    height: 14px;
+    height: @control-icon-size;
     left: 0;
-    top: 5px;
-    width: 14px;
+    top: (@control-size-sm - @control-icon-size) / 2;
+    width: @control-icon-size;
   }
 
   input {
@@ -300,7 +300,7 @@
 }
 .form-radio {
   .form-icon {
-    border-radius: 7px;
+    border-radius: @control-icon-size / 2;
   }
 
   input {
@@ -323,34 +323,34 @@
 
 // Form element: Switch
 .form-switch {
-  padding: 2px 20px 2px 36px;
+  padding-left: (@unit-8 + @control-padding-h);
 
   .form-icon {
     background: @gray-color-light;
     background-clip: padding-box;
-    border-radius: 9px;
-    height: 18px;
+    border-radius: @unit-2 + @border-width;
+    height: @unit-4 + @border-width * 2;
     left: 0;
-    top: 3px;
-    width: 30px;
+    top: (@control-size-sm - @unit-4) / 2 - @border-width;
+    width: @unit-8;
     &::before {
       background: @bg-color-light;
-      border-radius: 8px;
+      border-radius: @unit-2;
       content: "";
       display: block;
-      height: 16px;
+      height: @unit-4;
       left: 0;
       position: absolute;
       top: 0;
       .control-transition();
-      width: 16px;
+      width: @unit-4;
     }
   }
 
   input {
     &:checked + .form-icon {
       &::before {
-        left: 12px;
+        left: 14px;
       }
     }
     &:active + .form-icon {
@@ -370,15 +370,15 @@
     border: @border-width solid @border-color-dark;
     border-radius: @border-radius;
     line-height: @line-height;
-    padding: 5px 8px;
+    padding: @control-padding-v @control-padding-h;
 
     &.addon-sm {
       font-size: @font-size-sm;
-      padding: 1px 8px;
+      padding: @control-padding-v-sm @control-padding-h;
     }
     &.addon-lg {
       font-size: @font-size-lg;
-      padding: 9px 8px;
+      padding: @control-padding-v-lg @control-padding-h;
     }
   }
   .input-group-addon,
@@ -467,6 +467,6 @@ input {
   .form-checkbox,
   .form-radio,
   .form-switch {
-    margin: @unit-4 0;
+    margin: (@control-size - @control-size-sm) / 2 0;
   }
 }

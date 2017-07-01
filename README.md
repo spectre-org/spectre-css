@@ -59,7 +59,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Empty states](https://picturepan2.github.io/spectre/layout.html#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
-- [Accordions](https://picturepan2.github.io/spectre/experimentals.html#accordions) - used to toggle sections of content
+- [Accordions](https://picturepan2.github.io/spectre/components.html#accordions) - used to toggle sections of content
 - [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
 - [Avatars](https://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
 - [Badges](https://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
