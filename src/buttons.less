@@ -9,10 +9,10 @@
   cursor: pointer;
   display: inline-block;
   font-size: @font-size;
-  height: 3.2rem;
-  line-height: 2rem;
+  height: @unit-8;
+  line-height: @line-height;
   outline: none;
-  padding: .5rem .8rem;
+  padding: 5px 8px;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -90,14 +90,14 @@
   // Button Sizes
   &.btn-sm {
     font-size: @font-size-sm;
-    height: 2.4rem;
-    padding: .1rem .8rem;
+    height: @unit-6;
+    padding: 1px 8px;
   }
 
   &.btn-lg {
     font-size: @font-size-lg;
-    height: 4rem;
-    padding: .9rem .8rem;
+    height: @unit-10;
+    padding: 9px 8px;
   }
 
   // Button Block
@@ -108,16 +108,16 @@
 
   // Button Action
   &.btn-action {
-    width: 3.2rem;
+    width: @unit-8;
     padding-left: 0;
     padding-right: 0;
 
     &.btn-sm {
-      width: 2.4rem;
+      width: @unit-6;
     }
 
     &.btn-lg {
-      width: 4rem;
+      width: @unit-10;
     }
   }
 
@@ -126,14 +126,14 @@
     background: transparent;
     border: 0;
     color: currentColor;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    margin-left: .4rem;
-    margin-right: -.2rem;
+    height: @unit-4;
+    line-height: @unit-4;
+    margin-left: @unit-1;
+    margin-right: -2px;
     opacity: .45;
-    padding: 0 .2rem;
+    padding: 0 2px;
     text-decoration: none;
-    width: 1.6rem;
+    width: @unit-4;
 
     &:hover {
       opacity: .85;
@@ -158,12 +158,12 @@
     }
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
-      margin-left: -.1rem;
+      margin-left: -1px;
     }
     &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      margin-left: -.1rem;
+      margin-left: -1px;
     }
     &:focus,
     &:hover,

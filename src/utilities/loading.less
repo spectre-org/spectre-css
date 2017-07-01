@@ -1,24 +1,24 @@
 // Loading
 .loading {
   color: transparent !important;
-  min-height: 1.6rem;
+  min-height: @unit-4;
   pointer-events: none;
   position: relative;
   &::after {
     animation: loading 500ms infinite linear;
-    border: .2rem solid @primary-color;
-    border-radius: .8rem;
+    border: @border-width-lg solid @primary-color;
+    border-radius: @unit-2;
     border-right-color: transparent;
     border-top-color: transparent;
     content: "";
     display: block;
-    height: 1.6rem;
+    height: @unit-4;
     left: 50%;
-    margin-left: -.8rem;
-    margin-top: -.8rem;
+    margin-left: -@unit-2;
+    margin-top: -@unit-2;
     position: absolute;
     top: 50%;
-    width: 1.6rem;
+    width: @unit-4;
     z-index: @zindex-0;
   }
 }

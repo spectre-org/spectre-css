@@ -1,4 +1,11 @@
 // Mixins
+// Avatar mixin
+.avatar-base(@size: @unit-8) {
+  font-size: @size / 2.2;
+  height: @size;
+  width: @size;
+}
+
 // Clearfix mixin
 .clearfix() {
   &::after {
@@ -10,7 +17,7 @@
 
 // Component focus shadow
 .control-shadow(@color: @dark-color) {
-  box-shadow: 0 0 0 .2rem fade(@color, 10%);
+  box-shadow: 0 0 0 2px fade(@color, 10%);
 }
 
 // Component transition
@@ -29,7 +36,7 @@
   border-radius: @border-radius;
   display: inline-block;
   line-height: 1;
-  padding: .3rem .4rem;
+  padding: 3px 4px;
   vertical-align: baseline;
 }
 
@@ -40,7 +47,7 @@
 
 // Shadow mixin
 .shadow-variant(@offset) {
-  box-shadow: 0 @offset (@offset+.1rem)*2 fade(@dark-color, 30%);
+  box-shadow: 0 @offset (@offset+1px)*2 fade(@dark-color, 30%);
 }
 
 // Colors mixin

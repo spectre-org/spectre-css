@@ -47,10 +47,10 @@
       z-index: @zindex-2;
     }
     .item-prev {
-      left: 2rem;
+      left: 20px;
     }
     .item-next {
-      right: 2rem;
+      right: 20px;
     }
   }
 
@@ -72,31 +72,31 @@
   }
 
   .carousel-nav {
-    bottom: 1rem;
+    bottom: @layout-spacing;
     display: flex;
     justify-content: center;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: 20rem;
+    width: 200px;
     z-index: @zindex-2;
 
     .nav-item {
       color: fade(@gray-color-light, 50%);
       display: block;
       flex: 1 0 auto;
-      height: 4rem;
-      margin: .4rem;
-      max-width: 5rem;
+      height: @unit-8;
+      margin: @unit-1;
+      max-width: 50px;
       position: relative;
 
       &::before {
         background: currentColor;
         content: "";
         display: block;
-        height: .3rem;
+        height: 2px;
         position: absolute;
-        top: 2rem;
+        top: 10px;
         width: 100%;
       }
     }

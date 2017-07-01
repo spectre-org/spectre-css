@@ -6,19 +6,19 @@
 /* Spectre docs style */
 .section-header {
   background: rgba(248, 249, 250, .9);
-  padding: 1rem .5rem;
+  padding: 10px 5px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 200;
 }
 .section-hero {
-  padding: 1rem;
+  padding: 10px;
   position: relative;
   z-index: 300;
 }
 .grid-header .navbar {
-  height: 4rem;
+  height: 40px;
 }
 .grid-header .navbar-section {
   padding: 0;
@@ -28,8 +28,8 @@
 }
 .grid-header .btn-link {
   color: #5b657a;
-  padding-left: .6rem;
-  padding-right: .6rem;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .grid-header .btn-link:focus,
 .grid-header .btn-link:hover,
@@ -38,40 +38,40 @@
   opacity: .75;
 }
 .grid-hero {
-  margin-bottom: 4rem;
-  margin-top: 10rem;
+  margin-bottom: 40px;
+  margin-top: 100px;
 }
 .grid-hero h1 {
   color: #454d5d;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: 400;
 }
 .grid-hero h2 {
   color: #50596c;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 3rem;
-  margin-bottom: 3rem;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 .grid-hero h2 u {
-  border-bottom: .2rem solid currentColor;
-  padding-bottom: .1rem;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 1px;
   text-decoration: none;
 }
 .grid-hero .card {
   background: none;
   border: 0;
   color: #5b657a;
-  padding: 1rem;
+  padding: 10px;
 }
 .grid-hero .card .card-title {
   color: #5764c6;
-  font-size: 1.8rem;
+  font-size: 18px;
   margin-bottom: 0;
 }
 .grid-footer {
   color: #acb3c2;
-  padding: 2rem 0 1rem 0;
+  padding: 20px 0 10px 0;
 }
 .grid-footer a {
   color: #727e96;
@@ -80,10 +80,10 @@
   padding-top: 0;
 }
 .docs-content .container {
-  padding: 1rem;
+  padding: 10px;
 }
 .docs-content header {
-  padding-top: 5.5rem;
+  padding-top: 55px;
 }
 .docs-content .anchor {
   height: 0;
@@ -99,22 +99,22 @@
   width: auto;
 }
 .docs-content .notes {
-  margin: 4rem 0;
+  margin: 40px 0;
 }
 .docs-content .docs-block {
-  border-radius: .2rem;
-  padding: 1rem .5rem;
+  border-radius: 2px;
+  padding: 10px 5px;
 }
 .docs-content .docs-dot {
   border-radius: 50%;
   display: inline-block;
-  height: 1rem;
+  height: 10px;
   padding: 0;
-  width: 1rem;
+  width: 10px;
 }
 .docs-content .docs-table th,
 .docs-content .docs-table td {
-  padding: 1.5rem .5rem;
+  padding: 15px 5px;
 }
 .docs-content h1,
 .docs-content h2,
@@ -122,8 +122,8 @@
 .docs-content h4,
 .docs-content h5,
 .docs-content h6 {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .docs-content h1:hover .anchor,
 .docs-content h2:hover .anchor,
@@ -135,19 +135,19 @@
   width: auto;
 }
 .docs-content .docs-color {
-  border-radius: .2rem;
-  margin: .5rem 0;
-  padding: 1rem;
+  border-radius: 2px;
+  margin: 5px 0;
+  padding: 10px;
 }
 .docs-content .docs-color .color-subtitle {
-  font-size: 1.2rem;
+  font-size: 12px;
   opacity: .75;
 }
 .docs-content .panel {
   height: 75vh;
 }
 .docs-content .panel .tile {
-  margin: 1.5rem 0;
+  margin: 15px 0;
 }
 .docs-content .code {
   color: #5b657a;
@@ -165,7 +165,7 @@
   color: #e06870;
 }
 .docs-content .empty .icon {
-  font-size: 4rem;
+  font-size: 40px;
 }
 .docs-content .form-autocomplete .menu {
   position: static;
@@ -176,16 +176,16 @@
   -webkit-align-items: center;
   align-items: center;
   background: #5764c6;
-  border-radius: .2rem;
+  border-radius: 2px;
   color: #fff;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
-  font-size: 2.4rem;
-  height: 4rem;
-  width: 4rem;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
 }
 .docs-content .example-tile-icon .icon {
   margin: auto;
@@ -196,10 +196,10 @@
 }
 @media screen and (min-width: 601px) {
   .section-header .navbar-section {
-    padding: 0 .5rem;
+    padding: 0 5px;
   }
   .docs-sidebar {
-    padding: 7rem 1rem 5rem 1rem;
+    padding: 70px 10px 50px 10px;
   }
   .docs-sidebar .docs-nav {
     position: relative;
@@ -208,7 +208,7 @@
     .docs-sidebar .docs-nav {
       position: sticky;
       position: -webkit-sticky;
-      top: 8rem;
+      top: 80px;
     }
     .docs-sidebar .docs-nav .nav-item a:focus {
       box-shadow: none;
@@ -220,7 +220,7 @@
 }
 @media screen and (max-width: 600px) {
   .grid-hero h2 {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
   .grid-hero .card {
     padding: 0;
@@ -230,7 +230,7 @@
     height: 100%;
     left: 0;
     overflow-y: auto;
-    padding: 6rem 3rem;
+    padding: 60px 30px;
     position: fixed;
     top: 0;
     -webkit-transform: translateX(-100%);
@@ -239,7 +239,7 @@
     transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
     transition: -webkit-transform .2s ease;
-    width: 24rem;
+    width: 240px;
     z-index: 400;
   }
   .docs-sidebar:target {

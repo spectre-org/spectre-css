@@ -1,21 +1,21 @@
 // Forms
 .form-group {
   &:not(:last-child) {
-    margin-bottom: @layout-padding;
+    margin-bottom: @layout-spacing;
   }
 }
 
 // Form element: Label
 .form-label {
   display: block;
-  padding: .6rem 0;
+  padding: 6px 0;
 
   &.label-sm {
-    padding: .2rem 0;
+    padding: 2px 0;
   }
 
   &.label-lg {
-    padding: 1rem 0;
+    padding: @layout-spacing 0;
   }
 }
 
@@ -30,11 +30,11 @@
   .control-transition();
   display: block;
   font-size: @font-size;
-  height: 3.2rem;
-  line-height: 2rem;
+  height: @unit-8;
+  line-height: @line-height;
   max-width: 100%;
   outline: none;
-  padding: .5rem .8rem;
+  padding: 5px 8px;
   position: relative;
   width: 100%;
   &:focus {
@@ -48,14 +48,14 @@
   // Input sizes
   &.input-sm {
     font-size: @font-size-sm;
-    height: 2.4rem;
-    padding: .1rem .8rem;
+    height: 24px;
+    padding: 1px 8px;
   }
 
   &.input-lg {
     font-size: @font-size-lg;
-    height: 4rem;
-    padding: .9rem .8rem;
+    height: 40px;
+    padding: 9px 8px;
   }
 
   &.input-inline {
@@ -78,7 +78,7 @@
 // Form element: Input hint
 .form-input-hint {
   color: @gray-color;
-  margin-top: .4rem;
+  margin-top: @unit-1;
 
   .has-success &,
   .is-success + & {
@@ -98,21 +98,21 @@
   border-radius: @border-radius;
   color: inherit;
   font-size: @font-size;
-  line-height: 2rem;
+  line-height: @line-height;
   outline: none;
-  padding: .5rem .8rem;
+  padding: 5px 8px;
   vertical-align: middle;
   width: 100%;
 
   &[multiple] {
     option {
-      padding: .2rem .4rem;
+      padding: 2px 4px;
     }
   }
   &:not([multiple]) {
-    background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center / .8rem 1rem;
-    height: 3.2rem;
-    padding-right: 2.4rem;
+    background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 7.5px center / 8px 10px;
+    height: 32px;
+    padding-right: 24px;
   }
   &:focus {
     border-color: @primary-color;
@@ -125,14 +125,14 @@
   // Select sizes
   &.select-sm {
     font-size: @font-size-sm;
-    height: 2.4rem;
-    padding: .1rem 2rem .1rem .6rem;
+    height: 24px;
+    padding: 1px 20px 1px 6px;
   }
 
   &.select-lg {
     font-size: @font-size-lg;
-    height: 4rem;
-    padding: .9rem 2.4rem .9rem .8rem;
+    height: 40px;
+    padding: 9px 24px 9px 8px;
   }
 }
 
@@ -178,8 +178,8 @@
   position: relative;
 
   .form-icon {
-    margin: 0 .8rem;
-    min-width: 1.4rem;
+    margin: 0 8px;
+    min-width: 14px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -192,7 +192,7 @@
   }
 
   .form-input {
-    padding-left: 3rem;
+    padding-left: 30px;
   }
 }
 
@@ -202,7 +202,7 @@
   }
 
   .form-input {
-    padding-right: 3rem;
+    padding-right: 30px;
   }
 }
 
@@ -211,16 +211,16 @@
 .form-radio,
 .form-switch {
   display: inline-block;
-  line-height: 2rem;
+  line-height: @line-height;
   position: relative;
 
   input {
     clip: rect(0, 0, 0, 0);
-    height: .1rem;
-    margin: -.1rem;
+    height: 1px;
+    margin: -1px;
     overflow: hidden;
     position: absolute;
-    width: .1rem;
+    width: 1px;
     &:focus + .form-icon {
       border-color: @primary-color;
       .control-shadow();
@@ -242,14 +242,14 @@
 
 .form-checkbox,
 .form-radio {
-  padding: .2rem 2rem;
+  padding: 2px 20px;
 
   .form-icon {
     background: @bg-color-light;
-    height: 1.4rem;
+    height: 14px;
     left: 0;
-    top: .5rem;
-    width: 1.4rem;
+    top: 5px;
+    width: 14px;
   }
 
   input {
@@ -267,18 +267,18 @@
     &:checked + .form-icon {
       &::before {
         background-clip: padding-box;
-        border: .2rem solid @light-color;
+        border: @border-width-lg solid @light-color;
         border-left-width: 0;
         border-top-width: 0;
         content: "";
-        height: 1rem;
+        height: 10px;
         left: 50%;
-        margin-left: -.3rem;
-        margin-top: -.6rem;
+        margin-left: -3px;
+        margin-top: -6px;
         position: absolute;
         top: 50%;
         transform: rotate(45deg);
-        width: .6rem;
+        width: 6px;
       }
     }
     &:indeterminate + .form-icon {
@@ -287,20 +287,20 @@
       &::before {
         background: @bg-color-light;
         content: "";
-        height: .2rem;
+        height: 2px;
         left: 50%;
-        margin-left: -.5rem;
-        margin-top: -.1rem;
+        margin-left: -5px;
+        margin-top: -1px;
         position: absolute;
         top: 50%;
-        width: 1rem;
+        width: 10px;
       }
     }
   }
 }
 .form-radio {
   .form-icon {
-    border-radius: .7rem;
+    border-radius: 7px;
   }
 
   input {
@@ -309,13 +309,13 @@
         background: @bg-color-light;
         border-radius: @border-radius;
         content: "";
-        height: .4rem;
+        height: 4px;
         left: 50%;
-        margin-left: -.2rem;
-        margin-top: -.2rem;
+        margin-left: -2px;
+        margin-top: -2px;
         position: absolute;
         top: 50%;
-        width: .4rem;
+        width: 4px;
       }
     }
   }
@@ -323,34 +323,34 @@
 
 // Form element: Switch
 .form-switch {
-  padding: .2rem 2rem .2rem 3.6rem;
+  padding: 2px 20px 2px 36px;
 
   .form-icon {
     background: @gray-color-light;
     background-clip: padding-box;
-    border-radius: .9rem;
-    height: 1.8rem;
+    border-radius: 9px;
+    height: 18px;
     left: 0;
-    top: .3rem;
-    width: 3rem;
+    top: 3px;
+    width: 30px;
     &::before {
       background: @bg-color-light;
-      border-radius: .8rem;
+      border-radius: 8px;
       content: "";
       display: block;
-      height: 1.6rem;
+      height: 16px;
       left: 0;
       position: absolute;
       top: 0;
       .control-transition();
-      width: 1.6rem;
+      width: 16px;
     }
   }
 
   input {
     &:checked + .form-icon {
       &::before {
-        left: 1.2rem;
+        left: 12px;
       }
     }
     &:active + .form-icon {
@@ -369,16 +369,16 @@
     background: @bg-color;
     border: @border-width solid @border-color-dark;
     border-radius: @border-radius;
-    line-height: 2rem;
-    padding: .5rem .8rem;
+    line-height: @line-height;
+    padding: 5px 8px;
 
     &.addon-sm {
       font-size: @font-size-sm;
-      padding: .1rem .8rem;
+      padding: 1px 8px;
     }
     &.addon-lg {
       font-size: @font-size-lg;
-      padding: .9rem .8rem;
+      padding: 9px 8px;
     }
   }
   .input-group-addon,
@@ -396,12 +396,12 @@
     }
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
-      margin-left: -.1rem;
+      margin-left: -1px;
     }
     &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      margin-left: -.1rem;
+      margin-left: -1px;
     }
     &:focus {
       z-index: @zindex-0;
@@ -458,7 +458,7 @@ input {
 
 // Form Horizontal
 .form-horizontal {
-  padding: @layout-padding;
+  padding: @layout-spacing;
 
   .form-group {
     display: flex;
@@ -467,6 +467,6 @@ input {
   .form-checkbox,
   .form-radio,
   .form-switch {
-    margin: .4rem 0;
+    margin: @unit-4 0;
   }
 }
