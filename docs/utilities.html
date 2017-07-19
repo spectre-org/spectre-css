@@ -29,57 +29,231 @@
 
   <section class="container grid-960">
     <section class="columns">
-      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
-        <ul class="docs-nav nav">
-          <li class="nav-item">
-            <a href="index.html#introduction">Getting started</a>
-          </li>
-          <li class="nav-item">
-            <a href="elements.html">Elements</a>
-          </li>
-          <li class="nav-item">
-            <a href="layout.html">Layout</a>
-          </li>
-          <li class="nav-item">
-            <a href="components.html">Components</a>
-          </li>
-          <li class="nav-item active">
-            <a href="utilities.html">Utilities</a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="utilities.html#colors">Colors</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#display">Display</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#divider">Divider</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#loading">Loading</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#position">Position</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#shadow">Shadow</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#shapes">Shapes</a>
-              </li>
-              <li class="nav-item">
-                <a href="utilities.html#text">Text</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="experimentals.html">Experimentals</a>
-          </li>
-        </ul>
+      <div id="sidebar" class="docs-sidebar column col-sm-12">
+        <div class="docs-nav">
+          <div class="accordion">
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-1">
+                Getting started
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="index.html#introduction">Introduction</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="index.html#installation">Installation</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="index.html#compiling">Custom version</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="index.html#browsers">Browser support</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="index.html#whatsnew">What's new</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-2">
+                Elements
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="elements.html#typography">Typography</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#tables">Tables</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#buttons">Buttons</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#forms">Forms</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#icons">Icons</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#labels">Labels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#codes">Codes</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#media">Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-3">
+                Layout
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="layout.html#grid">Flexbox grid</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#responsive">Responsive</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#navbar">Navbar</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#panels">Panels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#empty">Empty states</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-4">
+                Components
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="components.html#accordions">Accordions</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#autocomplete">Autocomplete</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#avatars">Avatars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#badges">Badges</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#bars">Bars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#breadcrumbs">Breadcrumbs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#cards">Cards</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#chips">Chips</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#menus">Menus</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#modals">Modals</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#navs">Navs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#popovers">Popovers</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#steps">Steps</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tabs">Tabs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tiles">Tiles</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#toasts">Toasts</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tooltips">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden checked />
+              <label class="accordion-header hand" for="docs-accordion-5">
+                Utilities
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#display">Display</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#divider">Divider</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#loading">Loading</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#position">Position</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#shapes">Shapes</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#text">Text</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-6">
+                Experimentals
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="experimentals.html#calendars">Calendars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#carousels">Carousels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#comparison">Comparison sliders</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#filters">Filters</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#meters">Meters</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#parallax">Parallax</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#progress">Progress</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#sliders">Sliders</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#timelines">Timelines</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div class="docs-content column col-9 col-sm-12">
+      <div class="docs-content column col-sm-12">
         <section id="colors" class="container">
           <header class="text-center"><h3><a href="#colors" class="anchor" aria-hidden="true">#</a>Color utilities</h3></header>
           <section class="notes">
@@ -388,7 +562,7 @@
     </section>
   </section>
 
-  <footer class="bg-gray">
+  <footer class="section section-footer bg-gray">
     <section id="copyright" class="grid-footer container grid-960">
       <p>
         <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | Version <span class="version"></span>

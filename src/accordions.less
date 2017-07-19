@@ -6,22 +6,22 @@
         & ~ .accordion-header {
           .icon {
             transform: rotate(90deg);
-            transition: all .25s ease;
+            transition: all .2s ease;
           }
         }
         & ~ .accordion-body {
           max-height: 1000px;
-          transition: max-height 3s ease;
+          transition: max-height 2s ease;
         }
       }
     }
 
     .accordion-header {
       display: block;
-      padding: @layout-spacing;
+      padding: @unit-1 @unit-2;
 
       .icon {
-        transition: all .25s ease;
+        transition: all .2s ease;
       }
     }
 
@@ -29,7 +29,7 @@
       margin-bottom: @layout-spacing;
       max-height: 0;
       overflow: hidden;
-      transition: max-height .3s ease;
+      transition: max-height .2s ease;
     }
   }
 }

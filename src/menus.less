@@ -5,7 +5,7 @@
   list-style: none;
   margin: 0;
   min-width: @control-min-width;
-  padding: @layout-spacing;
+  padding: @unit-2;
   .shadow-variant(1px);
   transform: translateY(@layout-spacing-sm);
   z-index: @zindex-1;
@@ -22,6 +22,7 @@
 
     & > a {
       border-radius: @border-radius;
+      box-shadow: none;
       color: inherit;
       display: block;
       margin: 0 -@unit-2;
@@ -29,11 +30,12 @@
       text-decoration: none;
       &:focus,
       &:hover {
+        background: @secondary-color-light;
         color: @primary-color;
       }
       &:active,
       &.active {
-        background: @secondary-color-light;
+        background: @secondary-color;
         color: @primary-color;
       }
     }

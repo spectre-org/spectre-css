@@ -17,6 +17,15 @@
   position: relative;
   z-index: 300;
 }
+.section-footer {
+  color: #acb3c2;
+  padding: 25px 15px 10px 15px;
+  position: relative;
+  z-index: 200;
+}
+.section-footer a {
+  color: #727e96;
+}
 .grid-header .navbar {
   height: 40px;
 }
@@ -28,6 +37,7 @@
 }
 .grid-header .btn-link {
   color: #5b657a;
+  margin-left: -5px;
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -69,12 +79,9 @@
   font-size: 18px;
   margin-bottom: 0;
 }
-.grid-footer {
-  color: #acb3c2;
-  padding: 20px 0 10px 0;
-}
-.grid-footer a {
-  color: #727e96;
+.docs-container {
+  height: 100%;
+  overflow: auto;
 }
 .docs-content {
   padding-top: 0;
@@ -89,6 +96,7 @@
   height: 0;
   margin-left: -1em;
   overflow: hidden;
+  padding: 0 4px;
   position: absolute;
   width: 0;
 }
@@ -194,25 +202,33 @@
   -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
 }
+.docs-sidebar {
+  width: 240px;
+}
+.docs-sidebar .accordion input:checked ~ .accordion-header {
+  font-weight: bold;
+}
+.docs-sidebar .accordion .menu .menu-item > a {
+  padding-left: 16px;
+}
 @media screen and (min-width: 601px) {
   .section-header .navbar-section {
     padding: 0 5px;
   }
   .docs-sidebar {
-    padding: 70px 10px 50px 10px;
-  }
-  .docs-sidebar .docs-nav {
+    padding: 70px 10px 30px 10px;
     position: relative;
   }
-  @supports ((position: -webkit-sticky) or (position: sticky)) {
-    .docs-sidebar .docs-nav {
-      position: sticky;
-      position: -webkit-sticky;
-      top: 80px;
-    }
-    .docs-sidebar .docs-nav .nav-item a:focus {
-      box-shadow: none;
-    }
+  .docs-sidebar .docs-nav {
+    bottom: 30px;
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    position: fixed;
+    top: 90px;
+    width: 240px;
+  }
+  .docs-content {
+    width: calc(100% - 240px);
   }
 }
 .docs-nav-clear {
@@ -239,7 +255,6 @@
     transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
     transition: -webkit-transform .2s ease;
-    width: 240px;
     z-index: 400;
   }
   .docs-sidebar:target {

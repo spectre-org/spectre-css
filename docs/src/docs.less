@@ -23,6 +23,17 @@
   z-index: 300;
 }
 
+.section-footer {
+  color: @gray-color;
+  padding: 25px 15px 10px 15px;
+  position: relative;
+  z-index: 200;
+
+  a {
+    color: @gray-color-dark;
+  }
+}
+
 .grid-header {
   .navbar {
     height: 40px;
@@ -38,6 +49,7 @@
 
   .btn-link {
     color: lighten(@body-font-color, 10%);
+    margin-left: -5px;
     padding-left: 6px;
     padding-right: 6px;
 
@@ -88,13 +100,9 @@
   }
 }
 
-.grid-footer {
-  color: @gray-color;
-  padding: 20px 0 10px 0;
-
-  a {
-    color: @gray-color-dark;
-  }
+.docs-container {
+  height: 100%;
+  overflow: auto;
 }
 
 .docs-content {
@@ -111,8 +119,9 @@
   .anchor {
     height: 0;
     margin-left: -1em;
-    position: absolute;
     overflow: hidden;
+    padding: 0 @unit-1;
+    position: absolute;
     width: 0;
     &:focus,
     &:hover {
@@ -230,6 +239,28 @@
   }
 }
 
+.docs-sidebar {
+  width: 240px;
+  
+  .accordion {
+    input {
+      &:checked {
+        & ~ .accordion-header {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .menu {
+      .menu-item {
+        & > a {
+          padding-left: @unit-4;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 601px) {
   .section-header {
     .navbar-section {
@@ -238,23 +269,21 @@
   }
 
   .docs-sidebar {
-    padding: 70px 10px 50px 10px;
+    padding: 70px 10px 30px 10px;
+    position: relative;
 
-      .docs-nav {
-        position: relative;
+    .docs-nav {
+      bottom: 30px;
+      height: ~"calc(100vh - 120px)";
+      overflow-y: auto; 
+      position: fixed;
+      top: 90px;
+      width: 240px;
     }
+  }
 
-    @supports (position: sticky) {
-      .docs-nav {
-        position: sticky;
-        top: 80px;
-
-        // A position: sticky; bug casues box-shadow generates width to the elements
-        .nav-item a:focus {
-          box-shadow: none;
-        }
-      }
-    }
+  .docs-content {
+    width: ~"calc(100% - 240px)"; // Using CSS3 native calc() function
   }
 }
 
@@ -283,7 +312,6 @@
     top: 0;
     transform: translateX(-100%);
     transition: transform .2s ease;
-    width: 240px;
     z-index: 400;
 
     &:target {

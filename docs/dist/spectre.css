@@ -1797,24 +1797,24 @@ code {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  transition: all .25s ease;
+  transition: all .2s ease;
 }
 .accordion .accordion-item input:checked ~ .accordion-body {
   max-height: 1000px;
-  transition: max-height 3s ease;
+  transition: max-height 2s ease;
 }
 .accordion .accordion-item .accordion-header {
   display: block;
-  padding: 10px;
+  padding: 4px 8px;
 }
 .accordion .accordion-item .accordion-header .icon {
-  transition: all .25s ease;
+  transition: all .2s ease;
 }
 .accordion .accordion-item .accordion-body {
   margin-bottom: 10px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .3s ease;
+  transition: max-height .2s ease;
 }
 .form-autocomplete {
   position: relative;
@@ -2146,7 +2146,7 @@ code {
   list-style: none;
   margin: 0;
   min-width: 180px;
-  padding: 10px;
+  padding: 8px;
   -webkit-transform: translateY(5px);
   -ms-transform: translateY(5px);
   transform: translateY(5px);
@@ -2166,6 +2166,7 @@ code {
 }
 .menu .menu-item > a {
   border-radius: 2px;
+  box-shadow: none;
   color: inherit;
   display: block;
   margin: 0 -8px;
@@ -2174,11 +2175,12 @@ code {
 }
 .menu .menu-item > a:focus,
 .menu .menu-item > a:hover {
+  background: #fbfbfe;
   color: #5764c6;
 }
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
-  background: #fbfbfe;
+  background: #eff1fa;
   color: #5764c6;
 }
 .menu .menu-badge {
@@ -2344,9 +2346,10 @@ code {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  padding: 4px 0;
 }
 .pagination .page-item {
-  margin: 10px 1px;
+  margin: 4px 1px;
 }
 .pagination .page-item span {
   display: inline-block;
