@@ -52,7 +52,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Media](https://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video classes
 
 #### Layout
-- [Flexbox-grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
+- [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
 - [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
 - [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
 - [Panels](https://picturepan2.github.io/spectre/layout.html#panels) - flexible view container layout with auto-expand content section
@@ -63,14 +63,17 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
 - [Avatars](https://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
 - [Badges](https://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
+- [Breadcrumbs](https://picturepan2.github.io/spectre/components.html#breadcrumbs) - navigational hierarchy
 - [Bars](https://picturepan2.github.io/spectre/components.html#bars) - progress of a task or the value within the known range
 - [Cards](https://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
 - [Chips](https://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
 - [Menus](https://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
+- [Navs](https://picturepan2.github.io/spectre/components.html#navs) - navigational list of links
 - [Modals](https://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
-- [Navigation](https://picturepan2.github.io/spectre/components.html#navigation) - breadcrumb, tabs, pagination and navs
+- [Pagination](https://picturepan2.github.io/spectre/components.html#pagination) - navigational links for multiple pages
 - [Popovers](https://picturepan2.github.io/spectre/components.html#popovers) - small overlay content containers
 - [Steps](https://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
+- [Tabs](https://picturepan2.github.io/spectre/components.html#tabs) - toggle for different views
 - [Tiles](https://picturepan2.github.io/spectre/components.html#tiles) - repeatable or embeddable information blocks
 - [Toasts](https://picturepan2.github.io/spectre/components.html#toasts) - showing alerts or notifications
 - [Tooltips](https://picturepan2.github.io/spectre/components.html#tooltips) - simple tooltip built entirely in CSS
