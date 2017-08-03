@@ -444,7 +444,7 @@ h6 {
 }
 p {
   line-height: 24px;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
 }
 a,
 ins,
@@ -2200,19 +2200,22 @@ code {
   border-radius: 2px;
   color: inherit;
   display: block;
-  margin: 4px -8px;
+  margin: 0 -8px;
   padding: 4px 8px;
   text-decoration: none;
 }
 .menu .menu-item > a:focus,
 .menu .menu-item > a:hover {
-  background: #fbfbfe;
+  background: #eff1fa;
   color: #5764c6;
 }
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
   background: #eff1fa;
   color: #5764c6;
+}
+.menu .menu-item + .menu-item {
+  margin-top: 4px;
 }
 .menu .menu-badge {
   float: right;
@@ -2397,7 +2400,7 @@ code {
 .pagination .page-item a:hover {
   color: #5764c6;
 }
-.pagination .page-item a.disabled {
+.pagination .page-item.disabled a {
   cursor: default;
   opacity: .5;
   pointer-events: none;

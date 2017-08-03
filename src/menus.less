@@ -24,12 +24,12 @@
       border-radius: @border-radius;
       color: inherit;
       display: block;
-      margin: @unit-1 -@unit-2;
-      padding: 4px 8px;
+      margin: 0 -@unit-2;
+      padding: @unit-1 @unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
-        background: @secondary-color-light;
+        background: @secondary-color;
         color: @primary-color;
       }
       &:active,
@@ -37,6 +37,10 @@
         background: @secondary-color;
         color: @primary-color;
       }
+    }
+
+    & + .menu-item {
+      margin-top: @unit-1;
     }
   }
 

@@ -5,6 +5,8 @@
 }
 /* Spectre docs style */
 .section-header {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: rgba(248, 249, 250, .9);
   padding: 10px 5px;
   position: fixed;
@@ -216,11 +218,11 @@
     padding: 0 5px;
   }
   .docs-sidebar {
-    padding: 70px 10px 30px 10px;
+    padding: 70px 10px 50px 10px;
     position: relative;
   }
   .docs-sidebar .docs-nav {
-    bottom: 30px;
+    bottom: 50px;
     height: calc(100vh - 120px);
     overflow-y: auto;
     position: fixed;

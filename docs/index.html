@@ -12,22 +12,22 @@
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
-  <section class="section section-header bg-gray">
-    <section class="grid-header container grid-960">
+  <div class="section section-header bg-gray">
+    <div class="grid-header container grid-960">
       <nav class="navbar">
-        <section class="navbar-section">
+        <div class="navbar-section">
           <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
           <a href="index.html" class="navbar-brand">Spectre.css Docs</a>
-        </section>
-        <section class="navbar-section">
+        </div>
+        <div class="navbar-section">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </section>
+        </div>
       </nav>
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <section class="section section-hero bg-gray">
-    <section id="overview" class="grid-hero container grid-960 text-center">
+  <div class="section section-hero bg-gray">
+    <div id="overview" class="grid-hero container grid-960 text-center">
       <h1>Spectre.css</h1>
       <h2>The <u>lightweight</u>, <u>responsive</u> and <u>modern</u> CSS framework</h2>
       <div class="columns">
@@ -68,11 +68,11 @@
           </div>
         </div>
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <section class="container grid-960">
-    <section class="columns">
+  <div class="container grid-960">
+    <div class="columns">
       <div id="sidebar" class="docs-sidebar column col-sm-12">
         <div class="docs-nav">
           <div class="accordion">
@@ -298,25 +298,25 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div class="docs-content column col-sm-12">
-        <section id="introduction" class="container">
-          <header class="text-center"><h3><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3></header>
-          <section class="notes">
+        <div id="introduction" class="container">
+          <h3 class="text-center"><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3>
+          <div class="notes">
             <p><strong>Spectre.css</strong> is a lightweight and responsive and modern CSS framework for faster and extensible development.</p>
             <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section id="installation" class="container">
-          <header class="text-center"><h3><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3></header>
-          <section class="notes">
+        <div id="installation" class="container">
+          <h3 class="text-center"><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3>
+          <div class="notes">
             <p>There are 5 ways to get started with Spectre CSS framework in your projects. You can either install manually, from CDN or use NPM, Yarn and Bower.</p>
-          </section>
-          <section class="notes">
+          </div>
+          <div class="notes">
             <h5>Install manually</h5>
             <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
             <p><a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
             <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
-          </section>
+          </div>
 
 <!-- install manually example -->
 <pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span> /&gt;
@@ -324,45 +324,45 @@
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span> /&gt;
 </code></pre>
 
-          <section class="notes">
+          <div class="notes">
             <h5>Install from CDN</h5>
             <p>Alternatively, you can use the <a href="https://unpkg.com/" target="_blank">unpkg</a> CDN to load compiled Spectre.css.</p>
-          </section>
+          </div>
 
 <!-- install from CDN example -->
 <pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre.min.css&quot;</span> /&gt;
 </code></pre>
 
-          <section class="notes">
+          <div class="notes">
             <h5>Install with NPM</h5>
 
 <!-- install with npm example -->
 <pre class="code"><code><span class="tag">$</span> npm install <span class="atv">spectre.css</span> --save
 </code></pre>
 
-          </section>
-          <section class="notes">
+          </div>
+          <div class="notes">
             <h5>Install with Yarn</h5>
 
 <!-- install with yarn example -->
 <pre class="code"><code><span class="tag">$</span> yarn add <span class="atv">spectre.css</span>
 </code></pre>
 
-          </section>
-          <section class="notes">
+          </div>
+          <div class="notes">
             <h5>Install with Bower</h5>
 
 <!-- install with bower example -->
 <pre class="code"><code><span class="tag">$</span> bower install <span class="atv">spectre.css</span> --save
 </code></pre>
 
-          </section>
+          </div>
 
-        </section>
+        </div>
 
-        <section id="compiling" class="container">
-          <header class="text-center"><h3><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3></header>
-          <section class="notes">
+        <div id="compiling" class="container">
+          <h3 class="text-center"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
+          <div class="notes">
             <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>, <code>spectre-exp.less</code> and <code>spectre-icons.less</code>.</p>
             <p>Then, you can build the CSS file from the command line:</p>
             <ol>
@@ -372,7 +372,7 @@
               <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
             </ol>
             <p>You can watch file changes and rebuild CSS files by using <code>gulp watch</code>.</p>
-          </section>
+          </div>
 
 <!-- file structure -->
 <pre class="code"><code>spectre/
@@ -410,8 +410,8 @@
 └── spectre.less
 </code></pre>
 
-          <header id="variables" class="text-center"><h4><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4></header>
-          <section class="notes">
+          <h4 id="variables" class="text-center"><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4>
+          <div class="notes">
             <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.
             <h5>Colors</h5>
             <div class="columns">
@@ -492,16 +492,16 @@
                 </div>
               </div>
             </div>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section id="accessibility" class="container">
-          <header class="text-center"><h3><a href="#accessibility" class="anchor" aria-hidden="true">#</a>Accessibility <small class="label">coming soon</small></h3></header>
-        </section>
+        <div id="accessibility" class="container">
+          <h3 class="text-center"><a href="#accessibility" class="anchor" aria-hidden="true">#</a>Accessibility <small class="label">coming soon</small></h3>
+        </div>
 
-        <section id="browsers" class="container">
-          <header class="text-center"><h3><a href="#browsers" class="anchor" aria-hidden="true">#</a>Browser support</h3></header>
-          <section class="notes">
+        <div id="browsers" class="container">
+          <h3 class="text-center"><a href="#browsers" class="anchor" aria-hidden="true">#</a>Browser support</h3>
+          <div class="notes">
             <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
             <ul>
               <li>Chrome <span class="label label-success">Last 4</span></li>
@@ -511,12 +511,12 @@
               <li>Opera <span class="label label-success">Last 4</span></li>
               <li>Internet Explorer 10+</li>
             </ul>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section id="whatsnew" class="container">
-          <header class="text-center"><h3><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3></header>
-          <section class="notes">
+        <div id="whatsnew" class="container">
+          <h3 class="text-center"><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3>
+          <div class="notes">
             <p><strong>April 2017</strong></p>
             <ul>
               <li>
@@ -573,10 +573,10 @@
             <ul>
               <li>Initial commit</li>
             </ul>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section class="container">
+        <div class="container">
           <div class="divider"></div>
           <ul class="pagination">
             <li class="page-item page-next">
@@ -586,18 +586,18 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 
   <footer class="section section-footer bg-gray">
-    <section id="copyright" class="grid-footer container grid-960">
+    <div id="copyright" class="grid-footer container grid-960">
       <p>
         <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | Version <span class="version"></span>
       </p>
       <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
-    </section>
+    </div>
   </footer>
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
