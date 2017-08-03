@@ -21,7 +21,7 @@
 }
 .section-footer {
   color: #acb3c2;
-  padding: 25px 15px 10px 15px;
+  padding: 26px 15px 10px 15px;
   position: relative;
   z-index: 200;
 }
@@ -86,15 +86,18 @@
   overflow: auto;
 }
 .docs-content {
+  padding-bottom: 50px;
   padding-top: 0;
 }
 .docs-content .container {
   padding: 10px;
 }
-.docs-content header {
+.docs-content .container > h3,
+.docs-content .container > h4 {
   padding-top: 55px;
 }
 .docs-content .anchor {
+  color: #626fca;
   height: 0;
   margin-left: -1em;
   overflow: hidden;
@@ -218,12 +221,12 @@
     padding: 0 5px;
   }
   .docs-sidebar {
-    padding: 70px 10px 50px 10px;
+    padding: 70px 10px 70px 10px;
     position: relative;
   }
   .docs-sidebar .docs-nav {
     bottom: 50px;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 140px);
     overflow-y: auto;
     position: fixed;
     top: 90px;

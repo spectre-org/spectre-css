@@ -26,7 +26,7 @@
 
 .section-footer {
   color: @gray-color;
-  padding: 25px 15px 10px 15px;
+  padding: 26px 15px 10px 15px;
   position: relative;
   z-index: 200;
 
@@ -107,17 +107,20 @@
 }
 
 .docs-content {
+  padding-bottom: 50px;
   padding-top: 0;
 
   .container {
     padding: 10px;
-  }
 
-  header {
-    padding-top: 55px;
+    & > h3,
+    & > h4 {
+      padding-top: 55px;
+    }
   }
 
   .anchor {
+    color: @primary-color-light;
     height: 0;
     margin-left: -1em;
     overflow: hidden;
@@ -270,12 +273,12 @@
   }
 
   .docs-sidebar {
-    padding: 70px 10px 50px 10px;
+    padding: 70px 10px 70px 10px;
     position: relative;
 
     .docs-nav {
       bottom: 50px;
-      height: ~"calc(100vh - 120px)";
+      height: ~"calc(100vh - 140px)";
       overflow-y: auto; 
       position: fixed;
       top: 90px;
