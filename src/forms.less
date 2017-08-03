@@ -5,6 +5,16 @@
   }
 }
 
+fieldset {
+  margin-bottom: @layout-spacing-lg;
+}
+
+legend {
+  font-size: @font-size-lg;
+  font-weight: 500;
+  margin-bottom: @layout-spacing-lg;
+}
+
 // Form element: Label
 .form-label {
   display: block;
@@ -36,6 +46,7 @@
   outline: none;
   padding: @control-padding-v @control-padding-h;
   position: relative;
+
   width: 100%;
   &:focus {
     border-color: @primary-color;
@@ -78,6 +89,7 @@
 // Form element: Input hint
 .form-input-hint {
   color: @gray-color;
+  font-size: @font-size-sm;
   margin-top: @unit-1;
 
   .has-success &,
@@ -133,42 +145,6 @@
     font-size: @font-size-lg;
     height: @control-size-lg;
     padding: @control-padding-v-lg (@control-icon-size + @control-padding-h) @control-padding-v-lg @control-padding-h;
-  }
-}
-
-// Form validation states
-.form-input,
-.form-select {
-  .has-success &,
-  &.is-success {
-    border-color: @control-color-success;
-    &:focus {
-      .control-shadow(@control-color-success);
-    }
-  }
-
-  .has-error &,
-  &.is-error {
-    border-color: @control-color-error;
-    &:focus {
-      .control-shadow(@control-color-error);
-    }
-  }
-}
-
-// validation based on :placeholder-shown (Edge doesn't support it yet)
-.form-input {
-  &:not(:placeholder-shown) {
-    &:invalid {
-      border-color: @control-color-error;
-      &:focus {
-        .control-shadow(@control-color-error);
-      }
-
-      & + .form-input-hint {
-        color: @control-color-error;
-      }
-    }
   }
 }
 
@@ -414,6 +390,65 @@
 
   &.input-inline {
     display: inline-flex;
+  }
+}
+
+// Form validation states
+.form-input,
+.form-select {
+  .has-success &,
+  &.is-success {
+    border-color: @control-color-success;
+    &:focus {
+      .control-shadow(@control-color-success);
+    }
+  }
+
+  .has-error &,
+  &.is-error {
+    border-color: @control-color-error;
+    &:focus {
+      .control-shadow(@control-color-error);
+    }
+  }
+}
+
+.form-checkbox,
+.form-radio,
+.form-switch {
+  .has-error &,
+  &.is-error {
+    .form-icon {
+      border-color: @control-color-error;
+    }
+    
+    input {
+      &:checked + .form-icon {
+        background: @control-color-error;
+        border-color: @control-color-error;
+      }
+
+      &:focus + .form-icon {
+        border-color: @control-color-error;
+        .control-shadow(@control-color-error);
+      }
+    }
+  }
+}
+
+// validation based on :placeholder-shown (Edge doesn't support it yet)
+.form-input {
+  &:not(:placeholder-shown) {
+    &:invalid {
+      border-color: @control-color-error;
+      &:focus {
+        .control-shadow(@control-color-error);
+      }
+
+      & + .form-input-hint {
+        color: @control-color-error;
+      }
+    }
   }
 }
 

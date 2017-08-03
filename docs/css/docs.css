@@ -225,7 +225,7 @@
     overflow-y: auto;
     position: fixed;
     top: 90px;
-    width: 240px;
+    width: 200px;
   }
   .docs-content {
     width: calc(100% - 240px);

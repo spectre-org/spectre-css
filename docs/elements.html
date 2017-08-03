@@ -1103,7 +1103,7 @@
                     <label class="form-label" for="input-example-16">File</label>
                   </div>
                   <div class="col-9">
-                    <input class="form-input" type="file" id="input-example-16" value="" />
+                    <input class="form-input" type="file" id="input-example-16" />
                   </div>
                 </div>
               </form>
@@ -1199,47 +1199,70 @@
           </section>
           <div class="columns">
             <div class="column col-6 col-xs-12">
-              <div class="form-group">
-                <label class="form-label" for="input-example-17">Name</label>
-                <input class="form-input is-error" type="text" id="input-example-17" placeholder="Name" />
-                <p class="form-input-hint">The name is invalid.</p>
-              </div>
-              <div class="form-group has-success">
-                <label class="form-label" for="input-example-18">Email</label>
-                <input class="form-input" type="email" id="input-example-18" placeholder="Email" />
-                <p class="form-input-hint">The email is available.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <div class="form-group">
-                <select class="form-select is-error">
-                  <option>Choose an option</option>
-                  <option>Slack</option>
-                  <option>Skype</option>
-                  <option>Hipchat</option>
-                </select>
-                <p class="form-input-hint">The option is invalid.</p>
-              </div>
-              <div class="form-group has-success">
-                <select class="form-select">
-                  <option>Choose an option</option>
-                  <option>Slack</option>
-                  <option>Skype</option>
-                  <option>Hipchat</option>
-                </select>
-                <p class="form-input-hint">The option is available.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <div class="form-group">
-                <label class="form-label" for="input-example-21">Email</label>
-                <input class="form-input" type="text" id="input-example-21" placeholder="Email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" />
-                <p class="form-input-hint">The name is invalid.</p>
-              </div>
+              <fieldset>
+                <legend>form-input</legend>
+                <div class="form-group">
+                  <label class="form-label" for="input-example-17">Name</label>
+                  <input class="form-input is-success" type="text" id="input-example-17" placeholder="Name" />
+                  <p class="form-input-hint">The name is valid.</p>
+                </div>
+                <div class="form-group has-error">
+                  <label class="form-label" for="input-example-18">Password</label>
+                  <input class="form-input" type="password" id="input-example-18" placeholder="Password" />
+                  <p class="form-input-hint">Passwords must have at least 8 characters.</p>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="input-example-21">Email</label>
+                  <input class="form-input" type="text" id="input-example-21" placeholder="Email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" />
+                  <p class="form-input-hint">The Email address is unavailable.</p>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>form-select</legend>
+                <div class="form-group">
+                  <select class="form-select is-error">
+                    <option>Choose an option</option>
+                    <option>Slack</option>
+                    <option>Skype</option>
+                    <option>Hipchat</option>
+                  </select>
+                  <p class="form-input-hint">The option is invalid.</p>
+                </div>
+                <div class="form-group has-success">
+                  <select class="form-select">
+                    <option>Choose an option</option>
+                    <option>Slack</option>
+                    <option>Skype</option>
+                    <option>Hipchat</option>
+                  </select>
+                  <p class="form-input-hint">The option is available.</p>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>form-checkbox, radio and switch</legend>
+                <div class="form-group">
+                  <label class="form-checkbox is-error">
+                    <input type="checkbox" checked />
+                    <i class="form-icon"></i> I'm not a robot.
+                  </label>
+                </div>
+                <div class="form-group has-error">
+                  <label class="form-radio">
+                    <input type="radio" name="gender" checked />
+                    <i class="form-icon"></i> Male
+                  </label>
+                  <label class="form-radio">
+                    <input type="radio" name="gender" />
+                    <i class="form-icon"></i> Female
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form-switch is-error">
+                    <input type="checkbox" />
+                    <i class="form-icon"></i> Send me emails with news and tips
+                  </label>
+                </div>
+              </fieldset>
             </div>
           </div>
 
@@ -1257,6 +1280,14 @@
     &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
     &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input is-success&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span> /&gt;
     &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;form-input-hint&quot;</span>&gt;The name is invalid.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  <span class="com">&lt;!-- form validation example for checkbox, radio and switch --&gt;</span>
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox is-error&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
+    &lt;<span class="tag">/label</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/form</span>&gt;
 </code></pre>
@@ -1674,7 +1705,7 @@
           <div class="columns">
             <div class="column col-12">
               <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BzMLA8YIgG0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BzMLA8YIgG0" allowfullscreen></iframe>
               </div>
             </div>
           </div>

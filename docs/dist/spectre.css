@@ -584,9 +584,6 @@ dl dd {
   border-bottom: 1px solid #f0f1f4;
   padding: 12px 8px;
 }
-.table th {
-  border-bottom-color: #727e96;
-}
 .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -762,6 +759,14 @@ dl dd {
 .form-group:not(:last-child) {
   margin-bottom: 10px;
 }
+fieldset {
+  margin-bottom: 15px;
+}
+legend {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 .form-label {
   display: block;
   padding: 6px 0;
@@ -831,6 +836,7 @@ textarea.form-input {
 }
 .form-input-hint {
   color: #acb3c2;
+  font-size: 12px;
   margin-top: 4px;
 }
 .has-success .form-input-hint,
@@ -879,39 +885,6 @@ textarea.form-input {
   font-size: 16px;
   height: 40px;
   padding: 9px 22px 9px 8px;
-}
-.has-success .form-input,
-.has-success .form-select,
-.form-input.is-success,
-.form-select.is-success {
-  border-color: #32b643;
-}
-.has-success .form-input:focus,
-.has-success .form-select:focus,
-.form-input.is-success:focus,
-.form-select.is-success:focus {
-  box-shadow: 0 0 0 2px rgba(50, 182, 67, .1);
-}
-.has-error .form-input,
-.has-error .form-select,
-.form-input.is-error,
-.form-select.is-error {
-  border-color: #e85600;
-}
-.has-error .form-input:focus,
-.has-error .form-select:focus,
-.form-input.is-error:focus,
-.form-select.is-error:focus {
-  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
-}
-.form-input:not(:placeholder-shown):invalid {
-  border-color: #e85600;
-}
-.form-input:not(:placeholder-shown):invalid:focus {
-  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
-}
-.form-input:not(:placeholder-shown):invalid + .form-input-hint {
-  color: #e85600;
 }
 .has-icon-left,
 .has-icon-right {
@@ -1132,6 +1105,65 @@ textarea.form-input {
   display: inline-flex;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+}
+.has-success .form-input,
+.has-success .form-select,
+.form-input.is-success,
+.form-select.is-success {
+  border-color: #32b643;
+}
+.has-success .form-input:focus,
+.has-success .form-select:focus,
+.form-input.is-success:focus,
+.form-select.is-success:focus {
+  box-shadow: 0 0 0 2px rgba(50, 182, 67, .1);
+}
+.has-error .form-input,
+.has-error .form-select,
+.form-input.is-error,
+.form-select.is-error {
+  border-color: #e85600;
+}
+.has-error .form-input:focus,
+.has-error .form-select:focus,
+.form-input.is-error:focus,
+.form-select.is-error:focus {
+  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
+}
+.has-error .form-checkbox .form-icon,
+.has-error .form-radio .form-icon,
+.has-error .form-switch .form-icon,
+.form-checkbox.is-error .form-icon,
+.form-radio.is-error .form-icon,
+.form-switch.is-error .form-icon {
+  border-color: #e85600;
+}
+.has-error .form-checkbox input:checked + .form-icon,
+.has-error .form-radio input:checked + .form-icon,
+.has-error .form-switch input:checked + .form-icon,
+.form-checkbox.is-error input:checked + .form-icon,
+.form-radio.is-error input:checked + .form-icon,
+.form-switch.is-error input:checked + .form-icon {
+  background: #e85600;
+  border-color: #e85600;
+}
+.has-error .form-checkbox input:focus + .form-icon,
+.has-error .form-radio input:focus + .form-icon,
+.has-error .form-switch input:focus + .form-icon,
+.form-checkbox.is-error input:focus + .form-icon,
+.form-radio.is-error input:focus + .form-icon,
+.form-switch.is-error input:focus + .form-icon {
+  border-color: #e85600;
+  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
+}
+.form-input:not(:placeholder-shown):invalid {
+  border-color: #e85600;
+}
+.form-input:not(:placeholder-shown):invalid:focus {
+  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
+}
+.form-input:not(:placeholder-shown):invalid + .form-input-hint {
+  color: #e85600;
 }
 .form-input:disabled,
 .form-select:disabled,
@@ -2216,7 +2248,7 @@ code {
 }
 .modal:target .modal-overlay,
 .modal.active .modal-overlay {
-  background: rgba(69, 77, 93, .5);
+  background: rgba(248, 249, 250, .75);
   bottom: 0;
   cursor: default;
   display: block;
@@ -2365,7 +2397,6 @@ code {
 .pagination .page-item a:hover {
   color: #5764c6;
 }
-.pagination .page-item a[disabled],
 .pagination .page-item a.disabled {
   cursor: default;
   opacity: .5;
