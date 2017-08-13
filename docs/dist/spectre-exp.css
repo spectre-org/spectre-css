@@ -1,6 +1,6 @@
 /*! Spectre.css Experimentals | MIT License | github.com/picturepan2/spectre */
 .calendar {
-  border: 1px solid #f0f1f4;
+  border: 1px solid #e7e9ed;
   border-radius: 2px;
   display: block;
   min-width: 280px;
@@ -41,7 +41,7 @@
 }
 .calendar .calendar-header {
   background: #f8f9fa;
-  border-bottom: 1px solid #f0f1f4;
+  border-bottom: 1px solid #e7e9ed;
   color: #acb3c2;
   font-size: 12px;
 }
@@ -137,8 +137,8 @@
   padding: 0;
 }
 .calendar.calendar-lg .calendar-body .calendar-date {
-  border-bottom: 1px solid #f0f1f4;
-  border-right: 1px solid #f0f1f4;
+  border-bottom: 1px solid #e7e9ed;
+  border-right: 1px solid #e7e9ed;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -363,10 +363,10 @@
   object-position: left top;
   position: absolute;
   width: 100%;
-  z-index: -1;
 }
 .comparison-slider .comparison-before {
   width: 100%;
+  z-index: 1;
 }
 .comparison-slider .comparison-before .comparison-label {
   right: 16px;
@@ -374,7 +374,7 @@
 .comparison-slider .comparison-after {
   max-width: 100%;
   min-width: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .comparison-slider .comparison-after::before {
   background: transparent;
@@ -401,7 +401,6 @@
   -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
   width: 3px;
-  z-index: -1;
 }
 .comparison-slider .comparison-after .comparison-label {
   left: 16px;
@@ -815,7 +814,7 @@
   position: relative;
 }
 .timeline .timeline-item::before {
-  background: #f0f1f4;
+  background: #e7e9ed;
   content: "";
   height: 100%;
   left: 11px;

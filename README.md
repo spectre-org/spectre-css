@@ -3,7 +3,7 @@ Spectre.css is a lightweight, responsive and modern CSS framework for faster and
 
 - Lightweight (~10KB gzipped) starting point for your projects
 - Flexbox-based, responsive and mobile-friendly layout
-- Carefully designed elements and components
+- Elegantly designed and developed elements and components
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 

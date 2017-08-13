@@ -7,141 +7,128 @@
 @import '../../src/variables.less';
 @import '../../src/mixins.less';
 
-/* Spectre docs style */
-.section-header {
-  backdrop-filter: blur(10px); // Safari only feature
-  background: fade(@bg-color, 90%);
-  padding: 10px 5px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-}
+/* Spectre New Docs */
+.s-sidebar {
+  background: @bg-color;
+  flex: 0 0 240px;
+  padding: 30px 0 30px 30px;
+  width: 240px;
 
-.section-hero {
-  padding: 10px;
-  position: relative;
-  z-index: 300;
-}
-
-.section-footer {
-  color: @gray-color;
-  padding: 26px 15px 10px 15px;
-  position: relative;
-  z-index: 200;
-
-  a {
-    color: @gray-color-dark;
-  }
-}
-
-.grid-header {
-  .navbar {
-    height: 40px;
+  .float-btn {
+    position: fixed;
+    right: 90px;
+    top: 30px;
   }
 
-  .navbar-section {
-    padding: 0;
-  }
+  .accordion {
+    .accordion-item {
+      margin-bottom: 15px;
+    }
 
-  .navbar-brand {
-    color: @body-font-color;
-  }
+    input {
+      & ~ .accordion-header {
+        color: darken(@gray-color-dark, 10%);
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &:checked {
+        & ~ .accordion-header {
+          color: darken(@gray-color-dark, 10%);
+        }
+      }
+    }
 
-  .btn-link {
-    color: lighten(@body-font-color, 10%);
-    margin-left: -5px;
-    padding-left: 6px;
-    padding-right: 6px;
-
-    &:focus,
-    &:hover,
-    &:active {
-      color: @body-font-color;
-      opacity: .75;
+    .menu {
+      .menu-item {
+        padding-left: 20px;
+        
+        & > a {
+          background: transparent;
+          color: @gray-color-dark;
+          display: inline-block;
+        }
+      }
     }
   }
 }
 
-.grid-hero {
-  margin-top: 100px;
-  margin-bottom: 40px;
-
-  h1 {
-    color: @body-font-color;
-    font-size: 32px;
-    font-weight: 400;
-  }
-
-  h2 {
-    color: lighten(@body-font-color, 5%);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 30px;
-
-    u {
-      border-bottom: 2px solid currentColor;
-      padding-bottom: 1px;
-      text-decoration: none;
-    }
-  }
-
-  .card {
-    background: none;
-    border: 0;
-    color: lighten(@body-font-color, 10%);
-    padding: 10px;
-
-    .card-title {
-      color: @primary-color;
-      font-size: 18px;
-      margin-bottom: 0;
-    }
-  }
-}
-
-.docs-container {
-  height: 100%;
-  overflow: auto;
-}
-
-.docs-content {
-  padding-bottom: 50px;
-  padding-top: 0;
+.s-content {
+  flex: 1 1 auto;
+  max-width: 960px;
+  padding: 0 80px;
 
   .container {
-    padding: 10px;
-
-    & > h3,
-    & > h4 {
-      padding-top: 55px;
-    }
+    padding: 0 10px 30px 10px;
   }
 
   .anchor {
     color: @primary-color-light;
     height: 0;
-    margin-left: -1em;
+    margin-left: -2em;
     overflow: hidden;
-    padding: 0 @unit-1;
+    padding: 0 1em;
     position: absolute;
+    text-align: center;
     width: 0;
+    z-index: @zindex-1;
     &:focus,
     &:hover {
+      box-shadow: none;
       height: auto;
       text-decoration: none;
-      width: auto;
+      width: 2em;
+    }
+  }
+  .s-title,
+  .s-subtitle {
+    line-height: 32px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: static;
+
+    @supports (position: sticky) {
+      position: sticky;
+      top: 0;
+      z-index: @zindex-2;
+
+      &::before {
+        background: @light-color;      
+        bottom: 0;
+        content: "";
+        display: block;
+        left: -90px;
+        position: absolute;
+        right: -90px;
+        top: -10px;
+        z-index: -@zindex-0;
+      }
+    }
+
+    &:hover {
+      .anchor {
+        height: auto;
+        width: 1em;
+      }
+    }
+
+    & + .notes {
+      margin-top: 8px;
     }
   }
 
   .notes {
-    margin: 40px 0;
+    margin: 30px 0;
   }
 
   .docs-block {
     border-radius: 2px;
     padding: 10px 5px;
+
+    &.bg-gray {
+      background: @bg-color-dark;
+    }
   }
 
   .docs-dot {
@@ -156,23 +143,6 @@
     th,
     td {
       padding: 15px 5px;
-    }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    &:hover {
-      .anchor {
-        height: auto;
-        width: auto;
-      }
     }
   }
 
@@ -243,24 +213,136 @@
   }
 }
 
-.docs-sidebar {
-  width: 240px;
-  
-  .accordion {
-    input {
-      &:checked {
-        & ~ .accordion-header {
-          font-weight: bold;
-        }
-      }
+.s-nav {
+  bottom: 30px;
+  overflow-y: auto; 
+  position: fixed;
+  top: 100px;
+  width: 210px;
+}
+
+.s-brand {
+  color: @primary-color;
+  padding: 0 4px;
+  position: fixed;
+  top: 26px;
+
+  .s-logo {
+    align-items: center;
+    border-radius: 2px;
+    display: flex;
+    height: 40px;
+    padding: 4px;
+    width: auto;
+    
+    &:focus,
+    &:hover {
+      text-decoration: none;
     }
 
-    .menu {
-      .menu-item {
-        & > a {
-          padding-left: @unit-4;
-        }
-      }
+    img {
+      display: inline;
+      height: auto;
+      width: 32px;
+    }
+
+    h2 {
+      display: inline;
+      font-size: 16px;  
+      margin-bottom: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.s-footer {
+  color: @gray-color;
+  padding: 10px 10px 30px 10px;
+
+  a {
+    color: @gray-color-dark;
+  }
+}
+
+/* Spectre docs style */
+.section-header {
+  backdrop-filter: blur(10px); // Safari only feature
+  background: @light-color;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: @zindex-2;
+
+  .s-brand {
+    position: static;
+  }
+}
+
+.section-hero {
+  padding: 30px 10px;
+  position: relative;
+}
+
+.section-updates {
+  padding: 30px 10px;
+
+  .update-branding {
+    height: auto;
+    width: 64px;
+  }
+}
+
+.section-features {
+  padding: 30px 10px;
+}
+
+.section-footer {
+  color: @gray-color;
+  padding: 36px 15px 20px 15px;
+  position: relative;
+  z-index: 200;
+
+  a {
+    color: @gray-color-dark;
+  }
+}
+
+.grid-hero {
+  margin-top: 100px;
+  margin-bottom: 40px;
+
+  h1 {
+    color: @body-font-color;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  h2 {
+    color: lighten(@body-font-color, 5%);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+    u {
+      border-bottom: 2px solid currentColor;
+      padding-bottom: 1px;
+      text-decoration: none;
+    }
+  }
+
+  .card {
+    background: none;
+    border: 0;
+    color: lighten(@body-font-color, 10%);
+    padding: 10px;
+
+    .card-title {
+      color: @primary-color;
+      font-size: 18px;
+      margin-bottom: 0;
     }
   }
 }

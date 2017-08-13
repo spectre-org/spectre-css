@@ -21,12 +21,12 @@
       object-position: left top;
       position: absolute;
       width: 100%;
-      z-index: -1;
     }
   }
 
   .comparison-before {
     width: 100%;
+    z-index: 1;
 
     .comparison-label {
       right: @unit-4;
@@ -36,7 +36,7 @@
   .comparison-after {
     max-width: 100%;
     min-width: 0;
-    z-index: @zindex-0;
+    z-index: 2;
 
     &::before {
       background: transparent;
@@ -62,7 +62,6 @@
       top: 50%;
       transform: translate(50%, -50%);
       width: 3px;
-      z-index: -@zindex-0;
     }
 
     .comparison-label {
