@@ -12,18 +12,21 @@
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
-  <div class="container">
+  <div class="s-container container">
     <div class="columns">
-      <div id="sidebar" class="s-sidebar">
-        <div class="s-brand">
-          <a href="index.html" class="s-logo">
-            <img src="img/spectre-logo.svg" alt="Spectre.css" />
-            <h2>Spectre.css</h2>
-          </a>
+      <div class="s-brand">
+        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css" >
+          <img src="img/spectre-logo.svg" alt="Spectre.css"/>
+          <h2>Spectre.css</h2>
+        </a>
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
         </div>
         <div class="float-btn">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
         </div>
+      </div>
+      <div id="sidebar" class="s-sidebar">
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
@@ -247,7 +250,7 @@
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div class="s-content">
+      <div id="content" class="s-content">
         <div id="colors" class="container">
           <h3 class="s-title"><a href="#colors" class="anchor" aria-hidden="true">#</a>Color utilities</h3>
           <div class="notes">
@@ -257,7 +260,7 @@
           <div class="notes">
             <p><span class="text-primary">primary color</span></p>
             <p><span class="text-gray">gray color</span></p>
-            <p><span class="text-light bg-primary p-5 rounded">light color</span></p>
+            <p><span class="text-light bg-dark p-5 rounded">light color</span></p>
             <p><span class="text-success">success color</span></p>
             <p><span class="text-warning">warning color</span></p>
             <p><span class="text-error">error color</span></p>
@@ -357,7 +360,9 @@
           </div>
           <div class="columns">
             <div class="column">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
               <div class="divider text-center" data-content="OR"></div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
             </div>
           </div>
 
@@ -423,7 +428,7 @@
             <p>Loading indicator is used for loading or updating. Also, you can add the <code>loading</code> class to buttons for loading status. Add the <code>btn-lg</code> class for large size. </p>
           </div>
           <div class="columns">
-            <div class="column col-6 text-center">
+            <div class="column col-12 text-center">
               <div class="loading"></div>
             </div>
           </div>
@@ -431,7 +436,7 @@
               <p>Add the <code>btn-lg</code> class for large size. </p>
             </div>
           <div class="columns">
-            <div class="column col-6 text-center">
+            <div class="column col-12 text-center">
               <div class="loading loading-lg"></div>
               <p class="text-gray">Loading</p>
             </div>
@@ -483,6 +488,18 @@
           <h3 class="s-title"><a href="#shapes" class="anchor" aria-hidden="true">#</a>Shape utilities</h3>
           <div class="notes">
             <p>Shape utilities are used for change element shapes.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-6 text-center">
+              <div class="bg-primary text-light docs-shape rounded centered">
+                rounded
+              </div>
+            </div>
+            <div class="column col-6 text-center">
+              <div class="bg-primary text-light docs-shape circle centered">
+                circle
+              </div>
+            </div>
           </div>
 
 <!-- shape utilities example -->
@@ -537,7 +554,7 @@
         </div>
 
         <footer class="s-footer">
-          <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
+          <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
           <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </footer>
 

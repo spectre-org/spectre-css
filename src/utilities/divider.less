@@ -6,7 +6,7 @@
 
   &[data-content]::after {
     background: @bg-color-light;
-    color: @gray-color-light;
+    color: @gray-color;
     content: attr(data-content);
     display: inline-block;
     font-size: @font-size-sm;
@@ -18,21 +18,25 @@
 .divider {
   border-top: @border-width solid @border-color;
   height: @border-width;
-  margin: @layout-spacing 0;
+  margin: @unit-2 0;
+
+  &[data-content] {
+    margin: @unit-4 0;
+  }
 }
 
 .divider-vert {
   display: block;
-  padding: @layout-spacing;
+  padding: @unit-4;
 
   &::before {
     border-left: @border-width solid @border-color;
-    bottom: @layout-spacing;
+    bottom: @unit-2;
     content: "";
     display: block;
     left: 50%;
     position: absolute;
-    top: @layout-spacing;
+    top: @unit-2;
     transform: translateX(-50%);
   }
 

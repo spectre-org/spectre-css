@@ -360,7 +360,7 @@
 .comparison-slider .comparison-after img {
   height: 100%;
   object-fit: none;
-  object-position: left top;
+  object-position: left center;
   position: absolute;
   width: 100%;
 }
@@ -580,7 +580,7 @@
   left: 0;
   position: absolute;
   text-align: center;
-  text-shadow: 0 0 4px rgba(69, 77, 93, .95);
+  text-shadow: 0 0 20px rgba(69, 77, 93, .5);
   top: 0;
   -webkit-transform: translateZ(100px) scale(.9);
   transform: translateZ(100px) scale(.9);

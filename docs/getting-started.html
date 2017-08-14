@@ -12,18 +12,21 @@
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
-  <div class="container">
+  <div class="s-container container">
     <div class="columns">
-      <div id="sidebar" class="s-sidebar">
-        <div class="s-brand">
-          <a href="index.html" class="s-logo">
-            <img src="img/spectre-logo.svg" alt="Spectre.css" />
-            <h2>Spectre.css</h2>
-          </a>
+      <div class="s-brand">
+        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css" >
+          <img src="img/spectre-logo.svg" alt="Spectre.css"/>
+          <h2>Spectre.css</h2>
+        </a>
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
         </div>
         <div class="float-btn">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
         </div>
+      </div>
+      <div id="sidebar" class="s-sidebar">
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
@@ -247,7 +250,7 @@
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div class="s-content">
+      <div id="content" class="s-content">
         <div id="introduction" class="container">
           <h3 class="s-title"><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3>
           <div class="notes">
@@ -526,7 +529,7 @@
         </div>
 
         <footer class="s-footer">
-          <p><a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
+          <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
           <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
         </footer>
 

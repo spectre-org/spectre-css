@@ -8,16 +8,25 @@
 @import '../../src/mixins.less';
 
 /* Spectre New Docs */
+.s-container {
+  & > .columns {
+    flex-flow: nowrap;
+    min-height: 100vh;
+  }
+}
+
 .s-sidebar {
   background: @bg-color;
-  flex: 0 0 240px;
+  flex: 0 0 auto;
   padding: 30px 0 30px 30px;
   width: 240px;
 
-  .float-btn {
+  .s-nav {
+    bottom: 30px;
+    overflow-y: auto; 
     position: fixed;
-    right: 90px;
-    top: 30px;
+    top: 100px;
+    width: 210px;
   }
 
   .accordion {
@@ -55,11 +64,12 @@
 
 .s-content {
   flex: 1 1 auto;
-  max-width: 960px;
-  padding: 0 80px;
+  max-width: 920px;
+  padding: 0 60px;
+  width: ~"calc(100vw - 240px)";
 
-  .container {
-    padding: 0 10px 30px 10px;
+  & > .container {
+    padding-bottom: 30px;
   }
 
   .anchor {
@@ -80,6 +90,7 @@
       width: 2em;
     }
   }
+  
   .s-title,
   .s-subtitle {
     line-height: 32px;
@@ -98,9 +109,9 @@
         bottom: 0;
         content: "";
         display: block;
-        left: -90px;
+        left: -10px;
         position: absolute;
-        right: -90px;
+        right: -10px;
         top: -10px;
         z-index: -@zindex-0;
       }
@@ -122,13 +133,24 @@
     margin: 30px 0;
   }
 
+  .column {
+    padding: @layout-spacing;
+  }
+
   .docs-block {
     border-radius: 2px;
-    padding: 10px 5px;
+    padding: 10px;
 
     &.bg-gray {
       background: @bg-color-dark;
     }
+  }
+
+  .docs-shape {
+    height: 96px;
+    line-height: 24px;
+    padding: 36px 0;
+    width: 96px;
   }
 
   .docs-dot {
@@ -207,30 +229,25 @@
   }
 
   .comparison-slider {
+    height: auto;
+    padding-bottom: 56.2222%;
+
     .filter-grayscale {
       filter: grayscale(75%);
     }
   }
 }
 
-.s-nav {
-  bottom: 30px;
-  overflow-y: auto; 
-  position: fixed;
-  top: 100px;
-  width: 210px;
-}
-
 .s-brand {
   color: @primary-color;
-  padding: 0 4px;
+  padding: 0 30px;
   position: fixed;
   top: 26px;
 
   .s-logo {
     align-items: center;
     border-radius: 2px;
-    display: flex;
+    display: inline-flex;
     height: 40px;
     padding: 4px;
     width: auto;
@@ -254,6 +271,12 @@
       margin-right: 10px;
     }
   }
+
+  .float-btn {
+    position: fixed;
+    right: 90px;
+    top: 30px;
+  }
 }
 
 .s-footer {
@@ -268,7 +291,7 @@
 /* Spectre docs style */
 .section-header {
   backdrop-filter: blur(10px); // Safari only feature
-  background: @light-color;
+  background: fade(@bg-color, 90%);  
   padding: 20px 10px;
   position: fixed;
   top: 0;
@@ -283,6 +306,10 @@
 .section-hero {
   padding: 30px 10px;
   position: relative;
+
+  .column {
+    padding: @layout-spacing;
+  }
 }
 
 .section-updates {
@@ -290,7 +317,11 @@
 
   .update-branding {
     height: auto;
-    width: 64px;
+    width: 96px;
+  }
+
+  .card {
+    margin-bottom: 20px;
   }
 }
 
@@ -347,49 +378,14 @@
   }
 }
 
-@media screen and (min-width: 601px) {
-  .section-header {
-    .navbar-section {
-      padding: 0 5px;
-    }
-  }
-
-  .docs-sidebar {
-    padding: 70px 10px 70px 10px;
-    position: relative;
-
-    .docs-nav {
-      bottom: 50px;
-      height: ~"calc(100vh - 140px)";
-      overflow-y: auto; 
-      position: fixed;
-      top: 90px;
-      width: 200px;
-    }
-  }
-
-  .docs-content {
-    width: ~"calc(100% - 240px)"; // Using CSS3 native calc() function
-  }
-}
-
+.menu-btn,
 .docs-nav-clear {
   display: none;
 }
 
-// Spectre.css Docs Mobile experience
-@media screen and (max-width: 600px) {
-  .grid-hero {
-    h2 {
-      font-size: 18px;
-    }
-    .card {
-      padding: 0;
-    }
-  }
-
-  .docs-sidebar {
-    background: @bg-color-light;
+@media screen and (max-width: 880px) {
+  .s-sidebar {
+    background: @bg-color;
     height: 100%;
     overflow-y: auto;
     padding: 60px 30px;
@@ -408,6 +404,44 @@
         display: block;
       }
     }
+
+    .s-nav {
+      top: 30px;
+    }
+  }
+
+  .s-brand {
+    backdrop-filter: blur(10px); // Safari only feature
+    background: fade(@bg-color, 80%);
+    height: 70px;
+    left: 0;
+    padding: 15px 10px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    z-index: @zindex-3;
+
+    .s-logo {
+      h2 {
+        display: none;
+      }
+    }
+
+    .menu-btn {
+      display: block;
+      left: 20px;
+      position: fixed;
+      top: 19px;
+
+      .btn {
+        font-size: 20px;
+      }
+    }
+
+    .float-btn {
+      right: 20px;
+      top: 19px;
+    }
   }
 
   .docs-nav-clear {
@@ -419,6 +453,44 @@
     top: 0;
     position: fixed;
     width: 100%;
-    z-index: 300;
+    z-index: @zindex-3;
+  }
+
+  .s-content {
+    min-width: auto;
+    padding: 70px 50px 0 50px;
+    width: 100%;
+
+    .s-title,
+    .s-subtitle {
+      position: static;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-hero {
+    h2 {
+      font-size: 18px;
+    }
+    .card {
+      padding: 0;
+    }
+  }
+
+  .s-content {
+    padding: 70px 10px 0 10px;
+
+    .docs-block {
+      padding: 10px 2px;
+    }
+
+    .anchor {
+      display: none;
+    }
   }
 }
