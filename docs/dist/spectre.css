@@ -403,7 +403,7 @@ a {
   text-decoration: none;
 }
 a:focus {
-  box-shadow: 0 0 0 2px rgba(87, 100, 198, .1);
+  box-shadow: 0 0 0 2px rgba(87, 100, 198, .2);
 }
 a:focus,
 a:hover,
@@ -421,7 +421,7 @@ h6 {
   color: inherit;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: 8px;
+  margin-bottom: .5em;
   margin-top: 0;
 }
 .h1,
@@ -628,7 +628,7 @@ dl dd {
 }
 .btn:focus {
   background: #eff1fa;
-  box-shadow: 0 0 0 2px rgba(87, 100, 198, .1);
+  box-shadow: 0 0 0 2px rgba(87, 100, 198, .2);
   text-decoration: none;
 }
 .btn:hover {
@@ -816,7 +816,7 @@ legend {
 }
 .form-input:focus {
   border-color: #5764c6;
-  box-shadow: 0 0 0 2px rgba(87, 100, 198, .1);
+  box-shadow: 0 0 0 2px rgba(87, 100, 198, .2);
 }
 .form-input::-webkit-input-placeholder {
   color: #acb3c2;
@@ -888,7 +888,7 @@ textarea.form-input {
 }
 .form-select:focus {
   border-color: #5764c6;
-  box-shadow: 0 0 0 2px rgba(87, 100, 198, .1);
+  box-shadow: 0 0 0 2px rgba(87, 100, 198, .2);
 }
 .form-select::-ms-expand {
   display: none;
@@ -952,7 +952,7 @@ textarea.form-input {
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
   border-color: #5764c6;
-  box-shadow: 0 0 0 2px rgba(87, 100, 198, .1);
+  box-shadow: 0 0 0 2px rgba(87, 100, 198, .2);
 }
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon,
@@ -1133,7 +1133,7 @@ textarea.form-input {
 .has-success .form-select:focus,
 .form-input.is-success:focus,
 .form-select.is-success:focus {
-  box-shadow: 0 0 0 2px rgba(50, 182, 67, .1);
+  box-shadow: 0 0 0 2px rgba(50, 182, 67, .2);
 }
 .has-error .form-input,
 .has-error .form-select,
@@ -1145,7 +1145,7 @@ textarea.form-input {
 .has-error .form-select:focus,
 .form-input.is-error:focus,
 .form-select.is-error:focus {
-  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
+  box-shadow: 0 0 0 2px rgba(232, 86, 0, .2);
 }
 .has-error .form-checkbox .form-icon,
 .has-error .form-radio .form-icon,
@@ -1171,13 +1171,13 @@ textarea.form-input {
 .form-radio.is-error input:focus + .form-icon,
 .form-switch.is-error input:focus + .form-icon {
   border-color: #e85600;
-  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
+  box-shadow: 0 0 0 2px rgba(232, 86, 0, .2);
 }
 .form-input:not(:placeholder-shown):invalid {
   border-color: #e85600;
 }
 .form-input:not(:placeholder-shown):invalid:focus {
-  box-shadow: 0 0 0 2px rgba(232, 86, 0, .1);
+  box-shadow: 0 0 0 2px rgba(232, 86, 0, .2);
 }
 .form-input:not(:placeholder-shown):invalid + .form-input-hint {
   color: #e85600;
@@ -1880,7 +1880,7 @@ code {
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
   border-color: #5764c6;
-  box-shadow: 0 0 0 2px rgba(87, 100, 198, .1);
+  box-shadow: 0 0 0 2px rgba(87, 100, 198, .2);
 }
 .form-autocomplete .form-autocomplete-input .form-input {
   border-color: transparent;
@@ -2808,6 +2808,13 @@ code {
 a.text-primary:focus,
 a.text-primary:hover {
   color: #4452c0;
+}
+.text-secondary {
+  color: #e4e6f6;
+}
+a.text-secondary:focus,
+a.text-secondary:hover {
+  color: #d1d4ef;
 }
 .text-gray {
   color: #acb3c2;
