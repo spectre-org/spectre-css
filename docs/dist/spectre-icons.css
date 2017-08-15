@@ -28,7 +28,7 @@
 .icon-back::before,
 .icon-forward::before,
 .icon-upward::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   content: "";
@@ -59,7 +59,7 @@
 .icon-forward::after {
   background: currentColor;
   content: "";
-  height: 2px;
+  height: .1rem;
   width: .8em;
 }
 .icon-downward::after,
@@ -67,7 +67,7 @@
   background: currentColor;
   content: "";
   height: .8em;
-  width: 2px;
+  width: .1rem;
 }
 .icon-back::after {
   left: 55%;
@@ -116,7 +116,7 @@
   background: currentColor;
   box-shadow: 0 -.35em, 0 .35em;
   content: "";
-  height: 2px;
+  height: .1rem;
   width: 100%;
 }
 .icon-apps::before {
@@ -130,7 +130,7 @@
 .icon-resize-vert::before,
 .icon-resize-horiz::after,
 .icon-resize-vert::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   content: "";
@@ -176,7 +176,7 @@
 .icon-cross::before {
   background: currentColor;
   content: "";
-  height: 2px;
+  height: .1rem;
   width: 100%;
 }
 .icon-plus::after,
@@ -184,7 +184,7 @@
   background: currentColor;
   content: "";
   height: 100%;
-  width: 2px;
+  width: .1rem;
 }
 .icon-cross::before {
   width: 100%;
@@ -199,7 +199,7 @@
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .icon-check::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-right: 0;
   border-top: 0;
   content: "";
@@ -210,20 +210,20 @@
   width: .9em;
 }
 .icon-stop {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
 }
 .icon-stop::before {
   background: currentColor;
   content: "";
-  height: 2px;
+  height: .1rem;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
   width: 1em;
 }
 .icon-shutdown {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   border-top-color: transparent;
 }
@@ -232,10 +232,10 @@
   content: "";
   height: .5em;
   top: .1em;
-  width: 2px;
+  width: .1rem;
 }
 .icon-refresh::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   border-right-color: transparent;
   content: "";
@@ -253,7 +253,7 @@
   width: 0;
 }
 .icon-search::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .75em;
@@ -267,7 +267,7 @@
 .icon-search::after {
   background: currentColor;
   content: "";
-  height: 2px;
+  height: .1rem;
   left: 80%;
   top: 80%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -276,7 +276,7 @@
   width: .4em;
 }
 .icon-edit::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   content: "";
   height: .4em;
   -webkit-transform: translate(-40%, -60%) rotate(-45deg);
@@ -298,9 +298,9 @@
   width: 0;
 }
 .icon-delete::before {
-  border: 2px solid currentColor;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: .1rem solid currentColor;
+  border-bottom-left-radius: .1rem;
+  border-bottom-right-radius: .1rem;
   border-top: 0;
   content: "";
   height: .75em;
@@ -311,18 +311,18 @@
   background: currentColor;
   box-shadow: -.25em .2em, .25em .2em;
   content: "";
-  height: 2px;
-  top: 1px;
+  height: .1rem;
+  top: .05rem;
   width: .5em;
 }
 .icon-share {
-  border: 2px solid currentColor;
-  border-radius: 2px;
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
   border-right: 0;
   border-top: 0;
 }
 .icon-share::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-left: 0;
   border-top: 0;
   content: "";
@@ -335,7 +335,7 @@
   width: .4em;
 }
 .icon-share::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-radius: 75% 0;
   border-right: 0;
@@ -348,13 +348,13 @@
   content: "";
   height: 1em;
   left: 15%;
-  width: 2px;
+  width: .1rem;
 }
 .icon-flag::after {
-  border: 2px solid currentColor;
-  border-bottom-right-radius: 2px;
+  border: .1rem solid currentColor;
+  border-bottom-right-radius: .1rem;
   border-left: 0;
-  border-top-right-radius: 2px;
+  border-top-right-radius: .1rem;
   content: "";
   height: .65em;
   left: 60%;
@@ -362,19 +362,19 @@
   width: .8em;
 }
 .icon-bookmark::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: .1rem;
+  border-top-right-radius: .1rem;
   content: "";
   height: .9em;
   width: .8em;
 }
 .icon-bookmark::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-left: 0;
-  border-radius: 2px;
+  border-radius: .1rem;
   content: "";
   height: .5em;
   -webkit-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
@@ -384,11 +384,11 @@
 }
 .icon-download,
 .icon-upload {
-  border-bottom: 2px solid currentColor;
+  border-bottom: .1rem solid currentColor;
 }
 .icon-download::before,
 .icon-upload::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   content: "";
@@ -404,7 +404,7 @@
   content: "";
   height: .6em;
   top: 40%;
-  width: 2px;
+  width: .1rem;
 }
 .icon-upload::before {
   -webkit-transform: translate(-50%, -60%) rotate(45deg);
@@ -415,7 +415,7 @@
   top: 50%;
 }
 .icon-time {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
 }
 .icon-time::before {
@@ -425,7 +425,7 @@
   -webkit-transform: translate(-50%, -75%);
   -ms-transform: translate(-50%, -75%);
   transform: translate(-50%, -75%);
-  width: 2px;
+  width: .1rem;
 }
 .icon-time::after {
   background: currentColor;
@@ -437,17 +437,17 @@
   -webkit-transform-origin: 50% 90%;
   -ms-transform-origin: 50% 90%;
   transform-origin: 50% 90%;
-  width: 2px;
+  width: .1rem;
 }
 .icon-mail::before {
-  border: 2px solid currentColor;
-  border-radius: 2px;
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
   content: "";
   height: .8em;
   width: 1em;
 }
 .icon-mail::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-right: 0;
   border-top: 0;
   content: "";
@@ -458,7 +458,7 @@
   width: .5em;
 }
 .icon-people::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .45em;
@@ -466,7 +466,7 @@
   width: .45em;
 }
 .icon-people::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50% 50% 0 0;
   content: "";
   height: .4em;
@@ -474,14 +474,14 @@
   width: .9em;
 }
 .icon-message {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
-  border-radius: 2px;
+  border-radius: .1rem;
   border-right: 0;
 }
 .icon-message::before {
-  border: 2px solid currentColor;
-  border-bottom-right-radius: 2px;
+  border: .1rem solid currentColor;
+  border-bottom-right-radius: .1rem;
   border-left: 0;
   border-top: 0;
   content: "";
@@ -492,7 +492,7 @@
 }
 .icon-message::after {
   background: currentColor;
-  border-radius: 2px;
+  border-radius: .1rem;
   content: "";
   height: .3em;
   left: 10%;
@@ -500,14 +500,14 @@
   -webkit-transform: translate(0, -90%) rotate(45deg);
   -ms-transform: translate(0, -90%) rotate(45deg);
   transform: translate(0, -90%) rotate(45deg);
-  width: 2px;
+  width: .1rem;
 }
 .icon-photo {
-  border: 2px solid currentColor;
-  border-radius: 2px;
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
 }
 .icon-photo::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .25em;
@@ -516,7 +516,7 @@
   width: .25em;
 }
 .icon-photo::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-left: 0;
   content: "";
@@ -529,7 +529,7 @@
 }
 .icon-link::before,
 .icon-link::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 5em 0 0 5em;
   border-right: 0;
   content: "";
@@ -547,7 +547,7 @@
   transform: translate(-30%, -55%) rotate(135deg);
 }
 .icon-location::before {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50% 50% 50% 0;
   content: "";
   height: .8em;
@@ -557,7 +557,7 @@
   width: .8em;
 }
 .icon-location::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .2em;
@@ -567,7 +567,7 @@
   width: .2em;
 }
 .icon-emoji {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
 }
 .icon-emoji::before {
@@ -578,7 +578,7 @@
   width: .1em;
 }
 .icon-emoji::after {
-  border: 2px solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom-color: transparent;
   border-radius: 50%;
   border-right-color: transparent;

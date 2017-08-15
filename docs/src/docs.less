@@ -18,26 +18,26 @@
 .s-sidebar {
   background: @bg-color;
   flex: 0 0 auto;
-  padding: 30px 0 30px 30px;
-  width: 240px;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  width: 12rem;
 
   .s-nav {
-    bottom: 30px;
+    bottom: 1.5rem;
     overflow-y: auto; 
     position: fixed;
-    top: 100px;
-    width: 210px;
+    top: 5rem;
+    width: 10.5rem;
   }
 
   .accordion {
     .accordion-item {
-      margin-bottom: 15px;
+      margin-bottom: .75rem;
     }
 
     input {
       & ~ .accordion-header {
         color: darken(@gray-color-dark, 10%);
-        font-size: 12px;
+        font-size: @font-size-sm;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -50,7 +50,7 @@
 
     .menu {
       .menu-item {
-        padding-left: 20px;
+        padding-left: 1rem;
         
         & > a {
           background: transparent;
@@ -65,11 +65,11 @@
 .s-content {
   flex: 1 1 auto;
   max-width: 920px;
-  padding: 0 60px;
-  width: ~"calc(100vw - 240px)";
+  padding: 0 3rem;
+  width: ~"calc(100vw - 12rem)";
 
   & > .container {
-    padding-bottom: 30px;
+    padding-bottom: 1.5rem;
   }
 
   .anchor {
@@ -93,10 +93,10 @@
   
   .s-title,
   .s-subtitle {
-    line-height: 32px;
+    line-height: 1.6rem;
     margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     position: static;
 
     @supports (position: sticky) {
@@ -112,7 +112,7 @@
         left: -10px;
         position: absolute;
         right: -10px;
-        top: -10px;
+        top: -5px;
         z-index: -@zindex-0;
       }
     }
@@ -125,12 +125,12 @@
     }
 
     & + .docs-note {
-      margin-top: 8px;
+      margin-top: .4rem;
     }
   }
 
   .docs-note {
-    margin: 30px 0;
+    margin: 1.5rem 0;
   }
 
   .column {
@@ -138,8 +138,8 @@
   }
 
   .docs-block {
-    border-radius: 2px;
-    padding: 10px;
+    border-radius: @border-radius;
+    padding: .5rem;
 
     &.bg-gray {
       background: @bg-color-dark;
@@ -147,31 +147,31 @@
   }
 
   .docs-shape {
-    height: 96px;
-    line-height: 24px;
-    padding: 36px 0;
-    width: 96px;
+    height: 4.8rem;
+    line-height: 1.2rem;
+    padding: 1.8rem 0;
+    width: 4.8rem;
   }
 
   .docs-dot {
     border-radius: 50%;
     display: inline-block;
-    height: 10px;
+    height: .5rem;
     padding: 0;
-    width: 10px;
+    width: .5rem;
   }
 
   .docs-table {
     th,
     td {
-      padding: 15px 5px;
+      padding: .75rem .25rem;
     }
   }
 
   .docs-color {
     border-radius: @border-radius;
-    margin: 5px 0;
-    padding: 10px;
+    margin: .25rem 0;
+    padding: .5rem;
 
     .color-subtitle {
       font-size: @font-size-sm;
@@ -183,8 +183,12 @@
     height: 75vh;
 
     .tile {
-      margin: 15px 0;
+      margin: .75rem 0;
     }
+  }
+
+  .parallax {
+    margin: 2rem auto;
   }
 
   .code {
@@ -205,7 +209,7 @@
   }
 
   .empty .icon {
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   .form-autocomplete .menu {
@@ -216,12 +220,12 @@
     align-content: space-around;
     align-items: center;
     background: @primary-color;
-    border-radius: 2px;
+    border-radius: @border-radius;
     color: @light-color;
     display: flex;
-    font-size: 24px;
-    height: 40px;
-    width: 40px;
+    font-size: 1.2rem;
+    height: 2rem;
+    width: 2rem;
 
     .icon {
       margin: auto;
@@ -240,16 +244,16 @@
 
 .s-brand {
   color: @primary-color;
-  padding: 0 30px;
+  padding: 0 1.5rem;
   position: fixed;
-  top: 26px;
+  top: 1.3rem;
 
   .s-logo {
     align-items: center;
-    border-radius: 2px;
+    border-radius: @border-radius;
     display: inline-flex;
-    height: 40px;
-    padding: 4px;
+    height: 2rem;
+    padding: .2rem;
     width: auto;
     
     &:focus,
@@ -260,39 +264,39 @@
     img {
       display: inline;
       height: auto;
-      width: 32px;
+      width: 1.6rem;
     }
 
     h2 {
       display: inline;
-      font-size: 16px;  
+      font-size: .8rem;  
       margin-bottom: 0;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: .5rem;
+      margin-right: .5rem;
     }
   }
 
   .float-btn {
     position: fixed;
-    right: 90px;
-    top: 30px;
+    right: 4.5rem;
+    top: 1.5rem;
   }
 }
 
 .s-footer {
   color: @gray-color;
-  padding: 10px 10px 30px 10px;
+  padding: .5rem .5rem 1.5rem .5rem;
 
   a {
     color: @gray-color-dark;
   }
 }
 
-/* Spectre docs style */
+/* Spectre Homepage style */
 .section-header {
-  backdrop-filter: blur(10px); // Safari only feature
+  backdrop-filter: blur(.5rem); // Safari only feature
   background: fade(@bg-color, 90%);  
-  padding: 20px 10px;
+  padding: 1rem .5rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -305,7 +309,7 @@
 }
 
 .section-hero {
-  padding: 30px 10px;
+  padding: 1.5rem .5rem;
   position: relative;
 
   .column {
@@ -314,22 +318,17 @@
 }
 
 .section-updates {
-  padding: 90px 10px 70px 10px;
-
-  .update-branding {
-    height: auto;
-    width: 96px;
-  }
+  padding: 4.5rem .5rem 3.5rem .5rem;
 
   .card {
     border: 0;
     color: lighten(@body-font-color, 15%);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
 }
 
 .section-features {
-  padding: 90px 10px;
+  padding: 4.5rem .5rem;
 
   .column {
     padding: @layout-spacing;
@@ -338,7 +337,7 @@
 
 .section-footer {
   color: @gray-color;
-  padding: 36px 15px 20px 15px;
+  padding: 1.8rem .75rem 1rem .75rem;
   position: relative;
   z-index: 200;
 
@@ -348,25 +347,25 @@
 }
 
 .grid-hero {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 
   h1 {
     color: @body-font-color;
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
     color: lighten(@body-font-color, 5%);
-    font-size: 18px;
+    font-size: .9rem;
     font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 30px;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
 
     u {
-      border-bottom: 2px solid currentColor;
-      padding-bottom: 1px;
+      border-bottom: @border-width-lg solid currentColor;
+      padding-bottom: @unit-0;
       text-decoration: none;
     }
   }
@@ -375,11 +374,11 @@
     background: none;
     border: 0;
     color: lighten(@body-font-color, 15%);
-    padding: 10px;
+    padding: .5rem;
 
     .card-title {
       color: @primary-color;
-      font-size: 18px;
+      font-size: .9rem;
       margin-bottom: 0;
     }
   }
@@ -395,7 +394,7 @@
     background: @bg-color;
     height: 100%;
     overflow-y: auto;
-    padding: 60px 30px;
+    padding: 3rem 1.5rem;
     position: fixed;
     left: 0;
     top: 0;
@@ -413,16 +412,16 @@
     }
 
     .s-nav {
-      top: 30px;
+      top: 1.5rem;
     }
   }
 
   .s-brand {
     backdrop-filter: blur(10px); // Safari only feature
     background: fade(@bg-color, 80%);
-    height: 70px;
+    height: 3.5rem;
     left: 0;
-    padding: 15px 10px;
+    padding: .75rem .5rem;
     text-align: center;
     top: 0;
     right: 0;
@@ -436,18 +435,18 @@
 
     .menu-btn {
       display: block;
-      left: 20px;
+      left: 1rem;
       position: fixed;
-      top: 19px;
+      top: .95rem;
 
       .btn {
-        font-size: 20px;
+        font-size: 1rem;
       }
     }
 
     .float-btn {
-      right: 20px;
-      top: 19px;
+      right: 1rem;
+      top: .95rem;
     }
   }
 
@@ -465,7 +464,7 @@
 
   .s-content {
     min-width: auto;
-    padding: 70px 50px 0 50px;
+    padding: 3.5rem 2.5rem 0 2.5rem;
     width: 100%;
 
     .s-title,
@@ -482,7 +481,7 @@
 @media screen and (max-width: 600px) {
   .grid-hero {
     h2 {
-      font-size: 18px;
+      font-size: .9rem;
     }
     .card {
       padding: 0;
@@ -490,10 +489,10 @@
   }
 
   .s-content {
-    padding: 70px 10px 0 10px;
+    padding: 3.5rem .5rem 0 .5rem;
 
     .docs-block {
-      padding: 10px 2px;
+      padding: .5rem .1rem;
     }
 
     .anchor {

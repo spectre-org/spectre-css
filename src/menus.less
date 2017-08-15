@@ -6,7 +6,7 @@
   margin: 0;
   min-width: @control-min-width;
   padding: @unit-2;
-  .shadow-variant(1px);
+  .shadow-variant(.05rem);
   transform: translateY(@layout-spacing-sm);
   z-index: @zindex-1;
 
@@ -47,10 +47,10 @@
 
   .menu-badge {
     float: right;
-    padding: 4px 0;
+    padding: @unit-1 0;
 
     .btn {
-      margin-top: -2px;
+      margin-top: -@unit-h;
     }
   }
 }

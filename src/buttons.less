@@ -158,12 +158,12 @@
     }
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
-      margin-left: -1px;
+      margin-left: -@border-width;
     }
     &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      margin-left: -1px;
+      margin-left: -@border-width;
     }
     &:focus,
     &:hover,
