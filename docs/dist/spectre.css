@@ -1334,14 +1334,20 @@ code {
   padding-right: .4rem;
   width: 100%;
 }
-.container.grid-1280 {
-  max-width: 1280.8px;
+.container.grid-xl {
+  max-width: 1296px;
 }
-.container.grid-960 {
-  max-width: 960.8px;
+.container.grid-lg {
+  max-width: 976px;
 }
-.container.grid-480 {
-  max-width: 480.8px;
+.container.grid-md {
+  max-width: 856px;
+}
+.container.grid-sm {
+  max-width: 616px;
+}
+.container.grid-xs {
+  max-width: 496px;
 }
 .columns {
   display: flex;

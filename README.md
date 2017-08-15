@@ -7,7 +7,7 @@ Spectre.css is a lightweight, responsive and modern CSS framework for faster and
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 
-Read [the documentation](https://picturepan2.github.io/spectre/) to learn more.
+Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html) to learn more.
 
 ### Getting started
 
@@ -36,7 +36,7 @@ Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled 
 
 ### Compiling custom version
 
-You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/index.html#compiling).
+You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html#compiling).
 
 ### Documentation and examples
 

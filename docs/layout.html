@@ -410,11 +410,12 @@
 
           <h4 class="s-subtitle">Responsive container</h4>
           <div class="docs-note">
-            <p>The responsive layout also provides fixed-width containers. Use <code>grid-480</code>, <code>grid-960</code> or <code>grid-1280</code> to <code>container</code> for a fixed-width container with the specific max-width.</p>
+            <p>The responsive layout also provides fixed-width containers. Use <code>grid-xs</code>(480px), <code>grid-sm</code> (600px), <code>grid-md</code> (840px), <code>grid-lg</code> (960px) or <code>grid-xl</code> (1280px) to <code>container</code> for a fixed-width container with the specific max-width.</p>
           </div>
 
 <!-- layout example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container grid-960&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- 100% width container with max-width set to grid-lg (960px) --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container grid-lg&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
     ...
   &lt;<span class="tag">/div</span>&gt;
