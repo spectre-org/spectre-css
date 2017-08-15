@@ -692,12 +692,12 @@ dl dd {
 .btn.btn-sm {
   font-size: .6rem;
   height: 1.2rem;
-  padding: .05rem .4rem;
+  padding: .05rem .3rem;
 }
 .btn.btn-lg {
   font-size: .8rem;
   height: 2rem;
-  padding: .45rem .4rem;
+  padding: .45rem .6rem;
 }
 .btn.btn-block {
   display: block;
@@ -851,7 +851,7 @@ textarea.form-input {
   height: auto;
 }
 .form-input[type="file"] {
-  height: auto;
+  padding: .125rem;
 }
 .form-input-hint {
   color: #acb3c2;
