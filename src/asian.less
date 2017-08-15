@@ -1,9 +1,14 @@
 // Optimized for East Asian CJK
-:lang(zh),
-:lang(ja),
-:lang(ko),
-.cjk {
-  font-family: @cjk-font-family;
+:lang(zh) {
+  font-family: @cjk-zh-font-family;
+}
+
+:lang(ja) {
+  font-family: @cjk-jp-font-family;
+}
+
+:lang(ko) {
+  font-family: @cjk-ko-font-family;
 }
 
 :lang(zh),
@@ -11,10 +16,10 @@
 .cjk {
   ins,
   u {
-    border-bottom: .1rem solid;
+    border-bottom: @border-width solid;
     text-decoration: none;
   }
-  // Credit: https://github.com/ethantw/Han
+
   del + del,
   del + s,
   ins + ins,

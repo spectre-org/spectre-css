@@ -6,35 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
-  <title>Spectre.css - The lightweight, responsive and modern CSS framework</title>
+  <title>Spectre.css - A lightweight, responsive and modern CSS framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
   <link rel="stylesheet" href="dist/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
-  <section class="section section-header bg-gray">
-    <section class="grid-header container grid-960">
-      <nav class="navbar">
-        <section class="navbar-section">
-          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
-          <a href="index.html" class="btn btn-link">Docs</a>
-        </section>
-        <section class="navbar-section">
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </section>
-      </nav>
-    </section>
-  </section>
+  <div class="section section-header">
+    <div class="grid-header container grid-lg">
+      <div class="s-brand">
+        <div class="s-logo">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+          <h2>Spectre.css</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <section class="section section-hero bg-gray">
-    <section id="overview" class="grid-hero container grid-960 text-center">
+  <div class="section section-hero bg-gray">
+    <div id="overview" class="grid-hero container grid-lg text-center">
       <h1>Spectre.css</h1>
-      <h2>The <u>lightweight</u>, <u>responsive</u> and <u>modern</u> CSS framework</h2>
+      <h2>A <u>lightweight</u>, <u>responsive</u> and <u>modern</u> CSS framework</h2>
       <div class="columns">
         <div class="column">
-          <a href="index.html#introduction" class="btn btn-primary">Docs</a>
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+          <a href="getting-started.html" class="btn btn-primary btn-lg">Docs</a>
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary btn-lg">GitHub</a>
         </div>
       </div>
       <div class="columns">
@@ -64,350 +60,79 @@
               <span class="card-title">Modern</span>
             </div>
             <div class="card-body">
-              Carefully designed elements and components
+              Elegantly designed and developed elements and components
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <section class="container grid-960">
-    <section class="columns">
-      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
-        <ul class="docs-nav nav">
-          <li class="nav-item active">
-            <a href="index.html#introduction">Getting started</a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="index.html#introduction">Introduction</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#installation">Installation</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#compiling">Custom version</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#browsers">Browser support</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#whatsnew">What's new</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="elements.html">Elements</a>
-          </li>
-          <li class="nav-item">
-            <a href="layout.html">Layout</a>
-          </li>
-          <li class="nav-item">
-            <a href="components.html">Components</a>
-          </li>
-          <li class="nav-item">
-            <a href="utilities.html">Utilities</a>
-          </li>
-          <li class="nav-item">
-            <a href="experimentals.html">Experimentals</a>
-          </li>
-        </ul>
+  <div class="section section-features bg-primary text-light text-center">
+    <div class="container grid-lg">
+      <h2>Installation</h2>
+      <div class="columns">
+        <div class="column col-10 col-sm-12 centered">
+          <p class="text-large text-secondary">There are 5 ways to get started with Spectre.css CSS framework in your projects. You can either install manually, from CDN or use NPM, Yarn and Bower.</p>
+        </div>
+        <div class="column col-10 col-sm-12 centered">
+          <a href="getting-started.html#installation" class="btn btn-lg">Get started</a>
+        </div>
       </div>
-      <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+    </div>
+  </div>
 
-      <div class="docs-content column col-9 col-sm-12">
-        <section id="introduction" class="container">
-          <header class="text-center"><h3><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3></header>
-          <section class="notes">
-            <p><strong>Spectre.css</strong> is a lightweight and responsive and modern CSS framework for faster and extensible development.</p>
-            <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
-          </section>
-        </section>
-
-        <section id="installation" class="container">
-          <header class="text-center"><h3><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3></header>
-          <section class="notes">
-            <p>There are 4 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.</p>
-          </section>
-          <section class="notes">
-            <h5>Install manually</h5>
-            <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
-            <p><a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
-          </section>
-          <section class="notes">
-            <h5>Install with NPM</h5>
-
-<!-- install with npm example -->
-<pre class="code"><code><span class="tag">$</span> npm install <span class="atv">spectre.css</span> --save
-</code></pre>
-
-          </section>
-          <section class="notes">
-            <h5>Install with Yarn</h5>
-
-<!-- install with yarn example -->
-<pre class="code"><code><span class="tag">$</span> yarn add <span class="atv">spectre.css</span>
-</code></pre>
-
-          </section>
-          <section class="notes">
-            <h5>Install with Bower</h5>
-
-<!-- install with bower example -->
-<pre class="code"><code><span class="tag">$</span> bower install <span class="atv">spectre.css</span> --save
-</code></pre>
-
-          </section>
-          <section class="notes">
-            <p>And include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. If you want the <a href="elements.html#icons">Spectre Icons</a> and <a href="experimentals.html">Experimentals</a>, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
-
-<!-- install manually example -->
-<pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span> /&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp.min.css&quot;</span> /&gt;
-&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span> /&gt;
-</code></pre>
-
-          </section>
-        </section>
-
-        <section id="compiling" class="container">
-          <header class="text-center"><h3><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3></header>
-          <section class="notes">
-            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>, <code>spectre-exp.less</code> and <code>spectre-icons.less</code>.</p>
-            <p>Then, you can build the CSS file from the command line:</p>
-            <ol>
-              <li>Navigate to the root directory of Spectre.</li>
-              <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-              <li>When completed, run <code>gulp build</code> to compile LESS to CSS and minify files.</li>
-              <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
-            </ol>
-            <p>You can watch file changes and rebuild CSS files by using <code>gulp watch</code>.</p>
-          </section>
-
-<!-- file structure -->
-<pre class="code"><code>spectre/
-├── dist/                               <span class="com">// Build folder (Git ignored)</span>
-│   ├── spectre-exp.css
-│   ├── spectre-exp.min.css
-│   ├── spectre-icons.css
-│   ├── spectre-icons.min.css
-│   ├── spectre.css
-│   └── spectre.min.css
-│
-├── docs/
-│   ├── dist/                           <span class="com">// Pre-built CSS folder</span>
-│   │   ├── spectre-exp.css
-│   │   ├── spectre-exp.min.css
-│   │   ├── spectre-icons.css
-│   │   ├── spectre-icons.min.css
-│   │   ├── spectre.css
-│   │   └── spectre.min.css
-|   ├── css/                            <span class="com">// Docs CSS file</span>
-│   │   └── docs.css
-|   ├── src/
-│   │   └── docs.less
-│   ├── ../
-│   ├── index.html
-│   └── ...
-│
-├── src/                                <span class="com">// Source LESS files</span>
-│   ├── mixins.less
-│   ├── variables.less
-│   └── ...
-│
-├── spectre-exp.less
-├── spectre-icons.less
-└── spectre.less
-</code></pre>
-
-          <header id="variables" class="text-center"><h4><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4></header>
-          <section class="notes">
-            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.
-            <h5>Colors</h5>
-            <div class="columns">
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#5764c6;color:#fff;">
-                  <div class="color-title">#5764c6</div>
-                  <div class="color-subtitle">Primary</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#eff1fa;color:#5764c6;">
-                  <div class="color-title">#eff1fa</div>
-                  <div class="color-subtitle">Secondary</div>
-                </div>
-              </div>
+  <div class="section section-updates bg-gray">
+    <div class="container grid-lg">
+      <div class="columns">
+        <div class="column col-4 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title h6">Spectre Twitter</div>
             </div>
-            <div class="columns">
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#454d5d;color:#fff;">
-                  <div class="color-title">#454d5d</div>
-                  <div class="color-subtitle">Dark</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#727e96;color:#fff;">
-                  <div class="color-title">#727e96</div>
-                  <div class="color-subtitle">Gray dark</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#acb3c2;color:#fff;">
-                  <div class="color-title">#acb3c2</div>
-                  <div class="color-subtitle">Gray</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#e7e9ed;color:#727e96;">
-                  <div class="color-title">#e7e9ed</div>
-                  <div class="color-subtitle">Gray light</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#f0f1f4;color:#727e96;">
-                  <div class="color-title">#f0f1f4</div>
-                  <div class="color-subtitle">Border</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#f8f9fa;color:#727e96;">
-                  <div class="color-title">#f8f9fa</div>
-                  <div class="color-subtitle">Background</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#fff;color:#727e96;">
-                  <div class="color-title">#fff</div>
-                  <div class="color-subtitle">Light</div>
-                </div>
-              </div>
+            <div class="card-body">
+              For the latest announcements and updates, follow on Twitter: <a href="https://twitter.com/spectrecss" target="_blank">@spectrecss</a>.
             </div>
-            <div class="columns">
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#32b643;color:#fff;">
-                  <div class="color-title">#32b643</div>
-                  <div class="color-subtitle">Success</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#ffb700;color:#fff;">
-                  <div class="color-title">#ffb700</div>
-                  <div class="color-subtitle">Warning</div>
-                </div>
-              </div>
-              <div class="column col-3 col-md-6">
-                <div class="docs-color" style="background:#e85600;color:#fff;">
-                  <div class="color-title">#e85600</div>
-                  <div class="color-subtitle">Error</div>
-                </div>
-              </div>
+            <div class="card-footer">
+              <a href="https://twitter.com/spectrecss" class="btn btn-primary" target="_blank">Follow</a>
             </div>
-          </section>
-        </section>
-
-        <section id="accessibility" class="container">
-          <header class="text-center"><h3><a href="#accessibility" class="anchor" aria-hidden="true">#</a>Accessibility <small class="label">coming soon</small></h3></header>
-        </section>
-
-        <section id="browsers" class="container">
-          <header class="text-center"><h3><a href="#browsers" class="anchor" aria-hidden="true">#</a>Browser support</h3></header>
-          <section class="notes">
-            <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
-            <ul>
-              <li>Chrome <span class="label label-success">Last 4</span></li>
-              <li>Microsoft Edge <span class="label label-success">Last 4</span></li>
-              <li>Firefox <span class="label label-success">Last 4</span></li>
-              <li>Safari <span class="label label-success">Last 4</span></li>
-              <li>Opera <span class="label label-success">Last 4</span></li>
-              <li>Internet Explorer 10+</li>
-            </ul>
-          </section>
-        </section>
-
-        <section id="whatsnew" class="container">
-          <header class="text-center"><h3><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3></header>
-          <section class="notes">
-            <p><strong>April 2017</strong></p>
-            <ul>
-              <li>
-                <a href="experimentals.html#accordions">Accordions</a>: used to toggle sections of content <small class="label label-primary">NEW</small>
-              </li>
-              <li>
-                <a href="experimentals.html#filters">Filters</a>: CSS only content filters <small class="label label-primary">NEW</small>
-              </li>
-              <li>
-                <a href="experimentals.html#comparison">Comparison Sliders</a>: sliders for comparing two images <small class="label label-primary">NEW</small>
-              </li>
-              <li>
-                <a href="experimentals.html#timelines">Timelines</a>: ordered sequences of activities <small class="label label-primary">NEW</small>
-              </li>
-            </ul>
-            <p><strong>March 2017</strong></p>
-            <ul>
-              <li>
-                <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons <small class="label label-primary">NEW</small>
-              </li>
-              <li>
-                <a href="components.html#popovers">Popovers</a>: small overlay content containers
-              </li>
-              <li>
-                <a href="layout.html#panels">Panels</a>: flexible view container layout with auto-expand content section
-              </li>
-              <li>
-                <a href="experimentals.html#carousels">Carousels</a>: slideshows for cycling images
-              </li>
-              <li>
-                <a href="experimentals.html#calendars">Calendars</a>: date or date range picker and events display
-              </li>
-            </ul>
-            <p><strong>February 2017</strong></p>
-            <ul>
-              <li>New Documents experience</li>
-              <li>
-                <a href="components.html#bars">Bars</a>: represent the progress of a task or the value within the known range
-              </li>
-              <li>
-                <a href="components.html#steps">Steps</a>: progress indicators of a sequence of task steps
-              </li>
-              <li>
-                <a href="components.html#tiles">Tiles</a>: repeatable or embeddable information blocks
-              </li>
-              <li>
-                <a href="experimentals.html">Experimentals</a>: experimental elements and features
-              </li>
-              <li>
-                <a href="experimentals.html#meters">Meters</a>, <a href="experimentals.html#parallax">Parallax</a>, <a href="experimentals.html#progress">Progress</a> and <a href="experimentals.html#sliders">Sliders</a>
-              </li>
-            </ul>
-            <p><strong>March 2016</strong></p>
-            <ul>
-              <li>Initial commit</li>
-            </ul>
-          </section>
-        </section>
-
-        <section class="container">
-          <div class="divider"></div>
-          <ul class="pagination">
-            <li class="page-item page-next">
-              <a href="elements.html">
-                <p class="page-item-subtitle">Next</p>
-                <h4 class="page-item-title">Elements</h4>
-              </a>
-            </li>
-          </ul>
-        </section>
+          </div>
+        </div>
+        <div class="column col-4 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title h6">PayPal Donate</div>
+            </div>
+            <div class="card-body">
+              Spectre.css is completely free to use. If you enjoy it, please consider donating for the further development. ♥
+            </div>
+            <div class="card-footer">
+              <a href="https://www.paypal.me/picturepan2" class="btn btn-primary" target="_blank">Donate</a>
+            </div>
+          </div>
+        </div>
+        <div class="column col-4 col-xs-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title h6">Spectre Docs</div>
+            </div>
+            <div class="card-body">
+                Spectre Docs experience has been completely rewritten and improved. 
+            </div>
+            <div class="card-footer">
+              <a href="getting-started.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <footer class="bg-gray">
-    <section id="copyright" class="grid-footer container grid-960">
-      <p>
-        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | Version <span class="version"></span>
-      </p>
+  <footer class="section section-footer">
+    <div id="copyright" class="grid-footer container grid-lg">
+      <p><a href="getting-started.html" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
       <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
-    </section>
+    </div>
   </footer>
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

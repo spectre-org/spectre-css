@@ -1,27 +1,57 @@
 // Core variables
 
 // Global
-@html-font-size: 10px;
+@html-font-size: 20px;
 @html-line-height: 1.428571429;
 @body-bg: @bg-color-light;
-@body-font-color: lighten(@dark-color, 5%);
-@font-size: 1.4rem;
-@font-size-sm: 1.2rem;
-@font-size-lg: 1.6rem;
+@body-font-color: @dark-color;
+@font-size: .7rem;
+@font-size-sm: .6rem;
+@font-size-lg: .8rem;
+@line-height: 1rem;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 @base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 @fallback-font-family: "Helvetica Neue", sans-serif;
-@cjk-font-family: @base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", @fallback-font-family;
+@cjk-zh-font-family: @base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", @fallback-font-family;
+@cjk-jp-font-family: @base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, @fallback-font-family;
+@cjk-ko-font-family: @base-font-family, "Malgun Gothic", @fallback-font-family;
 @body-font-family: @base-font-family, @fallback-font-family;
 
+// Unit sizes
+@unit-0: .05rem;
+@unit-h: .1rem;
+@unit-1: .2rem;
+@unit-2: .4rem;
+@unit-3: .6rem;
+@unit-4: .8rem;
+@unit-5: 1rem;
+@unit-6: 1.2rem;
+@unit-7: 1.4rem;
+@unit-8: 1.6rem;
+@unit-9: 1.8rem;
+@unit-10: 2rem;
+@unit-12: 2.4rem;
+@unit-16: 3.2rem;
+
 // Sizes
-@layout-padding: 1rem;
-@layout-padding-lg: 1.5rem;
-@control-min-width: 18rem;
-@border-radius: .2rem;
-@border-width: .1rem;
+@layout-spacing: @unit-2;
+@layout-spacing-sm: @unit-1;
+@layout-spacing-lg: @unit-4;
+@control-size: @unit-8;
+@control-size-sm: @unit-6;
+@control-size-lg: @unit-10;
+@control-padding-h: @unit-2;
+@control-padding-v: (@control-size - @line-height) / 2 - @border-width;
+@control-padding-v-sm: (@control-size-sm - @line-height) / 2 - @border-width;
+@control-padding-v-lg: (@control-size-lg - @line-height) / 2 - @border-width;
+@control-icon-size: .7rem; 
+@control-min-width: 180px;
+@control-max-width: 320px;
+@border-radius: @unit-h;
+@border-width: @unit-0;
+@border-width-lg: @unit-h;
 
 // Colors
 // Core colors
@@ -33,7 +63,7 @@
 @secondary-color-light: lighten(@secondary-color, 3%);
 
 @link-color: @primary-color;
-@link-color-dark: darken(@link-color, 10%);
+@link-color-dark: darken(@link-color, 5%);
 
 // Gray colors
 @dark-color: #454d5d;
@@ -42,8 +72,8 @@
 @gray-color-dark: darken(@gray-color, 20%);
 @gray-color-light: lighten(@gray-color, 20%);
 
-@border-color: lighten(@gray-color-light, 3%);
-@border-color-dark: darken(@border-color, 15%);
+@border-color: lighten(@dark-color, 60%);
+@border-color-dark: darken(@border-color, 10%);
 @bg-color: lighten(@dark-color, 66%);
 @bg-color-dark: darken(@bg-color, 3%);
 @bg-color-light: @light-color;

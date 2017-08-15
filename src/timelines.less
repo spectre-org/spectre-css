@@ -2,16 +2,16 @@
 .timeline {
   .timeline-item {
     display: flex;
-    margin-bottom: 2.4rem;
+    margin-bottom: @unit-6;
     position: relative;
     &::before {
       background: @border-color;
       content: "";
       height: 100%;
-      left: 1.1rem;
+      left: 11px;
       position: absolute;
-      top: 2.4rem;
-      width: .2rem;
+      top: @unit-6;
+      width: 2px;
     }
 
     .timeline-left {
@@ -20,32 +20,32 @@
 
     .timeline-content {
       flex: 1 1 auto;
-      padding: .2rem 0 .2rem @layout-padding-lg;
+      padding: 2px 0 2px @layout-spacing-lg;
     }
 
     .timeline-icon {
       border-radius: 50%;
       color: @light-color;
       display: block;
-      height: 2.4rem;
+      height: @unit-6;
       text-align: center;
-      width: 2.4rem;
+      width: @unit-6;
       &::before {
-        border: .2rem solid @primary-color;
+        border: @border-width-lg solid @primary-color;
         border-radius: 50%;
         content: "";
         display: block;
-        height: .8rem;
-        left: .8rem;
+        height: @unit-2;
+        left: @unit-2;
         position: absolute;
-        top: .8rem;
-        width: .8rem;
+        top: @unit-2;
+        width: @unit-2;
       }
 
       &.icon-lg {
         background: @primary-color;
-        font-size: 1.6rem;
-        line-height: 2rem;
+        font-size: @font-size-lg;
+        line-height: @line-height;
         &::before {
           content: none;
         }

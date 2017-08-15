@@ -1,19 +1,26 @@
 // Breadcrumbs
 .breadcrumb {
-  padding: 1.2rem;
+  padding: @unit-1 0;
 
   .breadcrumb-item {
+    color: @gray-color-dark;
     display: inline-block;
     margin: 0;
+    padding: @unit-1 0;
 
-    &:last-child {
-      color: @gray-color;
+    &:not(:last-child) {
+      margin-right: @unit-1;
+
+      a {
+        color: @gray-color-dark;
+      }
     }
+
     &:not(:first-child) {
       &::before {
         color: @gray-color-light;
         content: "/";
-        padding: 0 .4rem;
+        padding-right: @unit-1;
       }
     }
   }

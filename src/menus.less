@@ -5,14 +5,19 @@
   list-style: none;
   margin: 0;
   min-width: @control-min-width;
-  padding: 1rem;
-  .shadow-variant(.1rem);
-  transform: translateY(.5rem);
+  padding: @unit-2;
+  .shadow-variant(.05rem);
+  transform: translateY(@layout-spacing-sm);
   z-index: @zindex-1;
+
+  &.menu-nav {
+    background: transparent;
+    box-shadow: none;
+  }
 
   .menu-item {
     margin-top: 0;
-    padding: 0 .8rem;
+    padding: 0 @unit-2;
     text-decoration: none;
     user-select: none;
 
@@ -20,27 +25,32 @@
       border-radius: @border-radius;
       color: inherit;
       display: block;
-      margin: 0 -.8rem;
-      padding: .6rem .8rem;
+      margin: 0 -@unit-2;
+      padding: @unit-1 @unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
+        background: @secondary-color;
         color: @primary-color;
       }
       &:active,
       &.active {
-        background: @secondary-color-light;
+        background: @secondary-color;
         color: @primary-color;
       }
+    }
+
+    & + .menu-item {
+      margin-top: @unit-1;
     }
   }
 
   .menu-badge {
     float: right;
-    padding: .6rem 0;
+    padding: @unit-1 0;
 
     .btn {
-      margin-top: -.2rem;
+      margin-top: -@unit-h;
     }
   }
 }

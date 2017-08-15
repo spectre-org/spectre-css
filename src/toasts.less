@@ -4,7 +4,7 @@
   border-radius: @border-radius;
   color: @light-color;
   display: block;
-  padding: @layout-padding;
+  padding: @layout-spacing;
   .toast-variant(@dark-color);
   width: 100%;
 
@@ -33,5 +33,9 @@
     &.active {
       opacity: .75;
     }
+  }
+
+  .btn-clear {
+    margin: 2px -2px 2px 4px;
   }
 }

@@ -7,12 +7,12 @@
     content: attr(data-tooltip);
     opacity: 0;
     left: 50%;
-    padding: @layout-padding;
+    padding: @layout-spacing;
     position: absolute;
     top: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: transform .2s ease;
-    width: 32rem;
+    width: @control-max-width;
     z-index: @zindex-4;
   }
 
@@ -65,6 +65,6 @@
 
   .card {
     border: 0;
-    .shadow-variant(.4rem);
+    .shadow-variant(.2rem);
   }
 }

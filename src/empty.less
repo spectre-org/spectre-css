@@ -4,11 +4,15 @@
   border-radius: @border-radius;
   color: @gray-color-dark;
   text-align: center;
-  padding: 4 * @layout-padding;
+  padding: 4 * @layout-spacing;
+
+  .empty-icon {
+    margin-bottom: @layout-spacing-lg;
+  }
 
   .empty-title,
   .empty-subtitle {
-    margin: 1rem auto;
+    margin: @layout-spacing auto;
   }
 
   .empty-subtitle {
@@ -16,6 +20,6 @@
   }
 
   .empty-action {
-    margin-top: 1.5rem;
+    margin-top: @layout-spacing-lg;
   }
 }

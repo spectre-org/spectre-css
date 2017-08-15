@@ -3,18 +3,25 @@ Spectre.css is a lightweight, responsive and modern CSS framework for faster and
 
 - Lightweight (~10KB gzipped) starting point for your projects
 - Flexbox-based, responsive and mobile-friendly layout
-- Carefully designed elements and components
+- Elegantly designed and developed elements and components
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 
-Read [the documentation](https://picturepan2.github.io/spectre/) to learn more.
+Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html) to learn more.
 
 ### Getting started
 
-There are 4 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
+There are 5 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
 ##### Install manually
-Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/docs/dist).
+Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
+
+`<link rel="stylesheet" href="spectre.min.css" />`
+
+##### Install from CDN
+Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled Spectre.css.
+
+`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />`
 
 ##### Install with NPM
 `$ npm install spectre.css --save`
@@ -25,13 +32,11 @@ Download the compiled and minified [Spectre CSS file](https://github.com/picture
 ##### Install with Bower
 `$ bower install spectre.css --save`
 
-And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
 
-`<link rel="stylesheet" href="spectre.min.css" />`
 
 ### Compiling custom version
 
-You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/index.html#compiling).
+You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html#compiling).
 
 ### Documentation and examples
 
@@ -47,35 +52,37 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Media](https://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video classes
 
 #### Layout
-- [Flexbox-grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
+- [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
 - [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
 - [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
 - [Panels](https://picturepan2.github.io/spectre/layout.html#panels) - flexible view container layout with auto-expand content section
 - [Empty states](https://picturepan2.github.io/spectre/layout.html#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
-
+- [Accordions](https://picturepan2.github.io/spectre/components.html#accordions) - used to toggle sections of content
 - [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
 - [Avatars](https://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
 - [Badges](https://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
+- [Breadcrumbs](https://picturepan2.github.io/spectre/components.html#breadcrumbs) - navigational hierarchy
 - [Bars](https://picturepan2.github.io/spectre/components.html#bars) - progress of a task or the value within the known range
 - [Cards](https://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
 - [Chips](https://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
 - [Menus](https://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
+- [Navs](https://picturepan2.github.io/spectre/components.html#navs) - navigational list of links
 - [Modals](https://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
-- [Navigation](https://picturepan2.github.io/spectre/components.html#navigation) - breadcrumb, tabs, pagination and navs
+- [Pagination](https://picturepan2.github.io/spectre/components.html#pagination) - navigational links for multiple pages
 - [Popovers](https://picturepan2.github.io/spectre/components.html#popovers) - small overlay content containers
 - [Steps](https://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
+- [Tabs](https://picturepan2.github.io/spectre/components.html#tabs) - toggle for different views
 - [Tiles](https://picturepan2.github.io/spectre/components.html#tiles) - repeatable or embeddable information blocks
 - [Toasts](https://picturepan2.github.io/spectre/components.html#toasts) - showing alerts or notifications
 - [Tooltips](https://picturepan2.github.io/spectre/components.html#tooltips) - simple tooltip built entirely in CSS
 
 #### Utilities
 
-- [Utilities](https://picturepan2.github.io/spectre/utilities.html) - layout, positions, display, text, shapes, loading things
+- [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
 #### Experimentals
-- [Accordions](https://picturepan2.github.io/spectre/experimentals.html#accordions) - used to toggle sections of content
 - [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars) - date or date range picker and events display
 - [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - slideshows for cycling images
 - [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - sliders for comparing two images, built entirely in CSS

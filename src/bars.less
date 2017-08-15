@@ -4,11 +4,11 @@
   border-radius: @border-radius;
   display: flex;
   flex-wrap: nowrap;
-  height: 1.6rem;
+  height: @unit-4;
   width: 100%;
 
   &.bar-sm {
-    height: .4rem;
+    height: @unit-1;
   }
 
   // TODO: attr() support
@@ -18,9 +18,8 @@
     display: block;
     font-size: @font-size-sm;
     flex-shrink: 0;
-    line-height: 1;
+    line-height: @unit-4;
     height: 100%;
-    padding: .2rem 0;
     position: relative;
     text-align: center;
     width: 0;
@@ -39,8 +38,8 @@
 
 // Slider bar
 .bar-slider {
-  height: .2rem;
-  margin: 1rem 0;
+  height: @border-width-lg;
+  margin: @layout-spacing 0;
   position: relative;
 
   .bar-item {
@@ -57,16 +56,16 @@
     background: @primary-color;
     border: 0;
     border-radius: 50%;
-    height: 1.2rem;
+    height: @unit-3;
     padding: 0;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translate(50%, -50%);
-    width: 1.2rem;
+    width: @unit-3;
 
     &:active {
-      box-shadow: 0 0 0 .2rem @primary-color;
+      box-shadow: 0 0 0 .1rem @primary-color;
     }
   }
 }

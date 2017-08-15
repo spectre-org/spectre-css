@@ -6,112 +6,292 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
-  <title>Layout - Spectre.css</title>
+  <title>Layout - Spectre.css CSS Framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
   <link rel="stylesheet" href="dist/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
-  <section class="section section-header bg-gray">
-    <section class="grid-header container grid-960">
-      <nav class="navbar">
-        <section class="navbar-section">
-          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
-          <a href="index.html" class="btn btn-link">Docs</a>
-        </section>
-        <section class="navbar-section">
+  <div class="s-container container">
+    <div class="columns">
+      <div class="s-brand">
+        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+          <h2>Spectre.css</h2>
+        </a>
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <div class="float-btn">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </section>
-      </nav>
-    </section>
-  </section>
-
-  <section class="container grid-960">
-    <section class="columns">
-      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
-        <ul class="docs-nav nav">
-          <li class="nav-item">
-            <a href="index.html#introduction">Getting started</a>
-          </li>
-          <li class="nav-item">
-            <a href="elements.html">Elements</a>
-          </li>
-          <li class="nav-item active">
-            <a href="layout.html">Layout</a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="layout.html#grid">Flexbox grid</a>
-              </li>
-              <li class="nav-item">
-                <a href="layout.html#responsive">Responsive</a>
-              </li>
-              <li class="nav-item">
-                <a href="layout.html#navbar">Navbar</a>
-              </li>
-              <li class="nav-item">
-                <a href="layout.html#panels">Panels</a>
-              </li>
-              <li class="nav-item">
-                <a href="layout.html#empty">Empty states</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="components.html">Components</a>
-          </li>
-          <li class="nav-item">
-            <a href="utilities.html">Utilities</a>
-          </li>
-          <li class="nav-item">
-            <a href="experimentals.html">Experimentals</a>
-          </li>
-        </ul>
+        </div>
+      </div>
+      <div id="sidebar" class="s-sidebar">
+        <div class="s-nav">
+          <div class="accordion">
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-1">
+                Getting started
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="getting-started.html#introduction">Introduction</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#installation">Installation</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#compiling">Custom version</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#browsers">Browser support</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#whatsnew">What's new</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-2">
+                Elements
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="elements.html#typography">Typography</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#tables">Tables</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#buttons">Buttons</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#forms">Forms</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#icons">Icons</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#labels">Labels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#codes">Codes</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#media">Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden checked />
+              <label class="accordion-header hand" for="docs-accordion-3">
+                Layout
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="layout.html#grid">Flexbox grid</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#responsive">Responsive</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#navbar">Navbar</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#panels">Panels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#empty">Empty states</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-4">
+                Components
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="components.html#accordions">Accordions</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#autocomplete">Autocomplete</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#avatars">Avatars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#badges">Badges</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#bars">Bars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#breadcrumbs">Breadcrumbs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#cards">Cards</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#chips">Chips</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#menus">Menus</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#modals">Modals</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#navs">Navs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#popovers">Popovers</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#steps">Steps</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tabs">Tabs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tiles">Tiles</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#toasts">Toasts</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tooltips">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-5">
+                Utilities
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#display">Display</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#divider">Divider</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#loading">Loading</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#position">Position</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#shapes">Shapes</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#text">Text</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-6">
+                Experimentals
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="experimentals.html#calendars">Calendars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#carousels">Carousels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#comparison">Comparison sliders</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#filters">Filters</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#meters">Meters</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#parallax">Parallax</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#progress">Progress</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#sliders">Sliders</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#timelines">Timelines</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div class="docs-content column col-9 col-sm-12">
-        <section id="grid" class="container">
-          <header class="text-center"><h3><a href="#grid" class="anchor" aria-hidden="true">#</a>Flexbox grid</h3></header>
-          <section class="notes">
-            <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
-          </section>
+      <div id="content" class="s-content">
+        <div id="grid" class="container">
+          <h3 class="s-title"><a href="#grid" class="anchor" aria-hidden="true">#</a>Flexbox grid</h3>
+          <div class="docs-note">
+            <p>Layout includes flexbox based responsive grid system with 12 columns. </p>
+          </div>
           <div class="columns">
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
             <div class="column">
-              <div class="bg-gray docs-block"></div>
+              <div class="bg-primary text-secondary docs-block"></div>
             </div>
           </div>
 
@@ -136,10 +316,10 @@
             </div>
           </div>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>Add the <code>columns</code> class to a container with the <code>container</code> class. And add any element you want with the <code>column</code> class inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
             <p>And you can add the <code>col-gapless</code> class to have gapless columns.</p>
-          </section>
+          </div>
 
           <div class="columns col-gapless">
             <div class="column col-6">
@@ -150,9 +330,9 @@
             </div>
           </div>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>By default, Spectre grid has multi-line flexbox enabled. You can add the <code>col-oneline</code> class to <code>columns</code> to make all its child columns positioned in the same single row.</p>
-          </section>
+          </div>
 
           <div class="columns col-oneline">
             <div class="column col-8">
@@ -179,11 +359,11 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="responsive" class="container">
-          <header class="text-center"><h3><a href="#responsive" class="anchor" aria-hidden="true">#</a>Responsive grid</h3></header>
-          <div class="notes">
+        <div id="responsive" class="container">
+          <h3 class="s-title"><a href="#responsive" class="anchor" aria-hidden="true">#</a>Responsive grid</h3>
+          <div class="docs-note">
             <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities. </p>
           </div>
           <div class="columns">
@@ -207,7 +387,7 @@
             </div>
           </div>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>There are <code>col-xs-[1-12]</code>, <code>col-sm-[1-12]</code>, <code>col-md-[1-12]</code>, <code>col-lg-[1-12]</code> and <code>col-xl-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
             <ul>
               <li><code>col-xs-[1-12]</code> apply to window width smaller than or equal to <strong>480px</strong>. </li>
@@ -216,7 +396,7 @@
               <li><code>col-lg-[1-12]</code> apply to window width smaller than or equal to <strong>960px</strong>. </li>
               <li><code>col-xl-[1-12]</code> apply to window width smaller than or equal to <strong>1280px</strong>. </li>
             </ul>
-          </section>
+          </div>
 
 <!-- layout example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
@@ -228,9 +408,23 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <header class="text-center"><h4>Responsive visibility</h4></header>
-          <div class="notes">
-            <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities. </p>
+          <h4 class="s-subtitle">Responsive container</h4>
+          <div class="docs-note">
+            <p>The responsive layout also provides fixed-width containers. Use <code>grid-xs</code>(480px), <code>grid-sm</code> (600px), <code>grid-md</code> (840px), <code>grid-lg</code> (960px) or <code>grid-xl</code> (1280px) to <code>container</code> for a fixed-width container with the specific max-width.</p>
+          </div>
+
+<!-- layout example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- 100% width container with max-width set to grid-lg (960px) --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container grid-lg&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    ...
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <h4 class="s-subtitle">Responsive visibility</h4>
+          <div class="docs-note">
+            <p>The responsive visibility utilities help show and hide elements on specific viewport sizes. </p>
           </div>
           <table class="docs-table table text-center">
             <thead>
@@ -246,7 +440,7 @@
             <tbody>
               <tr>
                 <td class="text-left">hide-xs</td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
@@ -254,40 +448,40 @@
               </tr>
               <tr>
                 <td class="text-left">hide-sm</td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">hide-md</td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">hide-lg</td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">hide-xl</td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
               </tr>
             </tbody>
           </table>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>For hiding elements on specific viewport sizes, there are classes <code>hide-xs</code>, <code>hide-sm</code>, <code>hide-md</code>, <code>hide-lg</code> and <code>hide-xl</code> available.</p>
             <ul>
               <li><code>hide-xs</code> hides elements when the window width is smaller than or equal to <strong>480px</strong>. </li>
@@ -296,7 +490,7 @@
               <li><code>hide-lg</code> hides elements when the window width is smaller than or equal to <strong>960px</strong>. </li>
               <li><code>hide-xl</code> hides elements when the window width is smaller than or equal to <strong>1280px</strong>. </li>
             </ul>
-          </section>
+          </div>
 
           <table class="docs-table table text-center">
             <thead>
@@ -313,26 +507,26 @@
               <tr>
                 <td class="text-left">show-xs</td>
                 <td><div class="bg-primary docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">show-sm</td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">show-md</td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">show-lg</td>
@@ -340,7 +534,7 @@
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
                 <td><div class="bg-primary docs-dot"></div></td>
-                <td><div class="bg-gray docs-dot"></div></td>
+                <td><div class="bg-secondary docs-dot"></div></td>
               </tr>
               <tr>
                 <td class="text-left">show-xl</td>
@@ -353,7 +547,7 @@
             </tbody>
           </table>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>For showing elements on specific viewport sizes, there are classes <code>show-xs</code>, <code>show-sm</code>, <code>show-md</code>, <code>show-lg</code> and <code>show-xl</code> available.</p>
             <ul>
               <li><code>show-xs</code> shows elements when the window width is smaller than or equal to <strong>480px</strong>. </li>
@@ -364,34 +558,34 @@
             </ul>
             <p>Spectre also has a responsive web test tool Responsive Resizer. You can clone the <a href="https://github.com/picturepan2/responsive-resizer" target="_blank">GitHub Repo</a> to use it locally or use it online.</p>
             <p><a href="https://picturepan2.github.io/responsive-resizer/" class="btn btn-primary" target="_blank">Responsive Resizer</a></p>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section id="navbar" class="container">
-          <header class="text-center"><h3><a href="#navbar" class="anchor" aria-hidden="true">#</a>Navbar</h3></header>
-          <section class="notes">
-            <p><strong>Navbar</strong> is a layout container that appears in the header of apps and websites. </p>
-          </section>
+        <div id="navbar" class="container">
+          <h3 class="s-title"><a href="#navbar" class="anchor" aria-hidden="true">#</a>Navbar</h3>
+          <div class="docs-note">
+            <p>Navbar is a layout container that appears in the header of apps and websites. </p>
+          </div>
           <div class="columns">
             <div class="column">
-              <section class="navbar">
-                <section class="navbar-section">
+              <div class="navbar">
+                <div class="navbar-section">
                   <a href="#navbar" class="navbar-brand mr-10">Spectre.css</a>
                   <a href="#navbar" class="btn btn-link">Docs</a>
                   <a href="https://github.com/picturepan2/spectre" class="btn btn-link">GitHub</a>
-                </section>
-                <section class="navbar-section">
+                </div>
+                <div class="navbar-section">
                   <div class="input-group input-inline">
                     <input class="form-input" type="text" placeholder="search" />
                     <button class="btn btn-primary input-group-btn">Search</button>
                   </div>
-                </section>
-              </section>
+                </div>
+              </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the <code>navbar-section</code> class will be evenly distributed in the container.</p>
-          </section>
+          </div>
 
 <!-- navbar example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
@@ -409,26 +603,27 @@
 &lt;<span class="tag">/header</span>&gt;
 </code></pre>
 
+          <div class="docs-note">
+            <p>You can use <code>navbar-center</code> class to have a centered section.</p>
+          </div>
+
           <div class="columns">
             <div class="column col-12">
-              <section class="navbar">
-                <section class="navbar-section">
+              <div class="navbar">
+                <div class="navbar-section">
                   <a href="#navbar" class="btn btn-link">Docs</a>
                   <a href="#navbar" class="btn btn-link">Examples</a>
-                </section>
-                <section class="navbar-center">
-                  <figure class="avatar" data-initial="S" style="background-color: #5764c6;"></figure>
-                </section>
-                <section class="navbar-section">
+                </div>
+                <div class="navbar-center">
+                  <img src="img/spectre-logo.svg" alt="Spectre.css" />
+                </div>
+                <div class="navbar-section">
                   <a href="https://twitter.com/spectrecss" class="btn btn-link">Twitter</a>
                   <a href="https://github.com/picturepan2/spectre" class="btn btn-link">GitHub</a>
-                </section>
-              </section>
+                </div>
+              </div>
             </div>
           </div>
-          <section class="notes">
-            <p>You can use <code>navbar-center</code> class to have a centered section.</p>
-          </section>
 
 <!-- navbar example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
@@ -446,21 +641,21 @@
 &lt;<span class="tag">/header</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="panels" class="container">
-          <header class="text-center"><h3><a href="#panels" class="anchor" aria-hidden="true">#</a>Panels</h3></header>
-          <section class="notes">
-            <p><strong>Panels</strong> are flexible view container layout with auto-expand content section.</p>
-          </section>
+        <div id="panels" class="container">
+          <h3 class="s-title"><a href="#panels" class="anchor" aria-hidden="true">#</a>Panels</h3>
+          <div class="docs-note">
+            <p>Panels are flexible view container layout with auto-expand content section.</p>
+          </div>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <div class="panel">
                 <div class="panel-header text-center">
                   <figure class="avatar avatar-lg">
-                    <img src="img/avatar-2.png" />
+                    <img src="img/avatar-2.png" alt="Avatar" />
                   </figure>
-                  <div class="panel-title mt-10">Bruce Banner</div>
+                  <div class="panel-title h5 mt-10">Bruce Banner</div>
                   <div class="panel-subtitle">THE HULK</div>
                 </div>
                 <nav class="panel-nav">
@@ -519,13 +714,13 @@
             <div class="column col-6 col-xs-12">
               <div class="panel">
                 <div class="panel-header">
-                  <div class="panel-title">Comments</div>
+                  <div class="panel-title h6">Comments</div>
                 </div>
                 <div class="panel-body">
                   <div class="tile">
                     <div class="tile-icon">
                       <figure class="avatar">
-                        <img src="img/avatar-1.png" />
+                        <img src="img/avatar-1.png" alt="Avatar" />
                       </figure>
                     </div>
                     <div class="tile-content">
@@ -536,7 +731,7 @@
                   <div class="tile">
                     <div class="tile-icon">
                       <figure class="avatar">
-                        <img src="img/avatar-2.png" />
+                        <img src="img/avatar-2.png" alt="Avatar" />
                       </figure>
                     </div>
                     <div class="tile-content">
@@ -556,7 +751,7 @@
                   <div class="tile">
                     <div class="tile-icon">
                       <figure class="avatar">
-                        <img src="img/avatar-4.png" />
+                        <img src="img/avatar-4.png" alt="Avatar" />
                       </figure>
                     </div>
                     <div class="tile-content">
@@ -567,7 +762,7 @@
                   <div class="tile">
                     <div class="tile-icon">
                       <figure class="avatar">
-                        <img src="img/avatar-3.png" />
+                        <img src="img/avatar-3.png" alt="Avatar" />
                       </figure>
                     </div>
                     <div class="tile-content">
@@ -586,9 +781,9 @@
             </div>
           </div>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>panel</code> class. And add child elements with the <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code> class. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
-          </section>
+          </div>
 
 <!-- panels example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
@@ -607,32 +802,32 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="empty" class="container">
-          <header class="text-center"><h3><a href="#empty" class="anchor" aria-hidden="true">#</a>Empty states / blank slates</h3></header>
-          <section class="notes">
-            <p><strong>Empty states/blank slates</strong> are commonly used as placeholders for first time use, empty data and error screens.</p>
-          </section>
+        <div id="empty" class="container">
+          <h3 class="s-title"><a href="#empty" class="anchor" aria-hidden="true">#</a>Empty states / blank slates</h3>
+          <div class="docs-note">
+            <p>Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens.</p>
+          </div>
           <div class="columns">
             <div class="column col-12">
-              <section class="empty">
+              <div class="empty">
                 <div class="empty-icon">
                   <i class="icon icon-message"></i>
                 </div>
-                <h4 class="empty-title">You have no new messages</h4>
+                <p class="empty-title h5">You have no new messages</p>
                 <p class="empty-subtitle">Click the button to start a conversation</p>
                 <div class="empty-action">
                   <button class="btn btn-primary">Send a message</button>
                 </div>
-              </section>
+              </div>
             </div>
             <div class="column col-12">
-              <section class="empty">
+              <div class="empty">
                 <div class="empty-icon">
                   <i class="icon icon-mail"></i>
                 </div>
-                <h4 class="empty-title">You've successfully signed up</h4>
+                <p class="empty-title h5">You've successfully signed up</p>
                 <p class="empty-subtitle">Click the button to invite your friends</p>
                 <div class="empty-action">
                   <button class="btn btn-primary">Invite your friends</button>
@@ -640,33 +835,33 @@
                 <div class="empty-action">
                   <button class="btn btn-link">Skip</button>
                 </div>
-              </section>
+              </div>
             </div>
             <div class="column col-12">
-              <section class="empty">
+              <div class="empty">
                 <div class="empty-icon">
                   <i class="icon icon-people"></i>
                 </div>
-                <h4 class="empty-title">You are not following anyone</h4>
+                <p class="empty-title h5">You are not following anyone</p>
                 <p class="empty-subtitle">Start to meet new friends</p>
                 <div class="empty-action input-group input-inline">
                   <input type="text" class="form-input" placeholder="" />
                   <button class="btn btn-primary input-group-btn">Search</button>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>An empty state component can include icons, messages (title and subtitle messages) and action buttons or any combination of those elements. Add <code>empty-icon</code>, <code>empty-title</code>, <code>empty-subtitle</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
-          </section>
+          </div>
 
 <!-- empty states example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-icon&quot;</span>&gt;
     &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title&quot;</span>&gt;You have no new messages&lt;<span class="tag">/h4</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title h5&quot;</span>&gt;You have no new messages&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-subtitle&quot;</span>&gt;Click the button to start a conversation.&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Send a message&lt;<span class="tag">/button</span>&gt;
@@ -674,37 +869,17 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section class="container">
-          <div class="divider"></div>
-          <ul class="pagination">
-            <li class="page-item page-prev">
-              <a href="elements.html">
-                <p class="page-item-subtitle">Previous</p>
-                <h4 class="page-item-title">Elements</h4>
-              </a>
-            </li>
-            <li class="page-item page-next">
-              <a href="components.html">
-                <p class="page-item-subtitle">Next</p>
-                <h4 class="page-item-title">Components</h4>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <footer class="s-footer">
+          <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
+          <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+        </footer>
+
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <footer class="bg-gray">
-    <section id="copyright" class="grid-footer container grid-960">
-      <p>
-        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | Version <span class="version"></span>
-      </p>
-      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
-    </section>
-  </footer>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -6,7 +6,7 @@
   font-style: normal;
   height: 1em;
   position: relative;
-  text-indent: -999rem;
+  text-indent: -9999px;
   vertical-align: middle;
   width: 1em;
 }
@@ -28,51 +28,78 @@
 .icon-back::before,
 .icon-forward::before,
 .icon-upward::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   content: "";
   height: .65em;
+  width: .65em;
+}
+.icon-arrow-down::before {
+  -webkit-transform: translate(-50%, -75%) rotate(225deg);
+  -ms-transform: translate(-50%, -75%) rotate(225deg);
+  transform: translate(-50%, -75%) rotate(225deg);
+}
+.icon-arrow-left::before {
   -webkit-transform: translate(-25%, -50%) rotate(-45deg);
   -ms-transform: translate(-25%, -50%) rotate(-45deg);
   transform: translate(-25%, -50%) rotate(-45deg);
-  width: .65em;
 }
-.icon-arrow-down,
-.icon-downward {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+.icon-arrow-right::before {
+  -webkit-transform: translate(-75%, -50%) rotate(135deg);
+  -ms-transform: translate(-75%, -50%) rotate(135deg);
+  transform: translate(-75%, -50%) rotate(135deg);
 }
-.icon-arrow-right,
-.icon-forward {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+.icon-arrow-up::before {
+  -webkit-transform: translate(-50%, -25%) rotate(45deg);
+  -ms-transform: translate(-50%, -25%) rotate(45deg);
+  transform: translate(-50%, -25%) rotate(45deg);
 }
-.icon-arrow-up,
-.icon-upward {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+.icon-back::after,
+.icon-forward::after {
+  background: currentColor;
+  content: "";
+  height: .1rem;
+  width: .8em;
 }
-.icon-downward::before,
-.icon-back::before,
-.icon-forward::before,
-.icon-upward::before {
+.icon-downward::after,
+.icon-upward::after {
+  background: currentColor;
+  content: "";
+  height: .8em;
+  width: .1rem;
+}
+.icon-back::after {
+  left: 55%;
+}
+.icon-back::before {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.icon-downward::after,
-.icon-back::after,
-.icon-forward::after,
+.icon-downward::after {
+  top: 45%;
+}
+.icon-downward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) rotate(-135deg);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.icon-forward::after {
+  left: 45%;
+}
+.icon-forward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+  -ms-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
 .icon-upward::after {
-  background: currentColor;
-  content: "";
-  height: .2rem;
-  left: 55%;
-  width: .8em;
+  top: 55%;
+}
+.icon-upward::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .icon-caret::before {
   border-left: .3em solid transparent;
@@ -89,21 +116,21 @@
   background: currentColor;
   box-shadow: 0 -.35em, 0 .35em;
   content: "";
-  height: .2rem;
+  height: .1rem;
   width: 100%;
 }
 .icon-apps::before {
   background: currentColor;
   box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
   content: "";
-  height: .3rem;
-  width: .3rem;
+  height: 3px;
+  width: 3px;
 }
 .icon-resize-horiz::before,
 .icon-resize-vert::before,
 .icon-resize-horiz::after,
 .icon-resize-vert::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   content: "";
@@ -138,8 +165,8 @@
   border-radius: 50%;
   box-shadow: -.4em 0, .4em 0;
   content: "";
-  height: .3rem;
-  width: .3rem;
+  height: 3px;
+  width: 3px;
 }
 .icon-more-vert::before {
   box-shadow: 0 -.4em, 0 .4em;
@@ -149,7 +176,7 @@
 .icon-cross::before {
   background: currentColor;
   content: "";
-  height: .2rem;
+  height: .1rem;
   width: 100%;
 }
 .icon-plus::after,
@@ -157,7 +184,7 @@
   background: currentColor;
   content: "";
   height: 100%;
-  width: .2rem;
+  width: .1rem;
 }
 .icon-cross::before {
   width: 100%;
@@ -172,7 +199,7 @@
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .icon-check::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-right: 0;
   border-top: 0;
   content: "";
@@ -183,20 +210,20 @@
   width: .9em;
 }
 .icon-stop {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
 }
 .icon-stop::before {
   background: currentColor;
   content: "";
-  height: .2rem;
+  height: .1rem;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
   width: 1em;
 }
 .icon-shutdown {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   border-top-color: transparent;
 }
@@ -205,10 +232,10 @@
   content: "";
   height: .5em;
   top: .1em;
-  width: .2rem;
+  width: .1rem;
 }
 .icon-refresh::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   border-right-color: transparent;
   content: "";
@@ -226,7 +253,7 @@
   width: 0;
 }
 .icon-search::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .75em;
@@ -240,7 +267,7 @@
 .icon-search::after {
   background: currentColor;
   content: "";
-  height: .2rem;
+  height: .1rem;
   left: 80%;
   top: 80%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -249,7 +276,7 @@
   width: .4em;
 }
 .icon-edit::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   content: "";
   height: .4em;
   -webkit-transform: translate(-40%, -60%) rotate(-45deg);
@@ -271,9 +298,9 @@
   width: 0;
 }
 .icon-delete::before {
-  border: .2rem solid currentColor;
-  border-bottom-left-radius: .2rem;
-  border-bottom-right-radius: .2rem;
+  border: .1rem solid currentColor;
+  border-bottom-left-radius: .1rem;
+  border-bottom-right-radius: .1rem;
   border-top: 0;
   content: "";
   height: .75em;
@@ -284,18 +311,18 @@
   background: currentColor;
   box-shadow: -.25em .2em, .25em .2em;
   content: "";
-  height: .2rem;
-  top: .1rem;
+  height: .1rem;
+  top: .05rem;
   width: .5em;
 }
 .icon-share {
-  border: .2rem solid currentColor;
-  border-radius: .2rem;
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
   border-right: 0;
   border-top: 0;
 }
 .icon-share::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-left: 0;
   border-top: 0;
   content: "";
@@ -308,7 +335,7 @@
   width: .4em;
 }
 .icon-share::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-radius: 75% 0;
   border-right: 0;
@@ -321,13 +348,13 @@
   content: "";
   height: 1em;
   left: 15%;
-  width: .2rem;
+  width: .1rem;
 }
 .icon-flag::after {
-  border: .2rem solid currentColor;
-  border-bottom-right-radius: .2rem;
+  border: .1rem solid currentColor;
+  border-bottom-right-radius: .1rem;
   border-left: 0;
-  border-top-right-radius: .2rem;
+  border-top-right-radius: .1rem;
   content: "";
   height: .65em;
   left: 60%;
@@ -335,19 +362,19 @@
   width: .8em;
 }
 .icon-bookmark::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
-  border-top-left-radius: .2rem;
-  border-top-right-radius: .2rem;
+  border-top-left-radius: .1rem;
+  border-top-right-radius: .1rem;
   content: "";
   height: .9em;
   width: .8em;
 }
 .icon-bookmark::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-left: 0;
-  border-radius: .2rem;
+  border-radius: .1rem;
   content: "";
   height: .5em;
   -webkit-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
@@ -357,11 +384,11 @@
 }
 .icon-download,
 .icon-upload {
-  border-bottom: .2rem solid currentColor;
+  border-bottom: .1rem solid currentColor;
 }
 .icon-download::before,
 .icon-upload::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   content: "";
@@ -377,7 +404,7 @@
   content: "";
   height: .6em;
   top: 40%;
-  width: .2rem;
+  width: .1rem;
 }
 .icon-upload::before {
   -webkit-transform: translate(-50%, -60%) rotate(45deg);
@@ -388,7 +415,7 @@
   top: 50%;
 }
 .icon-time {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
 }
 .icon-time::before {
@@ -398,7 +425,7 @@
   -webkit-transform: translate(-50%, -75%);
   -ms-transform: translate(-50%, -75%);
   transform: translate(-50%, -75%);
-  width: .2rem;
+  width: .1rem;
 }
 .icon-time::after {
   background: currentColor;
@@ -410,17 +437,17 @@
   -webkit-transform-origin: 50% 90%;
   -ms-transform-origin: 50% 90%;
   transform-origin: 50% 90%;
-  width: .2rem;
+  width: .1rem;
 }
 .icon-mail::before {
-  border: .2rem solid currentColor;
-  border-radius: .2rem;
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
   content: "";
   height: .8em;
   width: 1em;
 }
 .icon-mail::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-right: 0;
   border-top: 0;
   content: "";
@@ -431,7 +458,7 @@
   width: .5em;
 }
 .icon-people::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .45em;
@@ -439,7 +466,7 @@
   width: .45em;
 }
 .icon-people::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50% 50% 0 0;
   content: "";
   height: .4em;
@@ -447,14 +474,14 @@
   width: .9em;
 }
 .icon-message {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
-  border-radius: .2rem;
+  border-radius: .1rem;
   border-right: 0;
 }
 .icon-message::before {
-  border: .2rem solid currentColor;
-  border-bottom-right-radius: .2rem;
+  border: .1rem solid currentColor;
+  border-bottom-right-radius: .1rem;
   border-left: 0;
   border-top: 0;
   content: "";
@@ -465,7 +492,7 @@
 }
 .icon-message::after {
   background: currentColor;
-  border-radius: .2rem;
+  border-radius: .1rem;
   content: "";
   height: .3em;
   left: 10%;
@@ -473,14 +500,14 @@
   -webkit-transform: translate(0, -90%) rotate(45deg);
   -ms-transform: translate(0, -90%) rotate(45deg);
   transform: translate(0, -90%) rotate(45deg);
-  width: .2rem;
+  width: .1rem;
 }
 .icon-photo {
-  border: .2rem solid currentColor;
-  border-radius: .2rem;
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
 }
 .icon-photo::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .25em;
@@ -489,7 +516,7 @@
   width: .25em;
 }
 .icon-photo::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom: 0;
   border-left: 0;
   content: "";
@@ -502,7 +529,7 @@
 }
 .icon-link::before,
 .icon-link::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 5em 0 0 5em;
   border-right: 0;
   content: "";
@@ -520,7 +547,7 @@
   transform: translate(-30%, -55%) rotate(135deg);
 }
 .icon-location::before {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50% 50% 50% 0;
   content: "";
   height: .8em;
@@ -530,7 +557,7 @@
   width: .8em;
 }
 .icon-location::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
   content: "";
   height: .2em;
@@ -540,7 +567,7 @@
   width: .2em;
 }
 .icon-emoji {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-radius: 50%;
 }
 .icon-emoji::before {
@@ -551,7 +578,7 @@
   width: .1em;
 }
 .icon-emoji::after {
-  border: .2rem solid currentColor;
+  border: .1rem solid currentColor;
   border-bottom-color: transparent;
   border-radius: 50%;
   border-right-color: transparent;
@@ -562,6 +589,7 @@
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
 }
+.accordion .icon,
 .btn .icon,
 .toast .icon,
 .menu .icon {

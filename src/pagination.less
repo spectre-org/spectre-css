@@ -1,27 +1,30 @@
 // Pagination
 .pagination {
   display: flex;
+  padding: @unit-1 0;
 
   .page-item {
-    margin: 1rem .1rem;
+    margin: @unit-1 @unit-0;
 
     span {
       display: inline-block;
-      padding: .6rem .4rem;
+      padding: @unit-1 @unit-1;
     }
 
     a {
       border-radius: @border-radius;
       color: @gray-color-dark;
       display: inline-block;
-      padding: .6rem .8rem;
+      padding: @unit-1 @unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
         color: @primary-color;
       }
-      &[disabled],
-      &.disabled {
+    }
+
+    &.disabled {
+      a {
         cursor: default;
         opacity: .5;
         pointer-events: none;

@@ -1,8 +1,8 @@
 // Parallax
 @parallax-deg: 3deg;
-@parallax-offset: .65rem;
-@parallax-offset-z: 10rem;
-@parallax-perspective: 100rem;
+@parallax-offset: 6.5px;
+@parallax-offset-z: 100px;
+@parallax-perspective: 1000px;
 @parallax-scale: 1 - unit(@parallax-offset-z / @parallax-perspective);
 
 .parallax {
@@ -13,7 +13,7 @@
 
   .parallax-content {
     height: auto;
-    .shadow-variant(2rem);
+    .shadow-variant(1rem);
     transform: perspective(@parallax-perspective);
     transform-style: preserve-3d;
     transition: all .4s ease;
@@ -39,7 +39,7 @@
     left: 0;
     position: absolute;
     text-align: center;
-    text-shadow: 0 0 3rem fade(@dark-color, 95%);
+    text-shadow: 0 0 20px fade(@dark-color, 50%);
     top: 0;
     transform: translateZ(@parallax-offset-z) scale(@parallax-scale);
     transition: all .4s ease;

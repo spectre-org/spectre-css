@@ -6,103 +6,407 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
-  <title>Components - Spectre.css</title>
+  <title>Components - Spectre.css CSS Framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
   <link rel="stylesheet" href="dist/spectre-icons.css" />
   <link rel="stylesheet" href="css/docs.css" />
 </head>
 <body>
-  <section class="section section-header bg-gray">
-    <section class="grid-header container grid-960">
-      <nav class="navbar">
-        <section class="navbar-section">
-          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
-          <a href="index.html" class="navbar-brand mr-10">Spectre.css</a>
-          <a href="index.html" class="btn btn-link">Docs</a>
-        </section>
-        <section class="navbar-section">
+  <div class="s-container container">
+    <div class="columns">
+      <div class="s-brand">
+        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+          <h2>Spectre.css</h2>
+        </a>
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <div class="float-btn">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </section>
-      </nav>
-    </section>
-  </section>
-
-  <section class="container grid-960">
-    <section class="columns">
-      <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
-        <ul class="docs-nav nav">
-          <li class="nav-item">
-            <a href="index.html#introduction">Getting started</a>
-          </li>
-          <li class="nav-item">
-            <a href="elements.html">Elements</a>
-          </li>
-          <li class="nav-item">
-            <a href="layout.html">Layout</a>
-          </li>
-          <li class="nav-item active">
-            <a href="components.html">Components</a>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="components.html#autocomplete">Autocomplete</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#avatars">Avatars</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#badges">Badges</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#bars">Bars</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#cards">Cards</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#chips">Chips</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#menus">Menus</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#modals">Modals</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#navigation">Navigation</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#popovers">Popovers</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#steps">Steps</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#tiles">Tiles</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#toasts">Toasts</a>
-              </li>
-              <li class="nav-item">
-                <a href="components.html#tooltips">Tooltips</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="utilities.html">Utilities</a>
-          </li>
-          <li class="nav-item">
-            <a href="experimentals.html">Experimentals</a>
-          </li>
-        </ul>
+        </div>
+      </div>
+      <div id="sidebar" class="s-sidebar">
+        <div class="s-nav">
+          <div class="accordion">
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-1">
+                Getting started
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="getting-started.html#introduction">Introduction</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#installation">Installation</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#compiling">Custom version</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#browsers">Browser support</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="getting-started.html#whatsnew">What's new</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-2">
+                Elements
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="elements.html#typography">Typography</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#tables">Tables</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#buttons">Buttons</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#forms">Forms</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#icons">Icons</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#labels">Labels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#codes">Codes</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="elements.html#media">Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-3">
+                Layout
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="layout.html#grid">Flexbox grid</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#responsive">Responsive</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#navbar">Navbar</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#panels">Panels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="layout.html#empty">Empty states</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden checked />
+              <label class="accordion-header hand" for="docs-accordion-4">
+                Components
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="components.html#accordions">Accordions</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#autocomplete">Autocomplete</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#avatars">Avatars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#badges">Badges</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#bars">Bars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#breadcrumbs">Breadcrumbs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#cards">Cards</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#chips">Chips</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#menus">Menus</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#modals">Modals</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#navs">Navs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#popovers">Popovers</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#steps">Steps</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tabs">Tabs</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tiles">Tiles</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#toasts">Toasts</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#tooltips">Tooltips</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-5">
+                Utilities
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#display">Display</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#divider">Divider</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#loading">Loading</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#position">Position</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#shapes">Shapes</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#text">Text</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
+              <label class="accordion-header hand" for="docs-accordion-6">
+                Experimentals
+              </label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item">
+                    <a href="experimentals.html#calendars">Calendars</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#carousels">Carousels</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#comparison">Comparison sliders</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#filters">Filters</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#meters">Meters</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#parallax">Parallax</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#progress">Progress</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#sliders">Sliders</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="experimentals.html#timelines">Timelines</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div class="docs-content column col-9 col-sm-12">
-        <section id="autocomplete" class="container">
-          <header class="text-center"><h3><a href="#autocomplete" class="anchor" aria-hidden="true">#</a>Autocomplete</h3></header>
-          <section class="notes">
-            <p><strong>Autocomplete</strong> form component provides suggestions while you type. It is often used for tags and contacts input. </p>
-          </section>
+      <div id="content" class="s-content">
+        <div id="accordions" class="container">
+          <h3 class="s-title"><a href="#accordions" class="anchor" aria-hidden="true">#</a>Accordions</h3>
+          <div class="docs-note">
+            <p>Accordions are used to toggle sections of content.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-6 col-md-12">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <input type="radio" id="accordion-1" name="accordion-radio" hidden checked />
+                  <label class="accordion-header hand" for="accordion-1">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Elements
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Element 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Element 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="radio" id="accordion-2" name="accordion-radio" hidden />
+                  <label class="accordion-header hand" for="accordion-2">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Layout
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="radio" id="accordion-3" name="accordion-radio" hidden />
+                  <label class="accordion-header hand" for="accordion-3">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Components
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Component 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Component 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-md-12">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion-4" name="accordion-checkbox" hidden checked />
+                  <label class="accordion-header hand" for="accordion-4">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Elements
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Element 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Element 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion-5" name="accordion-checkbox" hidden />
+                  <label class="accordion-header hand" for="accordion-5">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Layout
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Layout 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <input type="checkbox" id="accordion-6" name="accordion-checkbox" hidden />
+                  <label class="accordion-header hand" for="accordion-6">
+                    <i class="icon icon-arrow-right mr-5"></i>
+                    Components
+                  </label>
+                  <div class="accordion-body">
+                    <ul class="menu menu-nav">
+                      <li class="menu-item">
+                        <a href="#accordions">Component 1</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#accordions">Component 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- accordions example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- standard Accordions examples --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-item&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;accordion-1&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;accordion-checkbox&quot;</span> <span class="atn">hidden</span>/&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-header&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-right mr-5&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      Title
+    &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-body&quot;</span>&gt;
+      <span class="com">&lt;!-- Accordions content --&gt;</span>
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- Accordions item --&gt;</span>
+&lt;<span class="tag">/div</span>&gt;
+
+<span class="com">&lt;!-- mutually exclusive Accordions examples --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-item&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;accordion-1&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;accordion-radio&quot;</span> <span class="atn">hidden</span>/&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-header&quot;</span>&gt;
+      Title
+    &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;accordion-body&quot;</span>&gt;
+      <span class="com">&lt;!-- Accordions content --&gt;</span>
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  <span class="com">&lt;!-- Accordions item --&gt;</span>
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="autocomplete" class="container">
+          <h3 class="s-title"><a href="#autocomplete" class="anchor" aria-hidden="true">#</a>Autocomplete</h3>
+          <div class="docs-note">
+            <p>Autocomplete form component provides suggestions while you type. It is often used for tags and contacts input. </p>
+          </div>
           <div class="columns">
             <div class="column col-9 col-xs-12">
               <div class="form-group">
@@ -113,12 +417,12 @@
                       <button class="btn btn-clear"></button>
                     </label>
                     <label class="chip">
-                      <img src="img/avatar-1.png" class="avatar avatar-sm" />
+                      <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Avatar" />
                       Thor Odinson
                       <button class="btn btn-clear"></button>
                     </label>
                     <label class="chip">
-                      <img src="img/avatar-4.png" class="avatar avatar-sm" />
+                      <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Avatar" />
                       Steve Rogers
                       <button class="btn btn-clear"></button>
                     </label>
@@ -148,7 +452,10 @@
                       Thor Odinson
                       <button class="btn btn-clear"></button>
                     </label>
-                    <input class="form-input" type="text" placeholder="" value="S" />
+                    <div class="has-icon-left">
+                      <input class="form-input" type="text" placeholder="" value="S" />
+                      <i class="form-icon loading"></i>
+                    </div>
                   </div>
                   <ul class="menu">
                     <li class="menu-item">
@@ -180,10 +487,10 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>form-autocomplete</code> class. There are 2 parts of it, one is <code>form-autocomplete-input</code>, another is <code>menu</code> component. You may add the <code>is-focused</code> class to <code>form-autocomplete-input</code> to make it appear as focus state.</p>
             <p>Spectre.css does NOT include JavaScript code, you will need to implement your JS to interact with the autocomplete. The autocomplete HTML structure is exampled below.</p>
-          </section>
+          </div>
 
 <!-- autocomplete example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete&quot;</span>&gt;
@@ -220,29 +527,29 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="avatars" class="container">
-          <header class="text-center"><h3><a href="#avatars" class="anchor" aria-hidden="true">#</a>Avatars</h3></header>
-          <section class="notes">
-            <p><strong>Avatars</strong> are user profile pictures. </p>
-          </section>
+        <div id="avatars" class="container">
+          <h3 class="s-title"><a href="#avatars" class="anchor" aria-hidden="true">#</a>Avatars</h3>
+          <div class="docs-note">
+            <p>Avatars are user profile pictures. </p>
+          </div>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-1.png" />
+                <img src="img/avatar-1.png" alt="Avatar" />
               </figure>
               <figure class="avatar avatar-lg" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-2.png" />
+                <img src="img/avatar-2.png" alt="Avatar" />
               </figure>
               <figure class="avatar" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-3.png" />
+                <img src="img/avatar-3.png" alt="Avatar" />
               </figure>
               <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-4.png" />
+                <img src="img/avatar-4.png" alt="Avatar" />
               </figure>
               <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-5.png" />
+                <img src="img/avatar-5.png" alt="Avatar" />
               </figure>
             </div>
             <div class="column col-6 col-xs-12">
@@ -253,31 +560,31 @@
               <figure class="avatar avatar-xs" data-initial="YZ"></figure>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add the <code>avatar</code> class to &lt;img&gt; element. There are 4 additional sizes available, including <code>avatar-xl</code> (64px), <code>avatar-lg</code> (48px), <code>avatar-sm</code> (24px), and <code>avatar-xs</code> (16px). By default, the avatar size is 32px.</p>
             <p>For users who don't have profile pictures, you may use their initials for avatars. Add the <code>avatar</code> class and avatar size class to &lt;div&gt; element. The <code>data-initial</code> attribute is the name appear inside the avatar.</p>
-          </section>
+          </div>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <figure class="avatar avatar-xl">
-                <img src="img/avatar-1.png" />
-                <img src="img/avatar-2.png" class="avatar-icon" />
+                <img src="img/avatar-1.png" alt="Avatar" />
+                <img src="img/avatar-2.png" class="avatar-icon" alt="Avatar" />
               </figure>
               <figure class="avatar avatar-lg">
-                <img src="img/avatar-2.png" />
-                <img src="img/avatar-3.png" class="avatar-icon" />
+                <img src="img/avatar-2.png" alt="Avatar" />
+                <img src="img/avatar-3.png" class="avatar-icon" alt="Avatar" />
               </figure>
               <figure class="avatar">
-                <img src="img/avatar-3.png" />
-                <img src="img/avatar-4.png" class="avatar-icon" />
+                <img src="img/avatar-3.png" alt="Avatar" />
+                <img src="img/avatar-4.png" class="avatar-icon" alt="Avatar" />
               </figure>
               <figure class="avatar avatar-sm">
-                <img src="img/avatar-4.png" />
-                <img src="img/avatar-5.png" class="avatar-icon" />
+                <img src="img/avatar-4.png" alt="Avatar" />
+                <img src="img/avatar-5.png" class="avatar-icon" alt="Avatar" />
               </figure>
               <figure class="avatar avatar-xs">
-                <img src="img/avatar-5.png" />
-                <img src="img/avatar-1.png" class="avatar-icon" />
+                <img src="img/avatar-5.png" alt="Avatar" />
+                <img src="img/avatar-1.png" class="avatar-icon" alt="Avatar" />
               </figure>
             </div>
           </div>
@@ -285,29 +592,29 @@
 <!-- avatars example -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Basic avatar examples --&gt;</span>
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
-  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
 &lt;<span class="tag">/figure</span>&gt;
 
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
-  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
-  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-5.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-icon&quot;</span> /&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-5.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-icon&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
 &lt;<span class="tag">/figure</span>&gt;
 
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;&lt;<span class="tag">/figure</span>&gt;
 
 <span class="com">&lt;!-- Show initals when avatar image is unavailable or not fully loaded --&gt;</span>
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;
-  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> /&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
 &lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="badges" class="container">
-          <header class="text-center"><h3><a href="#badges" class="anchor" aria-hidden="true">#</a>Badges</h3></header>
-          <section class="notes">
-            <p><strong>Badges</strong> are often used as unread number indicators.</p>
-          </section>
+        <div id="badges" class="container">
+          <h3 class="s-title"><a href="#badges" class="anchor" aria-hidden="true">#</a>Badges</h3>
+          <div class="docs-note">
+            <p>Badges are often used as unread number indicators.</p>
+          </div>
           <div class="columns">
             <div class="column col-3 col-xs-6">
               <span class="badge" data-badge="">
@@ -330,10 +637,10 @@
               </span>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add the <code>badge</code> class to non self closing elements. And add the <code>data-badge</code> attribute to define the content of a badge. The badge will appear in the top-right direction of the element. </p>
             <p>If there is no <code>data-badge</code> or the attribute is not specified, the badge will appear as a dot.</p>
-          </section>
+          </div>
           <div class="columns">
             <div class="column col-sm-12">
               <button class="btn badge" data-badge="">Button</button>
@@ -355,9 +662,9 @@
               </figure>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Badges support <code>button</code> and <code>avatars</code> elements as well. </p>
-          </section>
+          </div>
 
 <!-- badges example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;badge&quot;</span>&gt;
@@ -377,13 +684,13 @@
 &lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="bars" class="container">
-          <header class="text-center"><h3><a href="#bars" class="anchor" aria-hidden="true">#</a>Bars</h3></header>
-          <section class="notes">
-            <p><strong>Bars</strong> represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code>, <code>meter</code> and <code>input range</code> elements.</p>
-          </section>
+        <div id="bars" class="container">
+          <h3 class="s-title"><a href="#bars" class="anchor" aria-hidden="true">#</a>Bars</h3>
+          <div class="docs-note">
+            <p>Bars represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code>, <code>meter</code> and <code>input range</code> elements.</p>
+          </div>
           <div class="columns">
             <div class="column col-8 col-xs-12">
               <div class="bar bar-sm">
@@ -408,10 +715,10 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>bar</code> class. And add child elements with the <code>bar-item</code> class. The width percentage value is needed for every <code>bar-item</code>.</p>
             <p>There is the <code>bar-sm</code> class for thinner Bars. Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.</p>
-          </section>
+          </div>
 
 <!-- bars example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bar bar-sm&quot;</span>&gt;
@@ -425,7 +732,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <header class="text-center"><h4>Slider bars</h4></header>
+          <h4 class="s-subtitle">Slider bars</h4>
           <div class="columns">
             <div class="column col-8 col-xs-12">
               <div class="bar bar-slider">
@@ -448,10 +755,10 @@
             </div>
           </div>
 
-          <section class="notes">
+          <div class="docs-note">
             <p>You can add the <code>bar-slider</code> class to the Bars container. And add child elements with the <code>bar-item</code> class and <code>bar-slider-btn</code> inside bar-item. You need to set the <code>bar-item</code> width manually to have the slider point.</p>
             <p>If there are two <code>bar-item</code> divs in one bar-slider, you will have a range slider.</p>
-          </section>
+          </div>
 
 <!-- slider bars example -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- slider --&gt;</span>
@@ -472,21 +779,101 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="cards" class="container">
-          <header class="text-center"><h3><a href="#cards" class="anchor" aria-hidden="true">#</a>Cards</h3></header>
-          <section class="notes">
-            <p><strong>Cards</strong> are flexible content containers.</p>
-          </section>
+        <div id="breadcrumbs" class="container">
+          <h3 class="s-title"><a href="#breadcrumbs" class="anchor" aria-hidden="true">#</a>Breadcrumbs</h3>
+          <div class="docs-note">
+            <p>Breadcrumbs are used as navigational hierarchies to indicate current location.</p>
+          </div>
+          <div class="columns">
+              <div class="column col-12">
+                  <ul class="breadcrumb" role="navigation">
+                    <li class="breadcrumb-item">
+                      <a href="#breadcrumbs" class="tooltip" data-tooltip="Home">
+                        Home
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#breadcrumbs" class="tooltip" data-tooltip="Settings">
+                        Settings
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            <div class="column col-12">
+              <ul class="breadcrumb" role="navigation">
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs" class="tooltip" data-tooltip="Home">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs" class="tooltip" data-tooltip="Settings">
+                    Settings
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs" class="tooltip" data-tooltip="Change avatar">
+                    Change avatar
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-12">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs" class="tooltip" data-tooltip="Home">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#breadcrumbs" class="tooltip" data-tooltip="Settings">
+                    Settings
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  Search result:
+                  <a href="#breadcrumbs" class="tooltip" data-tooltip="Search result: Spectre">
+                    Spectre
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Add a container element with the <code>breadcrumb</code> class. And add child elements with the <code>breadcrumb-item</code> class.</p>
+          </div>
+
+<!-- breadcrumbs example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Home&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Settings&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Change avatar&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="cards" class="container">
+          <h3 class="s-title"><a href="#cards" class="anchor" aria-hidden="true">#</a>Cards</h3>
+          <div class="docs-note">
+            <p>Cards are flexible content containers.</p>
+          </div>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-el-capitan.jpg" />
+                  <img class="img-responsive" src="img/osx-el-capitan.jpg" alt="OS X El Capitan" />
                 </div>
                 <div class="card-header">
-                  <div class="card-title">Microsoft</div>
+                  <div class="card-title h5">Microsoft</div>
                   <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
@@ -500,11 +887,11 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-header">
-                  <div class="card-title">Apple</div>
+                  <div class="card-title h5">Apple</div>
                   <div class="card-subtitle">Hardware and software</div>
                 </div>
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-yosemite.jpg" />
+                  <img class="img-responsive" src="img/osx-yosemite.jpg" alt="OS X Yosemite" />
                 </div>
                 <div class="card-body">
                   To make a contribution to the world by making tools for the mind that advance humankind.
@@ -520,26 +907,23 @@
             </div>
             <div class="column col-6 col-xs-12">
               <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/macos-sierra-2.jpg" alt="macOS Sierra" />
+                </div>
                 <div class="card-header">
-                  <div class="card-title">Google</div>
+                  <button class="btn btn-primary float-right"><i class="icon icon-plus"></i></button>
+                  <div class="card-title h5">Google I/O</div>
                   <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
-                  Organize the world’s information and make it universally accessible and useful.
-                </div>
-                <div class="card-image">
-                  <img class="img-responsive" src="img/osx-yosemite-2.jpg" />
-                </div>
-                <div class="card-footer">
-                  <a href="#cards" class="btn btn-primary">Search</a>
-                  <a href="#cards" class="btn btn-link">Share</a>
+                  An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
                 </div>
               </div>
             </div>
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-image">
-                  <img class="img-responsive" src="img/osx-el-capitan-2.jpg" />
+                  <img class="img-responsive" src="img/osx-el-capitan-2.jpg" alt="OS X El Capitan" />
                 </div>
                 <div class="card-footer">
                   <a href="#cards" class="btn btn-primary">Buy</a>
@@ -553,36 +937,39 @@
             <div class="column col-6 col-xs-12">
               <div class="card">
                 <div class="card-header">
-                  <div class="card-title">Apple</div>
+                  <div class="card-title h5">Apple</div>
                   <div class="card-subtitle">Hardware and software</div>
                 </div>
                 <div class="card-body">
                   To make a contribution to the world by making tools for the mind that advance humankind.
                 </div>
                 <div class="card-image">
-                  <img class="img-responsive" src="img/macos-sierra.jpg" />
+                  <img class="img-responsive" src="img/macos-sierra.jpg" alt="macOS Sierra" />
                 </div>
               </div>
             </div>
             <div class="column col-6 col-xs-12">
               <div class="card">
-                <div class="card-image">
-                  <img class="img-responsive" src="img/macos-sierra-2.jpg" />
-                </div>
                 <div class="card-header">
-                  <button class="btn btn-primary float-right"><i class="icon icon-plus"></i></button>
-                  <div class="card-title">Google I/O</div>
+                  <div class="card-title h5">Google</div>
                   <div class="card-subtitle">Software and hardware</div>
                 </div>
                 <div class="card-body">
-                  An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
+                  Organize the world’s information and make it universally accessible and useful.
+                </div>
+                <div class="card-image">
+                  <img class="img-responsive" src="img/osx-yosemite-2.jpg" alt="OS X Yosemite"/>
+                </div>
+                <div class="card-footer">
+                  <a href="#cards" class="btn btn-primary">Search</a>
+                  <a href="#cards" class="btn btn-link">Share</a>
                 </div>
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>card</code> class. And add child elements with the <code>card-image</code>, <code>card-header</code>, <code>card-body</code> and/or <code>card-footer</code> classes. The <code>card-image</code> can be placed in any position. </p>
-          </section>
+          </div>
 
 <!-- cards example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
@@ -590,8 +977,8 @@
     &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive&quot;</span> /&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
-    &lt;<span class="tag">h4</span> <span class="atn">class</span>=<span class="atv">&quot;card-title&quot;</span>&gt;Microsoft&lt;<span class="tag">/h4</span>&gt;
-    &lt;<span class="tag">h6</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle&quot;</span>&gt;Software and hardware&lt;<span class="tag">/h6</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-title h5&quot;</span>&gt;Microsoft&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle&quot;</span>&gt;Software and hardware&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
     Empower every person and every organization on the planet to achieve more.
@@ -602,13 +989,13 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="chips" class="container">
-          <header class="text-center"><h3><a href="#chips" class="anchor" aria-hidden="true">#</a>Chips</h3></header>
-          <section class="notes">
-            <p><strong>Chips</strong> are complex entities in small blocks. </p>
-          </section>
+        <div id="chips" class="container">
+          <h3 class="s-title"><a href="#chips" class="anchor" aria-hidden="true">#</a>Chips</h3>
+          <div class="docs-note">
+            <p>Chips are complex entities in small blocks. </p>
+          </div>
           <div class="columns">
             <div class="column col-12">
               <label class="chip">
@@ -634,18 +1021,18 @@
                 Tony Stark
               </label>
               <label class="chip">
-                <img src="img/avatar-1.png" class="avatar avatar-sm" />
+                <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson"/>
                 Thor Odinson
               </label>
               <label class="chip">
-                <img src="img/avatar-4.png" class="avatar avatar-sm" />
+                <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Steve Rogers" />
                 Steve Rogers
               </label>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>chip</code> class. And add child text element, buttons or avatars with the <code>avatar</code> class.</p>
-          </section>
+          </div>
 
 <!-- chips example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
@@ -660,20 +1047,20 @@
 &lt;<span class="tag">/label</span>&gt;</code>
 </pre>
 
-        </section>
+        </div>
 
-        <section id="menus" class="container">
-          <header class="text-center"><h3><a href="#menus" class="anchor" aria-hidden="true">#</a>Menus</h3></header>
-          <section class="notes">
-            <p><strong>Menus</strong> are vertical list of links or buttons for actions and navigation.</p>
-          </section>
+        <div id="menus" class="container">
+          <h3 class="s-title"><a href="#menus" class="anchor" aria-hidden="true">#</a>Menus</h3>
+          <div class="docs-note">
+            <p>Menus are vertical list of links or buttons for actions and navigation.</p>
+          </div>
           <div class="columns">
-            <div class="column col-xs-12">
+            <div class="column col-4 col-xs-12">
               <ul class="menu">
                 <li class="menu-item">
                   <div class="tile tile-centered">
                     <div class="tile-icon">
-                      <img src="img/avatar-4.png" class="avatar" />
+                      <img src="img/avatar-4.png" class="avatar" alt="Avatar" />
                     </div>
                     <div class="tile-content">
                       Steve Rogers
@@ -701,30 +1088,37 @@
                 </li>
               </ul>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-4 col-xs-12">
               <ul class="menu">
                 <li class="divider" data-content="LINKS"></li>
                 <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Slack
-                  </a>
+                  <a href="#menus">Slack</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Hipchat
-                  </a>
+                  <a href="#menus">Hipchat</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#menus">
-                    <i class="icon icon-link"></i> Skype
-                  </a>
+                  <a href="#menus">Skype</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-4 col-xs-12">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#menus">Slack</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">Hipchat</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#menus">Skype</a>
                 </li>
               </ul>
             </div>
           </div>
-          <section class="notes">
-            <p>Add a container element with the <code>menu</code> class. And add child elements with the <code>menu-item</code> class. You can separate menu items with a <code>divider</code> or <code>menu-header</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
-          </section>
+          <div class="docs-note">
+            <p>Add a container element with the <code>menu</code> class. And add child elements with the <code>menu-item</code> class. You can separate menu items with a <code>divider</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
+          </div>
 
 <!-- menus example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
@@ -751,12 +1145,10 @@
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-          <header id="dropdowns" class="text-center">
-            <h4><a href="#dropdowns" class="anchor" aria-hidden="true">#</a>Dropdown menus</h4>
-          </header>
-          <section class="notes">
-            <p>The <strong>dropdown</strong> is a combination of buttons and menus.</p>
-          </section>
+          <h4 id="dropdowns" class="s-subtitle"><a href="#dropdowns" class="anchor" aria-hidden="true">#</a>Dropdown menus</h4>
+          <div class="docs-note">
+            <p>The dropdown is a combination of buttons and menus.</p>
+          </div>
           <div class="columns">
             <div class="column col-xs-12">
               <div class="dropdown">
@@ -828,13 +1220,13 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
             <p>Add a container element with the <code>dropdown</code> class. And add a focusable element with the <code>dropdown-toggle</code> class for the button and a <code>menu</code> component right next to it. You also need to add <code>tabindex</code> to make the buttons focusable. If the dropdown is close to the right edge of the browser, you can add the <code>dropdown-right</code> class to the container to prevent it appearing off screen.</p>
-          </section>
-          <section class="notes">
-            <p>Also, you can implement your JS to interact with the dropdown menus by adding the <code>active</code> class to the <code>dropdown</code>.</p>
-          </section>
+          </div>
+          <div class="docs-note">
+            <p>Also, you can implement your JS to interact with the dropdown menus by adding the <code>active</code> class to the <code>dropdown</code> container.</p>
+          </div>
 
 <!-- dropdowns example -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- basic dropdown button --&gt;</span>
@@ -866,13 +1258,13 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="modals" class="container">
-          <header class="text-center"><h3><a href="#modals" class="anchor" aria-hidden="true">#</a>Modals</h3></header>
-          <section class="notes">
-            <p><strong>Modals</strong> are flexible dialog prompts.</p>
-          </section>
+        <div id="modals" class="container">
+          <h3 class="s-title"><a href="#modals" class="anchor" aria-hidden="true">#</a>Modals</h3>
+          <div class="docs-note">
+            <p>Modals are flexible dialog prompts.</p>
+          </div>
           <div class="columns">
             <div class="column">
               <a href="#example-modal-1" class="btn btn-primary">Open Modal</a>
@@ -881,7 +1273,7 @@
                 <div class="modal-container" role="document">
                   <div class="modal-header">
                     <a href="#modals" class="btn btn-clear float-right" aria-label="Close"></a>
-                    <div class="modal-title">Modal title</div>
+                    <div class="modal-title h5">Modal title</div>
                   </div>
                   <div class="modal-body">
                     <div class="content">
@@ -905,10 +1297,10 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>modal</code> class. And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it. You can add child elements with the <code>modal-header</code>, <code>modal-content</code> and <code>modal-footer</code> - any or all of them. </p>
             <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the <code>active</code> class to the <code>modal</code> container.</p>
-          </section>
+          </div>
 
 <!-- modals example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal active&quot;</span>&gt;
@@ -916,7 +1308,7 @@
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-header&quot;</span>&gt;
       &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title h5&quot;</span>&gt;Modal title&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-body&quot;</span>&gt;
       &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;content&quot;</span>&gt;
@@ -930,7 +1322,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <header class="text-center"><h4>Modal sizes</h4></header>
+          <h4 class="s-subtitle">Modal sizes</h4>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <div class="modal-temp modal-sm">
@@ -938,11 +1330,11 @@
                 <div class="modal-container" role="document">
                   <div class="modal-header">
                     <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
-                    <div class="modal-title">Modal title</div>
+                    <div class="modal-title h5">Modal title</div>
                   </div>
                   <div class="modal-body">
                     <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus.
                     </div>
                   </div>
                   <div class="modal-footer">
@@ -958,7 +1350,7 @@
                 <div class="modal-container" role="document">
                   <div class="modal-header">
                     <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
-                    <div class="modal-title">Modal title</div>
+                    <div class="modal-title h5">Modal title</div>
                   </div>
                   <div class="modal-body">
                     <div class="content">
@@ -989,9 +1381,9 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add the <code>modal-sm</code> class for a smaller modal dialog. </p>
-          </section>
+          </div>
 
 <!-- modals example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal modal-sm&quot;</span>&gt;
@@ -1002,75 +1394,394 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="navigation" class="container">
-          <header class="text-center"><h3><a href="#navigation" class="anchor" aria-hidden="true">#</a>Navigation</h3></header>
-          <section class="notes">
-            <p><strong>Navigation</strong> includes several components, including breadcrumbs, tabs, pagination and navs.</p>
-          </section>
-          <header id="breadcrumbs" class="text-center">
-            <h4><a href="#breadcrumbs" class="anchor" aria-hidden="true">#</a>Breadcrumbs</h4>
-          </header>
+        <div id="pagination" class="container">
+          <h3 class="s-title"><a href="#pagination" class="anchor" aria-hidden="true">#</a>Pagination</h3>
           <div class="columns">
-            <div class="column col-6 col-md-12">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#breadcrumbs">
-                    Home
-                  </a>
+            <div class="column col-xs-12">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="#pagination">Prev</a>
                 </li>
-                <li class="breadcrumb-item">
-                  <a href="#breadcrumbs">
-                    Profile
-                  </a>
+                <li class="page-item">
+                  <a href="#pagination">1</a>
                 </li>
-                <li class="breadcrumb-item">
-                  Change avatar
+                <li class="page-item">
+                  <span>...</span>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">4</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#pagination">5</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">6</a>
+                </li>
+                <li class="page-item">
+                  <span>...</span>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">9</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">Next</a>
                 </li>
               </ul>
             </div>
-            <div class="column col-6 col-md-12">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#breadcrumbs">
-                    Home
+            <div class="column col-xs-12">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a href="#pagination" tabindex="-1">Prev</a>
+                </li>
+                <li class="page-item active">
+                  <a href="#pagination">1</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">2</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">3</a>
+                </li>
+                <li class="page-item">
+                  <span>...</span>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">9</a>
+                </li>
+                <li class="page-item">
+                  <a href="#pagination">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Add a container element with the <code>pagination</code> class. And add child elements with the <code>page-item</code> class. The <code>page-item</code> with the <code>active</code> class will be highlighted. You can add the <code>disabled</code> to the <code>page-item</code> to have unclickable page links. </p>
+          </div>
+
+<!-- pagination example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item disabled&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;1&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;2&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;3&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">span</span>&gt;...&lt;<span class="tag">/span</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;12&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Next&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-12">
+              <ul class="pagination">
+                <li class="page-item page-prev">
+                  <a href="#pagination">
+                    <p class="page-item-subtitle">Previous</p>
+                    <h4 class="page-item-title">Getting started</h4>
                   </a>
                 </li>
-                <li class="breadcrumb-item">
-                  Search result:
-                  <a href="#breadcrumbs">
-                    Spectre
+                <li class="page-item page-next">
+                  <a href="#pagination">
+                    <p class="page-item-subtitle">Next</p>
+                    <h4 class="page-item-title">Layout</h4>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <section class="notes">
-            <p>Add a container element with the <code>breadcrumb</code> class. And add child elements with the <code>breadcrumb-item</code> class.</p>
-          </section>
+          <div class="docs-note">
+            <p>You could use previous and next pagination to navigate. </p>
+          </div>
 
-<!-- breadcrumbs example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb&quot;</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+<!-- pagination example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      Home
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      Profile
+      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
+      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
-    Change avatar
   &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-          <header id="tabs" class="text-center">
-            <h4><a href="#tabs" class="anchor" aria-hidden="true">#</a>Tabs</h4>
-          </header>
+        </div>
+
+        <div id="navs" class="container">
+          <h3 class="s-title"><a href="#navs" class="anchor" aria-hidden="true">#</a>Navs</h3>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#nav">Elements</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#nav">Layout</a>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#nav">Flexbox grid</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Responsive</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Navbar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Empty states</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Components</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Add a container element with the <code>nav</code> class. And add child elements with the <code>nav-item</code> class. The <code>nav-item</code> with the <code>active</code> class will be highlighted.</p>
+          </div>
+
+<!-- navs example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Elements&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Flexbox grid&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Responsive&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Navbar&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Empty states&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Components&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Utilities&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="popovers" class="container">
+          <h3 class="s-title"><a href="#popovers" class="anchor" aria-hidden="true">#</a>Popovers</h3>
+          <div class="docs-note">
+            <p>Popovers are small overlay content containers. Popovers component is built entirely in CSS.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-3 col-sm-6">
+              <div class="popover">
+                <a href="#popovers" class="btn btn-primary">
+                  top popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title h5">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-3 col-sm-6">
+              <div class="popover popover-right">
+                <a href="#popovers" class="btn btn-primary">
+                  right popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title h5">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-3 col-sm-6">
+              <div class="popover popover-bottom">
+                <a href="#popovers" class="btn btn-primary">
+                  bottom popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title h5">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column col-3 col-sm-6">
+              <div class="popover popover-left">
+                <a href="#popovers" class="btn btn-primary">
+                  left popover
+                </a>
+                <div class="popover-container">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title h5">Apple</div>
+                      <div class="card-subtitle">Software and hardware</div>
+                    </div>
+                    <div class="card-body">
+                      To make a contribution to the world by making tools for the mind that advance humankind.
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-primary">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Wrap an element by a container with the <code>popover</code> class. And add a container with the <code>popover-container</code> next to the element. You can use <a href="#cards">Cards</a> component inside the <code>popover-container</code>. </p>
+            <p>Also, you can add the <code>popover-right</code>, <code>popover-bottom</code> or <code>popover-left</code> class to define the position. By default, the popovers appear above the element.</p>
+          </div>
+
+<!-- popovers example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover popover-right&quot;</span>&gt;
+  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;right popover&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover-container&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
+        ...
+      &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="steps" class="container">
+          <h3 class="s-title"><a href="#steps" class="anchor" aria-hidden="true">#</a>Steps</h3>
+          <div class="docs-note">
+            <p>Steps are progress indicators of a sequence of task steps.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-12">
+              <ul class="step">
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 1 Tooltip"></a>
+                </li>
+                <li class="step-item active">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 2 Tooltip"></a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 3 Tooltip"></a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 4 Tooltip"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="column col-12">
+              <ul class="step">
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 1 Tooltip">Step 1</a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 2 Tooltip">Step 2</a>
+                </li>
+                <li class="step-item active">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 3 Tooltip">Step 3</a>
+                </li>
+                <li class="step-item">
+                  <a href="#steps" class="tooltip" data-tooltip="Step 4 Tooltip">Step 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Add a container element with the <code>step</code> class. And add child elements with the <code>step-item</code> class. The <code>step-item</code> with the <code>active</code> class will be highlighted and indicate the current state of progress.</p>
+          </div>
+
+<!-- steps example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;step&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 1&quot;</span>&gt;Step 1&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 2&quot;</span>&gt;Step 2&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 3&quot;</span>&gt;Step 3&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 4&quot;</span>&gt;Step 4&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="tabs" class="container">
+          <h3 class="s-title"><a href="#tabs" class="anchor" aria-hidden="true">#</a>Tabs</h3>
+          <div class="docs-note">
+            <p>Tabs enable quick switch between different views.</p>
+          </div>
           <div class="columns">
             <div class="column col-6 col-sm-12">
               <ul class="tab">
@@ -1116,9 +1827,9 @@
               </ul>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>tab</code> class. And add child elements with the <code>tab-item</code> class. You can add the <code>tab-block</code> class for a full-width tab. The <code>tab-item</code> or its child &lt;a&gt; with the <code>active</code> class will be highlighted.</p>
-          </section>
+          </div>
 
 <!-- tabs example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
@@ -1177,9 +1888,9 @@
               </ul>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>If you need <code>badges</code> on tabs, you can add badge class to the element within <code>tab-item</code>. </p>
-          </section>
+          </div>
 
 <!-- tabs with badges example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
@@ -1197,12 +1908,12 @@
                 <li class="tab-item active">
                   <a href="#tabs">
                     Music
+                    <button class="btn btn-clear"></button>
                   </a>
                 </li>
                 <li class="tab-item">
                   <a href="#tabs">
                     Playlists
-                    <button class="btn btn-clear"></button>
                   </a>
                 </li>
                 <li class="tab-item">
@@ -1224,9 +1935,9 @@
               </ul>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>You could add a search box or buttons inside a tab. Add the <code>tab-action</code> class to the <code>tab-item</code>. </p>
-          </section>
+          </div>
 
 <!-- tabs with badges example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab&quot;</span>&gt;
@@ -1244,398 +1955,19 @@
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-          <header id="pagination" class="text-center">
-            <h4><a href="#pagination" class="anchor" aria-hidden="true">#</a>Pagination</h4>
-          </header>
-          <div class="columns">
-            <div class="column col-xs-12">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a href="#pagination">Prev</a>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">1</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">4</a>
-                </li>
-                <li class="page-item active">
-                  <a href="#pagination">5</a>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">6</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">9</a>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">Next</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column col-xs-12">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a href="#pagination" disabled tabindex="-1">Prev</a>
-                </li>
-                <li class="page-item active">
-                  <a href="#pagination">1</a>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">2</a>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">3</a>
-                </li>
-                <li class="page-item">
-                  <span>...</span>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">9</a>
-                </li>
-                <li class="page-item">
-                  <a href="#pagination">Next</a>
-                </li>
-              </ul>
-            </div>
+        </div>
+
+        <div id="tiles" class="container">
+          <h3 class="s-title"><a href="#tiles" class="anchor" aria-hidden="true">#</a>Tiles</h3>
+          <div class="docs-note">
+            <p>Tiles are repeatable or embeddable information blocks.</p>
           </div>
-          <section class="notes">
-            <p>Add a container element with the <code>pagination</code> class. And add child elements with the <code>page-item</code> class. The <code>page-item</code> with the <code>active</code> class will be highlighted.</p>
-          </section>
-
-<!-- pagination example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item active&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;1&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;2&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;3&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">span</span>&gt;...&lt;<span class="tag">/span</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;12&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Next&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-&lt;<span class="tag">/ul</span>&gt;
-</code></pre>
-
-          <div class="columns">
-            <div class="column col-12">
-              <ul class="pagination">
-                <li class="page-item page-prev">
-                  <a href="#pagination">
-                    <p class="page-item-subtitle">Previous</p>
-                    <h3 class="page-item-title">Getting started</h3>
-                  </a>
-                </li>
-                <li class="page-item page-next">
-                  <a href="#pagination">
-                    <p class="page-item-subtitle">Next</p>
-                    <h3 class="page-item-title">Layout</h3>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="notes">
-            <p>You could use previous and next pagination to navigate. </p>
-          </div>
-
-<!-- pagination example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
-      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
-      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
-    &lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-&lt;<span class="tag">/ul</span>&gt;
-</code></pre>
-
-          <header id="navs" class="text-center">
-            <h4><a href="#navs" class="anchor" aria-hidden="true">#</a>Navs</h4>
-          </header>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a href="#nav">Elements</a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#nav">Layout</a>
-                  <ul class="nav">
-                    <li class="nav-item">
-                      <a href="#nav">Flexbox grid</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#nav">Responsive</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#nav">Navbar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#nav">Empty states</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="#nav">Components</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#nav">Utilities</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <section class="notes">
-            <p>Add a container element with the <code>nav</code> class. And add child elements with the <code>nav-item</code> class. The <code>nav-item</code> with the <code>active</code> class will be highlighted.</p>
-          </section>
-
-<!-- navs example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Elements&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item active&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Flexbox grid&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Responsive&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Navbar&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Empty states&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-    &lt;<span class="tag">/ul</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Components&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Utilities&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-&lt;<span class="tag">/ul</span>&gt;
-</code></pre>
-
-        </section>
-
-        <section id="popovers" class="container">
-          <header class="text-center"><h3><a href="#popovers" class="anchor" aria-hidden="true">#</a>Popovers</h3></header>
-          <section class="notes">
-            <p><strong>Popovers</strong> are small overlay content containers. Popovers component is built entirely in CSS.</p>
-          </section>
-          <div class="columns">
-            <div class="column col-3 col-sm-6">
-              <div class="popover">
-                <a href="#popovers" class="btn btn-primary">
-                  top popover
-                </a>
-                <div class="popover-container">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="card-title">Apple</div>
-                      <div class="card-subtitle">Software and hardware</div>
-                    </div>
-                    <div class="card-body">
-                      To make a contribution to the world by making tools for the mind that advance humankind.
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column col-3 col-sm-6">
-              <div class="popover popover-right">
-                <a href="#popovers" class="btn btn-primary">
-                  right popover
-                </a>
-                <div class="popover-container">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="card-title">Apple</div>
-                      <div class="card-subtitle">Software and hardware</div>
-                    </div>
-                    <div class="card-body">
-                      To make a contribution to the world by making tools for the mind that advance humankind.
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column col-3 col-sm-6">
-              <div class="popover popover-bottom">
-                <a href="#popovers" class="btn btn-primary">
-                  bottom popover
-                </a>
-                <div class="popover-container">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="card-title">Apple</div>
-                      <div class="card-subtitle">Software and hardware</div>
-                    </div>
-                    <div class="card-body">
-                      To make a contribution to the world by making tools for the mind that advance humankind.
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column col-3 col-sm-6">
-              <div class="popover popover-left">
-                <a href="#popovers" class="btn btn-primary">
-                  left popover
-                </a>
-                <div class="popover-container">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="card-title">Apple</div>
-                      <div class="card-subtitle">Software and hardware</div>
-                    </div>
-                    <div class="card-body">
-                      To make a contribution to the world by making tools for the mind that advance humankind.
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary">Buy</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section class="notes">
-            <p>Wrap an element by a container with the <code>popover</code> class. And add a container with the <code>popover-container</code> next to the element. You can use <a href="#cards">Cards</a> component inside the <code>popover-container</code>. </p>
-            <p>Also, you can add the <code>popover-right</code>, <code>popover-bottom</code> or <code>popover-left</code> class to define the position. By default, the popovers appear above the element.</p>
-          </section>
-
-<!-- popovers example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover popover-right&quot;</span>&gt;
-  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;right popover&lt;<span class="tag">/button</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover-container&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
-      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
-        ...
-      &lt;<span class="tag">/div</span>&gt;
-      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
-        ...
-      &lt;<span class="tag">/div</span>&gt;
-      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-footer&quot;</span>&gt;
-        ...
-      &lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-        </section>
-
-        <section id="steps" class="container">
-          <header class="text-center"><h3><a href="#steps" class="anchor" aria-hidden="true">#</a>Steps</h3></header>
-          <section class="notes">
-            <p><strong>Steps</strong> are progress indicators of a sequence of task steps.</p>
-          </section>
-          <div class="columns">
-            <div class="column col-12">
-              <ul class="step">
-                <li class="step-item">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 1 Tooltip"></a>
-                </li>
-                <li class="step-item active">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 2 Tooltip"></a>
-                </li>
-                <li class="step-item">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 3 Tooltip"></a>
-                </li>
-                <li class="step-item">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 4 Tooltip"></a>
-                </li>
-              </ul>
-            </div>
-            <div class="column col-12">
-              <ul class="step">
-                <li class="step-item">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 1 Tooltip">Step 1</a>
-                </li>
-                <li class="step-item">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 2 Tooltip">Step 2</a>
-                </li>
-                <li class="step-item active">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 3 Tooltip">Step 3</a>
-                </li>
-                <li class="step-item">
-                  <a href="#steps" class="tooltip" data-tooltip="Step 4 Tooltip">Step 4</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <section class="notes">
-            <p>Add a container element with the <code>step</code> class. And add child elements with the <code>step-item</code> class. The <code>step-item</code> with the <code>active</code> class will be highlighted and indicate the current state of progress.</p>
-          </section>
-
-<!-- steps example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;step&quot;</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 1&quot;</span>&gt;Step 1&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item active&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 2&quot;</span>&gt;Step 2&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 3&quot;</span>&gt;Step 3&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 4&quot;</span>&gt;Step 4&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-&lt;<span class="tag">/ul</span>&gt;
-</code></pre>
-
-        </section>
-
-        <section id="tiles" class="container">
-          <header class="text-center"><h3><a href="#tiles" class="anchor" aria-hidden="true">#</a>Tiles</h3></header>
-          <section class="notes">
-            <p><strong>Tiles</strong> are repeatable or embeddable information blocks.</p>
-          </section>
           <div class="columns">
             <div class="column col-9 col-sm-12">
               <div class="tile">
                 <div class="tile-icon">
                   <figure class="avatar avatar-lg">
-                    <img src="img/avatar-3.png" />
+                    <img src="img/avatar-3.png" alt="Avatar" />
                   </figure>
                 </div>
                 <div class="tile-content">
@@ -1652,7 +1984,7 @@
               <div class="tile">
                 <div class="tile-icon">
                   <figure class="avatar avatar-lg">
-                    <img src="img/avatar-2.png" />
+                    <img src="img/avatar-2.png" alt="Avatar" />
                   </figure>
                 </div>
                 <div class="tile-content">
@@ -1666,10 +1998,10 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container with the <code>tile</code> class. And add child elements with the <code>tile-icon</code>, <code>tile-content</code> or/and <code>tile-action</code> classes. The <code>tile-icon</code> and <code>tile-action</code> are optional.</p>
             <p>There are <code>tile-title</code> and <code>tile-subtitle</code> classes for title and subtitle text styles.</p>
-          </section>
+          </div>
 
 <!-- tiles example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile&quot;</span>&gt;
@@ -1688,10 +2020,11 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <section class="notes">
+          <h4 class="s-subtitle">Compact tiles</h4>
+          <div class="docs-note">
             <p>There is compact version of Tiles component, which is often used as contact and file info blocks.</p>
             <p>Add the <code>tile-centered</code> class to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
-          </section>
+          </div>
           <div class="columns">
             <div class="column col-6 col-md-9 col-xs-12">
               <div class="tile tile-centered">
@@ -1730,17 +2063,18 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="toasts" class="container">
-          <header class="text-center"><h3><a href="#toasts" class="anchor" aria-hidden="true">#</a>Toasts</h3></header>
-          <section class="notes">
-            <p><strong>Toasts</strong> are used to show alert or information to users.</p>
-          </section>
+        <div id="toasts" class="container">
+          <h3 class="s-title"><a href="#toasts" class="anchor" aria-hidden="true">#</a>Toasts</h3>
+          <div class="docs-note">
+            <p>Toasts are used to show alert or information to users.</p>
+          </div>
           <div class="columns">
             <div class="column col-9 col-sm-12">
               <div class="toast">
                 <button class="btn btn-clear float-right"></button>
+                <h5>Toast Title</h5>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </div>
             </div>
@@ -1751,9 +2085,9 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Add a container element with the <code>toast</code> class. You can add any text within the container, and even icons. You may also add a close button with the <code>btn-clear</code> class if you need. </p>
-          </section>
+          </div>
           <div class="columns">
             <div class="column col-sm-12">
               <div class="toast toast-success">
@@ -1774,9 +2108,9 @@
               </div>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>And you can add the <code>toast-primary</code>, <code>toast-success</code>, <code>toast-warning</code> or <code>toast-error</code> class for additional toast colors.</p>
-          </section>
+          </div>
 
 <!-- toasts example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;toast&quot;</span>&gt;
@@ -1789,68 +2123,48 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section id="tooltips" class="container">
-          <header class="text-center"><h3><a href="#tooltips" class="anchor" aria-hidden="true">#</a>Tooltips</h3></header>
-          <section class="notes">
-            <p><strong>Tooltips</strong> provide context information labels that appear on hover and focus.</p>
-          </section>
+        <div id="tooltips" class="container">
+          <h3 class="s-title"><a href="#tooltips" class="anchor" aria-hidden="true">#</a>Tooltips</h3>
+          <div class="docs-note">
+            <p>Tooltips provide context information labels that appear on hover and focus.</p>
+          </div>
           <div class="columns text-center">
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip" data-tooltip="Tooltip Text">top tooltip</button>
+              <button class="btn btn-primary tooltip" data-tooltip="Top Tooltip Text">top tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Tooltip Text">right tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Right Tooltip Text">right tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Tooltip Text">bottom tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Bottom Tooltip Text">bottom tooltip</button>
             </div>
             <div class="column col-xs-12">
-              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Tooltip Text">left tooltip</button>
+              <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Left Tooltip Text">left tooltip</button>
             </div>
           </div>
-          <section class="notes">
+          <div class="docs-note">
             <p>Tooltips component is built entirely in CSS.</p>
             <p>Add the <code>tooltip</code> class and the <code>data-tooltip</code> attribute, which contains the tooltip content, to non self closing elements. And add the <code>tooltip-right</code>, <code>tooltip-bottom</code> or <code>tooltip-left</code> class to define the position of a tooltip. By default, the tooltip appears above the element.</p>
-          </section>
+          </div>
 
 <!-- tooltips example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;top tooltip&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn tooltip tooltip-right&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Lorem ipsum dolor sit amet&quot;</span>&gt;right tooltip&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
-        </section>
+        </div>
 
-        <section class="container">
-          <div class="divider"></div>
-          <ul class="pagination">
-            <li class="page-item page-prev">
-              <a href="layout.html">
-                <p class="page-item-subtitle">Previous</p>
-                <h4 class="page-item-title">Layout</h4>
-              </a>
-            </li>
-            <li class="page-item page-next">
-              <a href="utilities.html">
-                <p class="page-item-subtitle">Next</p>
-                <h4 class="page-item-title">Utilities</h4>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <footer class="s-footer">
+          <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
+          <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+        </footer>
+
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 
-  <footer class="bg-gray">
-    <section id="copyright" class="grid-footer container grid-960">
-      <p>
-        <a href="index.html#introduction" target="_blank">Documents</a> | <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub Repo</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | Version <span class="version"></span>
-      </p>
-      <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
-    </section>
-  </footer>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

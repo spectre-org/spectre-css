@@ -7,7 +7,7 @@ code {
 .code {
   border-radius: @border-radius;
   color: @body-font-color;
-  line-height: 2rem;
+  line-height: @line-height;
   position: relative;
 
   &::before {
@@ -15,8 +15,8 @@ code {
     color: @gray-color;
     font-size: @font-size-sm;
     position: absolute;
-    right: 1rem;
-    top: .2rem;
+    right: @layout-spacing;
+    top: @unit-h;
   }
 
   code {
@@ -25,7 +25,7 @@ code {
     display: block;
     line-height: inherit;
     overflow-x: auto;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
   }
 }

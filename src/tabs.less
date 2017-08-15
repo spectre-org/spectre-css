@@ -13,11 +13,11 @@
     }
 
     a {
-      border-bottom: .2rem solid transparent;
+      border-bottom: @border-width-lg solid transparent;
       color: inherit;
       display: block;
       margin-top: 0;
-      padding: .6rem 1.2rem .4rem 1.2rem;
+      padding: 6px 12px 4px 12px;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -39,8 +39,8 @@
       .badge {
         &[data-badge]::after {
           position: absolute;
-          right: -.4rem;
-          top: -.4rem;
+          right: -4px;
+          top: -4px;
           transform: translate(0, 0);
         }
       }
@@ -49,7 +49,7 @@
 
   &:not(.tab-block) {
     .badge {
-      padding-right: .2rem;
+      padding-right: 2px;
     }
   }
 }

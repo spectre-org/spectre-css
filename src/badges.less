@@ -8,21 +8,21 @@
     &::after {
       background: @primary-color;
       background-clip: padding-box;
-      border-radius: 1rem;
-      box-shadow: 0 0 0 .2rem @bg-color-light;
+      border-radius: .5rem;
+      box-shadow: 0 0 0 .1rem @bg-color-light;
       color: @light-color;
       content: attr(data-badge);
       display: inline-block;
-      transform: translate(-.2rem, -1rem);
+      transform: translate(-.1rem, -.5rem);
     }
   }
   &[data-badge] {
     &::after {
       font-size: @font-size-sm;
-      height: 1.8rem;
+      height: 18px;
       line-height: 1;
-      min-width: 1.8rem;
-      padding: .3rem .5rem;
+      min-width: 18px;
+      padding: 3px 5px;
       text-align: center;
       white-space: nowrap;
     }
@@ -30,10 +30,10 @@
   &:not([data-badge]),
   &[data-badge=''] {
     &::after {
-      height: .6rem;
-      min-width: .6rem;
+      height: 6px;
+      min-width: 6px;
       padding: 0;
-      width: .6rem;
+      width: 6px;
     }
   }
 
@@ -61,10 +61,10 @@
   &.avatar-xs {
     &::after {
       content: "";
-      height: .8rem;
-      min-width: .8rem;
+      height: @unit-2;
+      min-width: @unit-2;
       padding: 0;
-      width: .8rem;
+      width: @unit-2;
     }
   }
 }

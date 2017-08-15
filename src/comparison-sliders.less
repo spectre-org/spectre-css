@@ -18,25 +18,25 @@
     img {
       height: 100%;
       object-fit: none;
-      object-position: left top;
+      object-position: left center;
       position: absolute;
       width: 100%;
-      z-index: -1;
     }
   }
 
   .comparison-before {
     width: 100%;
+    z-index: 1;
 
     .comparison-label {
-      right: 1.6rem;
+      right: @unit-4;
     }
   }
 
   .comparison-after {
     max-width: 100%;
     min-width: 0;
-    z-index: @zindex-0;
+    z-index: 2;
 
     &::before {
       background: transparent;
@@ -45,7 +45,7 @@
       height: 100%;
       left: 0;
       position: absolute;
-      right: 1.6rem;
+      right: @unit-4;
       top: 0;
       z-index: @zindex-0;
     }
@@ -53,30 +53,29 @@
     &::after {
       background: currentColor;
       border-radius: 50%;
-      box-shadow: 0 -.5rem, 0 .5rem;
+      box-shadow: 0 -5px, 0 5px;
       color: @light-color;
       content: "";
-      height: .3rem;
+      height: 3px;
       position: absolute;
-      right: .8rem;
+      right: @unit-2;
       top: 50%;
       transform: translate(50%, -50%);
-      width: .3rem;
-      z-index: -@zindex-0;
+      width: 3px;
     }
 
     .comparison-label {
-      left: 1.6rem;
+      left: @unit-4;
     }
   }
 
   .comparison-resizer {
     animation: first-run 1.5s 1 ease-in-out;
     cursor: ew-resize;
-    height: 1.5rem;
+    height: @unit-4;
     left: 0;
     max-width: 100%;
-    min-width: 1.6rem;
+    min-width: @unit-4;
     opacity: 0;
     outline: none;
     position: relative;
@@ -88,9 +87,9 @@
 
   .comparison-label {
     background: fade(@dark-color, 50%);
-    bottom: 1.6rem;
+    bottom: @unit-4;
     color: @light-color;
-    padding: .3rem .8rem;
+    padding: @unit-1 @unit-2;
     position: absolute;
     user-select: none;
   }
@@ -101,13 +100,13 @@
     width: 0;
   }
   25% {
-    width: 4.8rem;
+    width: @unit-12;
   }
   50% {
-    width: 1.6rem;
+    width: @unit-4;
   }
   75% {
-    width: 2.4rem;
+    width: @unit-6;
   }
   100% {
     width: 0;

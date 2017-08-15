@@ -6,7 +6,7 @@
   .nav-item {
     a {
       color: @gray-color-dark;
-      padding: .6rem .8rem;
+      padding: @unit-1 @unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -15,6 +15,7 @@
     }
     &.active {
       & > a {
+        color: darken(@gray-color-dark, 10%);
         font-weight: bold;
         &:focus,
         &:hover {
@@ -25,11 +26,7 @@
   }
 
   & .nav {
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-
-    a {
-      color: @gray-color;
-    }
+    margin-bottom: @unit-2;
+    margin-left: @unit-4;
   }
 }

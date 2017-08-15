@@ -1,5 +1,5 @@
 // CSS Icons
-@icon-border-width: .2rem;
+@icon-border-width: @border-width-lg;
 
 .icon {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   font-style: normal;
   height: 1em;
   position: relative;
-  text-indent: -999rem;
+  text-indent: -9999px;
   vertical-align: middle;
   width: 1em;
   &::before,
@@ -36,39 +36,87 @@
     border-right: 0;
     content: "";
     height: .65em;
-    transform: translate(-25%, -50%) rotate(-45deg);
     width: .65em;
   }
 }
 
-.icon-arrow-down,
-.icon-downward {
-  transform: rotate(-90deg);
-}
-
-.icon-arrow-right,
-.icon-forward {
-  transform: rotate(180deg);
-}
-
-.icon-arrow-up,
-.icon-upward {
-  transform: rotate(90deg);
-}
-
-.icon-downward,
-.icon-back,
-.icon-forward,
-.icon-upward {
+.icon-arrow-down {
   &::before {
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -75%) rotate(225deg);
   }
+}
+
+.icon-arrow-left {
+  &::before {
+    transform: translate(-25%, -50%) rotate(-45deg);
+  }
+}
+
+.icon-arrow-right {
+  &::before {
+    transform: translate(-75%, -50%) rotate(135deg);
+  }
+}
+
+.icon-arrow-up {
+  &::before {
+    transform: translate(-50%, -25%) rotate(45deg);
+  }
+}
+
+.icon-back,
+.icon-forward {
   &::after {
     background: currentColor;
     content: "";
     height: @icon-border-width;
-    left: 55%;
     width: .8em;
+  }
+}
+
+.icon-downward,
+.icon-upward {
+  &::after {
+    background: currentColor;
+    content: "";
+    height: .8em;
+    width: @icon-border-width;
+  }
+}
+
+.icon-back {
+  &::after {
+    left: 55%;
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.icon-downward {
+  &::after {
+    top: 45%;
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+}
+
+.icon-forward {
+  &::after {
+    left: 45%;
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+}
+
+.icon-upward {
+  &::after {
+    top: 55%;
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
   }
 }
 
@@ -102,8 +150,8 @@
     background: currentColor;
     box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
     content: "";
-    height: .3rem;
-    width: .3rem;
+    height: 3px;
+    width: 3px;
   }
 }
 
@@ -144,8 +192,8 @@
     box-shadow: -.4em 0, .4em 0;
     border-radius: 50%;
     content: "";
-    height: .3rem;
-    width: .3rem;
+    height: 3px;
+    width: 3px;
   }
 }
 .icon-more-vert {
@@ -598,6 +646,7 @@
 }
 
 // Component icon support
+.accordion,
 .btn,
 .toast,
 .menu {
