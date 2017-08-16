@@ -364,9 +364,9 @@
 
           <h4 id="variables" class="s-subtitle"><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4>
           <div class="docs-note">
-            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.
+            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.</p>
           </div>
-          <h5 class="s-subtitle">Colors</h5>  
+          <h5 class="s-subtitle">Colors</h5>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <div class="docs-color" style="background:#5764c6;color:#fff;">
@@ -448,8 +448,34 @@
           <h5 class="s-subtitle">Sizes</h5>
           <div class="docs-note">
             <p>The default REM (root em) size in Spectre.css is <code>20px</code>. </p>
-            <p>Please note in Chinese/Japanese/Korean Chrome, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to <code>20px</code>, which is relatively easy to calculate. </p>
-            <p>Spectre also use <code>4px</code> as the unit size. Sizes of components are based on the unit size. </p>
+            <p>Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to <code>20px</code>, which is relatively easy to calculate. </p>
+            <p>Spectre uses <code>4px</code> as the unit size. Sizes of components are based on the unit size. </p>
+          </div>
+          <h5 class="s-subtitle">Custom prefix</h5>
+          <div class="docs-note">
+            <p>There is also a way to add custom prefix to all CSS classes. You can use <a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it. </p>
+          </div>
+
+<!-- custom prefix example -->
+<pre class="code"><code><span class="tag">$</span> npm install <span class="atv">gulp-css-prefix</span>
+</code></pre>
+
+          <div class="docs-note">
+            <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
+          </div>
+
+<!-- custom prefix example -->
+<pre class="code"><code>var cssPrefix = require('<span class="atv">gulp-css-prefix</span>');
+  
+gulp.task('prefix', function() {
+  gulp.src('./dist/*.css')
+      .pipe(cssPrefix('<span class="atv">spectre-</span>'))
+      .pipe(gulp.dest('./dist'))
+});
+</code></pre>
+
+          <div class="docs-note">
+            <p>After you compile your version of Spectre in the /dist, run <code>gulp prefix</code> in the directory of Spectre.</p>
           </div>
         </div>
 
