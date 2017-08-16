@@ -104,12 +104,6 @@
                   <li class="menu-item">
                     <a href="layout.html#navbar">Navbar</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="layout.html#panels">Panels</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="layout.html#empty">Empty states</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -145,6 +139,9 @@
                     <a href="components.html#chips">Chips</a>
                   </li>
                   <li class="menu-item">
+                    <a href="components.html#empty">Empty states</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="components.html#menus">Menus</a>
                   </li>
                   <li class="menu-item">
@@ -155,6 +152,9 @@
                   </li>
                   <li class="menu-item">
                     <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#panels">Panels</a>
                   </li>
                   <li class="menu-item">
                     <a href="components.html#popovers">Popovers</a>
@@ -251,16 +251,16 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div id="content" class="s-content">
-        <div id="introduction" class="container">
-          <h3 class="s-title"><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3>
+        <div class="container">
+          <h3 id="introduction" class="s-title"><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3>
           <div class="docs-note">
             <p><strong>Spectre.css</strong> is a lightweight and responsive and modern CSS framework for faster and extensible development.</p>
             <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
           </div>
         </div>
 
-        <div id="installation" class="container">
-          <h3 class="s-title"><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3>
+        <div class="container">
+          <h3 id="installation" class="s-title"><a href="#installation" class="anchor" aria-hidden="true">#</a>Installation</h3>
           <div class="docs-note">
             <p>There are 5 ways to get started with Spectre CSS framework in your projects. You can either install manually, from CDN or use NPM, Yarn and Bower.</p>
           </div>
@@ -312,8 +312,8 @@
           </div>
         </div>
 
-        <div id="compiling" class="container">
-          <h3 class="s-title"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
+        <div class="container">
+          <h3 id="compiling" class="s-title"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
           <div class="docs-note">
             <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>, <code>spectre-exp.less</code> and <code>spectre-icons.less</code>.</p>
             <p>Then, you can build the CSS file from the command line:</p>
@@ -366,7 +366,7 @@
           <div class="docs-note">
             <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.</p>
           </div>
-          <h5 class="s-subtitle">Colors</h5>
+          <h5 id="variables-colors" class="s-subtitle">Colors</h5>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <div class="docs-color" style="background:#5764c6;color:#fff;">
@@ -445,13 +445,13 @@
               </div>
             </div>
           </div>
-          <h5 class="s-subtitle">Sizes</h5>
+          <h5 id="variables-sizes" class="s-subtitle">Sizes</h5>
           <div class="docs-note">
             <p>The default REM (root em) size in Spectre.css is <code>20px</code>. </p>
             <p>Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to <code>20px</code>, which is relatively easy to calculate. </p>
             <p>Spectre uses <code>4px</code> as the unit size. Sizes of components are based on the unit size. </p>
           </div>
-          <h5 class="s-subtitle">Custom prefix</h5>
+          <h5 id="variables-custom-prefix" class="s-subtitle">Custom prefix</h5>
           <div class="docs-note">
             <p>There is also a way to add custom prefix to all CSS classes. You can use <a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it. </p>
           </div>
@@ -479,12 +479,12 @@ gulp.task('prefix', function() {
           </div>
         </div>
 
-        <div id="accessibility" class="container">
-          <h3 class="s-title"><a href="#accessibility" class="anchor" aria-hidden="true">#</a>Accessibility <small class="label">coming soon</small></h3>
+        <div class="container">
+          <h3 id="accessibility" class="s-title"><a href="#accessibility" class="anchor" aria-hidden="true">#</a>Accessibility <small class="label">coming soon</small></h3>
         </div>
 
-        <div id="browsers" class="container">
-          <h3 class="s-title"><a href="#browsers" class="anchor" aria-hidden="true">#</a>Browser support</h3>
+        <div class="container">
+          <h3 id="browsers" class="s-title"><a href="#browsers" class="anchor" aria-hidden="true">#</a>Browser support</h3>
           <div class="docs-note">
             <p>Spectre uses <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a> to make most styles compatible with earlier browsers and <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
             <ul>
@@ -498,9 +498,15 @@ gulp.task('prefix', function() {
           </div>
         </div>
 
-        <div id="whatsnew" class="container">
-          <h3 class="s-title"><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3>
+        <div class="container">
+          <h3 id="whatsnew" class="s-title"><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3>
           <div class="docs-note">
+            <p><strong>August 2017</strong></p>
+            <ul>
+              <li>
+                <a href="getting-started.html">New Docs Experience</a> <small class="label label-primary">NEW</small>
+              </li>
+            </ul>
             <p><strong>April 2017</strong></p>
             <ul>
               <li>
@@ -519,7 +525,7 @@ gulp.task('prefix', function() {
             <p><strong>March 2017</strong></p>
             <ul>
               <li>
-                <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons <small class="label label-primary">NEW</small>
+                <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons
               </li>
               <li>
                 <a href="components.html#popovers">Popovers</a>: small overlay content containers

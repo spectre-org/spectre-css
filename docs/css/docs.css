@@ -405,6 +405,7 @@
   }
   .s-content .s-title,
   .s-content .s-subtitle {
+    padding-top: 5rem;
     position: static;
   }
   .s-content .s-title::before,

@@ -104,12 +104,6 @@
                   <li class="menu-item">
                     <a href="layout.html#navbar">Navbar</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="layout.html#panels">Panels</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="layout.html#empty">Empty states</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -145,6 +139,9 @@
                     <a href="components.html#chips">Chips</a>
                   </li>
                   <li class="menu-item">
+                    <a href="components.html#empty">Empty states</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="components.html#menus">Menus</a>
                   </li>
                   <li class="menu-item">
@@ -155,6 +152,9 @@
                   </li>
                   <li class="menu-item">
                     <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#panels">Panels</a>
                   </li>
                   <li class="menu-item">
                     <a href="components.html#popovers">Popovers</a>
@@ -251,8 +251,8 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div id="content" class="s-content">
-        <div id="accordions" class="container">
-          <h3 class="s-title"><a href="#accordions" class="anchor" aria-hidden="true">#</a>Accordions</h3>
+        <div class="container">
+          <h3 id="accordions" class="s-title"><a href="#accordions" class="anchor" aria-hidden="true">#</a>Accordions</h3>
           <div class="docs-note">
             <p>Accordions are used to toggle sections of content.</p>
           </div>
@@ -402,8 +402,8 @@
 
         </div>
 
-        <div id="autocomplete" class="container">
-          <h3 class="s-title"><a href="#autocomplete" class="anchor" aria-hidden="true">#</a>Autocomplete</h3>
+        <div class="container">
+          <h3 id="autocomplete" class="s-title"><a href="#autocomplete" class="anchor" aria-hidden="true">#</a>Autocomplete</h3>
           <div class="docs-note">
             <p>Autocomplete form component provides suggestions while you type. It is often used for tags and contacts input. </p>
           </div>
@@ -529,8 +529,8 @@
 
         </div>
 
-        <div id="avatars" class="container">
-          <h3 class="s-title"><a href="#avatars" class="anchor" aria-hidden="true">#</a>Avatars</h3>
+        <div class="container">
+          <h3 id="avatars" class="s-title"><a href="#avatars" class="anchor" aria-hidden="true">#</a>Avatars</h3>
           <div class="docs-note">
             <p>Avatars are user profile pictures. </p>
           </div>
@@ -610,8 +610,8 @@
 
         </div>
 
-        <div id="badges" class="container">
-          <h3 class="s-title"><a href="#badges" class="anchor" aria-hidden="true">#</a>Badges</h3>
+        <div class="container">
+          <h3 id="badges" class="s-title"><a href="#badges" class="anchor" aria-hidden="true">#</a>Badges</h3>
           <div class="docs-note">
             <p>Badges are often used as unread number indicators.</p>
           </div>
@@ -686,8 +686,8 @@
 
         </div>
 
-        <div id="bars" class="container">
-          <h3 class="s-title"><a href="#bars" class="anchor" aria-hidden="true">#</a>Bars</h3>
+        <div class="container">
+          <h3 id="bars" class="s-title"><a href="#bars" class="anchor" aria-hidden="true">#</a>Bars</h3>
           <div class="docs-note">
             <p>Bars represent the progress of a task or the value within the known range. Bars are custom components for displaying HTML5 <code>progress</code>, <code>meter</code> and <code>input range</code> elements.</p>
           </div>
@@ -732,7 +732,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Slider bars</h4>
+          <h4 id="bars-slider" class="s-subtitle">Slider bars</h4>
           <div class="columns">
             <div class="column col-8 col-xs-12">
               <div class="bar bar-slider">
@@ -781,8 +781,8 @@
 
         </div>
 
-        <div id="breadcrumbs" class="container">
-          <h3 class="s-title"><a href="#breadcrumbs" class="anchor" aria-hidden="true">#</a>Breadcrumbs</h3>
+        <div class="container">
+          <h3 id="breadcrumbs" class="s-title"><a href="#breadcrumbs" class="anchor" aria-hidden="true">#</a>Breadcrumbs</h3>
           <div class="docs-note">
             <p>Breadcrumbs are used as navigational hierarchies to indicate current location.</p>
           </div>
@@ -861,8 +861,8 @@
 
         </div>
 
-        <div id="cards" class="container">
-          <h3 class="s-title"><a href="#cards" class="anchor" aria-hidden="true">#</a>Cards</h3>
+        <div class="container">
+          <h3 id="cards" class="s-title"><a href="#cards" class="anchor" aria-hidden="true">#</a>Cards</h3>
           <div class="docs-note">
             <p>Cards are flexible content containers.</p>
           </div>
@@ -991,8 +991,8 @@
 
         </div>
 
-        <div id="chips" class="container">
-          <h3 class="s-title"><a href="#chips" class="anchor" aria-hidden="true">#</a>Chips</h3>
+        <div class="container">
+          <h3 id="chips" class="s-title"><a href="#chips" class="anchor" aria-hidden="true">#</a>Chips</h3>
           <div class="docs-note">
             <p>Chips are complex entities in small blocks. </p>
           </div>
@@ -1049,8 +1049,75 @@
 
         </div>
 
-        <div id="menus" class="container">
-          <h3 class="s-title"><a href="#menus" class="anchor" aria-hidden="true">#</a>Menus</h3>
+        <div class="container">
+          <h3 id="empty" class="s-title"><a href="#empty" class="anchor" aria-hidden="true">#</a>Empty states / blank slates</h3>
+          <div class="docs-note">
+            <p>Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-12">
+              <div class="empty">
+                <div class="empty-icon">
+                  <i class="icon icon-message"></i>
+                </div>
+                <p class="empty-title h5">You have no new messages</p>
+                <p class="empty-subtitle">Click the button to start a conversation</p>
+                <div class="empty-action">
+                  <button class="btn btn-primary">Send a message</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-12">
+              <div class="empty">
+                <div class="empty-icon">
+                  <i class="icon icon-mail"></i>
+                </div>
+                <p class="empty-title h5">You've successfully signed up</p>
+                <p class="empty-subtitle">Click the button to invite your friends</p>
+                <div class="empty-action">
+                  <button class="btn btn-primary">Invite your friends</button>
+                </div>
+                <div class="empty-action">
+                  <button class="btn btn-link">Skip</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-12">
+              <div class="empty">
+                <div class="empty-icon">
+                  <i class="icon icon-people"></i>
+                </div>
+                <p class="empty-title h5">You are not following anyone</p>
+                <p class="empty-subtitle">Start to meet new friends</p>
+                <div class="empty-action input-group input-inline">
+                  <input type="text" class="form-input" placeholder="" />
+                  <button class="btn btn-primary input-group-btn">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-note">
+            <p>An empty state component can include icons, messages (title and subtitle messages) and action buttons or any combination of those elements. Add <code>empty-icon</code>, <code>empty-title</code>, <code>empty-subtitle</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
+          </div>
+
+<!-- empty states example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-icon&quot;</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title h5&quot;</span>&gt;You have no new messages&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-subtitle&quot;</span>&gt;Click the button to start a conversation.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-action&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Send a message&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div class="container">
+          <h3 id="menus" class="s-title"><a href="#menus" class="anchor" aria-hidden="true">#</a>Menus</h3>
           <div class="docs-note">
             <p>Menus are vertical list of links or buttons for actions and navigation.</p>
           </div>
@@ -1260,8 +1327,8 @@
 
         </div>
 
-        <div id="modals" class="container">
-          <h3 class="s-title"><a href="#modals" class="anchor" aria-hidden="true">#</a>Modals</h3>
+        <div class="container">
+          <h3 id="modals" class="s-title"><a href="#modals" class="anchor" aria-hidden="true">#</a>Modals</h3>
           <div class="docs-note">
             <p>Modals are flexible dialog prompts.</p>
           </div>
@@ -1322,7 +1389,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Modal sizes</h4>
+          <h4 id="modals-sizes" class="s-subtitle">Modal sizes</h4>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <div class="modal-temp modal-sm">
@@ -1396,8 +1463,8 @@
 
         </div>
 
-        <div id="pagination" class="container">
-          <h3 class="s-title"><a href="#pagination" class="anchor" aria-hidden="true">#</a>Pagination</h3>
+        <div class="container">
+          <h3 id="pagination" class="s-title"><a href="#pagination" class="anchor" aria-hidden="true">#</a>Pagination</h3>
           <div class="columns">
             <div class="column col-xs-12">
               <ul class="pagination">
@@ -1491,14 +1558,14 @@
               <ul class="pagination">
                 <li class="page-item page-prev">
                   <a href="#pagination">
-                    <p class="page-item-subtitle">Previous</p>
-                    <h4 class="page-item-title">Getting started</h4>
+                    <div class="page-item-subtitle">Previous</div>
+                    <div class="page-item-title h5">Getting started</div>
                   </a>
                 </li>
                 <li class="page-item page-next">
                   <a href="#pagination">
-                    <p class="page-item-subtitle">Next</p>
-                    <h4 class="page-item-title">Layout</h4>
+                    <div class="page-item-subtitle">Next</div>
+                    <div class="page-item-title h5">Layout</div>
                   </a>
                 </li>
               </ul>
@@ -1512,14 +1579,14 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
-      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title h5&quot;</span>&gt;Getting started&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
-      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title h5&quot;</span>&gt;Layout&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
@@ -1527,8 +1594,169 @@
 
         </div>
 
-        <div id="navs" class="container">
-          <h3 class="s-title"><a href="#navs" class="anchor" aria-hidden="true">#</a>Navs</h3>
+        <div class="container">
+          <h3 id="panels" class="s-title"><a href="#panels" class="anchor" aria-hidden="true">#</a>Panels</h3>
+          <div class="docs-note">
+            <p>Panels are flexible view container with auto-expand content section.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header text-center">
+                  <figure class="avatar avatar-lg">
+                    <img src="img/avatar-2.png" alt="Avatar" />
+                  </figure>
+                  <div class="panel-title h5 mt-10">Bruce Banner</div>
+                  <div class="panel-subtitle">THE HULK</div>
+                </div>
+                <nav class="panel-nav">
+                  <ul class="tab tab-block">
+                    <li class="tab-item active">
+                      <a href="#panels">
+                        Profile
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Files
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Tasks
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="panel-body">
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">E-mail</div>
+                      <div class="tile-subtitle">bruce.banner@hulk.com</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Skype</div>
+                      <div class="tile-subtitle">bruce.banner</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Location</div>
+                      <div class="tile-subtitle">Dayton, Ohio</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <button class="btn btn-primary btn-block">Save</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <div class="panel-title h6">Comments</div>
+                </div>
+                <div class="panel-body">
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-1.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Thor Odinson</p>
+                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-2.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Bruce Banner</p>
+                      <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar" data-initial="TS"></figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Tony Stark</p>
+                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-4.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Steve Rogers</p>
+                      <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-3.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Natasha Romanoff</p>
+                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <div class="input-group">
+                    <input type="text" class="form-input" placeholder="Hello" />
+                    <button class="btn btn-primary input-group-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-note">
+            <p>Add a container element with the <code>panel</code> class. And add child elements with the <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code> class. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
+          </div>
+  
+<!-- panels example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-title&quot;</span>&gt;Comments&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-nav&quot;</span>&gt;
+    <span class="com">&lt;!-- navigation components: tabs, breadcrumbs or pagination --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-body&quot;</span>&gt;
+    <span class="com">&lt;!-- contents --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-footer&quot;</span>&gt;
+    <span class="com">&lt;!-- buttons or inputs --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+  
+        </div>
+
+        <div class="container">
+          <h3 id="navs" class="s-title"><a href="#navs" class="anchor" aria-hidden="true">#</a>Navs</h3>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <ul class="nav">
@@ -1598,8 +1826,8 @@
 
         </div>
 
-        <div id="popovers" class="container">
-          <h3 class="s-title"><a href="#popovers" class="anchor" aria-hidden="true">#</a>Popovers</h3>
+        <div class="container">
+          <h3 id="popovers" class="s-title"><a href="#popovers" class="anchor" aria-hidden="true">#</a>Popovers</h3>
           <div class="docs-note">
             <p>Popovers are small overlay content containers. Popovers component is built entirely in CSS.</p>
           </div>
@@ -1715,8 +1943,8 @@
 
         </div>
 
-        <div id="steps" class="container">
-          <h3 class="s-title"><a href="#steps" class="anchor" aria-hidden="true">#</a>Steps</h3>
+        <div class="container">
+          <h3 id="steps" class="s-title"><a href="#steps" class="anchor" aria-hidden="true">#</a>Steps</h3>
           <div class="docs-note">
             <p>Steps are progress indicators of a sequence of task steps.</p>
           </div>
@@ -1777,8 +2005,8 @@
 
         </div>
 
-        <div id="tabs" class="container">
-          <h3 class="s-title"><a href="#tabs" class="anchor" aria-hidden="true">#</a>Tabs</h3>
+        <div class="container">
+          <h3 id="tabs" class="s-title"><a href="#tabs" class="anchor" aria-hidden="true">#</a>Tabs</h3>
           <div class="docs-note">
             <p>Tabs enable quick switch between different views.</p>
           </div>
@@ -1957,8 +2185,8 @@
 
         </div>
 
-        <div id="tiles" class="container">
-          <h3 class="s-title"><a href="#tiles" class="anchor" aria-hidden="true">#</a>Tiles</h3>
+        <div class="container">
+          <h3 id="tiles" class="s-title"><a href="#tiles" class="anchor" aria-hidden="true">#</a>Tiles</h3>
           <div class="docs-note">
             <p>Tiles are repeatable or embeddable information blocks.</p>
           </div>
@@ -2020,7 +2248,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Compact tiles</h4>
+          <h4 id="tiles-compact" class="s-subtitle">Compact tiles</h4>
           <div class="docs-note">
             <p>There is compact version of Tiles component, which is often used as contact and file info blocks.</p>
             <p>Add the <code>tile-centered</code> class to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
@@ -2065,8 +2293,8 @@
 
         </div>
 
-        <div id="toasts" class="container">
-          <h3 class="s-title"><a href="#toasts" class="anchor" aria-hidden="true">#</a>Toasts</h3>
+        <div class="container">
+          <h3 id="toasts" class="s-title"><a href="#toasts" class="anchor" aria-hidden="true">#</a>Toasts</h3>
           <div class="docs-note">
             <p>Toasts are used to show alert or information to users.</p>
           </div>
@@ -2125,8 +2353,8 @@
 
         </div>
 
-        <div id="tooltips" class="container">
-          <h3 class="s-title"><a href="#tooltips" class="anchor" aria-hidden="true">#</a>Tooltips</h3>
+        <div class="container">
+          <h3 id="tooltips" class="s-title"><a href="#tooltips" class="anchor" aria-hidden="true">#</a>Tooltips</h3>
           <div class="docs-note">
             <p>Tooltips provide context information labels that appear on hover and focus.</p>
           </div>

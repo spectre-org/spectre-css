@@ -55,8 +55,6 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
 - [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
 - [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
-- [Panels](https://picturepan2.github.io/spectre/layout.html#panels) - flexible view container layout with auto-expand content section
-- [Empty states](https://picturepan2.github.io/spectre/layout.html#empty) - empty states/blank slates for first time use, empty data and error screens
 
 #### Components
 - [Accordions](https://picturepan2.github.io/spectre/components.html#accordions) - used to toggle sections of content
@@ -67,10 +65,12 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Bars](https://picturepan2.github.io/spectre/components.html#bars) - progress of a task or the value within the known range
 - [Cards](https://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
 - [Chips](https://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
+- [Empty states](https://picturepan2.github.io/spectre/components.html#empty) - empty states/blank slates for first time use, empty data and error screens
 - [Menus](https://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
 - [Navs](https://picturepan2.github.io/spectre/components.html#navs) - navigational list of links
 - [Modals](https://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
 - [Pagination](https://picturepan2.github.io/spectre/components.html#pagination) - navigational links for multiple pages
+- [Panels](https://picturepan2.github.io/spectre/components.html#panels) - flexible view container with auto-expand content section
 - [Popovers](https://picturepan2.github.io/spectre/components.html#popovers) - small overlay content containers
 - [Steps](https://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
 - [Tabs](https://picturepan2.github.io/spectre/components.html#tabs) - toggle for different views
