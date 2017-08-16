@@ -648,6 +648,30 @@
             </div>
           </div>
 
+<!-- filters example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;filter&quot;</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;tag-all&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;filter-tag&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;filter-radio&quot;</span> <span class="atn">hidden</span> <span class="atn">checked</span> /&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;tag-action&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;filter-tag&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;filter-radio&quot;</span> <span class="atn">hidden</span> /&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;tag-roleplaying&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;filter-tag&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;filter-radio&quot;</span> <span class="atn">hidden</span> /&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;filter-nav&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;tag-all&quot;</span>&gt;All&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;tag-action&quot;</span>&gt;Action&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;tag-roleplaying&quot;</span>&gt;Roleplaying&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;filter-body&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;filter-item card&quot;</span> <span class="atn">data-tag</span>=<span class="atv">&quot;tag-action&quot;</span>&gt;
+      <span class="com">&lt;!-- Filter item content --&gt;</span>
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;filter-item card&quot;</span> <span class="atn">data-tag</span>=<span class="atv">&quot;tag-roleplaying&quot;</span>&gt;
+      <span class="com">&lt;!-- Filter item content --&gt;</span>
+    &lt;<span class="tag">/div</span>&gt;
+    <span class="com">&lt;!-- Filter items --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
         </div>
 
         <div id="meters" class="container">
