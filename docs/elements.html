@@ -250,9 +250,9 @@
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div id="content" class="s-content">
+      <div id="typography" id="content" class="s-content">
         <div class="container">
-          <h3 id="typography" class="s-title"><a href="#typography" class="anchor" aria-hidden="true">#</a>Typography</h3>
+          <h3 class="s-title"><a href="#typography" class="anchor" aria-hidden="true">#</a>Typography</h3>
           <div class="docs-note">
             <p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
           </div>
@@ -485,8 +485,8 @@
 
         </div>
 
-        <div class="container">
-          <h3 id="tables" class="s-title"><a href="#tables" class="anchor" aria-hidden="true">#</a>Tables</h3>
+        <div id="tables" class="container">
+          <h3 class="s-title"><a href="#tables" class="anchor" aria-hidden="true">#</a>Tables</h3>
           <div class="docs-note">
             <p>Tables include default styles for tables and data sets.</p>
           </div>
@@ -547,8 +547,8 @@
 
         </div>
 
-        <div class="container">
-          <h3 id="buttons" class="s-title"><a href="#buttons" class="anchor" aria-hidden="true">#</a>Buttons</h3>
+        <div id="buttons" class="container">
+          <h3 class="s-title"><a href="#buttons" class="anchor" aria-hidden="true">#</a>Buttons</h3>
           <div class="docs-note">
             <p>Buttons include simple button styles for actions in different types and sizes. </p>
           </div>
@@ -603,11 +603,15 @@
 
           <h4 id="buttons-sizes" class="s-subtitle">Button sizes</h4>
           <div class="columns">
-            <div class="column">
+            <div class="column col-12">
               <button class="btn btn-primary btn-lg">large <i class="icon icon-arrow-down"></i></button>
               <button class="btn btn-primary btn-lg">large button</button>
+            </div>
+            <div class="column col-12">
               <button class="btn btn-primary">normal <i class="icon icon-arrow-down"></i></button>
               <button class="btn btn-primary">normal button</button>
+            </div>
+            <div class="column col-12">
               <button class="btn btn-primary btn-sm">small <i class="icon icon-arrow-down"></i></button>
               <button class="btn btn-primary btn-sm">small button</button>
             </div>
@@ -651,14 +655,14 @@
 
           <h4 id="buttons-groups" class="s-subtitle">Button groups</h4>
           <div class="columns">
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group">
                 <button class="btn tooltip" data-tooltip="Tooltip text">first button</button>
                 <button class="btn tooltip" data-tooltip="Tooltip text">second button</button>
                 <button class="btn tooltip" data-tooltip="Tooltip text">third button</button>
               </div>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group btn-group-block">
                 <button class="btn btn-primary">first button</button>
                 <button class="btn btn-primary">second button</button>
@@ -667,14 +671,14 @@
             </div>
           </div>
           <div class="columns">
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group">
                 <button class="btn btn-sm active">first button</button>
                 <button class="btn btn-sm">second button</button>
                 <button class="btn btn-sm">third button</button>
               </div>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group btn-group-block">
                 <button class="btn btn-primary btn-sm active">first button</button>
                 <button class="btn btn-primary btn-sm">second button</button>
@@ -696,113 +700,159 @@
 
         </div>
 
-        <div class="container">
-          <h3 id="forms" class="s-title"><a href="#forms" class="anchor" aria-hidden="true">#</a>Forms</h3>
+        <div id="forms" class="container">
+          <h3 class="s-title"><a href="#forms" class="anchor" aria-hidden="true">#</a>Forms</h3>
           <div class="docs-note">
             <p>Forms provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.  </p>
           </div>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
-              <form action="#forms">
-                <div class="form-group">
-                  <label class="form-label" for="input-example-1">Name</label>
-                  <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="input-example-2">Email</label>
-                  <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Gender</label>
-                  <label class="form-radio">
-                    <input type="radio" name="gender" />
-                    <i class="form-icon"></i> Male
-                  </label>
-                  <label class="form-radio">
-                    <input type="radio" name="gender" />
-                    <i class="form-icon"></i> Female
-                  </label>
-                </div>
-                <div class="form-group">
-                  <select class="form-select">
-                    <option>Choose an option</option>
-                    <option>Slack</option>
-                    <option>Skype</option>
-                    <option>Hipchat</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-switch">
-                    <input type="checkbox" />
-                    <i class="form-icon"></i> Send me emails with news and tips
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="input-example-3">Message</label>
-                  <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                  <label class="form-checkbox">
-                    <input type="checkbox" />
-                    <i class="form-icon"></i> Remember me
-                  </label>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-primary" type="submit">Submit</button>
-                  <button class="btn btn-link" type="reset">Cancel</button>
-                </div>
-              </form>
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label" for="input-example-1">Name</label>
+                <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="input-example-2">Email</label>
+                <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+              </div>
             </div>
           </div>
 
-<!-- forms example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
-  <span class="com">&lt;!-- form input control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form radio control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Male
-    &lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Female
-    &lt;<span class="tag">/label</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form select control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Slack&lt;<span class="tag">/option</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Skype&lt;<span class="tag">/option</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
-    &lt;<span class="tag">/select</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form switch control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Send me emails with news and tips
-    &lt;<span class="tag">/label</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form textarea control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form checkbox control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
-    &lt;<span class="tag">/label</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/form</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form input control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label" for="input-example-3">Message</label>
+                <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form textarea control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <select class="form-select">
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-select" multiple>
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form select control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Slack&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Skype&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
+  &lt;<span class="tag">/select</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+        
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label">Gender</label>
+                <label class="form-radio">
+                  <input type="radio" name="gender" checked />
+                  <i class="form-icon"></i> Male
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="gender" />
+                  <i class="form-icon"></i> Female
+                </label>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form radio control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Male
+  &lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Female
+  &lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-switch">
+                  <input type="checkbox" />
+                  <i class="form-icon"></i> Send me emails with news and tips
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="form-switch">
+                  <input type="checkbox" checked />
+                  <i class="form-icon"></i> Send me emails with news and tips
+                </label>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form switch control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Send me emails with news and tips
+  &lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-checkbox">
+                  <input type="checkbox" />
+                  <i class="form-icon"></i> Remember me
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="form-checkbox">
+                  <input type="checkbox" checked />
+                  <i class="form-icon"></i> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form checkbox control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
+  &lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
           <div class="docs-note">
@@ -848,7 +898,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-3"></div>
+                  <div class="col-3">
+                    <label class="form-label">Source</label>
+                  </div>
                   <div class="col-9">
                     <select class="form-select" multiple>
                       <option>Slack</option>
@@ -958,7 +1010,7 @@
               </div>
             </div>
             <div class="column col-4">
-              <div class="has-icon-left">
+              <div class="has-icon-left tooltip" data-tooltip="Lorem ipsum dolor sit amet">
                 <input class="form-input" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-arrow-right"></i>
               </div>
@@ -1199,7 +1251,7 @@
             <p>To use form validation styles, add <code>is-success</code> or <code>is-error</code> class to the controls or add <code>has-success</code> or <code>has-error</code> class to parent elements. You can use the <code>form-input-hint</code> class to provide form validation success and error messages.</p>
           </div>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <fieldset>
                 <legend>form-input</legend>
                 <div class="form-group">
@@ -1298,7 +1350,7 @@
             <p>Add the <code>disabled</code> attribute to the element or &lt;fieldset&gt; for a disabled form components style.</p>
           </div>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <form action="#forms">
                 <fieldset disabled>
                   <div class="form-group">
@@ -1346,8 +1398,8 @@
           </div>
         </div>
 
-        <div class="container">
-          <h3 id="icons" class="s-title"><a href="#icons" class="anchor" aria-hidden="true">#</a>Icons <small class="label">experimental</small></h3>
+        <div id="icons" class="container">
+          <h3 class="s-title"><a href="#icons" class="anchor" aria-hidden="true">#</a>Icons <small class="label">experimental</small></h3>
           <div class="docs-note">
             <p>Icons are single-element, responsive and pure CSS icons. You can include <code>spectre-icons.css</code> located in the <code>dist</code> folder to your web &lt;head&gt; to have these CSS icons.</p>
           </div>
@@ -1595,8 +1647,8 @@
 
         </div>
 
-        <div class="container">
-          <h3 id="labels" class="s-title"><a href="#labels" class="anchor" aria-hidden="true">#</a>Labels</h3>
+        <div id="labels" class="container">
+          <h3 class="s-title"><a href="#labels" class="anchor" aria-hidden="true">#</a>Labels</h3>
           <div class="docs-note">
             <p>Labels are formatted text tags for highlighted, informative information.</p>
           </div>
@@ -1620,8 +1672,8 @@
 
         </div>
 
-        <div class="container">
-          <h3 id="codes" class="s-title"><a href="#codes" class="anchor" aria-hidden="true">#</a>Codes</h3>
+        <div id="codes" class="container">
+          <h3 class="s-title"><a href="#codes" class="anchor" aria-hidden="true">#</a>Codes</h3>
           <div class="docs-note">
             <p>Codes are inline and multiline code snippets.</p>
             <p>For inline code, you can use the element <code>&lt;code&gt;</code>. For multiline code snippet blocks, you can use &lt;pre&gt; with the <code>code</code> class as a container, and add &lt;code&gt; inside it. The <code>data-lang</code> attribute is rendered as the language name in the top right.</p>
@@ -1643,8 +1695,8 @@
 
         </div>
 
-        <div class="container">
-          <h3 id="media" class="s-title"><a href="#media" class="anchor" aria-hidden="true">#</a>Media</h3>
+        <div id="media" class="container">
+          <h3 class="s-title"><a href="#media" class="anchor" aria-hidden="true">#</a>Media</h3>
           <div class="docs-note">
             <p>Media includes responsive images, figures and video classes. </p>
           </div>

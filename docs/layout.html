@@ -251,8 +251,8 @@
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
       <div id="content" class="s-content">
-        <div class="container">
-          <h3 id="grid" class="s-title"><a href="#grid" class="anchor" aria-hidden="true">#</a>Flexbox grid</h3>
+        <div id="grid" class="container">
+          <h3 class="s-title"><a href="#grid" class="anchor" aria-hidden="true">#</a>Flexbox grid</h3>
           <div class="docs-note">
             <p>Layout includes flexbox based responsive grid system with 12 columns. </p>
           </div>
@@ -318,7 +318,7 @@
 
           <div class="docs-note">
             <p>Add the <code>columns</code> class to a container with the <code>container</code> class. And add any element you want with the <code>column</code> class inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
-            <p>And you can add the <code>col-gapless</code> class to have gapless columns.</p>
+            <p>And you can add the <code>col-gapless</code> class to the <code>columns</code> to have gapless columns.</p>
           </div>
 
           <div class="columns col-gapless">
@@ -356,34 +356,82 @@
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns col-oneline&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-8&quot;</span>&gt;col-8&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-8&quot;</span>&gt;col-8&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <h4 id="grid-offset" class="s-subtitle">Grid offset</h4>
+          <div class="docs-note">
+            <p>The Flexbox grid provides margin auto utilities to set offset. There are <code>col-mx-auto</code>, <code>col-ml-auto</code> and <code>col-mr-auto</code> to set margins between columns without using empty columns.</p>
+          </div>
+
+          <div class="columns">
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+            <div class="column col-4 col-mx-auto">
+              <div class="bg-gray docs-block">col-4 col-mx-auto</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+            <div class="column col-4 col-ml-auto">
+              <div class="bg-gray docs-block">col-4 col-ml-auto</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-ml-auto">
+              <div class="bg-gray docs-block">col-4 col-ml-auto</div>
+            </div>
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-mx-auto">
+              <div class="bg-gray docs-block">col-4 col-mx-auto</div>
+            </div>
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-mr-auto">
+              <div class="bg-gray docs-block">col-4 col-mr-auto</div>
+            </div>
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+          </div>
+
+<!-- layout example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-4 col-mr-auto&quot;</span>&gt;col-4 col-mr-auto&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </div>
 
-        <div class="container">
-          <h3 id="responsive" class="s-title"><a href="#responsive" class="anchor" aria-hidden="true">#</a>Responsive grid</h3>
+        <div id="responsive" class="container">
+          <h3 class="s-title"><a href="#responsive" class="anchor" aria-hidden="true">#</a>Responsive</h3>
           <div class="docs-note">
             <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities. </p>
           </div>
           <div class="columns">
-            <div class="column col-lg-6">
-              <div class="bg-gray docs-block">col-lg-6</div>
+            <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
+              <div class="bg-gray docs-block">col-10 <br/> col-lg-8 <br/> col-md-6 <br/> col-sm-4</div>
             </div>
-          </div>
-          <div class="columns">
-            <div class="column col-md-6">
-              <div class="bg-gray docs-block">col-md-6</div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-sm-6">
-              <div class="bg-gray docs-block">col-sm-6</div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-xs-6">
-              <div class="bg-gray docs-block">col-xs-6</div>
+            <div class="column col-2 col-lg-4 col-md-6 col-sm-8">
+              <div class="bg-gray docs-block">col-2 <br/> col-lg-4 <br/> col-md-6 <br/> col-sm-8</div>
             </div>
           </div>
 
@@ -426,7 +474,7 @@
           <div class="docs-note">
             <p>The responsive visibility utilities help show and hide elements on specific viewport sizes. </p>
           </div>
-          <table class="docs-table table text-center">
+          <table class="docs-table table table-striped text-center">
             <thead>
               <tr>
                 <th></th>
@@ -492,7 +540,7 @@
             </ul>
           </div>
 
-          <table class="docs-table table text-center">
+          <table class="docs-table table table-striped text-center">
             <thead>
               <tr>
                 <th></th>
@@ -561,8 +609,8 @@
           </div>
         </div>
 
-        <div class="container">
-          <h3 id="navbar" class="s-title"><a href="#navbar" class="anchor" aria-hidden="true">#</a>Navbar</h3>
+        <div id="navbar" class="container">
+          <h3 class="s-title"><a href="#navbar" class="anchor" aria-hidden="true">#</a>Navbar</h3>
           <div class="docs-note">
             <p>Navbar is a layout container that appears in the header of apps and websites. </p>
           </div>
