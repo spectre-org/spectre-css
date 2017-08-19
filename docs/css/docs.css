@@ -1,18 +1,16 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.3.1";
+  content: "0.3.2";
 }
 /* Spectre New Docs */
 .s-container > .columns {
-  -webkit-flex-flow: nowrap;
   -ms-flex-flow: nowrap;
   flex-flow: nowrap;
   min-height: 100vh;
 }
 .s-sidebar {
   background: #f8f9fa;
-  -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   padding: 1.5rem 0 1.5rem 1.5rem;
@@ -46,7 +44,6 @@
   display: inline-block;
 }
 .s-content {
-  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-width: 920px;
@@ -182,16 +179,13 @@
   position: static;
 }
 .s-content .example-tile-icon {
-  -webkit-align-content: space-around;
   align-content: space-around;
-  -webkit-align-items: center;
   align-items: center;
   background: #5764c6;
   border-radius: .1rem;
   color: #fff;
   display: flex;
   display: -ms-flexbox;
-  display: -webkit-flex;
   -ms-flex-align: center;
   -ms-flex-line-pack: distribute;
   font-size: 1.2rem;
@@ -216,12 +210,10 @@
   top: 1.3rem;
 }
 .s-brand .s-logo {
-  -webkit-align-items: center;
   align-items: center;
   border-radius: .1rem;
   display: inline-flex;
   display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
   -ms-flex-align: center;
   height: 2rem;
   padding: .2rem;
@@ -337,21 +329,15 @@
     padding: 3rem 1.5rem;
     position: fixed;
     top: 0;
-    -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-    transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
-    transition: -webkit-transform .2s ease;
     z-index: 400;
   }
   .s-sidebar:target {
-    -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
-    transition: transform .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease;
-    transition: -webkit-transform .2s ease;
   }
   .s-sidebar:target + .docs-nav-clear {
     display: block;

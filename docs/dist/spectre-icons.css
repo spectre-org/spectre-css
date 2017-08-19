@@ -16,7 +16,6 @@
   left: 50%;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -36,22 +35,18 @@
   width: .65em;
 }
 .icon-arrow-down::before {
-  -webkit-transform: translate(-50%, -75%) rotate(225deg);
   -ms-transform: translate(-50%, -75%) rotate(225deg);
   transform: translate(-50%, -75%) rotate(225deg);
 }
 .icon-arrow-left::before {
-  -webkit-transform: translate(-25%, -50%) rotate(-45deg);
   -ms-transform: translate(-25%, -50%) rotate(-45deg);
   transform: translate(-25%, -50%) rotate(-45deg);
 }
 .icon-arrow-right::before {
-  -webkit-transform: translate(-75%, -50%) rotate(135deg);
   -ms-transform: translate(-75%, -50%) rotate(135deg);
   transform: translate(-75%, -50%) rotate(135deg);
 }
 .icon-arrow-up::before {
-  -webkit-transform: translate(-50%, -25%) rotate(45deg);
   -ms-transform: translate(-50%, -25%) rotate(45deg);
   transform: translate(-50%, -25%) rotate(45deg);
 }
@@ -73,7 +68,6 @@
   left: 55%;
 }
 .icon-back::before {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -81,7 +75,6 @@
   top: 45%;
 }
 .icon-downward::before {
-  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
   -ms-transform: translate(-50%, -50%) rotate(-135deg);
   transform: translate(-50%, -50%) rotate(-135deg);
 }
@@ -89,7 +82,6 @@
   left: 45%;
 }
 .icon-forward::before {
-  -webkit-transform: translate(-50%, -50%) rotate(135deg);
   -ms-transform: translate(-50%, -50%) rotate(135deg);
   transform: translate(-50%, -50%) rotate(135deg);
 }
@@ -97,7 +89,6 @@
   top: 55%;
 }
 .icon-upward::before {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -107,7 +98,6 @@
   border-top: .3em solid currentColor;
   content: "";
   height: 0;
-  -webkit-transform: translate(-50%, -25%);
   -ms-transform: translate(-50%, -25%);
   transform: translate(-50%, -25%);
   width: 0;
@@ -139,23 +129,19 @@
 }
 .icon-resize-horiz::before,
 .icon-resize-vert::before {
-  -webkit-transform: translate(-50%, -90%) rotate(45deg);
   -ms-transform: translate(-50%, -90%) rotate(45deg);
   transform: translate(-50%, -90%) rotate(45deg);
 }
 .icon-resize-horiz::after,
 .icon-resize-vert::after {
-  -webkit-transform: translate(-50%, -10%) rotate(225deg);
   -ms-transform: translate(-50%, -10%) rotate(225deg);
   transform: translate(-50%, -10%) rotate(225deg);
 }
 .icon-resize-horiz::before {
-  -webkit-transform: translate(-90%, -50%) rotate(-45deg);
   -ms-transform: translate(-90%, -50%) rotate(-45deg);
   transform: translate(-90%, -50%) rotate(-45deg);
 }
 .icon-resize-horiz::after {
-  -webkit-transform: translate(-10%, -50%) rotate(135deg);
   -ms-transform: translate(-10%, -50%) rotate(135deg);
   transform: translate(-10%, -50%) rotate(135deg);
 }
@@ -194,7 +180,6 @@
 }
 .icon-cross::before,
 .icon-cross::after {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -204,7 +189,6 @@
   border-top: 0;
   content: "";
   height: .5em;
-  -webkit-transform: translate(-50%, -75%) rotate(-45deg);
   -ms-transform: translate(-50%, -75%) rotate(-45deg);
   transform: translate(-50%, -75%) rotate(-45deg);
   width: .9em;
@@ -217,7 +201,6 @@
   background: currentColor;
   content: "";
   height: .1rem;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
   width: 1em;
@@ -259,7 +242,6 @@
   height: .75em;
   left: 5%;
   top: 5%;
-  -webkit-transform: translate(0, 0) rotate(45deg);
   -ms-transform: translate(0, 0) rotate(45deg);
   transform: translate(0, 0) rotate(45deg);
   width: .75em;
@@ -270,7 +252,6 @@
   height: .1rem;
   left: 80%;
   top: 80%;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
   width: .4em;
@@ -279,7 +260,6 @@
   border: .1rem solid currentColor;
   content: "";
   height: .4em;
-  -webkit-transform: translate(-40%, -60%) rotate(-45deg);
   -ms-transform: translate(-40%, -60%) rotate(-45deg);
   transform: translate(-40%, -60%) rotate(-45deg);
   width: .85em;
@@ -292,7 +272,6 @@
   height: 0;
   left: 5%;
   top: 95%;
-  -webkit-transform: translate(0, -100%);
   -ms-transform: translate(0, -100%);
   transform: translate(0, -100%);
   width: 0;
@@ -329,7 +308,6 @@
   height: .4em;
   left: 100%;
   top: .25em;
-  -webkit-transform: translate(-125%, -50%) rotate(-45deg);
   -ms-transform: translate(-125%, -50%) rotate(-45deg);
   transform: translate(-125%, -50%) rotate(-45deg);
   width: .4em;
@@ -377,7 +355,6 @@
   border-radius: .1rem;
   content: "";
   height: .5em;
-  -webkit-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
   -ms-transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
   transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
   width: .5em;
@@ -393,7 +370,6 @@
   border-right: 0;
   content: "";
   height: .5em;
-  -webkit-transform: translate(-50%, -60%) rotate(-135deg);
   -ms-transform: translate(-50%, -60%) rotate(-135deg);
   transform: translate(-50%, -60%) rotate(-135deg);
   width: .5em;
@@ -407,7 +383,6 @@
   width: .1rem;
 }
 .icon-upload::before {
-  -webkit-transform: translate(-50%, -60%) rotate(45deg);
   -ms-transform: translate(-50%, -60%) rotate(45deg);
   transform: translate(-50%, -60%) rotate(45deg);
 }
@@ -422,7 +397,6 @@
   background: currentColor;
   content: "";
   height: .4em;
-  -webkit-transform: translate(-50%, -75%);
   -ms-transform: translate(-50%, -75%);
   transform: translate(-50%, -75%);
   width: .1rem;
@@ -431,10 +405,8 @@
   background: currentColor;
   content: "";
   height: .3em;
-  -webkit-transform: translate(-50%, -75%) rotate(90deg);
   -ms-transform: translate(-50%, -75%) rotate(90deg);
   transform: translate(-50%, -75%) rotate(90deg);
-  -webkit-transform-origin: 50% 90%;
   -ms-transform-origin: 50% 90%;
   transform-origin: 50% 90%;
   width: .1rem;
@@ -452,7 +424,6 @@
   border-top: 0;
   content: "";
   height: .5em;
-  -webkit-transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
   -ms-transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
   transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
   width: .5em;
@@ -497,7 +468,6 @@
   height: .3em;
   left: 10%;
   top: 100%;
-  -webkit-transform: translate(0, -90%) rotate(45deg);
   -ms-transform: translate(0, -90%) rotate(45deg);
   transform: translate(0, -90%) rotate(45deg);
   width: .1rem;
@@ -522,7 +492,6 @@
   content: "";
   height: .5em;
   left: 60%;
-  -webkit-transform: translate(-50%, 25%) rotate(-45deg);
   -ms-transform: translate(-50%, 25%) rotate(-45deg);
   transform: translate(-50%, 25%) rotate(-45deg);
   width: .5em;
@@ -537,12 +506,10 @@
   width: .75em;
 }
 .icon-link::before {
-  -webkit-transform: translate(-70%, -45%) rotate(-45deg);
   -ms-transform: translate(-70%, -45%) rotate(-45deg);
   transform: translate(-70%, -45%) rotate(-45deg);
 }
 .icon-link::after {
-  -webkit-transform: translate(-30%, -55%) rotate(135deg);
   -ms-transform: translate(-30%, -55%) rotate(135deg);
   transform: translate(-30%, -55%) rotate(135deg);
 }
@@ -551,7 +518,6 @@
   border-radius: 50% 50% 50% 0;
   content: "";
   height: .8em;
-  -webkit-transform: translate(-50%, -60%) rotate(-45deg);
   -ms-transform: translate(-50%, -60%) rotate(-45deg);
   transform: translate(-50%, -60%) rotate(-45deg);
   width: .8em;
@@ -561,7 +527,6 @@
   border-radius: 50%;
   content: "";
   height: .2em;
-  -webkit-transform: translate(-50%, -80%);
   -ms-transform: translate(-50%, -80%);
   transform: translate(-50%, -80%);
   width: .2em;
@@ -584,7 +549,6 @@
   border-right-color: transparent;
   content: "";
   height: .5em;
-  -webkit-transform: translate(-50%, -40%) rotate(-135deg);
   -ms-transform: translate(-50%, -40%) rotate(-135deg);
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;

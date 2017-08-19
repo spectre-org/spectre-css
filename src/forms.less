@@ -93,12 +93,12 @@ legend {
 
   .has-success &,
   .is-success + & {
-    color: @control-color-success;
+    color: @success-color;
   }
 
   .has-error &,
   .is-error + & {
-    color: @control-color-error;
+    color: @error-color;
   }
 }
 
@@ -400,17 +400,17 @@ legend {
 .form-select {
   .has-success &,
   &.is-success {
-    border-color: @control-color-success;
+    border-color: @success-color;
     &:focus {
-      .control-shadow(@control-color-success);
+      .control-shadow(@success-color);
     }
   }
 
   .has-error &,
   &.is-error {
-    border-color: @control-color-error;
+    border-color: @error-color;
     &:focus {
-      .control-shadow(@control-color-error);
+      .control-shadow(@error-color);
     }
   }
 }
@@ -421,18 +421,18 @@ legend {
   .has-error &,
   &.is-error {
     .form-icon {
-      border-color: @control-color-error;
+      border-color: @error-color;
     }
     
     input {
       &:checked + .form-icon {
-        background: @control-color-error;
-        border-color: @control-color-error;
+        background: @error-color;
+        border-color: @error-color;
       }
 
       &:focus + .form-icon {
-        border-color: @control-color-error;
-        .control-shadow(@control-color-error);
+        border-color: @error-color;
+        .control-shadow(@error-color);
       }
     }
   }
@@ -442,13 +442,13 @@ legend {
 .form-input {
   &:not(:placeholder-shown) {
     &:invalid {
-      border-color: @control-color-error;
+      border-color: @error-color;
       &:focus {
-        .control-shadow(@control-color-error);
+        .control-shadow(@error-color);
       }
 
       & + .form-input-hint {
-        color: @control-color-error;
+        color: @error-color;
       }
     }
   }
