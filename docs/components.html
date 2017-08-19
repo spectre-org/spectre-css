@@ -104,12 +104,6 @@
                   <li class="menu-item">
                     <a href="layout.html#navbar">Navbar</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="layout.html#panels">Panels</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="layout.html#empty">Empty states</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -145,6 +139,9 @@
                     <a href="components.html#chips">Chips</a>
                   </li>
                   <li class="menu-item">
+                    <a href="components.html#empty">Empty states</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="components.html#menus">Menus</a>
                   </li>
                   <li class="menu-item">
@@ -155,6 +152,9 @@
                   </li>
                   <li class="menu-item">
                     <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#panels">Panels</a>
                   </li>
                   <li class="menu-item">
                     <a href="components.html#popovers">Popovers</a>
@@ -732,7 +732,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Slider bars</h4>
+          <h4 id="bars-slider" class="s-subtitle">Slider bars</h4>
           <div class="columns">
             <div class="column col-8 col-xs-12">
               <div class="bar bar-slider">
@@ -788,7 +788,7 @@
           </div>
           <div class="columns">
               <div class="column col-12">
-                  <ul class="breadcrumb" role="navigation">
+                  <ul class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="#breadcrumbs" class="tooltip" data-tooltip="Home">
                         Home
@@ -802,7 +802,7 @@
                   </ul>
                 </div>
             <div class="column col-12">
-              <ul class="breadcrumb" role="navigation">
+              <ul class="breadcrumb">
                 <li class="breadcrumb-item">
                   <a href="#breadcrumbs" class="tooltip" data-tooltip="Home">
                     Home
@@ -874,7 +874,7 @@
                 </div>
                 <div class="card-header">
                   <div class="card-title h5">Microsoft</div>
-                  <div class="card-subtitle">Software and hardware</div>
+                  <div class="card-subtitle text-gray">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Empower every person and every organization on the planet to achieve more.
@@ -888,7 +888,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title h5">Apple</div>
-                  <div class="card-subtitle">Hardware and software</div>
+                  <div class="card-subtitle text-gray">Hardware and software</div>
                 </div>
                 <div class="card-image">
                   <img class="img-responsive" src="img/osx-yosemite.jpg" alt="OS X Yosemite" />
@@ -913,7 +913,7 @@
                 <div class="card-header">
                   <button class="btn btn-primary float-right"><i class="icon icon-plus"></i></button>
                   <div class="card-title h5">Google I/O</div>
-                  <div class="card-subtitle">Software and hardware</div>
+                  <div class="card-subtitle text-gray">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   An immersive, three-day experience focused on exploring the next generation of technology, mobile and beyond.
@@ -938,7 +938,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title h5">Apple</div>
-                  <div class="card-subtitle">Hardware and software</div>
+                  <div class="card-subtitle text-gray">Hardware and software</div>
                 </div>
                 <div class="card-body">
                   To make a contribution to the world by making tools for the mind that advance humankind.
@@ -952,7 +952,7 @@
               <div class="card">
                 <div class="card-header">
                   <div class="card-title h5">Google</div>
-                  <div class="card-subtitle">Software and hardware</div>
+                  <div class="card-subtitle text-gray">Software and hardware</div>
                 </div>
                 <div class="card-body">
                   Organize the world’s information and make it universally accessible and useful.
@@ -978,7 +978,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-header&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-title h5&quot;</span>&gt;Microsoft&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle&quot;</span>&gt;Software and hardware&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-subtitle text-gray&quot;</span>&gt;Software and hardware&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-body&quot;</span>&gt;
     Empower every person and every organization on the planet to achieve more.
@@ -1046,6 +1046,73 @@
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">/label</span>&gt;</code>
 </pre>
+
+        </div>
+
+        <div id="empty" class="container">
+          <h3 class="s-title"><a href="#empty" class="anchor" aria-hidden="true">#</a>Empty states</h3>
+          <div class="docs-note">
+            <p>Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-12">
+              <div class="empty">
+                <div class="empty-icon">
+                  <i class="icon icon-message"></i>
+                </div>
+                <p class="empty-title h5">You have no new messages</p>
+                <p class="empty-subtitle">Click the button to start a conversation</p>
+                <div class="empty-action">
+                  <button class="btn btn-primary">Send a message</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-12">
+              <div class="empty">
+                <div class="empty-icon">
+                  <i class="icon icon-mail"></i>
+                </div>
+                <p class="empty-title h5">You've successfully signed up</p>
+                <p class="empty-subtitle">Click the button to invite your friends</p>
+                <div class="empty-action">
+                  <button class="btn btn-primary">Invite your friends</button>
+                </div>
+                <div class="empty-action">
+                  <button class="btn btn-link">Skip</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-12">
+              <div class="empty">
+                <div class="empty-icon">
+                  <i class="icon icon-people"></i>
+                </div>
+                <p class="empty-title h5">You are not following anyone</p>
+                <p class="empty-subtitle">Start to meet new friends</p>
+                <div class="empty-action input-group input-inline">
+                  <input type="text" class="form-input" placeholder="" />
+                  <button class="btn btn-primary input-group-btn">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-note">
+            <p>An empty state component can include icons, messages (title and subtitle messages) and action buttons or any combination of those elements. Add <code>empty-icon</code>, <code>empty-title</code>, <code>empty-subtitle</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
+          </div>
+
+<!-- empty states example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-icon&quot;</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title h5&quot;</span>&gt;You have no new messages&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-subtitle&quot;</span>&gt;Click the button to start a conversation.&lt;<span class="tag">/p</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-action&quot;</span>&gt;
+    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Send a message&lt;<span class="tag">/button</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
 
         </div>
 
@@ -1176,28 +1243,6 @@
               </div>
             </div>
             <div class="column col-xs-12">
-              <div class="dropdown dropdown-right">
-                <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
-                <ul class="menu">
-                  <li class="menu-item">
-                    <a href="#dropdowns">
-                      Slack
-                    </a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#dropdowns">
-                      Hipchat
-                    </a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#dropdowns">
-                      Skype
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="column col-xs-12">
               <div class="dropdown">
                 <a class="btn btn-link dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
                 <ul class="menu">
@@ -1222,7 +1267,26 @@
           </div>
           <div class="docs-note">
             <p>Dropdown menus component is built entirely in CSS. It is triggered by <code>:focus</code> event.</p>
-            <p>Add a container element with the <code>dropdown</code> class. And add a focusable element with the <code>dropdown-toggle</code> class for the button and a <code>menu</code> component right next to it. You also need to add <code>tabindex</code> to make the buttons focusable. If the dropdown is close to the right edge of the browser, you can add the <code>dropdown-right</code> class to the container to prevent it appearing off screen.</p>
+            <p>Add a container element with the <code>dropdown</code> class. And add a focusable element with the <code>dropdown-toggle</code> class for the button and a <code>menu</code> component right next to it. You also need to add <code>tabindex</code> to make the buttons focusable.</p>
+            <p>If the dropdown is close to the right edge of the browser, you can add the <code>dropdown-right</code> class to the container to prevent it appearing off screen.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-xs-12 text-right">
+              <div class="dropdown dropdown-right">
+                <a class="btn btn-primary dropdown-toggle" tabindex="0">dropdown button <i class="icon icon-caret"></i></a>
+                <ul class="menu text-left">
+                  <li class="menu-item">
+                    <a href="#dropdowns">Slack</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">Hipchat</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#dropdowns">Skype</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="docs-note">
             <p>Also, you can implement your JS to interact with the dropdown menus by adding the <code>active</code> class to the <code>dropdown</code> container.</p>
@@ -1290,8 +1354,8 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <a href="#modals" class="btn btn-link">Close</a>
                     <button class="btn btn-primary">Share</button>
+                    <a href="#modals" class="btn btn-link">Close</a>
                   </div>
                 </div>
               </div>
@@ -1322,7 +1386,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Modal sizes</h4>
+          <h4 id="modals-sizes" class="s-subtitle">Modal sizes</h4>
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <div class="modal-temp modal-sm">
@@ -1338,8 +1402,8 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button class="btn btn-link">Close</button>
                     <button class="btn btn-primary">Share</button>
+                    <button class="btn btn-link">Close</button>
                   </div>
                 </div>
               </div>
@@ -1374,8 +1438,8 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button class="btn btn-link">Close</button>
                     <button class="btn btn-primary">Submit</button>
+                    <button class="btn btn-link">Close</button>
                   </div>
                 </div>
               </div>
@@ -1491,14 +1555,14 @@
               <ul class="pagination">
                 <li class="page-item page-prev">
                   <a href="#pagination">
-                    <p class="page-item-subtitle">Previous</p>
-                    <h4 class="page-item-title">Getting started</h4>
+                    <div class="page-item-subtitle">Previous</div>
+                    <div class="page-item-title h5">Getting started</div>
                   </a>
                 </li>
                 <li class="page-item page-next">
                   <a href="#pagination">
-                    <p class="page-item-subtitle">Next</p>
-                    <h4 class="page-item-title">Layout</h4>
+                    <div class="page-item-subtitle">Next</div>
+                    <div class="page-item-title h5">Layout</div>
                   </a>
                 </li>
               </ul>
@@ -1512,19 +1576,180 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-prev&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/p</span>&gt;
-      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Getting started&lt;<span class="tag">/h3</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Previous&lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title h5&quot;</span>&gt;Getting started&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item page-next&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
-      &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/p</span>&gt;
-      &lt;<span class="tag">h3</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title&quot;</span>&gt;Layout&lt;<span class="tag">/h3</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-subtitle&quot;</span>&gt;Next&lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;page-item-title h5&quot;</span>&gt;Layout&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
+        </div>
+
+        <div id="panels" class="container">
+          <h3 class="s-title"><a href="#panels" class="anchor" aria-hidden="true">#</a>Panels</h3>
+          <div class="docs-note">
+            <p>Panels are flexible view container with auto-expand content section.</p>
+          </div>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header text-center">
+                  <figure class="avatar avatar-lg">
+                    <img src="img/avatar-2.png" alt="Avatar" />
+                  </figure>
+                  <div class="panel-title h5 mt-10">Bruce Banner</div>
+                  <div class="panel-subtitle">THE HULK</div>
+                </div>
+                <nav class="panel-nav">
+                  <ul class="tab tab-block">
+                    <li class="tab-item active">
+                      <a href="#panels">
+                        Profile
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Files
+                      </a>
+                    </li>
+                    <li class="tab-item">
+                      <a href="#panels">
+                        Tasks
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="panel-body">
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">E-mail</div>
+                      <div class="tile-subtitle">bruce.banner@hulk.com</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Skype</div>
+                      <div class="tile-subtitle">bruce.banner</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile tile-centered">
+                    <div class="tile-content">
+                      <div class="tile-title">Location</div>
+                      <div class="tile-subtitle">Dayton, Ohio</div>
+                    </div>
+                    <div class="tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <button class="btn btn-primary btn-block">Save</button>
+                </div>
+              </div>
+            </div>
+            <div class="column col-6 col-xs-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <div class="panel-title h6">Comments</div>
+                </div>
+                <div class="panel-body">
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-1.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Thor Odinson</p>
+                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-2.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Bruce Banner</p>
+                      <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar" data-initial="TS"></figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Tony Stark</p>
+                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-4.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Steve Rogers</p>
+                      <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                    </div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-icon">
+                      <figure class="avatar">
+                        <img src="img/avatar-3.png" alt="Avatar" />
+                      </figure>
+                    </div>
+                    <div class="tile-content">
+                      <p class="tile-title">Natasha Romanoff</p>
+                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <div class="input-group">
+                    <input type="text" class="form-input" placeholder="Hello" />
+                    <button class="btn btn-primary input-group-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-note">
+            <p>Add a container element with the <code>panel</code> class. And add child elements with the <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code> class. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
+          </div>
+  
+<!-- panels example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-title&quot;</span>&gt;Comments&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-nav&quot;</span>&gt;
+    <span class="com">&lt;!-- navigation components: tabs, breadcrumbs or pagination --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-body&quot;</span>&gt;
+    <span class="com">&lt;!-- contents --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-footer&quot;</span>&gt;
+    <span class="com">&lt;!-- buttons or inputs --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+  
         </div>
 
         <div id="navs" class="container">
@@ -1908,7 +2133,7 @@
                 <li class="tab-item active">
                   <a href="#tabs">
                     Music
-                    <button class="btn btn-clear"></button>
+                    <span class="btn btn-clear"></span>
                   </a>
                 </li>
                 <li class="tab-item">
@@ -1972,7 +2197,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The Avengers</p>
-                  <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                  <p class="tile-subtitle text-gray">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-primary">Join</button>
@@ -1989,7 +2214,7 @@
                 </div>
                 <div class="tile-content">
                   <p class="tile-title">The S.H.I.E.L.D.</p>
-                  <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
+                  <p class="tile-subtitle text-gray">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
                   <p>
                     <button class="btn btn-primary btn-sm">Join</button>
                     <button class="btn btn-sm">Contact</button>
@@ -2012,7 +2237,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
     &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;The Avengers&lt;<span class="tag">/p</span>&gt;
-    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle&quot;</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
+    &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle text-gray&quot;</span>&gt;Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...&lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Join&lt;<span class="tag">/button</span>&gt;
@@ -2020,7 +2245,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Compact tiles</h4>
+          <h4 id="tiles-compact" class="s-subtitle">Compact tiles</h4>
           <div class="docs-note">
             <p>There is compact version of Tiles component, which is often used as contact and file info blocks.</p>
             <p>Add the <code>tile-centered</code> class to the container <code>tile</code>. The <code>tile-icon</code>, <code>tile-content</code> and <code>tile-action</code> will be vertically centered.</p>
@@ -2035,7 +2260,7 @@
                 </div>
                 <div class="tile-content">
                   <div class="tile-title">spectre-docs.pdf</div>
-                  <div class="tile-subtitle">14MB · Public · 1 Jan, 2017</div>
+                  <div class="tile-subtitle text-gray">14MB · Public · 1 Jan, 2017</div>
                 </div>
                 <div class="tile-action">
                   <button class="btn btn-link btn-action"><i class="icon icon-more-vert"></i></button>
@@ -2053,7 +2278,7 @@
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-content&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-title&quot;</span>&gt;spectre-docs.pdf&lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-subtitle text-gray&quot;</span>&gt;14MB · Public · 1 Jan, 2017&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-action&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;

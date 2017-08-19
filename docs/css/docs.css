@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.15";
+  content: "0.3.1";
 }
 /* Spectre New Docs */
 .s-container > .columns {
@@ -120,7 +120,7 @@
 }
 .s-content .docs-block {
   border-radius: .1rem;
-  padding: .5rem;
+  padding: .4rem;
 }
 .s-content .docs-block.bg-gray {
   background: #f0f1f4;
@@ -256,23 +256,15 @@
   color: #727e96;
 }
 /* Spectre Homepage style */
-.section-header {
-  -webkit-backdrop-filter: blur(.5rem);
-  backdrop-filter: blur(.5rem);
-  background: rgba(248, 249, 250, .9);
-  padding: 1rem .5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-}
-.section-header .s-brand {
-  padding: 0;
-  position: static;
-}
 .section-hero {
-  padding: 1.5rem .5rem;
+  padding: 1rem .5rem;
   position: relative;
+}
+.section-hero .s-brand {
+  position: absolute;
+}
+.section-hero .s-brand h2 {
+  color: #5764c6;
 }
 .section-hero .column {
   padding: .4rem;
@@ -302,7 +294,7 @@
 }
 .grid-hero {
   margin-bottom: 2rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 .grid-hero h1 {
   color: #454d5d;
@@ -413,11 +405,23 @@
   }
   .s-content .s-title,
   .s-content .s-subtitle {
+    padding-top: 5rem;
     position: static;
   }
   .s-content .s-title::before,
   .s-content .s-subtitle::before {
     display: none;
+  }
+  .section-hero .s-brand {
+    height: 5rem;
+    padding: 1.5rem .5rem;
+  }
+  .section-hero .s-brand .s-logo {
+    height: auto;
+  }
+  .section-hero .s-brand img {
+    height: 3.2rem;
+    width: 3.2rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -431,7 +435,7 @@
     padding: 3.5rem .5rem 0 .5rem;
   }
   .s-content .docs-block {
-    padding: .5rem .1rem;
+    padding: .4rem .1rem;
   }
   .s-content .anchor {
     display: none;

@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.2.15";
+  content: "0.3.1";
 }
 // Core variables and mixins
 @import '../../src/variables.less';
@@ -139,7 +139,7 @@
 
   .docs-block {
     border-radius: @border-radius;
-    padding: .5rem;
+    padding: @unit-2;
 
     &.bg-gray {
       background: @bg-color-dark;
@@ -293,24 +293,17 @@
 }
 
 /* Spectre Homepage style */
-.section-header {
-  backdrop-filter: blur(.5rem); // Safari only feature
-  background: fade(@bg-color, 90%);  
+.section-hero {
   padding: 1rem .5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: @zindex-2;
+  position: relative;
 
   .s-brand {
-    padding: 0;
-    position: static;
-  }
-}
+    position: absolute;
 
-.section-hero {
-  padding: 1.5rem .5rem;
-  position: relative;
+    h2 {
+      color: @primary-color;
+    }
+  }
 
   .column {
     padding: @layout-spacing;
@@ -347,7 +340,7 @@
 }
 
 .grid-hero {
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 
   h1 {
@@ -469,10 +462,27 @@
 
     .s-title,
     .s-subtitle {
+      padding-top: 5rem;
       position: static;
 
       &::before {
         display: none;
+      }
+    }
+  }
+
+  .section-hero {
+    .s-brand {
+      height: 5rem;
+      padding: 1.5rem .5rem;
+
+      .s-logo {
+        height: auto;
+      }
+
+      img {
+        height: 3.2rem;
+        width: 3.2rem;
       }
     }
   }
@@ -492,7 +502,7 @@
     padding: 3.5rem .5rem 0 .5rem;
 
     .docs-block {
-      padding: .5rem .1rem;
+      padding: @unit-2 @unit-h;
     }
 
     .anchor {

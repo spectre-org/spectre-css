@@ -104,12 +104,6 @@
                   <li class="menu-item">
                     <a href="layout.html#navbar">Navbar</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="layout.html#panels">Panels</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="layout.html#empty">Empty states</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -145,6 +139,9 @@
                     <a href="components.html#chips">Chips</a>
                   </li>
                   <li class="menu-item">
+                    <a href="components.html#empty">Empty states</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="components.html#menus">Menus</a>
                   </li>
                   <li class="menu-item">
@@ -155,6 +152,9 @@
                   </li>
                   <li class="menu-item">
                     <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#panels">Panels</a>
                   </li>
                   <li class="menu-item">
                     <a href="components.html#popovers">Popovers</a>
@@ -254,7 +254,7 @@
         <div id="introduction" class="container">
           <h3 class="s-title"><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3>
           <div class="docs-note">
-            <p><strong>Spectre.css</strong> is a lightweight and responsive and modern CSS framework for faster and extensible development.</p>
+            <p><strong>Spectre.css</strong> is a lightweight, responsive and modern CSS framework for faster and extensible development.</p>
             <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
           </div>
         </div>
@@ -266,8 +266,8 @@
           </div>
           <div class="docs-note">
             <h5>Install manually</h5>
-            <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank">Spectre CSS file</a> (~10KB min+gzip):</p>
-            <p><a href="https://github.com/picturepan2/spectre/tree/master/docs/dist" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
+            <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/releases" target="_blank">Spectre CSS file</a> (core ~10KB min+gzip):</p>
+            <p><a href="https://github.com/picturepan2/spectre/releases" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
             <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
           </div>
 
@@ -315,18 +315,29 @@
         <div id="compiling" class="container">
           <h3 class="s-title"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
           <div class="docs-note">
-            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>spectre.less</code>, <code>spectre-exp.less</code> and <code>spectre-icons.less</code>.</p>
+            <p>You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>.less</code> source files.</p>
+            <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">Spectre.css Source Code</a></p>
+          </div>
+          <h4 id="compiling-steps" class="s-subtitle">Compiling CSS</h4>
+          <div class="docs-note">
+            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. Firstly you need to <a href="https://www.npmjs.com/get-npm" target="_blank">install NPM</a>, which is used to manage Gulp and other dependencies.</p>
             <p>Then, you can build the CSS file from the command line:</p>
             <ol>
               <li>Navigate to the root directory of Spectre.</li>
               <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-              <li>When completed, run <code>gulp build</code> to compile LESS to CSS and minify files.</li>
+              <li>When completed, run <code>gulp build</code> task to compile LESS to CSS and minify files.</li>
               <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
             </ol>
-            <p>You can watch file changes and rebuild CSS files by using <code>gulp watch</code>.</p>
+            <p>All available Gulp tasks:</p>
+            <ul>
+              <li><code>gulp build</code> - compile LESS to CSS and minify files (default)</li>
+              <li><code>gulp docs</code> - compile Docs related files</li>
+              <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
+            </ul>
           </div>
 
-<!-- file structure -->
+          <h4 id="compiling-gulptasks" class="s-subtitle">Folder Structure</h4>
+<!-- folder structure -->
 <pre class="code"><code>spectre/
 ├── dist/                               <span class="com">// Build folder (Git ignored)</span>
 │   ├── spectre-exp.css
@@ -364,9 +375,9 @@
 
           <h4 id="variables" class="s-subtitle"><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4>
           <div class="docs-note">
-            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.
+            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.</p>
           </div>
-          <h5 class="s-subtitle">Colors</h5>  
+          <h5 id="variables-colors" class="s-subtitle">Colors</h5>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <div class="docs-color" style="background:#5764c6;color:#fff;">
@@ -445,11 +456,39 @@
               </div>
             </div>
           </div>
-          <h5 class="s-subtitle">Sizes</h5>
+          
+          <h5 id="variables-sizes" class="s-subtitle">Sizes</h5>
           <div class="docs-note">
             <p>The default REM (root em) size in Spectre.css is <code>20px</code>. </p>
-            <p>Please note in Chinese/Japanese/Korean Chrome, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to <code>20px</code>, which is relatively easy to calculate. </p>
-            <p>Spectre also use <code>4px</code> as the unit size. Sizes of components are based on the unit size. </p>
+            <p>Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to <code>20px</code>, which is relatively easy to calculate. </p>
+            <p>Spectre uses <code>4px</code> as the unit size. Sizes of components are based on the unit size. </p>
+          </div>
+          
+          <h5 id="variables-custom-prefix" class="s-subtitle">Custom prefix</h5>
+          <div class="docs-note">
+            <p>There is also a way to add custom prefix to all CSS classes. You can use <a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it. </p>
+          </div>
+
+<!-- custom prefix example -->
+<pre class="code"><code><span class="tag">$</span> npm install <span class="atv">gulp-css-prefix</span>
+</code></pre>
+
+          <div class="docs-note">
+            <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
+          </div>
+
+<!-- custom prefix example -->
+<pre class="code"><code>var cssPrefix = require('<span class="atv">gulp-css-prefix</span>');
+  
+gulp.task('prefix', function() {
+  gulp.src('./dist/*.css')
+      .pipe(cssPrefix('<span class="atv">spectre-</span>'))
+      .pipe(gulp.dest('./dist'))
+});
+</code></pre>
+
+          <div class="docs-note">
+            <p>After you compile your version of Spectre in the /dist, run <code>gulp prefix</code> in the directory of Spectre.</p>
           </div>
         </div>
 
@@ -475,6 +514,12 @@
         <div id="whatsnew" class="container">
           <h3 class="s-title"><a href="#whatsnew" class="anchor" aria-hidden="true">#</a>What's new</h3>
           <div class="docs-note">
+            <p><strong>August 2017</strong></p>
+            <ul>
+              <li>
+                <a href="getting-started.html">New Docs Experience</a> <small class="label label-primary">NEW</small>
+              </li>
+            </ul>
             <p><strong>April 2017</strong></p>
             <ul>
               <li>
@@ -493,7 +538,7 @@
             <p><strong>March 2017</strong></p>
             <ul>
               <li>
-                <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons <small class="label label-primary">NEW</small>
+                <a href="elements.html#icons">Icons</a>: single-element, responsive and pure CSS icons
               </li>
               <li>
                 <a href="components.html#popovers">Popovers</a>: small overlay content containers
@@ -531,6 +576,7 @@
             <ul>
               <li>Initial commit</li>
             </ul>
+            <p><a href="https://github.com/picturepan2/spectre/releases" target="_blank" class="btn btn-primary">Releases</a></p>
           </div>
         </div>
 

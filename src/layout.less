@@ -28,6 +28,15 @@
   }
 }
 
+// Responsive breakpoint system
+.show-xs,
+.show-sm,
+.show-md,
+.show-lg,
+.show-xl {
+  display: none !important;
+}
+
 // Responsive grid system
 .columns {
   display: flex;
@@ -39,7 +48,7 @@
     margin-left: 0;
     margin-right: 0;
 
-    .column {
+    & > .column {
       padding-left: 0;
       padding-right: 0;
     }
@@ -106,6 +115,21 @@
 .col-1 {
   width: 8.33333333%;
 }
+.col-auto {
+  flex: 0 0 auto;
+  max-width: none;
+  width: auto;
+}
+.col-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-ml-auto {
+  margin-left: auto;
+}
+.col-mr-auto {
+  margin-right: auto;
+}
 @media screen and (max-width: @size-xl ) {
   .col-xl-12,
   .col-xl-11,
@@ -156,6 +180,12 @@
   }
   .col-xl-1 {
     width: 8.33333333%;
+  }
+  .hide-xl {
+    display: none !important;
+  }
+  .show-xl {
+    display: block !important;
   }
 }
 @media screen and (max-width: @size-lg ) {
@@ -209,6 +239,12 @@
   .col-lg-1 {
     width: 8.33333333%;
   }
+  .hide-lg {
+    display: none !important;
+  }
+  .show-lg {
+    display: block !important;
+  }
 }
 @media screen and (max-width: @size-md ) {
   .col-md-12,
@@ -260,6 +296,12 @@
   }
   .col-md-1 {
     width: 8.33333333%;
+  }
+  .hide-md {
+    display: none !important;
+  }
+  .show-md {
+    display: block !important;
   }
 }
 @media screen and (max-width: @size-sm ) {
@@ -313,6 +355,12 @@
   .col-sm-1 {
     width: 8.33333333%;
   }
+  .hide-sm {
+    display: none !important;
+  }
+  .show-sm {
+    display: block !important;
+  }
 }
 @media screen and (max-width: @size-xs) {
   .col-xs-12,
@@ -365,53 +413,10 @@
   .col-xs-1 {
     width: 8.33333333%;
   }
-}
-
-// Responsive breakpoint system
-.show-xs,
-.show-sm,
-.show-md,
-.show-lg,
-.show-xl {
-  display: none !important;
-}
-@media screen and (max-width: @size-xs) {
   .hide-xs {
     display: none !important;
   }
   .show-xs {
-    display: block !important;
-  }
-}
-@media screen and (max-width: @size-sm) {
-  .hide-sm {
-    display: none !important;
-  }
-  .show-sm {
-    display: block !important;
-  }
-}
-@media screen and (max-width: @size-md) {
-  .hide-md {
-    display: none !important;
-  }
-  .show-md {
-    display: block !important;
-  }
-}
-@media screen and (max-width: @size-lg) {
-  .hide-lg {
-    display: none !important;
-  }
-  .show-lg {
-    display: block !important;
-  }
-}
-@media screen and (max-width: @size-xl) {
-  .hide-xl {
-    display: none !important;
-  }
-  .show-xl {
     display: block !important;
   }
 }

@@ -104,12 +104,6 @@
                   <li class="menu-item">
                     <a href="layout.html#navbar">Navbar</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="layout.html#panels">Panels</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="layout.html#empty">Empty states</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -145,6 +139,9 @@
                     <a href="components.html#chips">Chips</a>
                   </li>
                   <li class="menu-item">
+                    <a href="components.html#empty">Empty states</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="components.html#menus">Menus</a>
                   </li>
                   <li class="menu-item">
@@ -155,6 +152,9 @@
                   </li>
                   <li class="menu-item">
                     <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#panels">Panels</a>
                   </li>
                   <li class="menu-item">
                     <a href="components.html#popovers">Popovers</a>
@@ -318,7 +318,7 @@
 
           <div class="docs-note">
             <p>Add the <code>columns</code> class to a container with the <code>container</code> class. And add any element you want with the <code>column</code> class inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
-            <p>And you can add the <code>col-gapless</code> class to have gapless columns.</p>
+            <p>And you can add the <code>col-gapless</code> class to the <code>columns</code> to have gapless columns.</p>
           </div>
 
           <div class="columns col-gapless">
@@ -356,34 +356,87 @@
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns col-oneline&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-8&quot;</span>&gt;col-8&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-8&quot;</span>&gt;col-8&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <h4 id="grid-offset" class="s-subtitle">Grid offset</h4>
+          <div class="docs-note">
+            <p>The Flexbox grid provides margin auto utilities to set offset. There are <code>col-mx-auto</code>, <code>col-ml-auto</code> and <code>col-mr-auto</code> to set margins between columns without using empty columns.</p>
+          </div>
+
+          <div class="columns">
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+            <div class="column col-4 col-mx-auto">
+              <div class="bg-gray docs-block">col-4 col-mx-auto</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+            <div class="column col-4 col-ml-auto">
+              <div class="bg-gray docs-block">col-4 col-ml-auto</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-ml-auto">
+              <div class="bg-gray docs-block">col-4 col-ml-auto</div>
+            </div>
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-mx-auto">
+              <div class="bg-gray docs-block">col-4 col-mx-auto</div>
+            </div>
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-mr-auto">
+              <div class="bg-gray docs-block">col-4 col-mr-auto</div>
+            </div>
+            <div class="column col-2">
+              <div class="bg-gray docs-block">col-2</div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-4 col-mx-auto">
+              <div class="bg-gray docs-block">col-4 col-mx-auto</div>
+            </div>
+          </div>
+
+<!-- layout example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-4 col-mr-auto&quot;</span>&gt;col-4 col-mr-auto&lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </div>
 
         <div id="responsive" class="container">
-          <h3 class="s-title"><a href="#responsive" class="anchor" aria-hidden="true">#</a>Responsive grid</h3>
+          <h3 class="s-title"><a href="#responsive" class="anchor" aria-hidden="true">#</a>Responsive</h3>
           <div class="docs-note">
             <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities. </p>
           </div>
           <div class="columns">
-            <div class="column col-lg-6">
-              <div class="bg-gray docs-block">col-lg-6</div>
+            <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
+              <div class="bg-gray docs-block">col-10 <br/> col-lg-8 <br/> col-md-6 <br/> col-sm-4</div>
             </div>
-          </div>
-          <div class="columns">
-            <div class="column col-md-6">
-              <div class="bg-gray docs-block">col-md-6</div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-sm-6">
-              <div class="bg-gray docs-block">col-sm-6</div>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column col-xs-6">
-              <div class="bg-gray docs-block">col-xs-6</div>
+            <div class="column col-2 col-lg-4 col-md-6 col-sm-8">
+              <div class="bg-gray docs-block">col-2 <br/> col-lg-4 <br/> col-md-6 <br/> col-sm-8</div>
             </div>
           </div>
 
@@ -408,7 +461,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Responsive container</h4>
+          <h4 id="responsive-container" class="s-subtitle">Responsive container</h4>
           <div class="docs-note">
             <p>The responsive layout also provides fixed-width containers. Use <code>grid-xs</code>(480px), <code>grid-sm</code> (600px), <code>grid-md</code> (840px), <code>grid-lg</code> (960px) or <code>grid-xl</code> (1280px) to <code>container</code> for a fixed-width container with the specific max-width.</p>
           </div>
@@ -422,11 +475,11 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Responsive visibility</h4>
+          <h4 id="responsive-visibility" class="s-subtitle">Responsive visibility</h4>
           <div class="docs-note">
             <p>The responsive visibility utilities help show and hide elements on specific viewport sizes. </p>
           </div>
-          <table class="docs-table table text-center">
+          <table class="docs-table table table-striped text-center">
             <thead>
               <tr>
                 <th></th>
@@ -492,7 +545,7 @@
             </ul>
           </div>
 
-          <table class="docs-table table text-center">
+          <table class="docs-table table table-striped text-center">
             <thead>
               <tr>
                 <th></th>
@@ -639,234 +692,6 @@
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;GitHub&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
 &lt;<span class="tag">/header</span>&gt;
-</code></pre>
-
-        </div>
-
-        <div id="panels" class="container">
-          <h3 class="s-title"><a href="#panels" class="anchor" aria-hidden="true">#</a>Panels</h3>
-          <div class="docs-note">
-            <p>Panels are flexible view container layout with auto-expand content section.</p>
-          </div>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <div class="panel">
-                <div class="panel-header text-center">
-                  <figure class="avatar avatar-lg">
-                    <img src="img/avatar-2.png" alt="Avatar" />
-                  </figure>
-                  <div class="panel-title h5 mt-10">Bruce Banner</div>
-                  <div class="panel-subtitle">THE HULK</div>
-                </div>
-                <nav class="panel-nav">
-                  <ul class="tab tab-block">
-                    <li class="tab-item active">
-                      <a href="#panels">
-                        Profile
-                      </a>
-                    </li>
-                    <li class="tab-item">
-                      <a href="#panels">
-                        Files
-                      </a>
-                    </li>
-                    <li class="tab-item">
-                      <a href="#panels">
-                        Tasks
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="panel-body">
-                  <div class="tile tile-centered">
-                    <div class="tile-content">
-                      <div class="tile-title">E-mail</div>
-                      <div class="tile-subtitle">bruce.banner@hulk.com</div>
-                    </div>
-                    <div class="tile-action">
-                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
-                    </div>
-                  </div>
-                  <div class="tile tile-centered">
-                    <div class="tile-content">
-                      <div class="tile-title">Skype</div>
-                      <div class="tile-subtitle">bruce.banner</div>
-                    </div>
-                    <div class="tile-action">
-                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
-                    </div>
-                  </div>
-                  <div class="tile tile-centered">
-                    <div class="tile-content">
-                      <div class="tile-title">Location</div>
-                      <div class="tile-subtitle">Dayton, Ohio</div>
-                    </div>
-                    <div class="tile-action">
-                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-footer">
-                  <button class="btn btn-primary btn-block">Save</button>
-                </div>
-              </div>
-            </div>
-            <div class="column col-6 col-xs-12">
-              <div class="panel">
-                <div class="panel-header">
-                  <div class="panel-title h6">Comments</div>
-                </div>
-                <div class="panel-body">
-                  <div class="tile">
-                    <div class="tile-icon">
-                      <figure class="avatar">
-                        <img src="img/avatar-1.png" alt="Avatar" />
-                      </figure>
-                    </div>
-                    <div class="tile-content">
-                      <p class="tile-title">Thor Odinson</p>
-                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
-                    </div>
-                  </div>
-                  <div class="tile">
-                    <div class="tile-icon">
-                      <figure class="avatar">
-                        <img src="img/avatar-2.png" alt="Avatar" />
-                      </figure>
-                    </div>
-                    <div class="tile-content">
-                      <p class="tile-title">Bruce Banner</p>
-                      <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
-                    </div>
-                  </div>
-                  <div class="tile">
-                    <div class="tile-icon">
-                      <figure class="avatar" data-initial="TS"></figure>
-                    </div>
-                    <div class="tile-content">
-                      <p class="tile-title">Tony Stark</p>
-                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
-                    </div>
-                  </div>
-                  <div class="tile">
-                    <div class="tile-icon">
-                      <figure class="avatar">
-                        <img src="img/avatar-4.png" alt="Avatar" />
-                      </figure>
-                    </div>
-                    <div class="tile-content">
-                      <p class="tile-title">Steve Rogers</p>
-                      <p class="tile-subtitle">The Strategic Homeland Intervention, Enforcement, and Logistics Division...</p>
-                    </div>
-                  </div>
-                  <div class="tile">
-                    <div class="tile-icon">
-                      <figure class="avatar">
-                        <img src="img/avatar-3.png" alt="Avatar" />
-                      </figure>
-                    </div>
-                    <div class="tile-content">
-                      <p class="tile-title">Natasha Romanoff</p>
-                      <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-footer">
-                  <div class="input-group">
-                    <input type="text" class="form-input" placeholder="Hello" />
-                    <button class="btn btn-primary input-group-btn">Send</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="docs-note">
-            <p>Add a container element with the <code>panel</code> class. And add child elements with the <code>panel-header</code>, <code>panel-nav</code>, <code>panel-body</code> and/or <code>panel-footer</code> class. The <code>panel-body</code> can be auto expanded and vertically scrollable. </p>
-          </div>
-
-<!-- panels example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
-    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-title&quot;</span>&gt;Comments&lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-nav&quot;</span>&gt;
-    <span class="com">&lt;!-- navigation components: tabs, breadcrumbs or pagination --&gt;</span>
-  &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-body&quot;</span>&gt;
-    <span class="com">&lt;!-- contents --&gt;</span>
-  &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-footer&quot;</span>&gt;
-    <span class="com">&lt;!-- buttons or inputs --&gt;</span>
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
-</code></pre>
-
-        </div>
-
-        <div id="empty" class="container">
-          <h3 class="s-title"><a href="#empty" class="anchor" aria-hidden="true">#</a>Empty states / blank slates</h3>
-          <div class="docs-note">
-            <p>Empty states/blank slates are commonly used as placeholders for first time use, empty data and error screens.</p>
-          </div>
-          <div class="columns">
-            <div class="column col-12">
-              <div class="empty">
-                <div class="empty-icon">
-                  <i class="icon icon-message"></i>
-                </div>
-                <p class="empty-title h5">You have no new messages</p>
-                <p class="empty-subtitle">Click the button to start a conversation</p>
-                <div class="empty-action">
-                  <button class="btn btn-primary">Send a message</button>
-                </div>
-              </div>
-            </div>
-            <div class="column col-12">
-              <div class="empty">
-                <div class="empty-icon">
-                  <i class="icon icon-mail"></i>
-                </div>
-                <p class="empty-title h5">You've successfully signed up</p>
-                <p class="empty-subtitle">Click the button to invite your friends</p>
-                <div class="empty-action">
-                  <button class="btn btn-primary">Invite your friends</button>
-                </div>
-                <div class="empty-action">
-                  <button class="btn btn-link">Skip</button>
-                </div>
-              </div>
-            </div>
-            <div class="column col-12">
-              <div class="empty">
-                <div class="empty-icon">
-                  <i class="icon icon-people"></i>
-                </div>
-                <p class="empty-title h5">You are not following anyone</p>
-                <p class="empty-subtitle">Start to meet new friends</p>
-                <div class="empty-action input-group input-inline">
-                  <input type="text" class="form-input" placeholder="" />
-                  <button class="btn btn-primary input-group-btn">Search</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="docs-note">
-            <p>An empty state component can include icons, messages (title and subtitle messages) and action buttons or any combination of those elements. Add <code>empty-icon</code>, <code>empty-title</code>, <code>empty-subtitle</code> or <code>empty-action</code> to the elements. HTML structure is exampled below. </p>
-          </div>
-
-<!-- empty states example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty&quot;</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-icon&quot;</span>&gt;
-    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-people&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-title h5&quot;</span>&gt;You have no new messages&lt;<span class="tag">/p</span>&gt;
-  &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;empty-subtitle&quot;</span>&gt;Click the button to start a conversation.&lt;<span class="tag">/p</span>&gt;
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;empty-action&quot;</span>&gt;
-    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Send a message&lt;<span class="tag">/button</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </div>

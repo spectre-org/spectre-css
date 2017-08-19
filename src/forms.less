@@ -81,7 +81,7 @@ legend {
 
   // Input types
   &[type="file"] {
-    height: auto;
+    padding: .125rem;
   }
 }
 
@@ -109,20 +109,23 @@ legend {
   border-radius: @border-radius;
   color: inherit;
   font-size: @font-size;
+  height: @control-size;
   line-height: @line-height;
   outline: none;
   padding: @control-padding-v @control-padding-h;
   vertical-align: middle;
   width: 100%;
 
+  &[size],
   &[multiple] {
+    height: auto;
+    
     option {
       padding: @unit-h @unit-1;
     }
   }
-  &:not([multiple]) {
+  &:not([multiple]):not([size]) {
     background: @bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667189' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right (@control-icon-size / 2) center / .4rem .5rem;
-    height: @control-size;
     padding-right: @control-icon-size + @control-padding-h;
   }
   &:focus {

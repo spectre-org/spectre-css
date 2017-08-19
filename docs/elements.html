@@ -104,12 +104,6 @@
                   <li class="menu-item">
                     <a href="layout.html#navbar">Navbar</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="layout.html#panels">Panels</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="layout.html#empty">Empty states</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -145,6 +139,9 @@
                     <a href="components.html#chips">Chips</a>
                   </li>
                   <li class="menu-item">
+                    <a href="components.html#empty">Empty states</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="components.html#menus">Menus</a>
                   </li>
                   <li class="menu-item">
@@ -155,6 +152,9 @@
                   </li>
                   <li class="menu-item">
                     <a href="components.html#pagination">Pagination</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components.html#panels">Panels</a>
                   </li>
                   <li class="menu-item">
                     <a href="components.html#popovers">Popovers</a>
@@ -256,7 +256,7 @@
           <div class="docs-note">
             <p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
           </div>
-          <h4 class="s-subtitle">Headings</h4>
+          <h4 id="typography-headings" class="s-subtitle">Headings</h4>
           <div class="columns">
             <div class="column col-12">
               <h1>H1 Heading <small class="label">40px</small></h1>
@@ -284,7 +284,7 @@
 &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;h1&quot;</span>&gt;H1 Heading&lt;<span class="tag">/span</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Paragraphs</h4>
+          <h4 id="typography-paragraphs" class="s-subtitle">Paragraphs</h4>
           <div class="docs-note">
             <p>Lorem ipsum dolor sit amet, consectetur <a href="#typography">adipiscing elit. Praesent risus leo, dictum in vehicula sit amet</a>, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
             <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
@@ -295,7 +295,7 @@
 &lt;<span class="tag">p</span>&gt;...&lt;<span class="tag">/p</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Semantic text elements</h4>
+          <h4 id="typography-semantic-text" class="s-subtitle">Semantic text elements</h4>
           <div class="columns">
             <div class="column col-4 col-xs-12">
               <abbr title="Internationalization">I18N</abbr>
@@ -374,7 +374,7 @@
             </div>
           </div>
 
-          <h4 class="s-subtitle">Optimized for east asian fonts</h4>
+          <h4 id="typography-east-asian" class="s-subtitle">Optimized for east asian fonts</h4>
           <h5><small lang="zh-Hans">你好</small>, <small lang="ja">こんにちは</small>, <small lang="ko">안녕하세요</small></h5>
           <div class="docs-note">
             <h6>Chinese (Simplified)</h6>
@@ -409,7 +409,7 @@
 &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;&lt;<span class="tag">del</span>&gt;祇園&lt;<span class="tag">/del</span>&gt;&lt;<span class="tag">del</span>&gt;精舎&lt;<span class="tag">/del</span>&gt;の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Blockquote</h4>
+          <h4 id="typography-blockquote" class="s-subtitle">Blockquote</h4>
           <blockquote>
             <p>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. </p>
             <cite>- Bill Gates</cite>
@@ -422,7 +422,7 @@
 &lt;<span class="tag">/blockquote</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Lists</h4>
+          <h4 id="typography-lists" class="s-subtitle">Lists</h4>
           <div class="columns">
             <div class="column col-4 col-xs-12">
               <ul class="list">
@@ -555,11 +555,7 @@
           <div class="columns">
             <div class="column col-xs-12">
               <button class="btn loading-inline">default button</button>
-            </div>
-            <div class="column col-xs-12">
               <button class="btn btn-primary">primary button</button>
-            </div>
-            <div class="column col-xs-12">
               <button class="btn btn-link">link button</button>
             </div>
           </div>
@@ -568,60 +564,25 @@
             <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. </p>
           </div>
 
-          <div class="docs-note">
-            <p>Add the <code>disabled</code> class or the <code>disabled</code> attribute for a disabled button.</p>
-          </div>
-
-          <div class="columns">
-            <div class="column col-xs-12">
-              <button class="btn disabled" tabindex="-1">default disabled</button>
-            </div>
-            <div class="column col-xs-12">
-              <button class="btn btn-primary" disabled tabindex="-1">primary disabled</button>
-            </div>
-            <div class="column col-xs-12">
-              <button class="btn btn-link" disabled tabindex="-1">link disabled</button>
-            </div>
-          </div>
-
-          <div class="docs-note">
-            <p>A button with the <code>loading</code> class can show loading indicator.</p>
-          </div>
-
-          <div class="columns">
-            <div class="column col-xs-12">
-              <button class="btn loading">default button</button>
-            </div>
-            <div class="column col-xs-12">
-              <button class="btn btn-primary loading">primary button</button>
-            </div>
-            <div class="column col-xs-12">
-              <button class="btn btn-link loading">link button</button>
-            </div>
-          </div>
-
 <!-- buttons example -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
-
-<span class="com">&lt;!-- buttons with disabled state --&gt;</span>
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
-
-<span class="com">&lt;!-- a button with loading state --&gt;</span>
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Button sizes</h4>
+          <h4 id="buttons-sizes" class="s-subtitle">Button sizes</h4>
           <div class="columns">
-            <div class="column">
+            <div class="column col-12">
               <button class="btn btn-primary btn-lg">large <i class="icon icon-arrow-down"></i></button>
-              <button class="btn btn-primary btn-lg">large</button>
+              <button class="btn btn-primary btn-lg">large button</button>
+            </div>
+            <div class="column col-12">
               <button class="btn btn-primary">normal <i class="icon icon-arrow-down"></i></button>
-              <button class="btn btn-primary">normal</button>
+              <button class="btn btn-primary">normal button</button>
+            </div>
+            <div class="column col-12">
               <button class="btn btn-primary btn-sm">small <i class="icon icon-arrow-down"></i></button>
-              <button class="btn btn-primary btn-sm">small</button>
+              <button class="btn btn-primary btn-sm">small button</button>
             </div>
           </div>
           <div class="docs-note">
@@ -661,16 +622,73 @@
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Button groups</h4>
+          <h4 id="buttons-states" class="s-subtitle">Button states</h4>
+
+          <div class="docs-note">
+            <p>Add the <code>active</code> class for active button state style.</p>
+          </div>
+
           <div class="columns">
             <div class="column col-xs-12">
+              <button class="btn active">default active</button>
+              <button class="btn btn-primary active">primary active</button>
+              <button class="btn btn-link active">link active</button>
+            </div>
+          </div>
+
+<!-- buttons example -->
+<pre class="code" data-lang="HTML"><code>
+<span class="com">&lt;!-- buttons with disabled state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+          
+          <div class="docs-note">
+            <p>Add the <code>disabled</code> class or the <code>disabled</code> attribute for disabled button state style.</p>
+          </div>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn disabled" tabindex="-1">default disabled</button>
+              <button class="btn btn-primary" disabled tabindex="-1">primary disabled</button>
+              <button class="btn btn-link" disabled tabindex="-1">link disabled</button>
+            </div>
+          </div>
+
+<!-- buttons example -->
+<pre class="code" data-lang="HTML"><code>
+<span class="com">&lt;!-- buttons with disabled state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+          <div class="docs-note">
+            <p>A button with the <code>loading</code> class can show loading indicator.</p>
+          </div>
+
+          <div class="columns">
+            <div class="column col-xs-12">
+              <button class="btn loading">default button</button>
+              <button class="btn btn-primary loading">primary button</button>
+              <button class="btn btn-link loading">link button</button>
+            </div>
+          </div>
+
+<!-- buttons example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- a button with loading state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+          <h4 id="buttons-groups" class="s-subtitle">Button groups</h4>
+          <div class="columns">
+            <div class="column col-md-12">
               <div class="btn-group">
-                <button class="btn tooltip" data-tooltip="Tooltip text">first button</button>
-                <button class="btn tooltip" data-tooltip="Tooltip text">second button</button>
-                <button class="btn tooltip" data-tooltip="Tooltip text">third button</button>
+                <button class="btn">first button</button>
+                <button class="btn">second button</button>
+                <button class="btn">third button</button>
               </div>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group btn-group-block">
                 <button class="btn btn-primary">first button</button>
                 <button class="btn btn-primary">second button</button>
@@ -679,14 +697,14 @@
             </div>
           </div>
           <div class="columns">
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group">
                 <button class="btn btn-sm active">first button</button>
                 <button class="btn btn-sm">second button</button>
                 <button class="btn btn-sm">third button</button>
               </div>
             </div>
-            <div class="column col-xs-12">
+            <div class="column col-md-12">
               <div class="btn-group btn-group-block">
                 <button class="btn btn-primary btn-sm active">first button</button>
                 <button class="btn btn-primary btn-sm">second button</button>
@@ -714,20 +732,80 @@
             <p>Forms provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.  </p>
           </div>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
-              <form action="#forms">
-                <div class="form-group">
-                  <label class="form-label" for="input-example-1">Name</label>
-                  <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="input-example-2">Email</label>
-                  <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
-                </div>
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label" for="input-example-1">Name</label>
+                <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="input-example-2">Email</label>
+                <input class="form-input" type="email" id="input-example-2" placeholder="Email" />
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form input control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-label" for="input-example-3">Message</label>
+                <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form textarea control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <select class="form-select">
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-select" multiple>
+                  <option>Choose an option</option>
+                  <option>Slack</option>
+                  <option>Skype</option>
+                  <option>Hipchat</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form select control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Slack&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Skype&lt;<span class="tag">/option</span>&gt;
+    &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
+  &lt;<span class="tag">/select</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+        
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <form>
                 <div class="form-group">
                   <label class="form-label">Gender</label>
                   <label class="form-radio">
-                    <input type="radio" name="gender" />
+                    <input type="radio" name="gender" checked />
                     <i class="form-icon"></i> Male
                   </label>
                   <label class="form-radio">
@@ -735,93 +813,81 @@
                     <i class="form-icon"></i> Female
                   </label>
                 </div>
-                <div class="form-group">
-                  <select class="form-select">
-                    <option>Choose an option</option>
-                    <option>Slack</option>
-                    <option>Skype</option>
-                    <option>Hipchat</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-switch">
-                    <input type="checkbox" />
-                    <i class="form-icon"></i> Send me emails with news and tips
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="input-example-3">Message</label>
-                  <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                  <label class="form-checkbox">
-                    <input type="checkbox" />
-                    <i class="form-icon"></i> Remember me
-                  </label>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-primary" type="submit">Submit</button>
-                  <button class="btn btn-link" type="reset">Cancel</button>
-                </div>
               </form>
             </div>
           </div>
 
-<!-- forms example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
-  <span class="com">&lt;!-- form input control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-1&quot;</span>&gt;Name&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-1&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Name&quot;</span> /&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form radio control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Male
-    &lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Female
-    &lt;<span class="tag">/label</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form select control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">select</span> <span class="atn">class</span>=<span class="atv">&quot;form-select&quot;</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Choose an option&lt;<span class="tag">/option</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Slack&lt;<span class="tag">/option</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Skype&lt;<span class="tag">/option</span>&gt;
-      &lt;<span class="tag">option</span>&gt;Hipchat&lt;<span class="tag">/option</span>&gt;
-    &lt;<span class="tag">/select</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form switch control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Send me emails with news and tips
-    &lt;<span class="tag">/label</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form textarea control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
-    &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-  <span class="com">&lt;!-- form checkbox control --&gt;</span>
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
-      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
-      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
-    &lt;<span class="tag">/label</span>&gt;
-  &lt;<span class="tag">/div</span>&gt;
-&lt;<span class="tag">/form</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form radio control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span>&gt;Gender&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> <span class="atn">checked</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Male
+  &lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-radio&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;gender&quot;</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Female
+  &lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-switch">
+                  <input type="checkbox" />
+                  <i class="form-icon"></i> Send me emails with news and tips
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="form-switch">
+                  <input type="checkbox" checked />
+                  <i class="form-icon"></i> Send me emails with news and tips
+                </label>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form switch control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-switch&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Send me emails with news and tips
+  &lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <div class="form-group">
+                <label class="form-checkbox">
+                  <input type="checkbox" />
+                  <i class="form-icon"></i> Remember me
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="form-checkbox">
+                  <input type="checkbox" checked />
+                  <i class="form-icon"></i> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form checkbox control --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
+    &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> /&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Remember me
+  &lt;<span class="tag">/label</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
           <div class="docs-note">
             <p>You can use <code>:indeterminate</code> pseudo class for indeterminate state of checkboxes.</p>
           </div>
 
-          <h4 class="s-subtitle">Horizontal forms</h4>
+          <h4 id="forms-horizontal" class="s-subtitle">Horizontal forms</h4>
           <div class="docs-note">
             <p>If you want to have a horizontal form, add the <code>form-horizontal</code> class to the &lt;form&gt; container. And add the <code>col-[1-12]</code> class to the child elements for form row layout. </p>
           </div>
@@ -860,7 +926,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-3"></div>
+                  <div class="col-3">
+                    <label class="form-label">Source</label>
+                  </div>
                   <div class="col-9">
                     <select class="form-select" multiple>
                       <option>Slack</option>
@@ -920,7 +988,7 @@
 &lt;<span class="tag">/form</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Form sizes</h4>
+          <h4 id="forms-sizes" class="s-subtitle">Form sizes</h4>
           <div class="docs-note">
             <p>For smaller or larger input and select controls, you could add the <code>input-sm</code>/<code>input-lg</code>, <code>select-sm</code>/<code>select-lg</code> and <code>label-sm</code>/<code>label-lg</code> classes to the elements.</p>
           </div>
@@ -957,8 +1025,9 @@
             </div>
           </div>
 
-          <h4 class="s-subtitle">Form icons</h4>
+          <h4 id="forms-icons" class="s-subtitle">Form icons</h4>
           <div class="docs-note">
+            <p>Spectre Form components has <a href="#icons">Spectre Icons</a> support.</p>
             <p>Add a wrapper with the <code>has-icon-left</code>/<code>has-icon-right</code> class to &lt;input&gt; element. And add the icon with <code>form-icon</code> class next to the &lt;input&gt;.</p>
           </div>
           <div class="columns">
@@ -969,7 +1038,7 @@
               </div>
             </div>
             <div class="column col-4">
-              <div class="has-icon-left">
+              <div class="has-icon-left tooltip" data-tooltip="Lorem ipsum dolor sit amet">
                 <input class="form-input" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-arrow-right"></i>
               </div>
@@ -1042,7 +1111,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Input types</h4>
+          <h4 id="forms-input" class="s-subtitle">Input types</h4>
           <div class="columns">
             <div class="column col-9 col-sm-12">
               <form class="form-horizontal" action="#forms">
@@ -1122,7 +1191,7 @@
             </div>
           </div>
 
-          <h4 class="s-subtitle">Input groups</h4>
+          <h4 id="forms-input-groups" class="s-subtitle">Input groups</h4>
           <div class="columns">
             <div class="column col-xs-12">
               <div class="input-group">
@@ -1205,7 +1274,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Form validation styles</h4>
+          <h4 id="forms-validation" class="s-subtitle">Form validation styles</h4>
           <div class="docs-note">
             <p>To use form validation styles, add <code>is-success</code> or <code>is-error</code> class to the controls or add <code>has-success</code> or <code>has-error</code> class to parent elements. You can use the <code>form-input-hint</code> class to provide form validation success and error messages.</p>
           </div>
@@ -1251,7 +1320,7 @@
                 </div>
               </fieldset>
               <fieldset>
-                <legend>form-checkbox, radio and switch</legend>
+                <legend>form-checkbox, radio and switch (Error status only)</legend>
                 <div class="form-group">
                   <label class="form-checkbox is-error">
                     <input type="checkbox" checked />
@@ -1304,12 +1373,12 @@
 &lt;<span class="tag">/form</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Form disabled styles</h4>
+          <h4 id="forms-disabled" class="s-subtitle">Form disabled styles</h4>
           <div class="docs-note">
             <p>Add the <code>disabled</code> attribute to the element or &lt;fieldset&gt; for a disabled form components style.</p>
           </div>
           <div class="columns">
-            <div class="column col-9 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <form action="#forms">
                 <fieldset disabled>
                   <div class="form-group">
@@ -1362,7 +1431,7 @@
           <div class="docs-note">
             <p>Icons are single-element, responsive and pure CSS icons. You can include <code>spectre-icons.css</code> located in the <code>dist</code> folder to your web &lt;head&gt; to have these CSS icons.</p>
           </div>
-          <h4 class="s-subtitle">Navigation icons</h4>
+          <h4 id="icons-navigation" class="s-subtitle">Navigation icons</h4>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1443,7 +1512,7 @@
               <p>icon-more-vert</p>
             </div>
           </div>
-          <h4 class="s-subtitle">Action icons</h4>
+          <h4 id="icons-action" class="s-subtitle">Action icons</h4>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1548,7 +1617,7 @@
               <p>icon-upload</p>
             </div>
           </div>
-          <h4 class="s-subtitle">Object icons</h4>
+          <h4 id="icons-object" class="s-subtitle">Object icons</h4>
           <div class="columns">
             <div class="column col-3 col-md-6">
               <button class="btn btn-primary btn-action btn-lg">
@@ -1615,13 +1684,14 @@
             <div class="column">
               <span class="label">default label</span>
               <span class="label label-primary">primary label</span>
+              <span class="label label-secondary">secondary label</span>
               <span class="label label-success">success label</span>
               <span class="label label-warning">warning label</span>
               <span class="label label-error">error label</span>
             </div>
           </div>
           <div class="docs-note">
-            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for colored labels.</p>
+            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-secondary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for colored labels.</p>
           </div>
 
 <!-- labels example -->
@@ -1659,7 +1729,7 @@
           <div class="docs-note">
             <p>Media includes responsive images, figures and video classes. </p>
           </div>
-          <h4 class="s-subtitle">Images</h4>
+          <h4 id="media-images" class="s-subtitle">Images</h4>
           <div class="docs-note">
             <p>Add the <code>img-responsive</code> class to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
           </div>
@@ -1710,7 +1780,7 @@
 &lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
-          <h4 class="s-subtitle">Video</h4>
+          <h4 id="media-video" class="s-subtitle">Video</h4>
           <div class="docs-note">
             <p>For responsive video, add a container with the <code>video-responsive</code> class. Insert any YouTube, Youku or other iframe/embed video inside the container. The ratio is 16:9 by default. You may add <code>video-responsive-4-3</code> for 4:3 ratio video container or <code>video-responsive-1-1</code> for 1:1 ratio.</p>
           </div>
