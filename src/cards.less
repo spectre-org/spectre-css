@@ -3,7 +3,8 @@
   background: @bg-color-light;
   border: @border-width solid @border-color;
   border-radius: @border-radius;
-  display: block;
+  display: flex;
+  flex-direction: column;
 
   .card-header,
   .card-body,
@@ -34,9 +35,5 @@
         border-bottom-right-radius: @border-radius;
       }
     }
-  }
-
-  .card-subtitle {
-    color: lighten(@body-font-color, 40%);
   }
 }

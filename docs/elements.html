@@ -250,8 +250,8 @@
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
 
-      <div id="typography" id="content" class="s-content">
-        <div class="container">
+      <div id="content" class="s-content">
+        <div id="typography" class="container">
           <h3 class="s-title"><a href="#typography" class="anchor" aria-hidden="true">#</a>Typography</h3>
           <div class="docs-note">
             <p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
@@ -801,17 +801,19 @@
         
           <div class="columns">
             <div class="column col-6 col-xs-12">
-              <div class="form-group">
-                <label class="form-label">Gender</label>
-                <label class="form-radio">
-                  <input type="radio" name="gender" checked />
-                  <i class="form-icon"></i> Male
-                </label>
-                <label class="form-radio">
-                  <input type="radio" name="gender" />
-                  <i class="form-icon"></i> Female
-                </label>
-              </div>
+              <form>
+                <div class="form-group">
+                  <label class="form-label">Gender</label>
+                  <label class="form-radio">
+                    <input type="radio" name="gender" checked />
+                    <i class="form-icon"></i> Male
+                  </label>
+                  <label class="form-radio">
+                    <input type="radio" name="gender" />
+                    <i class="form-icon"></i> Female
+                  </label>
+                </div>
+              </form>
             </div>
           </div>
 
@@ -1682,13 +1684,14 @@
             <div class="column">
               <span class="label">default label</span>
               <span class="label label-primary">primary label</span>
+              <span class="label label-secondary">secondary label</span>
               <span class="label label-success">success label</span>
               <span class="label label-warning">warning label</span>
               <span class="label label-error">error label</span>
             </div>
           </div>
           <div class="docs-note">
-            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for colored labels.</p>
+            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-secondary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for colored labels.</p>
           </div>
 
 <!-- labels example -->

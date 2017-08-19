@@ -478,8 +478,8 @@ kbd {
   border-radius: .1rem;
   color: #fff;
   display: inline-block;
-  line-height: 1;
-  padding: .2em .3em;
+  line-height: 1.2;
+  padding: .1em .3em;
   vertical-align: baseline;
 }
 mark {
@@ -487,8 +487,8 @@ mark {
   border-radius: .1rem;
   color: #454d5d;
   display: inline-block;
-  line-height: 1;
-  padding: .2em .3em;
+  line-height: 1.2;
+  padding: .1em .3em;
   vertical-align: baseline;
 }
 blockquote {
@@ -1228,13 +1228,17 @@ input.disabled + .form-icon {
   border-radius: .1rem;
   color: #50596c;
   display: inline-block;
-  line-height: 1;
-  padding: .2em .3em;
+  line-height: 1.2;
+  padding: .1em .3em;
   vertical-align: baseline;
 }
 .label.label-primary {
   background: #5764c6;
   color: #fff;
+}
+.label.label-secondary {
+  background: #eff1fa;
+  color: #5764c6;
 }
 .label.label-success {
   background: #32b643;
@@ -1253,8 +1257,8 @@ code {
   border-radius: .1rem;
   color: #e06870;
   display: inline-block;
-  line-height: 1;
-  padding: .2em .3em;
+  line-height: 1.2;
+  padding: .1em .3em;
   vertical-align: baseline;
 }
 .code {
@@ -1838,9 +1842,6 @@ code {
   overflow-y: auto;
   padding: 0 .8rem;
 }
-.panel .panel-subtitle {
-  color: #acb3c2;
-}
 .empty {
   background: #f8f9fa;
   border-radius: .1rem;
@@ -1854,9 +1855,6 @@ code {
 .empty .empty-title,
 .empty .empty-subtitle {
   margin: .4rem auto;
-}
-.empty .empty-subtitle {
-  color: #acb3c2;
 }
 .empty .empty-action {
   margin-top: .8rem;
@@ -2120,7 +2118,12 @@ code {
   background: #fff;
   border: .05rem solid #e7e9ed;
   border-radius: .1rem;
-  display: block;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .card .card-header,
 .card .card-body,
@@ -2146,9 +2149,6 @@ code {
 .card .card-image:last-child img {
   border-bottom-left-radius: .1rem;
   border-bottom-right-radius: .1rem;
-}
-.card .card-subtitle {
-  color: #acb3c2;
 }
 .chip {
   -webkit-align-items: center;
@@ -2356,6 +2356,7 @@ code {
 .tab {
   -webkit-align-items: center;
   align-items: center;
+  border-bottom: .05rem solid #e7e9ed;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -2377,8 +2378,8 @@ code {
   border-bottom: .1rem solid transparent;
   color: inherit;
   display: block;
-  margin-top: 0;
-  padding: 6px 12px 4px 12px;
+  margin: 0 .4rem 0 0;
+  padding: .4rem .2rem .3rem .2rem;
   text-decoration: none;
 }
 .tab .tab-item a:focus,
@@ -2395,6 +2396,9 @@ code {
   -ms-flex: 1 0 0;
   flex: 1 0 0;
   text-align: center;
+}
+.tab.tab-block .tab-item a {
+  margin: 0;
 }
 .tab.tab-block .tab-item .badge[data-badge]::after {
   position: absolute;
@@ -2640,11 +2644,8 @@ code {
 .tile .tile-content:not(:last-child) {
   padding-right: .4rem;
 }
-.tile .tile-title {
-  line-height: 1rem;
-}
+.tile .tile-title,
 .tile .tile-subtitle {
-  color: #acb3c2;
   line-height: 1rem;
 }
 .tile.tile-centered {

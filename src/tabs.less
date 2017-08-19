@@ -1,6 +1,7 @@
 // Tabs
 .tab {
   align-items: center;
+  border-bottom: @border-width solid @border-color;
   display: flex;
   flex-wrap: wrap;
 
@@ -16,8 +17,8 @@
       border-bottom: @border-width-lg solid transparent;
       color: inherit;
       display: block;
-      margin-top: 0;
-      padding: 6px 12px 4px 12px;
+      margin: 0 @unit-2 0 0;
+      padding: @unit-2 @unit-1 @unit-2 - @border-width-lg @unit-1;
       text-decoration: none;
       &:focus,
       &:hover {
@@ -35,6 +36,10 @@
     .tab-item {
       flex: 1 0 0;
       text-align: center;
+
+      a {
+        margin: 0;
+      }
 
       .badge {
         &[data-badge]::after {
