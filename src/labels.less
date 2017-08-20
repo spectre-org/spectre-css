@@ -1,7 +1,9 @@
 // Labels
 .label {
+  display: inline-block;
   .label-base();
   .label-variant(lighten(@body-font-color, 5%), @bg-color);
+  line-height: 1;
 
   &.label-primary {
     .label-variant(@light-color, @primary-color);

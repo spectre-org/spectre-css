@@ -123,8 +123,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
+  font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+  /* 1 (changed) */
   font-size: 1em;
   /* 2 */
 }
@@ -477,19 +477,13 @@ kbd {
   background: #454d5d;
   border-radius: .1rem;
   color: #fff;
-  display: inline-block;
-  line-height: 1.2;
   padding: .1em .3em;
-  vertical-align: baseline;
 }
 mark {
   background: #ffe9b3;
   border-radius: .1rem;
   color: #454d5d;
-  display: inline-block;
-  line-height: 1.2;
   padding: .1em .3em;
-  vertical-align: baseline;
 }
 blockquote {
   border-left: .1rem solid #e7e9ed;
@@ -1214,9 +1208,8 @@ input.disabled + .form-icon {
   border-radius: .1rem;
   color: #50596c;
   display: inline-block;
-  line-height: 1.2;
+  line-height: 1;
   padding: .1em .3em;
-  vertical-align: baseline;
 }
 .label.label-primary {
   background: #5764c6;
@@ -1242,10 +1235,7 @@ code {
   background: #fdf4f4;
   border-radius: .1rem;
   color: #e06870;
-  display: inline-block;
-  line-height: 1.2;
   padding: .1em .3em;
-  vertical-align: baseline;
 }
 .code {
   border-radius: .1rem;
