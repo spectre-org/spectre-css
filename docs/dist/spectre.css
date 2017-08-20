@@ -11,11 +11,9 @@
    ========================================================================== */
 html {
   font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
+  /* 1 */
   -ms-text-size-adjust: 100%;
   /* 3 */
 }
@@ -423,7 +421,7 @@ h6 {
   color: inherit;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
   margin-top: 0;
 }
 .h1,
@@ -477,13 +475,13 @@ kbd {
   background: #454d5d;
   border-radius: .1rem;
   color: #fff;
-  padding: .1em .3em;
+  padding: .15rem .2rem;
 }
 mark {
   background: #ffe9b3;
   border-radius: .1rem;
   color: #454d5d;
-  padding: .1em .3em;
+  padding: .15rem .2rem;
 }
 blockquote {
   border-left: .1rem solid #e7e9ed;
@@ -1209,7 +1207,12 @@ input.disabled + .form-icon {
   color: #50596c;
   display: inline-block;
   line-height: 1;
-  padding: .1em .3em;
+  padding: .15rem .2rem;
+}
+.label.label-rounded {
+  border-radius: 5rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
 }
 .label.label-primary {
   background: #5764c6;
@@ -1235,7 +1238,9 @@ code {
   background: #fdf4f4;
   border-radius: .1rem;
   color: #e06870;
-  padding: .1em .3em;
+  font-size: .65rem;
+  line-height: 1rem;
+  padding: .15rem .2rem;
 }
 .code {
   border-radius: .1rem;

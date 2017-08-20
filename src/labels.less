@@ -5,6 +5,12 @@
   .label-variant(lighten(@body-font-color, 5%), @bg-color);
   line-height: 1;
 
+  &.label-rounded {
+    border-radius: 5rem;
+    padding-left: .4rem;
+    padding-right: .4rem; 
+  }
+
   &.label-primary {
     .label-variant(@light-color, @primary-color);
   }
