@@ -81,7 +81,7 @@ legend {
 
   // Input types
   &[type="file"] {
-    padding: .125rem;
+    height: auto;
   }
 }
 
@@ -359,9 +359,14 @@ legend {
       padding: @control-padding-v-lg @control-padding-h;
     }
   }
-  .input-group-addon,
+
+  .form-input,
+  .form-select {
+    flex: 1 1 auto;
+  }
+
   .input-group-btn {
-    flex: 1 0 auto;
+    z-index: @zindex-0;
   }
 
   .form-input,
@@ -382,7 +387,7 @@ legend {
       margin-left: -@border-width;
     }
     &:focus {
-      z-index: @zindex-0;
+      z-index: @zindex-0 + 1;
     }
   }
 
