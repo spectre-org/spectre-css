@@ -1848,7 +1848,7 @@ code {
   flex-wrap: wrap;
   height: auto;
   min-height: 1.6rem;
-  padding: .05rem 0 0 .05rem;
+  padding: .1rem;
 }
 .form-autocomplete .form-autocomplete-input.is-focused {
   border-color: #5764c6;
@@ -1860,8 +1860,9 @@ code {
   display: inline-block;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  height: 1.4rem;
+  height: 1.2rem;
   line-height: .8rem;
+  margin: .1rem;
   width: auto;
 }
 .form-autocomplete mark {
@@ -2120,10 +2121,10 @@ code {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-align: center;
-  height: 1.4rem;
-  margin: 0 .05rem .05rem 0;
+  height: 1.2rem;
+  margin: .1rem;
   max-width: 100%;
-  padding: .05rem .4rem;
+  padding: .1rem .5rem;
   text-decoration: none;
   vertical-align: middle;
 }
@@ -2132,7 +2133,7 @@ code {
   color: #fff;
 }
 .chip .avatar {
-  margin-left: -.2rem;
+  margin-left: -.5rem;
   margin-right: .2rem;
 }
 .dropdown {
