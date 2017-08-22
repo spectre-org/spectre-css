@@ -532,20 +532,20 @@
           </div>
           <div class="columns">
             <div class="column col-6 col-xs-12">
-              <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-1.png" alt="Avatar" />
+              <figure class="avatar avatar-xl">
+                <img src="img/avatar-1.png" alt="Avatar XL" />
               </figure>
-              <figure class="avatar avatar-lg" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-2.png" alt="Avatar" />
+              <figure class="avatar avatar-lg">
+                <img src="img/avatar-2.png" alt="Avatar LG" />
               </figure>
-              <figure class="avatar" data-initial="YZ" style="background-color: #5764c6;">
+              <figure class="avatar">
                 <img src="img/avatar-3.png" alt="Avatar" />
               </figure>
-              <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-4.png" alt="Avatar" />
+              <figure class="avatar avatar-sm">
+                <img src="img/avatar-4.png" alt="Avatar SM" />
               </figure>
-              <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-5.png" alt="Avatar" />
+              <figure class="avatar avatar-xs">
+                <img src="img/avatar-5.png" alt="Avatar XS" />
               </figure>
             </div>
             <div class="column col-6 col-xs-12">
@@ -601,6 +601,36 @@
 <span class="com">&lt;!-- Show initals when avatar image is unavailable or not fully loaded --&gt;</span>
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <figure class="avatar avatar-xl" data-initial="YZ">
+                <i class="avatar-presence online"></i>
+              </figure>
+              <figure class="avatar avatar-lg" data-initial="YZ">
+                <i class="avatar-presence busy"></i>
+              </figure>
+              <figure class="avatar" data-initial="YZ">
+                <i class="avatar-presence away"></i>
+              </figure>
+              <figure class="avatar avatar-sm" data-initial="YZ">
+                <i class="avatar-presence offline"></i>
+              </figure>
+              <figure class="avatar avatar-xs" data-initial="YZ">
+                <i class="avatar-presence online"></i>
+              </figure>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Avatars support presence indicators. You can add an <code>i</code> element with the <code>avatar-presence</code> class, and add <code>online</code>, <code>busy</code> or <code>away</code> class for different status colors. The default is gray which means offline. </p>
+          </div>
+
+<!-- avatars example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-presence online&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
 &lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
