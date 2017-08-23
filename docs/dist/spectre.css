@@ -475,12 +475,14 @@ kbd {
   background: #454d5d;
   border-radius: .1rem;
   color: #fff;
+  line-height: 1;
   padding: .15rem .2rem;
 }
 mark {
   background: #ffe9b3;
   border-radius: .1rem;
   color: #454d5d;
+  line-height: 1;
   padding: .15rem .2rem;
 }
 blockquote {
@@ -1242,7 +1244,7 @@ code {
   border-radius: .1rem;
   color: #e06870;
   font-size: .65rem;
-  line-height: 1rem;
+  line-height: 1;
   padding: .15rem .2rem;
 }
 .code {
