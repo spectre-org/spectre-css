@@ -391,7 +391,7 @@ html {
 }
 body {
   background: #fff;
-  color: #454d5d;
+  color: #50596c;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: .7rem;
   overflow-x: hidden;
@@ -481,7 +481,7 @@ kbd {
 mark {
   background: #ffe9b3;
   border-radius: .1rem;
-  color: #454d5d;
+  color: #50596c;
   line-height: 1;
   padding: .15rem .2rem;
 }
@@ -492,9 +492,6 @@ blockquote {
 }
 blockquote p:last-child {
   margin-bottom: 0;
-}
-blockquote cite {
-  color: #acb3c2;
 }
 ul,
 ol {
@@ -623,10 +620,9 @@ dl dd {
   white-space: nowrap;
 }
 .btn:focus {
-  background: #eff1fa;
   box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
-  text-decoration: none;
 }
+.btn:focus,
 .btn:hover {
   background: #eff1fa;
   border-color: #4c59c2;
@@ -793,7 +789,7 @@ legend {
   background-image: none;
   border: .05rem solid #caced7;
   border-radius: .1rem;
-  color: #454d5d;
+  color: #50596c;
   display: block;
   font-size: .7rem;
   height: 1.6rem;
@@ -1209,7 +1205,7 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .1rem;
-  color: #50596c;
+  color: #5b657a;
   display: inline-block;
   line-height: 1;
   padding: .15rem .2rem;
@@ -1249,7 +1245,7 @@ code {
 }
 .code {
   border-radius: .1rem;
-  color: #454d5d;
+  color: #50596c;
   line-height: 1rem;
   position: relative;
 }
@@ -1934,7 +1930,7 @@ code {
 .avatar .avatar-presence {
   background: #acb3c2;
   border-radius: 50%;
-  box-shadow: 0 0 0 .05rem #fff;
+  box-shadow: 0 0 0 .1rem #fff;
   height: .5em;
   width: .5em;
 }
