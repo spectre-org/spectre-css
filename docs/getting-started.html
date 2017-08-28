@@ -337,6 +337,7 @@
           </div>
 
           <h4 id="compiling-gulptasks" class="s-subtitle">Folder Structure</h4>
+
 <!-- folder structure -->
 <pre class="code"><code>spectre/
 ├── dist/                               <span class="com">// Build folder (Git ignored)</span>
@@ -455,6 +456,27 @@
                 <div class="color-subtitle">Error</div>
               </div>
             </div>
+          </div>
+
+          <h5 id="variables-buttons" class="s-subtitle">Buttons</h5>
+          <div class="docs-note">
+            <p>There are 2 button variant mixins in <code>mixins.less</code> to generate different color variants. </p>
+            <ul>
+              <li>.button-variant(<code>@color</code>: @primary-color);</li>
+              <li>.button-outline-variant(<code>@color</code>: @primary-color);</li>
+            </ul>
+
+<!-- button variables example -->
+<pre class="code" data-lang="LESS"><code><span class="com">&lt;!-- filled button with the success color --&gt;</span>
+<span class="tag">.btn-success</span> {
+  .button-variant(<span class="atv">@success-color</span>);
+}
+
+<span class="com">&lt;!-- outlined button with the success color --&gt;</span>
+<span class="tag">.btn-outline-success</span> {
+  .button-outline-variant(<span class="atv">@success-color</span>);
+}
+</code></pre>
           </div>
           
           <h5 id="variables-sizes" class="s-subtitle">Sizes</h5>

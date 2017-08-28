@@ -4,7 +4,7 @@
   background: @bg-color-light;
   border: @border-width solid @primary-color;
   border-radius: @border-radius;
-  color: @link-color;
+  color: @primary-color;
   .control-transition();
   cursor: pointer;
   display: inline-block;
@@ -19,10 +19,9 @@
   vertical-align: middle;
   white-space: nowrap;
   &:focus {
-    background: @secondary-color;
     .control-shadow();
-    text-decoration: none;
   }
+  &:focus,
   &:hover {
     background: @secondary-color;
     border-color: @primary-color-dark;

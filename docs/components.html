@@ -412,28 +412,24 @@
               <div class="form-group">
                 <div class="form-autocomplete">
                   <div class="form-autocomplete-input form-input">
-                    <label class="chip">
+                    <span class="chip">
                       Bruce Banner
-                      <button class="btn btn-clear"></button>
-                    </label>
-                    <label class="chip">
+                    </span>
+                    <span class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Avatar" />
                       Thor Odinson
-                      <button class="btn btn-clear"></button>
-                    </label>
-                    <label class="chip">
+                    </span>
+                    <span class="chip">
                       <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Avatar" />
                       Steve Rogers
-                      <button class="btn btn-clear"></button>
-                    </label>
-                    <label class="chip">
+                    </span>
+                    <span class="chip">
+                      <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5764c6;"></figure>
                       Tony Stark
-                      <button class="btn btn-clear"></button>
-                    </label>
-                    <label class="chip active">
+                    </span>
+                    <span class="chip active">
                       Natasha Romanoff
-                      <button class="btn btn-clear"></button>
-                    </label>
+                    </span>
                     <input class="form-input" type="text" placeholder="" />
                   </div>
                 </div>
@@ -443,15 +439,15 @@
               <div class="form-group">
                 <div class="form-autocomplete">
                   <div class="form-autocomplete-input form-input is-focused">
-                    <label class="chip">
+                    <span class="chip">
                       Bruce Banner
-                      <button class="btn btn-clear"></button>
-                    </label>
-                    <label class="chip">
+                      <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+                    </span>
+                    <span class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson"/>
                       Thor Odinson
-                      <button class="btn btn-clear"></button>
-                    </label>
+                      <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+                    </span>
                     <div class="has-icon-left">
                       <input class="form-input" type="text" placeholder="" value="S" />
                       <i class="form-icon loading"></i>
@@ -501,7 +497,7 @@
     &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
       &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span> /&gt;
       Thor Odinson
-      &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+      &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">/label</span>&gt;
 
     <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
@@ -536,20 +532,20 @@
           </div>
           <div class="columns">
             <div class="column col-6 col-xs-12">
-              <figure class="avatar avatar-xl" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-1.png" alt="Avatar" />
+              <figure class="avatar avatar-xl">
+                <img src="img/avatar-1.png" alt="Avatar XL" />
               </figure>
-              <figure class="avatar avatar-lg" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-2.png" alt="Avatar" />
+              <figure class="avatar avatar-lg">
+                <img src="img/avatar-2.png" alt="Avatar LG" />
               </figure>
-              <figure class="avatar" data-initial="YZ" style="background-color: #5764c6;">
+              <figure class="avatar">
                 <img src="img/avatar-3.png" alt="Avatar" />
               </figure>
-              <figure class="avatar avatar-sm" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-4.png" alt="Avatar" />
+              <figure class="avatar avatar-sm">
+                <img src="img/avatar-4.png" alt="Avatar SM" />
               </figure>
-              <figure class="avatar avatar-xs" data-initial="YZ" style="background-color: #5764c6;">
-                <img src="img/avatar-5.png" alt="Avatar" />
+              <figure class="avatar avatar-xs">
+                <img src="img/avatar-5.png" alt="Avatar XS" />
               </figure>
             </div>
             <div class="column col-6 col-xs-12">
@@ -605,6 +601,36 @@
 <span class="com">&lt;!-- Show initals when avatar image is unavailable or not fully loaded --&gt;</span>
 &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span> <span class="atn">data-initial</span>=<span class="atv">&quot;YZ&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;background-color: #5764c6;&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+&lt;<span class="tag">/figure</span>&gt;
+</code></pre>
+
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <figure class="avatar avatar-xl" data-initial="YZ">
+                <i class="avatar-presence online"></i>
+              </figure>
+              <figure class="avatar avatar-lg" data-initial="YZ">
+                <i class="avatar-presence busy"></i>
+              </figure>
+              <figure class="avatar" data-initial="YZ">
+                <i class="avatar-presence away"></i>
+              </figure>
+              <figure class="avatar avatar-sm" data-initial="YZ">
+                <i class="avatar-presence offline"></i>
+              </figure>
+              <figure class="avatar avatar-xs" data-initial="YZ">
+                <i class="avatar-presence online"></i>
+              </figure>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Avatars support presence indicators. You can add an <code>i</code> element with the <code>avatar-presence</code> class, and add <code>online</code>, <code>busy</code> or <code>away</code> class for different status colors. The default is gray which means offline. </p>
+          </div>
+
+<!-- avatars example -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-xl&quot;</span>&gt;
+  &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;...&quot;</span> /&gt;
+  &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;avatar-presence online&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
 &lt;<span class="tag">/figure</span>&gt;
 </code></pre>
 
@@ -998,36 +1024,36 @@
           </div>
           <div class="columns">
             <div class="column col-12">
-              <label class="chip">
+              <span class="chip">
                 Crime
-                <button class="btn btn-clear"></button>
-              </label>
-              <label class="chip">
+                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+              </span>
+              <span class="chip">
                 Drama
-                <button class="btn btn-clear"></button>
-              </label>
-              <label class="chip">
+                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+              </span>
+              <span class="chip">
                 Biography
-                <button class="btn btn-clear"></button>
-              </label>
-              <label class="chip">
+                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+              </span>
+              <span class="chip">
                 Mystery
-                <button class="btn btn-clear"></button>
-              </label>
+                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+              </span>
             </div>
             <div class="column col-12">
-              <label class="chip">
+              <span class="chip">
                 <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5764c6;"></figure>
                 Tony Stark
-              </label>
-              <label class="chip">
+              </span>
+              <span class="chip">
                 <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson"/>
                 Thor Odinson
-              </label>
-              <label class="chip">
+              </span>
+              <span class="chip">
                 <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Steve Rogers" />
                 Steve Rogers
-              </label>
+              </span>
             </div>
           </div>
           <div class="docs-note">
@@ -1035,16 +1061,16 @@
           </div>
 
 <!-- chips example -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   Crime
-  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">/span</span>&gt;
 
-&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> /&gt;
   Yan Zhu
-  &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">/label</span>&gt;</code>
+  &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
+&lt;<span class="tag">/span</span>&gt;</code>
 </pre>
 
         </div>

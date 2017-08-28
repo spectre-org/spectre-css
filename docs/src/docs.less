@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.3.1";
+  content: "0.3.2";
 }
 // Core variables and mixins
 @import '../../src/variables.less';
@@ -358,7 +358,7 @@
 
     u {
       border-bottom: @border-width-lg solid currentColor;
-      padding-bottom: @unit-0;
+      padding-bottom: @unit-o;
       text-decoration: none;
     }
   }
@@ -385,7 +385,7 @@
 @media screen and (max-width: 880px) {
   .s-sidebar {
     background: @bg-color;
-    height: 100%;
+    bottom: 0;
     overflow-y: auto;
     padding: 3rem 1.5rem;
     position: fixed;
@@ -428,7 +428,7 @@
 
     .menu-btn {
       display: block;
-      left: 1rem;
+      left: .65rem;
       position: fixed;
       top: .95rem;
 

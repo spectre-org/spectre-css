@@ -29,10 +29,11 @@
     height: 100%;
     position: relative;
     width: 100%;
-    z-index: @zindex-1;
+    z-index: @zindex-0;
   }
 
-  .avatar-icon {
+  .avatar-icon,
+  .avatar-presence {
     background: @bg-color-light;
     bottom: 14.64%;
     height: 50%;
@@ -41,6 +42,27 @@
     right: 14.64%;
     transform: translate(50%, 50%);
     width: 50%;
+    z-index: @zindex-0 + 1;
+  }
+
+  .avatar-presence {
+    background: @gray-color;
+    box-shadow: 0 0 0 @border-width-lg @light-color;
+    border-radius: 50%;
+    height: .5em;
+    width: .5em;
+
+    &.online {
+      background: @success-color;
+    }
+
+    &.busy {
+      background: @error-color;
+    }
+
+    &.away {
+      background: @warning-color;
+    }
   }
 
   &[data-initial]::before {

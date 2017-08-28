@@ -7,31 +7,31 @@ Spectre.css is a lightweight, responsive and modern CSS framework for faster and
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
 
-Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html) to learn more.
+Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) for the further development. ♥ 
+
 
 ### Getting started
 
 There are 5 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
-##### Install manually
+#### Install manually
 Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
 
 `<link rel="stylesheet" href="spectre.min.css" />`
 
-##### Install from CDN
+#### Install from CDN
 Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled Spectre.css.
 
 `<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />`
 
-##### Install with NPM
+#### Install with NPM
 `$ npm install spectre.css --save`
 
-##### Install with Yarn
+#### Install with Yarn
 `$ yarn add spectre.css`
 
-##### Install with Bower
+#### Install with Bower
 `$ bower install spectre.css --save`
-
 
 
 ### Compiling custom version

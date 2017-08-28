@@ -409,6 +409,25 @@
 &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;&lt;<span class="tag">del</span>&gt;祇園&lt;<span class="tag">/del</span>&gt;&lt;<span class="tag">del</span>&gt;精舎&lt;<span class="tag">/del</span>&gt;の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
 </code></pre>
 
+          <h4 id="typography-fonts" class="s-subtitle">Fonts</h4>
+          <div class="docs-note">
+            <p>Spectre sets the most common and best <code>font-family</code> for each OS with fallback support in old systems. There are also fonts targeted East Asian typography.</p>
+          </div>
+
+<!-- fonts -->
+<pre class="code"><code><span class="com">&lt;!-- Western typography targeted --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif</span>;
+<span class="com">&lt;!-- Monospace typography targeted --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">"SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace</span>;
+
+<span class="com">&lt;!-- Chinese (lang="zh-Hans" and lang="zh-Hant") targeted --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif</span>;
+<span class="com">&lt;!-- Japanese (lang="ja") targeted --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, "Helvetica Neue", sans-serif</span>;
+<span class="com">&lt;!-- Korean (lang="ko") targeted --&gt;</span>
+<span class="atn">font-family</span>: <span class="atv">-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", "Helvetica Neue", sans-serif</span>;
+</code></pre>
+
           <h4 id="typography-blockquote" class="s-subtitle">Blockquote</h4>
           <blockquote>
             <p>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. </p>
@@ -554,7 +573,7 @@
           </div>
           <div class="columns">
             <div class="column col-xs-12">
-              <button class="btn loading-inline">default button</button>
+              <button class="btn">default button</button>
               <button class="btn btn-primary">primary button</button>
               <button class="btn btn-link">link button</button>
             </div>
@@ -993,13 +1012,13 @@
             <p>For smaller or larger input and select controls, you could add the <code>input-sm</code>/<code>input-lg</code>, <code>select-sm</code>/<code>select-lg</code> and <code>label-sm</code>/<code>label-lg</code> classes to the elements.</p>
           </div>
           <div class="columns">
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <label class="form-label label-sm">Label</label>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <input class="form-input input-sm" type="text" placeholder="Name" />
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <select class="form-select select-sm">
                 <option>Choose an option</option>
                 <option>Slack</option>
@@ -1009,13 +1028,13 @@
             </div>
           </div>
           <div class="columns">
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <label class="form-label label-lg">Label</label>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <input class="form-input input-lg" type="text" placeholder="Name" />
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <select class="form-select select-lg">
                 <option>Choose an option</option>
                 <option>Slack</option>
@@ -1031,19 +1050,19 @@
             <p>Add a wrapper with the <code>has-icon-left</code>/<code>has-icon-right</code> class to &lt;input&gt; element. And add the icon with <code>form-icon</code> class next to the &lt;input&gt;.</p>
           </div>
           <div class="columns">
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-left">
                 <input class="form-input input-sm" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-arrow-right"></i>
               </div>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-left tooltip" data-tooltip="Lorem ipsum dolor sit amet">
                 <input class="form-input" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-arrow-right"></i>
               </div>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-left">
                 <input class="form-input input-lg" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-arrow-right"></i>
@@ -1051,19 +1070,19 @@
             </div>
           </div>
           <div class="columns">
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-right">
                 <input class="form-input input-sm" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-check"></i>
               </div>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-right">
                 <input class="form-input" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-check"></i>
               </div>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-right">
                 <input class="form-input input-lg" type="text" placeholder="Name" />
                 <i class="form-icon icon icon-check"></i>
@@ -1084,19 +1103,19 @@
           </div>
 
           <div class="columns">
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-right">
                 <input class="form-input input-sm" type="text" placeholder="Name" />
                 <i class="form-icon loading"></i>
               </div>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-right">
                 <input class="form-input" type="text" placeholder="Name" />
                 <i class="form-icon loading"></i>
               </div>
             </div>
-            <div class="column col-4">
+            <div class="column col-4 col-xs-12">
               <div class="has-icon-right">
                 <input class="form-input input-lg" type="text" placeholder="Name" />
                 <i class="form-icon loading"></i>
@@ -1692,6 +1711,19 @@
           </div>
           <div class="docs-note">
             <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements. You can add another class <code>label-primary</code>, <code>label-secondary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for colored labels.</p>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <span class="label label-rounded">default label</span>
+              <span class="label label-rounded label-primary">primary label</span>
+              <span class="label label-rounded label-secondary">secondary label</span>
+              <span class="label label-rounded label-success">success label</span>
+              <span class="label label-rounded label-warning">warning label</span>
+              <span class="label label-rounded label-error">error label</span>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Add the <code>label-rounded</code> class to have rounded labels.</p>
           </div>
 
 <!-- labels example -->
