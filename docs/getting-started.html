@@ -31,7 +31,7 @@
           <div class="accordion">
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden checked />
-              <label class="accordion-header hand" for="docs-accordion-1">
+              <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
               </label>
               <div class="accordion-body">
@@ -56,7 +56,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-2">
+              <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
               </label>
               <div class="accordion-body">
@@ -90,7 +90,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-3">
+              <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
               </label>
               <div class="accordion-body">
@@ -109,7 +109,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-4">
+              <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
               </label>
               <div class="accordion-body">
@@ -179,7 +179,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-5">
+              <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
               </label>
               <div class="accordion-body">
@@ -210,7 +210,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-6">
+              <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
               </label>
               <div class="accordion-body">
@@ -315,7 +315,7 @@
         <div id="compiling" class="container">
           <h3 class="s-title"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
           <div class="docs-note">
-            <p>You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>.less</code> source files.</p>
+            <p>You can customize your version of Spectre.css by editing SASS files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
             <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">Spectre.css Source Code</a></p>
           </div>
           <h4 id="compiling-steps" class="s-subtitle">Compiling CSS</h4>
@@ -325,12 +325,12 @@
             <ol>
               <li>Navigate to the root directory of Spectre.</li>
               <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-              <li>When completed, run <code>gulp build</code> task to compile LESS to CSS and minify files.</li>
+              <li>When completed, run <code>gulp build</code> task to compile SASS to CSS and minify files.</li>
               <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
             </ol>
             <p>All available Gulp tasks:</p>
             <ul>
-              <li><code>gulp build</code> - compile LESS to CSS and minify files (default)</li>
+              <li><code>gulp build</code> - compile SASS to CSS and minify files (default)</li>
               <li><code>gulp docs</code> - compile Docs related files</li>
               <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
             </ul>
@@ -340,7 +340,7 @@
 
 <!-- folder structure -->
 <pre class="code"><code>spectre/
-├── dist/                               <span class="com">// Build folder (Git ignored)</span>
+├── dist/                           <span class="com">// Build folder (Git ignored)</span>
 │   ├── spectre-exp.css
 │   ├── spectre-exp.min.css
 │   ├── spectre-icons.css
@@ -349,34 +349,37 @@
 │   └── spectre.min.css
 │
 ├── docs/
-│   ├── dist/                           <span class="com">// Pre-built CSS folder</span>
+│   ├── dist/                       <span class="com">// Pre-built CSS folder</span>
 │   │   ├── spectre-exp.css
 │   │   ├── spectre-exp.min.css
 │   │   ├── spectre-icons.css
 │   │   ├── spectre-icons.min.css
 │   │   ├── spectre.css
 │   │   └── spectre.min.css
-|   ├── css/                            <span class="com">// Docs CSS file</span>
+|   ├── css/                        <span class="com">// Docs CSS file</span>
 │   │   └── docs.css
 |   ├── src/
-│   │   └── docs.less
+│   │   └── docs.scss
 │   ├── ../
 │   ├── index.html
 │   └── ...
 │
-├── src/                                <span class="com">// Source LESS files</span>
-│   ├── mixins.less
-│   ├── variables.less
+├── src/                            <span class="com">// Source SASS files</span>
+│   ├── spectre.scss
+│   ├── spectre-icons.scss
+│   ├── spectre-exp.scss
+│   ├── _mixins.scss
+│   ├── _variables.scss
 │   └── ...
 │
-├── spectre-exp.less
-├── spectre-icons.less
-└── spectre.less
+├── gulpfile.js
+├── package.json
+└── ...
 </code></pre>
 
           <h4 id="variables" class="s-subtitle"><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4>
           <div class="docs-note">
-            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.</p>
+            <p>Spectre.css is designed with consistent design language. You can modify <code>_variables.scss</code> to create your new or match existing design.</p>
           </div>
           <h5 id="variables-colors" class="s-subtitle">Colors</h5>
           <div class="columns">
@@ -460,21 +463,21 @@
 
           <h5 id="variables-buttons" class="s-subtitle">Buttons</h5>
           <div class="docs-note">
-            <p>There are 2 button variant mixins in <code>mixins.less</code> to generate different color variants. </p>
+            <p>There are 2 button variant mixins in <code>_mixins.scss</code> to generate different color variants. </p>
             <ul>
-              <li>.button-variant(<code>@color</code>: @primary-color);</li>
-              <li>.button-outline-variant(<code>@color</code>: @primary-color);</li>
+              <li>@mixin button-variant(<code>$color</code>: $primary-color);</li>
+              <li>@mixin button-outline-variant(<code>$color</code>: $primary-color);</li>
             </ul>
 
 <!-- button variables example -->
-<pre class="code" data-lang="LESS"><code><span class="com">&lt;!-- filled button with the success color --&gt;</span>
+<pre class="code" data-lang="SASS"><code><span class="com">&lt;!-- filled button with the success color --&gt;</span>
 <span class="tag">.btn-success</span> {
-  .button-variant(<span class="atv">@success-color</span>);
+  <span class="tag">@include</span> button-variant(<span class="atv">$success-color</span>);
 }
 
 <span class="com">&lt;!-- outlined button with the success color --&gt;</span>
 <span class="tag">.btn-outline-success</span> {
-  .button-outline-variant(<span class="atv">@success-color</span>);
+  <span class="tag">@include</span> button-outline-variant(<span class="atv">$success-color</span>);
 }
 </code></pre>
           </div>
@@ -525,7 +528,7 @@ gulp.task('prefix', function() {
             <ul>
               <li>Chrome <small class="label label-success">LAST 4</small></li>
               <li>Microsoft Edge <small class="label label-success">LAST 4</small></li>
-              <li>Firefox <small class="label label-success">LAST 4</small></li>
+              <li>Firefox <small class="label label-success text-uppercase">Extended Support Release</small></li>
               <li>Safari <small class="label label-success">LAST 4</small></li>
               <li>Opera <small class="label label-success">LAST 4</small></li>
               <li>Internet Explorer 10+</li>

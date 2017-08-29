@@ -1,14 +1,16 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.3.2";
+  content: "0.4.0";
 }
+
 /* Spectre New Docs */
 .s-container > .columns {
   -ms-flex-flow: nowrap;
   flex-flow: nowrap;
   min-height: 100vh;
 }
+
 .s-sidebar {
   background: #f8f9fa;
   -ms-flex: 0 0 auto;
@@ -16,6 +18,7 @@
   padding: 1.5rem 0 1.5rem 1.5rem;
   width: 12rem;
 }
+
 .s-sidebar .s-nav {
   bottom: 1.5rem;
   overflow-y: auto;
@@ -23,26 +26,32 @@
   top: 5rem;
   width: 10.5rem;
 }
+
 .s-sidebar .accordion .accordion-item {
   margin-bottom: .75rem;
 }
+
 .s-sidebar .accordion input ~ .accordion-header {
   color: #5b657a;
   font-size: .6rem;
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .s-sidebar .accordion input:checked ~ .accordion-header {
   color: #5b657a;
 }
+
 .s-sidebar .accordion .menu .menu-item {
   padding-left: 1rem;
 }
+
 .s-sidebar .accordion .menu .menu-item > a {
   background: transparent;
   color: #727e96;
   display: inline-block;
 }
+
 .s-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -50,9 +59,11 @@
   padding: 0 3rem;
   width: calc(100vw - 12rem);
 }
+
 .s-content > .container {
   padding-bottom: 1.5rem;
 }
+
 .s-content .anchor {
   color: #626fca;
   height: 0;
@@ -64,6 +75,7 @@
   width: 0;
   z-index: 100;
 }
+
 .s-content .anchor:focus,
 .s-content .anchor:hover {
   box-shadow: none;
@@ -71,6 +83,7 @@
   text-decoration: none;
   width: 2em;
 }
+
 .s-content .s-title,
 .s-content .s-subtitle {
   line-height: 1.6rem;
@@ -79,6 +92,7 @@
   padding-top: 1.5rem;
   position: static;
 }
+
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .s-content .s-title,
   .s-content .s-subtitle {
@@ -100,34 +114,42 @@
     z-index: -1;
   }
 }
+
 .s-content .s-title:hover .anchor,
 .s-content .s-subtitle:hover .anchor {
   height: auto;
   width: 1em;
 }
+
 .s-content .s-title + .docs-note,
 .s-content .s-subtitle + .docs-note {
   margin-top: .4rem;
 }
+
 .s-content .docs-note {
   margin: 1.5rem 0;
 }
+
 .s-content .column {
   padding: .4rem;
 }
+
 .s-content .docs-block {
   border-radius: .1rem;
   padding: .4rem;
 }
+
 .s-content .docs-block.bg-gray {
   background: #f0f1f4;
 }
+
 .s-content .docs-shape {
   height: 4.8rem;
   line-height: 1.2rem;
   padding: 1.8rem 0;
   width: 4.8rem;
 }
+
 .s-content .docs-dot {
   border-radius: 50%;
   display: inline-block;
@@ -135,49 +157,63 @@
   padding: 0;
   width: .5rem;
 }
+
 .s-content .docs-table th,
 .s-content .docs-table td {
   padding: .75rem .25rem;
 }
+
 .s-content .docs-color {
   border-radius: .1rem;
   margin: .25rem 0;
   padding: .5rem;
 }
+
 .s-content .docs-color .color-subtitle {
   font-size: .6rem;
   opacity: .75;
 }
+
 .s-content .panel {
   height: 75vh;
 }
+
 .s-content .panel .tile {
   margin: .75rem 0;
 }
+
 .s-content .parallax {
   margin: 2rem auto;
 }
+
 .s-content .code {
   color: #667189;
 }
+
 .s-content .code .com {
   color: #acb3c2;
 }
+
 .s-content .code .tag {
   color: #5764c6;
 }
+
 .s-content .code .atn {
   color: #667189;
 }
+
 .s-content .code .atv {
   color: #e06870;
 }
+
 .s-content .empty .icon {
   font-size: 2rem;
 }
+
 .s-content .form-autocomplete .menu {
   position: static;
 }
+
 .s-content .example-tile-icon {
   align-content: space-around;
   align-items: center;
@@ -192,23 +228,28 @@
   height: 2rem;
   width: 2rem;
 }
+
 .s-content .example-tile-icon .icon {
   margin: auto;
 }
+
 .s-content .comparison-slider {
   height: auto;
   padding-bottom: 56.2222%;
 }
+
 .s-content .comparison-slider .filter-grayscale {
   -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
 }
+
 .s-brand {
   color: #5764c6;
   padding: 0 1.5rem;
   position: fixed;
   top: 1.3rem;
 }
+
 .s-brand .s-logo {
   align-items: center;
   border-radius: .1rem;
@@ -219,15 +260,18 @@
   padding: .2rem;
   width: auto;
 }
+
 .s-brand .s-logo:focus,
 .s-brand .s-logo:hover {
   text-decoration: none;
 }
+
 .s-brand .s-logo img {
   display: inline;
   height: auto;
   width: 1.6rem;
 }
+
 .s-brand .s-logo h2 {
   display: inline;
   font-size: .8rem;
@@ -235,64 +279,80 @@
   margin-left: .5rem;
   margin-right: .5rem;
 }
+
 .s-brand .float-btn {
   position: fixed;
   right: 4.5rem;
   top: 1.5rem;
 }
+
 .s-footer {
   color: #acb3c2;
   padding: .5rem .5rem 1.5rem .5rem;
 }
+
 .s-footer a {
   color: #727e96;
 }
+
 /* Spectre Homepage style */
 .section-hero {
   padding: 1rem .5rem;
   position: relative;
 }
+
 .section-hero .s-brand {
   position: absolute;
 }
+
 .section-hero .s-brand h2 {
   color: #5764c6;
 }
+
 .section-hero .column {
   padding: .4rem;
 }
+
 .section-updates {
   padding: 4.5rem .5rem 3.5rem .5rem;
 }
+
 .section-updates .card {
   border: 0;
   color: #727e96;
   margin-bottom: 1rem;
 }
+
 .section-features {
   padding: 4.5rem .5rem;
 }
+
 .section-features .column {
   padding: .4rem;
 }
+
 .section-footer {
   color: #acb3c2;
   padding: 1.8rem .75rem 1rem .75rem;
   position: relative;
   z-index: 200;
 }
+
 .section-footer a {
   color: #727e96;
 }
+
 .grid-hero {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
   margin-top: 6rem;
 }
+
 .grid-hero h1 {
   color: #50596c;
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
+
 .grid-hero h2 {
   color: #5b657a;
   font-size: .9rem;
@@ -300,27 +360,32 @@
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
 .grid-hero h2 u {
   border-bottom: .1rem solid currentColor;
   padding-bottom: .05rem;
   text-decoration: none;
 }
+
 .grid-hero .card {
   background: none;
   border: 0;
   color: #727e96;
   padding: .5rem;
 }
+
 .grid-hero .card .card-title {
   color: #5764c6;
   font-size: .9rem;
   margin-bottom: 0;
 }
+
 .menu-btn,
 .docs-nav-clear {
   display: none;
 }
-@media screen and (max-width: 880px) {
+
+@media (max-width: 880px) {
   .s-sidebar {
     background: #f8f9fa;
     bottom: 0;
@@ -329,13 +394,11 @@
     padding: 3rem 1.5rem;
     position: fixed;
     top: 0;
-    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
     transition: transform .2s ease;
     z-index: 400;
   }
   .s-sidebar:target {
-    -ms-transform: translateX(0);
     transform: translateX(0);
     transition: transform .2s ease;
   }
@@ -348,7 +411,7 @@
   .s-brand {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: rgba(248, 249, 250, .8);
+    background: fade(#f8f9fa, 80%);
     height: 3.5rem;
     left: 0;
     padding: .75rem .5rem;
@@ -410,7 +473,8 @@
     width: 3.2rem;
   }
 }
-@media screen and (max-width: 600px) {
+
+@media (max-width: 600px) {
   .grid-hero h2 {
     font-size: .9rem;
   }
