@@ -14,19 +14,13 @@
 <body>
   <div class="s-container container">
     <div class="columns">
-      <div class="s-brand">
-        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
-          <h2>Spectre.css</h2>
-        </a>
-        <div class="menu-btn">
-          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
-        </div>
-        <div class="float-btn">
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </div>
-      </div>
       <div id="sidebar" class="s-sidebar">
+        <div class="s-brand">
+          <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
+            <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+            <h2>Spectre.css</h2>
+          </a>
+        </div>
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
@@ -249,6 +243,17 @@
         </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+      <div class="s-navbar">
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <a href="index.html" class="s-logo">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+        </a>
+        <div class="float-btn">
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
 
       <div id="content" class="s-content">
         <div id="introduction" class="container">
@@ -317,6 +322,8 @@
           <div class="docs-note">
             <p>You can customize your version of Spectre.css by editing SASS files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
             <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">Spectre.css Source Code</a></p>
+            <p>If you are looking for LESS version of Spectre.css, please switch to <code>LESS</code> branch.</p>
+            <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">LESS Branch</a></p>
           </div>
           <h4 id="compiling-steps" class="s-subtitle">Compiling CSS</h4>
           <div class="docs-note">
@@ -541,6 +548,9 @@ gulp.task('prefix', function() {
           <div class="docs-note">
             <p><strong>August 2017</strong></p>
             <ul>
+              <li>
+                <a href="getting-started.html">Switch to SASS</a> <small class="label label-primary">NEW</small>
+              </li>
               <li>
                 <a href="getting-started.html">New Docs Experience</a> <small class="label label-primary">NEW</small>
               </li>

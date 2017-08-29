@@ -245,6 +245,7 @@
 
 .s-brand {
   color: #5764c6;
+  left: 0;
   padding: 0 1.5rem;
   position: fixed;
   top: 1.3rem;
@@ -275,15 +276,10 @@
 .s-brand .s-logo h2 {
   display: inline;
   font-size: .8rem;
+  font-weight: 500;
   margin-bottom: 0;
   margin-left: .5rem;
   margin-right: .5rem;
-}
-
-.s-brand .float-btn {
-  position: fixed;
-  right: 4.5rem;
-  top: 1.5rem;
 }
 
 .s-footer {
@@ -298,11 +294,11 @@
 /* Spectre Homepage style */
 .section-hero {
   padding: 1rem .5rem;
-  position: relative;
 }
 
 .section-hero .s-brand {
   position: absolute;
+  top: .5rem;
 }
 
 .section-hero .s-brand h2 {
@@ -343,8 +339,9 @@
 }
 
 .grid-hero {
-  margin-bottom: 2rem; 
-  margin-top: 6rem;
+  padding-bottom: 2rem;
+  padding-top: 6rem;
+  position: relative;
 }
 
 .grid-hero h1 {
@@ -380,9 +377,27 @@
   margin-bottom: 0;
 }
 
-.menu-btn,
 .docs-nav-clear {
   display: none;
+}
+
+.s-navbar {
+  height: 3.5rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: fixed;
+  text-align: center;
+}
+
+.s-navbar .s-logo,
+.s-navbar .menu-btn {
+  display: none;
+}
+
+.s-navbar .float-btn {
+  position: fixed;
+  right: 4.5rem;
+  top: 1.5rem;
 }
 
 @media (max-width: 880px) {
@@ -405,35 +420,38 @@
   .s-sidebar:target + .docs-nav-clear {
     display: block;
   }
-  .s-sidebar .s-nav {
-    top: 1.5rem;
+  .s-sidebar .menu .menu-item > a {
+    padding: .3rem .4rem;
   }
-  .s-brand {
+  .s-navbar {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: fade(#f8f9fa, 80%);
-    height: 3.5rem;
-    left: 0;
-    padding: .75rem .5rem;
+    background: rgba(248, 249, 250, .65);
     right: 0;
-    text-align: center;
     top: 0;
-    z-index: 300;
+    z-index: 200;
   }
-  .s-brand .s-logo h2 {
-    display: none;
-  }
-  .s-brand .menu-btn {
+  .s-navbar .menu-btn {
     display: block;
-    left: .65rem;
+    left: 2.6rem;
     position: fixed;
     top: .95rem;
   }
-  .s-brand .menu-btn .btn {
+  .s-navbar .menu-btn .btn {
     font-size: 1rem;
   }
-  .s-brand .float-btn {
-    right: 1rem;
+  .s-navbar .s-logo {
+    align-items: center;
+    border-radius: .1rem;
+    display: inline-flex;
+    display: -ms-inline-flexbox;
+    -ms-flex-align: center;
+    height: 2rem;
+    padding: .2rem;
+    width: auto;
+  }
+  .s-navbar .float-btn {
+    right: 2.9rem;
     top: .95rem;
   }
   .docs-nav-clear {
@@ -449,7 +467,7 @@
   }
   .s-content {
     min-width: auto;
-    padding: 3.5rem 2.5rem 0 2.5rem;
+    padding: 0 2.5rem;
     width: 100%;
   }
   .s-content .s-title,
@@ -459,11 +477,13 @@
   }
   .s-content .s-title::before,
   .s-content .s-subtitle::before {
-    display: none;
+    content: none;
   }
   .section-hero .s-brand {
     height: 5rem;
     padding: 1.5rem .5rem;
+    text-align: center;
+    width: 100%;
   }
   .section-hero .s-brand .s-logo {
     height: auto;
@@ -471,6 +491,9 @@
   .section-hero .s-brand img {
     height: 3.2rem;
     width: 3.2rem;
+  }
+  .section-hero .s-brand h2 {
+    display: none;
   }
 }
 
@@ -489,5 +512,11 @@
   }
   .s-content .anchor {
     display: none;
+  }
+  .s-navbar .menu-btn {
+    left: .65rem;
+  }
+  .s-navbar .float-btn {
+    right: 1rem;
   }
 }

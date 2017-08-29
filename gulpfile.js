@@ -9,7 +9,6 @@ var paths = {
   source: './src/*.scss',
   doc: './docs/src/*.scss'
 };
-var autoprefixer_rules = ["last 4 versions", "Explorer >= 10", "Firefox ESR"];
 
 gulp.task('watch', function() {
   gulp.watch('./**/*.scss', ['build']);

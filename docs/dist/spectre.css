@@ -1876,7 +1876,7 @@ code {
 }
 
 .accordion .accordion-item input:checked ~ .accordion-body {
-  max-height: 1000px;
+  max-height: 50rem;
 }
 
 .accordion .accordion-item .accordion-header {
@@ -2236,10 +2236,11 @@ code {
   background: #f0f1f4;
   border-radius: 5rem;
   color: #727e96;
-  display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -ms-inline-flexbox;
   -ms-flex-align: center;
   height: 1.2rem;
+  line-height: 1rem;
   margin: .1rem;
   max-width: 100%;
   padding: .1rem .5rem;
@@ -3096,6 +3097,26 @@ a.text-error:hover {
 
 .c-hand {
   cursor: pointer;
+}
+
+.c-move {
+  cursor: move;
+}
+
+.c-zoom-in {
+  cursor: zoom-in;
+}
+
+.c-zoom-out {
+  cursor: zoom-out;
+}
+
+.c-not-allowed {
+  cursor: not-allowed;
+}
+
+.c-auto {
+  cursor: auto;
 }
 
 .divider,
