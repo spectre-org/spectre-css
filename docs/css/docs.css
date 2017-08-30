@@ -39,7 +39,7 @@
 }
 
 .s-sidebar .accordion input:checked ~ .accordion-header {
-  color: #5b657a;
+  color: #667189;
 }
 
 .s-sidebar .accordion .menu .menu-item {
@@ -55,8 +55,8 @@
 .s-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  max-width: 920px;
-  padding: 0 3rem;
+  max-width: 960px;
+  padding: 0 4rem;
   width: calc(100vw - 12rem);
 }
 
@@ -387,6 +387,7 @@
   padding: .75rem 1.5rem;
   position: fixed;
   text-align: center;
+  z-index: 400;
 }
 
 .s-navbar .s-logo,
@@ -396,7 +397,7 @@
 
 .s-navbar .float-btn {
   position: fixed;
-  right: 4.5rem;
+  right: 4rem;
   top: 1.5rem;
 }
 

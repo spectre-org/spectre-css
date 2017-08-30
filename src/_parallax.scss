@@ -1,16 +1,16 @@
 // Parallax
 $parallax-deg: 3deg;
-$parallax-offset: 6.5px;
-$parallax-offset-z: 100px;
+$parallax-offset: 4.5px;
+$parallax-offset-z: 50px;
 $parallax-perspective: 1000px;
-$parallax-scale: 1 - unit($parallax-offset-z / $parallax-perspective);
+$parallax-scale: .95;
 
 // Mixin: Parallax direction
 @mixin parallax-dir() {
   height: 50%;
   position: absolute;
   width: 50%;
-  z-index: $zindex-3;
+  z-index: $zindex-1;
 }
 
 .parallax {
@@ -47,7 +47,7 @@ $parallax-scale: 1 - unit($parallax-offset-z / $parallax-perspective);
     left: 0;
     position: absolute;
     text-align: center;
-    text-shadow: 0 0 20px fade($dark-color, 50%);
+    text-shadow: 0 0 20px rgba($dark-color, .75);
     top: 0;
     transform: translateZ($parallax-offset-z) scale($parallax-scale);
     transition: all .4s ease;
@@ -61,14 +61,14 @@ $parallax-scale: 1 - unit($parallax-offset-z / $parallax-perspective);
     top: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
+      transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d(-$parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
+        transform: translate3d($parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
@@ -79,14 +79,14 @@ $parallax-scale: 1 - unit($parallax-offset-z / $parallax-perspective);
     top: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
+      transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(-135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d($parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
+        transform: translate3d(-$parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
@@ -97,14 +97,14 @@ $parallax-scale: 1 - unit($parallax-offset-z / $parallax-perspective);
     left: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
+      transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(45deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d(-$parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
+        transform: translate3d($parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }
@@ -115,14 +115,14 @@ $parallax-scale: 1 - unit($parallax-offset-z / $parallax-perspective);
     right: 0;
 
     &:hover ~ .parallax-content {
-      transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
+      transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-45deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
       }
 
       .parallax-front {
-        transform: translate3d($parallax-offset, $parallax-offset, $parallax-offset-z) scale($parallax-scale);
+        transform: translate3d(-$parallax-offset, -$parallax-offset, $parallax-offset-z) scale($parallax-scale);
       }
     }
   }

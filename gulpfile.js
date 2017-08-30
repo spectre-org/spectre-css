@@ -17,7 +17,7 @@ gulp.task('watch', function() {
 
 gulp.task('build', function() {
   gulp.src(paths.source)
-    .pipe(sass({outputStyle: 'compact'}))
+    .pipe(sass({outputStyle: 'compact', precision: 10}))
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./dist'))
@@ -30,12 +30,12 @@ gulp.task('build', function() {
 
 gulp.task('docs', function() {
   gulp.src(paths.doc)
-    .pipe(sass({outputStyle: 'compact'}))
+    .pipe(sass({outputStyle: 'compact', precision: 10}))
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./docs/css'));
   gulp.src(paths.source)
-    .pipe(sass({outputStyle: 'compact'}))
+    .pipe(sass({outputStyle: 'compact', precision: 10}))
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./docs/dist'))

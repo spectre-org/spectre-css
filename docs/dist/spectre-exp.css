@@ -246,8 +246,8 @@
 
 .carousel .carousel-container .item-prev,
 .carousel .carousel-container .item-next {
-  background: fade(#e7e9ed, 25%);
-  border-color: fade(#e7e9ed, 50%);
+  background: rgba(231, 233, 237, .25);
+  border-color: rgba(231, 233, 237, .5);
   color: #e7e9ed;
   opacity: 0;
   position: absolute;
@@ -295,7 +295,7 @@
 }
 
 .carousel .carousel-nav .nav-item {
-  color: fade(#e7e9ed, 50%);
+  color: rgba(231, 233, 237, .5);
   display: block;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -423,7 +423,7 @@
 }
 
 .comparison-slider .comparison-label {
-  background: fade(#454d5d, 50%);
+  background: rgba(69, 77, 93, .5);
   bottom: .8rem;
   color: #fff;
   padding: .2rem .4rem;
@@ -575,9 +575,9 @@
   left: 0;
   position: absolute;
   text-align: center;
-  text-shadow: 0 0 20px fade(#454d5d, 50%);
+  text-shadow: 0 0 20px rgba(69, 77, 93, .75);
   top: 0;
-  transform: translateZ(100px) scale(1-"");
+  transform: translateZ(50px) scale(.95);
   transition: all .4s ease;
   width: 100%;
   z-index: 1;
@@ -589,19 +589,19 @@
   position: absolute;
   top: 0; 
   width: 50%;
-  z-index: 300;
+  z-index: 100;
 }
 
 .parallax .parallax-top-left:hover ~ .parallax-content {
-  transform: perspective(1000px) rotateX(-3deg) rotateY(3deg);
+  transform: perspective(1000px) rotateX(3deg) rotateY(-3deg);
 }
 
 .parallax .parallax-top-left:hover ~ .parallax-content::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .35) 0%, rgba(255, 255, 255, 0) 50%);
 }
 
 .parallax .parallax-top-left:hover ~ .parallax-content .parallax-front {
-  transform: translate3d(-6.5px, -6.5px, 100px) scale(1-"");
+  transform: translate3d(4.5px, 4.5px, 50px) scale(.95);
 }
 
 .parallax .parallax-top-right {
@@ -610,19 +610,19 @@
   right: 0;
   top: 0; 
   width: 50%;
-  z-index: 300;
+  z-index: 100;
 }
 
 .parallax .parallax-top-right:hover ~ .parallax-content {
-  transform: perspective(1000px) rotateX(-3deg) rotateY(-3deg);
+  transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
 }
 
 .parallax .parallax-top-right:hover ~ .parallax-content::before {
-  background: linear-gradient(-135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(-135deg, rgba(255, 255, 255, .35) 0%, rgba(255, 255, 255, 0) 50%);
 }
 
 .parallax .parallax-top-right:hover ~ .parallax-content .parallax-front {
-  transform: translate3d(6.5px, -6.5px, 100px) scale(1-"");
+  transform: translate3d(-4.5px, 4.5px, 50px) scale(.95);
 }
 
 .parallax .parallax-bottom-left {
@@ -631,19 +631,19 @@
   left: 0; 
   position: absolute;
   width: 50%;
-  z-index: 300;
+  z-index: 100;
 }
 
 .parallax .parallax-bottom-left:hover ~ .parallax-content {
-  transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+  transform: perspective(1000px) rotateX(-3deg) rotateY(-3deg);
 }
 
 .parallax .parallax-bottom-left:hover ~ .parallax-content::before {
-  background: linear-gradient(45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(45deg, rgba(255, 255, 255, .35) 0%, rgba(255, 255, 255, 0) 50%);
 }
 
 .parallax .parallax-bottom-left:hover ~ .parallax-content .parallax-front {
-  transform: translate3d(-6.5px, 6.5px, 100px) scale(1-"");
+  transform: translate3d(4.5px, -4.5px, 50px) scale(.95);
 }
 
 .parallax .parallax-bottom-right {
@@ -652,19 +652,19 @@
   position: absolute;
   right: 0; 
   width: 50%;
-  z-index: 300;
+  z-index: 100;
 }
 
 .parallax .parallax-bottom-right:hover ~ .parallax-content {
-  transform: perspective(1000px) rotateX(3deg) rotateY(-3deg);
+  transform: perspective(1000px) rotateX(-3deg) rotateY(3deg);
 }
 
 .parallax .parallax-bottom-right:hover ~ .parallax-content::before {
-  background: linear-gradient(-45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+  background: linear-gradient(-45deg, rgba(255, 255, 255, .35) 0%, rgba(255, 255, 255, 0) 50%);
 }
 
 .parallax .parallax-bottom-right:hover ~ .parallax-content .parallax-front {
-  transform: translate3d(6.5px, 6.5px, 100px) scale(1-"");
+  transform: translate3d(-4.5px, -4.5px, 50px) scale(.95);
 }
 
 .progress {

@@ -86,7 +86,7 @@
   }
 
   .comparison-label {
-    background: fade($dark-color, 50%);
+    background: rgba($dark-color, .5);
     bottom: $unit-4;
     color: $light-color;
     padding: $unit-1 $unit-2;

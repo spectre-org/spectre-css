@@ -36,8 +36,8 @@
 
     .item-prev,
     .item-next {
-      background: fade($gray-color-light, 25%);
-      border-color: fade($gray-color-light, 50%);
+      background: rgba($gray-color-light, .25);
+      border-color: rgba($gray-color-light, .5);
       color: $gray-color-light;
       opacity: 0;
       position: absolute;
@@ -82,7 +82,7 @@
     z-index: $zindex-2;
 
     .nav-item {
-      color: fade($gray-color-light, 50%);
+      color: rgba($gray-color-light, .5);
       display: block;
       flex: 1 0 auto;
       height: $unit-8;

@@ -275,7 +275,7 @@ template {
 html {
   box-sizing: border-box;
   font-size: 20px;
-  line-height: 1.42857;
+  line-height: 1.428571429;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -2236,11 +2236,10 @@ code {
   background: #f0f1f4;
   border-radius: 5rem;
   color: #727e96;
-  display: inline-flex;
   display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-align: center;
   height: 1.2rem;
-  line-height: 1rem;
   margin: .1rem;
   max-width: 100%;
   padding: .1rem .5rem;

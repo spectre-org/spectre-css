@@ -36,14 +36,14 @@
 
     input {
       & ~ .accordion-header {
-        color: darken($gray-color-dark, 10%);
+        color: lighten($dark-color, 10%);
         font-size: $font-size-sm;
         font-weight: 600;
         text-transform: uppercase;
       }
       &:checked {
         & ~ .accordion-header {
-          color: darken($gray-color-dark, 10%);
+          color: lighten($dark-color, 15%);
         }
       }
     }
@@ -64,8 +64,8 @@
 
 .s-content {
   flex: 1 1 auto;
-  max-width: 920px;
-  padding: 0 3rem;
+  max-width: 960px;
+  padding: 0 4rem;
   width: calc(100vw - 12rem);
 
   & > .container {
@@ -384,6 +384,7 @@
   padding: .75rem 1.5rem;
   position: fixed;
   text-align: center;
+  z-index: $zindex-4;
 
   .s-logo,
   .menu-btn {
@@ -392,7 +393,7 @@
 
   .float-btn {
     position: fixed;
-    right: 4.5rem;
+    right: 4rem;
     top: 1.5rem;
   }
 }
