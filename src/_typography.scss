@@ -65,13 +65,15 @@ abbr[title] {
 }
 
 kbd {
+  font-size: .65rem;
   @include label-base();
   @include label-variant($light-color, $dark-color);
 }
 
 mark {
-  @include label-base();
+  border-radius: $border-radius;
   @include label-variant($body-font-color, $highlight-color);
+  padding: .05rem;
 }
 
 // Blockquote

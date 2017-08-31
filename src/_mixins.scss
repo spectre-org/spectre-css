@@ -91,7 +91,7 @@
 @mixin label-base() {
   border-radius: $border-radius;
   line-height: 1;
-  padding: .15rem .2rem;
+  padding: .15rem;
 }
 
 @mixin label-variant($color: $light-color, $bg-color: $primary-color) {

@@ -380,16 +380,16 @@ kbd {
   background: #454d5d;
   border-radius: .1rem;
   color: #fff; 
+  font-size: .65rem;
   line-height: 1;
-  padding: .15rem .2rem;
+  padding: .15rem;
 }
 
 mark {
   background: #ffe9b3;
   border-radius: .1rem;
-  color: #50596c; 
-  line-height: 1;
-  padding: .15rem .2rem;
+  color: #50596c;
+  padding: .05rem;
 }
 
 blockquote {
@@ -1241,11 +1241,10 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .1rem;
-  color: #5b657a;
+  color: #5b657a; 
   display: inline-block;
-  line-height: 1; 
   line-height: 1;
-  padding: .15rem .2rem;
+  padding: .15rem;
 }
 
 .label.label-rounded {
@@ -1285,7 +1284,7 @@ code {
   color: #e06870; 
   font-size: .65rem;
   line-height: 1;
-  padding: .15rem .2rem;
+  padding: .15rem;
 }
 
 .code {
@@ -1926,11 +1925,6 @@ code {
   line-height: .8rem;
   margin: .1rem;
   width: auto;
-}
-
-.form-autocomplete mark {
-  font-size: 1;
-  padding: .1em 0;
 }
 
 .form-autocomplete .menu {
@@ -3039,6 +3033,30 @@ a.text-error:hover {
   background: #e85600;
 }
 
+.c-hand {
+  cursor: pointer;
+}
+
+.c-move {
+  cursor: move;
+}
+
+.c-zoom-in {
+  cursor: zoom-in;
+}
+
+.c-zoom-out {
+  cursor: zoom-out;
+}
+
+.c-not-allowed {
+  cursor: not-allowed;
+}
+
+.c-auto {
+  cursor: auto;
+}
+
 .d-block {
   display: block;
 }
@@ -3092,30 +3110,6 @@ a.text-error:hover {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.c-hand {
-  cursor: pointer;
-}
-
-.c-move {
-  cursor: move;
-}
-
-.c-zoom-in {
-  cursor: zoom-in;
-}
-
-.c-zoom-out {
-  cursor: zoom-out;
-}
-
-.c-not-allowed {
-  cursor: not-allowed;
-}
-
-.c-auto {
-  cursor: auto;
 }
 
 .divider,

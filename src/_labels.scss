@@ -3,7 +3,6 @@
   display: inline-block;
   @include label-base();
   @include label-variant(lighten($body-font-color, 5%), $bg-color);
-  line-height: 1;
 
   &.label-rounded {
     border-radius: 5rem;
