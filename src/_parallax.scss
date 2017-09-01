@@ -64,7 +64,7 @@ $parallax-scale: .95;
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(135deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -82,7 +82,7 @@ $parallax-scale: .95;
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(-135deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -100,7 +100,7 @@ $parallax-scale: .95;
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(45deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(45deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -118,7 +118,7 @@ $parallax-scale: .95;
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
+        background: linear-gradient(-45deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
       }
 
       .parallax-front {
