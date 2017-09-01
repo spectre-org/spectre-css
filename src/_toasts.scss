@@ -1,11 +1,11 @@
 // Toasts
 .toast {
+  @include toast-variant($dark-color);
   border: $border-width solid $dark-color;
   border-radius: $border-radius;
   color: $light-color;
   display: block;
   padding: $layout-spacing;
-  @include toast-variant($dark-color);
   width: 100%;
 
   &.toast-primary {

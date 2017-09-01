@@ -379,8 +379,8 @@ abbr[title] {
 kbd {
   background: #454d5d;
   border-radius: .1rem;
-  color: #fff; 
-  font-size: .65rem;
+  color: #fff;
+  font-size: .65rem; 
   line-height: 1;
   padding: .15rem;
 }
@@ -767,7 +767,7 @@ legend {
 }
 
 .form-input:focus {
-  border-color: #5764c6;
+  border-color: #5764c6; 
   box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
 }
 
@@ -857,7 +857,7 @@ textarea.form-input {
 }
 
 .form-select:focus {
-  border-color: #5764c6;
+  border-color: #5764c6; 
   box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
 }
 
@@ -931,7 +931,7 @@ textarea.form-input {
 .form-checkbox input:focus + .form-icon,
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
-  border-color: #5764c6;
+  border-color: #5764c6; 
   box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
 }
 
@@ -1182,7 +1182,7 @@ textarea.form-input {
 .form-radio.is-error input:focus + .form-icon,
 .has-error .form-switch input:focus + .form-icon,
 .form-switch.is-error input:focus + .form-icon {
-  border-color: #e85600;
+  border-color: #e85600; 
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
@@ -1241,8 +1241,8 @@ input.disabled + .form-icon {
 .label {
   background: #f8f9fa;
   border-radius: .1rem;
-  color: #5b657a; 
-  display: inline-block;
+  color: #5b657a;
+  display: inline-block; 
   line-height: 1;
   padding: .15rem;
 }
@@ -1281,8 +1281,8 @@ input.disabled + .form-icon {
 code {
   background: #fdf4f4;
   border-radius: .1rem;
-  color: #e06870; 
-  font-size: .65rem;
+  color: #e06870;
+  font-size: .65rem; 
   line-height: 1;
   padding: .15rem;
 }
@@ -1911,7 +1911,7 @@ code {
 }
 
 .form-autocomplete .form-autocomplete-input.is-focused {
-  border-color: #5764c6;
+  border-color: #5764c6; 
   box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
 }
 
@@ -2623,7 +2623,7 @@ code {
 }
 
 .popover .card {
-  border: 0;
+  border: 0; 
   box-shadow: 0 .2rem .5rem rgba(69, 77, 93, .3);
 }
 
@@ -2798,7 +2798,7 @@ code {
 
 .tile.tile-centered .tile-title,
 .tile.tile-centered .tile-subtitle {
-  margin-bottom: 0;
+  margin-bottom: 0; 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3195,7 +3195,7 @@ a.text-error:hover {
 .loading.loading-lg::after {
   height: 1.6rem;
   margin-left: -.8rem;
-  margin-top: -.8rem; 
+  margin-top: -.8rem;
   width: 1.6rem;
 }
 

@@ -44,11 +44,11 @@
 }
 
 .modal-container {
+  @include shadow-variant(.2rem);
   background: $bg-color-light;
   border-radius: $border-radius;
   display: block;
   padding: 0;
-  @include shadow-variant(.2rem);
   text-align: left;
 
   .modal-header {

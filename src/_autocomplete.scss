@@ -11,8 +11,8 @@
     padding: $unit-h;
 
     &.is-focused {
-      border-color: $primary-color;
       @include control-shadow();
+      border-color: $primary-color;
     }
 
     .form-input {

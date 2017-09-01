@@ -64,7 +64,7 @@
   }
 
   .card {
-    border: 0;
     @include shadow-variant(.2rem);
+    border: 0;
   }
 }

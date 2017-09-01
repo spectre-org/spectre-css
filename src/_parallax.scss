@@ -20,8 +20,8 @@ $parallax-scale: .95;
   width: auto;
 
   .parallax-content {
-    height: auto;
     @include shadow-variant(1rem);
+    height: auto;
     transform: perspective($parallax-perspective);
     transform-style: preserve-3d;
     transition: all .4s ease;

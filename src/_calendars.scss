@@ -45,12 +45,12 @@
     padding: $unit-1;
 
     .date-item {
+      @include control-transition();
       appearance: none;
       background: transparent;
       border: $border-width solid transparent;
       border-radius: 50%;
       color: $gray-color-dark;
-      @include control-transition();
       cursor: pointer;
       height: $unit-7;
       line-height: $unit-5;

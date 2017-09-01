@@ -1,8 +1,8 @@
 // Labels
 .label {
-  display: inline-block;
   @include label-base();
   @include label-variant(lighten($body-font-color, 5%), $bg-color);
+  display: inline-block;
 
   &.label-rounded {
     border-radius: 5rem;

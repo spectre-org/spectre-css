@@ -65,14 +65,14 @@ abbr[title] {
 }
 
 kbd {
-  font-size: .65rem;
   @include label-base();
   @include label-variant($light-color, $dark-color);
+  font-size: .65rem;
 }
 
 mark {
-  border-radius: $border-radius;
   @include label-variant($body-font-color, $highlight-color);
+  border-radius: $border-radius;
   padding: .05rem;
 }
 

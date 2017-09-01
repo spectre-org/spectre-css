@@ -3,6 +3,7 @@
 ### [v0.4.0](https://github.com/picturepan2/spectre/releases/tag/v0.4.0)
 
 - Switch from LESS to SASS
+- Add Cursor utilities
 
 ### [v0.3.2](https://github.com/picturepan2/spectre/releases/tag/v0.3.2)
 

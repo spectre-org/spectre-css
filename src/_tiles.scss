@@ -31,8 +31,8 @@
 
     .tile-title,
     .tile-subtitle {
-      margin-bottom: 0;
       @include text-ellipsis();
+      margin-bottom: 0;
     }
   }
 }
