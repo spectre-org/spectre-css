@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Elements - Spectre.css CSS Framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
@@ -14,24 +14,18 @@
 <body>
   <div class="s-container container">
     <div class="columns">
-      <div class="s-brand">
-        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
-          <h2>Spectre.css</h2>
-        </a>
-        <div class="menu-btn">
-          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
-        </div>
-        <div class="float-btn">
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </div>
-      </div>
       <div id="sidebar" class="s-sidebar">
+        <div class="s-brand">
+          <a href="index.html" class="s-logo">
+            <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+            <h2>Spectre.css</h2>
+          </a>
+        </div>
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-1">
+              <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
               </label>
               <div class="accordion-body">
@@ -56,7 +50,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden checked />
-              <label class="accordion-header hand" for="docs-accordion-2">
+              <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
               </label>
               <div class="accordion-body">
@@ -90,7 +84,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-3">
+              <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
               </label>
               <div class="accordion-body">
@@ -109,7 +103,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-4">
+              <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
               </label>
               <div class="accordion-body">
@@ -179,13 +173,16 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-5">
+              <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
               </label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
                   <li class="menu-item">
                     <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#cursors">Cursors</a>
                   </li>
                   <li class="menu-item">
                     <a href="utilities.html#display">Display</a>
@@ -210,7 +207,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-6">
+              <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
               </label>
               <div class="accordion-body">
@@ -249,6 +246,17 @@
         </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+      <div class="s-navbar">
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <a href="index.html" class="s-logo">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+        </a>
+        <div class="float-btn">
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
 
       <div id="content" class="s-content">
         <div id="typography" class="container">
@@ -297,78 +305,78 @@
 
           <h4 id="typography-semantic-text" class="s-subtitle">Semantic text elements</h4>
           <div class="columns">
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <abbr title="Internationalization">I18N</abbr>
               <code class="ml-10">&lt;abbr&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <strong>Bold</strong>
               <code class="ml-10">&lt;strong&gt;</code> <code>&lt;b&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <cite>Citation</cite>
               <code class="ml-10">&lt;cite&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <code>Hello World!</code>
               <code class="ml-10">&lt;code&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <del>Deleted</del>
               <code class="ml-10">&lt;del&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <em>Emphasis</em>
               <code class="ml-10">&lt;em&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <i>Italic</i>
               <code class="ml-10">&lt;i&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <ins>Inserted</ins>
               <code class="ml-10">&lt;ins&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <kbd>Ctrl + S</kbd>
               <code class="ml-10">&lt;kbd&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <mark>Highlighted</mark>
               <code class="ml-10">&lt;mark&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <ruby>
                 漢 <rt>kan</rt>
                 字 <rt>ji</rt>
               </ruby>
               <code class="ml-10">&lt;ruby&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <s>Strikethrough</s>
               <code class="ml-10">&lt;s&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <samp>Sample</samp>
               <code class="ml-10">&lt;samp&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               Text <sub>Subscripted</sub>
               <code class="ml-10">&lt;sub&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               Text <sup>Superscripted</sup>
               <code class="ml-10">&lt;sup&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <time>20:00</time>
               <code class="ml-10">&lt;time&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <u>Underline</u>
               <code class="ml-10">&lt;u&gt;</code>
             </div>
-            <div class="column col-4 col-xs-12">
+            <div class="column col-6 col-xs-12">
               <var>x</var> = <var>y</var> + 2
               <code class="ml-10">&lt;var&gt;</code>
             </div>
@@ -377,13 +385,13 @@
           <h4 id="typography-east-asian" class="s-subtitle">Optimized for east asian fonts</h4>
           <h5><small lang="zh-Hans">你好</small>, <small lang="ja">こんにちは</small>, <small lang="ko">안녕하세요</small></h5>
           <div class="docs-note">
-            <h6>Chinese (Simplified)</h6>
+            <p class="h6">Chinese (Simplified)</p>
             <p lang="zh-Hans">革命不是请客吃饭，不是做文章，不是绘画绣花，不能那样雅致，那样从容不迫，“文质彬彬”，那样“温良恭俭让”。革命就是暴动，是一个阶级推翻一个阶级的暴烈的行动。</p>
-            <h6>Chinese (Tranditional)</h6>
+            <p class="h6">Chinese (Tranditional)</p>
             <p lang="zh-Hant">山不在高，有仙則名；水不在深，有龍則靈。斯是陋室，惟吾德馨。苔痕上階綠，草色入簾青；談笑有鴻儒，往來無白丁。可以調素琴，閱金經。無絲竹之亂耳，無案牘之勞形。南陽諸葛廬，西蜀子雲亭。孔子云：「何陋之有？」</p>
-            <h6>Japanese</h6>
+            <p class="h6">Japanese</p>
             <p lang="ja">祇園精舎の鐘の声、諸行無常の響きあり。沙羅双樹の花の色、盛者必衰の理をあらはす。おごれる人も久しからず。ただ春の夜の夢のごとし。たけき者も遂にはほろびぬ、ひとへ‌​に風の前の塵に同じ。</p>
-            <h6>Korean</h6>
+            <p class="h6">Korean</p>
             <p lang="ko">나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로, 어리석은 백성들이 말하고자 하는 바가 있어도, 끝내 제 뜻을 펴지 못하는 사람이 많다. 내가 이를 불쌍히 여겨, 새로 스물 여덟 글자를 만드니, 사람마다 하여금 쉽게 익혀, 날마다 씀에 편하게 하고자 할 따름이다.</p>
           </div>
           <div class="docs-note">

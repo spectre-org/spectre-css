@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Getting started - Spectre.css CSS Framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
@@ -14,24 +14,18 @@
 <body>
   <div class="s-container container">
     <div class="columns">
-      <div class="s-brand">
-        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
-          <h2>Spectre.css</h2>
-        </a>
-        <div class="menu-btn">
-          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
-        </div>
-        <div class="float-btn">
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </div>
-      </div>
       <div id="sidebar" class="s-sidebar">
+        <div class="s-brand">
+          <a href="index.html" class="s-logo">
+            <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+            <h2>Spectre.css</h2>
+          </a>
+        </div>
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden checked />
-              <label class="accordion-header hand" for="docs-accordion-1">
+              <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
               </label>
               <div class="accordion-body">
@@ -56,7 +50,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-2">
+              <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
               </label>
               <div class="accordion-body">
@@ -90,7 +84,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-3">
+              <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
               </label>
               <div class="accordion-body">
@@ -109,7 +103,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-4">
+              <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
               </label>
               <div class="accordion-body">
@@ -179,13 +173,16 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-5">
+              <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
               </label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
                   <li class="menu-item">
                     <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#cursors">Cursors</a>
                   </li>
                   <li class="menu-item">
                     <a href="utilities.html#display">Display</a>
@@ -210,7 +207,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-6">
+              <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
               </label>
               <div class="accordion-body">
@@ -249,6 +246,17 @@
         </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+      <div class="s-navbar">
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <a href="index.html" class="s-logo">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+        </a>
+        <div class="float-btn">
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
 
       <div id="content" class="s-content">
         <div id="introduction" class="container">
@@ -265,7 +273,7 @@
             <p>There are 5 ways to get started with Spectre CSS framework in your projects. You can either install manually, from CDN or use NPM, Yarn and Bower.</p>
           </div>
           <div class="docs-note">
-            <h5>Install manually</h5>
+            <p class="h5">Install manually</p>
             <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/releases" target="_blank">Spectre CSS file</a> (core ~10KB min+gzip):</p>
             <p><a href="https://github.com/picturepan2/spectre/releases" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
             <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
@@ -278,45 +286,49 @@
 </code></pre>
 
           <div class="docs-note">
-            <h5>Install from CDN</h5>
-            <p>Alternatively, you can use the <a href="https://unpkg.com/" target="_blank">unpkg</a> CDN to load compiled Spectre.css.</p>
+            <p class="h5">Install from CDN</p>
+            <p>Alternatively, you can use the <a href="https://unpkg.com/" target="_blank">unpkg</a> or <a href="https://cdnjs.com/libraries/spectre.css" target="_blank">cdnjs</a> CDN to load compiled Spectre.css.</p>
           </div>
 
 <!-- install from CDN example -->
 <pre class="code"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-exp.min.css&quot;</span> /&gt;
+&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-icons.min.css&quot;</span> /&gt;
 </code></pre>
 
           <div class="docs-note">
-            <h5>Install with NPM</h5>
+            <p class="h5">Install with NPM</p>
+          </div>
 
 <!-- install with npm example -->
 <pre class="code"><code><span class="tag">$</span> npm install <span class="atv">spectre.css</span> --save
 </code></pre>
 
-          </div>
           <div class="docs-note">
-            <h5>Install with Yarn</h5>
+            <p class="h5">Install with Yarn</p>
+          </div>
 
 <!-- install with yarn example -->
 <pre class="code"><code><span class="tag">$</span> yarn add <span class="atv">spectre.css</span>
 </code></pre>
 
-          </div>
           <div class="docs-note">
-            <h5>Install with Bower</h5>
+            <p class="h5">Install with Bower</p>
+          </div>
 
 <!-- install with bower example -->
 <pre class="code"><code><span class="tag">$</span> bower install <span class="atv">spectre.css</span> --save
 </code></pre>
 
-          </div>
         </div>
 
         <div id="compiling" class="container">
           <h3 class="s-title"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
           <div class="docs-note">
-            <p>You can customize your version of Spectre.css by editing LESS files in <code>/src</code> directory or removing unneeded components from <code>.less</code> source files.</p>
-            <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">Spectre.css Source Code</a></p>
+            <p>You can customize your version of Spectre.css by editing SASS files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
+            <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">SASS Source Code</a></p>
+            <p>If you are looking for LESS version of Spectre.css, please switch to <code>LESS</code> branch.</p>
+            <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">LESS Branch</a></p>
           </div>
           <h4 id="compiling-steps" class="s-subtitle">Compiling CSS</h4>
           <div class="docs-note">
@@ -325,12 +337,12 @@
             <ol>
               <li>Navigate to the root directory of Spectre.</li>
               <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-              <li>When completed, run <code>gulp build</code> task to compile LESS to CSS and minify files.</li>
+              <li>When completed, run <code>gulp build</code> task to compile SASS to CSS and minify files.</li>
               <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
             </ol>
             <p>All available Gulp tasks:</p>
             <ul>
-              <li><code>gulp build</code> - compile LESS to CSS and minify files (default)</li>
+              <li><code>gulp build</code> - compile SASS to CSS and minify files (default)</li>
               <li><code>gulp docs</code> - compile Docs related files</li>
               <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
             </ul>
@@ -340,7 +352,7 @@
 
 <!-- folder structure -->
 <pre class="code"><code>spectre/
-├── dist/                               <span class="com">// Build folder (Git ignored)</span>
+├── dist/                           <span class="com">// Build folder (Git ignored)</span>
 │   ├── spectre-exp.css
 │   ├── spectre-exp.min.css
 │   ├── spectre-icons.css
@@ -349,34 +361,39 @@
 │   └── spectre.min.css
 │
 ├── docs/
-│   ├── dist/                           <span class="com">// Pre-built CSS folder</span>
+│   ├── dist/                       <span class="com">// Pre-built CSS folder</span>
 │   │   ├── spectre-exp.css
 │   │   ├── spectre-exp.min.css
 │   │   ├── spectre-icons.css
 │   │   ├── spectre-icons.min.css
 │   │   ├── spectre.css
 │   │   └── spectre.min.css
-|   ├── css/                            <span class="com">// Docs CSS file</span>
+|   ├── css/                        <span class="com">// Docs CSS file</span>
 │   │   └── docs.css
 |   ├── src/
-│   │   └── docs.less
+│   │   └── docs.scss
+│   ├── examples/                   <span class="com">// Example tempalte</span>
+│   │   └── starter.html
 │   ├── ../
 │   ├── index.html
 │   └── ...
 │
-├── src/                                <span class="com">// Source LESS files</span>
-│   ├── mixins.less
-│   ├── variables.less
+├── src/                            <span class="com">// Source SASS files</span>
+│   ├── spectre.scss
+│   ├── spectre-icons.scss
+│   ├── spectre-exp.scss
+│   ├── _mixins.scss
+│   ├── _variables.scss
 │   └── ...
 │
-├── spectre-exp.less
-├── spectre-icons.less
-└── spectre.less
+├── gulpfile.js
+├── package.json
+└── ...
 </code></pre>
 
           <h4 id="variables" class="s-subtitle"><a href="#variables" class="anchor" aria-hidden="true">#</a>Variables</h4>
           <div class="docs-note">
-            <p>Spectre.css is designed with consistent design language. You can modify <code>variables.less</code> to create your new or match existing design.</p>
+            <p>Spectre.css is designed with consistent design language. You can modify <code>_variables.scss</code> to create your new or match existing design.</p>
           </div>
           <h5 id="variables-colors" class="s-subtitle">Colors</h5>
           <div class="columns">
@@ -390,6 +407,26 @@
               <div class="docs-color" style="background:#eff1fa;color:#5764c6;">
                 <div class="color-title">#eff1fa</div>
                 <div class="color-subtitle">Secondary</div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column col-3 col-md-6">
+              <div class="docs-color" style="background:#32b643;color:#fff;">
+                <div class="color-title">#32b643</div>
+                <div class="color-subtitle">Success</div>
+              </div>
+            </div>
+            <div class="column col-3 col-md-6">
+              <div class="docs-color" style="background:#ffb700;color:#fff;">
+                <div class="color-title">#ffb700</div>
+                <div class="color-subtitle">Warning</div>
+              </div>
+            </div>
+            <div class="column col-3 col-md-6">
+              <div class="docs-color" style="background:#e85600;color:#fff;">
+                <div class="color-title">#e85600</div>
+                <div class="color-subtitle">Error</div>
               </div>
             </div>
           </div>
@@ -437,44 +474,24 @@
               </div>
             </div>
           </div>
-          <div class="columns">
-            <div class="column col-3 col-md-6">
-              <div class="docs-color" style="background:#32b643;color:#fff;">
-                <div class="color-title">#32b643</div>
-                <div class="color-subtitle">Success</div>
-              </div>
-            </div>
-            <div class="column col-3 col-md-6">
-              <div class="docs-color" style="background:#ffb700;color:#fff;">
-                <div class="color-title">#ffb700</div>
-                <div class="color-subtitle">Warning</div>
-              </div>
-            </div>
-            <div class="column col-3 col-md-6">
-              <div class="docs-color" style="background:#e85600;color:#fff;">
-                <div class="color-title">#e85600</div>
-                <div class="color-subtitle">Error</div>
-              </div>
-            </div>
-          </div>
 
           <h5 id="variables-buttons" class="s-subtitle">Buttons</h5>
           <div class="docs-note">
-            <p>There are 2 button variant mixins in <code>mixins.less</code> to generate different color variants. </p>
+            <p>There are 2 button variant mixins in <code>_mixins.scss</code> to generate different color variants. </p>
             <ul>
-              <li>.button-variant(<code>@color</code>: @primary-color);</li>
-              <li>.button-outline-variant(<code>@color</code>: @primary-color);</li>
+              <li>@mixin button-variant(<code>$color</code>: $primary-color);</li>
+              <li>@mixin button-outline-variant(<code>$color</code>: $primary-color);</li>
             </ul>
 
 <!-- button variables example -->
-<pre class="code" data-lang="LESS"><code><span class="com">&lt;!-- filled button with the success color --&gt;</span>
+<pre class="code" data-lang="SASS"><code><span class="com">&lt;!-- filled button with the success color --&gt;</span>
 <span class="tag">.btn-success</span> {
-  .button-variant(<span class="atv">@success-color</span>);
+  <span class="tag">@include</span> button-variant(<span class="atv">$success-color</span>);
 }
 
 <span class="com">&lt;!-- outlined button with the success color --&gt;</span>
 <span class="tag">.btn-outline-success</span> {
-  .button-outline-variant(<span class="atv">@success-color</span>);
+  <span class="tag">@include</span> button-outline-variant(<span class="atv">$success-color</span>);
 }
 </code></pre>
           </div>
@@ -525,7 +542,7 @@ gulp.task('prefix', function() {
             <ul>
               <li>Chrome <small class="label label-success">LAST 4</small></li>
               <li>Microsoft Edge <small class="label label-success">LAST 4</small></li>
-              <li>Firefox <small class="label label-success">LAST 4</small></li>
+              <li>Firefox <small class="label label-success text-uppercase">Extended Support Release</small></li>
               <li>Safari <small class="label label-success">LAST 4</small></li>
               <li>Opera <small class="label label-success">LAST 4</small></li>
               <li>Internet Explorer 10+</li>
@@ -538,6 +555,9 @@ gulp.task('prefix', function() {
           <div class="docs-note">
             <p><strong>August 2017</strong></p>
             <ul>
+              <li>
+                <a href="getting-started.html">Switch to SASS</a> <small class="label label-primary">NEW</small>
+              </li>
               <li>
                 <a href="getting-started.html">New Docs Experience</a> <small class="label label-primary">NEW</small>
               </li>

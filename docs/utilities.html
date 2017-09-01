@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Utilities - Spectre.css CSS Framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
@@ -14,24 +14,18 @@
 <body>
   <div class="s-container container">
     <div class="columns">
-      <div class="s-brand">
-        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
-          <h2>Spectre.css</h2>
-        </a>
-        <div class="menu-btn">
-          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
-        </div>
-        <div class="float-btn">
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </div>
-      </div>
       <div id="sidebar" class="s-sidebar">
+        <div class="s-brand">
+          <a href="index.html" class="s-logo">
+            <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+            <h2>Spectre.css</h2>
+          </a>
+        </div>
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-1">
+              <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
               </label>
               <div class="accordion-body">
@@ -56,7 +50,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-2">
+              <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
               </label>
               <div class="accordion-body">
@@ -90,7 +84,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-3">
+              <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
               </label>
               <div class="accordion-body">
@@ -109,7 +103,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-4">
+              <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
               </label>
               <div class="accordion-body">
@@ -179,13 +173,16 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden checked />
-              <label class="accordion-header hand" for="docs-accordion-5">
+              <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
               </label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
                   <li class="menu-item">
                     <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#cursors">Cursors</a>
                   </li>
                   <li class="menu-item">
                     <a href="utilities.html#display">Display</a>
@@ -210,7 +207,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-6">
+              <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
               </label>
               <div class="accordion-body">
@@ -249,6 +246,17 @@
         </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+      <div class="s-navbar">
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <a href="index.html" class="s-logo">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+        </a>
+        <div class="float-btn">
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
 
       <div id="content" class="s-content">
         <div id="colors" class="container">
@@ -316,6 +324,49 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-success&quot;</span>&gt;success bg&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-warning&quot;</span>&gt;warning bg&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;bg-error&quot;</span>&gt;error bg&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="cursors" class="container">
+          <h3 class="s-title"><a href="#cursors" class="anchor" aria-hidden="true">#</a>Cursor utilities</h3>
+          <div class="docs-note">
+            <p>Cursor utilities specify which mouse cursor to display when mouseover.</p>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="bg-gray docs-block c-hand">c-hand</div>
+            </div>
+            <div class="column">
+              <div class="bg-gray docs-block c-move">c-move</div>
+            </div>
+            <div class="column">
+              <div class="bg-gray docs-block c-zoom-in">c-zoom-in</div>
+            </div>
+            <div class="column">
+              <div class="bg-gray docs-block c-zoom-out">c-zoom-out</div>
+            </div>
+            <div class="column">
+              <div class="bg-gray docs-block c-not-allowed">c-not-allowed</div>
+            </div>
+            <div class="column">
+              <div class="bg-gray docs-block c-auto">c-auto</div>
+            </div>
+          </div>
+
+<!-- display utilities example -->
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- cursor: hand; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-hand&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- cursor: move; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-move&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- cursor: zoom-in; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-zoom-in&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- cursor: zoom-out; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-zoom-out&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- cursor: not-allowed; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-not-allowed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+<span class="com">&lt;!-- cursor: auto; --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;c-auto&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </div>
@@ -442,7 +493,6 @@
           <div class="columns">
             <div class="column col-12 text-center">
               <div class="loading loading-lg"></div>
-              <p class="text-gray">Loading</p>
             </div>
           </div>
 
@@ -472,6 +522,7 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;fixed&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 <span class="com">&lt;!-- centered block --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;centered&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+
 <span class="com">&lt;!-- m-1 {margin: 4px;} m-2 {margin: 8px;} --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;m-1&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;m-2&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;

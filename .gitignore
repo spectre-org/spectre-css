@@ -2,6 +2,8 @@
 /dist/
 node_modules/
 .*
+!.csscomb.json
 !.gitignore
 !.gitattributes
-!.csscomb.json
+!.hound.yml
+!.scss-lint.yml

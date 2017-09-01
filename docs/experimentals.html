@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="author" content="https://github.com/picturepan2/" />
   <title>Experimentals - Spectre.css CSS Framework</title>
   <link rel="stylesheet" href="dist/spectre.css" />
@@ -15,24 +15,18 @@
 <body>
   <div class="s-container container">
     <div class="columns">
-      <div class="s-brand">
-        <a href="index.html" class="s-logo tooltip tooltip-bottom" data-tooltip="Spectre.css CSS Framework">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
-          <h2>Spectre.css</h2>
-        </a>
-        <div class="menu-btn">
-          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
-        </div>
-        <div class="float-btn">
-          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
-        </div>
-      </div>
       <div id="sidebar" class="s-sidebar">
+        <div class="s-brand">
+          <a href="index.html" class="s-logo">
+            <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+            <h2>Spectre.css</h2>
+          </a>
+        </div>
         <div class="s-nav">
           <div class="accordion">
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-1">
+              <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
               </label>
               <div class="accordion-body">
@@ -57,7 +51,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-2">
+              <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
               </label>
               <div class="accordion-body">
@@ -91,7 +85,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-3">
+              <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
               </label>
               <div class="accordion-body">
@@ -110,7 +104,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-4">
+              <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
               </label>
               <div class="accordion-body">
@@ -180,13 +174,16 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden />
-              <label class="accordion-header hand" for="docs-accordion-5">
+              <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
               </label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
                   <li class="menu-item">
                     <a href="utilities.html#colors">Colors</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="utilities.html#cursors">Cursors</a>
                   </li>
                   <li class="menu-item">
                     <a href="utilities.html#display">Display</a>
@@ -211,7 +208,7 @@
             </div>
             <div class="accordion-item">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden checked />
-              <label class="accordion-header hand" for="docs-accordion-6">
+              <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
               </label>
               <div class="accordion-body">
@@ -250,6 +247,17 @@
         </div>
       </div>
       <a href="#sidebar-close" id="sidebar-close" class="docs-nav-clear"></a>
+      <div class="s-navbar">
+        <div class="menu-btn">
+          <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
+        </div>
+        <a href="index.html" class="s-logo">
+          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework" />
+        </a>
+        <div class="float-btn">
+          <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
 
       <div id="content" class="s-content">
         <div id="experimentals" class="container">
@@ -476,10 +484,10 @@
                   </figure>
                 </div>
                 <div class="carousel-nav">
-                  <label class="nav-item text-hide hand" for="slide-1">1</label>
-                  <label class="nav-item text-hide hand" for="slide-2">2</label>
-                  <label class="nav-item text-hide hand" for="slide-3">3</label>
-                  <label class="nav-item text-hide hand" for="slide-4">4</label>
+                  <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+                  <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+                  <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+                  <label class="nav-item text-hide c-hand" for="slide-4">4</label>
                 </div>
               </div>
             </div>
@@ -715,7 +723,7 @@
             <p>The Parallax acts like Apple TV/tvOS hover parallax effect. It is built in pure CSS.</p>
           </div>
           <div class="columns">
-            <div class="column col-sm-12 col-8 centered">
+            <div class="column col-sm-12 col-8 col-mx-auto">
               <div class="parallax">
                 <div class="parallax-top-left"></div>
                 <div class="parallax-top-right"></div>
@@ -744,7 +752,7 @@
       &lt;<span class="tag">h2</span>&gt;tvOS parallax demo&lt;<span class="tag">/h2</span>&gt;
     &lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-back&quot;</span>&gt;
-      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;macOS El Capitan Wallpaper&quot;</span> /&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> ... /&gt;
     &lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;

@@ -23,8 +23,8 @@
   "tab-size": true,
   "unitless-zero": true,
   "sort-order": [[
-      "$variable",
-      "$include",
-      "$import"
+    "$variable",
+    "$include",
+    "$import"
   ]]
 }

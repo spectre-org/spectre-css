@@ -1,49 +1,49 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var cleancss = require('gulp-clean-css');
 var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
-var LessPluginAutoPrefix = require('less-plugin-autoprefix');
+var autoprefixer = require('gulp-autoprefixer');
 
-var autoprefix= new LessPluginAutoPrefix({ browsers: ["last 4 versions", "Explorer >= 10", "Firefox ESR"] });
+var paths = {
+  source: './src/*.scss',
+  doc: './docs/src/*.scss'
+};
 
 gulp.task('watch', function() {
-    gulp.watch('./**/*.less', ['build']);
-    gulp.watch('./**/*.less', ['docs']);
+  gulp.watch('./**/*.scss', ['build']);
+  gulp.watch('./**/*.scss', ['docs']);
 });
 
 gulp.task('build', function() {
-    gulp.src('./*.less')
-        .pipe(less({
-            plugins: [autoprefix]
-        }))
-        .pipe(csscomb())
-        .pipe(gulp.dest('./dist'))
-        .pipe(cleancss())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('./dist'));
+  gulp.src(paths.source)
+    .pipe(sass({outputStyle: 'compact', precision: 10}))
+    .pipe(autoprefixer())
+    .pipe(csscomb())
+    .pipe(gulp.dest('./dist'))
+    .pipe(cleancss())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('docs', function() {
-    gulp.src('./docs/src/*.less')
-        .pipe(less({
-            plugins: [autoprefix]
-        }))
-        .pipe(csscomb())
-        .pipe(gulp.dest('./docs/css'));
-    gulp.src('./*.less')
-        .pipe(less({
-            plugins: [autoprefix]
-        }))
-        .pipe(csscomb())
-        .pipe(gulp.dest('./docs/dist'))
-        .pipe(cleancss())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('./docs/dist'));
+  gulp.src(paths.doc)
+    .pipe(sass({outputStyle: 'compact', precision: 10}))
+    .pipe(autoprefixer())
+    .pipe(csscomb())
+    .pipe(gulp.dest('./docs/css'));
+  gulp.src(paths.source)
+    .pipe(sass({outputStyle: 'compact', precision: 10}))
+    .pipe(autoprefixer())
+    .pipe(csscomb())
+    .pipe(gulp.dest('./docs/dist'))
+    .pipe(cleancss())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./docs/dist'));
 });
 
 gulp.task('default', ['build']);
