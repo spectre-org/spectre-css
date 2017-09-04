@@ -206,6 +206,13 @@
     .atv {
       color: #e06870;
     }
+
+    &[data-lang="Bash"] {
+      .tag {
+        user-select: none;
+        margin-right: 1em;
+      }
+    }
   }
 
   .empty .icon {

@@ -61,6 +61,11 @@ a:hover {
   outline-width: 0;
 }
 
+/** Modify default styling of address. */
+address {
+  font-style: normal;
+}
+
 /** 1. Remove the bottom border in Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. (removed) */
 /** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
 b,

@@ -206,6 +206,14 @@
   color: #e06870;
 }
 
+.s-content .code[data-lang="Bash"] .tag {
+  margin-right: 1em; 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .s-content .empty .icon {
   font-size: 2rem;
 }
