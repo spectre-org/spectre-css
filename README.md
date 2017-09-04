@@ -17,12 +17,12 @@ There are 5 ways to get started with Spectre CSS framework in your projects. You
 #### Install manually
 Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
 
-`<link rel="stylesheet" href="spectre.min.css" />`
+`<link rel="stylesheet" href="spectre.min.css">`
 
 #### Install from CDN
 Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled Spectre.css.
 
-`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />`
+`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">`
 
 #### Install with NPM
 `$ npm install spectre.css --save`
