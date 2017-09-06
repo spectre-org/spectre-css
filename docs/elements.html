@@ -22,8 +22,8 @@
           </a>
         </div>
         <div class="s-nav">
-          <div class="accordion">
-            <div class="accordion-item">
+          <div class="accordion-container">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
@@ -48,7 +48,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden checked>
               <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
@@ -82,7 +82,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
@@ -101,7 +101,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
@@ -171,7 +171,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
@@ -205,7 +205,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
@@ -286,7 +286,7 @@
             </div>
           </div>
 
-<!-- headings example -->
+<!-- headings -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">h1</span>&gt;H1 Heading&lt;<span class="tag">/h1</span>&gt;
 &lt;<span class="tag">h1</span>&gt;H1 Heading &lt;<span class="tag">small</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;40px&lt;<span class="tag">/small</span>&gt;&lt;<span class="tag">/h1</span>&gt;
 &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;h1&quot;</span>&gt;H1 Heading&lt;<span class="tag">/span</span>&gt;
@@ -298,7 +298,7 @@
             <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
           </div>
 
-<!-- paragraphs example -->
+<!-- paragraphs -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span>&gt;Lorem ipsum dolor sit amet, ...&lt;<span class="tag">/p</span>&gt;
 &lt;<span class="tag">p</span>&gt;...&lt;<span class="tag">/p</span>&gt;
 </code></pre>
@@ -307,78 +307,78 @@
           <div class="columns">
             <div class="column col-6 col-xs-12">
               <abbr title="Internationalization">I18N</abbr>
-              <code class="ml-10">&lt;abbr&gt;</code>
+              <code class="ml-2">&lt;abbr&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <strong>Bold</strong>
-              <code class="ml-10">&lt;strong&gt;</code> <code>&lt;b&gt;</code>
+              <code class="ml-2">&lt;strong&gt;</code> <code>&lt;b&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <cite>Citation</cite>
-              <code class="ml-10">&lt;cite&gt;</code>
+              <code class="ml-2">&lt;cite&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <code>Hello World!</code>
-              <code class="ml-10">&lt;code&gt;</code>
+              <code class="ml-2">&lt;code&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <del>Deleted</del>
-              <code class="ml-10">&lt;del&gt;</code>
+              <code class="ml-2">&lt;del&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <em>Emphasis</em>
-              <code class="ml-10">&lt;em&gt;</code>
+              <code class="ml-2">&lt;em&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <i>Italic</i>
-              <code class="ml-10">&lt;i&gt;</code>
+              <code class="ml-2">&lt;i&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <ins>Inserted</ins>
-              <code class="ml-10">&lt;ins&gt;</code>
+              <code class="ml-2">&lt;ins&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <kbd>Ctrl + S</kbd>
-              <code class="ml-10">&lt;kbd&gt;</code>
+              <code class="ml-2">&lt;kbd&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <mark>Highlighted</mark>
-              <code class="ml-10">&lt;mark&gt;</code>
+              <code class="ml-2">&lt;mark&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <ruby>
                 漢 <rt>kan</rt>
                 字 <rt>ji</rt>
               </ruby>
-              <code class="ml-10">&lt;ruby&gt;</code>
+              <code class="ml-2">&lt;ruby&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <s>Strikethrough</s>
-              <code class="ml-10">&lt;s&gt;</code>
+              <code class="ml-2">&lt;s&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <samp>Sample</samp>
-              <code class="ml-10">&lt;samp&gt;</code>
+              <code class="ml-2">&lt;samp&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               Text <sub>Subscripted</sub>
-              <code class="ml-10">&lt;sub&gt;</code>
+              <code class="ml-2">&lt;sub&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               Text <sup>Superscripted</sup>
-              <code class="ml-10">&lt;sup&gt;</code>
+              <code class="ml-2">&lt;sup&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <time>20:00</time>
-              <code class="ml-10">&lt;time&gt;</code>
+              <code class="ml-2">&lt;time&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <u>Underline</u>
-              <code class="ml-10">&lt;u&gt;</code>
+              <code class="ml-2">&lt;u&gt;</code>
             </div>
             <div class="column col-6 col-xs-12">
               <var>x</var> = <var>y</var> + 2
-              <code class="ml-10">&lt;var&gt;</code>
+              <code class="ml-2">&lt;var&gt;</code>
             </div>
           </div>
 
@@ -398,7 +398,7 @@
             <p>Use the <code>lang</code> attribute to the container element to have better Asian CJK (Chinese, Japanese and Korean) font support. </p>
           </div>
 
-<!-- east asian example -->
+<!-- east asian -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;zh-Hans&quot;</span>&gt;革命不是请客吃饭，不是做文章……&lt;<span class="tag">/p</span>&gt;
 &lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ja&quot;</span>&gt;祇園精舎の鐘の声、諸行無常の響きあり……&lt;<span class="tag">/p</span>&gt;
 &lt;<span class="tag">p</span> <span class="atn">lang</span>=<span class="atv">&quot;ko&quot;</span>&gt;나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로……&lt;<span class="tag">/p</span>&gt;
@@ -412,7 +412,7 @@
             <p lang="ja"><del>祇園</del><del>精舎</del>の鐘の声、諸行無常の響きあり。</p>
           </div>
 
-<!-- east asian example -->
+<!-- east asian -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;&lt;<span class="tag">u</span>&gt;祇園&lt;<span class="tag">/u</span>&gt;&lt;<span class="tag">u</span>&gt;精舎&lt;<span class="tag">/u</span>&gt;の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
 &lt;<span class="tag">p</span> <span class="atn">class</span>=<span class="atv">&quot;cjk&quot;</span>&gt;&lt;<span class="tag">del</span>&gt;祇園&lt;<span class="tag">/del</span>&gt;&lt;<span class="tag">del</span>&gt;精舎&lt;<span class="tag">/del</span>&gt;の鐘の声、諸行無常の響きあり。……&lt;<span class="tag">/p</span>&gt;
 </code></pre>
@@ -442,7 +442,7 @@
             <cite>- Bill Gates</cite>
           </blockquote>
 
-<!-- blockquote example -->
+<!-- blockquote -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">blockquote</span>&gt;
   &lt;<span class="tag">p</span>&gt;The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. &lt;<span class="tag">/p</span>&gt;
   &lt;<span class="tag">cite</span>&gt;- Bill Gates&lt;<span class="tag">/cite</span>&gt;
@@ -489,7 +489,7 @@
             </div>
           </div>
 
-<!-- lists example -->
+<!-- lists -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- unordered list --&gt;</span>
 &lt;<span class="tag">ul</span>&gt;
   &lt;<span class="tag">li</span>&gt;list item 1&lt;<span class="tag">/li</span>&gt;
@@ -553,7 +553,7 @@
             <p>Use the <code>active</code> class to make &lt;tr&gt; element highlighted. </p>
           </div>
 
-<!-- tables example -->
+<!-- tables -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
   &lt;<span class="tag">thead</span>&gt;
     &lt;<span class="tag">tr</span>&gt;
@@ -591,7 +591,7 @@
             <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. </p>
           </div>
 
-<!-- buttons example -->
+<!-- buttons -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
@@ -616,7 +616,7 @@
             <p>Add the <code>btn-sm</code> or <code>btn-lg</code> class for small or large button size. Also, you can add the <code>btn-block</code> class for a full-width button. </p>
           </div>
 
-<!-- buttons example -->
+<!-- buttons -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-lg&quot;</span>&gt;large button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-sm&quot;</span>&gt;small button&lt;<span class="tag">/button</span>&gt;
 
@@ -644,7 +644,7 @@
             </div>
           </div>
 
-<!-- buttons example -->
+<!-- buttons -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-action circle&quot;</span>&gt;&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;&lt;<span class="tag">/button</span>&gt;
 </code></pre>
@@ -663,7 +663,7 @@
             </div>
           </div>
 
-<!-- buttons example -->
+<!-- buttons -->
 <pre class="code" data-lang="HTML"><code>
 <span class="com">&lt;!-- buttons with disabled state --&gt;</span>
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
@@ -682,7 +682,7 @@
             </div>
           </div>
 
-<!-- buttons example -->
+<!-- buttons -->
 <pre class="code" data-lang="HTML"><code>
 <span class="com">&lt;!-- buttons with disabled state --&gt;</span>
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
@@ -701,7 +701,7 @@
             </div>
           </div>
 
-<!-- buttons example -->
+<!-- buttons -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- a button with loading state --&gt;</span>
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn loading&quot;</span>&gt;button&lt;<span class="tag">/button</span>&gt;
 </code></pre>
@@ -743,7 +743,7 @@
             <p>If you want to use buttons as a group, add the <code>btn-group</code> class to the container. You can add the <code>btn-group-block</code> class for a full-width button group.</p>
           </div>
 
-<!-- button groups example -->
+<!-- button groups -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn-group btn-group-block&quot;</span>&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;first button&lt;<span class="tag">/button</span>&gt;
   &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;second button&lt;<span class="tag">/button</span>&gt;
@@ -1001,7 +1001,7 @@
             </div>
           </div>
 
-<!-- forms example -->
+<!-- forms -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span> <span class="atn">class</span>=<span class="atv">&quot;form-horizontal&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;col-3&quot;</span>&gt;
@@ -1098,7 +1098,7 @@
             </div>
           </div>
 
-<!-- form icons example -->
+<!-- form icons -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form input with Spectre icon --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;has-icon-left&quot;</span>&gt;
   &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;...&quot;</span>&gt;
@@ -1280,7 +1280,7 @@
             <p>If you want to attach text and button along with an input, add the <code>input-group</code> class to the input container. And add the <code>input-group-addon</code> class to the text element and <code>input-group-btn</code> to the button element.</p>
           </div>
 
-<!-- input groups example -->
+<!-- input groups -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- normal input group --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group&quot;</span>&gt;
   &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;input-group-addon&quot;</span>&gt;...&lt;<span class="tag">/span</span>&gt;
@@ -1374,7 +1374,7 @@
             </div>
           </div>
 
-<!-- forms example -->
+<!-- forms -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">form</span>&gt;
   <span class="com">&lt;!-- form validation class: has-success --&gt;</span>
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group has-success&quot;</span>&gt;
@@ -1696,7 +1696,7 @@
             </div>
           </div>
 
-<!-- icons example -->
+<!-- icons -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-menu&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
 </code></pre>
 
@@ -1734,7 +1734,7 @@
             <p>Add the <code>label-rounded</code> class to have rounded labels.</p>
           </div>
 
-<!-- labels example -->
+<!-- labels -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label&quot;</span>&gt;default label&lt;<span class="tag">/span</span>&gt;
 &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;label label-primary&quot;</span>&gt;primary label&lt;<span class="tag">/span</span>&gt;
 </code></pre>
@@ -1754,7 +1754,7 @@
 &lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
-<!-- codes example -->
+<!-- codes -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">pre</span> <span class="atn">class</span>=<span class="atv">&quot;code&quot;</span> <span class="atn">data-lang</span>=<span class="atv">&quot;HTML&quot;</span>&gt;&lt;<span class="tag">code</span>&gt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;com&quot;</span>&gt;&amp;lt;!-- code snippets --&amp;gt;&lt;<span class="tag">/span</span>&gt;
 &amp;lt;&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;tag&quot;</span>&gt;button&lt;<span class="tag">/span</span>&gt; &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;atn&quot;</span>&gt;class&lt;<span class="tag">/span</span>&gt;=&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;atv&quot;</span>&gt;&amp;quot;btn&amp;quot;&lt;<span class="tag">/span</span>&gt;&amp;gt;
   Submit
@@ -1832,7 +1832,7 @@
             </div>
           </div>
 
-<!-- media example -->
+<!-- media -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;video-responsive video-responsive-4-3&quot;</span>&gt;
   &lt;<span class="tag">iframe</span> <span class="atn">src</span>=<span class="atv">&quot;...&quot;</span> <span class="atn">width</span>=<span class="atv">&quot;...&quot;</span> <span class="atn">height</span>=<span class="atv">&quot;...&quot;</span> <span class="atn">frameborder</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">allowfullscreen</span>&gt;&lt;<span class="tag">/iframe</span>&gt;
 &lt;<span class="tag">/div</span>&gt;

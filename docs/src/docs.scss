@@ -30,9 +30,7 @@
   }
 
   .accordion {
-    .accordion-item {
-      margin-bottom: .75rem;
-    }
+    margin-bottom: .75rem;
 
     input {
       & ~ .accordion-header {
@@ -41,6 +39,7 @@
         font-weight: 600;
         text-transform: uppercase;
       }
+      
       &:checked {
         & ~ .accordion-header {
           color: lighten($dark-color, 15%);

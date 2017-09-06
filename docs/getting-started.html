@@ -22,8 +22,8 @@
           </a>
         </div>
         <div class="s-nav">
-          <div class="accordion">
-            <div class="accordion-item">
+          <div class="accordion-container">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden checked>
               <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
@@ -48,7 +48,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
@@ -82,7 +82,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
@@ -101,7 +101,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
@@ -171,7 +171,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
@@ -205,7 +205,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
@@ -279,7 +279,7 @@
             <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
           </div>
 
-<!-- install manually example -->
+<!-- install manually -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre.min.css&quot;</span>&gt;
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-exp.min.css&quot;</span>&gt;
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;spectre-icons.min.css&quot;</span>&gt;
@@ -290,7 +290,7 @@
             <p>Alternatively, you can use the <a href="https://unpkg.com/" target="_blank">unpkg</a> or <a href="https://cdnjs.com/libraries/spectre.css" target="_blank">cdnjs</a> CDN to load compiled Spectre.css.</p>
           </div>
 
-<!-- install from CDN example -->
+<!-- install from CDN -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre.min.css&quot;</span>&gt;
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-exp.min.css&quot;</span>&gt;
 &lt;<span class="tag">link</span> <span class="atn">rel</span>=<span class="atv">&quot;stylesheet&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;https://unpkg.com/spectre.css/dist/spectre-icons.min.css&quot;</span>&gt;
@@ -300,7 +300,7 @@
             <p class="h5">Install with NPM</p>
           </div>
 
-<!-- install with npm example -->
+<!-- install with npm -->
 <pre class="code" data-lang="Bash"><code><span class="tag">$</span>npm install <span class="atv">spectre.css</span> --save
 </code></pre>
 
@@ -308,7 +308,7 @@
             <p class="h5">Install with Yarn</p>
           </div>
 
-<!-- install with yarn example -->
+<!-- install with yarn -->
 <pre class="code" data-lang="Bash"><code><span class="tag">$</span>yarn add <span class="atv">spectre.css</span>
 </code></pre>
 
@@ -316,7 +316,7 @@
             <p class="h5">Install with Bower</p>
           </div>
 
-<!-- install with bower example -->
+<!-- install with bower -->
 <pre class="code" data-lang="Bash"><code><span class="tag">$</span>bower install <span class="atv">spectre.css</span> --save
 </code></pre>
 
@@ -483,7 +483,7 @@
               <li>@mixin button-outline-variant(<code>$color</code>: $primary-color);</li>
             </ul>
 
-<!-- button variables example -->
+<!-- button variables -->
 <pre class="code" data-lang="SASS"><code><span class="com">&lt;!-- filled button with the success color --&gt;</span>
 <span class="tag">.btn-success</span> {
   <span class="tag">@include</span> button-variant(<span class="atv">$success-color</span>);
@@ -508,7 +508,7 @@
             <p>There is also a way to add custom prefix to all CSS classes. You can use <a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it. </p>
           </div>
 
-<!-- custom prefix example -->
+<!-- custom prefix -->
 <pre class="code"><code><span class="tag">$</span> npm install <span class="atv">gulp-css-prefix</span>
 </code></pre>
 
@@ -516,7 +516,7 @@
             <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
           </div>
 
-<!-- custom prefix example -->
+<!-- custom prefix -->
 <pre class="code"><code>var cssPrefix = require('<span class="atv">gulp-css-prefix</span>');
   
 gulp.task('prefix', function() {

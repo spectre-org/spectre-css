@@ -22,8 +22,8 @@
           </a>
         </div>
         <div class="s-nav">
-          <div class="accordion">
-            <div class="accordion-item">
+          <div class="accordion-container">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
@@ -48,7 +48,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
@@ -82,7 +82,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden checked>
               <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
@@ -101,7 +101,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
@@ -171,7 +171,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
@@ -205,7 +205,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
@@ -351,7 +351,7 @@
             </div>
           </div>
 
-<!-- layout example -->
+<!-- layout -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
@@ -423,7 +423,7 @@
             </div>
           </div>
 
-<!-- layout example -->
+<!-- layout -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-4 col-mr-auto&quot;</span>&gt;col-4 col-mr-auto&lt;<span class="tag">/div</span>&gt;
@@ -459,7 +459,7 @@
             </ul>
           </div>
 
-<!-- layout example -->
+<!-- layout -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
@@ -474,7 +474,7 @@
             <p>The responsive layout also provides fixed-width containers. Use <code>grid-xs</code>(480px), <code>grid-sm</code> (600px), <code>grid-md</code> (840px), <code>grid-lg</code> (960px) or <code>grid-xl</code> (1280px) to <code>container</code> for a fixed-width container with the specific max-width.</p>
           </div>
 
-<!-- layout example -->
+<!-- layout -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- 100% width container with max-width set to grid-lg (960px) --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container grid-lg&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
@@ -631,7 +631,7 @@
             <div class="column">
               <div class="navbar">
                 <div class="navbar-section">
-                  <a href="#navbar" class="navbar-brand mr-10">Spectre.css</a>
+                  <a href="#navbar" class="navbar-brand mr-2">Spectre.css</a>
                   <a href="#navbar" class="btn btn-link">Docs</a>
                   <a href="https://github.com/picturepan2/spectre" class="btn btn-link">GitHub</a>
                 </div>
@@ -648,10 +648,10 @@
             <p>The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements. Each section with the <code>navbar-section</code> class will be evenly distributed in the container.</p>
           </div>
 
-<!-- navbar example -->
+<!-- navbar -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-10&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-2&quot;</span>&gt;Spectre.css&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Docs&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;https://github.com/picturepan2/spectre&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;GitHub&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">/section</span>&gt;
@@ -686,7 +686,7 @@
             </div>
           </div>
 
-<!-- navbar example -->
+<!-- navbar -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
   &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Docs&lt;<span class="tag">/a</span>&gt;

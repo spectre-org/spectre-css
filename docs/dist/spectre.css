@@ -252,6 +252,7 @@ menu {
 /* Add the correct display in all browsers. */
 summary {
   display: list-item;
+  outline: none;
 }
 
 /* Scripting ========================================================================== */
@@ -1875,28 +1876,34 @@ code {
   text-decoration: none;
 }
 
-.accordion .accordion-item input:checked ~ .accordion-header .icon {
+.accordion input:checked ~ .accordion-header .icon,
+.accordion[open] .accordion-header .icon {
   transform: rotate(90deg);
 }
 
-.accordion .accordion-item input:checked ~ .accordion-body {
+.accordion input:checked ~ .accordion-body,
+.accordion[open] .accordion-body {
   max-height: 50rem;
 }
 
-.accordion .accordion-item .accordion-header {
+.accordion .accordion-header {
   display: block;
   padding: .2rem .4rem;
 }
 
-.accordion .accordion-item .accordion-header .icon {
+.accordion .accordion-header .icon {
   transition: all .2s ease;
 }
 
-.accordion .accordion-item .accordion-body {
+.accordion .accordion-body {
   margin-bottom: .4rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height .2s ease;
+}
+
+summary.accordion-header::-webkit-details-marker {
+  display: none;
 }
 
 .form-autocomplete {

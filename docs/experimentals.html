@@ -23,8 +23,8 @@
           </a>
         </div>
         <div class="s-nav">
-          <div class="accordion">
-            <div class="accordion-item">
+          <div class="accordion-container">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-1" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-1">
                 Getting started
@@ -49,7 +49,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-2" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-2">
                 Elements
@@ -83,7 +83,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-3" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-3">
                 Layout
@@ -102,7 +102,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-4" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-4">
                 Components
@@ -172,7 +172,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-5" name="docs-accordion-checkbox" hidden>
               <label class="accordion-header c-hand" for="docs-accordion-5">
                 Utilities
@@ -206,7 +206,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion">
               <input type="checkbox" id="docs-accordion-6" name="docs-accordion-checkbox" hidden checked>
               <label class="accordion-header c-hand" for="docs-accordion-6">
                 Experimentals
@@ -516,7 +516,7 @@
             </div>
           </div>
 
-<!-- comparison sliders example -->
+<!-- comparison sliders -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;comparison-slider&quot;</span>&gt;
   &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;comparison-before&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
     <span class="com">&lt;!-- image (before) --&gt;</span>
@@ -656,7 +656,7 @@
             </div>
           </div>
 
-<!-- filters example -->
+<!-- filters -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;filter&quot;</span>&gt;
   &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;tag-all&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;filter-tag&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;filter-radio&quot;</span> <span class="atn">hidden</span> <span class="atn">checked</span>&gt;
   &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;tag-action&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;filter-tag&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;filter-radio&quot;</span> <span class="atn">hidden</span>&gt;
@@ -705,7 +705,7 @@
             <p></p>
           </div>
 
-<!-- meters example -->
+<!-- meters -->
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Meter is green when low &lt; value &lt; high --&gt;</span>
 &lt;<span class="tag">meter</span> <span class="atn">class</span>=<span class="atv">&quot;meter&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;20&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/meter</span>&gt;
 &lt;<span class="tag">meter</span> <span class="atn">class</span>=<span class="atv">&quot;meter&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;60&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">low</span>=<span class="atv">&quot;30&quot;</span> <span class="atn">high</span>=<span class="atv">&quot;80&quot;</span>&gt;&lt;<span class="tag">/meter</span>&gt;
@@ -741,7 +741,7 @@
             </div>
           </div>
 
-<!-- parallax example -->
+<!-- parallax -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-top-left&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;parallax-top-right&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
@@ -780,7 +780,7 @@
             </div>
           </div>
 
-<!-- progress example -->
+<!-- progress -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">progress</span> <span class="atn">class</span>=<span class="atv">&quot;progress&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;25&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/progress</span>&gt;
 &lt;<span class="tag">progress</span> <span class="atn">class</span>=<span class="atv">&quot;progress&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span>&gt;&lt;<span class="tag">/progress</span>&gt;
 </code></pre>
@@ -801,7 +801,7 @@
             </div>
           </div>
 
-<!-- sliders example -->
+<!-- sliders -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;slider&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;range&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;50&quot;</span> <span class="tag">/</span>&gt;
 </code></pre>
 
@@ -874,7 +874,7 @@
             </div>
           </div>
 
-<!-- timelines example -->
+<!-- timelines -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;timeline&quot;</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;timeline-item&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;timeline-example-1&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;timeline-left&quot;</span>&gt;
