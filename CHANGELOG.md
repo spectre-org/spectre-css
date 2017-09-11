@@ -1,5 +1,13 @@
 ## Spectre.css Changelog
 
+### [v0.4.1](https://github.com/picturepan2/spectre/releases/tag/v0.4.1)
+
+- Add default modifier to all variables 
+- Add `address` reset which changes font-style to normal
+- Add Details and Summary Accordions support
+- Fix responsive video
+- Update the Docs
+
 ### [v0.4.0](https://github.com/picturepan2/spectre/releases/tag/v0.4.0)
 
 - Switch from LESS to SASS
