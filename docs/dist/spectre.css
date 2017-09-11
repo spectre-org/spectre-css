@@ -1360,10 +1360,13 @@ code {
   width: 100%;
 }
 
-.video-responsive video {
+video.video-responsive {
   height: auto;
   max-width: 100%;
-  width: 100%;
+}
+
+video.video-responsive::before {
+  content: none;
 }
 
 .video-responsive-4-3::before {

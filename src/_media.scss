@@ -1,4 +1,5 @@
 // Media
+// Image responsive
 .img-responsive {
   display: block;
   height: auto;
@@ -40,11 +41,14 @@
     top: 0;
     width: 100%;
   }
+}
 
-  video {
-    height: auto;
-    max-width: 100%;
-    width: 100%;
+video.video-responsive {
+  height: auto;
+  max-width: 100%;
+
+  &::before {
+    content: none;
   }
 }
 
@@ -60,6 +64,7 @@
   }
 }
 
+// Figure
 .figure {
   margin: 0 0 $layout-spacing 0;
 
