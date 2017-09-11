@@ -429,6 +429,15 @@
   .s-sidebar:target + .docs-nav-clear {
     display: block;
   }
+  .s-sidebar .s-brand {
+    margin-top: -1.7rem;
+    padding: 0;
+    position: static;
+  }
+  .s-sidebar .s-nav {
+    margin-top: 2rem;
+    position: static;
+  }
   .s-sidebar .menu .menu-item > a {
     padding: .3rem .4rem;
   }
