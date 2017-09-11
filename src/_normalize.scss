@@ -109,6 +109,14 @@ a:hover {
 }
 
 /**
+ * Modify default styling of address.
+ */
+
+address {
+  font-style: normal;
+}
+
+/**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. (removed)
  */
@@ -404,6 +412,7 @@ menu {
 
 summary {
   display: list-item;
+  outline: none;
 }
 
 /* Scripting

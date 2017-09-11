@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.4.0";
+  content: "0.4.1";
 }
 // Core variables and mixins
 @import '../../src/variables';
@@ -30,9 +30,7 @@
   }
 
   .accordion {
-    .accordion-item {
-      margin-bottom: .75rem;
-    }
+    margin-bottom: .75rem;
 
     input {
       & ~ .accordion-header {
@@ -41,6 +39,7 @@
         font-weight: 600;
         text-transform: uppercase;
       }
+      
       &:checked {
         & ~ .accordion-header {
           color: lighten($dark-color, 15%);
@@ -205,6 +204,13 @@
     }
     .atv {
       color: #e06870;
+    }
+
+    &[data-lang="Bash"] {
+      .tag {
+        margin-right: 1em;
+        user-select: none;
+      }
     }
   }
 
@@ -418,6 +424,17 @@
       & + .docs-nav-clear {
         display: block;
       }
+    }
+
+    .s-brand {
+      margin-top: -1.7rem;
+      padding: 0;
+      position: static;
+    }
+
+    .s-nav {
+      margin-top: 2rem;
+      position: static;
     }
 
     .menu .menu-item > a {

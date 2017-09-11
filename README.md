@@ -1,46 +1,46 @@
 # Spectre.css
+
 Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development.
 
 - Lightweight (~10KB gzipped) starting point for your projects
 - Flexbox-based, responsive and mobile-friendly layout
 - Elegantly designed and developed elements and components
 
-Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with LESS compiler.
+Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with SASS/SCSS compiler.
 
 Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) for the further development. ♥ 
 
 
-### Getting started
+## Getting started
 
 There are 5 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
-#### Install manually
-Download the compiled and minified [Spectre CSS file](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
+### Install manually
+Download the compiled and minified [Spectre CSS files](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
 
-`<link rel="stylesheet" href="spectre.min.css" />`
+`<link rel="stylesheet" href="spectre.min.css">`
 
-#### Install from CDN
-Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled Spectre.css.
+### Install from CDN
+Alternatively, you can use the [unpkg](https://unpkg.com/) or [cdnjs](https://cdnjs.com/libraries/spectre.css) CDN to load compiled Spectre.css.
 
-`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />`
+`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">`
 
-#### Install with NPM
+### Install with NPM
 `$ npm install spectre.css --save`
 
-#### Install with Yarn
+### Install with Yarn
 `$ yarn add spectre.css`
 
-#### Install with Bower
+### Install with Bower
 `$ bower install spectre.css --save`
 
-
-### Compiling custom version
+## Compiling custom version
 
 You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html#compiling).
 
-### Documentation and examples
+## Documentation and examples
 
-#### Elements
+### Elements
 
 - [Typography](https://picturepan2.github.io/spectre/elements.html#typography) - headings, paragraphs, semantic text, blockquote, lists and code elements, optimized for east asian fonts
 - [Tables](https://picturepan2.github.io/spectre/elements.html#tables) - organize and display data
@@ -51,12 +51,12 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Codes](https://picturepan2.github.io/spectre/elements.html#codes) - inline and multiline code snippets
 - [Media](https://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video classes
 
-#### Layout
+### Layout
 - [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
 - [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
 - [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
 
-#### Components
+### Components
 - [Accordions](https://picturepan2.github.io/spectre/components.html#accordions) - used to toggle sections of content
 - [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
 - [Avatars](https://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
@@ -78,11 +78,11 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Toasts](https://picturepan2.github.io/spectre/components.html#toasts) - showing alerts or notifications
 - [Tooltips](https://picturepan2.github.io/spectre/components.html#tooltips) - simple tooltip built entirely in CSS
 
-#### Utilities
+### Utilities
 
 - [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
-#### Experimentals
+### Experimentals
 - [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars) - date or date range picker and events display
 - [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - slideshows for cycling images
 - [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - sliders for comparing two images, built entirely in CSS
@@ -93,13 +93,14 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Sliders](https://picturepan2.github.io/spectre/experimentals.html#sliders) - selecting values from ranges
 - [Timelines](https://picturepan2.github.io/spectre/experimentals.html#timelines) - ordered sequences of activities
 
-### Browser support
+## Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
-- Chrome (last 4)
-- Microsoft Edge (last 4)
-- Firefox (last 4)
-- Safari (last 4)
-- Opera (last 4)
+
+- Chrome (LAST 4)
+- Microsoft Edge (LAST 4)
+- Firefox (EXTENDED SUPPORT RELEASE)
+- Safari (LAST 4)
+- Opera (LAST 4)
 - Internet Explorer 10+
 
 Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.

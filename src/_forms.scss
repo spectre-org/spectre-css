@@ -191,7 +191,7 @@ textarea.form-input {
 .form-switch {
   display: inline-block;
   line-height: $line-height;
-  padding: ($control-size-sm - $line-height) / 2  ($control-icon-size + $control-padding-h);
+  padding: (($control-size-sm - $line-height) / 2)  ($control-icon-size + $control-padding-h);
   position: relative;
 
   input {

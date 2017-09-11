@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.4.0";
+  content: "0.4.1";
 }
 
 /* Spectre New Docs */
@@ -27,7 +27,7 @@
   width: 10.5rem;
 }
 
-.s-sidebar .accordion .accordion-item {
+.s-sidebar .accordion {
   margin-bottom: .75rem;
 }
 
@@ -204,6 +204,14 @@
 
 .s-content .code .atv {
   color: #e06870;
+}
+
+.s-content .code[data-lang="Bash"] .tag {
+  margin-right: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .s-content .empty .icon {
@@ -420,6 +428,15 @@
   }
   .s-sidebar:target + .docs-nav-clear {
     display: block;
+  }
+  .s-sidebar .s-brand {
+    margin-top: -1.7rem;
+    padding: 0;
+    position: static;
+  }
+  .s-sidebar .s-nav {
+    margin-top: 2rem;
+    position: static;
   }
   .s-sidebar .menu .menu-item > a {
     padding: .3rem .4rem;
