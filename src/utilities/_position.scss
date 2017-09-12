@@ -30,6 +30,12 @@
   margin-right: auto;
 }
 
+.flex-centered {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 // Spacing
 @include margin-variant(0, 0);
 

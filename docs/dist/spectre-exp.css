@@ -537,6 +537,84 @@
   background: #e85600;
 }
 
+.off-canvas {
+  display: flex;
+  display: -ms-flexbox;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.off-canvas .off-canvas-sidebar {
+  background: #f8f9fa;
+  height: 100%;
+  left: 0;
+  padding: .8rem;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform .25s ease;
+  width: 10rem;
+  z-index: 300;
+}
+
+.off-canvas .off-canvas-content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: .8rem .8rem .8rem 4rem;
+}
+
+.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-sidebar {
+  transform: translateX(0);
+}
+
+.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-btn {
+  background: rgba(69, 77, 93, .1);
+  border-color: transparent;
+  border-radius: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-btn .icon {
+  display: none;
+}
+
+.off-canvas .off-canvas-toggle {
+  display: block;
+  left: .8rem;
+  padding-left: 0;
+  padding-right: 0;
+  position: absolute;
+  top: .8rem;
+  transition: none;
+  width: 2rem;
+  z-index: 200;
+}
+
+@media (min-width: 840px) {
+  .off-canvas .off-canvas-sidebar {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    position: static;
+    transform: translateX(0);
+  }
+  .off-canvas .off-canvas-content {
+    padding-left: .8rem;
+  }
+  .off-canvas .off-canvas-toggle {
+    display: none;
+  }
+}
+
 .parallax {
   display: block;
   height: auto;

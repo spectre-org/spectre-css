@@ -1,9 +1,9 @@
 // Parallax
-$parallax-deg: 3deg;
-$parallax-offset: 4.5px;
-$parallax-offset-z: 50px;
-$parallax-perspective: 1000px;
-$parallax-scale: .95;
+$parallax-deg: 3deg !default;
+$parallax-offset: 4.5px !default;
+$parallax-offset-z: 50px !default;
+$parallax-perspective: 1000px !default;
+$parallax-scale: .95 !default;
 
 // Mixin: Parallax direction
 @mixin parallax-dir() {
