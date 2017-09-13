@@ -32,7 +32,7 @@
       transform: translateX(0);
     }
 
-    &:checked ~ .off-canvas-btn {
+    &:checked ~ .off-canvas-toggle {
       background: rgba($dark-color, .1);
       border-color: transparent;
       bottom: 0;

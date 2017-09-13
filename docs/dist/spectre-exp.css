@@ -572,7 +572,7 @@
   transform: translateX(0);
 }
 
-.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-btn {
+.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-toggle {
   background: rgba(69, 77, 93, .1);
   border-color: transparent;
   border-radius: 0;
@@ -584,7 +584,7 @@
   width: 100%;
 }
 
-.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-btn .icon {
+.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-toggle .icon {
   display: none;
 }
 
