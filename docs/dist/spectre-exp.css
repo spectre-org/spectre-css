@@ -600,7 +600,7 @@
   z-index: 200;
 }
 
-@media (min-width: 840px) {
+@media (min-width: 960px) {
   .off-canvas .off-canvas-sidebar {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
