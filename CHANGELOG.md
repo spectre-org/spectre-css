@@ -1,5 +1,11 @@
 ## Spectre.css Changelog
 
+### [v0.4.2](https://github.com/picturepan2/spectre/releases/tag/v0.4.2)
+
+- Add Off-screen experimental
+- Fix Docs rendering bug in Safari
+
+
 ### [v0.4.1](https://github.com/picturepan2/spectre/releases/tag/v0.4.1)
 
 - Add default modifier to all variables 
