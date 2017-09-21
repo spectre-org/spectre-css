@@ -635,7 +635,7 @@ dl dd {
 .btn.btn-lg {
   font-size: .8rem;
   height: 2rem;
-  padding: .45rem .6rem;
+  padding: .45rem .5rem;
 }
 
 .btn.btn-block {
@@ -3246,6 +3246,15 @@ a.text-error:hover {
   float: none;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex-centered {
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .m-0 {

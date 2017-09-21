@@ -12,8 +12,8 @@ code {
   position: relative;
 
   &::before {
-    content: attr(data-lang);
     color: $gray-color;
+    content: attr(data-lang);
     font-size: $font-size-sm;
     position: absolute;
     right: $layout-spacing;

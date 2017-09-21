@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.4.1";
+  content: "0.4.2";
 }
 
 /* Spectre New Docs */
@@ -130,6 +130,23 @@
   margin: 1.5rem 0;
 }
 
+.s-content .docs-ad {
+  background: #f8f9fa;
+  border-radius: .1rem;
+  display: inline-block;
+  padding: .4rem;
+  position: relative;
+}
+
+.s-content .docs-ad::before {
+  color: #acb3c2;
+  content: "AD";
+  font-size: .6rem;
+  position: absolute;
+  right: .4rem;
+  top: .1rem;
+}
+
 .s-content .column {
   padding: .4rem;
 }
@@ -249,6 +266,11 @@
 .s-content .comparison-slider .filter-grayscale {
   -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
+}
+
+.s-content .off-canvas {
+  height: 20rem;
+  position: relative;
 }
 
 .s-brand {

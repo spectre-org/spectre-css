@@ -229,6 +229,9 @@
                     <a href="experimentals.html#meters">Meters</a>
                   </li>
                   <li class="menu-item">
+                    <a href="experimentals.html#off-canvas">Off-canvas</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="experimentals.html#parallax">Parallax</a>
                   </li>
                   <li class="menu-item">
@@ -264,6 +267,32 @@
           <h3 class="s-title"><a href="#experimentals" class="anchor" aria-hidden="true">#</a>Experimentals</h3>
           <div class="docs-note">
             <p>The Experimentals include experimental elements and features, mostly are not yet ready for wide use. These elements and components are limited inside <code>spectre-exp.less</code> before browsers fully support them. Sometimes, there are some specific browsers targeted components.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="docs-ad">
+            <div class="hide-md">
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- GitHub-lg -->
+              <ins class="adsbygoogle"
+                    style="display:inline-block;width:728px;height:90px"
+                    data-ad-client="ca-pub-2225124559530218"
+                    data-ad-slot="9894180784"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+            <div class="show-md">
+              <!-- GitHub-sm -->
+              <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-2225124559530218"
+                    data-ad-slot="9278881734"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
           </div>
         </div>
 
@@ -713,6 +742,58 @@
 &lt;<span class="tag">meter</span> <span class="atn">class</span>=<span class="atv">&quot;meter&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;85&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">low</span>=<span class="atv">&quot;30&quot;</span> <span class="atn">high</span>=<span class="atv">&quot;80&quot;</span>&gt;&lt;<span class="tag">/meter</span>&gt;
 <span class="com">&lt;!-- Meter is red when value &lt; low &lt; high &lt; optimum or optimum &lt; low &lt; high &lt; value --&gt;</span>
 &lt;<span class="tag">meter</span> <span class="atn">class</span>=<span class="atv">&quot;meter&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;20&quot;</span> <span class="atn">optimum</span>=<span class="atv">&quot;90&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">low</span>=<span class="atv">&quot;30&quot;</span> <span class="atn">high</span>=<span class="atv">&quot;80&quot;</span>&gt;&lt;<span class="tag">/meter</span>&gt;
+</code></pre>
+
+        </div>
+
+        <div id="off-canvas" class="container">
+          <h3 class="s-title"><a href="#off-canvas" class="anchor" aria-hidden="true">#</a>Off-canvas</h3>
+          <div class="docs-note">
+            <p>The Off-canvas is a navigation layout that the sidebar can slide in and out of the viewport. It is built in pure CSS. </p>
+            <p>By default, the off-canvas menu is collapsed when the window width is smaller than or equal to <strong>960px</strong>.</p>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div class="off-canvas">
+                <input type="checkbox" class="off-canvas-checkbox" id="sidebar-checkbox" name="sidebar-checkbox" hidden>
+                <label class="off-canvas-toggle btn btn-primary btn-lg" for="sidebar-checkbox">
+                  <i class="icon icon-menu"></i>
+                </label>
+                <div class="off-canvas-sidebar flex-centered">
+                  <span>Sidebar</span>
+                </div>
+                <div class="off-canvas-content">
+                  <div class="content">
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                    <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+                    <h4>Cupcake ipsum</h4>
+                    <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.</p>
+                    <p>De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.</p>
+                    <h4>Candy ipsum</h4>
+                    <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.</p>
+                    <p>Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- off-canvas -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas&quot;</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-checkbox&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;sidebar-checkbox&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;sidebar-checkbox&quot;</span> <span class="atn">hidden</span>&gt;
+  <span class="com">&lt;!-- off-screen toggle button and close mask --&gt;</span>
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-toggle btn btn-primary btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;sidebar-checkbox&quot;</span>&gt;
+    &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-menu&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+  &lt;<span class="tag">/label</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-sidebar&quot;</span>&gt;
+    <span class="com">&lt;!-- off-screen sidebar --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-body&quot;</span>&gt;
+    <span class="com">&lt;!-- off-screen content --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
         </div>

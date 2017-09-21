@@ -42,56 +42,57 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 
 ### Elements
 
-- [Typography](https://picturepan2.github.io/spectre/elements.html#typography) - headings, paragraphs, semantic text, blockquote, lists and code elements, optimized for east asian fonts
-- [Tables](https://picturepan2.github.io/spectre/elements.html#tables) - organize and display data
-- [Buttons](https://picturepan2.github.io/spectre/elements.html#buttons) - button styles in different types and sizes, and even button groups
-- [Forms](https://picturepan2.github.io/spectre/elements.html#forms) - input, radio, checkbox, switch and other form elements
-- [Icons](https://picturepan2.github.io/spectre/elements.html#icons) - single-element, responsive and pure CSS icons
-- [Labels](https://picturepan2.github.io/spectre/elements.html#labels) - formatted text tags for highlighted, informative information
-- [Codes](https://picturepan2.github.io/spectre/elements.html#codes) - inline and multiline code snippets
-- [Media](https://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video classes
+- [Typography](https://picturepan2.github.io/spectre/elements.html#typography)
+- [Tables](https://picturepan2.github.io/spectre/elements.html#tables)
+- [Buttons](https://picturepan2.github.io/spectre/elements.html#buttons)
+- [Forms](https://picturepan2.github.io/spectre/elements.html#forms)
+- [Icons](https://picturepan2.github.io/spectre/elements.html#icons) - CSS only
+- [Labels](https://picturepan2.github.io/spectre/elements.html#labels)
+- [Codes](https://picturepan2.github.io/spectre/elements.html#codes)
+- [Media](https://picturepan2.github.io/spectre/elements.html#media)
 
 ### Layout
-- [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
-- [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
-- [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar) - layout container that appears in the header of apps and websites
+- [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) 
+- [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive)
+- [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar)
 
 ### Components
-- [Accordions](https://picturepan2.github.io/spectre/components.html#accordions) - used to toggle sections of content
-- [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete) - form component provides suggestions while you type
-- [Avatars](https://picturepan2.github.io/spectre/components.html#avatars) - user profile pictures or name initials rendered avatar
-- [Badges](https://picturepan2.github.io/spectre/components.html#badges) - unread number indicators
-- [Breadcrumbs](https://picturepan2.github.io/spectre/components.html#breadcrumbs) - navigational hierarchy
-- [Bars](https://picturepan2.github.io/spectre/components.html#bars) - progress of a task or the value within the known range
-- [Cards](https://picturepan2.github.io/spectre/components.html#cards) - flexible content containers
-- [Chips](https://picturepan2.github.io/spectre/components.html#chips) - complex entities in small blocks
-- [Empty states](https://picturepan2.github.io/spectre/components.html#empty) - empty states/blank slates for first time use, empty data and error screens
-- [Menus](https://picturepan2.github.io/spectre/components.html#menus) - list of links or buttons for actions and navigation
-- [Navs](https://picturepan2.github.io/spectre/components.html#navs) - navigational list of links
-- [Modals](https://picturepan2.github.io/spectre/components.html#modals) - flexible dialog prompts
-- [Pagination](https://picturepan2.github.io/spectre/components.html#pagination) - navigational links for multiple pages
-- [Panels](https://picturepan2.github.io/spectre/components.html#panels) - flexible view container with auto-expand content section
-- [Popovers](https://picturepan2.github.io/spectre/components.html#popovers) - small overlay content containers
-- [Steps](https://picturepan2.github.io/spectre/components.html#steps) - progress indicators of a sequence of task steps
-- [Tabs](https://picturepan2.github.io/spectre/components.html#tabs) - toggle for different views
-- [Tiles](https://picturepan2.github.io/spectre/components.html#tiles) - repeatable or embeddable information blocks
-- [Toasts](https://picturepan2.github.io/spectre/components.html#toasts) - showing alerts or notifications
-- [Tooltips](https://picturepan2.github.io/spectre/components.html#tooltips) - simple tooltip built entirely in CSS
+- [Accordions](https://picturepan2.github.io/spectre/components.html#accordions)
+- [Autocomplete](https://picturepan2.github.io/spectre/components.html#autocomplete)
+- [Avatars](https://picturepan2.github.io/spectre/components.html#avatars)
+- [Badges](https://picturepan2.github.io/spectre/components.html#badges)
+- [Breadcrumbs](https://picturepan2.github.io/spectre/components.html#breadcrumbs)
+- [Bars](https://picturepan2.github.io/spectre/components.html#bars)
+- [Cards](https://picturepan2.github.io/spectre/components.html#cards)
+- [Chips](https://picturepan2.github.io/spectre/components.html#chips)
+- [Empty states](https://picturepan2.github.io/spectre/components.html#empty)
+- [Menus](https://picturepan2.github.io/spectre/components.html#menus)
+- [Navs](https://picturepan2.github.io/spectre/components.html#navs)
+- [Modals](https://picturepan2.github.io/spectre/components.html#modals)
+- [Pagination](https://picturepan2.github.io/spectre/components.html#pagination)
+- [Panels](https://picturepan2.github.io/spectre/components.html#panels)
+- [Popovers](https://picturepan2.github.io/spectre/components.html#popovers)
+- [Steps](https://picturepan2.github.io/spectre/components.html#steps)
+- [Tabs](https://picturepan2.github.io/spectre/components.html#tabs)
+- [Tiles](https://picturepan2.github.io/spectre/components.html#tiles)
+- [Toasts](https://picturepan2.github.io/spectre/components.html#toasts)
+- [Tooltips](https://picturepan2.github.io/spectre/components.html#tooltips)
 
 ### Utilities
 
 - [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
 ### Experimentals
-- [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars) - date or date range picker and events display
-- [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - slideshows for cycling images
-- [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - sliders for comparing two images, built entirely in CSS
-- [Filters](https://picturepan2.github.io/spectre/experimentals.html#carousels) - CSS only content filters
-- [Meters](https://picturepan2.github.io/spectre/experimentals.html#meters) - representing the value within the known range
-- [Parallax](https://picturepan2.github.io/spectre/experimentals.html#parallax) - acting like Apple TV/tvOS hover parallax effect, built entirely in CSS
-- [Progress](https://picturepan2.github.io/spectre/experimentals.html#progress) - indicators for the progress completion of a task
-- [Sliders](https://picturepan2.github.io/spectre/experimentals.html#sliders) - selecting values from ranges
-- [Timelines](https://picturepan2.github.io/spectre/experimentals.html#timelines) - ordered sequences of activities
+- [Calendars](https://picturepan2.github.io/spectre/experimentals.html#calendars)
+- [Carousels](https://picturepan2.github.io/spectre/experimentals.html#carousels) - CSS only
+- [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals.html#comparison) - CSS only
+- [Filters](https://picturepan2.github.io/spectre/experimentals.html#carousels) - CSS only
+- [Meters](https://picturepan2.github.io/spectre/experimentals.html#meters)
+- [Off-canvas](https://picturepan2.github.io/spectre/experimentals.html#off-canvas) - CSS only
+- [Parallax](https://picturepan2.github.io/spectre/experimentals.html#parallax) - CSS only
+- [Progress](https://picturepan2.github.io/spectre/experimentals.html#progress)
+- [Sliders](https://picturepan2.github.io/spectre/experimentals.html#sliders)
+- [Timelines](https://picturepan2.github.io/spectre/experimentals.html#timelines)
 
 ## Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
