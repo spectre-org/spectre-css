@@ -140,8 +140,8 @@
     position: relative;
 
     &::before {
-      content: "AD";
       color: $gray-color;
+      content: "AD";
       font-size: $font-size-sm;
       position: absolute;
       right: $layout-spacing;

@@ -35,8 +35,8 @@
     &:checked ~ .off-canvas-toggle {
       background: rgba($dark-color, .1);
       border-color: transparent;
-      bottom: 0;
       border-radius: 0;
+      bottom: 0;
       height: 100%;
       left: 0;
       right: 0;
