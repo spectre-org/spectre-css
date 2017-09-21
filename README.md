@@ -42,18 +42,18 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 
 ### Elements
 
-- [Typography](https://picturepan2.github.io/spectre/elements.html#typography) - headings, paragraphs, semantic text, blockquote, lists and code elements, optimized for east asian fonts
-- [Tables](https://picturepan2.github.io/spectre/elements.html#tables) - organize and display data
-- [Buttons](https://picturepan2.github.io/spectre/elements.html#buttons) - button styles in different types and sizes, and even button groups
-- [Forms](https://picturepan2.github.io/spectre/elements.html#forms) - input, radio, checkbox, switch and other form elements
-- [Icons](https://picturepan2.github.io/spectre/elements.html#icons) - single-element, responsive and pure CSS icons
-- [Labels](https://picturepan2.github.io/spectre/elements.html#labels) - formatted text tags for highlighted, informative information
-- [Codes](https://picturepan2.github.io/spectre/elements.html#codes) - inline and multiline code snippets
-- [Media](https://picturepan2.github.io/spectre/elements.html#media) - responsive images, figures and video
+- [Typography](https://picturepan2.github.io/spectre/elements.html#typography)
+- [Tables](https://picturepan2.github.io/spectre/elements.html#tables)
+- [Buttons](https://picturepan2.github.io/spectre/elements.html#buttons)
+- [Forms](https://picturepan2.github.io/spectre/elements.html#forms)
+- [Icons](https://picturepan2.github.io/spectre/elements.html#icons) - CSS only
+- [Labels](https://picturepan2.github.io/spectre/elements.html#labels)
+- [Codes](https://picturepan2.github.io/spectre/elements.html#codes)
+- [Media](https://picturepan2.github.io/spectre/elements.html#media)
 
 ### Layout
-- [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) - flexbox based responsive grid system
-- [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive) - responsive grid and utilities
+- [Flexbox grid](https://picturepan2.github.io/spectre/layout.html#grid) 
+- [Responsive](https://picturepan2.github.io/spectre/layout.html#responsive)
 - [Navbar](https://picturepan2.github.io/spectre/layout.html#navbar)
 
 ### Components

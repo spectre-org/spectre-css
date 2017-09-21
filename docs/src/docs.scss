@@ -132,6 +132,23 @@
     margin: 1.5rem 0;
   }
 
+  .docs-ad {
+    background: $bg-color;
+    border-radius: $border-radius;
+    display: inline-block;
+    padding: $layout-spacing;
+    position: relative;
+
+    &::before {
+      content: "AD";
+      color: $gray-color;
+      font-size: $font-size-sm;
+      position: absolute;
+      right: $layout-spacing;
+      top: $unit-h;
+    }
+  }
+
   .column {
     padding: $layout-spacing;
   }

@@ -130,6 +130,23 @@
   margin: 1.5rem 0;
 }
 
+.s-content .docs-ad {
+  background: #f8f9fa;
+  border-radius: .1rem;
+  display: inline-block;
+  padding: .4rem;
+  position: relative;
+}
+
+.s-content .docs-ad::before {
+  color: #acb3c2;
+  content: "AD";
+  font-size: .6rem;
+  position: absolute;
+  right: .4rem;
+  top: .1rem;
+}
+
 .s-content .column {
   padding: .4rem;
 }
