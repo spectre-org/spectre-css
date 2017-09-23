@@ -373,8 +373,39 @@
               <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
             </ul>
           </div>
+          <h4 id="importing" class="s-subtitle">Importing SASS</h4>
+          <div class="docs-note">
+            <p>It is recommended to custom Spectre by importing SASS source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
+            <ul>
+              <li>First, create your own project and install Spectre via <a href="#installation">NPM or other package managers</a>.</li>
+              <li>Then create your <code>project-name.scss</code> file in the root folder. You can use <code>project-name.scss</code> to define your variables.</li>
+              <li>Compile the SASS file to CSS to get the custom version of Spectre.</li>
+            </ul>
 
-          <h4 id="compiling-gulptasks" class="s-subtitle">Folder Structure</h4>
+<!-- importing -->
+<pre class="code" data-lang="SASS"><code><span class="com">// Example of project-name.scss</span>
+<span class="com">// Define variables to override default ones</span>
+<span class="tag">$primary-color</span>: <span class="atn"></span>#2e5bec</span>;
+<span class="tag">$dark-color</span>: <span class="atn"></span>#3e396b</span>;
+
+<span class="com">// Import full Spectre source code</span>
+<span class="tag">@import</span> &quot;node_modules/spectre.css/src/spectre&quot;;
+</code></pre>
+
+            <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>. </p>
+
+<!-- importing -->
+<pre class="code" data-lang="SASS"><code><span class="com">// Example of project-name.scss</span>
+<span class="tag">@import</span> &quot;variables&quot;;
+
+<span class="com">// Import only the needed components</span>
+<span class="tag">@import</span> &quot;node_modules/spectre.css/src/buttons&quot;;
+<span class="tag">@import</span> &quot;node_modules/spectre.css/src/forms&quot;;
+</code></pre>
+
+          </div>
+
+          <h4 id="folders" class="s-subtitle">Folder Structure</h4>
 
 <!-- folder structure -->
 <pre class="code"><code>spectre/
