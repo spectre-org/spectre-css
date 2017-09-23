@@ -36,7 +36,7 @@ Alternatively, you can use the [unpkg](https://unpkg.com/) or [cdnjs](https://cd
 
 ## Compiling custom version
 
-You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html#compiling).
+You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started.html#custom).
 
 ## Documentation and examples
 

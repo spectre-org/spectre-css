@@ -635,7 +635,7 @@ dl dd {
 .btn.btn-lg {
   font-size: .8rem;
   height: 2rem;
-  padding: .45rem .5rem;
+  padding: .45rem .6rem;
 }
 
 .btn.btn-block {
@@ -792,13 +792,13 @@ legend {
 .form-input.input-sm {
   font-size: .6rem;
   height: 1.2rem;
-  padding: .05rem .4rem;
+  padding: .05rem .3rem;
 }
 
 .form-input.input-lg {
   font-size: .8rem;
   height: 2rem;
-  padding: .45rem .4rem;
+  padding: .45rem .6rem;
 }
 
 .form-input.input-inline {
@@ -874,13 +874,13 @@ textarea.form-input {
 .form-select.select-sm {
   font-size: .6rem;
   height: 1.2rem;
-  padding: .05rem 1.1rem .05rem .4rem;
+  padding: .05rem 1rem .05rem .3rem;
 }
 
 .form-select.select-lg {
   font-size: .8rem;
   height: 2rem;
-  padding: .45rem 1.1rem .45rem .4rem;
+  padding: .45rem 1.3rem .45rem .6rem;
 }
 
 .has-icon-left,
@@ -1076,12 +1076,12 @@ textarea.form-input {
 
 .input-group .input-group-addon.addon-sm {
   font-size: .6rem;
-  padding: .05rem .4rem;
+  padding: .05rem .3rem;
 }
 
 .input-group .input-group-addon.addon-lg {
   font-size: .8rem;
-  padding: .45rem .4rem;
+  padding: .45rem .6rem;
 }
 
 .input-group .form-input,
