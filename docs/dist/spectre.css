@@ -2888,7 +2888,7 @@ summary.accordion-header::-webkit-details-marker {
   text-overflow: ellipsis;
   transform: translate(-50%, .4rem);
   transition: all .2s ease;
-  white-space: nowrap;
+  white-space: pre;
   z-index: 300;
 }
 
