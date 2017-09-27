@@ -195,18 +195,6 @@
     }
   }
 
-  .panel {
-    height: 75vh;
-
-    .tile {
-      margin: .75rem 0;
-    }
-  }
-
-  .parallax {
-    margin: 2rem auto;
-  }
-
   .code {
     color: lighten($body-font-color, 10%);
 
@@ -231,6 +219,17 @@
     }
   }
 
+  .panel {
+    height: 75vh;
+
+    .tile {
+      margin: .75rem 0;
+    }
+  }
+
+  .parallax {
+    margin: 2rem auto;
+  }
 
   .form-autocomplete .menu {
     position: static;
@@ -310,6 +309,13 @@
 
   a {
     color: $gray-color-dark;
+  }
+}
+
+.btn {
+  .feather {
+    height: 1rem;
+    vertical-align: middle;
   }
 }
 

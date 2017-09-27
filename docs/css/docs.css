@@ -191,18 +191,6 @@
   opacity: .75;
 }
 
-.s-content .panel {
-  height: 75vh;
-}
-
-.s-content .panel .tile {
-  margin: .75rem 0;
-}
-
-.s-content .parallax {
-  margin: 2rem auto;
-}
-
 .s-content .code {
   color: #667189;
 }
@@ -229,6 +217,18 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.s-content .panel {
+  height: 75vh;
+}
+
+.s-content .panel .tile {
+  margin: .75rem 0;
+}
+
+.s-content .parallax {
+  margin: 2rem auto;
 }
 
 .s-content .form-autocomplete .menu {
@@ -315,6 +315,11 @@
 
 .s-footer a {
   color: #727e96;
+}
+
+.btn .feather {
+  height: 1rem;
+  vertical-align: middle;
 }
 
 /* Spectre Homepage style */
