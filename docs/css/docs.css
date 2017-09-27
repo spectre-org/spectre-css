@@ -231,10 +231,6 @@
   user-select: none;
 }
 
-.s-content .empty .icon {
-  font-size: 2rem;
-}
-
 .s-content .form-autocomplete .menu {
   position: static;
 }
@@ -466,7 +462,7 @@
   .s-navbar {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: rgba(248, 249, 250, .65);
+    background: rgba(255, 255, 255, .65);
     right: 0;
     top: 0;
     z-index: 200;

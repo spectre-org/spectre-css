@@ -20,6 +20,25 @@
   transform: translate(-50%, -50%);
 }
 
+.icon.icon-2x {
+  font-size: 1.6rem;
+}
+
+.icon.icon-3x {
+  font-size: 2.4rem;
+}
+
+.icon.icon-4x {
+  font-size: 3.2rem;
+}
+
+.accordion .icon,
+.btn .icon,
+.toast .icon,
+.menu .icon {
+  vertical-align: -10%;
+}
+
 .icon-arrow-down::before,
 .icon-arrow-left::before,
 .icon-arrow-right::before,
@@ -593,11 +612,4 @@
   height: .5em;
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
-}
-
-.accordion .icon,
-.btn .icon,
-.toast .icon,
-.menu .icon {
-  vertical-align: -10%;
 }

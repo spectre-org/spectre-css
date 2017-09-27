@@ -1957,7 +1957,7 @@ summary.accordion-header::-webkit-details-marker {
   font-size: .8rem;
   font-weight: 300;
   height: 1.6rem;
-  line-height: 1;
+  line-height: 1.25;
   margin: 0;
   position: relative;
   vertical-align: middle; 

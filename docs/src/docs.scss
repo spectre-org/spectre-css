@@ -231,9 +231,6 @@
     }
   }
 
-  .empty .icon {
-    font-size: 2rem;
-  }
 
   .form-autocomplete .menu {
     position: static;
@@ -466,7 +463,7 @@
 
   .s-navbar {
     backdrop-filter: blur(10px);
-    background: rgba($bg-color, .65);
+    background: rgba($bg-color-light, .65);
     right: 0;
     top: 0;
     z-index: $zindex-2;

@@ -1,6 +1,10 @@
-# Spectre.css
+<a href="https://picturepan2.github.io/spectre">
+  <img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg" width="72" height="72">
+</a>
 
-Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development.
+## Spectre.css
+
+Spectre.css is a lightweight, responsive and modern CSS framework.
 
 - Lightweight (~10KB gzipped) starting point for your projects
 - Flexbox-based, responsive and mobile-friendly layout
