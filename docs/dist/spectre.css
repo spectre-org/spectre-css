@@ -2419,11 +2419,21 @@ summary.accordion-header::-webkit-details-marker {
 .modal.active .modal-container {
   animation: slide-down .2s ease 1;
   max-width: 640px;
+  width: 100%;
   z-index: 1;
 }
 
 .modal.modal-sm .modal-container {
   max-width: 320px;
+}
+
+.modal.modal-lg .modal-overlay {
+  background: #fff;
+}
+
+.modal.modal-lg .modal-container {
+  box-shadow: none;
+  max-width: 960px;
 }
 
 .modal-container {
@@ -2436,7 +2446,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .modal-container .modal-header {
-  padding: .8rem;
+  padding: .8rem 1.2rem;
 }
 
 .modal-container .modal-header .modal-title {
@@ -2446,12 +2456,12 @@ summary.accordion-header::-webkit-details-marker {
 .modal-container .modal-body {
   max-height: 50vh;
   overflow-y: auto;
-  padding: .8rem;
+  padding: .8rem 1.2rem;
   position: relative;
 }
 
 .modal-container .modal-footer {
-  padding: .8rem;
+  padding: .8rem 1.2rem;
   text-align: right;
 }
 

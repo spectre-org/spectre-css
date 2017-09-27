@@ -32,13 +32,25 @@
     .modal-container {
       animation: slide-down .2s ease 1;
       max-width: 640px;
+      width: 100%;
       z-index: $zindex-0;
     }
   }
 
   &.modal-sm {
     .modal-container {
-      max-width: $control-max-width;
+      max-width: 320px;
+    }
+  }
+
+  &.modal-lg {
+    .modal-overlay {
+      background: $bg-color-light;
+    }
+
+    .modal-container {
+      box-shadow: none;
+      max-width: 960px;
     }
   }
 }
@@ -52,7 +64,7 @@
   text-align: left;
 
   .modal-header {
-    padding: $layout-spacing-lg;
+    padding: $unit-4 $unit-6;
 
     .modal-title {
       margin: 0;
@@ -62,12 +74,12 @@
   .modal-body {
     max-height: 50vh;
     overflow-y: auto;
-    padding: $layout-spacing-lg;
+    padding: $unit-4 $unit-6;
     position: relative;
   }
 
   .modal-footer {
-    padding: $layout-spacing-lg;
+    padding: $unit-4 $unit-6;
     text-align: right;
   }
 }
