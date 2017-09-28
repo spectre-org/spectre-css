@@ -30,6 +30,7 @@
   }
 }
 
+// Remove default details marker in Webkit
 summary.accordion-header {
   &::-webkit-details-marker {
     display: none;
