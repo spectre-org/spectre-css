@@ -4,7 +4,7 @@
   border-radius: $border-radius;
   color: $gray-color-dark;
   text-align: center;
-  padding: 4 * $layout-spacing;
+  padding: $unit-16 $unit-8;
 
   .empty-icon {
     margin-bottom: $layout-spacing-lg;

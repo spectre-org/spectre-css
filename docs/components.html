@@ -458,18 +458,18 @@
                     <span class="chip">
                       Bruce Banner
                     </span>
-                    <span class="chip">
+                    <div class="chip">
                       <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Avatar">
                       Thor Odinson
-                    </span>
-                    <span class="chip">
+                    </div>
+                    <div class="chip">
                       <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Avatar">
                       Steve Rogers
-                    </span>
-                    <span class="chip">
+                    </div>
+                    <div class="chip">
                       <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5755d9;"></figure>
                       Tony Stark
-                    </span>
+                    </div>
                     <span class="chip active">
                       Natasha Romanoff
                     </span>
@@ -537,11 +537,11 @@
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-autocomplete-input form-input&quot;</span>&gt;
 
     <span class="com">&lt;!-- autocomplete chips --&gt;</span>
-    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
       &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span> <span class="atn">alt</span>=<span class="atv">&quot;Thor Odinson&quot;</span>&gt;
       Thor Odinson
       &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
 
     <span class="com">&lt;!-- autocomplete real input box --&gt;</span>
     &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;typing here&quot;</span>&gt;
@@ -1069,11 +1069,9 @@
             <div class="column col-12">
               <span class="chip">
                 Crime
-                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
               </span>
               <span class="chip">
                 Drama
-                <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
               </span>
               <span class="chip">
                 Biography
@@ -1085,18 +1083,18 @@
               </span>
             </div>
             <div class="column col-12">
-              <span class="chip">
+              <div class="chip">
                 <figure class="avatar avatar-sm" data-initial="TS" style="background-color: #5755d9;"></figure>
                 Tony Stark
-              </span>
-              <span class="chip">
+              </div>
+              <div class="chip">
                 <img src="img/avatar-1.png" class="avatar avatar-sm" alt="Thor Odinson">
                 Thor Odinson
-              </span>
-              <span class="chip">
+              </div>
+              <div class="chip">
                 <img src="img/avatar-4.png" class="avatar avatar-sm" alt="Steve Rogers">
                 Steve Rogers
-              </span>
+              </div>
             </div>
           </div>
           <div class="docs-note">
@@ -1104,16 +1102,18 @@
           </div>
 
 <!-- chips -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
-  Crime
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;Crime&lt;<span class="tag">/span</span>&gt;
+  
+&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+  Biography
   &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
 &lt;<span class="tag">/span</span>&gt;
 
-&lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
   &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/avatar-1.png&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;avatar avatar-sm&quot;</span>&gt;
   Yan Zhu
   &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span> <span class="atn">role</span>=<span class="atv">&quot;button&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
-&lt;<span class="tag">/span</span>&gt;</code>
+&lt;<span class="tag">/div</span>&gt;</code>
 </pre>
 
         </div>
@@ -1544,6 +1544,77 @@
 
         </div>
 
+        <div id="navs" class="container">
+          <h3 class="s-title"><a href="#navs" class="anchor" aria-hidden="true">#</a>Navs</h3>
+          <div class="columns">
+            <div class="column col-6 col-xs-12">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#nav">Elements</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="#nav">Layout</a>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#nav">Flexbox grid</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Responsive</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Navbar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#nav">Empty states</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Components</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#nav">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="docs-note">
+            <p>Add a container element with the <code>nav</code> class. And add child elements with the <code>nav-item</code> class. The <code>nav-item</code> with the <code>active</code> class will be highlighted.</p>
+          </div>
+
+<!-- navs -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Elements&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item active&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
+    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Flexbox grid&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Responsive&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Navbar&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Empty states&lt;<span class="tag">/a</span>&gt;
+      &lt;<span class="tag">/li</span>&gt;
+    &lt;<span class="tag">/ul</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Components&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
+    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Utilities&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+&lt;<span class="tag">/ul</span>&gt;
+</code></pre>
+
+        </div>
+
         <div id="pagination" class="container">
           <h3 class="s-title"><a href="#pagination" class="anchor" aria-hidden="true">#</a>Pagination</h3>
           <div class="columns">
@@ -1834,77 +1905,6 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
   
-        </div>
-
-        <div id="navs" class="container">
-          <h3 class="s-title"><a href="#navs" class="anchor" aria-hidden="true">#</a>Navs</h3>
-          <div class="columns">
-            <div class="column col-6 col-xs-12">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a href="#nav">Elements</a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#nav">Layout</a>
-                  <ul class="nav">
-                    <li class="nav-item">
-                      <a href="#nav">Flexbox grid</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#nav">Responsive</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#nav">Navbar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#nav">Empty states</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="#nav">Components</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#nav">Utilities</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="docs-note">
-            <p>Add a container element with the <code>nav</code> class. And add child elements with the <code>nav-item</code> class. The <code>nav-item</code> with the <code>active</code> class will be highlighted.</p>
-          </div>
-
-<!-- navs -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Elements&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item active&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;nav&quot;</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Flexbox grid&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Responsive&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Navbar&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-      &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Empty states&lt;<span class="tag">/a</span>&gt;
-      &lt;<span class="tag">/li</span>&gt;
-    &lt;<span class="tag">/ul</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Components&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item&quot;</span>&gt;
-    &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Utilities&lt;<span class="tag">/a</span>&gt;
-  &lt;<span class="tag">/li</span>&gt;
-&lt;<span class="tag">/ul</span>&gt;
-</code></pre>
-
         </div>
 
         <div id="popovers" class="container">

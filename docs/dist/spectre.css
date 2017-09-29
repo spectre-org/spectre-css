@@ -1245,7 +1245,7 @@ input.disabled + .form-icon {
 }
 
 .label {
-  background: #f8f9fa;
+  background: #f0f1f4;
   border-radius: .1rem;
   color: #5b657a;
   display: inline-block; 
@@ -2301,7 +2301,7 @@ summary.accordion-header::-webkit-details-marker {
   background: #f8f9fa;
   border-radius: .1rem;
   color: #727e96;
-  padding: 1.6rem; 
+  padding: 3.2rem 1.6rem; 
   text-align: center;
 }
 
