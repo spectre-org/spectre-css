@@ -125,7 +125,7 @@
   border-top: .3em solid currentColor;
   content: "";
   height: 0;
-  transform: translate(-50%, -25%); 
+  transform: translate(-50%, -25%);
   width: 0;
 }
 

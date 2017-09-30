@@ -67,8 +67,8 @@
   border-right: 0;
   &::before {
     border: $icon-border-width solid currentColor;
-    border-left: 0;
     border-bottom-right-radius: $border-radius;
+    border-left: 0;
     border-top: 0;
     content: "";
     height: .8em;
