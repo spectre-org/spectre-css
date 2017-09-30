@@ -76,26 +76,26 @@
 }
 
 .calendar .calendar-date .date-item.date-today {
-  border-color: #e4e6f6;
-  color: #5764c6;
+  border-color: #e5e5f9;
+  color: #5755d9;
 }
 
 .calendar .calendar-date .date-item:focus {
-  box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
+  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
 .calendar .calendar-date .date-item:focus,
 .calendar .calendar-date .date-item:hover {
-  background: #fbfbfe;
-  border-color: #e4e6f6;
-  color: #5764c6;
+  background: #fefeff;
+  border-color: #e5e5f9;
+  color: #5755d9;
   text-decoration: none;
 }
 
 .calendar .calendar-date .date-item:active,
 .calendar .calendar-date .date-item.active {
-  background: #4c59c2;
-  border-color: #3e4cb6;
+  background: #4b48d6;
+  border-color: #3634d2;
   color: #fff;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .calendar .calendar-range::before {
-  background: #eff1fa;
+  background: #f1f1fc;
   content: "";
   height: 1.4rem;
   left: 0;
@@ -139,7 +139,7 @@
 }
 
 .calendar .calendar-range .date-item {
-  color: #5764c6;
+  color: #5755d9;
 }
 
 .calendar.calendar-lg .calendar-body {
@@ -195,9 +195,9 @@
 }
 
 .calendar.calendar-lg .calendar-event {
-  background: #eff1fa;
+  background: #f1f1fc;
   border-radius: .1rem;
-  color: #5764c6;
+  color: #5755d9;
   display: block;
   font-size: .6rem;
   margin: .1rem auto;
@@ -452,6 +452,30 @@
   }
 }
 
+.filter .filter-tag#tag-0:checked ~ .filter-nav .chip[for="tag-0"],
+.filter .filter-tag#tag-1:checked ~ .filter-nav .chip[for="tag-1"],
+.filter .filter-tag#tag-2:checked ~ .filter-nav .chip[for="tag-2"],
+.filter .filter-tag#tag-3:checked ~ .filter-nav .chip[for="tag-3"],
+.filter .filter-tag#tag-4:checked ~ .filter-nav .chip[for="tag-4"],
+.filter .filter-tag#tag-5:checked ~ .filter-nav .chip[for="tag-5"],
+.filter .filter-tag#tag-6:checked ~ .filter-nav .chip[for="tag-6"],
+.filter .filter-tag#tag-7:checked ~ .filter-nav .chip[for="tag-7"],
+.filter .filter-tag#tag-8:checked ~ .filter-nav .chip[for="tag-8"] {
+  background: #5755d9;
+  color: #fff;
+}
+
+.filter .filter-tag#tag-1:checked ~ .filter-body .filter-item:not([data-tag~="tag-1"]),
+.filter .filter-tag#tag-2:checked ~ .filter-body .filter-item:not([data-tag~="tag-2"]),
+.filter .filter-tag#tag-3:checked ~ .filter-body .filter-item:not([data-tag~="tag-3"]),
+.filter .filter-tag#tag-4:checked ~ .filter-body .filter-item:not([data-tag~="tag-4"]),
+.filter .filter-tag#tag-5:checked ~ .filter-body .filter-item:not([data-tag~="tag-5"]),
+.filter .filter-tag#tag-6:checked ~ .filter-body .filter-item:not([data-tag~="tag-6"]),
+.filter .filter-tag#tag-7:checked ~ .filter-body .filter-item:not([data-tag~="tag-7"]),
+.filter .filter-tag#tag-8:checked ~ .filter-body .filter-item:not([data-tag~="tag-8"]) {
+  display: none;
+}
+
 .filter .filter-nav {
   margin: .4rem 0;
 }
@@ -461,22 +485,6 @@
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.filter .filter-tag#tag-all:checked ~ .filter-nav .chip[for="tag-all"],
-.filter .filter-tag#tag-action:checked ~ .filter-nav .chip[for="tag-action"],
-.filter .filter-tag#tag-roleplaying:checked ~ .filter-nav .chip[for="tag-roleplaying"],
-.filter .filter-tag#tag-shooter:checked ~ .filter-nav .chip[for="tag-shooter"],
-.filter .filter-tag#tag-sports:checked ~ .filter-nav .chip[for="tag-sports"] {
-  background: #5764c6;
-  color: #fff;
-}
-
-.filter .filter-tag#tag-action:checked ~ .filter-body .column:not([data-tag~="tag-action"]),
-.filter .filter-tag#tag-roleplaying:checked ~ .filter-body .column:not([data-tag~="tag-roleplaying"]),
-.filter .filter-tag#tag-shooter:checked ~ .filter-body .column:not([data-tag~="tag-shooter"]),
-.filter .filter-tag#tag-sports:checked ~ .filter-body .column:not([data-tag~="tag-sports"]) {
-  display: none;
 }
 
 .meter {
@@ -752,7 +760,7 @@
   background: #f0f1f4;
   border: 0;
   border-radius: .1rem;
-  color: #5764c6;
+  color: #5755d9;
   height: .2rem;
   position: relative;
   width: 100%;
@@ -764,18 +772,18 @@
 }
 
 .progress::-webkit-progress-value {
-  background: #5764c6;
+  background: #5755d9;
   border-radius: .1rem;
 }
 
 .progress::-moz-progress-bar {
-  background: #5764c6;
+  background: #5755d9;
   border-radius: .1rem;
 }
 
 .progress:indeterminate {
   animation: progress-indeterminate 1.5s linear infinite;
-  background: #f0f1f4 linear-gradient(to right, #5764c6 30%, #f0f1f4 30%) top left/150% 150% no-repeat;
+  background: #f0f1f4 linear-gradient(to right, #5755d9 30%, #f0f1f4 30%) top left/150% 150% no-repeat;
 }
 
 .progress:indeterminate::-moz-progress-bar {
@@ -802,13 +810,13 @@
 }
 
 .slider:focus {
-  box-shadow: 0 0 0 .1rem rgba(87, 100, 198, .2);
+  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
   outline: none;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: #5764c6;
+  background: #5755d9;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -818,7 +826,7 @@
 }
 
 .slider::-moz-range-thumb {
-  background: #5764c6;
+  background: #5755d9;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -827,7 +835,7 @@
 }
 
 .slider::-ms-thumb {
-  background: #5764c6;
+  background: #5755d9;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -887,7 +895,7 @@
 }
 
 .slider::-ms-fill-lower {
-  background: #5764c6;
+  background: #5755d9;
 }
 
 .timeline .timeline-item {
@@ -928,7 +936,7 @@
 }
 
 .timeline .timeline-item .timeline-icon::before {
-  border: .1rem solid #5764c6;
+  border: .1rem solid #5755d9;
   border-radius: 50%;
   content: "";
   display: block;
@@ -940,7 +948,7 @@
 }
 
 .timeline .timeline-item .timeline-icon.icon-lg {
-  background: #5764c6;
+  background: #5755d9;
   font-size: .8rem;
   line-height: 1rem;
 }

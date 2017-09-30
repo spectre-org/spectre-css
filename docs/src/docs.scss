@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.4.2";
+  content: "0.4.3";
 }
 // Core variables and mixins
 @import '../../src/variables';
@@ -195,18 +195,6 @@
     }
   }
 
-  .panel {
-    height: 75vh;
-
-    .tile {
-      margin: .75rem 0;
-    }
-  }
-
-  .parallax {
-    margin: 2rem auto;
-  }
-
   .code {
     color: lighten($body-font-color, 10%);
 
@@ -231,8 +219,16 @@
     }
   }
 
-  .empty .icon {
-    font-size: 2rem;
+  .panel {
+    height: 75vh;
+
+    .tile {
+      margin: .75rem 0;
+    }
+  }
+
+  .parallax {
+    margin: 2rem auto;
   }
 
   .form-autocomplete .menu {
@@ -313,6 +309,13 @@
 
   a {
     color: $gray-color-dark;
+  }
+}
+
+.btn {
+  .feather {
+    height: 1rem;
+    vertical-align: middle;
   }
 }
 
@@ -466,7 +469,7 @@
 
   .s-navbar {
     backdrop-filter: blur(10px);
-    background: rgba($bg-color, .65);
+    background: rgba($bg-color-light, .65);
     right: 0;
     top: 0;
     z-index: $zindex-2;

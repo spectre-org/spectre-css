@@ -12,7 +12,7 @@
   height: $control-size;
   line-height: $line-height;
   outline: none;
-  padding: $control-padding-v $control-padding-h;
+  padding: $control-padding-y $control-padding-x;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -90,13 +90,13 @@
   &.btn-sm {
     font-size: $font-size-sm;
     height: $control-size-sm;
-    padding: $control-padding-v-sm $control-padding-h * .75;
+    padding: $control-padding-y-sm $control-padding-x-sm;
   }
 
   &.btn-lg {
     font-size: $font-size-lg;
     height: $control-size-lg;
-    padding: $control-padding-v-lg $control-padding-h * 1.25;
+    padding: $control-padding-y-lg $control-padding-x-lg;
   }
 
   // Button Block

@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 /* Spectre version */
 .version::after {
-  content: "0.4.2";
+  content: "0.4.3";
 }
 
 /* Spectre New Docs */
@@ -65,7 +65,7 @@
 }
 
 .s-content .anchor {
-  color: #626fca;
+  color: #6362dc;
   height: 0;
   margin-left: -2em;
   overflow: hidden;
@@ -191,18 +191,6 @@
   opacity: .75;
 }
 
-.s-content .panel {
-  height: 75vh;
-}
-
-.s-content .panel .tile {
-  margin: .75rem 0;
-}
-
-.s-content .parallax {
-  margin: 2rem auto;
-}
-
 .s-content .code {
   color: #667189;
 }
@@ -212,7 +200,7 @@
 }
 
 .s-content .code .tag {
-  color: #5764c6;
+  color: #5755d9;
 }
 
 .s-content .code .atn {
@@ -231,8 +219,16 @@
   user-select: none;
 }
 
-.s-content .empty .icon {
-  font-size: 2rem;
+.s-content .panel {
+  height: 75vh;
+}
+
+.s-content .panel .tile {
+  margin: .75rem 0;
+}
+
+.s-content .parallax {
+  margin: 2rem auto;
 }
 
 .s-content .form-autocomplete .menu {
@@ -242,7 +238,7 @@
 .s-content .example-tile-icon {
   align-content: space-around;
   align-items: center;
-  background: #5764c6;
+  background: #5755d9;
   border-radius: .1rem;
   color: #fff;
   display: flex;
@@ -274,7 +270,7 @@
 }
 
 .s-brand {
-  color: #5764c6;
+  color: #5755d9;
   left: 0;
   padding: 0 1.5rem;
   position: fixed;
@@ -321,6 +317,11 @@
   color: #727e96;
 }
 
+.btn .feather {
+  height: 1rem;
+  vertical-align: middle;
+}
+
 /* Spectre Homepage style */
 .section-hero {
   padding: 1rem .5rem;
@@ -332,7 +333,7 @@
 }
 
 .section-hero .s-brand h2 {
-  color: #5764c6;
+  color: #5755d9;
 }
 
 .section-hero .column {
@@ -402,7 +403,7 @@
 }
 
 .grid-hero .card .card-title {
-  color: #5764c6;
+  color: #5755d9;
   font-size: .9rem;
   margin-bottom: 0;
 }
@@ -466,7 +467,7 @@
   .s-navbar {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: rgba(248, 249, 250, .65);
+    background: rgba(255, 255, 255, .65);
     right: 0;
     top: 0;
     z-index: 200;

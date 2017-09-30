@@ -1,5 +1,17 @@
 ## Spectre.css Changelog
 
+### [v0.4.3](https://github.com/picturepan2/spectre/releases/tag/v0.4.3)
+
+- Add Icon Sizes #284
+- Add Large Modals #293
+- Update primary color to #5755d9
+- Change Tooltips `white-space` to `pre` #292
+- Encode SVG Data URI (thanks to @mariodev) #297 #298
+- Improve Buttons and Forms small and large variables
+- Improve Filters code
+- Improve gulpfile and package
+- Add Importing SASS Docs
+
 ### [v0.4.2](https://github.com/picturepan2/spectre/releases/tag/v0.4.2)
 
 - Add Off-screen experimental

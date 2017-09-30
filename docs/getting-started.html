@@ -37,7 +37,7 @@
                     <a href="getting-started.html#installation">Installation</a>
                   </li>
                   <li class="menu-item">
-                    <a href="getting-started.html#compiling">Custom version</a>
+                    <a href="getting-started.html#custom">Custom version</a>
                   </li>
                   <li class="menu-item">
                     <a href="getting-started.html#browsers">Browser support</a>
@@ -253,9 +253,6 @@
         <div class="menu-btn">
           <a href="#sidebar" class="btn btn-link btn-action"><i class="icon icon-menu"></i></a>
         </div>
-        <a href="index.html" class="s-logo">
-          <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework">
-        </a>
         <div class="float-btn">
           <a href="https://github.com/picturepan2/spectre" target="_blank" class="btn btn-primary">GitHub</a>
         </div>
@@ -351,15 +348,15 @@
 
         </div>
 
-        <div id="compiling" class="container">
-          <h3 class="s-title"><a href="#comiling" class="anchor" aria-hidden="true">#</a>Custom version</h3>
+        <div id="custom" class="container">
+          <h3 class="s-title"><a href="#custom" class="anchor" aria-hidden="true">#</a>Custom version</h3>
           <div class="docs-note">
             <p>You can customize your version of Spectre.css by editing SASS files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
             <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">SASS Source Code</a></p>
             <p>If you are looking for LESS version of Spectre.css, please switch to <code>LESS</code> branch.</p>
             <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">LESS Branch</a></p>
           </div>
-          <h4 id="compiling-steps" class="s-subtitle">Compiling CSS</h4>
+          <h4 id="compiling" class="s-subtitle">Compiling CSS</h4>
           <div class="docs-note">
             <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. Firstly you need to <a href="https://www.npmjs.com/get-npm" target="_blank">install NPM</a>, which is used to manage Gulp and other dependencies.</p>
             <p>Then, you can build the CSS file from the command line:</p>
@@ -376,8 +373,39 @@
               <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
             </ul>
           </div>
+          <h4 id="importing" class="s-subtitle">Importing SASS</h4>
+          <div class="docs-note">
+            <p>It is recommended to custom Spectre by importing SASS source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
+            <ul>
+              <li>First, create your own project and install Spectre via <a href="#installation">NPM or other package managers</a>.</li>
+              <li>Then create your <code>project-name.scss</code> file in the root folder. You can use <code>project-name.scss</code> to define your variables.</li>
+              <li>Compile the SASS file to CSS to get the custom version of Spectre.</li>
+            </ul>
 
-          <h4 id="compiling-gulptasks" class="s-subtitle">Folder Structure</h4>
+<!-- importing -->
+<pre class="code" data-lang="SASS"><code><span class="com">// Example of project-name.scss</span>
+<span class="com">// Define variables to override default ones</span>
+<span class="tag">$primary-color</span>: <span class="atn"></span>#2e5bec</span>;
+<span class="tag">$dark-color</span>: <span class="atn"></span>#3e396b</span>;
+
+<span class="com">// Import full Spectre source code</span>
+<span class="tag">@import</span> &quot;node_modules/spectre.css/src/spectre&quot;;
+</code></pre>
+
+            <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>. </p>
+
+<!-- importing -->
+<pre class="code" data-lang="SASS"><code><span class="com">// Example of project-name.scss</span>
+<span class="tag">@import</span> &quot;variables&quot;;
+
+<span class="com">// Import only the needed components</span>
+<span class="tag">@import</span> &quot;node_modules/spectre.css/src/buttons&quot;;
+<span class="tag">@import</span> &quot;node_modules/spectre.css/src/forms&quot;;
+</code></pre>
+
+          </div>
+
+          <h4 id="folders" class="s-subtitle">Folder Structure</h4>
 
 <!-- folder structure -->
 <pre class="code"><code>spectre/
@@ -427,14 +455,14 @@
           <h5 id="variables-colors" class="s-subtitle">Colors</h5>
           <div class="columns">
             <div class="column col-3 col-md-6">
-              <div class="docs-color" style="background:#5764c6;color:#fff;">
-                <div class="color-title">#5764c6</div>
+              <div class="docs-color" style="background:#5755d9;color:#fff;">
+                <div class="color-title">#5755d9</div>
                 <div class="color-subtitle">Primary</div>
               </div>
             </div>
             <div class="column col-3 col-md-6">
-              <div class="docs-color" style="background:#eff1fa;color:#5764c6;">
-                <div class="color-title">#eff1fa</div>
+              <div class="docs-color" style="background:#f1f1fc;color:#5755d9;">
+                <div class="color-title">#f1f1fc</div>
                 <div class="color-subtitle">Secondary</div>
               </div>
             </div>
