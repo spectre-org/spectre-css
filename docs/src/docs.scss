@@ -1,11 +1,11 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
-/* Spectre version */
-.version::after {
-  content: "0.4.4";
-}
 // Core variables and mixins
-@import '../../src/variables';
-@import '../../src/mixins';
+@import "../../src/variables";
+@import "../../src/mixins";
+
+.version::after {
+  content: "#{$version}";
+}
 
 /* Spectre New Docs */
 .s-container {

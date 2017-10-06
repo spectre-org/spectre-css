@@ -1,5 +1,4 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
-/* Spectre version */
 .version::after {
   content: "0.4.4";
 }

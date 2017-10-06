@@ -1,5 +1,6 @@
 // Core variables
-// Colors
+$version: "0.4.4";
+
 // Core colors
 $primary-color: #5755d9 !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
@@ -7,9 +8,6 @@ $primary-color-light: lighten($primary-color, 3%) !default;
 $secondary-color: lighten($primary-color, 37.5%) !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
-
-$link-color: $primary-color !default;
-$link-color-dark: darken($link-color, 5%) !default;
 
 // Gray colors
 $dark-color: #454d5d !default;
@@ -34,6 +32,8 @@ $code-color: #e06870 !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
+$link-color: $primary-color !default;
+$link-color-dark: darken($link-color, 5%) !default;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
