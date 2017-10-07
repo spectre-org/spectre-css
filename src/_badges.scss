@@ -19,10 +19,10 @@
   &[data-badge] {
     &::after {
       font-size: $font-size-sm;
-      height: 18px;
+      height: .9rem;
       line-height: 1;
-      min-width: 18px;
-      padding: 3px 5px;
+      min-width: .9rem;
+      padding: .1rem .2rem;
       text-align: center;
       white-space: nowrap;
     }

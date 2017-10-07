@@ -2,7 +2,7 @@
 code {
   @include label-base();
   @include label-variant($code-color, lighten($code-color, 33%));
-  font-size: .65rem;
+  font-size: $font-size-sm;
 }
 
 .code {
