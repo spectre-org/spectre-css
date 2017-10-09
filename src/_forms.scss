@@ -250,14 +250,14 @@ textarea.form-input {
         border-left-width: 0;
         border-top-width: 0;
         content: "";
-        height: 10px;
+        height: 12px;
         left: 50%;
-        margin-left: -3px;
-        margin-top: -6px;
+        margin-left: -4px;
+        margin-top: -8px;
         position: absolute;
         top: 50%;
         transform: rotate(45deg);
-        width: 6px;
+        width: 8px;
       }
     }
     &:indeterminate + .form-icon {
@@ -288,13 +288,12 @@ textarea.form-input {
         background: $bg-color-light;
         border-radius: 50%;
         content: "";
-        height: 6px;
+        height: 4px;
         left: 50%;
-        margin-left: -3px;
-        margin-top: -3px;
         position: absolute;
         top: 50%;
-        width: 6px;
+        transform: translate(-50%, -50%);
+        width: 4px;
       }
     }
   }
@@ -315,7 +314,7 @@ textarea.form-input {
     &::before {
       @include control-transition();
       background: $bg-color-light;
-      border-radius: $unit-2;
+      border-radius: 50%;
       content: "";
       display: block;
       height: $unit-4;

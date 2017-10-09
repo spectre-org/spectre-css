@@ -365,7 +365,6 @@ h6,
 }
 
 p {
-  line-height: 1.2rem;
   margin: 0 0 1rem;
 }
 
@@ -665,14 +664,14 @@ dl dd {
   line-height: .8rem;
   margin-left: .2rem;
   margin-right: -2px;
-  opacity: .45;
-  padding: 0 2px;
+  opacity: 1;
+  padding: 0;
   text-decoration: none;
   width: .8rem;
 }
 
 .btn.btn-clear:hover {
-  opacity: .85;
+  opacity: .95;
 }
 
 .btn.btn-clear::before {
@@ -983,14 +982,14 @@ textarea.form-input {
   border-left-width: 0;
   border-top-width: 0;
   content: "";
-  height: 10px;
+  height: 12px;
   left: 50%;
-  margin-left: -3px;
-  margin-top: -6px;
+  margin-left: -4px;
+  margin-top: -8px;
   position: absolute;
   top: 50%;
   transform: rotate(45deg);
-  width: 6px;
+  width: 8px;
 }
 
 .form-checkbox input:indeterminate + .form-icon {
@@ -1018,13 +1017,12 @@ textarea.form-input {
   background: #fff;
   border-radius: 50%;
   content: "";
-  height: 6px;
+  height: 4px;
   left: 50%;
-  margin-left: -3px;
-  margin-top: -3px;
   position: absolute;
   top: 50%;
-  width: 6px;
+  transform: translate(-50%, -50%);
+  width: 4px;
 }
 
 .form-switch {
@@ -1043,7 +1041,7 @@ textarea.form-input {
 
 .form-switch .form-icon::before {
   background: #fff;
-  border-radius: .4rem;
+  border-radius: 50%;
   content: "";
   display: block;
   height: .8rem;
@@ -1289,7 +1287,7 @@ code {
   background: #fdf4f4;
   border-radius: .1rem;
   color: #e06870;
-  font-size: .7rem; 
+  font-size: 85%; 
   line-height: 1.2;
   padding: .1rem .15rem;
 }
@@ -1297,7 +1295,6 @@ code {
 .code {
   border-radius: .1rem;
   color: #50596c;
-  line-height: 1rem;
   position: relative;
 }
 
@@ -1314,7 +1311,7 @@ code {
   background: #f8f9fa;
   color: inherit;
   display: block;
-  line-height: inherit;
+  line-height: 1.5;
   overflow-x: auto;
   padding: 1rem;
   width: 100%;
@@ -2249,11 +2246,12 @@ summary.accordion-header::-webkit-details-marker {
   display: inline-flex;
   display: -ms-inline-flexbox;
   -ms-flex-align: center;
-  font-size: 95%;
+  font-size: 90%;
   height: 1.2rem;
+  line-height: .8rem;
   margin: .1rem;
   max-width: 100%;
-  padding: .1rem .5rem;
+  padding: .2rem .4rem;
   text-decoration: none;
   vertical-align: middle;
 }
@@ -2264,7 +2262,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .chip .avatar {
-  margin-left: -.5rem;
+  margin-left: -.4rem;
   margin-right: .2rem;
 }
 
@@ -2427,6 +2425,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .modal.modal-sm .modal-container {
   max-width: 320px;
+  padding: 0 .4rem;
 }
 
 .modal.modal-lg .modal-overlay {
@@ -2443,27 +2442,23 @@ summary.accordion-header::-webkit-details-marker {
   border-radius: .1rem;
   box-shadow: 0 .2rem .5rem rgba(69, 77, 93, .3);
   display: block;
-  padding: 0;
+  padding: 0 .8rem;
   text-align: left;
 }
 
 .modal-container .modal-header {
-  padding: .8rem 1.2rem;
-}
-
-.modal-container .modal-header .modal-title {
-  margin: 0;
+  padding: .8rem;
 }
 
 .modal-container .modal-body {
   max-height: 50vh;
   overflow-y: auto;
-  padding: .8rem 1.2rem;
+  padding: .8rem;
   position: relative;
 }
 
 .modal-container .modal-footer {
-  padding: .8rem 1.2rem;
+  padding: .8rem;
   text-align: right;
 }
 
@@ -2734,12 +2729,6 @@ summary.accordion-header::-webkit-details-marker {
   margin-top: 0;
 }
 
-.tab .tab-item.tab-action {
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  text-align: right;
-}
-
 .tab .tab-item a {
   border-bottom: .1rem solid transparent;
   color: inherit;
@@ -2760,6 +2749,16 @@ summary.accordion-header::-webkit-details-marker {
   color: #5755d9;
 }
 
+.tab .tab-item.tab-action {
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  text-align: right;
+}
+
+.tab .tab-item .btn-clear {
+  margin-top: -.2rem;
+}
+
 .tab.tab-block .tab-item {
   -ms-flex: 1 0 0;
   flex: 1 0 0;
@@ -2772,13 +2771,13 @@ summary.accordion-header::-webkit-details-marker {
 
 .tab.tab-block .tab-item .badge[data-badge]::after {
   position: absolute;
-  right: -4px;
-  top: -4px;
+  right: .1rem;
+  top: .1rem;
   transform: translate(0, 0);
 }
 
 .tab:not(.tab-block) .badge {
-  padding-right: 2px;
+  padding-right: 0;
 }
 
 .tile {
@@ -2875,7 +2874,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .toast .btn-clear {
-  margin: 2px -2px 2px 4px;
+  margin: 4px -2px 4px 4px;
 }
 
 .tooltip {

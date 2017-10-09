@@ -10,11 +10,6 @@
   .tab-item {
     margin-top: 0;
 
-    &.tab-action {
-      flex: 1 0 auto;
-      text-align: right;
-    }
-
     a {
       border-bottom: $border-width-lg solid transparent;
       color: inherit;
@@ -32,6 +27,15 @@
       border-bottom-color: $primary-color;
       color: $link-color;
     }
+
+    &.tab-action {
+      flex: 1 0 auto;
+      text-align: right;
+    }
+
+    .btn-clear {
+      margin-top: -$unit-1;
+    }
   }
 
   &.tab-block {
@@ -46,8 +50,8 @@
       .badge {
         &[data-badge]::after {
           position: absolute;
-          right: -4px;
-          top: -4px;
+          right: $unit-h;
+          top: $unit-h;
           transform: translate(0, 0);
         }
       }
@@ -56,7 +60,7 @@
 
   &:not(.tab-block) {
     .badge {
-      padding-right: 2px;
+      padding-right: 0;
     }
   }
 }

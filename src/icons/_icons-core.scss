@@ -42,6 +42,7 @@ $icon-prefix: "icon";
 .toast,
 .menu {
   .#{$icon-prefix} {
-    vertical-align: -15%;
+    font-size: $font-size;
+    vertical-align: -10%;
   }
 }

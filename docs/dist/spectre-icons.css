@@ -36,7 +36,8 @@
 .btn .icon,
 .toast .icon,
 .menu .icon {
-  vertical-align: -15%;
+  font-size: .8rem;
+  vertical-align: -10%;
 }
 
 .icon-arrow-down::before,

@@ -129,13 +129,13 @@
     line-height: $unit-4;
     margin-left: $unit-1;
     margin-right: -2px;
-    opacity: .45;
-    padding: 0 2px;
+    opacity: 1;
+    padding: 0;
     text-decoration: none;
     width: $unit-4;
 
     &:hover {
-      opacity: .85;
+      opacity: .95;
     }
 
     &::before {
