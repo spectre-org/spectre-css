@@ -9,7 +9,7 @@ h6 {
   color: inherit;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: .25em;
+  margin-bottom: .5em;
   margin-top: 0;
 }
 .h1,
@@ -47,8 +47,7 @@ h6,
 
 // Paragraphs
 p {
-  line-height: 1.2 * $line-height;
-  margin: 0 0 $unit-4;
+  margin: 0 0 $line-height;
 }
 
 // Semantic text elements
@@ -67,7 +66,7 @@ abbr[title] {
 kbd {
   @include label-base();
   @include label-variant($light-color, $dark-color);
-  font-size: .65rem;
+  font-size: $font-size-sm;
 }
 
 mark {

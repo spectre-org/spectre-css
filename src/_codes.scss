@@ -2,13 +2,12 @@
 code {
   @include label-base();
   @include label-variant($code-color, lighten($code-color, 33%));
-  font-size: .65rem;
+  font-size: 85%;
 }
 
 .code {
   border-radius: $border-radius;
   color: $body-font-color;
-  line-height: $line-height;
   position: relative;
 
   &::before {
@@ -24,7 +23,7 @@ code {
     background: $bg-color;
     color: inherit;
     display: block;
-    line-height: inherit;
+    line-height: 1.5;
     overflow-x: auto;
     padding: 1rem;
     width: 100%;

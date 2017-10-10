@@ -5,10 +5,12 @@
   border-radius: 5rem;
   color: $gray-color-dark;
   display: inline-flex;
+  font-size: 90%;
   height: $unit-6;
+  line-height: $unit-4;
   margin: $unit-h;
   max-width: 100%;
-  padding: $unit-h ($unit-2 + $unit-h);
+  padding: $unit-1 $unit-2;
   text-decoration: none;
   vertical-align: middle;
 
@@ -18,7 +20,7 @@
   }
 
   .avatar {
-    margin-left: -($unit-2 + $unit-h);
+    margin-left: -$unit-2;
     margin-right: $unit-1;
   }
 }

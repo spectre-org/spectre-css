@@ -1,5 +1,6 @@
 // Core variables
-// Colors
+$version: "0.4.4";
+
 // Core colors
 $primary-color: #5755d9 !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
@@ -8,14 +9,11 @@ $secondary-color: lighten($primary-color, 37.5%) !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
-$link-color: $primary-color !default;
-$link-color-dark: darken($link-color, 5%) !default;
-
 // Gray colors
 $dark-color: #454d5d !default;
 $light-color: #fff !default;
 $gray-color: lighten($dark-color, 40%) !default;
-$gray-color-dark: darken($gray-color, 20%) !default;
+$gray-color-dark: darken($gray-color, 25%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
 
 $border-color: lighten($dark-color, 60%) !default;
@@ -34,6 +32,8 @@ $code-color: #e06870 !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
+$link-color: $primary-color !default;
+$link-color-dark: darken($link-color, 5%) !default;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
@@ -63,10 +63,10 @@ $unit-16: 3.2rem !default;
 
 // Font sizes
 $html-font-size: 20px !default;
-$html-line-height: 1.428571429 !default;
-$font-size: .7rem !default;
-$font-size-sm: .6rem !default;
-$font-size-lg: .8rem !default;
+$html-line-height: 1.5 !default;
+$font-size: .8rem !default;
+$font-size-sm: .7rem !default;
+$font-size-lg: .9rem !default;
 $line-height: 1rem !default;
 
 // Sizes
@@ -76,8 +76,8 @@ $layout-spacing-lg: $unit-4 !default;
 $border-radius: $unit-h !default;
 $border-width: $unit-o !default;
 $border-width-lg: $unit-h !default;
-$control-size: $unit-8 !default;
-$control-size-sm: $unit-6 !default;
+$control-size: $unit-9 !default;
+$control-size-sm: $unit-7 !default;
 $control-size-lg: $unit-10 !default;
 $control-padding-x: $unit-2 !default;
 $control-padding-x-sm: $unit-2 * .75 !default;
@@ -85,7 +85,7 @@ $control-padding-x-lg: $unit-2 * 1.5 !default;
 $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
 $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
-$control-icon-size: .7rem !default;
+$control-icon-size: .8rem !default;
 $control-min-width: 180px !default;
 $control-max-width: 320px !default;
 

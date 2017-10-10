@@ -1,5 +1,10 @@
 ## Spectre.css Changelog
 
+### [v0.4.4](https://github.com/picturepan2/spectre/releases/tag/v0.4.4)
+
+- IMPORTANT: Increase default font sizes to 16px #271
+- Add version number to CSS #288 #289
+
 ### [v0.4.3](https://github.com/picturepan2/spectre/releases/tag/v0.4.3)
 
 - Add Icon Sizes #284

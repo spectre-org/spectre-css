@@ -1,7 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
-/* Spectre version */
 .version::after {
-  content: "0.4.3";
+  content: "0.4.4";
 }
 
 /* Spectre New Docs */
@@ -28,6 +27,7 @@
 }
 
 .s-sidebar .accordion {
+  font-size: .7rem;
   margin-bottom: .75rem;
 }
 
@@ -48,7 +48,7 @@
 
 .s-sidebar .accordion .menu .menu-item > a {
   background: transparent;
-  color: #727e96;
+  color: #667189;
   display: inline-block;
 }
 
@@ -141,7 +141,7 @@
 .s-content .docs-ad::before {
   color: #acb3c2;
   content: "AD";
-  font-size: .6rem;
+  font-size: .7rem;
   position: absolute;
   right: .4rem;
   top: .1rem;
@@ -187,7 +187,7 @@
 }
 
 .s-content .docs-color .color-subtitle {
-  font-size: .6rem;
+  font-size: .7rem;
   opacity: .75;
 }
 
@@ -314,7 +314,7 @@
 }
 
 .s-footer a {
-  color: #727e96;
+  color: #667189;
 }
 
 .btn .feather {
@@ -366,7 +366,7 @@
 }
 
 .section-footer a {
-  color: #727e96;
+  color: #667189;
 }
 
 .grid-hero {
@@ -415,7 +415,7 @@
 .s-navbar {
   height: 3.5rem;
   left: 0;
-  padding: .75rem 1.5rem;
+  padding: .85rem 1.5rem;
   position: fixed;
   text-align: center;
   z-index: 400;
@@ -429,7 +429,7 @@
 .s-navbar .float-btn {
   position: fixed;
   right: 4rem;
-  top: 1.5rem;
+  top: 1.4rem;
 }
 
 @media (max-width: 880px) {
@@ -476,7 +476,7 @@
     display: block;
     left: 2.6rem;
     position: fixed;
-    top: .95rem;
+    top: .85rem;
   }
   .s-navbar .menu-btn .btn {
     font-size: 1rem;
@@ -493,7 +493,7 @@
   }
   .s-navbar .float-btn {
     right: 2.9rem;
-    top: .95rem;
+    top: .85rem;
   }
   .docs-nav-clear {
     background: rgba(0, 0, 0, .15);
@@ -513,7 +513,7 @@
   }
   .s-content .s-title,
   .s-content .s-subtitle {
-    padding-top: 5rem;
+    padding-top: 4rem;
     position: static;
   }
   .s-content .s-title::before,

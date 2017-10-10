@@ -45,3 +45,9 @@ $icon-prefix: "icon";
     vertical-align: -10%;
   }
 }
+
+.btn-lg {
+  .#{$icon-prefix} {
+    vertical-align: -15%;
+  }
+}
