@@ -18,10 +18,6 @@
   .off-canvas-sidebar {
     width: 12rem;
   }
-
-  .off-canvas-content {
-    padding: 0 4rem;
-  }
 }
 
 .docs-navbar {
@@ -84,6 +80,10 @@
 .docs-content {
   flex: 1 1 auto;
   width: calc(100vw - 12rem);
+
+  &.off-canvas-content {
+    padding: 0 4rem;
+  }
 
   & > .container {
     margin-left: 0;
@@ -282,8 +282,14 @@
   }
 
   .off-canvas {
-    height: 20rem;
     position: relative;
+
+    .off-canvas-toggle {
+      left: $layout-spacing;
+      position: absolute;
+      top: $layout-spacing;
+      z-index: $zindex-0;
+    }
   }
 }
 

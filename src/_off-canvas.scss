@@ -1,11 +1,10 @@
 // Off canvas menus
-$off-canvas-breakpoint: 960px;
+$off-canvas-breakpoint: 960px !default;
 
 .off-canvas {
   display: flex;
   flex-flow: nowrap;
   height: 100%;
-  min-height: 100vh;
   position: relative;
   width: 100%;
 
@@ -25,7 +24,21 @@ $off-canvas-breakpoint: 960px;
   .off-canvas-content {
     flex: 1 1 auto;
     height: 100%;
-    padding: $layout-spacing-lg $layout-spacing-lg $layout-spacing-lg 4rem;
+    padding: $layout-spacing $layout-spacing $layout-spacing 4rem;
+  }
+
+  .off-canvas-overlay {
+    background: rgba($dark-color, .1);
+    border-color: transparent;
+    border-radius: 0;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
   }
 
   .off-canvas-sidebar {
@@ -34,31 +47,18 @@ $off-canvas-breakpoint: 960px;
     }
 
     &:target ~ .off-canvas-overlay {
-      background: rgba($dark-color, .1);
-      border-color: transparent;
-      border-radius: 0;
-      bottom: 0;
       display: block;
-      height: 100%;
-      left: 0;
-      position: fixed;
-      right: 0;
-      top: 0;
-      width: 100%;
       z-index: $zindex-2;
     }
   }
 
   .off-canvas-toggle {
     display: block;
-    left: $layout-spacing-lg;
-    padding-left: 0;
-    padding-right: 0;
+    left: $layout-spacing;
     position: absolute;
-    top: $layout-spacing-lg;
+    top: $layout-spacing;
     transition: none;
-    width: $control-size-lg;
-    z-index: $zindex-2;
+    z-index: $zindex-0;
   }
 }
 

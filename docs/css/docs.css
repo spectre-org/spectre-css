@@ -14,10 +14,6 @@
   width: 12rem;
 }
 
-.off-canvas .off-canvas-content {
-  padding: 0 4rem;
-}
-
 .docs-navbar {
   height: 3.8rem;
   position: fixed;
@@ -71,6 +67,10 @@
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   width: calc(100vw - 12rem);
+}
+
+.docs-content.off-canvas-content {
+  padding: 0 4rem;
 }
 
 .docs-content > .container {
@@ -281,8 +281,14 @@
 }
 
 .docs-content .off-canvas {
-  height: 20rem;
   position: relative;
+}
+
+.docs-content .off-canvas .off-canvas-toggle {
+  left: .4rem;
+  position: absolute;
+  top: .4rem;
+  z-index: 1;
 }
 
 .docs-brand {

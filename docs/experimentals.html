@@ -754,24 +754,18 @@
         <div class="columns">
           <div class="column">
             <div class="off-canvas">
-              <input type="checkbox" class="off-canvas-checkbox" id="sidebar-checkbox" name="sidebar-checkbox" hidden>
-              <label class="off-canvas-toggle btn btn-primary btn-lg" for="sidebar-checkbox">
+              <a class="off-canvas-toggle btn btn-primary btn-action" href="#sidebar-demo">
                 <i class="icon icon-menu"></i>
-              </label>
-              <div class="off-canvas-sidebar flex-centered">
+              </a>
+              <div id="sidebar-demo" class="off-canvas-sidebar flex-centered">
                 <span>Sidebar</span>
               </div>
+              <a class="off-canvas-overlay" href="#close"></a>
               <div class="off-canvas-content">
                 <div class="content">
                   <h4>Lorem ipsum</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
                   <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
-                  <h4>Cupcake ipsum</h4>
-                  <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.</p>
-                  <p>De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.</p>
-                  <h4>Candy ipsum</h4>
-                  <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.</p>
-                  <p>Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.</p>
                 </div>
               </div>
             </div>
@@ -780,15 +774,17 @@
 
 <!-- off-canvas -->
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas&quot;</span>&gt;
-  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-checkbox&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;sidebar-checkbox&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;sidebar-checkbox&quot;</span> <span class="atn">hidden</span>&gt;
-  <span class="com">&lt;!-- off-screen toggle button and close mask --&gt;</span>
-  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-toggle btn btn-primary btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;sidebar-checkbox&quot;</span>&gt;
+  <span class="com">&lt;!-- off-screen toggle button --&gt;</span>
+  &lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-toggle btn btn-primary btn-action&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#sidebar-id&quot;</span>&gt;
     &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-menu&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
-  &lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">/a</span>&gt;
 
-  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-sidebar&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">id</span>=<span class="atv">&quot;sidebar-id&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-sidebar&quot;</span>&gt;
     <span class="com">&lt;!-- off-screen sidebar --&gt;</span>
   &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">a</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-overlay&quot;</span> <span class="atn">href</span>=<span class="atv">&quot;#close&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
+
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;off-canvas-content&quot;</span>&gt;
     <span class="com">&lt;!-- off-screen content --&gt;</span>
   &lt;<span class="tag">/div</span>&gt;
