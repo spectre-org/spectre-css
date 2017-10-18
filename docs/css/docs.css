@@ -342,12 +342,12 @@
   padding: 1rem .5rem;
 }
 
-.section-hero .s-brand {
+.section-hero .docs-brand {
   position: absolute;
   top: .5rem;
 }
 
-.section-hero .s-brand h2 {
+.section-hero .docs-brand h2 {
   color: #5755d9;
 }
 
