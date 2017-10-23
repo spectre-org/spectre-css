@@ -1,4 +1,4 @@
-/*! Spectre.css Experimentals v0.4.4 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.4.5 | MIT License | github.com/picturepan2/spectre */
 .calendar {
   border: .05rem solid #e7e9ed;
   border-radius: .1rem;
@@ -549,72 +549,73 @@
 .off-canvas {
   display: flex;
   display: -ms-flexbox;
+  -ms-flex-flow: nowrap;
+  flex-flow: nowrap;
   height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
 }
 
 .off-canvas .off-canvas-sidebar {
   background: #f8f9fa;
-  height: 100%;
+  bottom: 0;
   left: 0;
-  padding: .8rem;
-  position: absolute;
+  min-width: 10rem;
+  overflow-y: auto;
+  position: fixed;
   top: 0;
   transform: translateX(-100%);
   transition: transform .25s ease;
-  width: 10rem;
   z-index: 300;
 }
 
 .off-canvas .off-canvas-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  overflow-y: auto;
-  padding: .8rem .8rem .8rem 4rem;
+  height: 100%;
+  padding: .4rem .4rem .4rem 4rem;
 }
 
-.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-sidebar {
-  transform: translateX(0);
-}
-
-.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-toggle {
+.off-canvas .off-canvas-overlay {
   background: rgba(69, 77, 93, .1);
   border-color: transparent;
   border-radius: 0;
   bottom: 0;
+  display: none;
   height: 100%;
   left: 0;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
 }
 
-.off-canvas .off-canvas-checkbox:checked ~ .off-canvas-toggle .icon {
-  display: none;
+.off-canvas .off-canvas-sidebar:target,
+.off-canvas .off-canvas-sidebar.active {
+  transform: translateX(0);
+}
+
+.off-canvas .off-canvas-sidebar:target ~ .off-canvas-overlay,
+.off-canvas .off-canvas-sidebar.active ~ .off-canvas-overlay {
+  display: block;
+  z-index: 200;
 }
 
 .off-canvas .off-canvas-toggle {
   display: block;
-  left: .8rem;
-  padding-left: 0;
-  padding-right: 0;
+  left: .4rem;
   position: absolute;
-  top: .8rem;
+  top: .4rem;
   transition: none;
-  width: 2rem;
-  z-index: 200;
+  z-index: 1;
 }
 
 @media (min-width: 960px) {
   .off-canvas .off-canvas-sidebar {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    position: static;
-    transform: translateX(0);
+    position: relative;
+    transform: none;
   }
   .off-canvas .off-canvas-content {
     padding-left: .8rem;

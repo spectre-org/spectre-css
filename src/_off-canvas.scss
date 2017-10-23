@@ -1,74 +1,76 @@
 // Off canvas menus
+$off-canvas-breakpoint: 960px !default;
+
 .off-canvas {
   display: flex;
+  flex-flow: nowrap;
   height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
 
   .off-canvas-sidebar {
     background: $bg-color;
-    height: 100%;
+    bottom: 0;
     left: 0;
-    padding: $layout-spacing-lg;
-    position: absolute;
+    min-width: 10rem;
+    overflow-y: auto;
+    position: fixed;
     top: 0;
     transform: translateX(-100%);
     transition: transform .25s ease;
-    width: 10rem;
     z-index: $zindex-3;
   }
 
   .off-canvas-content {
     flex: 1 1 auto;
-    overflow-y: auto;
-    padding: $layout-spacing-lg $layout-spacing-lg $layout-spacing-lg 4rem;
+    height: 100%;
+    padding: $layout-spacing $layout-spacing $layout-spacing 4rem;
   }
 
-  .off-canvas-checkbox {
-    &:checked ~ .off-canvas-sidebar {
+  .off-canvas-overlay {
+    background: rgba($dark-color, .1);
+    border-color: transparent;
+    border-radius: 0;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .off-canvas-sidebar {
+    &:target,
+    &.active {
       transform: translateX(0);
     }
 
-    &:checked ~ .off-canvas-toggle {
-      background: rgba($dark-color, .1);
-      border-color: transparent;
-      border-radius: 0;
-      bottom: 0;
-      height: 100%;
-      left: 0;
-      right: 0;
-      top: 0;
-      width: 100%;
-
-      .icon {
-        display: none;
-      }
+    &:target ~ .off-canvas-overlay,
+    &.active ~ .off-canvas-overlay {
+      display: block;
+      z-index: $zindex-2;
     }
   }
 
   .off-canvas-toggle {
     display: block;
-    left: $layout-spacing-lg;
-    padding-left: 0;
-    padding-right: 0;
+    left: $layout-spacing;
     position: absolute;
-    top: $layout-spacing-lg;
+    top: $layout-spacing;
     transition: none;
-    width: $control-size-lg;
-    z-index: $zindex-2;
+    z-index: $zindex-0;
   }
 }
 
 // Responsive layout
-@media (min-width: $size-lg) {
+@media (min-width: $off-canvas-breakpoint) {
   .off-canvas {
     .off-canvas-sidebar {
       flex: 0 0 auto;
-      position: static;
-      transform: translateX(0);
+      position: relative;
+      transform: none;
     }
 
     .off-canvas-content {
