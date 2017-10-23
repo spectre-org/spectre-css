@@ -1,5 +1,11 @@
 ## Spectre.css Changelog
 
+### [v0.4.5](https://github.com/picturepan2/spectre/releases/tag/v0.4.5)
+
+- Rewrite Off-canvas component
+- Add `active` support to the Off-canvas #308
+- Update the Docs pages
+
 ### [v0.4.4](https://github.com/picturepan2/spectre/releases/tag/v0.4.4)
 
 - IMPORTANT: Increase default font sizes to 16px #271
