@@ -22,8 +22,8 @@
 
 .docs-navbar {
   height: 3.8rem;
-  right: 0;
   position: fixed;
+  right: 0;
   top: 0;
   z-index: $zindex-2;
 
@@ -115,8 +115,8 @@
     color: darken($dark-color, 2%);
     line-height: 1.8rem;
     margin-bottom: 0;
-    padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     position: static;
 
     @supports (position: sticky) {
@@ -434,7 +434,7 @@
 @media (max-width: 960px) {
   .off-canvas {
     .off-canvas-toggle {
-      z-index: $zindex-3; 
+      z-index: $zindex-3;
     }
   }
 
