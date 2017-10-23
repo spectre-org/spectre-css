@@ -42,11 +42,13 @@ $off-canvas-breakpoint: 960px !default;
   }
 
   .off-canvas-sidebar {
-    &:target {
+    &:target,
+    &.active {
       transform: translateX(0);
     }
 
-    &:target ~ .off-canvas-overlay {
+    &:target ~ .off-canvas-overlay,
+    &.active ~ .off-canvas-overlay {
       display: block;
       z-index: $zindex-2;
     }

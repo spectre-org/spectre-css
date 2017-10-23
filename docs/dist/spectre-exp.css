@@ -590,11 +590,13 @@
   width: 100%;
 }
 
-.off-canvas .off-canvas-sidebar:target {
+.off-canvas .off-canvas-sidebar:target,
+.off-canvas .off-canvas-sidebar.active {
   transform: translateX(0);
 }
 
-.off-canvas .off-canvas-sidebar:target ~ .off-canvas-overlay {
+.off-canvas .off-canvas-sidebar:target ~ .off-canvas-overlay,
+.off-canvas .off-canvas-sidebar.active ~ .off-canvas-overlay {
   display: block;
   z-index: 200;
 }
