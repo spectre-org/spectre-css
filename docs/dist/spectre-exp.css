@@ -1,4 +1,4 @@
-/*! Spectre.css Experimentals v0.4.5 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.4.6 | MIT License | github.com/picturepan2/spectre */
 .calendar {
   border: .05rem solid #e7e9ed;
   border-radius: .1rem;
@@ -814,6 +814,10 @@
 .slider:focus {
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
   outline: none;
+}
+
+.slider.tooltip:not([data-tooltip])::after {
+  content: attr(value);
 }
 
 .slider::-webkit-slider-thumb {

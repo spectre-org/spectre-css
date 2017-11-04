@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.4.5";
+  content: "0.4.6";
 }
 
 .off-canvas .off-canvas-toggle {

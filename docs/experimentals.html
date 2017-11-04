@@ -870,10 +870,11 @@
         <h3 class="s-title"><a href="#sliders" class="anchor" aria-hidden="true">#</a>Sliders</h3>
         <div class="docs-note">
           <p>Sliders are for selecting values from ranges.</p>
+          <p>You can add the class <code>tooltip</code> to have tooltip labels. If no <code>data-tooltip</code> is set, the <code>value</code> will be used instead.</p>
         </div>
         <div class="columns">
           <div class="column col-6 col-xs-12">
-            <input class="slider tooltip" data-tooltip="50" type="range" min="0" max="100" value="50">
+            <input class="slider tooltip" type="range" min="0" max="100" value="50" oninput="this.setAttribute('value', this.value);">
           </div>
           <div class="column col-6 col-xs-12">
             <input class="slider" type="range" min="0" max="100" value="50" disabled>
@@ -881,7 +882,10 @@
         </div>
 
 <!-- sliders -->
-<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;slider&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;range&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;50&quot;</span> <span class="tag">/</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Sliders --&gt;</span>
+&lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;slider&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;range&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;50&quot;</span>&gt;
+<span class="com">&lt;!-- Sliders with tooltips --&gt;</span>
+&lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;slider tooltip&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;range&quot;</span> <span class="atn">min</span>=<span class="atv">&quot;0&quot;</span> <span class="atn">max</span>=<span class="atv">&quot;100&quot;</span> <span class="atn">value</span>=<span class="atv">&quot;50&quot;</span> <span class="atn">oninput</span>=<span class="atv">&quot;this.setAttribute('value', this.value);&quot;</span>&gt;
 </code></pre>
 
       </div>

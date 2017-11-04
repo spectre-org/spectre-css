@@ -12,6 +12,12 @@
     outline: none;
   }
 
+  &.tooltip:not([data-tooltip]) {
+    &::after {
+      content: attr(value);
+    }
+  }
+
   // Slider Thumb
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
