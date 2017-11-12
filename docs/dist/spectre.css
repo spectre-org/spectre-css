@@ -3033,6 +3033,7 @@ a.text-error:hover {
 
 .bg-primary {
   background: #5755d9;
+  color: #fff;
 }
 
 .bg-secondary {
@@ -3041,6 +3042,7 @@ a.text-error:hover {
 
 .bg-dark {
   background: #454d5d;
+  color: #fff;
 }
 
 .bg-gray {
@@ -3049,14 +3051,17 @@ a.text-error:hover {
 
 .bg-success {
   background: #32b643;
+  color: #fff;
 }
 
 .bg-warning {
   background: #ffb700;
+  color: #fff;
 }
 
 .bg-error {
   background: #e85600;
+  color: #fff;
 }
 
 .c-hand {

@@ -196,9 +196,7 @@
 }
 
 .calendar.calendar-lg .calendar-event {
-  background: #f1f1fc;
   border-radius: .1rem;
-  color: #5755d9;
   display: block;
   font-size: .7rem;
   margin: .1rem auto;

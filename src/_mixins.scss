@@ -10,6 +10,10 @@
 @mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
   #{$name} {
     background: $color;
+
+    @if (lightness($color) < 60) {
+      color: $light-color;
+    }
   }
 }
 
