@@ -13,6 +13,17 @@
     }
   }
 
+  &,
+  &.table-striped {
+    tbody {
+      tr {
+        &.active {
+          background: $bg-color-dark;
+        }
+      }
+    }
+  }
+
   &.table-hover {
     tbody {
       tr {
@@ -23,15 +34,12 @@
     }
   }
 
-  &,
-  &.table-striped {
-    tbody {
-      tr {
-        &.active {
-          background: $bg-color-dark;
-        }
-      }
-    }
+  // Tables with horizontal scrollbar
+  &.table-scroll {
+    display: block;
+    overflow-x: auto;
+    padding-bottom: .75rem;
+    white-space: nowrap;
   }
 
   td,
