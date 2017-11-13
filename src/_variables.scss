@@ -86,8 +86,12 @@ $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
 $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
 $control-icon-size: .8rem !default;
-$control-min-width: 180px !default;
-$control-max-width: 320px !default;
+
+$control-width-xs: 180px !default;
+$control-width-sm: 320px !default;
+$control-width-md: 640px !default;
+$control-width-lg: 960px !default;
+$control-width-xl: 1280px !default;
 
 // Responsive breakpoints
 $size-xs: 480px !default;
