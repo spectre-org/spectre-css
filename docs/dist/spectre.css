@@ -2598,7 +2598,6 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .popover .popover-container {
-  content: attr(data-tooltip);
   left: 50%;
   opacity: 0;
   padding: .4rem;
@@ -2610,7 +2609,7 @@ summary.accordion-header::-webkit-details-marker {
   z-index: 400;
 }
 
-.popover :focus + .popover-container,
+.popover *:focus + .popover-container,
 .popover:hover .popover-container,
 .popover .popover-container:hover {
   display: block;
