@@ -2126,7 +2126,7 @@ summary.accordion-header::-webkit-details-marker {
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
   color: #e7e9ed;
   content: "/";
-  padding-right: .2rem;
+  padding-right: .4rem;
 }
 
 .bar {
