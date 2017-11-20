@@ -1,5 +1,15 @@
 ## Spectre.css Changelog
 
+### [v0.4.6](https://github.com/picturepan2/spectre/releases/tag/v0.4.6)
+
+- Add new Sliders example #328
+- Add Table with horizontal scroll support #333
+- Update Calendar event style which makes use of color utilities #326 
+- Define $parallax-fade-color as default variable #332
+- Fix the Docs content mistake
+- Fix breadcrumb-item extra spacing #337
+- Fix comparison slider image responsive bug #338
+
 ### [v0.4.5](https://github.com/picturepan2/spectre/releases/tag/v0.4.5)
 
 - Rewrite Off-canvas component
