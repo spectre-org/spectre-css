@@ -1,4 +1,4 @@
-/*! Spectre.css v0.4.5 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.4.6 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
@@ -509,13 +509,20 @@ dl dd {
   background: #f8f9fa;
 }
 
+.table tbody tr.active,
+.table.table-striped tbody tr.active {
+  background: #f0f1f4;
+}
+
 .table.table-hover tbody tr:hover {
   background: #f0f1f4;
 }
 
-.table tbody tr.active,
-.table.table-striped tbody tr.active {
-  background: #f0f1f4;
+.table.table-scroll {
+  display: block;
+  overflow-x: auto;
+  padding-bottom: .75rem;
+  white-space: nowrap;
 }
 
 .table td,
@@ -2119,7 +2126,7 @@ summary.accordion-header::-webkit-details-marker {
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
   color: #e7e9ed;
   content: "/";
-  padding-right: .2rem;
+  padding-right: .4rem;
 }
 
 .bar {
@@ -2591,7 +2598,6 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .popover .popover-container {
-  content: attr(data-tooltip);
   left: 50%;
   opacity: 0;
   padding: .4rem;
@@ -2603,7 +2609,7 @@ summary.accordion-header::-webkit-details-marker {
   z-index: 400;
 }
 
-.popover :focus + .popover-container,
+.popover *:focus + .popover-container,
 .popover:hover .popover-container,
 .popover .popover-container:hover {
   display: block;
@@ -3033,6 +3039,7 @@ a.text-error:hover {
 
 .bg-primary {
   background: #5755d9;
+  color: #fff;
 }
 
 .bg-secondary {
@@ -3041,6 +3048,7 @@ a.text-error:hover {
 
 .bg-dark {
   background: #454d5d;
+  color: #fff;
 }
 
 .bg-gray {
@@ -3049,14 +3057,17 @@ a.text-error:hover {
 
 .bg-success {
   background: #32b643;
+  color: #fff;
 }
 
 .bg-warning {
   background: #ffb700;
+  color: #fff;
 }
 
 .bg-error {
   background: #e85600;
+  color: #fff;
 }
 
 .c-hand {

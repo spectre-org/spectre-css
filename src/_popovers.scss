@@ -4,19 +4,18 @@
   position: relative;
 
   .popover-container {
-    content: attr(data-tooltip);
-    opacity: 0;
     left: 50%;
+    opacity: 0;
     padding: $layout-spacing;
     position: absolute;
     top: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: transform .2s ease;
-    width: $control-max-width;
+    width: $control-width-sm;
     z-index: $zindex-4;
   }
 
-  :focus + .popover-container,
+  *:focus + .popover-container,
   &:hover .popover-container,
   .popover-container:hover {
     display: block;

@@ -1,5 +1,5 @@
 // Off canvas menus
-$off-canvas-breakpoint: 960px !default;
+$off-canvas-breakpoint: $size-lg !default;
 
 .off-canvas {
   display: flex;

@@ -351,10 +351,10 @@
       <div id="custom" class="container">
         <h3 class="s-title"><a href="#custom" class="anchor" aria-hidden="true">#</a>Custom version</h3>
         <div class="docs-note">
-          <p>You can customize your version of Spectre.css by editing SASS files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
-          <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">SASS Source Code</a></p>
-          <p>If you are looking for LESS version of Spectre.css, please switch to <code>LESS</code> branch.</p>
-          <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">LESS Branch</a></p>
+          <p>You can customize your version of Spectre.css by editing Sass files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
+          <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">Sass Source Code</a></p>
+          <p>If you are looking for Less version of Spectre.css, please switch to <code>Less</code> branch.</p>
+          <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">Less Branch</a></p>
         </div>
         <h4 id="compiling" class="s-subtitle">Compiling CSS</h4>
         <div class="docs-note">
@@ -363,23 +363,23 @@
           <ol>
             <li>Navigate to the root directory of Spectre.</li>
             <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-            <li>When completed, run <code>gulp build</code> task to compile SASS to CSS and minify files.</li>
+            <li>When completed, run <code>gulp build</code> task to compile Sass to CSS and minify files.</li>
             <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
           </ol>
           <p>All available Gulp tasks:</p>
           <ul>
-            <li><code>gulp build</code> - compile SASS to CSS and minify files (default)</li>
+            <li><code>gulp build</code> - compile Sass to CSS and minify files (default)</li>
             <li><code>gulp docs</code> - compile Docs related files</li>
             <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
           </ul>
         </div>
-        <h4 id="importing" class="s-subtitle">Importing SASS</h4>
+        <h4 id="importing" class="s-subtitle">Importing Sass</h4>
         <div class="docs-note">
-          <p>It is recommended to custom Spectre by importing SASS source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
+          <p>It is recommended to custom Spectre by importing Sass source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
           <ul>
             <li>First, create your own project and install Spectre via <a href="#installation">NPM or other package managers</a>.</li>
             <li>Then create your <code>project-name.scss</code> file in the root folder. You can use <code>project-name.scss</code> to define your variables.</li>
-            <li>Compile the SASS file to CSS to get the custom version of Spectre.</li>
+            <li>Compile the Sass file to CSS to get the custom version of Spectre.</li>
           </ul>
 
 <!-- importing -->
@@ -435,7 +435,7 @@
 │   ├── index.html
 │   └── ...
 │
-├── src/                            <span class="com">// Source SASS files</span>
+├── src/                            <span class="com">// Source Sass files</span>
 │   ├── spectre.scss
 │   ├── spectre-icons.scss
 │   ├── spectre-exp.scss
@@ -620,7 +620,7 @@ gulp.task('prefix', function() {
           <p><strong>August 2017</strong></p>
           <ul>
             <li>
-              <a href="getting-started.html">Switch to SASS</a> <small class="label label-primary">NEW</small>
+              <a href="getting-started.html">Switch to Sass</a> <small class="label label-primary">NEW</small>
             </li>
             <li>
               <a href="getting-started.html">New Docs Experience</a> <small class="label label-primary">NEW</small>

@@ -4,6 +4,7 @@ $parallax-offset: 4.5px !default;
 $parallax-offset-z: 50px !default;
 $parallax-perspective: 1000px !default;
 $parallax-scale: .95 !default;
+$parallax-fade-color: rgba(255, 255, 255, .35) !default;
 
 // Mixin: Parallax direction
 @mixin parallax-dir() {
@@ -64,7 +65,7 @@ $parallax-scale: .95 !default;
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(135deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
+        background: linear-gradient(135deg, $parallax-fade-color 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -82,7 +83,7 @@ $parallax-scale: .95 !default;
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-135deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
+        background: linear-gradient(-135deg, $parallax-fade-color 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -100,7 +101,7 @@ $parallax-scale: .95 !default;
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(45deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
+        background: linear-gradient(45deg, $parallax-fade-color 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -118,7 +119,7 @@ $parallax-scale: .95 !default;
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-45deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
+        background: linear-gradient(-45deg, $parallax-fade-color 0%, transparent 50%);
       }
 
       .parallax-front {

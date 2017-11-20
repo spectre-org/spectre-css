@@ -1,5 +1,5 @@
 // Core variables
-$version: "0.4.5";
+$version: "0.4.6";
 
 // Core colors
 $primary-color: #5755d9 !default;
@@ -86,8 +86,12 @@ $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
 $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
 $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
 $control-icon-size: .8rem !default;
-$control-min-width: 180px !default;
-$control-max-width: 320px !default;
+
+$control-width-xs: 180px !default;
+$control-width-sm: 320px !default;
+$control-width-md: 640px !default;
+$control-width-lg: 960px !default;
+$control-width-xl: 1280px !default;
 
 // Responsive breakpoints
 $size-xs: 480px !default;
@@ -96,6 +100,8 @@ $size-md: 840px !default;
 $size-lg: 960px !default;
 $size-xl: 1280px !default;
 $size-2x: 1440px !default;
+
+$responsive-breakpoint: $size-xs !default;
 
 // Z-index
 $zindex-0: 1 !default;

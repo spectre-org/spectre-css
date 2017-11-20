@@ -1,4 +1,4 @@
-/*! Spectre.css Experimentals v0.4.5 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.4.6 | MIT License | github.com/picturepan2/spectre */
 .calendar {
   border: .05rem solid #e7e9ed;
   border-radius: .1rem;
@@ -196,9 +196,7 @@
 }
 
 .calendar.calendar-lg .calendar-event {
-  background: #f1f1fc;
   border-radius: .1rem;
-  color: #5755d9;
   display: block;
   font-size: .7rem;
   margin: .1rem auto;
@@ -356,7 +354,7 @@
 .comparison-slider .comparison-before img,
 .comparison-slider .comparison-after img {
   height: 100%;
-  object-fit: none;
+  object-fit: cover;
   object-position: left center;
   position: absolute;
   width: 100%;
@@ -814,6 +812,10 @@
 .slider:focus {
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
   outline: none;
+}
+
+.slider.tooltip:not([data-tooltip])::after {
+  content: attr(value);
 }
 
 .slider::-webkit-slider-thumb {
