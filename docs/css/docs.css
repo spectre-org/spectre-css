@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.4.6";
+  content: "0.4.7";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -504,5 +504,13 @@
   }
   .docs-content .anchor {
     display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  .docs-ad.docs-ad-sidebar {
+    bottom: 1rem;
+    position: fixed;
+    right: 1rem;
   }
 }

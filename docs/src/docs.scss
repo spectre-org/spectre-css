@@ -538,3 +538,13 @@
     }
   }
 }
+
+@media (min-width: 1366px) {
+  .docs-ad {
+    &.docs-ad-sidebar {
+      bottom: 1rem;
+      position: fixed;
+      right: 1rem;
+    }
+  }
+}
