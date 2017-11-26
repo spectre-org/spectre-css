@@ -1286,7 +1286,7 @@ input.disabled + .form-icon {
 }
 
 .form-horizontal {
-  padding: .4rem;
+  padding: .4rem 0;
 }
 
 .form-horizontal .form-group {
