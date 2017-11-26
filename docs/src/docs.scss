@@ -323,6 +323,7 @@
       display: inline;
       font-size: .9rem;
       font-weight: 500;
+      line-height: 1.5rem;
       margin-bottom: 0;
       margin-left: .5rem;
       margin-right: .5rem;
@@ -352,7 +353,7 @@
 
   .docs-brand {
     position: absolute;
-    top: .5rem;
+    top: .85rem;
 
     h2 {
       color: $primary-color;
@@ -396,7 +397,6 @@
 .grid-hero {
   padding-bottom: 2rem;
   padding-top: 6rem;
-  position: relative;
 
   h1 {
     color: $body-font-color;

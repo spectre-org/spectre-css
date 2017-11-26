@@ -325,6 +325,7 @@
   display: inline;
   font-size: .9rem;
   font-weight: 500;
+  line-height: 1.5rem;
   margin-bottom: 0;
   margin-left: .5rem;
   margin-right: .5rem;
@@ -351,7 +352,7 @@
 
 .section-hero .docs-brand {
   position: absolute;
-  top: .5rem;
+  top: .85rem;
 }
 
 .section-hero .docs-brand h2 {
@@ -394,7 +395,6 @@
 .grid-hero {
   padding-bottom: 2rem;
   padding-top: 6rem;
-  position: relative;
 }
 
 .grid-hero h1 {
