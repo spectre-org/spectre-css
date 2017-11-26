@@ -674,26 +674,31 @@
 .parallax .parallax-top-left {
   height: 50%;
   left: 0;
+  outline: none;
   position: absolute;
   top: 0; 
   width: 50%;
   z-index: 100;
 }
 
+.parallax .parallax-top-left:focus ~ .parallax-content,
 .parallax .parallax-top-left:hover ~ .parallax-content {
   transform: perspective(1000px) rotateX(3deg) rotateY(-3deg);
 }
 
+.parallax .parallax-top-left:focus ~ .parallax-content::before,
 .parallax .parallax-top-left:hover ~ .parallax-content::before {
   background: linear-gradient(135deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
 }
 
+.parallax .parallax-top-left:focus ~ .parallax-content .parallax-front,
 .parallax .parallax-top-left:hover ~ .parallax-content .parallax-front {
   transform: translate3d(4.5px, 4.5px, 50px) scale(.95);
 }
 
 .parallax .parallax-top-right {
   height: 50%;
+  outline: none;
   position: absolute;
   right: 0;
   top: 0; 
@@ -701,14 +706,17 @@
   z-index: 100;
 }
 
+.parallax .parallax-top-right:focus ~ .parallax-content,
 .parallax .parallax-top-right:hover ~ .parallax-content {
   transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
 }
 
+.parallax .parallax-top-right:focus ~ .parallax-content::before,
 .parallax .parallax-top-right:hover ~ .parallax-content::before {
   background: linear-gradient(-135deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
 }
 
+.parallax .parallax-top-right:focus ~ .parallax-content .parallax-front,
 .parallax .parallax-top-right:hover ~ .parallax-content .parallax-front {
   transform: translate3d(-4.5px, 4.5px, 50px) scale(.95);
 }
@@ -717,19 +725,23 @@
   bottom: 0;
   height: 50%;
   left: 0; 
+  outline: none;
   position: absolute;
   width: 50%;
   z-index: 100;
 }
 
+.parallax .parallax-bottom-left:focus ~ .parallax-content,
 .parallax .parallax-bottom-left:hover ~ .parallax-content {
   transform: perspective(1000px) rotateX(-3deg) rotateY(-3deg);
 }
 
+.parallax .parallax-bottom-left:focus ~ .parallax-content::before,
 .parallax .parallax-bottom-left:hover ~ .parallax-content::before {
   background: linear-gradient(45deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
 }
 
+.parallax .parallax-bottom-left:focus ~ .parallax-content .parallax-front,
 .parallax .parallax-bottom-left:hover ~ .parallax-content .parallax-front {
   transform: translate3d(4.5px, -4.5px, 50px) scale(.95);
 }
@@ -737,20 +749,24 @@
 .parallax .parallax-bottom-right {
   bottom: 0;
   height: 50%;
+  outline: none;
   position: absolute;
   right: 0; 
   width: 50%;
   z-index: 100;
 }
 
+.parallax .parallax-bottom-right:focus ~ .parallax-content,
 .parallax .parallax-bottom-right:hover ~ .parallax-content {
   transform: perspective(1000px) rotateX(-3deg) rotateY(3deg);
 }
 
+.parallax .parallax-bottom-right:focus ~ .parallax-content::before,
 .parallax .parallax-bottom-right:hover ~ .parallax-content::before {
   background: linear-gradient(-45deg, rgba(255, 255, 255, .35) 0%, transparent 50%);
 }
 
+.parallax .parallax-bottom-right:focus ~ .parallax-content .parallax-front,
 .parallax .parallax-bottom-right:hover ~ .parallax-content .parallax-front {
   transform: translate3d(-4.5px, -4.5px, 50px) scale(.95);
 }
