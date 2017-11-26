@@ -500,7 +500,7 @@ input {
 
 // Form Horizontal
 .form-horizontal {
-  padding: $layout-spacing;
+  padding: $layout-spacing 0;
 
   .form-group {
     display: flex;

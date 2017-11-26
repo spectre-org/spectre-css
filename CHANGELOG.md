@@ -1,5 +1,13 @@
 ## Spectre.css Changelog
 
+### [v0.4.7](https://github.com/picturepan2/spectre/releases/tag/v0.4.7)
+
+- Add new button colors (success and error) #227 #241 #342
+- Add overflow-scrolling: touch; CSS for better scrolling
+- Add touch support to Parallax image hover effect
+- Update the Modal example code
+- Fix form horizontal layout spacing
+
 ### [v0.4.6](https://github.com/picturepan2/spectre/releases/tag/v0.4.6)
 
 - Add new Sliders example #328

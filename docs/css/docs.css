@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.4.6";
+  content: "0.4.7";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -30,6 +30,7 @@
 
 .docs-sidebar .docs-nav {
   bottom: 1.5rem;
+  -webkit-overflow-scrolling: touch; 
   overflow-y: auto;
   padding: .5rem 1.5rem;
   position: fixed;
@@ -324,6 +325,7 @@
   display: inline;
   font-size: .9rem;
   font-weight: 500;
+  line-height: 1.5rem;
   margin-bottom: 0;
   margin-left: .5rem;
   margin-right: .5rem;
@@ -350,7 +352,7 @@
 
 .section-hero .docs-brand {
   position: absolute;
-  top: .5rem;
+  top: .85rem;
 }
 
 .section-hero .docs-brand h2 {
@@ -393,7 +395,6 @@
 .grid-hero {
   padding-bottom: 2rem;
   padding-top: 6rem;
-  position: relative;
 }
 
 .grid-hero h1 {
@@ -504,5 +505,13 @@
   }
   .docs-content .anchor {
     display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  .docs-ad.docs-ad-sidebar {
+    bottom: 1rem;
+    position: fixed;
+    right: 1rem;
   }
 }

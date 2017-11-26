@@ -9,6 +9,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
 // Mixin: Parallax direction
 @mixin parallax-dir() {
   height: 50%;
+  outline: none;
   position: absolute;
   width: 50%;
   z-index: $zindex-1;
@@ -61,6 +62,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     left: 0;
     top: 0;
 
+    &:focus ~ .parallax-content,
     &:hover ~ .parallax-content {
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
@@ -79,6 +81,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     right: 0;
     top: 0;
 
+    &:focus ~ .parallax-content,
     &:hover ~ .parallax-content {
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
@@ -97,6 +100,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     bottom: 0;
     left: 0;
 
+    &:focus ~ .parallax-content,
     &:hover ~ .parallax-content {
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
@@ -115,6 +119,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
     bottom: 0;
     right: 0;
 
+    &:focus ~ .parallax-content,
     &:hover ~ .parallax-content {
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
