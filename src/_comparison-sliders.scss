@@ -5,6 +5,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 
   .comparison-before,
   .comparison-after {

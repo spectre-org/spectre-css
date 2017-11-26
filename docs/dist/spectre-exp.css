@@ -211,6 +211,7 @@
   background: #f8f9fa;
   display: block;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch; 
   position: relative;
   width: 100%;
 }
@@ -337,6 +338,7 @@
 .comparison-slider {
   height: 50vh;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch; 
   position: relative;
   width: 100%;
 }
