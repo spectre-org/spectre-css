@@ -73,6 +73,15 @@
     }
   }
 
+  // Button Colors
+  &.btn-success {
+    @include button-variant($success-color);
+  }
+
+  &.btn-error {
+    @include button-variant($error-color);
+  }
+
   // Button Link
   &.btn-link {
     background: transparent;
