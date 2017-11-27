@@ -108,4 +108,6 @@ Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make mos
 - Opera (LAST 4)
 - Internet Explorer 10+
 
+Spectre supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.
+
 Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
