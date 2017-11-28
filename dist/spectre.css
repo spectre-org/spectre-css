@@ -1914,7 +1914,7 @@ video.video-responsive::before {
   -ms-flex-align: center;
 }
 
-.navbar .navbar-section:last-child {
+.navbar .navbar-section:not(:first-child):last-child {
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
