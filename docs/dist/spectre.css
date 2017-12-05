@@ -801,10 +801,12 @@ legend {
 }
 
 .form-label.label-sm {
+  font-size: .7rem;
   padding: .2rem 0;
 }
 
 .form-label.label-lg {
+  font-size: .9rem;
   padding: .5rem 0;
 }
 
@@ -976,7 +978,9 @@ textarea.form-input {
 .form-switch {
   display: inline-block;
   line-height: 1rem;
-  padding: .2rem 1.2rem;
+  margin: .2rem 0;
+  min-height: 1.2rem;
+  padding: .2rem .4rem .2rem 1.2rem;
   position: relative;
 }
 
@@ -1013,6 +1017,20 @@ textarea.form-input {
   display: inline-block;
   position: absolute; 
   transition: all .2s ease;
+}
+
+.form-checkbox.input-sm,
+.form-radio.input-sm,
+.form-switch.input-sm {
+  font-size: .7rem;
+  margin: 0;
+}
+
+.form-checkbox.input-lg,
+.form-radio.input-lg,
+.form-switch.input-lg {
+  font-size: .9rem;
+  margin: .3rem 0;
 }
 
 .form-checkbox .form-icon,
@@ -1128,6 +1146,7 @@ textarea.form-input {
   border-radius: .1rem;
   line-height: 1rem;
   padding: .35rem .4rem;
+  white-space: nowrap;
 }
 
 .input-group .input-group-addon.addon-sm {
@@ -1292,12 +1311,6 @@ input.disabled + .form-icon {
 .form-horizontal .form-group {
   display: flex; 
   display: -ms-flexbox;
-}
-
-.form-horizontal .form-checkbox,
-.form-horizontal .form-radio,
-.form-horizontal .form-switch {
-  margin: .2rem 0;
 }
 
 .label {

@@ -1156,6 +1156,9 @@
             </select>
           </div>
         </div>
+        <div class="docs-note">
+          <p>You can add the <code>input-sm</code>/<code>input-lg</code> classes to the input-checkbox, input-radio and input-switch to have different sizes.</p>
+        </div>
 
         <h4 id="forms-icons" class="s-subtitle">Form icons</h4>
         <div class="docs-note">
@@ -1365,6 +1368,26 @@
         <div class="columns">
           <div class="column col-xs-12">
             <div class="input-group">
+              <label class="form-switch">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+              </label>
+              <input type="text" class="form-input" placeholder="name">
+            </div>
+          </div>
+          <div class="column col-xs-12">
+            <div class="input-group">
+              <label class="form-checkbox">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+              </label>
+              <input type="text" class="form-input" placeholder="name">
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-xs-12">
+            <div class="input-group">
               <input type="text" class="form-input input-lg" placeholder="username">
               <select class="form-select select-lg">
                 <option>Slack</option>
@@ -1381,6 +1404,7 @@
             </div>
           </div>
         </div>
+
         <div class="docs-note">
           <p>If you want to attach text and button along with an input, add the <code>input-group</code> class to the input container. And add the <code>input-group-addon</code> class to the text element and <code>input-group-btn</code> to the button element.</p>
         </div>
