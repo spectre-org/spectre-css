@@ -10,7 +10,7 @@
     display: flex;
     flex: 1 0 0;
 
-    &:last-child {
+    &:not(:first-child):last-child {
       justify-content: flex-end;
     }
   }

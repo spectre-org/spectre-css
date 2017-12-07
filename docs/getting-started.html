@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div class="docs-container off-canvas">
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
     <div class="docs-navbar">
       <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
         <i class="icon icon-menu"></i>
@@ -302,7 +302,7 @@
           <p class="h5">Install manually</p>
           <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/releases" target="_blank">Spectre CSS file</a> (core ~10KB min+gzip):</p>
           <p><a href="https://github.com/picturepan2/spectre/releases" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
-          <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
+          <p>Include <code>spectre.css</code> located in <strong>/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
         </div>
 
 <!-- install manually -->
@@ -423,7 +423,7 @@
 
 <!-- folder structure -->
 <pre class="code"><code>spectre/
-├── dist/                           <span class="com">// Build folder (Git ignored)</span>
+├── dist/                           <span class="com">// Build folder</span>
 │   ├── spectre-exp.css
 │   ├── spectre-exp.min.css
 │   ├── spectre-icons.css
@@ -619,6 +619,7 @@ gulp.task('prefix', function() {
             <li>Opera <small class="label label-success">LAST 4</small></li>
             <li>Internet Explorer 10+</li>
           </ul>
+          <p>Spectre supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.</p>
         </div>
       </div>
 

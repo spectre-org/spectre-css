@@ -22,10 +22,12 @@ legend {
   padding: $control-padding-y + $border-width 0;
 
   &.label-sm {
+    font-size: $font-size-sm;
     padding: $control-padding-y-sm + $border-width 0;
   }
 
   &.label-lg {
+    font-size: $font-size-lg;
     padding: $control-padding-y-lg + $border-width 0;
   }
 }
@@ -192,7 +194,9 @@ textarea.form-input {
 .form-switch {
   display: inline-block;
   line-height: $line-height;
-  padding: (($control-size-sm - $line-height) / 2)  ($control-icon-size + $control-padding-x);
+  margin: ($control-size - $control-size-sm) / 2 0;
+  min-height: 1.2rem;
+  padding: (($control-size-sm - $line-height) / 2) $control-padding-x (($control-size-sm - $line-height) / 2) ($control-icon-size + $control-padding-x);
   position: relative;
 
   input {
@@ -218,6 +222,17 @@ textarea.form-input {
     cursor: pointer;
     display: inline-block;
     position: absolute;
+  }
+
+  // Input checkbox, radio and switch sizes
+  &.input-sm {
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+
+  &.input-lg {
+    font-size: $font-size-lg;
+    margin: ($control-size-lg - $control-size-sm) / 2 0;
   }
 }
 
@@ -349,11 +364,13 @@ textarea.form-input {
     border-radius: $border-radius;
     line-height: $line-height;
     padding: $control-padding-y $control-padding-x;
+    white-space: nowrap;
 
     &.addon-sm {
       font-size: $font-size-sm;
       padding: $control-padding-y-sm $control-padding-x-sm;
     }
+
     &.addon-lg {
       font-size: $font-size-lg;
       padding: $control-padding-y-lg $control-padding-x-lg;
@@ -504,11 +521,5 @@ input {
 
   .form-group {
     display: flex;
-  }
-
-  .form-checkbox,
-  .form-radio,
-  .form-switch {
-    margin: ($control-size - $control-size-sm) / 2 0;
   }
 }

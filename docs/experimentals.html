@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div class="docs-container off-canvas">
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
     <div class="docs-navbar">
       <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
         <i class="icon icon-menu"></i>
@@ -762,11 +762,11 @@
         <h3 class="s-title"><a href="#off-canvas" class="anchor" aria-hidden="true">#</a>Off-canvas</h3>
         <div class="docs-note">
           <p>The Off-canvas is a navigation layout that the sidebar can slide in and out of the viewport. It is built in pure CSS. </p>
-          <p>By default, the off-canvas menu is collapsed when the window width is smaller than or equal to <strong>960px</strong>.</p>
+          <p>By default, the off-canvas menu is collapsed whenever the window width is. But you can add the <code>off-canvas-sidebar-show</code> class to the <code>off-canvas</code> to make the sidebar expanded when the window width is larger than or equal to <strong>960px</strong>.</p>
         </div>
         <div class="columns">
           <div class="column">
-            <div class="off-canvas">
+            <div class="off-canvas off-canvas-sidebar-show">
               <a class="off-canvas-toggle btn btn-primary btn-action" href="#sidebar-demo">
                 <i class="icon icon-menu"></i>
               </a>

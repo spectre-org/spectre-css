@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div class="docs-container off-canvas">
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
     <div class="docs-navbar">
       <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
         <i class="icon icon-menu"></i>
@@ -402,7 +402,7 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-      <h4 id="grid-offset" class="s-subtitle">Grid offset</h4>
+        <h4 id="grid-offset" class="s-subtitle">Grid offset</h4>
         <div class="docs-note">
           <p>The Flexbox grid provides margin auto utilities to set offset. There are <code>col-mx-auto</code>, <code>col-ml-auto</code> and <code>col-mr-auto</code> to set margins between columns without using empty columns.</p>
         </div>
@@ -458,6 +458,41 @@
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-4 col-mr-auto&quot;</span>&gt;col-4 col-mr-auto&lt;<span class="tag">/div</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        <h4 id="grid-nesting" class="s-subtitle">Grid nesting</h4>
+        <div class="docs-note">
+          <p>To nest grids, add the new <code>columns</code> and <code>column</code> structure within an existing column.</p>
+        </div>
+        <div class="columns">
+          <div class="column col-6">
+            <div class="bg-gray docs-block">col-6</div>
+            <div class="columns">
+              <div class="column col-6">
+                <div class="bg-primary docs-block">col-6</div>
+              </div>
+              <div class="column col-6">
+                <div class="bg-primary docs-block">col-6</div>
+              </div>
+            </div>
+          </div>
+          <div class="column col-6">
+            <div class="bg-gray docs-block">col-6</div>
+          </div>
+        </div>
+
+<!-- layout -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6
+      &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+      &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>

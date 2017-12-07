@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div class="docs-container off-canvas">
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
     <div class="docs-navbar">
       <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
         <i class="icon icon-menu"></i>
@@ -781,9 +781,8 @@
         </div>
 
 <!-- buttons -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- buttons with disabled state --&gt;</span>
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- buttons with active state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn active&quot;</span>&gt;active button&lt;<span class="tag">/button</span>&gt;
 </code></pre>
           
         <div class="docs-note">
@@ -904,8 +903,8 @@
 
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form textarea control --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
-&lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
@@ -1157,6 +1156,9 @@
             </select>
           </div>
         </div>
+        <div class="docs-note">
+          <p>You can add the <code>input-sm</code>/<code>input-lg</code> classes to the input-checkbox, input-radio and input-switch to have different sizes.</p>
+        </div>
 
         <h4 id="forms-icons" class="s-subtitle">Form icons</h4>
         <div class="docs-note">
@@ -1366,6 +1368,26 @@
         <div class="columns">
           <div class="column col-xs-12">
             <div class="input-group">
+              <label class="form-switch">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+              </label>
+              <input type="text" class="form-input" placeholder="name">
+            </div>
+          </div>
+          <div class="column col-xs-12">
+            <div class="input-group">
+              <label class="form-checkbox">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+              </label>
+              <input type="text" class="form-input" placeholder="name">
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-xs-12">
+            <div class="input-group">
               <input type="text" class="form-input input-lg" placeholder="username">
               <select class="form-select select-lg">
                 <option>Slack</option>
@@ -1382,6 +1404,7 @@
             </div>
           </div>
         </div>
+
         <div class="docs-note">
           <p>If you want to attach text and button along with an input, add the <code>input-group</code> class to the input container. And add the <code>input-group-addon</code> class to the text element and <code>input-group-btn</code> to the button element.</p>
         </div>

@@ -321,8 +321,8 @@
   
     h2 {
       display: inline;
-      font-size: .9rem;
-      font-weight: 500;
+      font-size: .8rem;
+      font-weight: 700;
       line-height: 1.5rem;
       margin-bottom: 0;
       margin-left: .5rem;
@@ -522,6 +522,22 @@
   .docs-navbar {
     .btn {
       right: 1rem;
+    }
+  }
+
+  .grid-hero {
+    .docs-brand {
+      left: 1rem;
+    }
+  }
+
+  .docs-sidebar {
+    .docs-brand {
+      margin: .85rem 1rem;
+    }
+  
+    .docs-nav {
+      padding: .5rem 1rem;
     }
   }
 
