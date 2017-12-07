@@ -1,5 +1,16 @@
 ## Spectre.css Changelog
 
+### [v0.5.0](https://github.com/picturepan2/spectre/releases/tag/v0.5.0)
+
+- IMPORTANT: Restore /dist folder
+- Add Grid nesting example #353
+- Add Form control sizes support
+- Update Off-canvas default behavior #347
+- Split Mixins
+- Fix Navbar last-child align right bug #346
+- Fix modal doc typo
+- Fix docs examples #348
+
 ### [v0.4.7](https://github.com/picturepan2/spectre/releases/tag/v0.4.7)
 
 - Add new button colors (success and error) #227 #241 #342
