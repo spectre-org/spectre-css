@@ -5,7 +5,7 @@
 - IMPORTANT: Restore /dist folder
 - Add Grid nesting example #353
 - Add Form control sizes support
-- Update Off-canvas default behavior #347
+- Update Off-canvas default behavior and new option available #347
 - Split Mixins
 - Fix Navbar last-child align right bug #346
 - Fix modal doc typo
