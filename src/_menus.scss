@@ -40,6 +40,12 @@
       }
     }
 
+    .form-checkbox,
+    .form-radio,
+    .form-switch {
+      margin: $unit-h 0;
+    }
+
     & + .menu-item {
       margin-top: $unit-1;
     }

@@ -1237,19 +1237,29 @@
           <div class="column col-4 col-xs-12">
             <ul class="menu">
               <li class="menu-item">
-                <a href="#menus">Slack</a>
+                <label class="form-checkbox">
+                  <input type="checkbox" checked>
+                  <i class="form-icon"></i> form-checkbox
+                </label>
               </li>
               <li class="menu-item">
-                <a href="#menus">Hipchat</a>
+                <label class="form-radio">
+                  <input type="radio" checked>
+                  <i class="form-icon"></i> form-radio
+                </label>
               </li>
               <li class="menu-item">
-                <a href="#menus">Skype</a>
+                <label class="form-switch">
+                  <input type="checkbox" checked>
+                  <i class="form-icon"></i> form-switch
+                </label>
               </li>
             </ul>
           </div>
         </div>
         <div class="docs-note">
           <p>Add a container element with the <code>menu</code> class. And add child elements with the <code>menu-item</code> class. You can separate menu items with a <code>divider</code>. Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.</p>
+          <p>Menus also have <a href="elements.html#forms" target="_blank">Form controls</a> (checkbox, radio and checkbox) support.</p>
         </div>
 
 <!-- menus -->
@@ -1257,11 +1267,18 @@
   <span class="com">&lt;!-- menu header text --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span> <span class="atn">data-content</span>=<span class="atv">&quot;LINKS&quot;</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
-  <span class="com">&lt;!-- menu item --&gt;</span>
+  <span class="com">&lt;!-- menu item standard --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;
       &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-link&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; Slack
     &lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">/li</span>&gt;
+  <span class="com">&lt;!-- menu item with form control --&gt;</span>
+  &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-checkbox&quot;</span>&gt;
+      &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;checkbox&quot;</span>&gt;
+      &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;form-icon&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt; form-checkbox
+    &lt;<span class="tag">/label</span>&gt;
   &lt;<span class="tag">/li</span>&gt;
   <span class="com">&lt;!-- menu divider --&gt;</span>
   &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;divider&quot;</span>&gt;&lt;<span class="tag">/li</span>&gt;
