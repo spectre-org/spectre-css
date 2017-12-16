@@ -2397,7 +2397,7 @@ summary.accordion-header::-webkit-details-marker {
   min-width: 180px;
   padding: .4rem;
   transform: translateY(.2rem);
-  z-index: 100;
+  z-index: 300;
 }
 
 .menu.menu-nav {
@@ -2675,7 +2675,7 @@ summary.accordion-header::-webkit-details-marker {
   transform: translate(-50%, -50%) scale(0);
   transition: transform .2s ease;
   width: 320px;
-  z-index: 400;
+  z-index: 300;
 }
 
 .popover *:focus + .popover-container,

@@ -27,7 +27,7 @@ $off-canvas-breakpoint: $size-lg !default;
     top: 0;
     transform: translateX(-100%);
     transition: transform .25s ease;
-    z-index: $zindex-3;
+    z-index: $zindex-2;
   }
 
   .off-canvas-content {
@@ -59,7 +59,7 @@ $off-canvas-breakpoint: $size-lg !default;
     &:target ~ .off-canvas-overlay,
     &.active ~ .off-canvas-overlay {
       display: block;
-      z-index: $zindex-2;
+      z-index: $zindex-1;
     }
   }
 }

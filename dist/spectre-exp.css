@@ -211,9 +211,10 @@
   background: #f8f9fa;
   display: block;
   overflow: hidden;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .carousel .carousel-container {
@@ -254,7 +255,7 @@
   top: 50%;
   transform: translateY(-50%);
   transition: all .4s ease;
-  z-index: 200;
+  z-index: 100;
 }
 
 .carousel .carousel-container .item-prev {
@@ -291,7 +292,7 @@
   position: absolute;
   transform: translateX(-50%);
   width: 10rem;
-  z-index: 200;
+  z-index: 100;
 }
 
 .carousel .carousel-nav .nav-item {
@@ -575,7 +576,7 @@
   top: 0;
   transform: translateX(-100%);
   transition: transform .25s ease;
-  z-index: 300;
+  z-index: 200;
 }
 
 .off-canvas .off-canvas-content {
@@ -607,7 +608,7 @@
 .off-canvas .off-canvas-sidebar:target ~ .off-canvas-overlay,
 .off-canvas .off-canvas-sidebar.active ~ .off-canvas-overlay {
   display: block;
-  z-index: 200;
+  z-index: 100;
 }
 
 @media (min-width: 960px) {
