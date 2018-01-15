@@ -501,7 +501,7 @@ dl dd {
 .table {
   border-collapse: collapse;
   border-spacing: 0;
-  text-align: left;
+  text-align: left; 
   width: 100%;
 }
 
@@ -2519,7 +2519,6 @@ summary.accordion-header::-webkit-details-marker {
   box-shadow: 0 .2rem .5rem rgba(69, 77, 93, .3);
   display: block;
   padding: 0 .8rem;
-  text-align: left;
 }
 
 .modal-container .modal-header {

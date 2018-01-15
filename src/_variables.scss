@@ -1,6 +1,9 @@
 // Core variables
 $version: "0.5.1";
 
+// Core features
+$rtl: false !default;
+
 // Core colors
 $primary-color: #5755d9 !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
