@@ -956,6 +956,7 @@ textarea.form-input {
   top: 50%;
   transform: translateY(-50%);
   width: .8rem;
+  z-index: 2;
 }
 
 .has-icon-left .form-icon {
@@ -1310,8 +1311,10 @@ input.disabled + .form-icon {
 }
 
 .form-horizontal .form-group {
-  display: flex; 
+  display: flex;
   display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .label {
