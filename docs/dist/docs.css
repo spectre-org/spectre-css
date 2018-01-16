@@ -277,7 +277,6 @@
 }
 
 .docs-content .comparison-slider .filter-grayscale {
-  -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
 }
 
