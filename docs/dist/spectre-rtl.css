@@ -615,9 +615,7 @@ dl dd {
   color: #fff;
 }
 
-.btn.btn-primary.loading::after,
-.btn.btn-success.loading::after,
-.btn.btn-error.loading::after {
+.btn.btn-primary.loading::after {
   border-bottom-color: #fff;
   border-left-color: #fff;
 }
@@ -646,6 +644,11 @@ dl dd {
   color: #fff;
 }
 
+.btn.btn-success.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
 .btn.btn-error {
   background: #e85600;
   border-color: #d95000;
@@ -668,6 +671,11 @@ dl dd {
   background: #c44900;
   border-color: #b54300;
   color: #fff;
+}
+
+.btn.btn-error.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
 }
 
 .btn.btn-link {
