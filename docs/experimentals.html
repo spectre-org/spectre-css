@@ -622,10 +622,10 @@
         <div class="columns">
           <div class="column col-12">
             <div class="carousel">
-              <input type="radio" id="slide-1" name="carousel-radio" hidden class="carousel-locator" checked>
-              <input type="radio" id="slide-2" name="carousel-radio" hidden class="carousel-locator">
-              <input type="radio" id="slide-3" name="carousel-radio" hidden class="carousel-locator">
-              <input type="radio" id="slide-4" name="carousel-radio" hidden class="carousel-locator">
+              <input type="radio" id="slide-1" class="carousel-locator" name="carousel-radio" hidden checked>
+              <input type="radio" id="slide-2" class="carousel-locator" name="carousel-radio" hidden>
+              <input type="radio" id="slide-3" class="carousel-locator" name="carousel-radio" hidden>
+              <input type="radio" id="slide-4" class="carousel-locator" name="carousel-radio" hidden>
               <div class="carousel-container">
                 <figure class="carousel-item">
                   <label class="item-prev btn btn-action btn-lg" for="slide-4">
@@ -676,6 +676,64 @@
             </div>
           </div>
         </div>
+
+<!-- comparison sliders -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;carousel&quot;</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;slide-1&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-locator&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;carousel-radio&quot;</span> <span class="atn">hidden</span> <span class="atn">checked</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;slide-2&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-locator&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;carousel-radio&quot;</span> <span class="atn">hidden</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;slide-3&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-locator&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;carousel-radio&quot;</span> <span class="atn">hidden</span>&gt;
+  &lt;<span class="tag">input</span> <span class="atn">type</span>=<span class="atv">&quot;radio&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;slide-4&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-locator&quot;</span> <span class="atn">name</span>=<span class="atv">&quot;carousel-radio&quot;</span> <span class="atn">hidden</span>&gt;
+  
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-container&quot;</span>&gt;
+    &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-item&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-prev btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-4&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-next btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-2&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-right&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> ...&gt;
+    &lt;<span class="tag">/figure</span>&gt;
+
+    &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-item&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-prev btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-1&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-next btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-3&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-right&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> ...&gt;
+    &lt;<span class="tag">/figure</span>&gt;
+
+    &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-item&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-prev btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-2&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-next btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-4&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-right&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> ...&gt;
+    &lt;<span class="tag">/figure</span>&gt;
+
+    &lt;<span class="tag">figure</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-item&quot;</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-prev btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-3&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-left&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;item-next btn btn-action btn-lg&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-1&quot;</span>&gt;
+        &lt;<span class="tag">i</span> <span class="atn">class</span>=<span class="atv">&quot;icon icon-arrow-right&quot;</span>&gt;&lt;<span class="tag">/i</span>&gt;
+      &lt;<span class="tag">/label</span>&gt;
+      &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;img/osx-el-capitan.jpg&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;img-responsive rounded&quot;</span> ...&gt;
+    &lt;<span class="tag">/figure</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;carousel-nav&quot;</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item text-hide c-hand&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-1&quot;</span>&gt;1&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item text-hide c-hand&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-2&quot;</span>&gt;2&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item text-hide c-hand&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-3&quot;</span>&gt;3&lt;<span class="tag">/label</span>&gt;
+    &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;nav-item text-hide c-hand&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;slide-4&quot;</span>&gt;4&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
 
       </div>
 
