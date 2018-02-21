@@ -2469,8 +2469,6 @@ summary.accordion-header::-webkit-details-marker {
 .modal:target .modal-container,
 .modal.active .modal-container {
   animation: slide-down .2s ease 1;
-  max-width: 640px;
-  width: 100%;
   z-index: 1;
 }
 
@@ -2492,8 +2490,18 @@ summary.accordion-header::-webkit-details-marker {
   background: #fff;
   border-radius: .1rem;
   box-shadow: 0 .2rem .5rem rgba(69, 77, 93, .3);
-  display: block;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 75vh;
+  max-width: 640px;
   padding: 0 .8rem;
+  width: 100%;
+}
+
+.modal-container.modal-fullheight {
+  max-height: 100vh;
 }
 
 .modal-container .modal-header {
@@ -2501,7 +2509,6 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .modal-container .modal-body {
-  max-height: 50vh;
   overflow-y: auto;
   padding: .8rem;
   position: relative;

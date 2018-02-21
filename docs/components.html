@@ -1387,7 +1387,7 @@
             <a href="#example-modal-3" class="btn btn-primary">Open large size Modal</a>
             <div class="modal modal-lg" id="example-modal-3">
               <a href="#modals-sizes" class="modal-overlay" aria-label="Close"></a>
-              <div class="modal-container" role="document">
+              <div class="modal-container modal-fullheight" role="document">
                 <div class="modal-header">
                   <a href="#modals-sizes" class="btn btn-clear float-right" aria-label="Close"></a>
                   <div class="modal-title h5">Modal title</div>
@@ -1422,6 +1422,19 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal modal-sm&quot;</span>&gt;
   &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#close&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
   &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+    <span class="com">&lt;!-- modal structure here --&gt;</span>
+  &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
+        <div class="docs-note">
+          <p>Add the <code>modal-fullheight</code> class to <code>modal-container</code> to have a 100% viewport height modal. The default container max height is <code>75vh</code>.</p>
+        </div>
+
+<!-- modals -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal&quot;</span>&gt;
+  &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#close&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
+  &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container modal-fullheight&quot;</span>&gt;
     <span class="com">&lt;!-- modal structure here --&gt;</span>
   &lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
