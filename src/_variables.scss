@@ -37,6 +37,7 @@ $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
 $link-color: $primary-color !default;
 $link-color-dark: darken($link-color, 5%) !default;
+$link-color-light: $secondary-color !default;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
