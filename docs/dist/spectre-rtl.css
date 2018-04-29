@@ -3039,6 +3039,10 @@ a.text-primary:hover {
   color: #4240d4;
 }
 
+a.text-primary:visited {
+  color: #6c6ade;
+}
+
 .text-secondary {
   color: #e5e5f9;
 }
@@ -3046,6 +3050,10 @@ a.text-primary:hover {
 a.text-secondary:focus,
 a.text-secondary:hover {
   color: #d1d0f4;
+}
+
+a.text-secondary:visited {
+  color: #fafafe;
 }
 
 .text-gray {
@@ -3057,6 +3065,10 @@ a.text-gray:hover {
   color: #9ea6b7;
 }
 
+a.text-gray:visited {
+  color: #bbc1cd;
+}
+
 .text-light {
   color: #fff;
 }
@@ -3064,6 +3076,10 @@ a.text-gray:hover {
 a.text-light:focus,
 a.text-light:hover {
   color: #f2f2f2;
+}
+
+a.text-light:visited {
+  color: white;
 }
 
 .text-success {
@@ -3075,6 +3091,10 @@ a.text-success:hover {
   color: #2da23c;
 }
 
+a.text-success:visited {
+  color: #39c94b;
+}
+
 .text-warning {
   color: #ffb700;
 }
@@ -3084,6 +3104,10 @@ a.text-warning:hover {
   color: #e6a500;
 }
 
+a.text-warning:visited {
+  color: #ffbe1a;
+}
+
 .text-error {
   color: #e85600;
 }
@@ -3091,6 +3115,10 @@ a.text-warning:hover {
 a.text-error:focus,
 a.text-error:hover {
   color: #cf4d00;
+}
+
+a.text-error:visited {
+  color: #ff6003;
 }
 
 .bg-primary {
