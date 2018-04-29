@@ -308,12 +308,12 @@ a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #4240d4;
+  color: #302ecd;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #f1f1fc;
+  color: #807fe2;
 }
 
 h1,
@@ -691,7 +691,7 @@ dl dd {
 .btn.btn-link:hover,
 .btn.btn-link:active,
 .btn.btn-link.active {
-  color: #4240d4;
+  color: #302ecd;
 }
 
 .btn.btn-sm {
