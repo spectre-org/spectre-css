@@ -14,6 +14,10 @@
   width: 12rem;
 }
 
+.off-canvas .off-canvas-content {
+  padding: 0;
+}
+
 .docs-navbar {
   height: 3.8rem;
   position: fixed;
@@ -67,11 +71,8 @@
 .docs-content {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  width: calc(100vw - 12rem);
-}
-
-.docs-content.off-canvas-content {
   padding: 0 4rem;
+  width: calc(100vw - 12rem);
 }
 
 .docs-content > .container {
@@ -227,32 +228,30 @@
   opacity: .75;
 }
 
-.docs-content .code {
+.docs-content .code .hljs-tag {
   color: #667189;
 }
 
-.docs-content .code .com {
+.docs-content .code .hljs-comment {
   color: #acb3c2;
 }
 
-.docs-content .code .tag {
+.docs-content .code .hljs-title,
+.docs-content .code .hljs-class,
+.docs-content .code .hljs-string {
   color: #5755d9;
 }
 
-.docs-content .code .atn {
+.docs-content .code .hljs-attribute,
+.docs-content .code .hljs-variable,
+.docs-content .code .hljs-keyword,
+.docs-content .code .hljs-built_in {
+  color: #d73e48;
+}
+
+.docs-content .code .hljs-value,
+.docs-content .code .hljs-hexcolor {
   color: #667189;
-}
-
-.docs-content .code .atv {
-  color: #e06870;
-}
-
-.docs-content .code[data-lang="Bash"] .tag {
-  margin-right: 1em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .docs-content .panel {

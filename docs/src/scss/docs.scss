@@ -1,7 +1,7 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 // Core variables and mixins
-@import "../../src/variables";
-@import "../../src/mixins";
+@import "../../../src/variables";
+@import "../../../src/mixins";
 
 .version::after {
   content: "#{$version}";
@@ -17,6 +17,10 @@
 
   .off-canvas-sidebar {
     width: 12rem;
+  }
+
+  .off-canvas-content {
+    padding: 0;
   }
 }
 
@@ -80,11 +84,8 @@
 
 .docs-content {
   flex: 1 1 auto;
+  padding: 0 4rem;
   width: calc(100vw - 12rem);
-
-  &.off-canvas-content {
-    padding: 0 4rem;
-  }
 
   & > .container {
     margin-left: 0;
@@ -241,26 +242,28 @@
   }
 
   .code {
-    color: lighten($body-font-color, 10%);
-
-    .com {
-      color: $gray-color;
-    }
-    .tag {
-      color: $primary-color;
-    }
-    .atn {
+    .hljs-tag {
       color: lighten($body-font-color, 10%);
     }
-    .atv {
-      color: #e06870;
-    }
 
-    &[data-lang="Bash"] {
-      .tag {
-        margin-right: 1em;
-        user-select: none;
-      }
+    .hljs-comment {
+      color: $gray-color;
+    }
+    .hljs-title,
+    .hljs-class,
+    .hljs-string {
+      color: $primary-color;
+    }
+    .hljs-attribute,
+    .hljs-variable,
+    .hljs-keyword,
+    .hljs-built_in {
+      color: $code-color;
+      
+    }
+    .hljs-value,
+    .hljs-hexcolor {
+      color: lighten($body-font-color, 10%);
     }
   }
 

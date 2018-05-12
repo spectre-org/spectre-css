@@ -29,7 +29,10 @@
     "gulp-clean-css": "^3.7.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "latest"
+    "gulp-sass": "latest",
+    "gulp-pug": "^4.0.1",
+    "jstransformer-highlight": "latest",
+    "jstransformer-markdown-it": "latest"
   },
   "browserslist": [
     "last 4 Chrome versions",
