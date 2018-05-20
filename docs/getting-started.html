@@ -189,7 +189,6 @@
               <li>Then create your <code>project-name.scss</code> file in the root folder. You can use <code>project-name.scss</code> to define your variables.</li>
               <li>Compile the Sass file to CSS to get the custom version of Spectre.</li>
             </ul>
-            <!-- importing-->
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
 <span class="hljs-comment">// Define variables to override default ones</span>
 <span class="hljs-variable">$primary-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#2e5bec</span>;</span>
@@ -199,7 +198,6 @@
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;</span>
 </code></pre>
             <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>.</p>
-            <!-- custom variables-->
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"variables"</span>;</span>
 
@@ -208,7 +206,6 @@
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;</span>
 </code></pre>
             <h4 class="s-subtitle" id="folders"><a class="anchor" href="#folders" aria-hidden="true">#</a>Folder structure</h4>
-            <!-- folder structure-->
             <pre class="code"><code>spectre/
 ├── <span class="hljs-built_in">dist</span>/                           <span class="hljs-comment">// Build folder</span>
 │   ├── spectre-<span class="hljs-built_in">exp</span>.css
@@ -338,7 +335,6 @@
               <li>@mixin button-variant(<code>$color</code>: $primary-color);</li>
               <li>@mixin button-outline-variant(<code>$color</code>: $primary-color);</li>
             </ul>
-            <!-- button mixins-->
             <pre class="code" data-lang="Sass"><code>&lt;!-- filled <span class="hljs-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
 <span class="hljs-class">.btn-success</span> {
   <span class="hljs-at_rule">@<span class="hljs-keyword">include</span><span class="hljs-preprocessor"> button-variant</span>(<span class="hljs-variable">$success-color</span>);</span>
@@ -355,11 +351,9 @@
             <p>Spectre uses <code>4px</code> as the unit size. Sizes of components are based on the unit size.</p>
             <h4 class="s-subtitle" id="variables-custom-prefix"><a class="anchor" href="#variables-custom-prefix" aria-hidden="true">#</a>Variables - Custom prefix</h4>
             <p>There is also a way to add custom prefix to all CSS classes. You can use <a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it.</p>
-            <!-- custom prefix-->
             <pre class="code" data-lang="Bash"><code>npm install gulp-css-prefix
 </code></pre>
             <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
-            <!-- custom prefix-->
             <pre class="code"><code><span class="hljs-keyword">var</span> cssPrefix = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-css-prefix'</span>);
 
 gulp.task(<span class="hljs-string">'prefix'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{

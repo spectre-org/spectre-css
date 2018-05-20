@@ -184,6 +184,10 @@
   font-size: .7rem;
 }
 
+.docs-content .columns {
+  margin-bottom: 1rem;
+}
+
 .docs-content .column {
   padding: .4rem;
 }
@@ -451,6 +455,9 @@
   .off-canvas .off-canvas-toggle {
     z-index: 300;
   }
+  .off-canvas .off-canvas-content {
+    width: 100%;
+  }
   .docs-sidebar .docs-brand {
     margin: .85rem 1.5rem;
     padding: 0;
@@ -469,7 +476,7 @@
     background: rgba(248, 249, 250, .65);
     left: 0;
   }
-  .docs-content.off-canvas-content {
+  .docs-content {
     min-width: auto;
     padding: 0 1.5rem;
     width: 100%;
@@ -523,7 +530,7 @@
   .docs-sidebar .docs-nav {
     padding: .5rem 1rem;
   }
-  .docs-content.off-canvas-content {
+  .docs-content {
     padding: 0 .5rem;
   }
   .docs-content .docs-block {

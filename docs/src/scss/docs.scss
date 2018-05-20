@@ -195,6 +195,10 @@
     font-size: $font-size-sm;
   }
 
+  .columns {
+    margin-bottom: 1rem;
+  }
+
   .column {
     padding: $layout-spacing;
   }
@@ -463,6 +467,10 @@
     .off-canvas-toggle {
       z-index: $zindex-3;
     }
+
+    .off-canvas-content {
+      width: 100%;
+    }
   }
 
   .docs-sidebar {
@@ -489,11 +497,9 @@
   }
 
   .docs-content {
-    &.off-canvas-content {
-      min-width: auto;
-      padding: 0 1.5rem;
-      width: 100%;
-    }
+    min-width: auto;
+    padding: 0 1.5rem;
+    width: 100%;
 
     .s-title,
     .s-subtitle {
@@ -568,9 +574,7 @@
   }
 
   .docs-content {
-    &.off-canvas-content {
-      padding: 0 .5rem;
-    }
+    padding: 0 .5rem;
 
     .docs-block {
       padding: $unit-2 $unit-h;
