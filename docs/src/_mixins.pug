@@ -9,8 +9,8 @@ mixin docs-accordion(id, name, ...pages)
             a(href=id + '.html' + page.url)= page.name
 
 mixin docs-heading(id, name)
-  .container
-    h3.s-title(id=id)
+  .container(id=id)
+    h3.s-title
       a.anchor(href='#'+id aria-hidden='true') #
       | #{name}
     if block
