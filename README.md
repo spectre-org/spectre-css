@@ -52,7 +52,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Forms](https://picturepan2.github.io/spectre/elements.html#forms)
 - [Icons](https://picturepan2.github.io/spectre/elements.html#icons) - CSS only
 - [Labels](https://picturepan2.github.io/spectre/elements.html#labels)
-- [Codes](https://picturepan2.github.io/spectre/elements.html#codes)
+- [Code](https://picturepan2.github.io/spectre/elements.html#code)
 - [Media](https://picturepan2.github.io/spectre/elements.html#media)
 
 ### Layout
