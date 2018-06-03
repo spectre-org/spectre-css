@@ -1,39 +1,19 @@
 extends _docs-layout.pug
 
 block variables
-  - var title = 'Elements - Spectre.css CSS Framework'
+  - var title = 'Layout - Spectre.css CSS Framework'
   - var description = ''
-  - var current = 'elements'
+  - var current = 'layout'
 
 block docs-content
-  //- Typography
-  +docs-heading('typography', 'Typography')
-    include contents/typography.pug
+  //- Flexbox grid
+  +docs-heading('grid', 'Flexbox grid')
+    include contents/grid.pug
     
-  //- Tables
-  +docs-heading('tables', 'Tables')
-    include contents/tables.pug
+  //- Responsive
+  +docs-heading('responsive', 'Responsive')
+    include contents/responsive.pug
 
-  //- Buttons
-  +docs-heading('buttons', 'Buttons')
-    include contents/buttons.pug
-
-  //- Forms
-  +docs-heading('forms', 'Forms')
-    include contents/forms.pug
-  
-  //- Icons
-  +docs-heading('icons', 'Icons')
-    include contents/icons.pug
-
-  //- Labels
-  +docs-heading('labels', 'Labels')
-    include contents/labels.pug
-
-  //- Codes
-  +docs-heading('code', 'Code')
-    include contents/code.pug
-  
-  //- Media
-  +docs-heading('media', 'Media')
-    include contents/media.pug
+  //- Navbar
+  +docs-heading('navbar', 'Navbar')
+    include contents/navbar.pug
