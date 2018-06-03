@@ -142,15 +142,15 @@
             <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/releases" target="_blank">Spectre CSS file</a> (core ~10KB min+gzip):</p>
             <p><a class="btn btn-primary" href="https://github.com/picturepan2/spectre/releases" target="_blank">Download Spectre.css</a></p>
             <p>Include <code>spectre.css</code> located in <strong>/dist</strong> in your website or Web app <head>. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"spectre.min.css"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"spectre-exp.min.css"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"spectre-icons.min.css"</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"spectre.min.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"spectre-exp.min.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"spectre-icons.min.css"</span>&gt;</span>
 </code></pre>
             <h4 class="s-subtitle" id="install-cdn"><a class="anchor" href="#install-cdn" aria-hidden="true">#</a>Install from CDN</h4>
             <p>Alternatively, you can use the <a href="https://unpkg.com/" target="_blank">unpkg</a> or <a href="https://cdnjs.com/libraries/spectre.css" target="_blank">cdnjs</a> CDN to load compiled Spectre.css.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://unpkg.com/spectre.css/dist/spectre.min.css"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://unpkg.com/spectre.css/dist/spectre-exp.min.css"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://unpkg.com/spectre.css/dist/spectre-icons.min.css"</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/spectre.css/dist/spectre.min.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/spectre.css/dist/spectre-exp.min.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/spectre.css/dist/spectre-icons.min.css"</span>&gt;</span>
 </code></pre>
             <h4 class="s-subtitle" id="install-npm"><a class="anchor" href="#install-npm" aria-hidden="true">#</a>Install with NPM</h4>
             <pre class="code" data-lang="Bash"><code>npm install spectre.css --save
@@ -191,19 +191,19 @@
             </ul>
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
 <span class="hljs-comment">// Define variables to override default ones</span>
-<span class="hljs-variable">$primary-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#2e5bec</span>;</span>
-<span class="hljs-variable">$dark-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#3e396b</span>;</span>
+<span class="hljs-variable">$primary-color</span>: <span class="hljs-number">#2e5bec</span>;
+<span class="hljs-variable">$dark-color</span>: <span class="hljs-number">#3e396b</span>;
 
 <span class="hljs-comment">// Import full Spectre source code</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;
 </code></pre>
             <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>.</p>
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"variables"</span>;</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"variables"</span>;
 
 <span class="hljs-comment">// Import only the needed components</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/buttons"</span>;</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/buttons"</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/spectre.css/src/forms"</span>;
 </code></pre>
             <h4 class="s-subtitle" id="folders"><a class="anchor" href="#folders" aria-hidden="true">#</a>Folder structure</h4>
             <pre class="code"><code>spectre/
@@ -335,14 +335,14 @@
               <li>@mixin button-variant(<code>$color</code>: $primary-color);</li>
               <li>@mixin button-outline-variant(<code>$color</code>: $primary-color);</li>
             </ul>
-            <pre class="code" data-lang="Sass"><code>&lt;!-- filled <span class="hljs-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
-<span class="hljs-class">.btn-success</span> {
-  <span class="hljs-at_rule">@<span class="hljs-keyword">include</span><span class="hljs-preprocessor"> button-variant</span>(<span class="hljs-variable">$success-color</span>);</span>
+            <pre class="code" data-lang="Sass"><code>&lt;!-- filled <span class="hljs-selector-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
+<span class="hljs-selector-class">.btn-success</span> {
+  @<span class="hljs-keyword">include</span> button-variant(<span class="hljs-variable">$success-color</span>);
 }
 
-&lt;!-- outlined <span class="hljs-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
-<span class="hljs-class">.btn-outline-success</span> {
-  <span class="hljs-at_rule">@<span class="hljs-keyword">include</span><span class="hljs-preprocessor"> button-outline-variant</span>(<span class="hljs-variable">$success-color</span>);</span>
+&lt;!-- outlined <span class="hljs-selector-tag">button</span> with the success <span class="hljs-attribute">color</span> --&gt;
+<span class="hljs-selector-class">.btn-outline-success</span> {
+  @<span class="hljs-keyword">include</span> button-outline-variant(<span class="hljs-variable">$success-color</span>);
 }
 </code></pre>
             <h4 class="s-subtitle" id="variables-sizes"><a class="anchor" href="#variables-sizes" aria-hidden="true">#</a>Variables - Sizes</h4>

@@ -26,11 +26,11 @@
   "devDependencies": {
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "^3.7.0",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-rename": "^1.2.2",
+    "gulp-clean-css": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-pug": "^4.0.1",
+    "gulp-pug": "latest",
     "jstransformer-highlight": "latest",
     "jstransformer-markdown-it": "latest"
   },
