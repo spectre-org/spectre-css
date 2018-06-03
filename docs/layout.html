@@ -327,9 +327,341 @@
           </div>
           <div class="container" id="responsive">
             <h3 class="s-title"><a class="anchor" href="#responsive" aria-hidden="true">#</a>Responsive</h3>
+            <p>Spectre provides a neat responsive layout grid system and responsive visibility utilities.</p>
+            <div class="columns">
+              <div class="column col-10 col-lg-8 col-md-6 col-sm-4">
+                <div class="bg-gray docs-block">col-10 <br> col-lg-8 <br> col-md-6 <br> col-sm-4</div>
+              </div>
+              <div class="column col-2 col-lg-4 col-md-6 col-sm-8">
+                <div class="bg-gray docs-block">col-2 <br> col-lg-4 <br> col-md-6 <br> col-sm-8</div>
+              </div>
+            </div>
+            <p>There are <code>col-xs-<1-12></code>, <code>col-sm-<1-12></code>, <code>col-md-<1-12></code>, <code>col-lg-<1-12></code> and <code>col-xl-<1-12></code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+            <ul>
+              <li><code>col-xs-<1-12></code> apply to window width smaller than or equal to <strong>480px</strong>.</li>
+              <li><code>col-sm-<1-12></code> apply to window width smaller than or equal to <strong>600px</strong>.</li>
+              <li><code>col-md-<1-12></code> apply to window width smaller than or equal to <strong>840px</strong>.</li>
+              <li><code>col-lg-<1-12></code> apply to window width smaller than or equal to <strong>960px</strong>.</li>
+              <li><code>col-xl-<1-12></code> apply to window width smaller than or equal to <strong>1280px</strong>.</li>
+              <li><code>col-<1-12></code> apply to all window width, including the width wider than <strong>1280px</strong>.</li>
+            </ul>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"columns"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column col-xs-6"</span>&gt;</span>col-xs-6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column col-xs-3"</span>&gt;</span>col-xs-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column col-xs-3"</span>&gt;</span>col-xs-3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="responsive-container"><a class="anchor" href="#responsive-container" aria-hidden="true">#</a>Responsive container</h4>
+            <p>
+              The responsive layout also provides fixed-width containers.
+              Use <code>grid-xs</code>(480px), <code>grid-sm</code>(600px), <code>grid-md</code>(840px), <code>grid-lg</code>(960px) or <code>grid-xl</code>(1280px) to the container for a fixed-width container with the specific max-width.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- 100% width container with max-width set to grid-lg (960px) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container grid-lg"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"columns"</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="responsive-visibility"><a class="anchor" href="#responsive-visibility" aria-hidden="true">#</a>Responsive visibility</h4>
+            <p>The responsive visibility utilities help show and hide elements on specific viewport sizes.</p>
+            <div class="columns">
+              <div class="column col-12">
+                <table class="docs-table table table-striped text-center">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>size-xs</th>
+                      <th>size-sm</th>
+                      <th>size-md</th>
+                      <th>size-lg</th>
+                      <th>size-xl</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-left">hide-xs</td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">hide-sm</td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">hide-md</td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">hide-lg</td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">hide-xl</td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p>For hiding elements on specific viewport sizes, there are classes <code>hide-xs</code>, <code>hide-sm</code>, <code>hide-md</code>, <code>hide-lg</code> and <code>hide-xl</code> available.</p>
+            <ul>
+              <li><code>hide-xs</code> hides elements when the window width is smaller than or equal to <strong>480px</strong>.</li>
+              <li><code>hide-sm</code> hides elements when the window width is smaller than or equal to <strong>600px</strong>.</li>
+              <li><code>hide-md</code> hides elements when the window width is smaller than or equal to <strong>840px</strong>.</li>
+              <li><code>hide-lg</code> hides elements when the window width is smaller than or equal to <strong>960px</strong>.</li>
+              <li><code>hide-xl</code> hides elements when the window width is smaller than or equal to <strong>1280px</strong>.</li>
+            </ul>
+            <div class="columns">
+              <div class="column col-12">
+                <table class="docs-table table table-striped text-center">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>size-xs</th>
+                      <th>size-sm</th>
+                      <th>size-md</th>
+                      <th>size-lg</th>
+                      <th>size-xl</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-left">show-xs</td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">show-sm</td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">show-md</td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">show-lg</td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-secondary docs-dot"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-left">show-xl</td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                      <td>
+                        <div class="bg-primary docs-dot"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p>For showing elements on specific viewport sizes, there are classes <code>show-xs</code>, <code>show-sm</code>, <code>show-md</code>, <code>show-lg</code> and <code>show-xl</code> available.</p>
+            <ul>
+              <li><code>show-xs</code> shows elements when the window width is smaller than or equal to <strong>480px</strong>.</li>
+              <li><code>show-sm</code> shows elements when the window width is smaller than or equal to <strong>600px</strong>.</li>
+              <li><code>show-md</code> shows elements when the window width is smaller than or equal to <strong>840px</strong>.</li>
+              <li><code>show-lg</code> shows elements when the window width is smaller than or equal to <strong>960px</strong>.</li>
+              <li><code>show-xl</code> shows elements when the window width is smaller than or equal to <strong>1280px</strong>.</li>
+            </ul>
+            <p>
+              Spectre also has a responsive web test tool Responsive Resizer. 
+              You can clone the <a href="https://github.com/picturepan2/responsive-resizer" target="_blank">GitHub Repo</a> to use it locally or use it online.
+            </p>
+            <p><a class="btn btn-primary" href="https://picturepan2.github.io/responsive-resizer/" target="_blank">Responsive Resizer</a></p>
           </div>
           <div class="container" id="navbar">
             <h3 class="s-title"><a class="anchor" href="#navbar" aria-hidden="true">#</a>Navbar</h3>
+            <p>Navbar is a layout container that appears in the header of apps and websites.</p>
+            <div class="columns">
+              <div class="column">
+                <div class="navbar">
+                  <div class="navbar-section"><a class="navbar-brand mr-2" href="#navbar">Spectre.css</a><a class="btn btn-link" href="#navbar">Docs</a><a class="btn btn-link" href="https://github.com/picturepan2/spectre">GitHub</a></div>
+                  <div class="navbar-section">
+                    <div class="input-group input-inline">
+                      <input class="form-input" type="text" placeholder="search">
+                      <button class="btn btn-primary input-group-btn">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              The navbar component can include logo brand, nav links and buttons, search box or any combination of those elements.
+              Each section with the <code>navbar-section</code> class will be evenly distributed in the container.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-section"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand mr-2"</span>&gt;</span>Spectre.css<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>Docs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>GitHub<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-section"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-group input-inline"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"search"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary input-group-btn"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</code></pre>
+            <p>You can use <code>navbar-center</code> class to have a centered section.</p>
+            <div class="columns">
+              <div class="column col-12">
+                <div class="navbar">
+                  <div class="navbar-section"><a class="btn btn-link" href="#navbar">Docs</a><a class="btn btn-link" href="#navbar">Examples</a></div>
+                  <div class="navbar-center"><img src="img/spectre-logo.svg" alt="Spectre.css"></div>
+                  <div class="navbar-section"><a class="btn btn-link" href="https://twitter.com/spectrecss">Twitter</a><a class="btn btn-link" href="https://github.com/picturepan2/spectre">GitHub</a></div>
+                </div>
+              </div>
+            </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-section"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>Docs<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>Examples<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-center"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- centered logo or brand --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-section"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>GitHub<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></code></pre>
           </div>
         </div>
       </div>
