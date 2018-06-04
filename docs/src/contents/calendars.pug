@@ -1,0 +1,195 @@
+p
+  | Calendars are designed for date or date range picker and events display. It is made with flex layout.
+
+.columns
+  .column.col-4.col-md-12
+    .calendar
+      .calendar-nav.navbar
+        button.btn.btn-action.btn-link.btn-lg
+          i.icon.icon-arrow-left
+        .navbar-primary March 2017
+        button.btn.btn-action.btn-link.btn-lg
+          i.icon.icon-arrow-right
+      .calendar-container
+        .calendar-header
+          .calendar-date Sun
+          .calendar-date Mon
+          .calendar-date Tue
+          .calendar-date Wed
+          .calendar-date Thu
+          .calendar-date Fri
+          .calendar-date Sat
+        .calendar-body
+          .calendar-date.prev-month.disabled
+            button.date-item 26
+          .calendar-date.prev-month.disabled
+            button.date-item 27
+          .calendar-date.prev-month.disabled
+            button.date-item 28
+          .calendar-date.current-month
+            button.date-item 1
+          .calendar-date.current-month
+            button.date-item 2
+          .calendar-date.current-month
+            button.date-item 3
+          .calendar-date.current-month.tooltip(data-tooltip="Today")
+            button.date-item.date-today 4
+          .calendar-date.current-month.tooltip(data-tooltip="Not available")
+            button.date-item(disabled="") 5
+          .calendar-date.current-month
+            button.date-item 6
+          .calendar-date.current-month
+            button.date-item 7
+          .calendar-date.current-month.tooltip(data-tooltip="You have appointments")
+            button.date-item.badge 8
+          .calendar-date.current-month
+            button.date-item 9
+          .calendar-date.current-month
+            button.date-item 10
+          .calendar-date.current-month
+            button.date-item 11
+          .calendar-date.current-month
+            button.date-item 12
+          .calendar-date.current-month
+            button.date-item 13
+          .calendar-date.current-month
+            button.date-item 14
+          .calendar-date.current-month
+            button.date-item 15
+          .calendar-date.current-month.calendar-range.range-start
+            button.date-item.active 16
+          .calendar-date.current-month.calendar-range
+            button.date-item 17
+          .calendar-date.current-month.calendar-range
+            button.date-item 18
+          .calendar-date.current-month.calendar-range
+            button.date-item 19
+          .calendar-date.current-month.calendar-range.range-end
+            button.date-item.active 20
+          .calendar-date.current-month
+            button.date-item 21
+          .calendar-date.current-month
+            button.date-item 22
+          .calendar-date.current-month
+            button.date-item 23
+          .calendar-date.current-month
+            button.date-item 24
+          .calendar-date.current-month
+            button.date-item 25
+          .calendar-date.current-month
+            button.date-item 26
+          .calendar-date.current-month
+            button.date-item 27
+          .calendar-date.current-month
+            button.date-item 28
+          .calendar-date.current-month
+            button.date-item 29
+          .calendar-date.current-month
+            button.date-item 30
+          .calendar-date.current-month
+            button.date-item 31
+          .calendar-date.next-month.disabled
+            button.date-item 1
+
++docs-subheading('calendars-sizes', 'Calendars sizes')
+
+.columns
+  .column.col-12
+    .calendar.calendar-lg
+      .calendar-nav.navbar
+        button.btn.btn-action.btn-link.btn-lg
+          i.icon.icon-arrow-left
+        .navbar-primary March 2017
+        button.btn.btn-action.btn-link.btn-lg
+          i.icon.icon-arrow-right
+      .calendar-container
+        .calendar-header
+          .calendar-date Sun
+          .calendar-date Mon
+          .calendar-date Tue
+          .calendar-date Wed
+          .calendar-date Thu
+          .calendar-date Fri
+          .calendar-date Sat
+        .calendar-body
+          .calendar-date.prev-month.disabled
+            button.date-item 26
+          .calendar-date.prev-month.disabled
+            button.date-item 27
+            .calendar-events
+              a.calendar-event.bg-error.text-light(href="#calendars") Zhonghe Festival
+          .calendar-date.prev-month.disabled
+            button.date-item 28
+          .calendar-date.current-month
+            button.date-item 1
+          .calendar-date.current-month
+            button.date-item 2
+          .calendar-date.current-month
+            button.date-item 3
+          .calendar-date.current-month.tooltip(data-tooltip="Today")
+            button.date-item.date-today 4
+          .calendar-date.current-month
+            button.date-item(disabled="") 5
+          .calendar-date.current-month
+            button.date-item 6
+          .calendar-date.current-month
+            button.date-item 7
+          .calendar-date.current-month.tooltip(data-tooltip="You have appointments")
+            button.date-item.badge 8
+            .calendar-events
+              a.calendar-event.bg-primary.text-light(href="#calendars") Product launch event
+              a.calendar-event.bg-error.text-light(href="#calendars") International Women's Day
+          .calendar-date.current-month
+            button.date-item 9
+          .calendar-date.current-month
+            button.date-item 10
+          .calendar-date.current-month
+            button.date-item 11
+          .calendar-date.current-month
+            button.date-item 12
+            .calendar-events
+              a.calendar-event.bg-error.text-light(href="#calendars") Arbor Day
+          .calendar-date.current-month
+            button.date-item 13
+          .calendar-date.current-month
+            button.date-item 14
+          .calendar-date.current-month
+            button.date-item 15
+          .calendar-date.current-month.calendar-range.range-start
+            button.date-item.active 16
+          .calendar-date.current-month.calendar-range
+            button.date-item 17
+          .calendar-date.current-month.calendar-range
+            button.date-item 18
+          .calendar-date.current-month.calendar-range
+            button.date-item 19
+          .calendar-date.current-month.calendar-range.range-end
+            button.date-item.active 20
+            .calendar-events
+              a.calendar-event.bg-success.text-light(href="#calendars") Spring Equinox
+          .calendar-date.current-month
+            button.date-item 21
+          .calendar-date.current-month
+            button.date-item 22
+          .calendar-date.current-month
+            button.date-item 23
+          .calendar-date.current-month
+            button.date-item 24
+          .calendar-date.current-month
+            button.date-item 25
+          .calendar-date.current-month
+            button.date-item 26
+          .calendar-date.current-month
+            button.date-item 27
+          .calendar-date.current-month
+            button.date-item 28
+          .calendar-date.current-month
+            button.date-item 29
+          .calendar-date.current-month
+            button.date-item 30
+          .calendar-date.current-month
+            button.date-item 31
+          .calendar-date.next-month.disabled
+            button.date-item 1
+            .calendar-events
+              a.calendar-event.bg-error.text-light(href="#calendars") April Fools' Day
