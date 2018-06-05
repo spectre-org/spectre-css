@@ -144,8 +144,9 @@
   margin-top: .4rem;
 }
 
-.docs-content .docs-note {
-  margin: 1.5rem 0;
+.docs-content .docs-demo {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .docs-content .docs-ad {
@@ -182,10 +183,6 @@
 .docs-content .carbon-poweredby {
   color: #acb3c2;
   font-size: .7rem;
-}
-
-.docs-content .columns {
-  margin-bottom: 1rem;
 }
 
 .docs-content .column {

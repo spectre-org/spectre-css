@@ -151,8 +151,9 @@
     }
   }
 
-  .docs-note {
-    margin: 1.5rem 0;
+  .docs-demo {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   .docs-ad {
@@ -193,10 +194,6 @@
   .carbon-poweredby {
     color: $gray-color;
     font-size: $font-size-sm;
-  }
-
-  .columns {
-    margin-bottom: 1rem;
   }
 
   .column {

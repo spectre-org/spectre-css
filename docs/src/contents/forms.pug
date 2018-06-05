@@ -1,7 +1,7 @@
 p
   | Forms provide the most common control styles used in forms, including input, textarea, select, checkbox, radio and switch.
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     .form-group
       label.form-label(for="input-example-1") Name
@@ -19,7 +19,7 @@ pre.code(data-lang='HTML')
         <input class="form-input" type="text" id="input-example-1" placeholder="Name">
       </div>
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     .form-group
       label.form-label(for="input-example-3") Message
@@ -34,7 +34,7 @@ pre.code(data-lang='HTML')
         <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
       </div>
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     .form-group
       select.form-select
@@ -62,7 +62,7 @@ pre.code(data-lang='HTML')
         </select>
       </div>
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     form
       .form-group
@@ -92,7 +92,7 @@ pre.code(data-lang='HTML')
         </label>
       </div>
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     .form-group
       label.form-switch
@@ -116,7 +116,7 @@ pre.code(data-lang='HTML')
         </label>
       </div>
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     .form-group
       label.form-checkbox
@@ -149,7 +149,7 @@ p
   | If you want to have a horizontal form, add the #[code form-horizontal] class to the #{'<form>'} container.
   | And add the #[code col-<1-12>] and #[code col-xs/sm/lg/xl-<1-12>] class to the child elements for responsive form row layout.
 
-.columns
+.docs-demo.columns
   .column.col-9.col-sm-12
     form.form-horizontal(action="#forms")
       .form-group
@@ -220,7 +220,7 @@ pre.code(data-lang='HTML')
 p
   | For smaller or larger input and select controls, you could add the #[code input-sm]/#[code input-lg], #[code select-sm]/#[code select-lg] and #[code label-sm]/#[code label-lg] classes to the elements.
 
-.columns
+.docs-demo.columns
   .column.col-4.col-xs-12
     label.form-label.label-sm Label
   .column.col-4.col-xs-12
@@ -231,7 +231,6 @@ p
       option Slack
       option Skype
       option Hipchat
-.columns
   .column.col-4.col-xs-12
     label.form-label.label-lg Label
   .column.col-4.col-xs-12
@@ -256,7 +255,7 @@ p
   | Add a wrapper with the #[code has-icon-left]/#[code has-icon-right] class to #{'<input>'} element.
   | And add the icon with #[code form-icon] class next to the #{'<input>'}.
 
-.columns
+.docs-demo.columns
   .column.col-4.col-xs-12
     .has-icon-left
       input.form-input.input-sm(type="text" placeholder="Name")
@@ -269,7 +268,6 @@ p
     .has-icon-left
       input.form-input.input-lg(type="text" placeholder="Name")
       i.form-icon.icon.icon-arrow-right
-.columns
   .column.col-4.col-xs-12
     .has-icon-right
       input.form-input.input-sm(type="text" placeholder="Name")
@@ -295,7 +293,7 @@ pre.code(data-lang='HTML')
 p
   | You can use the #[code loading] class for loading or posting state.
 
-.columns
+.docs-demo.columns
   .column.col-4.col-xs-12
     .has-icon-right
       input.form-input.input-sm(type="text" placeholder="Name")
@@ -320,7 +318,7 @@ pre.code(data-lang='HTML')
 
 +docs-subheading('forms-input', 'Input types')
 
-.columns
+.docs-demo.columns
   .column.col-9.col-sm-12
     form.form-horizontal(action="#forms")
       .form-group
@@ -371,54 +369,51 @@ pre.code(data-lang='HTML')
 
 +docs-subheading('forms-input-groups', 'Input groups')
 
-.columns
-  .column.col-xs-12
+.docs-demo.columns
+  .column.col-6.col-xs-12
     .input-group
       input.form-input.input-sm(type="text" placeholder="username")
       select.form-select.select-sm
         option Slack
         option Skype
         option Hipchat
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       span.input-group-addon.addon-sm slack.com/
       input.form-input.input-sm(type="text" placeholder="site name")
       button.btn.btn-primary.input-group-btn.btn-sm Submit
-.columns
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       input.form-input(type="text" placeholder="username")
       select.form-select
         option Slack
         option Skype
         option Hipchat
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       span.input-group-addon slack.com/
       input.form-input(type="text" placeholder="site name")
       button.btn.btn-primary.input-group-btn Submit
-.columns
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       label.form-switch
         input(type="checkbox")
         i.form-icon
       input.form-input(type="text" placeholder="name")
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       label.form-checkbox
         input(type="checkbox")
         i.form-icon
       input.form-input(type="text" placeholder="name")
-.columns
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       input.form-input.input-lg(type="text" placeholder="username")
       select.form-select.select-lg
         option Slack
         option Skype
         option Hipchat
-  .column.col-xs-12
+  .column.col-6.col-xs-12
     .input-group
       span.input-group-addon.addon-lg slack.com/
       input.form-input.input-lg(type="text" placeholder="site name")
@@ -456,7 +451,7 @@ p
   | To use form validation styles, you can either add #[code is-success] or #[code is-error] class to the controls or add #[code has-success] or #[code has-error] class to parent elements.
   | Use the #[code form-input-hint] class to provide form validation success and error messages.
 
-.columns
+.docs-demo.columns
   .column.col-9.col-sm-12
     fieldset
       legend Input
@@ -542,7 +537,7 @@ pre.code(data-lang='HTML')
 p 
   | Add the #[code disabled] attribute to the element or #{'<fieldset>'} for a disabled form components style.
 
-.columns
+.docs-demo.columns
   .column.col-6.col-xs-12
     form(action="#forms")
       fieldset(disabled="")
