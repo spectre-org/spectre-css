@@ -152,7 +152,8 @@
 .docs-content .docs-ad {
   background: #f8f9fa;
   border-radius: .1rem;
-  display: inline-block;
+  display: block;
+  margin: 2rem 0;
   padding: .4rem;
   position: relative;
 }
@@ -387,7 +388,6 @@
 
 .section-updates .card {
   border: 0;
-  color: #727e96;
   margin-bottom: 1rem;
 }
 
@@ -541,6 +541,7 @@
 @media (min-width: 1366px) {
   .docs-ad.docs-ad-sidebar {
     bottom: 1rem;
+    margin: 0;
     position: fixed;
     right: 1rem;
     width: 7.3rem;

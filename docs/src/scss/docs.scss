@@ -159,7 +159,8 @@
   .docs-ad {
     background: $bg-color;
     border-radius: $border-radius;
-    display: inline-block;
+    display: block;
+    margin: 2rem 0;
     padding: $layout-spacing;
     position: relative;
 
@@ -397,7 +398,6 @@
 
   .card {
     border: 0;
-    color: lighten($body-font-color, 15%);
     margin-bottom: 1rem;
   }
 }
@@ -587,6 +587,7 @@
   .docs-ad {
     &.docs-ad-sidebar {
       bottom: 1rem;
+      margin: 0;
       position: fixed;
       right: 1rem;
       width: 7.3rem;
