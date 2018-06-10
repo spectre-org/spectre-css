@@ -275,6 +275,18 @@
               Add the <code>avatar</code> class and avatar size class to &lt;div&gt;  element.
               The <code>data-initial</code> attribute is the name appear inside the avatar.
             </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- Basic avatar examples --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/avatar-1.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"YZ"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #5755d9;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Show initals when avatar image is unavailable or not fully loaded --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"YZ"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #5755d9;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/avatar-1.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+</code></pre>
             <div class="docs-demo columns">
               <div class="column col-6 col-xs-12">
                 <figure class="avatar avatar-xl"><img src="img/avatar-1.png" alt="Avatar"><img class="avatar-icon" src="img/avatar-2.png" alt="Avatar"></figure>
@@ -284,21 +296,9 @@
                 <figure class="avatar avatar-xs"><img src="img/avatar-5.png" alt="Avatar"><img class="avatar-icon" src="img/avatar-1.png" alt="Avatar"></figure>
               </div>
             </div>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- Basic avatar examples --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/avatar-1.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/avatar-1.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/avatar-5.png"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-icon"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"YZ"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #5755d9;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-
-<span class="hljs-comment">&lt;!-- Show initals when avatar image is unavailable or not fully loaded --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar avatar-xl"</span> <span class="hljs-attr">data-initial</span>=<span class="hljs-string">"YZ"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #5755d9;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/avatar-1.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
   </code></pre>
             <div class="docs-demo columns">
@@ -399,7 +399,8 @@
             <p>There is the <code>bar-sm</code> class for thinner Bars.
               Also, you could use <a href="#tooltips">Tooltips</a> for any <code>bar-item</code>.
             </p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar bar-sm"</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- normal bars --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar bar-sm"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar-item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"progressbar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width:25%;"</span> <span class="hljs-attr">aria-valuenow</span>=<span class="hljs-string">"25"</span> <span class="hljs-attr">aria-valuemin</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">aria-valuemax</span>=<span class="hljs-string">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -434,7 +435,7 @@
               You need to set the <code>bar-item</code> width manually to have the slider point.
             </p>
             <p>If there are two <code>bar-item</code> divs in one bar-slider, you will have a range slider.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- slider --&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- normal slider --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar bar-slider"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar-item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"progressbar"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width:25%;"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bar-slider-btn btn"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"slider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -575,14 +576,14 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive"</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title h5"</span>&gt;</span>Microsoft<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subtitle text-gray"</span>&gt;</span>Software and hardware<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title h5"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subtitle text-gray"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
-    Empower every person and every organization on the planet to achieve more.
+    ...
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Do<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
           </div>
