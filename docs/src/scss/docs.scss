@@ -95,20 +95,13 @@
 
   .anchor {
     color: $primary-color-light;
-    height: 0;
-    margin-left: -2em;
-    overflow: hidden;
-    padding: 0 1em;
-    position: absolute;
-    text-align: center;
-    width: 0;
-    z-index: $zindex-1;
+    display: none;
+    margin-left: .2rem;
+    padding: 0 .2rem;
     &:focus,
     &:hover {
-      box-shadow: none;
-      height: auto;
+      display: inline;
       text-decoration: none;
-      width: 2em;
     }
   }
   
@@ -141,8 +134,7 @@
 
     &:hover {
       .anchor {
-        height: auto;
-        width: 1em;
+        display: inline;
       }
     }
 
@@ -550,13 +542,13 @@
 
   .docs-navbar {
     .btn {
-      right: 1rem;
+      right: .9rem;
     }
   }
 
   .grid-hero {
     .docs-brand {
-      left: 1rem;
+      left: .9rem;
     }
   }
 
@@ -575,10 +567,6 @@
 
     .docs-block {
       padding: $unit-2 $unit-h;
-    }
-
-    .anchor {
-      display: none;
     }
   }
 }

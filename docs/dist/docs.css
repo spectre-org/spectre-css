@@ -83,22 +83,15 @@
 
 .docs-content .anchor {
   color: #6362dc;
-  height: 0;
-  margin-left: -2em;
-  overflow: hidden;
-  padding: 0 1em;
-  position: absolute;
-  text-align: center;
-  width: 0;
-  z-index: 100;
+  display: none;
+  margin-left: .2rem;
+  padding: 0 .2rem;
 }
 
 .docs-content .anchor:focus,
 .docs-content .anchor:hover {
-  box-shadow: none;
-  height: auto;
+  display: inline;
   text-decoration: none;
-  width: 2em;
 }
 
 .docs-content .s-title,
@@ -135,8 +128,7 @@
 
 .docs-content .s-title:hover .anchor,
 .docs-content .s-subtitle:hover .anchor {
-  height: auto;
-  width: 1em;
+  display: inline;
 }
 
 .docs-content .s-title + .docs-note,
@@ -516,10 +508,10 @@
     left: .5rem;
   }
   .docs-navbar .btn {
-    right: 1rem;
+    right: .9rem;
   }
   .grid-hero .docs-brand {
-    left: 1rem;
+    left: .9rem;
   }
   .docs-sidebar .docs-brand {
     margin: .85rem 1rem;
@@ -532,9 +524,6 @@
   }
   .docs-content .docs-block {
     padding: .4rem .1rem;
-  }
-  .docs-content .anchor {
-    display: none;
   }
 }
 

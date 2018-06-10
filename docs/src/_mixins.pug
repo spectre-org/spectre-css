@@ -11,12 +11,12 @@ mixin docs-accordion(id, name, ...pages)
 mixin docs-heading(id, name)
   .container(id=id)
     h3.s-title
-      a.anchor(href='#'+id aria-hidden='true') #
       | #{name}
+      a.anchor(href='#'+id aria-hidden='true') #
     if block
       block
 
 mixin docs-subheading(id, name)
   h4.s-subtitle(id=id)
-    a.anchor(href='#'+id aria-hidden='true') #
     | #{name}
+    a.anchor(href='#'+id aria-hidden='true') #

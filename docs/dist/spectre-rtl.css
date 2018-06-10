@@ -1186,6 +1186,7 @@ textarea.form-input {
 .input-group .form-select {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  width: 1%;
 }
 
 .input-group .input-group-btn {
