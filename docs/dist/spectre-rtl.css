@@ -454,8 +454,13 @@ dl dd {
   margin: .4rem 0 .8rem 0;
 }
 
-:lang(zh) {
+:lang(zh),
+:lang(zh-Hans) {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+}
+
+:lang(zh-Hant) {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Helvetica Neue", sans-serif;
 }
 
 :lang(ja) {
