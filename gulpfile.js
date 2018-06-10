@@ -14,7 +14,7 @@ var paths = {
 gulp.task('watch', function() {
   gulp.watch('./**/*.scss', ['build']);
   gulp.watch('./**/*.scss', ['docs']);
-  gulp.watch('./**/*.pug', ['pug']);
+  gulp.watch('./**/*.pug', ['docs']);
 });
 
 gulp.task('build', function() {
@@ -57,14 +57,11 @@ gulp.task('docs', function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./docs/dist'));
-});
-
-gulp.task('pug', function build() {
-  return gulp.src('docs/src/!(_)*.pug')
-  .pipe(pug({
-    pretty: true
-  }))
-  .pipe(gulp.dest('./docs/'));
+  gulp.src('docs/src/!(_)*.pug')
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulp.dest('./docs/'));
 });
 
 gulp.task('default', ['build']);
