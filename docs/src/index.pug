@@ -9,13 +9,7 @@ block content
           h2 SPECTRE
       h1 Spectre.css
       h2
-        | A 
-        u Lightweight
-        | , 
-        u Responsive
-        |  and 
-        u Modern
-        |  CSS Framework 
+        | A #[u Lightweight], #[u Responsive] and #[Modern] CSS Framework
       p
         a.btn.btn-primary.btn-lg.mr-2(href='getting-started.html') Docs
         a.btn.btn-primary.btn-lg(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
@@ -41,9 +35,9 @@ block content
               span.card-title Modern
             .card-body
               | Elegantly designed and developed elements and components
-      .columns
-        .column.col-12
-          include contents/_ad-g.pug
+  
+  .section.section-ads.bg-gray
+    include contents/_ad-g.pug
 
   .section.section-features.bg-primary.text-light.text-center
     .container.grid-lg
@@ -84,6 +78,8 @@ block content
               | Spectre Docs experience has been completely rewritten and improved.
             .card-footer
               a.btn.btn-primary(href='getting-started.html') Explore
-  footer.section.section-footer
+  .section.section-ads.bg-gray
     include contents/_ad-c.pug
+
+  footer.section.section-footer
     include _footer.pug

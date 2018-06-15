@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.2";
+  content: "0.5.3";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -374,6 +374,10 @@
   padding: .4rem;
 }
 
+.section-ads {
+  padding: 1rem .5rem;
+}
+
 .section-updates {
   padding: 4.5rem .5rem 3.5rem .5rem;
 }
@@ -410,6 +414,7 @@
 .grid-hero h1 {
   color: #50596c;
   font-size: 1.6rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
@@ -436,7 +441,8 @@
 
 .grid-hero .card .card-title {
   color: #5755d9;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 0;
 }
 
