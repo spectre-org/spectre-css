@@ -148,47 +148,6 @@
     padding-top: 1rem;
   }
 
-  .docs-ad {
-    background: $bg-color;
-    border-radius: $border-radius;
-    display: block;
-    margin: 2rem 0;
-    padding: $layout-spacing;
-    position: relative;
-
-    &::before {
-      color: $gray-color;
-      content: "AD";
-      font-size: $font-size-sm;
-      position: absolute;
-      right: $layout-spacing;
-      top: $unit-h;
-    }
-
-    &.docs-ad-sidebar {
-      &::before {
-        content: none;
-      }
-    }
-  }
-
-  .carbon-wrap {
-    .carbon-img {
-      display: block;
-    }
-
-    .carbon-text {
-      color: $gray-color-dark;
-      display: block;
-      font-size: $font-size-sm;
-    }
-  }
-
-  .carbon-poweredby {
-    color: $gray-color;
-    font-size: $font-size-sm;
-  }
-
   .column {
     padding: $layout-spacing;
   }
@@ -360,10 +319,34 @@
   }
 }
 
-.btn {
-  .feather {
-    height: 1rem;
+.docs-ad {
+  background: $bg-color;
+  border-radius: $border-radius;
+  display: block;
+  margin: 2rem 0;
+  padding: $layout-spacing;
+  position: relative;
+
+  ins {
+    line-height: 1;
     vertical-align: middle;
+  }
+
+  .carbon-wrap {
+    .carbon-img {
+      display: block;
+    }
+  
+    .carbon-text {
+      color: $gray-color-dark;
+      display: block;
+      font-size: $font-size-sm;
+    }
+  }
+  
+  .carbon-poweredby {
+    color: $gray-color;
+    font-size: $font-size-sm;
   }
 }
 

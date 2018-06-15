@@ -141,43 +141,6 @@
   padding-top: 1rem;
 }
 
-.docs-content .docs-ad {
-  background: #f8f9fa;
-  border-radius: .1rem;
-  display: block;
-  margin: 2rem 0;
-  padding: .4rem;
-  position: relative;
-}
-
-.docs-content .docs-ad::before {
-  color: #acb3c2;
-  content: "AD";
-  font-size: .7rem;
-  position: absolute;
-  right: .4rem;
-  top: .1rem;
-}
-
-.docs-content .docs-ad.docs-ad-sidebar::before {
-  content: none;
-}
-
-.docs-content .carbon-wrap .carbon-img {
-  display: block;
-}
-
-.docs-content .carbon-wrap .carbon-text {
-  color: #667189;
-  display: block;
-  font-size: .7rem;
-}
-
-.docs-content .carbon-poweredby {
-  color: #acb3c2;
-  font-size: .7rem;
-}
-
 .docs-content .column {
   padding: .4rem;
 }
@@ -351,9 +314,33 @@
   color: #667189;
 }
 
-.btn .feather {
-  height: 1rem;
+.docs-ad {
+  background: #f8f9fa;
+  border-radius: .1rem;
+  display: block;
+  margin: 2rem 0;
+  padding: .4rem;
+  position: relative;
+}
+
+.docs-ad ins {
+  line-height: 1;
   vertical-align: middle;
+}
+
+.docs-ad .carbon-wrap .carbon-img {
+  display: block;
+}
+
+.docs-ad .carbon-wrap .carbon-text {
+  color: #667189;
+  display: block;
+  font-size: .7rem;
+}
+
+.docs-ad .carbon-poweredby {
+  color: #acb3c2;
+  font-size: .7rem;
 }
 
 /* Spectre Homepage style */
