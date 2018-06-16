@@ -3087,6 +3087,19 @@ a.text-light:visited {
   color: white;
 }
 
+.text-dark {
+  color: #50596c;
+}
+
+a.text-dark:focus,
+a.text-dark:hover {
+  color: #454d5d;
+}
+
+a.text-dark:visited {
+  color: #5b657a;
+}
+
 .text-success {
   color: #32b643;
 }
