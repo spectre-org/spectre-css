@@ -998,7 +998,7 @@ textarea.form-input {
 .form-checkbox,
 .form-radio,
 .form-switch {
-  display: inline-block;
+  display: block;
   line-height: 1.2rem;
   margin: .2rem 0;
   min-height: 1.2rem;
@@ -1342,6 +1342,10 @@ input.disabled + .form-icon {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.form-inline {
+  display: inline-block;
 }
 
 .label {

@@ -696,6 +696,48 @@
               
             </script>
             <p>You can change checkbox to indeterminate state by setting the <code>indeterminate</code> property of input checkboxes to <code>true</code>.</p>
+            <h4 class="s-subtitle" id="forms-inline">Inline forms<a class="anchor" href="#forms-inline" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-6 col-xs-12">
+                <form>
+                  <div class="form-group">
+                    <label class="form-radio form-inline">
+                      <input type="radio" name="gender" checked=""><i class="form-icon"></i> Male
+                    </label>
+                    <label class="form-radio form-inline">
+                      <input type="radio" name="gender"><i class="form-icon"></i> Female
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-checkbox form-inline">
+                      <input type="checkbox"><i class="form-icon"></i> Checkbox 1
+                    </label>
+                    <label class="form-checkbox form-inline">
+                      <input type="checkbox" checked=""><i class="form-icon"></i> Checkbox 2
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <p>You can add the <code>form-inline</code> class to the form components to make them inline in one row.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-radio form-inline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"gender"</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Male
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-radio form-inline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"gender"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Female
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-checkbox form-inline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Checkbox 1
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-checkbox form-inline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Checkbox 2
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
             <h4 class="s-subtitle" id="forms-horizontal">Horizontal forms<a class="anchor" href="#forms-horizontal" aria-hidden="true">#</a></h4>
             <p>If you want to have a horizontal form, add the <code>form-horizontal</code> class to the &lt;form&gt; container.
               And add the <code>col-<1-12></code> and <code>col-xs/sm/lg/xl-<1-12></code> class to the child elements for responsive form row layout.
