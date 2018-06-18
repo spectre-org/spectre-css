@@ -462,6 +462,18 @@ textarea.form-input {
   }
 }
 
+.form-checkbox {
+  .has-error &,
+  &.is-error {
+    input {
+      &:indeterminate + .form-icon {
+        background: $error-color;
+        border-color: $error-color;
+      }
+    }
+  }
+}
+
 // validation based on :placeholder-shown (Edge doesn't support it yet)
 .form-input {
   &:not(:placeholder-shown) {

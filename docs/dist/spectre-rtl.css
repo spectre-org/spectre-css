@@ -1291,6 +1291,12 @@ textarea.form-input {
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
+.has-error .form-checkbox input:indeterminate + .form-icon,
+.form-checkbox.is-error input:indeterminate + .form-icon {
+  background: #e85600;
+  border-color: #e85600;
+}
+
 .form-input:not(:placeholder-shown):invalid {
   border-color: #e85600;
 }
