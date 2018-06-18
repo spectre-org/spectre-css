@@ -2113,7 +2113,7 @@ summary.accordion-header::-webkit-details-marker {
   color: #fff;
   content: attr(data-badge);
   display: inline-block;
-  transform: translate(-.1rem, -.5rem);
+  transform: translate(-.05rem, -.5rem);
 }
 
 .badge[data-badge]::after {
@@ -2147,14 +2147,6 @@ summary.accordion-header::-webkit-details-marker {
   top: 14.64%;
   transform: translate(50%, -50%);
   z-index: 100;
-}
-
-.badge.avatar-xs::after {
-  content: "";
-  height: .4rem;
-  min-width: .4rem;
-  padding: 0;
-  width: .4rem;
 }
 
 .breadcrumb {
@@ -2687,11 +2679,10 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .popover *:focus + .popover-container,
-.popover:hover .popover-container,
-.popover .popover-container:hover {
+.popover:hover .popover-container {
   display: block;
   opacity: 1;
-  transform: translate(-50%, -100%) scale(1);
+  transform: translate(-50%, -100%);
 }
 
 .popover.popover-right .popover-container {
@@ -2699,10 +2690,9 @@ summary.accordion-header::-webkit-details-marker {
   top: 50%;
 }
 
-.popover.popover-right :focus + .popover-container,
-.popover.popover-right:hover .popover-container,
-.popover.popover-right .popover-container:hover {
-  transform: translate(0, -50%) scale(1);
+.popover.popover-right *:focus + .popover-container,
+.popover.popover-right:hover .popover-container {
+  transform: translate(0, -50%);
 }
 
 .popover.popover-bottom .popover-container {
@@ -2710,10 +2700,9 @@ summary.accordion-header::-webkit-details-marker {
   top: 100%;
 }
 
-.popover.popover-bottom :focus + .popover-container,
-.popover.popover-bottom:hover .popover-container,
-.popover.popover-bottom .popover-container:hover {
-  transform: translate(-50%, 0) scale(1);
+.popover.popover-bottom *:focus + .popover-container,
+.popover.popover-bottom:hover .popover-container {
+  transform: translate(-50%, 0);
 }
 
 .popover.popover-left .popover-container {
@@ -2721,10 +2710,9 @@ summary.accordion-header::-webkit-details-marker {
   top: 50%;
 }
 
-.popover.popover-left :focus + .popover-container,
-.popover.popover-left:hover .popover-container,
-.popover.popover-left .popover-container:hover {
-  transform: translate(-100%, -50%) scale(1);
+.popover.popover-left *:focus + .popover-container,
+.popover.popover-left:hover .popover-container {
+  transform: translate(-100%, -50%);
 }
 
 .popover .card {
