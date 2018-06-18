@@ -143,7 +143,7 @@ pre.code(data-lang='HTML')
 .docs-demo.columns
   .column
     .form-group
-      label.form-checkbox.is-error
+      label.form-checkbox
         input#docs-demo-checkbox(type="checkbox")
         i.form-icon
         |  Select all
@@ -458,10 +458,6 @@ pre.code(data-lang='HTML')
 
 +docs-subheading('forms-validation', 'Form validation styles')
 
-p
-  | To use form validation styles, you can either add #[code is-success] or #[code is-error] class to the controls or add #[code has-success] or #[code has-error] class to parent elements.
-  | Use the #[code form-input-hint] class to provide form validation success and error messages.
-
 .docs-demo.columns
   .column.col-9.col-sm-12
     fieldset
@@ -474,10 +470,6 @@ p
         label.form-label(for="input-example-18") Password
         input#input-example-18.form-input(type="password" placeholder="Password")
         p.form-input-hint Passwords must have at least 8 characters.
-      .form-group
-        label.form-label(for="input-example-21") Email
-        input#input-example-21.form-input(type="text" placeholder="Email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
-        p.form-input-hint The Email address is unavailable.
     fieldset
       legend Select
       .form-group
@@ -516,6 +508,10 @@ p
           i.form-icon
           |  Send me emails with news and tips
 
+p
+  | To use form validation styles, you can either add #[code is-success] or #[code is-error] class to the controls or add #[code has-success] or #[code has-error] class to parent elements.
+  | Use the #[code form-input-hint] class to provide form validation success and error messages.
+
 pre.code(data-lang='HTML')
   code
     :highlight(lang="html")
@@ -542,6 +538,27 @@ pre.code(data-lang='HTML')
           </label>
         </div>
       </form>
+
+.docs-demo.columns
+  .column.col-9.col-sm-12
+    .form-group
+      label.form-label(for="input-example-21") Email
+      input#input-example-21.form-input(type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$")
+    .form-group
+      label.form-label(for="input-example-22") Password
+      input#input-example-22.form-input(type="password" placeholder="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$")
+
+p
+  | You can use input #[code pattern] attribute to validate the value as well.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <!-- pattern validation example for Email -->
+      <input class="form-input" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$">
+
+      <!-- pattern validation example for password (8 or more characters that are of at least one number, and one uppercase and lowercase letter) -->
+      <input class="form-input" type="password" placeholder="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$">
 
 +docs-subheading('forms-disabled', 'Form disabled styles')
 

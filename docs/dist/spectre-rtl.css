@@ -2333,6 +2333,10 @@ summary.accordion-header::-webkit-details-marker {
   margin-right: .2rem;
 }
 
+.chip .btn-clear {
+  transform: scale(.75);
+}
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -3573,11 +3577,11 @@ a.text-error:visited {
   padding-top: .4rem !important;
 }
 
-.rounded {
+.s-rounded {
   border-radius: .1rem;
 }
 
-.circle {
+.s-circle {
   border-radius: 50%;
 }
 

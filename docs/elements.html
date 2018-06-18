@@ -133,7 +133,7 @@
             <h3 class="s-title">Typography<a class="anchor" href="#typography" aria-hidden="true">#</a></h3>
             <div class="docs-ad">
               <div class="hide-md text-center">
-                <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- GitHub-lg--><ins class="adsbygoogle mx-auto" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9894180784"></ins>
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
               </div>
@@ -399,7 +399,7 @@
           <div class="container" id="buttons">
             <h3 class="s-title">Buttons<a class="anchor" href="#buttons" aria-hidden="true">#</a></h3>
             <div class="docs-ad docs-ad-sidebar text-center">
-              <script id="_carbonads_js" async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DTKQW&amp;placement=picturepan2githubio"></script>
+              <script id="_carbonads_js" async="" type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DTKQW&amp;placement=picturepan2githubio"></script>
             </div>
             <p>Buttons include simple button styles for actions in different types and sizes.</p>
             <div class="docs-demo columns">
@@ -685,7 +685,7 @@
             <div class="docs-demo columns">
               <div class="column">
                 <div class="form-group">
-                  <label class="form-checkbox is-error">
+                  <label class="form-checkbox">
                     <input id="docs-demo-checkbox" type="checkbox"><i class="form-icon"></i> Select all
                   </label>
                 </div>
@@ -1050,9 +1050,6 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
             <h4 class="s-subtitle" id="forms-validation">Form validation styles<a class="anchor" href="#forms-validation" aria-hidden="true">#</a></h4>
-            <p>To use form validation styles, you can either add <code>is-success</code> or <code>is-error</code> class to the controls or add <code>has-success</code> or <code>has-error</code> class to parent elements.
-              Use the <code>form-input-hint</code> class to provide form validation success and error messages.
-            </p>
             <div class="docs-demo columns">
               <div class="column col-9 col-sm-12">
                 <fieldset>
@@ -1066,11 +1063,6 @@
                     <label class="form-label" for="input-example-18">Password</label>
                     <input class="form-input" id="input-example-18" type="password" placeholder="Password">
                     <p class="form-input-hint">Passwords must have at least 8 characters.</p>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="input-example-21">Email</label>
-                    <input class="form-input" id="input-example-21" type="text" placeholder="Email" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
-                    <p class="form-input-hint">The Email address is unavailable.</p>
                   </div>
                 </fieldset>
                 <fieldset>
@@ -1117,6 +1109,9 @@
                 </fieldset>
               </div>
             </div>
+            <p>To use form validation styles, you can either add <code>is-success</code> or <code>is-error</code> class to the controls or add <code>has-success</code> or <code>has-error</code> class to parent elements.
+              Use the <code>form-input-hint</code> class to provide form validation success and error messages.
+            </p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- form validation class: has-success --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-group has-success"</span>&gt;</span>
@@ -1140,6 +1135,25 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+            <div class="docs-demo columns">
+              <div class="column col-9 col-sm-12">
+                <div class="form-group">
+                  <label class="form-label" for="input-example-21">Email</label>
+                  <input class="form-input" id="input-example-21" type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,14}$">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="input-example-22">Password</label>
+                  <input class="form-input" id="input-example-22" type="password" placeholder="Password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$">
+                </div>
+              </div>
+            </div>
+            <p>You can use input <code>pattern</code> attribute to validate the value as well.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- pattern validation example for Email --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Email"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- pattern validation example for password (8 or more characters that are of at least one number, and one uppercase and lowercase letter) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-input"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Password"</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$"</span>&gt;</span>
 </code></pre>
             <h4 class="s-subtitle" id="forms-disabled">Form disabled styles<a class="anchor" href="#forms-disabled" aria-hidden="true">#</a></h4>
             <p>
