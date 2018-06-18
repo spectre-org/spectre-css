@@ -370,7 +370,7 @@ h6,
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.2rem;
 }
 
 a,
@@ -392,7 +392,7 @@ kbd {
   color: #fff;
   font-size: .7rem; 
   line-height: 1.2;
-  padding: .1rem .15rem;
+  padding: .1rem .2rem;
 }
 
 mark {
@@ -557,9 +557,9 @@ dl dd {
   display: inline-block;
   font-size: .8rem;
   height: 1.8rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
   outline: none;
-  padding: .35rem .4rem;
+  padding: .25rem .4rem;
   text-align: center;
   text-decoration: none;
   transition: all .2s ease;
@@ -703,13 +703,13 @@ dl dd {
 .btn.btn-sm {
   font-size: .7rem;
   height: 1.4rem;
-  padding: .15rem .3rem;
+  padding: .05rem .3rem;
 }
 
 .btn.btn-lg {
   font-size: .9rem;
   height: 2rem;
-  padding: .45rem .6rem;
+  padding: .35rem .6rem;
 }
 
 .btn.btn-block {
@@ -814,18 +814,18 @@ legend {
 
 .form-label {
   display: block;
-  line-height: 1rem;
-  padding: .4rem 0;
+  line-height: 1.2rem;
+  padding: .3rem 0;
 }
 
 .form-label.label-sm {
   font-size: .7rem;
-  padding: .2rem 0;
+  padding: .1rem 0;
 }
 
 .form-label.label-lg {
   font-size: .9rem;
-  padding: .5rem 0;
+  padding: .4rem 0;
 }
 
 .form-input {
@@ -840,10 +840,10 @@ legend {
   display: block;
   font-size: .8rem;
   height: 1.8rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
   max-width: 100%;
   outline: none;
-  padding: .35rem .4rem;
+  padding: .25rem .4rem;
   position: relative;
   transition: all .2s ease;
   width: 100%;
@@ -873,13 +873,13 @@ legend {
 .form-input.input-sm {
   font-size: .7rem;
   height: 1.4rem;
-  padding: .15rem .3rem;
+  padding: .05rem .3rem;
 }
 
 .form-input.input-lg {
   font-size: .9rem;
   height: 2rem;
-  padding: .45rem .6rem;
+  padding: .35rem .6rem;
 }
 
 .form-input.input-inline {
@@ -921,9 +921,9 @@ textarea.form-input {
   color: inherit;
   font-size: .8rem;
   height: 1.8rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
   outline: none;
-  padding: .35rem .4rem;
+  padding: .25rem .4rem;
   vertical-align: middle;
   width: 100%;
 }
@@ -955,13 +955,13 @@ textarea.form-input {
 .form-select.select-sm {
   font-size: .7rem;
   height: 1.4rem;
-  padding: .15rem 1.1rem .15rem .3rem;
+  padding: .05rem 1.1rem .05rem .3rem;
 }
 
 .form-select.select-lg {
   font-size: .9rem;
   height: 2rem;
-  padding: .45rem 1.4rem .45rem .6rem;
+  padding: .35rem 1.4rem .35rem .6rem;
 }
 
 .has-icon-left,
@@ -972,7 +972,7 @@ textarea.form-input {
 .has-icon-left .form-icon,
 .has-icon-right .form-icon {
   height: .8rem;
-  margin: 0 .35rem;
+  margin: 0 .25rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -985,7 +985,7 @@ textarea.form-input {
 }
 
 .has-icon-left .form-input {
-  padding-left: 1.5rem;
+  padding-left: 1.3rem;
 }
 
 .has-icon-right .form-icon {
@@ -993,17 +993,17 @@ textarea.form-input {
 }
 
 .has-icon-right .form-input {
-  padding-right: 1.5rem;
+  padding-right: 1.3rem;
 }
 
 .form-checkbox,
 .form-radio,
 .form-switch {
   display: inline-block;
-  line-height: 1rem;
+  line-height: 1.2rem;
   margin: .2rem 0;
   min-height: 1.2rem;
-  padding: .2rem .4rem .2rem 1.2rem;
+  padding: .1rem .4rem .1rem 1.2rem;
   position: relative;
 }
 
@@ -1167,19 +1167,19 @@ textarea.form-input {
   background: #f8f9fa;
   border: .05rem solid #caced7;
   border-radius: .1rem;
-  line-height: 1rem;
-  padding: .35rem .4rem;
+  line-height: 1.2rem;
+  padding: .25rem .4rem;
   white-space: nowrap;
 }
 
 .input-group .input-group-addon.addon-sm {
   font-size: .7rem;
-  padding: .15rem .3rem;
+  padding: .05rem .3rem;
 }
 
 .input-group .input-group-addon.addon-lg {
   font-size: .9rem;
-  padding: .45rem .6rem;
+  padding: .35rem .6rem;
 }
 
 .input-group .form-input,
@@ -1345,7 +1345,7 @@ input.disabled + .form-icon {
   color: #5b657a;
   display: inline-block; 
   line-height: 1.2;
-  padding: .1rem .15rem;
+  padding: .1rem .2rem;
 }
 
 .label.label-rounded {
@@ -1385,7 +1385,7 @@ code {
   color: #d73e48;
   font-size: 85%; 
   line-height: 1.2;
-  padding: .1rem .15rem;
+  padding: .1rem .2rem;
 }
 
 .code {
@@ -2276,6 +2276,11 @@ summary.accordion-header::-webkit-details-marker {
   padding-bottom: .8rem;
 }
 
+.card .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
 .card .card-image {
   padding-top: .8rem;
 }
@@ -2878,7 +2883,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .tile .tile-title,
 .tile .tile-subtitle {
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .tile.tile-centered {
@@ -5292,7 +5297,7 @@ a.text-error:visited {
 
 .timeline .timeline-item .timeline-icon.icon-lg {
   background: #5755d9;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .timeline .timeline-item .timeline-icon.icon-lg::before {

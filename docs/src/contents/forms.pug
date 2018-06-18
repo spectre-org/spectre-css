@@ -140,8 +140,19 @@ pre.code(data-lang='HTML')
         </label>
       </div>
 
+.docs-demo.columns
+  .column
+    .form-group
+      label.form-checkbox
+        input#docs-demo-checkbox(type="checkbox")
+        i.form-icon
+        |  Select all
+
+script.
+  document.getElementById("docs-demo-checkbox").indeterminate = true;
+
 p
-  | You can use #[code :indeterminate] pseudo class for indeterminate state of checkboxes.
+  | You can change checkbox to indeterminate state by setting the #[code indeterminate] property of input checkboxes to #[code true].
 
 +docs-subheading('forms-horizontal', 'Horizontal forms')
 

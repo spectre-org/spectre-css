@@ -682,7 +682,20 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-            <p>You can use <code>:indeterminate</code> pseudo class for indeterminate state of checkboxes.</p>
+            <div class="docs-demo columns">
+              <div class="column">
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input id="docs-demo-checkbox" type="checkbox"><i class="form-icon"></i> Select all
+                  </label>
+                </div>
+              </div>
+            </div>
+            <script>
+              document.getElementById("docs-demo-checkbox").indeterminate = true;
+              
+            </script>
+            <p>You can change checkbox to indeterminate state by setting the <code>indeterminate</code> property of input checkboxes to <code>true</code>.</p>
             <h4 class="s-subtitle" id="forms-horizontal">Horizontal forms<a class="anchor" href="#forms-horizontal" aria-hidden="true">#</a></h4>
             <p>If you want to have a horizontal form, add the <code>form-horizontal</code> class to the &lt;form&gt; container.
               And add the <code>col-<1-12></code> and <code>col-xs/sm/lg/xl-<1-12></code> class to the child elements for responsive form row layout.

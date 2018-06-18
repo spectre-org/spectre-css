@@ -202,18 +202,21 @@
     .hljs-comment {
       color: $gray-color;
     }
+
     .hljs-title,
     .hljs-class,
     .hljs-string {
       color: $primary-color;
     }
+
+    .hljs-name,
     .hljs-attribute,
     .hljs-variable,
     .hljs-keyword,
     .hljs-built_in {
       color: $code-color;
-      
     }
+
     .hljs-value,
     .hljs-hexcolor {
       color: lighten($body-font-color, 10%);
@@ -293,13 +296,13 @@
     }
   
     img {
-      display: inline;
+      display: inline-block;
       height: auto;
       width: 1.6rem;
     }
   
     h2 {
-      display: inline;
+      display: inline-block;
       font-size: .8rem;
       font-weight: 700;
       line-height: 1.5rem;

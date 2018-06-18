@@ -199,6 +199,7 @@
   color: #5755d9;
 }
 
+.docs-content .code .hljs-name,
 .docs-content .code .hljs-attribute,
 .docs-content .code .hljs-variable,
 .docs-content .code .hljs-keyword,
@@ -290,13 +291,13 @@
 }
 
 .docs-brand .docs-logo img {
-  display: inline;
+  display: inline-block;
   height: auto;
   width: 1.6rem;
 }
 
 .docs-brand .docs-logo h2 {
-  display: inline;
+  display: inline-block;
   font-size: .8rem;
   font-weight: 700;
   line-height: 1.5rem;
