@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.2";
+  content: "0.5.3";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -141,43 +141,6 @@
   padding-top: 1rem;
 }
 
-.docs-content .docs-ad {
-  background: #f8f9fa;
-  border-radius: .1rem;
-  display: block;
-  margin: 2rem 0;
-  padding: .4rem;
-  position: relative;
-}
-
-.docs-content .docs-ad::before {
-  color: #acb3c2;
-  content: "AD";
-  font-size: .7rem;
-  position: absolute;
-  right: .4rem;
-  top: .1rem;
-}
-
-.docs-content .docs-ad.docs-ad-sidebar::before {
-  content: none;
-}
-
-.docs-content .carbon-wrap .carbon-img {
-  display: block;
-}
-
-.docs-content .carbon-wrap .carbon-text {
-  color: #667189;
-  display: block;
-  font-size: .7rem;
-}
-
-.docs-content .carbon-poweredby {
-  color: #acb3c2;
-  font-size: .7rem;
-}
-
 .docs-content .column {
   padding: .4rem;
 }
@@ -236,6 +199,7 @@
   color: #5755d9;
 }
 
+.docs-content .code .hljs-name,
 .docs-content .code .hljs-attribute,
 .docs-content .code .hljs-variable,
 .docs-content .code .hljs-keyword,
@@ -327,13 +291,13 @@
 }
 
 .docs-brand .docs-logo img {
-  display: inline;
+  display: inline-block;
   height: auto;
   width: 1.6rem;
 }
 
 .docs-brand .docs-logo h2 {
-  display: inline;
+  display: inline-block;
   font-size: .8rem;
   font-weight: 700;
   line-height: 1.5rem;
@@ -351,9 +315,33 @@
   color: #667189;
 }
 
-.btn .feather {
-  height: 1rem;
+.docs-ad {
+  background: #f8f9fa;
+  border-radius: .1rem;
+  display: block;
+  margin: 2rem 0;
+  padding: .4rem;
+  position: relative;
+}
+
+.docs-ad ins {
+  line-height: 1;
   vertical-align: middle;
+}
+
+.docs-ad .carbon-wrap .carbon-img {
+  display: block;
+}
+
+.docs-ad .carbon-wrap .carbon-text {
+  color: #667189;
+  display: block;
+  font-size: .7rem;
+}
+
+.docs-ad .carbon-poweredby {
+  color: #acb3c2;
+  font-size: .7rem;
 }
 
 /* Spectre Homepage style */
@@ -372,6 +360,10 @@
 
 .section-hero .column {
   padding: .4rem;
+}
+
+.section-ads {
+  padding: 1rem .5rem;
 }
 
 .section-updates {
@@ -410,6 +402,7 @@
 .grid-hero h1 {
   color: #50596c;
   font-size: 1.6rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
@@ -436,7 +429,8 @@
 
 .grid-hero .card .card-title {
   color: #5755d9;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 0;
 }
 

@@ -1,5 +1,13 @@
 ## Spectre.css Changelog
 
+### [v0.5.3](https://github.com/picturepan2/spectre/releases/tag/v0.5.3)
+
+- Add dark text color to utilities
+- Add error state to the indeterminate checkbox
+- Add inline forms
+- Add more code examples
+- Fix errors in the Docs
+
 ### [v0.5.2](https://github.com/picturepan2/spectre/releases/tag/v0.5.2)
 
 - IMPORTANT:  Move Docs to Pug templates
