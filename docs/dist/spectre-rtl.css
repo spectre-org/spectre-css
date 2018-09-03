@@ -1080,14 +1080,14 @@ textarea.form-input {
   border-left-width: 0;
   border-top-width: 0;
   content: "";
-  height: 12px;
+  height: 9px;
   left: 50%;
-  margin-left: -4px;
-  margin-top: -8px;
+  margin-left: -3px;
+  margin-top: -6px;
   position: absolute;
   top: 50%;
   transform: rotate(45deg);
-  width: 8px;
+  width: 6px;
 }
 
 .form-checkbox input:indeterminate + .form-icon {
@@ -5277,10 +5277,15 @@ a.text-error:visited {
 }
 
 .timeline .timeline-item .timeline-icon {
+  align-items: center;
   border-radius: 50%;
   color: #fff;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   height: 1.2rem;
+  justify-content: center;
   text-align: center;
   width: 1.2rem;
 }
