@@ -3043,7 +3043,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .text-primary {
-  color: #5755d9;
+  color: #5755d9 !important;
 }
 
 a.text-primary:focus,
@@ -3056,7 +3056,7 @@ a.text-primary:visited {
 }
 
 .text-secondary {
-  color: #e5e5f9;
+  color: #e5e5f9 !important;
 }
 
 a.text-secondary:focus,
@@ -3069,7 +3069,7 @@ a.text-secondary:visited {
 }
 
 .text-gray {
-  color: #acb3c2;
+  color: #acb3c2 !important;
 }
 
 a.text-gray:focus,
@@ -3082,7 +3082,7 @@ a.text-gray:visited {
 }
 
 .text-light {
-  color: #fff;
+  color: #fff !important;
 }
 
 a.text-light:focus,
@@ -3095,7 +3095,7 @@ a.text-light:visited {
 }
 
 .text-dark {
-  color: #50596c;
+  color: #50596c !important;
 }
 
 a.text-dark:focus,
@@ -3108,7 +3108,7 @@ a.text-dark:visited {
 }
 
 .text-success {
-  color: #32b643;
+  color: #32b643 !important;
 }
 
 a.text-success:focus,
@@ -3121,7 +3121,7 @@ a.text-success:visited {
 }
 
 .text-warning {
-  color: #ffb700;
+  color: #ffb700 !important;
 }
 
 a.text-warning:focus,
@@ -3134,7 +3134,7 @@ a.text-warning:visited {
 }
 
 .text-error {
-  color: #e85600;
+  color: #e85600 !important;
 }
 
 a.text-error:focus,
@@ -3147,35 +3147,35 @@ a.text-error:visited {
 }
 
 .bg-primary {
-  background: #5755d9;
+  background: #5755d9 !important;
   color: #fff;
 }
 
 .bg-secondary {
-  background: #f1f1fc;
+  background: #f1f1fc !important;
 }
 
 .bg-dark {
-  background: #454d5d;
+  background: #454d5d !important;
   color: #fff;
 }
 
 .bg-gray {
-  background: #f8f9fa;
+  background: #f8f9fa !important;
 }
 
 .bg-success {
-  background: #32b643;
+  background: #32b643 !important;
   color: #fff;
 }
 
 .bg-warning {
-  background: #ffb700;
+  background: #ffb700 !important;
   color: #fff;
 }
 
 .bg-error {
-  background: #e85600;
+  background: #e85600 !important;
   color: #fff;
 }
 
