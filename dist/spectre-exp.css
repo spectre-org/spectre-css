@@ -1014,10 +1014,15 @@
 }
 
 .timeline .timeline-item .timeline-icon {
+  align-items: center;
   border-radius: 50%;
   color: #fff;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   height: 1.2rem;
+  justify-content: center;
   text-align: center;
   width: 1.2rem;
 }
