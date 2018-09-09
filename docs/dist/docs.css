@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.3";
+  content: "0.5.4";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -110,7 +110,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 100;
+    z-index: 99;
   }
   .docs-content .s-title::before,
   .docs-content .s-subtitle::before {

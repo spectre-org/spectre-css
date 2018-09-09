@@ -1,5 +1,5 @@
 /*! Spectre.css RTL | MIT License | github.com/picturepan2/spectre */
-/*! Spectre.css v0.5.3 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.5.4 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
@@ -3641,7 +3641,7 @@ a.text-error:visited {
   word-wrap: break-word;
 }
 
-/*! Spectre.css Icons v0.5.3 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Icons v0.5.4 | MIT License | github.com/picturepan2/spectre */
 .icon {
   box-sizing: border-box;
   display: inline-block;
@@ -4261,7 +4261,7 @@ a.text-error:visited {
   width: .5em;
 }
 
-/*! Spectre.css Experimentals v0.5.3 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.5.4 | MIT License | github.com/picturepan2/spectre */
 .form-autocomplete {
   position: relative;
 }
