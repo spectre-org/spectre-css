@@ -1,5 +1,17 @@
 ## Spectre.css Changelog
 
+### [v0.5.4](https://github.com/picturepan2/spectre/releases/tag/v0.5.4)
+
+- IMPORTANT: Change naming of position utilities to avoid conflicts
+- Update dark color variable
+- Fix sidebar hash link bug #482
+- Fix browser support typo #469
+- Fix code typo #460
+- Fix GitHub button z-index bug #458
+- Fix Bar background color issue by adding !important to color utilities
+- Fix chip bug when content is too long #506
+- Fix multiple select height bug #508
+
 ### [v0.5.3](https://github.com/picturepan2/spectre/releases/tag/v0.5.3)
 
 - Add dark text color to utilities
