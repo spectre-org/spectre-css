@@ -51,7 +51,7 @@
 }
 
 .calendar {
-  border: .05rem solid #e7e9ed;
+  border: .05rem solid #dadee4;
   border-radius: .1rem;
   display: block;
   min-width: 280px;
@@ -59,7 +59,7 @@
 
 .calendar .calendar-nav {
   align-items: center;
-  background: #f8f9fa;
+  background: #f7f8f9;
   border-top-left-radius: .1rem;
   border-top-right-radius: .1rem;
   display: flex;
@@ -88,15 +88,15 @@
 }
 
 .calendar .calendar-header {
-  background: #f8f9fa;
-  border-bottom: .05rem solid #e7e9ed;
-  color: #acb3c2;
+  background: #f7f8f9;
+  border-bottom: .05rem solid #dadee4;
+  color: #bcc3ce;
   font-size: .7rem;
   text-align: center;
 }
 
 .calendar .calendar-body {
-  color: #667189;
+  color: #66758c;
 }
 
 .calendar .calendar-date {
@@ -111,7 +111,7 @@
   background: transparent;
   border: .05rem solid transparent;
   border-radius: 50%;
-  color: #667189;
+  color: #66758c;
   cursor: pointer;
   font-size: .7rem;
   height: 1.4rem;
@@ -213,8 +213,8 @@
 }
 
 .calendar.calendar-lg .calendar-body .calendar-date {
-  border-bottom: .05rem solid #e7e9ed;
-  border-right: .05rem solid #e7e9ed;
+  border-bottom: .05rem solid #dadee4;
+  border-right: .05rem solid #dadee4;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-direction: column;
@@ -272,7 +272,7 @@
 }
 
 .carousel {
-  background: #f8f9fa;
+  background: #f7f8f9;
   display: block;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -311,9 +311,9 @@
 
 .carousel .carousel-container .item-prev,
 .carousel .carousel-container .item-next {
-  background: rgba(231, 233, 237, .25);
-  border-color: rgba(231, 233, 237, .5);
-  color: #e7e9ed;
+  background: rgba(247, 248, 249, .25);
+  border-color: rgba(247, 248, 249, .5);
+  color: #f7f8f9;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -343,7 +343,7 @@
 .carousel .carousel-locator:nth-of-type(2):checked ~ .carousel-nav .nav-item:nth-of-type(2),
 .carousel .carousel-locator:nth-of-type(3):checked ~ .carousel-nav .nav-item:nth-of-type(3),
 .carousel .carousel-locator:nth-of-type(4):checked ~ .carousel-nav .nav-item:nth-of-type(4) {
-  color: #e7e9ed;
+  color: #f7f8f9;
 }
 
 .carousel .carousel-nav {
@@ -360,7 +360,7 @@
 }
 
 .carousel .carousel-nav .nav-item {
-  color: rgba(231, 233, 237, .5);
+  color: rgba(247, 248, 249, .5);
   display: block;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -489,7 +489,7 @@
 }
 
 .comparison-slider .comparison-label {
-  background: rgba(69, 77, 93, .5);
+  background: rgba(48, 55, 66, .5);
   bottom: .8rem;
   color: #fff;
   padding: .2rem .4rem;
@@ -557,7 +557,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f8f9fa;
+  background: #f7f8f9;
   border: 0;
   border-radius: .1rem;
   display: block;
@@ -577,7 +577,7 @@
 }
 
 .meter::-webkit-meter-bar {
-  background: #f8f9fa;
+  background: #f7f8f9;
 }
 
 .meter::-webkit-meter-optimum-value {
@@ -631,7 +631,7 @@
 }
 
 .off-canvas .off-canvas-sidebar {
-  background: #f8f9fa;
+  background: #f7f8f9;
   bottom: 0;
   left: 0;
   min-width: 10rem;
@@ -651,7 +651,7 @@
 }
 
 .off-canvas .off-canvas-overlay {
-  background: rgba(69, 77, 93, .1);
+  background: rgba(48, 55, 66, .1);
   border-color: transparent;
   border-radius: 0;
   bottom: 0;
@@ -698,7 +698,7 @@
 }
 
 .parallax .parallax-content {
-  box-shadow: 0 1rem 2.1rem rgba(69, 77, 93, .3);
+  box-shadow: 0 1rem 2.1rem rgba(48, 55, 66, .3);
   height: auto;
   transform: perspective(1000px);
   transform-style: preserve-3d;
@@ -728,7 +728,7 @@
   left: 0;
   position: absolute;
   text-align: center;
-  text-shadow: 0 0 20px rgba(69, 77, 93, .75);
+  text-shadow: 0 0 20px rgba(48, 55, 66, .75);
   top: 0;
   transform: translateZ(50px) scale(.95);
   transition: all .4s ease;
@@ -840,7 +840,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f0f1f4;
+  background: #eef0f3;
   border: 0;
   border-radius: .1rem;
   color: #5755d9;
@@ -866,7 +866,7 @@
 
 .progress:indeterminate {
   animation: progress-indeterminate 1.5s linear infinite;
-  background: #f0f1f4 linear-gradient(to right, #5755d9 30%, #f0f1f4 30%) top left/150% 150% no-repeat;
+  background: #eef0f3 linear-gradient(to right, #5755d9 30%, #eef0f3 30%) top left/150% 150% no-repeat;
 }
 
 .progress:indeterminate::-moz-progress-bar {
@@ -944,38 +944,38 @@
 
 .slider:disabled::-webkit-slider-thumb,
 .slider.disabled::-webkit-slider-thumb {
-  background: #e7e9ed;
+  background: #f7f8f9;
   transform: scale(1);
 }
 
 .slider:disabled::-moz-range-thumb,
 .slider.disabled::-moz-range-thumb {
-  background: #e7e9ed;
+  background: #f7f8f9;
   transform: scale(1);
 }
 
 .slider:disabled::-ms-thumb,
 .slider.disabled::-ms-thumb {
-  background: #e7e9ed;
+  background: #f7f8f9;
   transform: scale(1);
 }
 
 .slider::-webkit-slider-runnable-track {
-  background: #f0f1f4;
+  background: #eef0f3;
   border-radius: .1rem;
   height: .1rem;
   width: 100%;
 }
 
 .slider::-moz-range-track {
-  background: #f0f1f4;
+  background: #eef0f3;
   border-radius: .1rem;
   height: .1rem;
   width: 100%;
 }
 
 .slider::-ms-track {
-  background: #f0f1f4;
+  background: #eef0f3;
   border-radius: .1rem;
   height: .1rem;
   width: 100%;
@@ -993,7 +993,7 @@
 }
 
 .timeline .timeline-item::before {
-  background: #e7e9ed;
+  background: #dadee4;
   content: "";
   height: 100%;
   left: 11px;
