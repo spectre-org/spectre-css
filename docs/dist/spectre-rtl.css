@@ -2305,7 +2305,7 @@ summary.accordion-header::-webkit-details-marker {
   align-items: center;
   background: #f0f1f4;
   border-radius: 5rem;
-  color: #667189;
+  color: #454d5d;
   display: inline-flex;
   display: -ms-inline-flexbox;
   -ms-flex-align: center;
@@ -2313,10 +2313,13 @@ summary.accordion-header::-webkit-details-marker {
   height: 1.2rem;
   line-height: .8rem;
   margin: .1rem;
-  max-width: 100%;
+  max-width: 320px;
+  overflow-x: hidden;
   padding: .2rem .4rem;
   text-decoration: none;
+  text-overflow: ellipsis;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .chip.active {
