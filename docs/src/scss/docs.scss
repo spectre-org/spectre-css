@@ -107,7 +107,6 @@
   
   .s-title,
   .s-subtitle {
-    color: darken($dark-color, 2%);
     line-height: 1.8rem;
     margin-bottom: 0;
     padding-bottom: 1rem;
@@ -117,7 +116,7 @@
     @supports (position: sticky) {
       position: sticky;
       top: 0;
-      z-index: $zindex-1;
+      z-index: $zindex-1 - 1;
 
       &::before {
         background: $light-color;      

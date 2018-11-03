@@ -53,3 +53,55 @@ pre.code(data-lang='HTML')
           </tr>
         </tbody>
       </table>
+
+
+.docs-demo.columns
+  .column.col-12
+    table.table.table-striped.table-scroll
+      thead
+        tr
+          th Name
+          th Rating
+          th Duration
+          th Genre
+          th Release date
+          th Director
+      tbody
+        tr
+          td The Shawshank Redemption
+          td R
+          td 2h 22min
+          td Crime, Drama
+          td 14 October 1994
+          td Frank Darabont
+        tr
+          td The Godfather
+          td R
+          td 2h 55min
+          td Crime, Drama
+          td 24 March 1972
+          td Francis Ford Coppola
+        tr
+          td Schindler's List
+          td R
+          td 3h 15min
+          td Biography, Drama, History
+          td 4 February 1994
+          td Steven Spielberg
+        tr
+          td Se7en
+          td R
+          td 2h 7min
+          td Crime, Drama, Mystery
+          td 22 September 1995
+          td David Fincher
+
+p
+  | Add the #[code table-scroll] class to #{'<table>'} to have a horizontally scrollable table.
+
+pre.code(data-lang='HTML')
+  code
+    :highlight(lang="html")
+      <table class="table table-striped table-scroll">
+        ...
+      </table>
