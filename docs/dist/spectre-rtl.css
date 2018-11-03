@@ -916,6 +916,7 @@ textarea.form-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #fff; 
   border: .05rem solid #bcc3ce;
   border-radius: .1rem;
   color: inherit;
@@ -926,21 +927,6 @@ textarea.form-input {
   padding: .25rem .4rem;
   vertical-align: middle;
   width: 100%;
-}
-
-.form-select[size],
-.form-select[multiple] {
-  height: auto;
-}
-
-.form-select[size] option,
-.form-select[multiple] option {
-  padding: .1rem .2rem;
-}
-
-.form-select:not([multiple]):not([size]) {
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
-  padding-right: 1.2rem;
 }
 
 .form-select:focus {
@@ -962,6 +948,22 @@ textarea.form-input {
   font-size: .9rem;
   height: 2rem;
   padding: .35rem 1.4rem .35rem .6rem;
+}
+
+.form-select[size],
+.form-select[multiple] {
+  height: auto;
+  padding: .25rem .4rem;
+}
+
+.form-select[size] option,
+.form-select[multiple] option {
+  padding: .1rem .2rem;
+}
+
+.form-select:not([multiple]):not([size]) {
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+  padding-right: 1.2rem;
 }
 
 .has-icon-left,
@@ -2687,7 +2689,7 @@ summary.accordion-header::-webkit-details-marker {
 .popover:hover .popover-container {
   display: block;
   opacity: 1;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%) scale(1);
 }
 
 .popover.popover-right .popover-container {
@@ -2697,7 +2699,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .popover.popover-right *:focus + .popover-container,
 .popover.popover-right:hover .popover-container {
-  transform: translate(0, -50%);
+  transform: translate(0, -50%) scale(1);
 }
 
 .popover.popover-bottom .popover-container {
@@ -2707,7 +2709,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .popover.popover-bottom *:focus + .popover-container,
 .popover.popover-bottom:hover .popover-container {
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0) scale(1);
 }
 
 .popover.popover-left .popover-container {
@@ -2717,7 +2719,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .popover.popover-left *:focus + .popover-container,
 .popover.popover-left:hover .popover-container {
-  transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%) scale(1);
 }
 
 .popover .card {
