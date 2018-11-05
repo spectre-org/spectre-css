@@ -1,6 +1,6 @@
 mixin docs-accordion(id, name, ...pages)
   .accordion
-    input(id='accordion-' + id type='checkbox' name='docs-accordion-checkbox' hidden='' checked=(current === id ? true : false))
+    input(id='accordion-' + id type='checkbox' name='docs-accordion-checkbox' hidden='' checked=(slug === id ? true : false))
     label.accordion-header.c-hand(for='accordion-' + id)= name
     .accordion-body
       ul.menu.menu-nav

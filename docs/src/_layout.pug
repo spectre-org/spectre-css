@@ -1,6 +1,15 @@
+block global
+  - var domain = 'https://picturepan2.github.io/spectre/'
+
 block variables
+  - var slug = ''
   - var title = 'Spectre.css - A Lightweight, Responsive and Modern CSS Framework'
-  - var description = ''
+  - var description = 'Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
+
+if slug
+  - var url = domain + slug + '.html'
+else 
+  - var url = domain
 
 doctype html
 html(lang='en')
@@ -10,6 +19,7 @@ html(lang='en')
     meta(name='robots' content='index, follow')
     meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
     meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='description' content= description)
     meta(name='author' content='Yan Zhu')
     link(rel='shortcut icon' href='img/favicons/favicon.ico')
     link(rel='icon' href='img/favicons/favicon.png')
@@ -17,6 +27,7 @@ html(lang='en')
     link(rel='stylesheet' href='dist/spectre-icons.min.css')
     link(rel='stylesheet' href='dist/spectre-exp.min.css')
     link(rel='stylesheet' href='dist/docs.min.css')
+    link(rel='canonical' href= url)
 
   body
     block content
