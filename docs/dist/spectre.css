@@ -2314,7 +2314,7 @@ summary.accordion-header::-webkit-details-marker {
   line-height: .8rem;
   margin: .1rem;
   max-width: 320px;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: .2rem .4rem;
   text-decoration: none;
   text-overflow: ellipsis;
