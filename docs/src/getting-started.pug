@@ -8,6 +8,7 @@ block variables
 block docs-content
   //- Introduction
   +docs-heading('introduction', 'Introduction')
+    include contents/_ad-g.pug
     include contents/introduction.pug
     
   //- Installation
@@ -22,13 +23,16 @@ block docs-content
 
   //- Accessibility
   +docs-heading('accessibility', 'Accessibility')
+    include contents/_ad-g.pug
   
   //- Browser support
   +docs-heading('browsers', 'Browser support')
+    include contents/_ad-g.pug
     include contents/browsers.pug
 
   //- What's new
   +docs-heading('whatsnew', 'What\'s new')
+    include contents/_ad-g.pug
     include contents/whatsnew.pug
   
   include _footer.pug
