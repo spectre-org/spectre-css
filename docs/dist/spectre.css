@@ -1980,7 +1980,6 @@ video.video-responsive::before {
 
 .navbar .navbar-brand {
   font-size: .9rem;
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -3072,16 +3071,16 @@ a.text-secondary:visited {
 }
 
 .text-gray {
-  color: #66758c !important;
+  color: #bcc3ce !important;
 }
 
 a.text-gray:focus,
 a.text-gray:hover {
-  color: #5b687d;
+  color: #adb6c4;
 }
 
 a.text-gray:visited {
-  color: #728199;
+  color: #cbd0d9;
 }
 
 .text-light {

@@ -1,61 +1,19 @@
-extends _docs-layout.pug
+extends _layout/_docs-layout.pug
 
 block variables
   - var slug = 'experimentals'
+  - var parent = 'experimentals'
   - var title = 'Experimentals - Spectre.css CSS Framework'
   - var description = 'Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
 
 block docs-content
+  
   //- Experimentals
   +docs-heading('experimentals', 'Experimentals')
-    include contents/experimentals.pug
-  
-  //- Autocomplete
-  +docs-heading('autocomplete', 'Autocomplete')
-    include contents/_ad-g.pug
-    include contents/autocomplete.pug
-    
-  //- Calendars
-  +docs-heading('calendars', 'Calendars')
-    include contents/_ad-c.pug
-    include contents/calendars.pug
+    p
+      | The Experimentals include experimental elements and features, mostly are not yet ready for wide use.
+      | These elements and components are limited inside #[code spectre-exp.scss] before browsers fully support them.
+      | Sometimes, there are some specific browsers targeted components.
 
-  //- Carousels
-  +docs-heading('carousels', 'Carousels')
-    include contents/carousels.pug
 
-  //- Comparison sliders
-  +docs-heading('comparison', 'Comparison sliders')
-    include contents/_ad-g.pug
-    include contents/comparison.pug
-  
-  //- Filters
-  +docs-heading('filters', 'Filters')
-    include contents/filters.pug
-
-  //- Meters
-  +docs-heading('meters', 'Meters')
-    include contents/meters.pug
-
-  //- Off-canvas
-  +docs-heading('off-canvas', 'Off-canvas')
-    include contents/off-canvas.pug
-  
-  //- Parallax
-  +docs-heading('parallax', 'Parallax')
-    include contents/_ad-g.pug
-    include contents/parallax.pug
-
-  //- Progress
-  +docs-heading('progress', 'Progress')
-    include contents/progress.pug
-
-  //- Sliders
-  +docs-heading('sliders', 'Sliders')
-    include contents/sliders.pug
-  
-  //- Timelines
-  +docs-heading('timelines', 'Timelines')
-    include contents/timelines.pug
-
-  include _footer.pug
+  include _layout/_footer.pug
