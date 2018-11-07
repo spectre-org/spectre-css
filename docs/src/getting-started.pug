@@ -7,37 +7,59 @@ block variables
   - var description = 'Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
 
 block docs-content
-  //- Introduction
-  +docs-heading('introduction', 'Introduction')
-    p 
-    strong Spectre.css 
-    | is a lightweight, responsive and modern CSS framework for faster and extensible development.
-    p 
-    | Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
+  +docs-heading('getting-started', 'Getting started')
+    include _layout/_ad-g.pug
 
-    .columns
-      .column
-        .tile.tile-centered
-          .tile-icon
-            .example-tile-icon
-              i.icon.icon-mail.centered
-          .tile-content
-            .tile-title spectre-docs.pdf
-            .tile-subtitle.text-gray 14MB · Public · 1 Jan, 2017
-          .tile-action
-            button.btn.btn-link.btn-action
-              i.icon.icon-more-vert
-      .column
-        .tile.tile-centered
-          .tile-icon
-            .example-tile-icon
-              i.icon.icon-mail.centered
-          .tile-content
-            .tile-title spectre-docs.pdf
-            .tile-subtitle.text-gray 14MB · Public · 1 Jan, 2017
-          .tile-action
-            button.btn.btn-link.btn-action
-              i.icon.icon-more-vert
+    p 
+      strong Spectre.css 
+      | is a lightweight, responsive and modern CSS framework for faster and extensible development.
+    p 
+      | Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.
 
+    .docs-demo.columns
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Installation
+          .card-body
+            | How to install and use Spectre.css
+          .card-footer
+            a.btn.btn-primary(href="getting-started/installation.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Custom version
+          .card-body
+            | Customize your version of Spectre.css
+          .card-footer
+            a.btn.btn-primary(href="getting-started/custom.html") View
+        
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Browser support
+          .card-body
+            | Browser compatibility and support
+          .card-footer
+            a.btn.btn-primary(href="getting-started/browsers.html") View
+              
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 What's new
+          .card-body
+            | Changelog and release notes
+          .card-footer
+            a.btn.btn-primary(href="getting-started/whatsnew.html") View
+
+      .column.col-6.col-xs-12
+        .card
+          .card-header
+            .card-title.h5 Accessibility
+          .card-body
+            | Coming soon
+
+    include _layout/_ad-c.pug
 
   include _layout/_footer.pug

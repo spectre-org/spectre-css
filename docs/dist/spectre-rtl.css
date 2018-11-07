@@ -1245,6 +1245,7 @@ textarea.form-input {
 .form-input.is-success,
 .has-success .form-select,
 .form-select.is-success {
+  background: #f9fdfa;
   border-color: #32b643;
 }
 
@@ -1259,6 +1260,7 @@ textarea.form-input {
 .form-input.is-error,
 .has-error .form-select,
 .form-select.is-error {
+  background: #fffaf7;
   border-color: #e85600;
 }
 
@@ -1309,6 +1311,7 @@ textarea.form-input {
 }
 
 .form-input:not(:placeholder-shown):invalid:focus {
+  background: #ff701c; 
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
@@ -2761,7 +2764,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .step .step-item a {
-  color: #bcc3ce;
+  color: #5755d9;
   display: inline-block;
   padding: 20px 10px 0;
   text-decoration: none;
@@ -2791,8 +2794,12 @@ summary.accordion-header::-webkit-details-marker {
   background: #dadee4;
 }
 
+.step .step-item.active ~ .step-item a {
+  color: #bcc3ce;
+}
+
 .step .step-item.active ~ .step-item a::before {
-  background: #f7f8f9;
+  background: #dadee4;
 }
 
 .tab {

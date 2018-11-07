@@ -427,6 +427,7 @@ textarea.form-input {
 .form-select {
   .has-success &,
   &.is-success {
+    background: lighten($success-color, 53%);
     border-color: $success-color;
     &:focus {
       @include control-shadow($success-color);
@@ -435,6 +436,7 @@ textarea.form-input {
 
   .has-error &,
   &.is-error {
+    background: lighten($error-color, 53%);
     border-color: $error-color;
     &:focus {
       @include control-shadow($error-color);
@@ -484,6 +486,7 @@ textarea.form-input {
       border-color: $error-color;
       &:focus {
         @include control-shadow($error-color);
+        background: lighten($error-color, 10%);
       }
 
       & + .form-input-hint {
