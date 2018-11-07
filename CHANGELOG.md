@@ -1,5 +1,13 @@
 #### Spectre.css Changelog
 
+##### [v0.5.5](https://github.com/picturepan2/spectre/releases/tag/v0.5.5)
+
+- IMPORTANT: New Docs
+- Add Changelog to What's New section
+- Fix chip vertical scrollbar #521
+- Fix circle -> s-circle #489
+- Fix code font-family issue for asian languages #476
+
 ##### [v0.5.4](https://github.com/picturepan2/spectre/releases/tag/v0.5.4)
 
 - IMPORTANT: Change naming of position utilities to avoid conflicts
