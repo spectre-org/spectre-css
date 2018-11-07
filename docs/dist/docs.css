@@ -212,6 +212,13 @@
   color: #505c6e;
 }
 
+.docs-content .c-select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
 .docs-content .panel {
   height: 75vh;
 }
