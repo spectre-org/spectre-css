@@ -277,23 +277,25 @@
             <h4 class="s-subtitle" id="typography-east-asian">Optimized for East Asian fonts<a class="anchor" href="#typography-east-asian" aria-hidden="true">#</a></h4>
             <div class="docs-demo columns">
               <div class="column">
-                <p class="h5"><small lang="zh-Hans">你好</small>, <small lang="ja">こんにちは</small>, <small lang="ko">안녕하세요</small></p>
+                <p class="h5"><small class="lang-zh-hans">你好</small>, <small class="lang-ja">こんにちは</small>, <small class="lang-ko">안녕하세요</small></p>
                 <p class="h6">Chinese (Simplified)</p>
-                <p lang="zh-Hans">革命不是请客吃饭，不是做文章，不是绘画绣花，不能那样雅致，那样从容不迫，“文质彬彬”，那样“温良恭俭让”。革命就是暴动，是一个阶级推翻一个阶级的暴烈的行动。</p>
+                <p class="lang-zh-hans">革命不是请客吃饭，不是做文章，不是绘画绣花，不能那样雅致，那样从容不迫，“文质彬彬”，那样“温良恭俭让”。革命就是暴动，是一个阶级推翻一个阶级的暴烈的行动。</p>
                 <p class="h6">Chinese (Tranditional)</p>
-                <p lang="zh-Hant">山不在高，有仙則名；水不在深，有龍則靈。斯是陋室，惟吾德馨。苔痕上階綠，草色入簾青；談笑有鴻儒，往來無白丁。可以調素琴，閱金經。無絲竹之亂耳，無案牘之勞形。南陽諸葛廬，西蜀子雲亭。孔子云：「何陋之有？」</p>
+                <p class="lang-zh-hant">山不在高，有仙則名；水不在深，有龍則靈。斯是陋室，惟吾德馨。苔痕上階綠，草色入簾青；談笑有鴻儒，往來無白丁。可以調素琴，閱金經。無絲竹之亂耳，無案牘之勞形。南陽諸葛廬，西蜀子雲亭。孔子云：「何陋之有？」</p>
                 <p class="h6">Japanese</p>
-                <p lang="ja">祇園精舎の鐘の声、諸行無常の響きあり。沙羅双樹の花の色、盛者必衰の理をあらはす。おごれる人も久しからず。ただ春の夜の夢のごとし。たけき者も遂にはほろびぬ、ひとへ‌​に風の前の塵に同じ。</p>
+                <p class="lang-ja">祇園精舎の鐘の声、諸行無常の響きあり。沙羅双樹の花の色、盛者必衰の理をあらはす。おごれる人も久しからず。ただ春の夜の夢のごとし。たけき者も遂にはほろびぬ、ひとへ‌​に風の前の塵に同じ。</p>
                 <p class="h6">Korean</p>
-                <p lang="ko">나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로, 어리석은 백성들이 말하고자 하는 바가 있어도, 끝내 제 뜻을 펴지 못하는 사람이 많다. 내가 이를 불쌍히 여겨, 새로 스물 여덟 글자를 만드니, 사람마다 하여금 쉽게 익혀, 날마다 씀에 편하게 하고자 할 따름이다.</p>
+                <p class="lang-ko">나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로, 어리석은 백성들이 말하고자 하는 바가 있어도, 끝내 제 뜻을 펴지 못하는 사람이 많다. 내가 이를 불쌍히 여겨, 새로 스물 여덟 글자를 만드니, 사람마다 하여금 쉽게 익혀, 날마다 씀에 편하게 하고자 할 따름이다.</p>
               </div>
             </div>
-            <p>Use the <code>lang</code> attribute to the container element to have better Asian CJK (Chinese, Japanese and Korean) font support.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"zh-Hans"</span>&gt;</span>革命不是请客吃饭，不是做文章……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ja"</span>&gt;</span>祇園精舎の鐘の声、諸行無常の響きあり……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ko"</span>&gt;</span>나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <p>Add the <code>lang</code> attribute to the &lt;html&gt; element or use the class <code>lang-zh</code>, <code>lang-zh-hans</code>, <code>lang-zh-hant</code>, <code>lang-ja</code> or <code>lang-ko</code> to have better Asian CJK (Chinese, Japanese and Korean) font support.</p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"zh-Hans"</span>&gt;</span>……<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-zh-hans"</span>&gt;</span>革命不是请客吃饭，不是做文章……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-ja"</span>&gt;</span>祇園精舎の鐘の声、諸行無常の響きあり……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-ko"</span>&gt;</span>나라말이 중국과 달라, 한문・한자와 서로 통하지 아니하므로……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
-            <p>And you can use the <code>cjk</code> class or the <code>lang</code> attribute to add spacing between underlines and strike-through text for better Chinese and Japanese readability.</p>
+            <p>And you can use the <code>lang-cjk</code> class or the <code>lang</code> attribute to add spacing between underlines and strike-through text for better Chinese and Japanese readability.</p>
             <div class="docs-demo columns">
               <div class="column">
                 <p lang="ja"><u>祇園</u><u>精舎</u>の鐘の声、諸行無常の響きあり。</p>
@@ -303,7 +305,7 @@
                 </p>
               </div>
             </div>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cjk"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>祇園<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>精舎<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span>の鐘の声、諸行無常の響きあり。……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lang-cjk"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>祇園<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>精舎<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span>の鐘の声、諸行無常の響きあり。……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"ja"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span>祇園<span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span>精舎<span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span>の鐘の声、諸行無常の響きあり。……<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </code></pre>
             <h4 class="s-subtitle" id="typography-fonts">Fonts<a class="anchor" href="#typography-fonts" aria-hidden="true">#</a></h4>

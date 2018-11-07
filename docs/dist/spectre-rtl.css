@@ -454,20 +454,25 @@ dl dd {
   margin: .4rem 0 .8rem 0;
 }
 
-:lang(zh),
-:lang(zh-Hans) {
+html:lang(zh),
+html:lang(zh-Hans),
+.lang-zh,
+.lang-zh-hans {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
 }
 
-:lang(zh-Hant) {
+html:lang(zh-Hant),
+.lang-zh-hant {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Helvetica Neue", sans-serif;
 }
 
-:lang(ja) {
+html:lang(ja),
+.lang-ja {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, "Helvetica Neue", sans-serif;
 }
 
-:lang(ko) {
+html:lang(ko),
+.lang-ko {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", "Helvetica Neue", sans-serif;
 }
 
@@ -475,8 +480,8 @@ dl dd {
 :lang(zh) u,
 :lang(ja) ins,
 :lang(ja) u,
-.cjk ins,
-.cjk u {
+.lang-cjk ins,
+.lang-cjk u {
   border-bottom: .05rem solid;
   text-decoration: none;
 }
@@ -497,14 +502,14 @@ dl dd {
 :lang(ja) s + s,
 :lang(ja) u + ins,
 :lang(ja) u + u,
-.cjk del + del,
-.cjk del + s,
-.cjk ins + ins,
-.cjk ins + u,
-.cjk s + del,
-.cjk s + s,
-.cjk u + ins,
-.cjk u + u {
+.lang-cjk del + del,
+.lang-cjk del + s,
+.lang-cjk ins + ins,
+.lang-cjk ins + u,
+.lang-cjk s + del,
+.lang-cjk s + s,
+.lang-cjk u + ins,
+.lang-cjk u + u {
   margin-left: .125em;
 }
 
