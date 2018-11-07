@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.4";
+  content: "0.5.5";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -26,10 +26,11 @@
   z-index: 100;
 }
 
-.docs-navbar .btn {
+.docs-navbar .btns {
   position: absolute;
   right: 1.5rem;
   top: 1rem;
+  width: 8rem;
 }
 
 .docs-sidebar .docs-nav {
@@ -209,6 +210,13 @@
 .docs-content .code .hljs-value,
 .docs-content .code .hljs-hexcolor {
   color: #505c6e;
+}
+
+.docs-content .c-select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 
 .docs-content .panel {
@@ -500,7 +508,7 @@
   .off-canvas .off-canvas-toggle {
     left: .5rem;
   }
-  .docs-navbar .btn {
+  .docs-navbar .btns {
     right: .9rem;
   }
   .grid-hero .docs-brand {

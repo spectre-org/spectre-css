@@ -1,4 +1,4 @@
-/*! Spectre.css v0.5.4 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.5.5 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
@@ -453,20 +453,25 @@ dl dd {
   margin: .4rem 0 .8rem 0;
 }
 
-:lang(zh),
-:lang(zh-Hans) {
+html:lang(zh),
+html:lang(zh-Hans),
+.lang-zh,
+.lang-zh-hans {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
 }
 
-:lang(zh-Hant) {
+html:lang(zh-Hant),
+.lang-zh-hant {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", "Helvetica Neue", sans-serif;
 }
 
-:lang(ja) {
+html:lang(ja),
+.lang-ja {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, "Helvetica Neue", sans-serif;
 }
 
-:lang(ko) {
+html:lang(ko),
+.lang-ko {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", "Helvetica Neue", sans-serif;
 }
 
@@ -474,8 +479,8 @@ dl dd {
 :lang(zh) u,
 :lang(ja) ins,
 :lang(ja) u,
-.cjk ins,
-.cjk u {
+.lang-cjk ins,
+.lang-cjk u {
   border-bottom: .05rem solid;
   text-decoration: none;
 }
@@ -496,14 +501,14 @@ dl dd {
 :lang(ja) s + s,
 :lang(ja) u + ins,
 :lang(ja) u + u,
-.cjk del + del,
-.cjk del + s,
-.cjk ins + ins,
-.cjk ins + u,
-.cjk s + del,
-.cjk s + s,
-.cjk u + ins,
-.cjk u + u {
+.lang-cjk del + del,
+.lang-cjk del + s,
+.lang-cjk ins + ins,
+.lang-cjk ins + u,
+.lang-cjk s + del,
+.lang-cjk s + s,
+.lang-cjk u + ins,
+.lang-cjk u + u {
   margin-left: .125em;
 }
 
@@ -1239,6 +1244,7 @@ textarea.form-input {
 .form-input.is-success,
 .has-success .form-select,
 .form-select.is-success {
+  background: #f9fdfa;
   border-color: #32b643;
 }
 
@@ -1253,6 +1259,7 @@ textarea.form-input {
 .form-input.is-error,
 .has-error .form-select,
 .form-select.is-error {
+  background: #fffaf7;
   border-color: #e85600;
 }
 
@@ -1303,6 +1310,7 @@ textarea.form-input {
 }
 
 .form-input:not(:placeholder-shown):invalid:focus {
+  background: #ff701c; 
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
@@ -1980,7 +1988,6 @@ video.video-responsive::before {
 
 .navbar .navbar-brand {
   font-size: .9rem;
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -2314,7 +2321,7 @@ summary.accordion-header::-webkit-details-marker {
   line-height: .8rem;
   margin: .1rem;
   max-width: 320px;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: .2rem .4rem;
   text-decoration: none;
   text-overflow: ellipsis;
@@ -2756,7 +2763,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .step .step-item a {
-  color: #bcc3ce;
+  color: #5755d9;
   display: inline-block;
   padding: 20px 10px 0;
   text-decoration: none;
@@ -2786,8 +2793,12 @@ summary.accordion-header::-webkit-details-marker {
   background: #dadee4;
 }
 
+.step .step-item.active ~ .step-item a {
+  color: #bcc3ce;
+}
+
 .step .step-item.active ~ .step-item a::before {
-  background: #f7f8f9;
+  background: #dadee4;
 }
 
 .tab {
@@ -3072,16 +3083,16 @@ a.text-secondary:visited {
 }
 
 .text-gray {
-  color: #66758c !important;
+  color: #bcc3ce !important;
 }
 
 a.text-gray:focus,
 a.text-gray:hover {
-  color: #5b687d;
+  color: #adb6c4;
 }
 
 a.text-gray:visited {
-  color: #728199;
+  color: #cbd0d9;
 }
 
 .text-light {

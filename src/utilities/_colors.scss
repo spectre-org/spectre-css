@@ -3,7 +3,7 @@
 
 @include text-color-variant(".text-secondary", $secondary-color-dark);
 
-@include text-color-variant(".text-gray", $gray-color-dark);
+@include text-color-variant(".text-gray", $gray-color);
 
 @include text-color-variant(".text-light", $light-color);
 
