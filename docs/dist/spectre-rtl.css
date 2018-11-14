@@ -567,7 +567,7 @@ html:lang(ko),
   padding: .25rem .4rem;
   text-align: center;
   text-decoration: none;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -852,7 +852,7 @@ legend {
   outline: none;
   padding: .25rem .4rem;
   position: relative;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   width: 100%;
 }
 
@@ -1048,7 +1048,7 @@ textarea.form-input {
   cursor: pointer;
   display: inline-block;
   position: absolute; 
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
 }
 
 .form-checkbox.input-sm,
@@ -1155,7 +1155,7 @@ textarea.form-input {
   left: 0;
   position: absolute;
   top: 0;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   width: .8rem;
 }
 
@@ -2035,14 +2035,14 @@ video.video-responsive::before {
 }
 
 .accordion .accordion-header .icon {
-  transition: all .2s ease;
+  transition: transform .25s;
 }
 
 .accordion .accordion-body {
   margin-bottom: .4rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .2s ease;
+  transition: max-height .25s;
 }
 
 summary.accordion-header::-webkit-details-marker {
@@ -2715,7 +2715,7 @@ summary.accordion-header::-webkit-details-marker {
   position: absolute;
   top: 0;
   transform: translate(-50%, -50%) scale(0);
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: 320px;
   z-index: 300;
 }
@@ -2994,6 +2994,10 @@ summary.accordion-header::-webkit-details-marker {
   margin: .1rem;
 }
 
+.toast p:last-child {
+  margin-bottom: 0;
+}
+
 .tooltip {
   position: relative;
 }
@@ -3015,7 +3019,7 @@ summary.accordion-header::-webkit-details-marker {
   position: absolute;
   text-overflow: ellipsis;
   transform: translate(-50%, .4rem);
-  transition: all .2s ease;
+  transition: opacity .2s, transform .2s;
   white-space: pre;
   z-index: 300;
 }
@@ -4431,7 +4435,7 @@ a.text-error:visited {
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   vertical-align: middle;
   white-space: nowrap;
   width: 1.4rem;
@@ -4628,7 +4632,7 @@ a.text-error:visited {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: all .4s ease;
+  transition: all .4s;
   z-index: 100;
 }
 
@@ -4949,7 +4953,7 @@ a.text-error:visited {
   right: 0;
   top: 0;
   transform: translateX(100%); 
-  transition: transform .25s ease;
+  transition: transform .25s;
   z-index: 200;
 }
 
@@ -5041,7 +5045,7 @@ a.text-error:visited {
   text-shadow: 0 0 20px rgba(48, 55, 66, .75);
   top: 0;
   transform: translateZ(50px) scale(.95);
-  transition: all .4s ease;
+  transition: transform .4s;
   width: 100%;
   z-index: 1;
 }
@@ -5218,7 +5222,7 @@ a.text-error:visited {
   border-radius: 50%;
   height: .6rem;
   margin-top: -.25rem;
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: .6rem;
 }
 
@@ -5227,7 +5231,7 @@ a.text-error:visited {
   border: 0;
   border-radius: 50%;
   height: .6rem;
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: .6rem;
 }
 
@@ -5236,7 +5240,7 @@ a.text-error:visited {
   border: 0;
   border-radius: 50%;
   height: .6rem;
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: .6rem;
 }
 
