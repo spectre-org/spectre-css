@@ -739,17 +739,19 @@ html:lang(ko),
   background: transparent;
   border: 0;
   color: currentColor;
-  height: .8rem;
+  height: 1rem;
   line-height: .8rem;
   margin-left: .2rem;
   margin-right: -2px;
   opacity: 1;
-  padding: 0;
+  padding: .1rem;
   text-decoration: none;
-  width: .8rem;
+  width: 1rem;
 }
 
+.btn.btn-clear:focus,
 .btn.btn-clear:hover {
+  background: rgba(247, 248, 249, .5);
   opacity: .95;
 }
 
@@ -2365,6 +2367,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .chip .btn-clear {
+  border-radius: 50%;
   transform: scale(.75);
 }
 
@@ -2987,7 +2990,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .toast .btn-clear {
-  margin: 4px -2px 4px 4px;
+  margin: .1rem;
 }
 
 .tooltip {
