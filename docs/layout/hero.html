@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Labels - Elements - Spectre.css CSS Framework</title>
+    <title>Hero - Layout - Spectre.css CSS Framework</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../dist/spectre-icons.min.css">
     <link rel="stylesheet" href="../dist/spectre-exp.min.css">
     <link rel="stylesheet" href="../dist/docs.min.css">
-    <link rel="canonical" href="https://picturepan2.github.io/spectre/elements/labels.html">
+    <link rel="canonical" href="https://picturepan2.github.io/spectre/layout/hero.html">
   </head>
   <body>
     <div class="docs-container off-canvas off-canvas-sidebar-show">
@@ -44,7 +44,7 @@
               </div>
             </div>
             <div class="accordion">
-              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
+              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
               <label class="accordion-header c-hand" for="accordion-elements">Elements</label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="accordion">
-              <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
+              <input id="accordion-layout" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked"/>
               <label class="accordion-header c-hand" for="accordion-layout">Layout</label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
@@ -188,8 +188,8 @@
       </div><a class="off-canvas-overlay" href="#close"></a>
       <div class="off-canvas-content">
         <div class="docs-content" id="content">
-          <div class="container" id="labels">
-            <h3 class="s-title">Labels<a class="anchor" href="#labels" aria-hidden="true">#</a></h3>
+          <div class="container" id="hero">
+            <h3 class="s-title">Hero<a class="anchor" href="#hero" aria-hidden="true">#</a></h3>
             <div class="docs-ad">
               <div class="hide-md text-center">
                 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -201,24 +201,39 @@
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
               </div>
             </div>
-            <p>Labels are formatted text tags for highlighted, informative information.</p>
+            <p>The Hero container shows key featured content or information.</p>
             <div class="docs-demo columns">
-              <div class="column"><span class="label mr-1">default label</span><span class="label label-primary mr-1">primary label</span><span class="label label-secondary mr-1">secondary label</span><span class="label label-success mr-1">success label</span><span class="label label-warning mr-1">warning label</span><span class="label label-error">error label</span></div>
+              <div class="column">
+                <div class="hero bg-gray">
+                  <div class="hero-body">
+                    <h1>Hero title</h1>
+                    <p>This is a hero example</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p>Add the <code>label</code> class to &lt;span&gt; or &lt;small&gt; elements.
-              You can add another class <code>label-primary</code>, <code>label-secondary</code>, <code>label-success</code>, <code>label-warning</code> and <code>label-error</code> for colored labels.
-            </p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- normal labels --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>default label<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label label-primary"</span>&gt;</span>primary label<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- hero example --&gt;</span>
 </code></pre>
             <div class="docs-demo columns">
-              <div class="column"><span class="label label-rounded mr-1">default label</span><span class="label label-rounded label-primary">primary label</span></div>
+              <div class="column">
+                <div class="hero hero-sm bg-gray">
+                  <div class="hero-body">
+                    <h1>Hero title</h1>
+                    <p>This is a hero example</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p>Add the <code>label-rounded</code> class to have rounded labels.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-comment">&lt;!-- rounded labels --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label label-rounded label-primary"</span>&gt;</span>primary label<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-</code></pre>
+            <div class="docs-demo columns">
+              <div class="column">
+                <div class="hero hero-lg bg-gray">
+                  <div class="hero-body">
+                    <h1>Hero title</h1>
+                    <p>This is a hero example</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="docs-ad docs-ad-sidebar text-center">
               <script id="_carbonads_js" async="" type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DTKQW&amp;placement=picturepan2githubio"></script>
             </div>

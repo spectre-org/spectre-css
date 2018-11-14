@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.5";
+  content: "0.5.6";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -315,7 +315,7 @@
 
 .docs-footer {
   color: #bcc3ce;
-  padding: .5rem .5rem 1.5rem .5rem;
+  padding: .5rem .5rem 1.5rem;
 }
 
 .docs-footer a {
@@ -392,7 +392,7 @@
 
 .section-footer {
   color: #bcc3ce;
-  padding: 1.8rem .75rem 1rem .75rem;
+  padding: 1.8rem .75rem 1rem;
   position: relative;
   z-index: 200;
 }

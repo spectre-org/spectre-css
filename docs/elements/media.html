@@ -76,6 +76,8 @@
                   </li>
                   <li class="menu-item"><a href="../layout/responsive.html">Responsive</a>
                   </li>
+                  <li class="menu-item"><a href="../layout/hero.html">Hero</a>
+                  </li>
                   <li class="menu-item"><a href="../layout/navbar.html">Navbar</a>
                   </li>
                 </ul>
@@ -202,9 +204,11 @@
             <p>Media includes responsive images, figures and video classes.</p>
             <h4 class="s-subtitle" id="media-images">Images<a class="anchor" href="#media-images" aria-hidden="true">#</a></h4>
             <p>Add the <code>img-responsive</code> class to &lt;img&gt; elements. The images will scale with the parent sizes.</p>
-            <div class="columns">
+            <div class="docs-demo columns">
               <div class="column col-12"><img class="img-responsive rounded" src="../img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper"></div>
             </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive ..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+</code></pre>
             <p>Add the <code>img-fit-contain</code> or <code>img-fit-cover</code> class to &lt;img&gt; or &lt;video&gt; elements. The media will crop itself to fit inside the element (and you don't need another container).
               This feature can replace the classic background image trick. Microsoft Edge support <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/" target="_blank">is shipped</a>  with Build Number 16299+.
             </p>
@@ -220,8 +224,7 @@
                 </figure>
               </div>
             </div>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive ..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-contain ..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-contain ..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fit-cover ..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span>
 </code></pre>
             <h4 class="s-subtitle" id="media-figure">Figure<a class="anchor" href="#media-figure" aria-hidden="true">#</a></h4>
@@ -238,6 +241,11 @@
                 </figure>
               </div>
             </div>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive ..."</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-yosemite-2.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"figure-caption text-center"</span>&gt;</span>macOS Yosemite wallpaper<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+</code></pre>
             <h4 class="s-subtitle" id="media-video">Video<a class="anchor" href="#media-video" aria-hidden="true">#</a></h4>
             <p>For responsive video, add a container with the <code>video-responsive</code> class. 
               Insert any YouTube, Youku or other iframe/embed video inside the container. 

@@ -17,9 +17,14 @@ block docs-content
     p
       | Add the #[code img-responsive] class to #{'<img>'} elements. The images will scale with the parent sizes.
 
-    .columns
+    .docs-demo.columns
       .column.col-12
         img.img-responsive.rounded(src="../img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper")
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <img src="img/osx-el-capitan.jpg" class="img-responsive ..." alt="...">
 
     p
       | Add the #[code img-fit-contain] or #[code img-fit-cover] class to #{'<img>'} or #{'<video>'} elements. The media will crop itself to fit inside the element (and you don't need another container).
@@ -40,7 +45,6 @@ block docs-content
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
-          <img src="img/osx-el-capitan.jpg" class="img-responsive ..." alt="...">
           <img src="img/osx-el-capitan.jpg" class="img-fit-contain ..." alt="...">
           <img src="img/osx-el-capitan.jpg" class="img-fit-cover ..." alt="...">
 
@@ -58,6 +62,14 @@ block docs-content
         figure.figure
           img.img-responsive.rounded(src="../img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper")
           figcaption.figure-caption.text-center macOS Yosemite wallpaper
+
+    pre.code(data-lang='HTML')
+      code
+        :highlight(lang="html")
+          <figure class="figure">
+            <img class="img-responsive ..." src="img/osx-yosemite-2.jpg" alt="macOS Yosemite Wallpaper">
+            <figcaption class="figure-caption text-center">macOS Yosemite wallpaper</figcaption>
+          </figure>
 
     +docs-subheading('media-video', 'Video')
 

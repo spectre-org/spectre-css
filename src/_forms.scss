@@ -486,7 +486,7 @@ textarea.form-input {
       border-color: $error-color;
       &:focus {
         @include control-shadow($error-color);
-        background: lighten($error-color, 10%);
+        background: lighten($error-color, 53%);
       }
 
       & + .form-input-hint {
