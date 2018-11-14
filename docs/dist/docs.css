@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+.docs-container {
+  min-height: 100vh;
+}
+
 .docs-navbar {
   height: 3.8rem;
   position: fixed;

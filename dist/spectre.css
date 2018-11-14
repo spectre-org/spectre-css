@@ -3392,8 +3392,7 @@ a.text-error:visited {
   width: 1.6rem;
 }
 
-.clearfix::after,
-.container::after {
+.clearfix::after {
   clear: both;
   content: "";
   display: table;
