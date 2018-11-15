@@ -314,3 +314,27 @@
     top: 50%;
   }
 }
+
+// Icon copy
+.icon-copy {
+  &::before {
+    border: $icon-border-width solid currentColor;
+    border-radius: $border-radius;
+    border-right: 0;
+    border-bottom: 0;
+    content: "";
+    height: .8em;
+    left: 35%;
+    top: 30%;
+    width: .8em;
+  }
+  &::after {
+    border: $icon-border-width solid currentColor;
+    border-radius: $border-radius;
+    content: "";
+    height: .8em;
+    left: 65%;
+    top: 60%;
+    width: .8em;
+  }
+}
