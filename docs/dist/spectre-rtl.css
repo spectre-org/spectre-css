@@ -1048,7 +1048,7 @@ textarea.form-input {
   border: .05rem solid #bcc3ce;
   cursor: pointer;
   display: inline-block;
-  position: absolute; 
+  position: absolute;
   transition: background .2s, border .2s, box-shadow .2s, color .2s;
 }
 
@@ -1156,7 +1156,7 @@ textarea.form-input {
   left: 0;
   position: absolute;
   top: 0;
-  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s, left .2s;
   width: .8rem;
 }
 

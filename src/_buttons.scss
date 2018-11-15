@@ -1,6 +1,5 @@
 // Buttons
 .btn {
-  @include control-transition();
   appearance: none;
   background: $bg-color-light;
   border: $border-width solid $primary-color;
@@ -15,6 +14,7 @@
   padding: $control-padding-y $control-padding-x;
   text-align: center;
   text-decoration: none;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
