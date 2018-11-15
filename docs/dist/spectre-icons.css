@@ -444,6 +444,28 @@
   top: 50%;
 }
 
+.icon-copy::before {
+  border: .1rem solid currentColor;
+  border-bottom: 0;
+  border-radius: .1rem;
+  border-right: 0;
+  content: "";
+  height: .8em;
+  left: 40%;
+  top: 35%;
+  width: .8em;
+}
+
+.icon-copy::after {
+  border: .1rem solid currentColor;
+  border-radius: .1rem;
+  content: "";
+  height: .8em;
+  left: 60%;
+  top: 60%;
+  width: .8em;
+}
+
 .icon-time {
   border: .1rem solid currentColor;
   border-radius: 50%;
