@@ -8,8 +8,8 @@ block content
         i.icon.icon-menu
       .btns
         a.btn.btn-primary.float-right(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
-        a.btn.mr-1.float-right(href='https://www.paypal.me/picturepan2' target='_blank') Sponsor
-        
+        a.btn.mr-1.float-right(href='https://www.paypal.me/picturepan2' target='_blank') PayPal
+
     #sidebar.docs-sidebar.off-canvas-sidebar
       .docs-brand
         if slug != parent
@@ -21,6 +21,7 @@ block content
             img(src='img/spectre-logo.svg' alt='Spectre.css CSS Framework')
             h2 SPECTRE
       .docs-nav
+        input.d-hide.form-input.input-sm(type="text" placeholder="Search Docs")
         .accordion-container
           +docs-accordion(
             'getting-started',

@@ -34,7 +34,7 @@
   position: absolute;
   right: 1.5rem;
   top: 1rem;
-  width: 8rem;
+  width: 20rem;
 }
 
 .docs-sidebar .docs-nav {
@@ -45,6 +45,10 @@
   position: fixed;
   top: 3.5rem;
   width: 12rem;
+}
+
+.docs-sidebar .form-input {
+  margin-bottom: 1rem;
 }
 
 .docs-sidebar .accordion {
@@ -280,6 +284,7 @@
 
 .docs-brand {
   color: #5755d9;
+  height: 2rem;
   left: 1.5rem;
   position: fixed;
   top: .85rem;
