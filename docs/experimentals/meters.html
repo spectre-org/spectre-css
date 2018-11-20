@@ -19,14 +19,15 @@
   <body>
     <div class="docs-container off-canvas off-canvas-sidebar-show">
       <div class="docs-navbar"><a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
-        <div class="btns"><a class="btn btn-primary float-right" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a><a class="btn mr-1 float-right" href="https://www.paypal.me/picturepan2" target="_blank">PayPal</a></div>
+        <div class="btns d-flex">
+          <input class="docs-search form-input" type="text" placeholder="Search Docs"><a class="btn ml-1" href="https://www.paypal.me/picturepan2" target="_blank">PayPal</a><a class="btn btn-primary ml-1" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a>
+        </div>
       </div>
       <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
         <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="../img/spectre-logo.svg" alt="Spectre.css CSS Framework">
             <h2>SPECTRE</h2></a>
         </div>
         <div class="docs-nav">
-          <input class="d-hide form-input input-sm" type="text" placeholder="Search Docs">
           <div class="accordion-container">
             <div class="accordion">
               <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden=""/>
@@ -236,6 +237,15 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({ 
+      apiKey: 'bede06373c5a1fa3c1bbe8401e24c653', 
+      indexName: 'picturepan2_spectre', 
+      inputSelector: '.docs-search', 
+      debug: true
+      }); 
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
