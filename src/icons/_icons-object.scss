@@ -174,3 +174,34 @@
     width: .5em;
   }
 }
+
+// Icon heart
+.icon-heart {
+  border: $icon-border-width solid currentColor;
+  border-left: 0;
+  border-top: 0;
+  height: .6em;
+  top: -.1em;
+  transform: rotate(45deg);
+  width: .6em;
+
+  &:before,
+  &:after {
+    border: $icon-border-width solid currentColor;
+    border-bottom: 0;
+    border-radius: 50% 50% 0 0 / 80% 80% 20% 20%;
+    content: "";
+    height: .4em;
+    left: .05em;
+    top: .2em;
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+    width: .6em;
+  }
+  &:after {
+    left: 0;
+    top: -.35em;
+    transform: rotate(0deg);
+    transform-origin: 100% 100%;
+  }
+}
