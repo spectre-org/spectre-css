@@ -19,7 +19,9 @@
   <body>
     <div class="docs-container off-canvas off-canvas-sidebar-show">
       <div class="docs-navbar"><a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
-        <div class="btns"><a class="btn btn-primary float-right" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a><a class="btn mr-1 float-right" href="https://www.paypal.me/picturepan2" target="_blank">Sponsor</a></div>
+        <div class="btns d-flex">
+          <input class="docs-search form-input" type="text" placeholder="Search Docs"><a class="btn ml-1" href="https://www.paypal.me/picturepan2" target="_blank">PayPal</a><a class="btn btn-primary ml-1" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a>
+        </div>
       </div>
       <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
         <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="../img/spectre-logo.svg" alt="Spectre.css CSS Framework">
@@ -75,6 +77,8 @@
                   <li class="menu-item"><a href="../layout/grid.html">Flexbox grid</a>
                   </li>
                   <li class="menu-item"><a href="../layout/responsive.html">Responsive</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/hero.html">Hero</a>
                   </li>
                   <li class="menu-item"><a href="../layout/navbar.html">Navbar</a>
                   </li>
@@ -218,11 +222,11 @@
                     </figure>
                     <figure class="carousel-item">
                       <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
-                      <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="../img/osx-el-capitan.jpg" alt="macOS Yosemite Wallpaper">
+                      <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="../img/osx-el-capitan.jpg" alt="macOS El Capitan Wallpaper">
                     </figure>
                     <figure class="carousel-item">
                       <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
-                      <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="../img/osx-el-capitan-2.jpg" alt="macOS Yosemite Wallpaper">
+                      <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label><img class="img-responsive rounded" src="../img/osx-el-capitan-2.jpg" alt="macOS El Capitan Wallpaper">
                     </figure>
                   </div>
                   <div class="carousel-nav">
@@ -246,19 +250,23 @@
     <span class="hljs-comment">&lt;!-- carousel item --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-prev btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-yosemite.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-yosemite.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-prev btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-yosemite-2.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-yosemite-2.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-prev btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS El Capitan Wallpaper"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-prev btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-left"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan-2.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS Yosemite Wallpaper"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item-next btn btn-action btn-lg"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"slide-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive rounded"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/osx-el-capitan-2.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"macOS El Capitan Wallpaper"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- carousel navigation --&gt;</span>
@@ -281,6 +289,15 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({ 
+      apiKey: 'bede06373c5a1fa3c1bbe8401e24c653', 
+      indexName: 'picturepan2_spectre', 
+      inputSelector: '.docs-search', 
+      debug: true
+      }); 
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,4 +1,4 @@
-/*! Spectre.css v0.5.5 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.5.6 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
@@ -396,9 +396,10 @@ kbd {
 
 mark {
   background: #ffe9b3;
+  border-bottom: .05rem solid #ffd367;
   border-radius: .1rem;
   color: #3b4351;
-  padding: .05rem;
+  padding: .05rem .1rem 0;
 }
 
 blockquote {
@@ -566,7 +567,7 @@ html:lang(ko),
   padding: .25rem .4rem;
   text-align: center;
   text-decoration: none;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -739,17 +740,19 @@ html:lang(ko),
   background: transparent;
   border: 0;
   color: currentColor;
-  height: .8rem;
+  height: 1rem;
   line-height: .8rem;
   margin-left: .2rem;
   margin-right: -2px;
   opacity: 1;
-  padding: 0;
+  padding: .1rem;
   text-decoration: none;
-  width: .8rem;
+  width: 1rem;
 }
 
+.btn.btn-clear:focus,
 .btn.btn-clear:hover {
+  background: rgba(247, 248, 249, .5);
   opacity: .95;
 }
 
@@ -849,7 +852,7 @@ legend {
   outline: none;
   padding: .25rem .4rem;
   position: relative;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   width: 100%;
 }
 
@@ -1044,8 +1047,8 @@ textarea.form-input {
   border: .05rem solid #bcc3ce;
   cursor: pointer;
   display: inline-block;
-  position: absolute; 
-  transition: all .2s ease;
+  position: absolute;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
 }
 
 .form-checkbox.input-sm,
@@ -1152,7 +1155,7 @@ textarea.form-input {
   left: 0;
   position: absolute;
   top: 0;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s, left .2s;
   width: .8rem;
 }
 
@@ -1310,7 +1313,7 @@ textarea.form-input {
 }
 
 .form-input:not(:placeholder-shown):invalid:focus {
-  background: #ff701c; 
+  background: #fffaf7; 
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
@@ -1952,6 +1955,31 @@ video.video-responsive::before {
   }
 }
 
+.hero {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.hero.hero-sm {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.hero.hero-lg {
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+}
+
+.hero .hero-body {
+  padding: .4rem;
+}
+
 .navbar {
   align-items: stretch;
   display: flex;
@@ -2007,14 +2035,14 @@ video.video-responsive::before {
 }
 
 .accordion .accordion-header .icon {
-  transition: all .2s ease;
+  transition: transform .25s;
 }
 
 .accordion .accordion-body {
   margin-bottom: .4rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .2s ease;
+  transition: max-height .25s;
 }
 
 summary.accordion-header::-webkit-details-marker {
@@ -2340,6 +2368,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .chip .btn-clear {
+  border-radius: 50%;
   transform: scale(.75);
 }
 
@@ -2686,7 +2715,7 @@ summary.accordion-header::-webkit-details-marker {
   position: absolute;
   top: 0;
   transform: translate(-50%, -50%) scale(0);
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: 320px;
   z-index: 300;
 }
@@ -2962,7 +2991,11 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .toast .btn-clear {
-  margin: 4px -2px 4px 4px;
+  margin: .1rem;
+}
+
+.toast p:last-child {
+  margin-bottom: 0;
 }
 
 .tooltip {
@@ -2986,7 +3019,7 @@ summary.accordion-header::-webkit-details-marker {
   position: absolute;
   text-overflow: ellipsis;
   transform: translate(-50%, .4rem);
-  transition: all .2s ease;
+  transition: opacity .2s, transform .2s;
   white-space: pre;
   z-index: 300;
 }
@@ -3359,8 +3392,7 @@ a.text-error:visited {
   width: 1.6rem;
 }
 
-.clearfix::after,
-.container::after {
+.clearfix::after {
   clear: both;
   content: "";
   display: table;

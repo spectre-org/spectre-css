@@ -1,4 +1,4 @@
-/*! Spectre.css Experimentals v0.5.5 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.5.6 | MIT License | github.com/picturepan2/spectre */
 .form-autocomplete {
   position: relative;
 }
@@ -121,7 +121,7 @@
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: all .2s ease;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
   vertical-align: middle;
   white-space: nowrap;
   width: 1.4rem;
@@ -318,7 +318,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: all .4s ease;
+  transition: all .4s;
   z-index: 100;
 }
 
@@ -639,7 +639,7 @@
   position: fixed;
   top: 0;
   transform: translateX(-100%); 
-  transition: transform .25s ease;
+  transition: transform .25s;
   z-index: 200;
 }
 
@@ -731,7 +731,7 @@
   text-shadow: 0 0 20px rgba(48, 55, 66, .75);
   top: 0;
   transform: translateZ(50px) scale(.95);
-  transition: all .4s ease;
+  transition: transform .4s;
   width: 100%;
   z-index: 1;
 }
@@ -908,7 +908,7 @@
   border-radius: 50%;
   height: .6rem;
   margin-top: -.25rem;
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: .6rem;
 }
 
@@ -917,7 +917,7 @@
   border: 0;
   border-radius: 50%;
   height: .6rem;
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: .6rem;
 }
 
@@ -926,7 +926,7 @@
   border: 0;
   border-radius: 50%;
   height: .6rem;
-  transition: transform .2s ease;
+  transition: transform .2s;
   width: .6rem;
 }
 

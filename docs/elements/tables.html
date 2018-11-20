@@ -19,7 +19,9 @@
   <body>
     <div class="docs-container off-canvas off-canvas-sidebar-show">
       <div class="docs-navbar"><a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar"><i class="icon icon-menu"></i></a>
-        <div class="btns"><a class="btn btn-primary float-right" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a><a class="btn mr-1 float-right" href="https://www.paypal.me/picturepan2" target="_blank">Sponsor</a></div>
+        <div class="btns d-flex">
+          <input class="docs-search form-input" type="text" placeholder="Search Docs"><a class="btn ml-1" href="https://www.paypal.me/picturepan2" target="_blank">PayPal</a><a class="btn btn-primary ml-1" href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a>
+        </div>
       </div>
       <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
         <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="../img/spectre-logo.svg" alt="Spectre.css CSS Framework">
@@ -75,6 +77,8 @@
                   <li class="menu-item"><a href="../layout/grid.html">Flexbox grid</a>
                   </li>
                   <li class="menu-item"><a href="../layout/responsive.html">Responsive</a>
+                  </li>
+                  <li class="menu-item"><a href="../layout/hero.html">Hero</a>
                   </li>
                   <li class="menu-item"><a href="../layout/navbar.html">Navbar</a>
                   </li>
@@ -202,7 +206,7 @@
             <p>Tables include default styles for tables and data sets.</p>
             <div class="docs-demo columns">
               <div class="column col-12">
-                <table class="table table-striped">
+                <table class="table">
                   <thead>
                     <tr>
                       <th>Name</th>
@@ -236,8 +240,62 @@
               </div>
             </div>
             <p>Add the <code>table</code> class to any &lt;table&gt; element. 
-              The class will add padding, border and emphasized table header. 
-              Use the <code>table-striped</code> class to &lt;table&gt; to add zebra striped style.
+              The class will add padding, border and emphasized table header.
+            </p>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>genre<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>release date<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>The Shawshank Redemption<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Crime, Drama<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>14 October 1994<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</code></pre>
+            <h4 class="s-subtitle" id="tables-striped">Striped tables<a class="anchor" href="#tables-striped" aria-hidden="true">#</a></h4>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Genre</th>
+                      <th>Release date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>The Shawshank Redemption</td>
+                      <td>Crime, Drama</td>
+                      <td>14 October 1994</td>
+                    </tr>
+                    <tr class="active">
+                      <td>The Godfather</td>
+                      <td>Crime, Drama</td>
+                      <td>24 March 1972</td>
+                    </tr>
+                    <tr>
+                      <td>Schindler's List</td>
+                      <td>Biography, Drama, History</td>
+                      <td>4 February 1994</td>
+                    </tr>
+                    <tr>
+                      <td>Se7en</td>
+                      <td>Crime, Drama, Mystery</td>
+                      <td>22 September 1995</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p>Use the <code>table-striped</code> class to &lt;table&gt; to add zebra striped style.
               For hoverable table rows, you can add the <code>table-hover</code> class to enable hover style.
             </p>
             <p>Use the <code>active</code> class to make &lt;tr&gt; element highlighted.</p>
@@ -257,11 +315,11 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
-
 </code></pre>
+            <h4 class="s-subtitle" id="tables-scroll">Scrollable tables<a class="anchor" href="#tables-scroll" aria-hidden="true">#</a></h4>
             <div class="docs-demo columns">
               <div class="column col-12">
-                <table class="table table-striped table-scroll">
+                <table class="table table-scroll">
                   <thead>
                     <tr>
                       <th>Name</th>
@@ -310,7 +368,7 @@
               </div>
             </div>
             <p>Add the <code>table-scroll</code> class to &lt;table&gt; to have a horizontally scrollable table.</p>
-            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table table-striped table-scroll"</span>&gt;</span>
+            <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table table-scroll"</span>&gt;</span>
   ...
 <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
 </code></pre>
@@ -325,6 +383,15 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({ 
+      apiKey: 'bede06373c5a1fa3c1bbe8401e24c653', 
+      indexName: 'picturepan2_spectre', 
+      inputSelector: '.docs-search', 
+      debug: true
+      }); 
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

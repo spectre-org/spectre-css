@@ -44,7 +44,7 @@
       opacity: 0;
       position: absolute;
       top: 50%;
-      transition: all .4s ease;
+      transition: all .4s;
       transform: translateY(-50%);
       z-index: $zindex-1;
     }

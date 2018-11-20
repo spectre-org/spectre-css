@@ -1,5 +1,16 @@
 #### Spectre.css Changelog
 
+##### [v0.5.6](https://github.com/picturepan2/spectre/releases/tag/v0.5.6)
+
+- Add Docs Search #509 #291
+- Add Copy icon
+- Add Hero layout #380
+- Add multiline Tooltips #500
+- Replace transition: all; #526
+- Fix #511 issue
+- Fix sidebar background height for short docs pages
+
+
 ##### [v0.5.5](https://github.com/picturepan2/spectre/releases/tag/v0.5.5)
 
 - IMPORTANT: New Docs
