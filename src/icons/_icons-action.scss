@@ -338,3 +338,43 @@
     width: .8em;
   }
 }
+
+// Icon show & hide
+.icon-show,
+.icon-hide {
+  &::before {
+    border: $icon-border-width solid currentColor;
+    border-radius: 0 50% 0 50%;
+    content: "";
+    height: 1em;
+    left: 25%;
+    top: 30%;
+    transform: rotate(-45deg);
+    transform-origin: 0 50%;
+    width: 1em;
+  }
+  &::after {
+    border: $icon-border-width solid currentColor;
+    border-radius: 50%;
+    content: "";
+    height: .4em;
+    left: 65%;
+    top: 40%;
+    width: .4em;
+  }
+}
+
+.icon-hide {
+  background: currentColor;
+  height: 1.6em;
+  left: 5%;
+  transform: rotate(45deg);
+  width: $icon-border-width;
+  &::before {
+    top: 45%;
+    transform: rotate(-90deg);
+  }
+  &::after {
+    top: 45%;
+  }
+}
