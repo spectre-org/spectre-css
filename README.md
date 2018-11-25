@@ -50,7 +50,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Tables](https://picturepan2.github.io/spectre/elements/tables.html)
 - [Buttons](https://picturepan2.github.io/spectre/elements/buttons.html)
 - [Forms](https://picturepan2.github.io/spectre/elements/forms.html)
-- [Icons](https://picturepan2.github.io/spectre/elements/icons.html) - CSS only
+- [Icons](https://picturepan2.github.io/spectre/elements/icons.html) - CSS ONLY
 - [Labels](https://picturepan2.github.io/spectre/elements/labels.html)
 - [Code](https://picturepan2.github.io/spectre/elements/code.html)
 - [Media](https://picturepan2.github.io/spectre/elements/media.html)
@@ -87,14 +87,15 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
 ### Experimentals
+- [360-Degree Viewer](https://picturepan2.github.io/spectre/experimentals/viewer-360.html) - CSS ONLY
 - [Autocomplete](https://picturepan2.github.io/spectre/experimentals/autocomplete.html)
 - [Calendars](https://picturepan2.github.io/spectre/experimentals/calendars.html)
-- [Carousels](https://picturepan2.github.io/spectre/experimentals/carousels.html) - CSS only
-- [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals/comparison.html) - CSS only
-- [Filters](https://picturepan2.github.io/spectre/experimentals/filters.html) - CSS only
+- [Carousels](https://picturepan2.github.io/spectre/experimentals/carousels.html) - CSS ONLY
+- [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals/comparison.html) - CSS ONLY
+- [Filters](https://picturepan2.github.io/spectre/experimentals/filters.html) - CSS ONLY
 - [Meters](https://picturepan2.github.io/spectre/experimentals/meters.html)
-- [Off-canvas](https://picturepan2.github.io/spectre/experimentals/off-canvas.html) - CSS only
-- [Parallax](https://picturepan2.github.io/spectre/experimentals/parallax.html) - CSS only
+- [Off-canvas](https://picturepan2.github.io/spectre/experimentals/off-canvas.html) - CSS ONLY
+- [Parallax](https://picturepan2.github.io/spectre/experimentals/parallax.html) - CSS ONLY
 - [Progress](https://picturepan2.github.io/spectre/experimentals/progress.html)
 - [Sliders](https://picturepan2.github.io/spectre/experimentals/sliders.html)
 - [Timelines](https://picturepan2.github.io/spectre/experimentals/timelines.html)

@@ -27,7 +27,9 @@ block docs-content
       a(href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fp%2Fsurface-pro-6%2F8zcnc665slq5" target="_blank") Microsoft Surface Pro 6
 
     p
-      | You will need to use your own product image sprite (all angle of photos in one image) and define variables to use this component. The default image number is #[code 36].
+      | You will need to use your own product image sprite (all angle of photos in one image) and change the attribute #[code max] to use this component.
+    p
+      | The default image number in CSS is #[code 36]. You can change the image number by changing the variable #[code $image-number] in #[code _viewer-360.scss] and re-compiling the CSS.
 
     pre.code(data-lang='HTML')
       code
