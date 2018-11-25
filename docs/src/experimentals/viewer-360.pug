@@ -20,17 +20,25 @@ block docs-content
       .column.col-12
         .viewer-360
           input.viewer-slider.slider(type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);")
-          figure.viewer-image(style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');")
+          figure.viewer-image(style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');padding-bottom:37.5%;width:100%;")
 
-    p 
+    p.text-center
       | Photo credits: 
-      a(href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fp%2Fsurface-pro-6%2F8zcnc665slq5" target="_blank") Microsoft Surface Pro 6
+      a(href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https://www.microsoft.com/en-us/p/surface-pro-6/8zcnc665slq5" target="_blank") Microsoft Surface Pro 6
+
+    .docs-demo.columns
+      .column.col-12
+        .viewer-360
+          input.viewer-slider.slider(type="range" min="1" max="30" value="1" oninput="this.setAttribute('value', this.value);")
+          figure.viewer-image(style="background-image:url('https://i.loli.net/2018/11/25/5bfaa0b4ba850.jpg');padding-bottom:37.5%;width:100%;")
+
+    p.text-center
+      | Photo credits: 
+      a(href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https://www.xbox.com/en-us/xbox-one-x" target="_blank") Microsoft Xbox One X
 
     p
-      | You will need to use your own product image sprite (all angle of photos in one image) and change the attribute #[code max] to use this component.
-    p
-      | The default image number in CSS is #[code 36]. You can change the image number by changing the variable #[code $image-number] in #[code _viewer-360.scss] and re-compiling the CSS.
-
+      | You will need to use your own product image sprite (all angle of photos in one image) and set the attribute #[code max] to the image numbers to use this component.
+    
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
@@ -38,6 +46,15 @@ block docs-content
             <input class="viewer-slider slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
             <figure class="viewer-image" style="background-image:url('...');"></figure>
           </div>
+
+    p
+      | The default image numbers in CSS are #[code 36] and #[code 30]. You can copy the mixin and add more numbers in #[code _viewer-360.scss] and re-compiling the CSS.
+
+    pre.code(data-lang='SCSS')
+      code
+        :highlight(lang="scss")
+          @include viewer-slider-size(36);
+          @include viewer-slider-size(30);
 
     include ../_layout/_ad-c.pug
 

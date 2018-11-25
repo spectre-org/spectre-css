@@ -217,18 +217,29 @@
               <div class="column col-12">
                 <div class="viewer-360">
                   <input class="viewer-slider slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
-                  <figure class="viewer-image" style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');"></figure>
+                  <figure class="viewer-image" style="background-image:url('https://i.loli.net/2018/11/25/5bfa45b4b3f27.jpg');padding-bottom:37.5%;width:100%;"></figure>
                 </div>
               </div>
             </div>
-            <p>
-               Photo credits: <a href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fp%2Fsurface-pro-6%2F8zcnc665slq5" target="_blank">Microsoft Surface Pro 6</a></p>
-            <p>You will need to use your own product image sprite (all angle of photos in one image) and change the attribute <code>max</code> to use this component.</p>
-            <p>The default image number in CSS is <code>36</code>. You can change the image number by changing the variable <code>$image-number</code> in <code>_viewer-360.scss</code> and re-compiling the CSS.</p>
+            <p class="text-center">Photo credits: <a href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https://www.microsoft.com/en-us/p/surface-pro-6/8zcnc665slq5" target="_blank">Microsoft Surface Pro 6</a></p>
+            <div class="docs-demo columns">
+              <div class="column col-12">
+                <div class="viewer-360">
+                  <input class="viewer-slider slider" type="range" min="1" max="30" value="1" oninput="this.setAttribute('value', this.value);">
+                  <figure class="viewer-image" style="background-image:url('https://i.loli.net/2018/11/25/5bfaa0b4ba850.jpg');padding-bottom:37.5%;width:100%;"></figure>
+                </div>
+              </div>
+            </div>
+            <p class="text-center">Photo credits: <a href="https://microsoft.msafflnk.net/c/1272791/433017/7593?u=https://www.xbox.com/en-us/xbox-one-x" target="_blank">Microsoft Xbox One X</a></p>
+            <p>You will need to use your own product image sprite (all angle of photos in one image) and set the attribute <code>max</code> to the image numbers to use this component.</p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"viewer-360"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"viewer-slider slider"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"range"</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"36"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">oninput</span>=<span class="hljs-string">"this.setAttribute('value', this.value);"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"viewer-image"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url('...');"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <p>The default image numbers in CSS are <code>36</code> and <code>30</code>. You can copy the mixin and add more numbers in <code>_viewer-360.scss</code> and re-compiling the CSS.</p>
+            <pre class="code" data-lang="SCSS"><code>@<span class="hljs-keyword">include</span> viewer-slider-size(<span class="hljs-number">36</span>);
+@<span class="hljs-keyword">include</span> viewer-slider-size(<span class="hljs-number">30</span>);
 </code></pre>
             <div class="docs-ad docs-ad-sidebar text-center">
               <script id="_carbonads_js" async="" type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DTKQW&amp;placement=picturepan2githubio"></script>

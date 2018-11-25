@@ -1,6 +1,6 @@
 /*! Spectre.css Docs | MIT License | github.com/picturepan2/spectre */
 .version::after {
-  content: "0.5.7";
+  content: "0.5.8";
 }
 
 .off-canvas .off-canvas-toggle {
@@ -204,7 +204,8 @@
 
 .docs-content .code .hljs-title,
 .docs-content .code .hljs-class,
-.docs-content .code .hljs-string {
+.docs-content .code .hljs-string,
+.docs-content .code .hljs-number {
   color: #5755d9;
 }
 
