@@ -1,5 +1,12 @@
 #### Spectre.css Changelog
 
+##### [v0.5.7](https://github.com/picturepan2/spectre/releases/tag/v0.5.7)
+
+- Add pure CSS 360-Degree Viewer
+- Improve Docs SEO
+- Change Carousels image number to variable #428
+- Fix Form textarea height issue
+
 ##### [v0.5.6](https://github.com/picturepan2/spectre/releases/tag/v0.5.6)
 
 - Add Docs Search #509 #291
@@ -9,7 +16,6 @@
 - Replace transition: all; #526
 - Fix #511 issue
 - Fix sidebar background height for short docs pages
-
 
 ##### [v0.5.5](https://github.com/picturepan2/spectre/releases/tag/v0.5.5)
 
@@ -145,7 +151,7 @@ IMPORTANT: Move Autocomplete to the Experimentals
 
 ##### [v0.3.1](https://github.com/picturepan2/spectre/releases/tag/v0.3.1)
 
-*IMPORTANT*: The default root font-size has been changed to `20px`, please update your `rem` numbers if you're using the custom sizes. [Learn more](https://picturepan2.github.io/spectre/getting-started.html#variables-sizes).
+*IMPORTANT*: The default root font-size has been changed to `20px`, please update your `rem` numbers if you're using the custom sizes. [Learn more](https://picturepan2.github.io/spectre/getting-started/custom.html#variables-sizes).
 
 - Fix margin and padding utilities bug
 - Add grid offset

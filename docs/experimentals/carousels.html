@@ -6,8 +6,14 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
+    <meta name="description" content="Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
     <meta name="author" content="Yan Zhu">
+    <meta property="og:url" content="https://picturepan2.github.io/spectre/experimentals/carousels.html">
+    <meta property="og:title" content="Carousels - Experimentals - Spectre.css CSS Framework">
+    <meta property="og:description" content="Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@spectrecss">
+    <meta name="twitter:creator" content="@picturepan2">
     <link rel="shortcut icon" href="../img/favicons/favicon.ico">
     <link rel="icon" href="../img/favicons/favicon.png">
     <link rel="stylesheet" href="../dist/spectre.min.css">
@@ -160,6 +166,8 @@
               <label class="accordion-header c-hand" for="accordion-experimentals">Experimentals</label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
+                  <li class="menu-item"><a href="../experimentals/viewer-360.html">360-Degree Viewer</a>
+                  </li>
                   <li class="menu-item"><a href="../experimentals/autocomplete.html">Autocomplete</a>
                   </li>
                   <li class="menu-item"><a href="../experimentals/calendars.html">Calendars</a>
@@ -192,6 +200,7 @@
         <div class="docs-content" id="content">
           <div class="container" id="carousels">
             <h3 class="s-title">Carousels<a class="anchor" href="#carousels" aria-hidden="true">#</a></h3>
+            <p><small class="label label-primary mr-2">CSS ONLY</small></p>
             <div class="docs-ad">
               <div class="hide-md text-center">
                 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -238,6 +247,7 @@
                 </div>
               </div>
             </div>
+            <p>The default image number of Carousels is <code>8</code>. You can add more images by changing the variable <code>$carousel-number</code> in <code>_carousels.scss</code> and re-compiling the CSS.</p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- carousel locator --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-locator"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slide-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"carousel-radio"</span> <span class="hljs-attr">hidden</span>=<span class="hljs-string">""</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">""</span>&gt;</span>

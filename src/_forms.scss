@@ -85,7 +85,11 @@ legend {
 
 // Form element: Textarea
 textarea.form-input {
-  height: auto;
+  &,
+  &.input-lg,
+  &.input-sm {
+    height: auto;
+  }
 }
 
 // Form element: Input hint
