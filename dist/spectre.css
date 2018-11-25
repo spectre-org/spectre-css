@@ -899,7 +899,9 @@ legend {
   height: auto;
 }
 
-textarea.form-input {
+textarea.form-input,
+textarea.form-input.input-lg,
+textarea.form-input.input-sm {
   height: auto;
 }
 
