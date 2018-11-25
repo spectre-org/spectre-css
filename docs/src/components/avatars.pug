@@ -4,7 +4,7 @@ block variables
   - var slug = 'avatars'
   - var parent = 'components'
   - var title = 'Avatars - Components - Spectre.css CSS Framework'
-  - var description = 'Spectre.css is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
+  - var description = 'Avatars are user profile pictures. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
 
 block docs-content
   +docs-heading('avatars', 'Avatars')
@@ -14,22 +14,22 @@ block docs-content
 
     .docs-demo.columns
       .column.col-6.col-xs-12
-        figure.avatar.avatar-xl
+        figure.avatar.avatar-xl.mr-2
           img(src="../img/avatar-1.png" alt="Avatar XL")
-        figure.avatar.avatar-lg
+        figure.avatar.avatar-lg.mr-2
           img(src="../img/avatar-2.png" alt="Avatar LG")
-        figure.avatar
+        figure.avatar.mr-2
           img(src="../img/avatar-3.png" alt="Avatar")
-        figure.avatar.avatar-sm
+        figure.avatar.avatar-sm.mr-2
           img(src="../img/avatar-4.png" alt="Avatar SM")
-        figure.avatar.avatar-xs
+        figure.avatar.avatar-xs.mr-2
           img(src="../img/avatar-5.png" alt="Avatar XS")
       .column.col-6.col-xs-12
-        figure.avatar.avatar-xl(data-initial="YZ")
-        figure.avatar.avatar-lg(data-initial="YZ")
-        figure.avatar(data-initial="YZ")
-        figure.avatar.avatar-sm(data-initial="YZ")
-        figure.avatar.avatar-xs(data-initial="YZ")
+        figure.avatar.avatar-xl.mr-2(data-initial="YZ")
+        figure.avatar.avatar-lg.mr-2(data-initial="YZ")
+        figure.avatar.mr-2(data-initial="YZ")
+        figure.avatar.avatar-sm.mr-2(data-initial="YZ")
+        figure.avatar.avatar-xs.mr-2(data-initial="YZ")
 
     p
       | Add the #[code avatar] class to #{'<img>'} element.
@@ -55,18 +55,20 @@ block docs-content
             <img src="img/avatar-1.png" alt="...">
           </figure>
 
+    +docs-subheading('avatars-icons', 'Avatar icons')
+
     .docs-demo.columns
       .column.col-6.col-xs-12
-        figure.avatar.avatar-xl
+        figure.avatar.avatar-xl.mr-2
           img(src="../img/avatar-1.png" alt="Avatar")
           img.avatar-icon(src="../img/avatar-2.png" alt="Avatar")
-        figure.avatar.avatar-lg
+        figure.avatar.avatar-lg.mr-2
           img(src="../img/avatar-2.png" alt="Avatar")
           img.avatar-icon(src="../img/avatar-3.png" alt="Avatar")
-        figure.avatar
+        figure.avatar.mr-2
           img(src="../img/avatar-3.png" alt="Avatar")
           img.avatar-icon(src="../img/avatar-4.png" alt="Avatar")
-        figure.avatar.avatar-sm
+        figure.avatar.avatar-sm.mr-2
           img(src="../img/avatar-4.png" alt="Avatar")
           img.avatar-icon(src="../img/avatar-5.png" alt="Avatar")
         figure.avatar.avatar-xs
@@ -85,15 +87,15 @@ block docs-content
             
     .docs-demo.columns
       .column.col-6.col-xs-12
-        figure.avatar.avatar-xl(data-initial="YZ")
+        figure.avatar.avatar-xl.mr-2(data-initial="YZ")
           i.avatar-presence.online
-        figure.avatar.avatar-lg(data-initial="YZ")
+        figure.avatar.avatar-lg.mr-2(data-initial="YZ")
           i.avatar-presence.busy
-        figure.avatar(data-initial="YZ")
+        figure.avatar.mr-2(data-initial="YZ")
           i.avatar-presence.away
-        figure.avatar.avatar-sm(data-initial="YZ")
+        figure.avatar.avatar-sm.mr-2(data-initial="YZ")
           i.avatar-presence.offline
-        figure.avatar.avatar-xs(data-initial="YZ")
+        figure.avatar.avatar-xs.mr-2(data-initial="YZ")
           i.avatar-presence.online
 
     p
