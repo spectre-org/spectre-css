@@ -4753,7 +4753,7 @@ a.text-error:visited {
 }
 
 .viewer-360 {
-  align-items: center; 
+  align-items: center;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
