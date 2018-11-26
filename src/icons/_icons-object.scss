@@ -181,11 +181,11 @@
   border-left: 0;
   border-top: 0;
   height: .6em;
+  left: calc(.5em - 5px);
+  margin-top: .4em;
   transform: rotate(45deg);
   transform-origin: 50% 0;
   width: .6em;
-  left: calc(.5em - 5px);
-  margin-top: .4em;
 
   &::before,
   &::after {
