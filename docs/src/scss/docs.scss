@@ -154,6 +154,12 @@
   .docs-demo {
     padding-bottom: 1rem;
     padding-top: 1rem;
+
+    .card {
+      box-shadow: 0 .25rem 1rem rgba($dark-color, .15);
+      border: 0;
+      height: 100%;
+    }
   }
 
   .column {
@@ -194,7 +200,7 @@
   .docs-color {
     border-radius: $border-radius;
     margin: .25rem 0;
-    padding: .5rem;
+    padding: 5rem .5rem .5rem;
 
     .color-subtitle {
       font-size: $font-size-sm;

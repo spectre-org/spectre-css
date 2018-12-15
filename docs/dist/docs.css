@@ -150,6 +150,12 @@
   padding-top: 1rem;
 }
 
+.docs-content .docs-demo .card {
+  border: 0;
+  box-shadow: 0 .25rem 1rem rgba(48, 55, 66, .15);
+  height: 100%;
+}
+
 .docs-content .column {
   padding: .4rem;
 }
@@ -186,7 +192,7 @@
 .docs-content .docs-color {
   border-radius: .1rem;
   margin: .25rem 0;
-  padding: .5rem;
+  padding: 5rem .5rem .5rem;
 }
 
 .docs-content .docs-color .color-subtitle {
