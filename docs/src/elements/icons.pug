@@ -7,19 +7,25 @@ block variables
   - var description = 'Icons are single-element, responsive and pure CSS icons. Spectre.css CSS Framework is a lightweight, responsive and modern CSS framework for faster and extensible development.'
 
 block docs-content
-  +docs-heading('icons', 'Icons')
+  +docs-heading('icons', 'Icons.css')
     p
-      small.label.label-primary.mr-2 CSS ONLY
+      small.label.label-secondary CSS ONLY
 
     include ../_layout/_ad-g.pug
 
+    .docs-demo.columns
+      .column
+        .toast.toast-primary
+          | Spectre.css Icons will be moved to a new 
+          a(href="https://github.com/picturepan2/icons.css" target="_blank") GitHub Repo
+          | .
     p
-      | Icons are single-element, responsive and pure CSS icons.
+      | Icons.css are single-element, responsive and pure CSS icons.
       | You can include #[code spectre-icons.css] located in the #[code dist] folder to your web #{'<head>'} to have these CSS icons.
 
     +docs-subheading('icons-navigation', 'Navigation icons')
 
-    .columns
+    .docs-demo.columns
       .column.col-3.col-md-6
         button.btn.btn-primary.btn-action.btn-lg
           i.icon.icon-arrow-up
@@ -75,7 +81,7 @@ block docs-content
 
     +docs-subheading('icons-action', 'Action icons')
 
-    .columns
+    .docs-demo.columns
       .column.col-3.col-md-6
         button.btn.btn-primary.btn-action.btn-lg
           i.icon.icon-resize-horiz
@@ -151,7 +157,7 @@ block docs-content
 
     +docs-subheading('icons-object', 'Object icons')
 
-    .columns
+    .docs-demo.columns
       .column.col-3.col-md-6
         button.btn.btn-primary.btn-action.btn-lg
           i.icon.icon-mail
@@ -196,7 +202,7 @@ block docs-content
       | Use #[code icon-2x], #[code icon-3x] and #[code icon-4x] classes to increase icon sizes.
       | You can set #[code font-size] to have different icon sizes.
 
-    .columns
+    .docs-demo.columns
       .column.col-3.col-md-6
         p
           i.icon.icon-2x.icon-mail

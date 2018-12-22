@@ -306,6 +306,7 @@
     align-items: center;
     border-radius: $border-radius;
     display: inline-flex;
+    font-size: .7rem;
     height: 2rem;
     padding: .2rem;
     width: auto;
@@ -328,14 +329,14 @@
       line-height: 1.5rem;
       margin-bottom: 0;
       margin-left: .5rem;
-      margin-right: .5rem;
+      margin-right: .3rem;
     }
   }
 }
 
 .docs-footer {
   color: $gray-color;
-  padding: .5rem .5rem 1.5rem;
+  padding: .5rem;
 
   a {
     color: $gray-color-dark;
@@ -396,7 +397,7 @@
 }
 
 .section-updates {
-  padding: 4.5rem .5rem 3.5rem .5rem;
+  padding: 4.5rem .5rem 2.5rem .5rem;
 
   .card {
     border: 0;
