@@ -391,7 +391,7 @@ kbd {
   border-radius: .1rem;
   color: #fff;
   font-size: .7rem; 
-  line-height: 1.2;
+  line-height: 1.25;
   padding: .1rem .2rem;
 }
 
@@ -1014,7 +1014,7 @@ textarea.form-input.input-sm {
   display: block;
   line-height: 1.2rem;
   margin: .2rem 0;
-  min-height: 1.2rem;
+  min-height: 1.4rem;
   padding: .1rem .4rem .1rem 1.2rem;
   position: relative;
 }
@@ -1369,7 +1369,7 @@ input.disabled + .form-icon {
   border-radius: .1rem;
   color: #455060;
   display: inline-block; 
-  line-height: 1.2;
+  line-height: 1.25;
   padding: .1rem .2rem;
 }
 
@@ -1409,7 +1409,7 @@ code {
   border-radius: .1rem;
   color: #d73e48;
   font-size: 85%; 
-  line-height: 1.2;
+  line-height: 1.25;
   padding: .1rem .2rem;
 }
 
@@ -2468,11 +2468,8 @@ summary.accordion-header::-webkit-details-marker {
 .menu .menu-item {
   margin-top: 0;
   padding: 0 .4rem;
+  position: relative;
   text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .menu .menu-item > a {
@@ -2507,12 +2504,18 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .menu .menu-badge {
-  float: right;
-  padding: .2rem 0;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.menu .menu-badge .btn {
-  margin-top: -.1rem;
+.menu .menu-badge .label {
+  margin-right: .4rem;
 }
 
 .modal {
@@ -3347,7 +3350,7 @@ a.text-error:visited {
 }
 
 .divider {
-  border-top: .05rem solid #dadee4;
+  border-top: .05rem solid #f1f3f5;
   height: .05rem;
   margin: .4rem 0;
 }

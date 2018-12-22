@@ -23,13 +23,18 @@ block docs-content
                 | Steve Rogers
           li.divider
           li.menu-item
-            .menu-badge
-              label.label.label-primary 2
             a.active(href="#menus")
               | My profile
+            .menu-badge
+              label.form-checkbox
+                input(type="checkbox")
+                i.form-icon
+                | Public
           li.menu-item
             a(href="#menus")
               | Settings
+            .menu-badge
+              label.label.label-primary 2
           li.menu-item
             a(href="#menus")
               | Logout
@@ -66,7 +71,7 @@ block docs-content
       | You can separate menu items with a #[code divider].
       | Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.
     p
-      | Menus also have #[a(href="elements.html#forms" target="_blank") Form controls] (checkbox, radio and checkbox) support.
+      | Menus also have #[a(href="../elements/forms.html" target="_blank") Form controls] (checkbox, radio and checkbox) support.
 
     pre.code(data-lang='HTML')
       code
@@ -92,12 +97,22 @@ block docs-content
             <li class="divider"></li>
             <!-- menu item with badge -->
             <li class="menu-item">
-              <div class="menu-badge">
-                <label class="label label-primary">2</label>
-              </div>
               <a href="#">
                 <i class="icon icon-link"></i> Settings
               </a>
+              <div class="menu-badge">
+                <label class="label label-primary">2</label>
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <a href="#">My profile</a>
+              <div class="menu-badge">
+                <label class="form-checkbox">
+                  <input type="checkbox">
+                  <i class="form-icon"></i> Public
+                </label>
+              </div>
             </li>
           </ul>
             
