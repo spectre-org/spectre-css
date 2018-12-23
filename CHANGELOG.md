@@ -1,5 +1,14 @@
 #### Spectre.css Changelog
 
+##### v0.5.8 [#](https://github.com/picturepan2/spectre/releases/tag/v0.5.8)
+
+- IMPORTANT: Moving 
+- Add Auto width column #541
+- Add more Menu badge support #545
+- Improve 360-Degree Viewer
+- Fix gulp issue #547
+- Fix the errors in the Docs #538
+
 ##### v0.5.7 [#](https://github.com/picturepan2/spectre/releases/tag/v0.5.7)
 
 - Add pure CSS 360-Degree Viewer
