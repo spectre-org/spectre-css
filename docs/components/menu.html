@@ -31,7 +31,7 @@
       </div>
       <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
         <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="../img/spectre-logo.svg" alt="Spectre.css CSS Framework">
-            <h2>SPECTRE</h2></a>
+            <h2>SPECTRE</h2><small class="label label-secondary text-bold">DOCS</small></a>
         </div>
         <div class="docs-nav">
           <div class="accordion-container">
@@ -64,7 +64,7 @@
                   </li>
                   <li class="menu-item"><a href="../elements/forms.html">Forms</a>
                   </li>
-                  <li class="menu-item"><a href="../elements/icons.html">Icons</a>
+                  <li class="menu-item"><a href="../elements/icons.html">Icons.css</a>
                   </li>
                   <li class="menu-item"><a href="../elements/labels.html">Labels</a>
                   </li>
@@ -222,12 +222,18 @@
                     </div>
                   </li>
                   <li class="divider"></li>
-                  <li class="menu-item">
+                  <li class="menu-item"><a class="active" href="#menus">My profile</a>
+                    <div class="menu-badge">
+                      <label class="form-checkbox">
+                        <input type="checkbox"><i class="form-icon"></i>Public
+                      </label>
+                    </div>
+                  </li>
+                  <li class="menu-item"><a href="#menus">Settings</a>
                     <div class="menu-badge">
                       <label class="label label-primary">2</label>
-                    </div><a class="active" href="#menus">My profile</a>
+                    </div>
                   </li>
-                  <li class="menu-item"><a href="#menus">Settings</a></li>
                   <li class="menu-item"><a href="#menus">Logout</a></li>
                 </ul>
               </div>
@@ -264,7 +270,7 @@
               You can separate menu items with a <code>divider</code>.
               Spectre.css does not include JavaScript code, you will need to implement your JS to interact with the menus.
             </p>
-            <p>Menus also have <a href="elements.html#forms" target="_blank">Form controls</a> (checkbox, radio and checkbox) support.</p>
+            <p>Menus also have <a href="../elements/forms.html" target="_blank">Form controls</a> (checkbox, radio and checkbox) support.</p>
             <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu header text --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider"</span> <span class="hljs-attr">data-content</span>=<span class="hljs-string">"LINKS"</span>&gt;</span>
@@ -286,12 +292,22 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- menu item with badge --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-badge"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label label-primary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Settings
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-badge"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label label-primary"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>My profile<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"menu-badge"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Public
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
   </code></pre>
@@ -370,7 +386,7 @@
             </div>
           </div>
           <div class="docs-footer container grid-lg" id="copyright">
-            <p><a href="getting-started.html" target="_blank">Documents</a> · <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> · <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> · Version <span class="version"></span></p>
+            <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> · <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> · <a href="https://www.patreon.com/spectrecss" target="_blank">Patreon Sponsor</a> · Version <span class="version"></span></p>
             <p>Designed and built with <span class="text-error">&hearts;</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
           </div>
         </div>

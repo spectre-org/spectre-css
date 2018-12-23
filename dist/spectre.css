@@ -1,4 +1,4 @@
-/*! Spectre.css v0.5.7 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.5.8 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
@@ -390,7 +390,7 @@ kbd {
   border-radius: .1rem;
   color: #fff;
   font-size: .7rem; 
-  line-height: 1.2;
+  line-height: 1.25;
   padding: .1rem .2rem;
 }
 
@@ -1013,7 +1013,7 @@ textarea.form-input.input-sm {
   display: block;
   line-height: 1.2rem;
   margin: .2rem 0;
-  min-height: 1.2rem;
+  min-height: 1.4rem;
   padding: .1rem .4rem .1rem 1.2rem;
   position: relative;
 }
@@ -1368,7 +1368,7 @@ input.disabled + .form-icon {
   border-radius: .1rem;
   color: #455060;
   display: inline-block; 
-  line-height: 1.2;
+  line-height: 1.25;
   padding: .1rem .2rem;
 }
 
@@ -1408,7 +1408,7 @@ code {
   border-radius: .1rem;
   color: #d73e48;
   font-size: 85%; 
-  line-height: 1.2;
+  line-height: 1.25;
   padding: .1rem .2rem;
 }
 
@@ -1584,7 +1584,8 @@ video.video-responsive::before {
 .column.col-4,
 .column.col-3,
 .column.col-2,
-.column.col-1 {
+.column.col-1,
+.column.col-auto {
   -ms-flex: none;
   flex: none;
 }
@@ -1669,7 +1670,8 @@ video.video-responsive::before {
   .col-xl-4,
   .col-xl-3,
   .col-xl-2,
-  .col-xl-1 {
+  .col-xl-1,
+  .col-xl-auto {
     -ms-flex: none;
     flex: none;
   }
@@ -1709,6 +1711,9 @@ video.video-responsive::before {
   .col-xl-1 {
     width: 8.33333333%;
   }
+  .col-xl-auto {
+    width: auto;
+  }
   .hide-xl {
     display: none !important;
   }
@@ -1729,7 +1734,8 @@ video.video-responsive::before {
   .col-lg-4,
   .col-lg-3,
   .col-lg-2,
-  .col-lg-1 {
+  .col-lg-1,
+  .col-lg-auto {
     -ms-flex: none;
     flex: none;
   }
@@ -1769,6 +1775,9 @@ video.video-responsive::before {
   .col-lg-1 {
     width: 8.33333333%;
   }
+  .col-lg-auto {
+    width: auto;
+  }
   .hide-lg {
     display: none !important;
   }
@@ -1789,7 +1798,8 @@ video.video-responsive::before {
   .col-md-4,
   .col-md-3,
   .col-md-2,
-  .col-md-1 {
+  .col-md-1,
+  .col-md-auto {
     -ms-flex: none;
     flex: none;
   }
@@ -1829,6 +1839,9 @@ video.video-responsive::before {
   .col-md-1 {
     width: 8.33333333%;
   }
+  .col-md-auto {
+    width: auto;
+  }
   .hide-md {
     display: none !important;
   }
@@ -1849,7 +1862,8 @@ video.video-responsive::before {
   .col-sm-4,
   .col-sm-3,
   .col-sm-2,
-  .col-sm-1 {
+  .col-sm-1,
+  .col-sm-auto {
     -ms-flex: none;
     flex: none;
   }
@@ -1889,6 +1903,9 @@ video.video-responsive::before {
   .col-sm-1 {
     width: 8.33333333%;
   }
+  .col-sm-auto {
+    width: auto;
+  }
   .hide-sm {
     display: none !important;
   }
@@ -1909,7 +1926,8 @@ video.video-responsive::before {
   .col-xs-4,
   .col-xs-3,
   .col-xs-2,
-  .col-xs-1 {
+  .col-xs-1,
+  .col-xs-auto {
     -ms-flex: none;
     flex: none;
   }
@@ -1948,6 +1966,9 @@ video.video-responsive::before {
   }
   .col-xs-1 {
     width: 8.33333333%;
+  }
+  .col-xs-auto {
+    width: auto;
   }
   .hide-xs {
     display: none !important;
@@ -2446,11 +2467,8 @@ summary.accordion-header::-webkit-details-marker {
 .menu .menu-item {
   margin-top: 0;
   padding: 0 .4rem;
+  position: relative;
   text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .menu .menu-item > a {
@@ -2485,12 +2503,18 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .menu .menu-badge {
-  float: right;
-  padding: .2rem 0;
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.menu .menu-badge .btn {
-  margin-top: -.1rem;
+.menu .menu-badge .label {
+  margin-right: .4rem;
 }
 
 .modal {
@@ -3325,7 +3349,7 @@ a.text-error:visited {
 }
 
 .divider {
-  border-top: .05rem solid #dadee4;
+  border-top: .05rem solid #f1f3f5;
   height: .05rem;
   margin: .4rem 0;
 }

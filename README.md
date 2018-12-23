@@ -12,7 +12,7 @@ Spectre.css is a lightweight, responsive and modern CSS framework.
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with Sass/Scss compiler.
 
-Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) for the further development. ♥ 
+Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) or [via Patreon](https://www.patreon.com/spectrecss) for the further development. ♥ 
 
 
 ## Getting started
@@ -50,7 +50,7 @@ You can compile your custom version of Spectre.css. Read [the documentation](htt
 - [Tables](https://picturepan2.github.io/spectre/elements/tables.html)
 - [Buttons](https://picturepan2.github.io/spectre/elements/buttons.html)
 - [Forms](https://picturepan2.github.io/spectre/elements/forms.html)
-- [Icons](https://picturepan2.github.io/spectre/elements/icons.html) - CSS ONLY
+- [Icons.css](https://picturepan2.github.io/icons.css) - CSS ONLY
 - [Labels](https://picturepan2.github.io/spectre/elements/labels.html)
 - [Code](https://picturepan2.github.io/spectre/elements/code.html)
 - [Media](https://picturepan2.github.io/spectre/elements/media.html)
