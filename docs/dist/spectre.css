@@ -861,10 +861,6 @@ legend {
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
-.form-input::-webkit-input-placeholder {
-  color: #bcc3ce;
-}
-
 .form-input:-ms-input-placeholder {
   color: #bcc3ce;
 }
