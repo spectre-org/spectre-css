@@ -1068,7 +1068,7 @@ textarea.form-input.input-sm {
 .form-radio .form-icon {
   background: #fff;
   height: .8rem;
-  left: 0;
+  right: 0;
   top: .3rem;
   width: .8rem;
 }
