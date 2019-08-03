@@ -4720,7 +4720,7 @@ a.text-error:visited {
   background: #dadee4;
   content: "";
   height: 100%;
-  left: 11px;
+  right: 11px;
   position: absolute;
   top: 1.2rem;
   width: 2px;
