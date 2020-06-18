@@ -1,0 +1,58 @@
+// Columns order
+@for $i from 1 through $columns-count {
+  .order-#{$i} { -ms-flex-order: $i; order: $i; }
+}
+@media (max-width:($size-xs)) {
+  @for $i from 1 through $columns-count {
+    .order-#{$i} { -ms-flex-order: $i; order: $i; }
+    .order-xs-#{$i} {
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
+@media (max-width:($size-sm)) {
+  @for $i from 1 through $columns-count {
+    .order-#{$i} { -ms-flex-order: $i; order: $i; }
+    .order-sm-#{$i} {
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
+@media (max-width:($size-md)) {
+  @for $i from 1 through $columns-count {
+    .order-#{$i} { -ms-flex-order: $i; order: $i; }
+    .order-md-#{$i} {
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
+@media (max-width:($size-lg)) {
+  @for $i from 1 through $columns-count {
+    .order-#{$i} { -ms-flex-order: $i; order: $i; }
+    .order-lg-#{$i} {
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
+@media (max-width:($size-xl)) {
+  @for $i from 1 through $columns-count {
+    .order-#{$i} { -ms-flex-order: $i; order: $i; }
+    .order-xl-#{$i} {
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
+@media (max-width:($size-2x)) {
+  @for $i from 1 through $columns-count {
+    .order-#{$i} { -ms-flex-order: $i; order: $i; }
+    .order-2x-#{$i} {
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
