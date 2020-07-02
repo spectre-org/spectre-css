@@ -3400,6 +3400,7 @@ a.text-error:visited {
 
 .loading::after {
   animation: loading 500ms infinite linear;
+  background: transparent;
   border: .1rem solid #5755d9;
   border-radius: 50%;
   border-right-color: transparent;
@@ -3410,6 +3411,8 @@ a.text-error:visited {
   left: 50%;
   margin-left: -.4rem;
   margin-top: -.4rem;
+  opacity: 1;
+  padding: 0;
   position: absolute;
   top: 50%;
   width: .8rem;
