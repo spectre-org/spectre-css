@@ -469,6 +469,7 @@
   color: #fff;
   content: "";
   height: 3px;
+  pointer-events: none;
   position: absolute;
   right: .4rem;
   top: 50%;
