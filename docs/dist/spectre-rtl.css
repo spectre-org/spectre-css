@@ -1550,6 +1550,7 @@ video.video-responsive::before {
   display: none !important;
 }
 
+.cols,
 .columns {
   display: -ms-flexbox;
   display: flex;
@@ -1559,22 +1560,26 @@ video.video-responsive::before {
   margin-right: -.4rem;
 }
 
+.cols.col-gapless,
 .columns.col-gapless {
   margin-left: 0;
   margin-right: 0;
 }
 
+.cols.col-gapless > .column,
 .columns.col-gapless > .column {
   padding-left: 0;
   padding-right: 0;
 }
 
+.cols.col-oneline,
 .columns.col-oneline {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
 
+[class~="col-"],
 .column {
   -ms-flex: 1;
   flex: 1;
@@ -1583,6 +1588,19 @@ video.video-responsive::before {
   padding-right: .4rem;
 }
 
+[class~="col-"].col-12,
+[class~="col-"].col-11,
+[class~="col-"].col-10,
+[class~="col-"].col-9,
+[class~="col-"].col-8,
+[class~="col-"].col-7,
+[class~="col-"].col-6,
+[class~="col-"].col-5,
+[class~="col-"].col-4,
+[class~="col-"].col-3,
+[class~="col-"].col-2,
+[class~="col-"].col-1,
+[class~="col-"].col-auto,
 .column.col-12,
 .column.col-11,
 .column.col-10,
@@ -2052,8 +2070,8 @@ video.video-responsive::before {
   text-decoration: none;
 }
 
-.accordion input:checked ~ .accordion-header .icon,
-.accordion[open] .accordion-header .icon {
+.accordion input:checked ~ .accordion-header > .icon:first-child,
+.accordion[open] .accordion-header > .icon:first-child {
   transform: rotate(90deg);
 }
 
@@ -3708,6 +3726,18 @@ a.text-error:visited {
 
 .text-large {
   font-size: 1.2em;
+}
+
+.text-small {
+  font-size: .9em;
+}
+
+.text-tiny {
+  font-size: .8em;
+}
+
+.text-muted {
+  opacity: .8;
 }
 
 .text-ellipsis {
