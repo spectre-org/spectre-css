@@ -55,6 +55,5 @@ function watch() {
 
 exports.watch = watch;
 exports.build = build;
-exports.docs_css = docs_css;
-exports.docs_pug = docs_pug;
+exports.docs = parallel(docs_pug, docs_css);
 exports.default = build;
