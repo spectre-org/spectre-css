@@ -1,4 +1,4 @@
-/*! Spectre.css v0.5.8 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.5.9 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
@@ -1306,13 +1306,26 @@ textarea.form-input.input-sm {
   border-color: #e85600;
 }
 
+.form-input:not(:-ms-input-placeholder):invalid {
+  border-color: #e85600;
+}
+
 .form-input:not(:placeholder-shown):invalid {
   border-color: #e85600;
+}
+
+.form-input:not(:-ms-input-placeholder):invalid:focus {
+  background: #fffaf7; 
+  box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
 
 .form-input:not(:placeholder-shown):invalid:focus {
   background: #fffaf7; 
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
+}
+
+.form-input:not(:-ms-input-placeholder):invalid + .form-input-hint {
+  color: #e85600;
 }
 
 .form-input:not(:placeholder-shown):invalid + .form-input-hint {
