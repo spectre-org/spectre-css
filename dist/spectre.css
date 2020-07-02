@@ -2051,8 +2051,8 @@ video.video-responsive::before {
   text-decoration: none;
 }
 
-.accordion input:checked ~ .accordion-header .icon,
-.accordion[open] .accordion-header .icon {
+.accordion input:checked ~ .accordion-header > .icon:first-child,
+.accordion[open] .accordion-header > .icon:first-child {
   transform: rotate(90deg);
 }
 
