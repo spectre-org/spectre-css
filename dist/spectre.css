@@ -2387,6 +2387,11 @@ summary.accordion-header::-webkit-details-marker {
   border-bottom-right-radius: .1rem;
 }
 
+.card.card-shadow {
+  border: 0; 
+  box-shadow: 0 .1rem .3rem rgba(48, 55, 66, .15);
+}
+
 .chip {
   align-items: center;
   background: #eef0f3;
@@ -2477,7 +2482,7 @@ summary.accordion-header::-webkit-details-marker {
 .menu {
   background: #fff;
   border-radius: .1rem;
-  box-shadow: 0 .05rem .2rem rgba(48, 55, 66, .3);
+  box-shadow: 0 .05rem .2rem rgba(48, 55, 66, .15);
   list-style: none;
   margin: 0;
   min-width: 180px;
@@ -2603,7 +2608,7 @@ summary.accordion-header::-webkit-details-marker {
 .modal-container {
   background: #fff;
   border-radius: .1rem;
-  box-shadow: 0 .2rem .5rem rgba(48, 55, 66, .3);
+  box-shadow: 0 .2rem .5rem rgba(48, 55, 66, .15);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -2812,7 +2817,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .popover .card {
   border: 0; 
-  box-shadow: 0 .2rem .5rem rgba(48, 55, 66, .3);
+  box-shadow: 0 .2rem .5rem rgba(48, 55, 66, .15);
 }
 
 .step {
