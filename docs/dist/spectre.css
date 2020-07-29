@@ -576,6 +576,10 @@ html:lang(ko),
   white-space: nowrap;
 }
 
+.btn:visited {
+  color: #4b48d6;
+}
+
 .btn:focus {
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
@@ -615,6 +619,10 @@ html:lang(ko),
   color: #fff;
 }
 
+.btn.btn-primary:visited {
+  color: #fff;
+}
+
 .btn.btn-primary:focus,
 .btn.btn-primary:hover {
   background: #4240d4;
@@ -637,6 +645,10 @@ html:lang(ko),
 .btn.btn-success {
   background: #32b643;
   border-color: #2faa3f;
+  color: #fff;
+}
+
+.btn.btn-success:visited {
   color: #fff;
 }
 
@@ -669,6 +681,10 @@ html:lang(ko),
   color: #fff;
 }
 
+.btn.btn-error:visited {
+  color: #fff;
+}
+
 .btn.btn-error:focus {
   box-shadow: 0 0 0 .1rem rgba(232, 86, 0, .2);
 }
@@ -698,6 +714,7 @@ html:lang(ko),
   color: #5755d9;
 }
 
+.btn.btn-link:visited,
 .btn.btn-link:focus,
 .btn.btn-link:hover,
 .btn.btn-link:active,

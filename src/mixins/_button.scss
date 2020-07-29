@@ -3,6 +3,9 @@
   background: $color;
   border-color: darken($color, 3%);
   color: $light-color;
+  &:visited {
+    color: $light-color;
+  }
   &:focus {
     @include control-shadow($color);
   }
