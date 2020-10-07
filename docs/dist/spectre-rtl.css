@@ -1085,7 +1085,7 @@ textarea.form-input.input-sm {
 .form-radio .form-icon {
   background: #fff;
   height: .8rem;
-  left: 0;
+  right: 0;
   top: .3rem;
   width: .8rem;
 }
@@ -4792,7 +4792,7 @@ a.text-error:visited {
   background: #dadee4;
   content: "";
   height: 100%;
-  left: 11px;
+  right: 11px;
   position: absolute;
   top: 1.2rem;
   width: 2px;
