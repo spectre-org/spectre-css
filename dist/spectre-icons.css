@@ -1,4 +1,4 @@
-/*! Spectre.css Icons v0.5.8 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Icons v0.5.10 | MIT License | github.com/picturepan2/spectre */
 .icon {
   box-sizing: border-box;
   display: inline-block;
@@ -437,6 +437,42 @@
   width: .8em;
 }
 
+.icon-show::before,
+.icon-hide::before {
+  border: .1rem solid currentColor;
+  border-radius: 0 50% 0 50%;
+  content: "";
+  height: 1em;
+  left: 0;
+  top: 25%;
+  transform: rotate(-45deg);
+  transform-origin: .2em .3em;
+  width: 1em;
+}
+
+.icon-show::after,
+.icon-hide::after {
+  border: .1rem solid currentColor;
+  border-radius: 50%;
+  content: "";
+  height: .4em;
+  left: 55%;
+  top: 45%;
+  width: .4em;
+}
+
+.icon-hide::after {
+  background: currentColor;
+  border: 0;
+  border-radius: 0;
+  height: 1.58em;
+  left: 1.08em;
+  top: -.1em;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  width: .1rem;
+}
+
 .icon-time {
   border: .1rem solid currentColor;
   border-radius: 50%;
@@ -594,4 +630,37 @@
   height: .5em;
   transform: translate(-50%, -40%) rotate(-135deg);
   width: .5em;
+}
+
+.icon-heart {
+  border: .1rem solid currentColor;
+  border-left: 0;
+  border-top: 0;
+  height: .6em;
+  left: calc(.5em - 5px);
+  margin-top: .4em;
+  transform: rotate(45deg);
+  transform-origin: 50% 0;
+  width: .6em;
+}
+
+.icon-heart::before,
+.icon-heart::after {
+  border: .1rem solid currentColor;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0 / 80% 80% 20% 20%;
+  content: "";
+  height: .4em;
+  left: .05em;
+  top: .2em;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+  width: .6em;
+}
+
+.icon-heart::after {
+  left: 0;
+  top: -.35em;
+  transform: rotate(0deg);
+  transform-origin: 100% 100%;
 }

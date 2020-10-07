@@ -18,6 +18,9 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  &:visited {
+    color: $primary-color-dark;
+  }
   &:focus {
     @include control-shadow();
   }
@@ -53,6 +56,9 @@
     background: $primary-color;
     border-color: $primary-color-dark;
     color: $light-color;
+    &:visited {
+      color: $light-color;
+    }
     &:focus,
     &:hover {
       background: darken($primary-color-dark, 2%);
@@ -87,6 +93,7 @@
     background: transparent;
     border-color: transparent;
     color: $link-color;
+    &:visited,
     &:focus,
     &:hover,
     &:active,

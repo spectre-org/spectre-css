@@ -1,5 +1,5 @@
 // Core variables
-$version: "0.5.8";
+$version: "0.5.10";
 
 // Core features
 $rtl: false !default;
@@ -98,6 +98,9 @@ $control-width-sm: 320px !default;
 $control-width-md: 640px !default;
 $control-width-lg: 960px !default;
 $control-width-xl: 1280px !default;
+
+// Max Columns number
+$columns-count: 4;
 
 // Responsive breakpoints
 $size-xs: 480px !default;

@@ -40,4 +40,9 @@
       }
     }
   }
+
+  &.card-shadow {
+    @include shadow-variant(.1rem);
+    border: 0;
+  }
 }
