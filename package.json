@@ -1,13 +1,16 @@
 {
-  "name": "spectre.css",
-  "version": "0.5.9",
-  "homepage": "http://picturepan2.github.io/spectre",
+  "name": "spectre-css",
+  "version": "0.5.10",
+  "homepage": "http://spectre-org.github.io/spectre-css",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
   "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
   "main": "dist/spectre.css",
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/picturepan2/spectre.git"
+    "url": "https://github.com/spectre-org/spectre-css.git"
   },
   "license": "MIT",
   "scripts": {
@@ -24,7 +27,7 @@
     "modern"
   ],
   "bugs": {
-    "url": "https://github.com/picturepan2/spectre/issues"
+    "url": "https://github.com/spectre-org/spectre-css/issues"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
