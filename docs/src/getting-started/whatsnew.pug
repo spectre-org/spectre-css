@@ -8,13 +8,12 @@ block variables
 
 block docs-content
   +docs-heading('whatsnew', 'What\'s new')
-    include ../_layout/_ad-g.pug
+
 
     include:markdown-it ../../../CHANGELOG.md
 
     p
       a.btn.btn-primary(href='https://github.com/spectre-org/spectre-css/releases', target='_blank') Releases
 
-    include ../_layout/_ad-c.pug
 
   include ../_layout/_footer.pug

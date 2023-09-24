@@ -8,7 +8,7 @@ block variables
 
 block docs-content
   +docs-heading('media', 'Media')
-    include ../_layout/_ad-g.pug
+
 
     p Media includes responsive images, figures and video classes.
 
@@ -28,7 +28,7 @@ block docs-content
 
     p
       | Add the #[code img-fit-contain] or #[code img-fit-cover] class to #{'<img>'} or #{'<video>'} elements. The media will crop itself to fit inside the element (and you don't need another container).
-      | This feature can replace the classic background image trick. Microsoft Edge support 
+      | This feature can replace the classic background image trick. Microsoft Edge support
       a(href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/objectfitandobjectposition/" target="_blank") is shipped
       |   with Build Number 16299+.
 
@@ -74,8 +74,8 @@ block docs-content
     +docs-subheading('media-video', 'Video')
 
     p
-      | For responsive video, add a container with the #[code video-responsive] class. 
-      | Insert any YouTube, Youku or other iframe/embed video inside the container. 
+      | For responsive video, add a container with the #[code video-responsive] class.
+      | Insert any YouTube, Youku or other iframe/embed video inside the container.
       | The ratio is 16:9 by default.
       | You may add #[code video-responsive-4-3] for 4:3 ratio video container or #[code video-responsive-1-1] for 1:1 ratio.
 
@@ -96,6 +96,5 @@ block docs-content
 
           <video class="video-responsive" src="...">...</video>
 
-    include ../_layout/_ad-c.pug
 
   include ../_layout/_footer.pug
