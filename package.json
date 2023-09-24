@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "serve:docs": "npx serve docs"
+    "serve:docs": "npx serve docs -p 8000"
   },
   "keywords": [
     "css",
