@@ -200,27 +200,18 @@
         <div class="docs-content" id="content">
           <div class="container" id="custom">
             <h3 class="s-title">Custom version<a class="anchor" href="#custom" aria-hidden="true">#</a></h3>
-            <div class="docs-ad">
-              <div class="hide-md text-center">
-
-              </div>
-              <div class="show-md text-center">
-                <!-- GitHub-sm--><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2225124559530218" data-ad-slot="9278881734"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-              </div>
-            </div>
-            <p>You can customize your version of Spectre.css by editing Sass files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
+            <p>You can customize your version of Spectre.css by editing Sass files in<code>/src</code> directory or removing unneeded components from<code>.scss</code> source files.</p>
             <p><a class="btn btn-primary" href="https://github.com/spectre-org/spectre-css/" target="_blank">Sass Source Code</a></p>
-            <p>If you are looking for Less version of Spectre.css, please switch to <code>Less</code> branch.</p>
+            <p>If you are looking for Less version of Spectre.css, please switch to<code>Less</code> branch.</p>
             <p><a class="btn" href="https://github.com/spectre-org/spectre-css/tree/less" target="_blank">Less Branch</a></p>
             <h4 class="s-subtitle" id="compiling">Compiling CSS<a class="anchor" href="#compiling" aria-hidden="true">#</a></h4>
-            <p>Spectre uses <a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. Firstly you need to <a href="https://www.npmjs.com/get-npm" target="_blank">install NPM</a>, which is used to manage Gulp and other dependencies.</p>
+            <p>Spectre uses<a href="http://gulpjs.com/" target="_blank">Gulp</a> for compiling CSS. Firstly you need to<a href="https://www.npmjs.com/get-npm" target="_blank">install NPM</a>, which is used to manage Gulp and other dependencies.</p>
             <p>Then, you can build the CSS file from the command line:</p>
             <ol>
               <li>Navigate to the root directory of Spectre.</li>
-              <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-              <li>When completed, run <code>gulp build</code> task to compile Sass to CSS and minify files.</li>
-              <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
+              <li>Run<code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
+              <li>When completed, run<code>gulp build</code> task to compile Sass to CSS and minify files.</li>
+              <li>You can find compiled CSS files in<code>/dist</code> directory.</li>
             </ol>
             <p>All available Gulp tasks:</p>
             <ul>
@@ -231,8 +222,8 @@
             <h4 class="s-subtitle" id="importing">Importing Sass<a class="anchor" href="#importing" aria-hidden="true">#</a></h4>
             <p>It is recommended to customize Spectre by importing Sass source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
             <ul>
-              <li>First, create your own project and install Spectre via <a href="#installation">NPM or other package managers</a>.</li>
-              <li>Then create your <code>project-name.scss</code> file in the root folder. You can use <code>project-name.scss</code> to define your variables.</li>
+              <li>First, create your own project and install Spectre via<a href="#installation">NPM or other package managers</a>.</li>
+              <li>Then create your<code>project-name.scss</code> file in the root folder. You can use<code>project-name.scss</code> to define your variables.</li>
               <li>Compile the Sass file to CSS to get the custom version of Spectre.</li>
             </ul>
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
@@ -243,7 +234,7 @@
 <span class="hljs-comment">// Import full Spectre source code</span>
 <span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/spectre.css/src/spectre"</span>;
 </code></pre>
-            <p>Alternatively, you can create custom <code>_variables.scss</code> and import it to <code>project-name.scss</code>.</p>
+            <p>Alternatively, you can create custom<code>_variables.scss</code> and import it to<code>project-name.scss</code>.</p>
             <pre class="code" data-lang="Sass"><code><span class="hljs-comment">// Example of project-name.scss</span>
 <span class="hljs-keyword">@import</span> <span class="hljs-string">"variables"</span>;
 
@@ -295,7 +286,7 @@
 └── ...
 </code></pre>
             <h4 class="s-subtitle" id="variables">Variables<a class="anchor" href="#variables" aria-hidden="true">#</a></h4>
-            <p>Spectre.css is designed with consistent design language. You can use your own variables to create your new or match existing design. All variables in <code>_variables.scss</code> include <code>!default</code> flag. You can redefine the variables to override the values.</p>
+            <p>Spectre.css is designed with consistent design language. You can use your own variables to create your new or match existing design. All variables in<code>_variables.scss</code> include<code>!default</code> flag. You can redefine the variables to override the values.</p>
             <h4 class="s-subtitle" id="variables-colors">Variables - Colors<a class="anchor" href="#variables-colors" aria-hidden="true">#</a></h4>
             <div class="columns">
               <div class="column col-2 col-md-6">
@@ -364,7 +355,7 @@
               </div>
             </div>
             <h4 class="s-subtitle" id="variables-buttons">Variables - Button mixins<a class="anchor" href="#variables-buttons" aria-hidden="true">#</a></h4>
-            <p>There are 2 button variant mixins in <code>_mixins.scss</code> to generate different color variants.</p>
+            <p>There are 2 button variant mixins in<code>_mixins.scss</code> to generate different color variants.</p>
             <ul>
               <li>@mixin button-variant(<code>$color</code>: $primary-color);</li>
               <li>@mixin button-outline-variant(<code>$color</code>: $primary-color);</li>
@@ -380,14 +371,14 @@
 }
 </code></pre>
             <h4 class="s-subtitle" id="variables-sizes">Variables - Sizes<a class="anchor" href="#variables-sizes" aria-hidden="true">#</a></h4>
-            <p>The default REM (root em) size in Spectre.css is <code>20px</code>.</p>
-            <p>Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to <code>20px</code>, which is relatively easy to calculate.</p>
-            <p>Spectre uses <code>4px</code> as the unit size. Sizes of components are based on the unit size.</p>
+            <p>The default REM (root em) size in Spectre.css is<code>20px</code>.</p>
+            <p>Please note in the Chinese/Japanese/Korean version, Chrome uses 12px as default minimum font size. That is why Spectre sets rem default html font size to<code>20px</code>, which is relatively easy to calculate.</p>
+            <p>Spectre uses<code>4px</code> as the unit size. Sizes of components are based on the unit size.</p>
             <h4 class="s-subtitle" id="variables-custom-prefix">Variables - Custom prefix<a class="anchor" href="#variables-custom-prefix" aria-hidden="true">#</a></h4>
-            <p>There is also a way to add custom prefix to all CSS classes. You can use <a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it.</p>
+            <p>There is also a way to add custom prefix to all CSS classes. You can use<a href="https://www.npmjs.com/package/gulp-css-prefix" target="_blank">gulp-css-prefix</a> plugin and add a new Gulp task to enable it.</p>
             <pre class="code" data-lang="Bash"><code>npm install gulp-css-prefix
 </code></pre>
-            <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
+            <p>To add<code>spectre-</code> to all classes, you can add the Gulp task to<code>gulpfile.js</code> file.</p>
             <pre class="code"><code><span class="hljs-keyword">var</span> cssPrefix = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-css-prefix'</span>);
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prefix</span>(<span class="hljs-params"></span>) </span>{
@@ -399,11 +390,11 @@
 
 exports.prefix = prefix;
 </code></pre>
-            <p>After you compile your version of Spectre in the /dist, run <code>gulp prefix</code> in the directory of Spectre.</p>
+            <p>After you compile your version of Spectre in the /dist, run<code>gulp prefix</code> in the directory of Spectre.</p>
           </div>
           <div class="docs-footer container grid-lg" id="copyright">
-            <p><a href="https://github.com/spectre-org/spectre-css" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> · <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> · <a href="https://www.patreon.com/spectrecss" target="_blank">Patreon Sponsor</a> · Version <span class="version"></span></p>
-            <p>Designed and built with <span class="text-error">&hearts;</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/spectre-org/spectre-css/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+            <p><a href="https://github.com/spectre-org/spectre-css" target="_blank">GitHub</a> ·<a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> ·<a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> ·<a href="https://www.patreon.com/spectrecss" target="_blank">Patreon Sponsor</a> · Version<span class="version"></span></p>
+            <p>Designed and built with<span class="text-error">&hearts;</span> by<a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the<a href="https://github.com/spectre-org/spectre-css/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
           </div>
         </div>
       </div>
@@ -422,7 +413,7 @@ exports.prefix = prefix;
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+      
       ga('create', 'UA-2702768-8', 'auto');
       ga('send', 'pageview');
     </script>

@@ -8,7 +8,7 @@ block variables
 
 block docs-content
   +docs-heading('labels', 'Labels')
-    include ../_layout/_ad-g.pug
+
 
     p Labels are formatted text tags for highlighted, informative information.
 
@@ -20,7 +20,7 @@ block docs-content
         span.label.label-success.mr-1 success label
         span.label.label-warning.mr-1 warning label
         span.label.label-error error label
-      
+
     p
       | Add the #[code label] class to #{'<span>'} or #{'<small>'} elements.
       | You can add another class #[code label-primary], #[code label-secondary], #[code label-success], #[code label-warning] and #[code label-error] for colored labels.
@@ -33,7 +33,7 @@ block docs-content
           <span class="label label-primary">primary label</span>
 
     +docs-subheading('labels-rounded', 'Rounded labels')
-    
+
     .docs-demo.columns
       .column
         span.label.label-rounded.mr-1 default label
@@ -48,6 +48,5 @@ block docs-content
           <!-- rounded labels -->
           <span class="label label-rounded label-primary">primary label</span>
 
-    include ../_layout/_ad-c.pug
 
   include ../_layout/_footer.pug

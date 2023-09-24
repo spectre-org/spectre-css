@@ -8,7 +8,7 @@ block variables
 
 block docs-content
   +docs-heading('grid', 'Flexbox grid')
-    include ../_layout/_ad-g.pug
+
 
     p
       | Layout includes flexbox based responsive grid system with 12 columns.
@@ -65,10 +65,10 @@ block docs-content
           </div>
 
     p
-      | Add the #[code columns] class to a container with the #[code container] class. 
+      | Add the #[code columns] class to a container with the #[code container] class.
       | And add any element you want with the #[code column] class inside the container. These columns will take up the space equally.
       | You can specify the width of each column by adding class #[code col-<1-12>].
-    
+
     +docs-subheading('grid-gapless', 'Gapless grid')
 
     p
@@ -142,7 +142,7 @@ block docs-content
     +docs-subheading('grid-offset', 'Column offset')
 
     p
-      | The Flexbox grid provides margin auto utilities to set offset. 
+      | The Flexbox grid provides margin auto utilities to set offset.
       | There are #[code col-mx-auto], #[code col-ml-auto] and #[code col-mr-auto] to set margins between columns without using empty columns.
 
     .columns.text-center
@@ -220,6 +220,5 @@ block docs-content
             </div>
           </div>
 
-    include ../_layout/_ad-c.pug
 
   include ../_layout/_footer.pug

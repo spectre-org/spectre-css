@@ -8,7 +8,7 @@ block variables
 
 block docs-content
   +docs-heading('steps', 'Steps')
-    include ../_layout/_ad-g.pug
+
 
     p Steps are progress indicators of a sequence of task steps.
 
@@ -38,7 +38,7 @@ block docs-content
       | Add a container element with the #[code step] class.
       | And add child elements with the #[code step-item] class.
       | The #[code step-item] with the #[code active] class will be highlighted and indicate the current state of progress.
-      
+
     pre.code(data-lang='HTML')
       code
         :highlight(lang="html")
@@ -57,6 +57,5 @@ block docs-content
             </li>
           </ul>
 
-    include ../_layout/_ad-c.pug
 
   include ../_layout/_footer.pug

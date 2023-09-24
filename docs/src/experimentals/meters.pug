@@ -8,7 +8,7 @@ block variables
 
 block docs-content
   +docs-heading('meters', 'Meters')
-    include ../_layout/_ad-g.pug
+
 
     p Meters represent the value within the known range.
 
@@ -33,6 +33,5 @@ block docs-content
           <!-- Meter is red when value < low < high < optimum or optimum < low < high < value -->
           <meter class="meter" value="20" optimum="90" min="0" max="100" low="30" high="80"></meter>
 
-    include ../_layout/_ad-c.pug
 
   include ../_layout/_footer.pug

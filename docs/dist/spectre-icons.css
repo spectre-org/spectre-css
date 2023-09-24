@@ -10,7 +10,6 @@
   vertical-align: middle;
   width: 1em;
 }
-
 .icon::before,
 .icon::after {
   content: "";
@@ -20,15 +19,12 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 .icon.icon-2x {
   font-size: 1.6rem;
 }
-
 .icon.icon-3x {
   font-size: 2.4rem;
 }
-
 .icon.icon-4x {
   font-size: 3.2rem;
 }
@@ -92,7 +88,6 @@
 .icon-back::after {
   left: 55%;
 }
-
 .icon-back::before {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -100,7 +95,6 @@
 .icon-downward::after {
   top: 45%;
 }
-
 .icon-downward::before {
   transform: translate(-50%, -50%) rotate(-135deg);
 }
@@ -108,7 +102,6 @@
 .icon-forward::after {
   left: 45%;
 }
-
 .icon-forward::before {
   transform: translate(-50%, -50%) rotate(135deg);
 }
@@ -116,7 +109,6 @@
 .icon-upward::after {
   top: 55%;
 }
-
 .icon-upward::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -154,12 +146,10 @@
   height: .45em;
   width: .45em;
 }
-
 .icon-resize-horiz::before,
 .icon-resize-vert::before {
   transform: translate(-50%, -90%) rotate(45deg);
 }
-
 .icon-resize-horiz::after,
 .icon-resize-vert::after {
   transform: translate(-50%, -10%) rotate(225deg);
@@ -168,7 +158,6 @@
 .icon-resize-horiz::before {
   transform: translate(-90%, -50%) rotate(-45deg);
 }
-
 .icon-resize-horiz::after {
   transform: translate(-10%, -50%) rotate(135deg);
 }
@@ -204,11 +193,9 @@
 .icon-cross::before {
   width: 100%;
 }
-
 .icon-cross::after {
   height: 100%;
 }
-
 .icon-cross::before,
 .icon-cross::after {
   transform: translate(-50%, -50%) rotate(45deg);
@@ -219,7 +206,7 @@
   border-right: 0;
   border-top: 0;
   height: .5em;
-  transform: translate(-50%, -75%) rotate(-45deg); 
+  transform: translate(-50%, -75%) rotate(-45deg);
   width: .9em;
 }
 
@@ -227,7 +214,6 @@
   border: .1rem solid currentColor;
   border-radius: 50%;
 }
-
 .icon-stop::before {
   background: currentColor;
   height: .1rem;
@@ -240,7 +226,6 @@
   border-radius: 50%;
   border-top-color: transparent;
 }
-
 .icon-shutdown::before {
   background: currentColor;
   content: "";
@@ -256,7 +241,6 @@
   height: 1em;
   width: 1em;
 }
-
 .icon-refresh::after {
   border: .2em solid currentColor;
   border-left-color: transparent;
@@ -276,7 +260,6 @@
   transform: translate(0, 0) rotate(45deg);
   width: .75em;
 }
-
 .icon-search::after {
   background: currentColor;
   height: .1rem;
@@ -292,7 +275,6 @@
   transform: translate(-40%, -60%) rotate(-45deg);
   width: .85em;
 }
-
 .icon-edit::after {
   border: .15em solid currentColor;
   border-right-color: transparent;
@@ -313,7 +295,6 @@
   top: 60%;
   width: .75em;
 }
-
 .icon-delete::after {
   background: currentColor;
   box-shadow: -.25em .2em, .25em .2em;
@@ -328,7 +309,6 @@
   border-right: 0;
   border-top: 0;
 }
-
 .icon-share::before {
   border: .1rem solid currentColor;
   border-left: 0;
@@ -339,7 +319,6 @@
   transform: translate(-125%, -50%) rotate(-45deg);
   width: .4em;
 }
-
 .icon-share::after {
   border: .1rem solid currentColor;
   border-bottom: 0;
@@ -355,7 +334,6 @@
   left: 15%;
   width: .1rem;
 }
-
 .icon-flag::after {
   border: .1rem solid currentColor;
   border-bottom-right-radius: .1rem;
@@ -375,7 +353,6 @@
   height: .9em;
   width: .8em;
 }
-
 .icon-bookmark::after {
   border: .1rem solid currentColor;
   border-bottom: 0;
@@ -390,17 +367,15 @@
 .icon-upload {
   border-bottom: .1rem solid currentColor;
 }
-
 .icon-download::before,
 .icon-upload::before {
   border: .1rem solid currentColor;
   border-bottom: 0;
   border-right: 0;
   height: .5em;
-  transform: translate(-50%, -60%) rotate(-135deg); 
+  transform: translate(-50%, -60%) rotate(-135deg);
   width: .5em;
 }
-
 .icon-download::after,
 .icon-upload::after {
   background: currentColor;
@@ -412,7 +387,6 @@
 .icon-upload::before {
   transform: translate(-50%, -60%) rotate(45deg);
 }
-
 .icon-upload::after {
   top: 50%;
 }
@@ -427,7 +401,6 @@
   top: 35%;
   width: .8em;
 }
-
 .icon-copy::after {
   border: .1rem solid currentColor;
   border-radius: .1rem;
@@ -441,14 +414,12 @@
   border: .1rem solid currentColor;
   border-radius: 50%;
 }
-
 .icon-time::before {
   background: currentColor;
   height: .4em;
   transform: translate(-50%, -75%);
   width: .1rem;
 }
-
 .icon-time::after {
   background: currentColor;
   height: .3em;
@@ -463,7 +434,6 @@
   height: .8em;
   width: 1em;
 }
-
 .icon-mail::after {
   border: .1rem solid currentColor;
   border-right: 0;
@@ -480,7 +450,6 @@
   top: 25%;
   width: .45em;
 }
-
 .icon-people::after {
   border: .1rem solid currentColor;
   border-radius: 50% 50% 0 0;
@@ -495,7 +464,6 @@
   border-radius: .1rem;
   border-right: 0;
 }
-
 .icon-message::before {
   border: .1rem solid currentColor;
   border-bottom-right-radius: .1rem;
@@ -506,7 +474,6 @@
   top: 40%;
   width: .7em;
 }
-
 .icon-message::after {
   background: currentColor;
   border-radius: .1rem;
@@ -521,7 +488,6 @@
   border: .1rem solid currentColor;
   border-radius: .1rem;
 }
-
 .icon-photo::before {
   border: .1rem solid currentColor;
   border-radius: 50%;
@@ -530,7 +496,6 @@
   top: 35%;
   width: .25em;
 }
-
 .icon-photo::after {
   border: .1rem solid currentColor;
   border-bottom: 0;
@@ -549,11 +514,9 @@
   height: .5em;
   width: .75em;
 }
-
 .icon-link::before {
   transform: translate(-70%, -45%) rotate(-45deg);
 }
-
 .icon-link::after {
   transform: translate(-30%, -55%) rotate(135deg);
 }
@@ -565,7 +528,6 @@
   transform: translate(-50%, -60%) rotate(-45deg);
   width: .8em;
 }
-
 .icon-location::after {
   border: .1rem solid currentColor;
   border-radius: 50%;
@@ -578,14 +540,12 @@
   border: .1rem solid currentColor;
   border-radius: 50%;
 }
-
 .icon-emoji::before {
   border-radius: 50%;
   box-shadow: -.17em -.1em, .17em -.1em;
   height: .15em;
   width: .15em;
 }
-
 .icon-emoji::after {
   border: .1rem solid currentColor;
   border-bottom-color: transparent;

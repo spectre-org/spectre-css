@@ -11,7 +11,6 @@ block docs-content
     p
       small.label.label-secondary CSS ONLY
 
-    include ../_layout/_ad-g.pug
 
     p Carousels are slideshows for cycling images. It is built in pure CSS.
 
@@ -52,7 +51,7 @@ block docs-content
             label.nav-item.text-hide.c-hand(for="slide-2") 2
             label.nav-item.text-hide.c-hand(for="slide-3") 3
             label.nav-item.text-hide.c-hand(for="slide-4") 4
-    
+
     p
       | The default image number of Carousels is #[code 8]. You can add more images by changing the variable #[code $carousel-number] in #[code _carousels.scss] and re-compiling the CSS.
 
@@ -65,7 +64,7 @@ block docs-content
             <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
             <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
             <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
-            
+
             <!-- carousel container -->
             <div class="carousel-container">
               <!-- carousel item -->
@@ -98,7 +97,6 @@ block docs-content
               <label class="nav-item text-hide c-hand" for="slide-4">4</label>
             </div>
           </div>
-      
-    include ../_layout/_ad-c.pug
+
 
   include ../_layout/_footer.pug

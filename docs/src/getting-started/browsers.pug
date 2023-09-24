@@ -8,34 +8,33 @@ block variables
 
 block docs-content
   +docs-heading('browsers', 'Browser support')
-    include ../_layout/_ad-g.pug
-    
+
+
     p
-      | Spectre uses 
+      | Spectre uses
       a(href='https://github.com/postcss/autoprefixer', target='_blank') Autoprefixer
-      |  to make most styles compatible with earlier browsers and 
+      |  to make most styles compatible with earlier browsers and
       a(href='https://necolas.github.io/normalize.css/', target='_blank') Normalize.css
       |  for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:
     ul
       li
-        | Chrome 
+        | Chrome
         small.label.label-success LAST 4
       li
-        | Microsoft Edge 
+        | Microsoft Edge
         small.label.label-success LAST 4
       li
-        | Firefox 
+        | Firefox
         small.label.label-success.text-uppercase Extended Support Release
       li
-        | Safari 
+        | Safari
         small.label.label-success LAST 4
       li
-        | Opera 
+        | Opera
         small.label.label-success LAST 4
       li Internet Explorer 10+
     p
       | Spectre supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.
-    
-    include ../_layout/_ad-c.pug
+
 
   include ../_layout/_footer.pug

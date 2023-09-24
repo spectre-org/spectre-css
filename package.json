@@ -10,6 +10,9 @@
     "url": "https://github.com/picturepan2/spectre.git"
   },
   "license": "MIT",
+  "scripts": {
+    "serve:docs": "npx serve docs"
+  },
   "keywords": [
     "css",
     "framework",
