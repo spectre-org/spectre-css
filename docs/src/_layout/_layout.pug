@@ -1,5 +1,5 @@
 block global
-  - var domain = 'https://picturepan2.github.io/spectre/'
+  - var domain = 'https://spectre-org.github.io/spectre-css/'
   - var url = domain
 
 block variables
@@ -10,10 +10,10 @@ block variables
 
 if slug == parent
   if slug == 'index'
-    - var url = domain 
+    - var url = domain
   else
     - var url = domain + slug + '.html'
-else 
+else
   - var url = domain + parent + '/' + slug + '.html'
 
 doctype html
@@ -38,8 +38,8 @@ html(lang='en')
       link(rel='stylesheet' href='../dist/spectre.min.css')
       link(rel='stylesheet' href='../dist/spectre-icons.min.css')
       link(rel='stylesheet' href='../dist/spectre-exp.min.css')
-      link(rel='stylesheet' href='../dist/docs.min.css') 
-    else 
+      link(rel='stylesheet' href='../dist/docs.min.css')
+    else
       link(rel='shortcut icon' href='img/favicons/favicon.ico')
       link(rel='icon' href='img/favicons/favicon.png')
       link(rel='stylesheet' href='dist/spectre.min.css')
@@ -59,4 +59,3 @@ html(lang='en')
 
       ga('create', 'UA-2702768-8', 'auto');
       ga('send', 'pageview');
-  
