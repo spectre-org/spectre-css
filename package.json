@@ -6,7 +6,8 @@
   "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
   "main": "dist/spectre.css",
   "files": [
-    "dist/*"
+    "dist/*",
+    "src/*"
   ],
   "repository": {
     "type": "git",
