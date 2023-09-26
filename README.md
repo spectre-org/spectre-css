@@ -46,24 +46,22 @@ Spectre only includes modern base styles, responsive layout system, CSS componen
 
 ## Documentation
 
-Full documentation is available at:
+New documentation is available at:
 
-- [https://spectre-org.github.io/spectre-css](https://spectre-org.github.io/spectre-css/getting-started.html)
+- [spectre-org.github.io/spectre-docs](https://spectre-org.github.io/spectre-docs)
 
 Getting started:
 
-- [Installation](https://spectre-org.github.io/spectre-css/getting-started/installation.html)
-- [Customising](https://spectre-org.github.io/spectre-css/getting-started/custom.html)
-- [Browser support](https://spectre-org.github.io/spectre-css/getting-started/browsers.html)
-- [What's New](https://spectre-org.github.io/spectre-css/getting-started/whatsnew.html) - Spectre.css CSS Framework
+- [Installation](https://spectre-org.github.io/spectre-docs/docs/setup/installation.html)
+- [Customising](https://spectre-org.github.io/spectre-docs/docs/setup/custom.html)
 
 Content:
 
-- [Elements](https://spectre-org.github.io/spectre-css/elements/typography.html)
-- [Layout](https://spectre-org.github.io/spectre-css/layout/grid.html)
-- [Components](https://spectre-org.github.io/spectre-css/components/accordions.html)
-- [Utilities](https://spectre-org.github.io/spectre-css/utilities/colors.html)
-- [Experimental](https://spectre-org.github.io/spectre-css/experimentals/viewer-360.html)
+- [Elements](https://spectre-org.github.io/spectre-docs/docs/elements/index.html)
+- [Layout](https://spectre-org.github.io/spectre-docs/docs/layout/index.html)
+- [Components](https://spectre-org.github.io/spectre-docs/docs/components/index.html)
+- [Experimentals](https://spectre-org.github.io/spectre-docs/docs/experimentals/index.html)
+- [Utilities](https://spectre-org.github.io/spectre-docs/docs/utilities/index.html)
 
 Related content:
 
