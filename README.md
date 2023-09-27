@@ -1,38 +1,12 @@
 <a href="https://spectre-org.github.io/spectre-css">
-  <img src="https://spectre-org.github.io/spectre-css/img/spectre-logo.svg" width="72" height="72">
+  <img src="https://spectre-org.github.io/spectre-docs/img/spectre-logo.svg" width="72" height="72">
 </a>
 
-## Preamble
-
-### Background
-
-This version of Spectre CSS has been forked from the [original repo](https://github.com/picturepan2/spectre) owned by [@picturepan](https://github.com/picturepan2), who did incredible work to bring this CSS framework to the web.
-
-Unfortunately, work seems to have stopped on the codebase, with PRs dating back 5 or 6 years, and no communication from the author.
-
-### Aims
-
-Without hard-feeling, this new fork has been created under a new organisation [spectre-org](https://github.com/spectre-org/) with the intention of:
-
-- keeping the project alive
-- merging outstanding pull requests
-- publishing new releases
-- potentially making future updates (such as [Spectre Vue](https://github.com/spectre-org/spectre-vue))
-
-A discussion about these aims has been started [here](https://github.com/spectre-org/spectre-css/discussions/2), and you are encouraged to contribute!
-
-Please see the checklist there and [issues](https://github.com/spectre-org/spectre-css/issues) to keep up to date with progress.
-
-### Name changes
-
-To avoid confusion, note:
-
-- The original framework name Spectre.css, is now just Spectre CSS
-- The original NPM package name `spectre.css` (with a dot) is now `spectre-css` (with a dash)
-
-## Spectre
+## Spectre CSS
 
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
+> This version of Spectre CSS has been forked from the [original repo](https://github.com/picturepan2/spectre); see the [organisation readme](https://github.com/spectre-org) for rationale.
 
 Spectre is a lightweight, responsive and modern CSS framework.
 
@@ -42,7 +16,7 @@ Spectre is a lightweight, responsive and modern CSS framework.
 
 Spectre is a side project based on years of CSS development work on a large web service project.
 
-Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with Sass/Scss compiler.
+Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project using standard build tools.
 
 ## Documentation
 
@@ -65,11 +39,6 @@ Content:
 
 Related content:
 
-- [Original Spectre CSS issues](https://github.com/picturepan2/spectre/issues)
-- [Spectre CSS on Twitter](https://twitter.com/spectrecss)
-
-## Credits
-
-Forked and [maintained](https://github.com/spectre-org/spectre-css/discussions/2) by [Dave Stewart](https://github.com/davestewart) and [Christoph Massmann](https://github.com/ma4nn).
-
-Designed and built by [Yan Zhu](https://twitter.com/picturepan2).
+- [Original Spectre.css issues](https://github.com/picturepan2/spectre/issues)
+- [Original Spectre.css docs](https://picturepan2.github.io/spectre/)
+- [Spectre.css on Twitter](https://twitter.com/spectrecss)
