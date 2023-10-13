@@ -1,8 +1,7 @@
 {
-  "name": "spectre-css",
-  "version": "0.5.10",
-  "homepage": "http://spectre-org.github.io/spectre-css",
-  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "name": "@spectre-org/spectre-css",
+  "version": "1.0.0",
+  "homepage": "http://spectre-org.github.io/spectre-docs",
   "description": "Spectre CSS: A lightweight, responsive and modern CSS framework",
   "main": "dist/spectre.css",
   "files": [
@@ -16,7 +15,8 @@
   "license": "MIT",
   "scripts": {
     "dev": " gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "release": "npm run build && npm publish --access public"
   },
   "keywords": [
     "css",
@@ -38,10 +38,7 @@
     "gulp-csscomb": "^3.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
-    "jstransformer-highlight": "^2.0.0",
-    "jstransformer-markdown-it": "^2.1.0",
-    "sass": "^1.68.0",
-    "sass-migrator": "^1.5.2"
+    "sass": "^1.68.0"
   },
   "browserslist": [
     "last 4 Chrome versions",
