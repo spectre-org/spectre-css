@@ -42,3 +42,33 @@ Related content:
 - [Original Spectre.css issues](https://github.com/picturepan2/spectre/issues)
 - [Original Spectre.css docs](https://picturepan2.github.io/spectre/)
 - [Spectre.css on Twitter](https://twitter.com/spectrecss)
+
+## Contributing
+
+Spectre uses [Gulp](http://gulpjs.com/) to compile CSS.
+
+You can run these tasks:
+
+```bash
+# compile SCSS to CSS and minify files
+gulp build    
+
+# watch file changes and re-compile
+gulp watch    
+```
+
+To work with Spectre CSS source files in another project, you can use NPM link.
+
+In this repo:
+
+```bash
+npm link
+```
+
+In your project repo:
+
+```
+npm link @spectre-org/spectre-css
+```
+
+Your project will now import the Spectre CSS source, and changes here will show immediately in your project repo's `node_modules` folder.
