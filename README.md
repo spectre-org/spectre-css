@@ -26,8 +26,8 @@ New documentation is available at:
 
 Getting started:
 
-- [Installation](https://spectre-org.github.io/spectre-docs/docs/setup/installation.html)
-- [Customising](https://spectre-org.github.io/spectre-docs/docs/setup/custom.html)
+- [Installation](https://spectre-org.github.io/spectre-docs/docs/introduction/installation.html)
+- [Build](https://spectre-org.github.io/spectre-docs/docs/introduction/build.html)
 
 Content:
 
@@ -45,9 +45,13 @@ Related content:
 
 ## Contributing
 
-Spectre uses [Gulp](http://gulpjs.com/) to compile CSS.
+Clone this repo locally with:
 
-You can run these tasks:
+```bash
+git clone https://github.com/spectre-org/spectre-css.git
+```
+
+Spectre uses [Gulp](http://gulpjs.com/) to compile CSS:
 
 ```bash
 # compile SCSS to CSS and minify files
@@ -57,18 +61,18 @@ gulp build
 gulp watch    
 ```
 
-To work with Spectre CSS source files in another project, you can use NPM link.
+To work with Spectre CSS source files live in another project, you can use NPM link.
 
-In this repo:
+In the Spectre CSS repo, create the global reference:
 
 ```bash
 npm link
 ```
 
-In your project repo:
+In your project repo, create the link:
 
-```
+```bash
 npm link @spectre-org/spectre-css
 ```
 
-Your project will now import the Spectre CSS source, and changes here will show immediately in your project repo's `node_modules` folder.
+The existing `node_modules/@spectre-org/spectre-css` folder will be replaced with a symlink to the local repository, and any changes there will be reflected immediately in your project.
