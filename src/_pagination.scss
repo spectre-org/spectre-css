@@ -20,7 +20,7 @@
       text-decoration: none;
       &:focus,
       &:hover {
-        color: $primary-color;
+        color: var(--spectre-primary-color);
       }
     }
 
@@ -34,8 +34,8 @@
 
     &.active {
       a {
-        background: $primary-color;
-        color: $light-color;
+        background: var(--spectre-primary-color);
+        color: var(--spectre-light-color);
       }
     }
 

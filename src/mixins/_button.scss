@@ -1,33 +1,35 @@
+@use "functions/color" as *;
+
 // Button variant mixin
-@mixin button-variant($color: $primary-color) {
+@mixin button-variant($color: var(--spectre-primary-color)) {
   background: $color;
-  border-color: darken($color, 3%);
-  color: $light-color;
+  border-color: darken-css($color, 3%);
+  color: var(--spectre-light-color);
   &:focus {
     @include control-shadow($color);
   }
   &:focus,
   &:hover {
-    background: darken($color, 2%);
-    border-color: darken($color, 5%);
-    color: $light-color;
+    background: darken-css($color, 2%);
+    border-color: darken-css($color, 5%);
+    color: var(--spectre-light-color);
   }
   &:active,
   &.active {
-    background: darken($color, 7%);
-    border-color: darken($color, 10%);
-    color: $light-color;
+    background: darken-css($color, 7%);
+    border-color: darken-css($color, 10%);
+    color: var(--spectre-light-color);
   }
   &.loading {
     &::after {
-      border-bottom-color: $light-color;
-      border-left-color: $light-color;
+      border-bottom-color: var(--spectre-light-color);
+      border-left-color: var(--spectre-light-color);
     }
   }
 }
 
-@mixin button-outline-variant($color: $primary-color) {
-  background: $light-color;
+@mixin button-outline-variant($color: var(--spectre-primary-color)) {
+  background: var(--spectre-light-color);
   border-color: $color;
   color: $color;
   &:focus {
@@ -35,15 +37,15 @@
   }
   &:focus,
   &:hover {
-    background: lighten($color, 50%);
-    border-color: darken($color, 2%);
+    background: lighten-css($color, 50%);
+    border-color: darken-css($color, 2%);
     color: $color;
   }
   &:active,
   &.active {
     background: $color;
-    border-color: darken($color, 5%);
-    color: $light-color;
+    border-color: darken-css($color, 5%);
+    color: var(--spectre-light-color);
   }
   &.loading {
     &::after {

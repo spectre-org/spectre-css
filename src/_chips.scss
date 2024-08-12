@@ -1,7 +1,7 @@
 // Chips
 .chip {
   align-items: center;
-  background: $bg-color-dark;
+  background: var(--spectre-bg-color-dark);
   border-radius: 5rem;
   display: inline-flex;
   font-size: 90%;
@@ -17,8 +17,8 @@
   white-space: nowrap;
 
   &.active {
-    background: $primary-color;
-    color: $light-color;
+    background: var(--spectre-primary-color);
+    color: var(--spectre-light-color);
   }
 
   .avatar {

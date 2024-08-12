@@ -1,5 +1,7 @@
+@use "functions/color" as *;
+
 // Toast variant mixin
-@mixin toast-variant($color: $dark-color) {
-  background: rgba($color, .95);
+@mixin toast-variant($color: var(--spectre-dark-color)) {
+  background: opacity-css($color, .95);
   border-color: $color;
 }

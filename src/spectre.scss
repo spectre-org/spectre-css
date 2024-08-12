@@ -3,6 +3,9 @@
 @import "mixins";
 
 /*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
+// CSS variables
+@import "variables-css";
+
 // Reset and dependencies
 @import "normalize";
 @import "base";

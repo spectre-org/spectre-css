@@ -1,31 +1,31 @@
 // Toasts
 .toast {
-  @include toast-variant($dark-color);
-  border: $border-width solid $dark-color;
+  @include toast-variant(var(--spectre-dark-color));
+  border: $border-width solid var(--spectre-dark-color);
   border-radius: $border-radius;
-  color: $light-color;
+  color: var(--spectre-light-color);
   display: block;
   padding: $layout-spacing;
   width: 100%;
 
   &.toast-primary {
-    @include toast-variant($primary-color);
+    @include toast-variant(var(--spectre-primary-color));
   }
 
   &.toast-success {
-    @include toast-variant($success-color);
+    @include toast-variant(var(--spectre-success-color));
   }
 
   &.toast-warning {
-    @include toast-variant($warning-color);
+    @include toast-variant(var(--spectre-warning-color));
   }
 
   &.toast-error {
-    @include toast-variant($error-color);
+    @include toast-variant(var(--spectre-error-color));
   }
 
   a {
-    color: $light-color;
+    color: var(--spectre-light-color);
     text-decoration: underline;
     
     &:focus,

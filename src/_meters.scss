@@ -2,7 +2,7 @@
 // Credit: https://css-tricks.com/html5-meter-element/
 .meter {
   appearance: none;
-  background: $bg-color;
+  background: var(--spectre-bg-color);
   border: 0;
   border-radius: $border-radius;
   display: block;
@@ -21,19 +21,19 @@
   }
 
   &::-webkit-meter-bar {
-    background: $bg-color;
+    background: var(--spectre-bg-color);
   }
 
   &::-webkit-meter-optimum-value {
-    background: $success-color;
+    background: var(--spectre-success-color);
   }
 
   &::-webkit-meter-suboptimum-value {
-    background: $warning-color;
+    background: var(--spectre-warning-color);
   }
 
   &::-webkit-meter-even-less-good-value {
-    background: $error-color;
+    background: var(--spectre-error-color);
   }
 
   &::-moz-meter-bar,
@@ -44,14 +44,14 @@
   }
 
   &:-moz-meter-optimum::-moz-meter-bar {
-    background: $success-color;
+    background: var(--spectre-success-color);
   }
 
   &:-moz-meter-sub-optimum::-moz-meter-bar {
-    background: $warning-color;
+    background: var(--spectre-warning-color);
   }
 
   &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-    background: $error-color;
+    background: var(--spectre-error-color);
   }
 }

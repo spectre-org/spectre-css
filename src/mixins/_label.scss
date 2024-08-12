@@ -5,7 +5,7 @@
   padding: .1rem .2rem;
 }
 
-@mixin label-variant($color: $light-color, $bg-color: $primary-color) {
+@mixin label-variant($color: var(--spectre-light-color), $bg-color: var(--spectre-primary-color)) {
   background: $bg-color;
   color: $color;
 }

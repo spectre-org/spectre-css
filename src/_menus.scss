@@ -1,7 +1,7 @@
 // Menus
 .menu {
   @include shadow-variant(.05rem);
-  background: $bg-color-light;
+  background: var(--spectre-bg-color-light);
   border-radius: $border-radius;
   list-style: none;
   margin: 0;
@@ -30,13 +30,13 @@
       text-decoration: none;
       &:focus,
       &:hover {
-        background: $secondary-color;
-        color: $primary-color;
+        background: var(--spectre-secondary-color);
+        color: var(--spectre-primary-color);
       }
       &:active,
       &.active {
-        background: $secondary-color;
-        color: $primary-color;
+        background: var(--spectre-secondary-color);
+        color: var(--spectre-primary-color);
       }
     }
 

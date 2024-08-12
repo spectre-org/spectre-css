@@ -1,3 +1,5 @@
+@use "functions/color" as *;
+
 // Typography
 // Headings
 h1,
@@ -65,20 +67,20 @@ abbr[title] {
 
 kbd {
   @include label-base();
-  @include label-variant($light-color, $dark-color);
+  @include label-variant(var(--spectre-light-color), var(--spectre-dark-color));
   font-size: $font-size-sm;
 }
 
 mark {
-  @include label-variant($body-font-color, $highlight-color);
-  border-bottom: $unit-o solid darken($highlight-color, 15%);
+  @include label-variant(var(--spectre-body-font-color), var(--spectre-highlight-color));
+  border-bottom: $unit-o solid darken-css(var(--spectre-highlight-color), 15%);
   border-radius: $border-radius;
   padding: $unit-o $unit-h 0;
 }
 
 // Blockquote
 blockquote {
-  border-left: $border-width-lg solid $border-color;
+  border-left: $border-width-lg solid var(--spectre-border-color);
   margin-left: 0;
   padding: $unit-2 $unit-4;
 

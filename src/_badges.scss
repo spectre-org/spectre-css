@@ -6,11 +6,11 @@
   &[data-badge],
   &:not([data-badge]) {
     &::after {
-      background: $primary-color;
+      background: var(--spectre-primary-color);
       background-clip: padding-box;
       border-radius: .5rem;
-      box-shadow: 0 0 0 .1rem $bg-color-light;
-      color: $light-color;
+      box-shadow: 0 0 0 .1rem var(--spectre-bg-color-light);
+      color: var(--spectre-light-color);
       content: attr(data-badge);
       display: inline-block;
       transform: translate(-.05rem, -.5rem);

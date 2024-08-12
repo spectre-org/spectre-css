@@ -1,9 +1,11 @@
+@use "functions/color" as *;
+
 // Avatars
 .avatar {
   @include avatar-base();
-  background: $primary-color;
+  background: var(--spectre-primary-color);
   border-radius: 50%;
-  color: rgba($light-color, .85);
+  color: opacity-css(var(--spectre-light-color), .85);
   display: inline-block;
   font-weight: 300;
   line-height: 1.25;
@@ -34,7 +36,7 @@
 
   .avatar-icon,
   .avatar-presence {
-    background: $bg-color-light;
+    background: var(--spectre-bg-color-light);
     bottom: 14.64%;
     height: 50%;
     padding: $border-width-lg;
@@ -46,22 +48,22 @@
   }
 
   .avatar-presence {
-    background: $gray-color;
-    box-shadow: 0 0 0 $border-width-lg $light-color;
+    background: var(--spectre-gray-color);
+    box-shadow: 0 0 0 $border-width-lg var(--spectre-light-color);
     border-radius: 50%;
     height: .5em;
     width: .5em;
 
     &.online {
-      background: $success-color;
+      background: var(--spectre-success-color);
     }
 
     &.busy {
-      background: $error-color;
+      background: var(--spectre-error-color);
     }
 
     &.away {
-      background: $warning-color;
+      background: var(--spectre-warning-color);
     }
   }
 

@@ -1,6 +1,6 @@
 // Bars
 .bar {
-  background: $bg-color-dark;
+  background: var(--spectre-bg-color-dark);
   border-radius: $border-radius;
   display: flex;
   flex-wrap: nowrap;
@@ -13,8 +13,8 @@
 
   // TODO: attr() support
   .bar-item {
-    background: $primary-color;
-    color: $light-color;
+    background: var(--spectre-primary-color);
+    color: var(--spectre-light-color);
     display: block;
     font-size: $font-size-sm;
     flex-shrink: 0;
@@ -47,13 +47,13 @@
     padding: 0;
     position: absolute;
     &:not(:last-child):first-child {
-      background: $bg-color-dark;
+      background: var(--spectre-bg-color-dark);
       z-index: $zindex-0;
     }
   }
 
   .bar-slider-btn {
-    background: $primary-color;
+    background: var(--spectre-primary-color);
     border: 0;
     border-radius: 50%;
     height: $unit-3;
@@ -65,7 +65,7 @@
     width: $unit-3;
 
     &:active {
-      box-shadow: 0 0 0 .1rem $primary-color;
+      box-shadow: 0 0 0 .1rem var(--spectre-primary-color);
     }
   }
 }

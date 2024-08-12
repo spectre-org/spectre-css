@@ -1,3 +1,5 @@
+@use "functions/color" as *;
+
 // Image comparison slider
 // Credit: http://codepen.io/solipsistacp/pen/Gpmaq
 .comparison-slider {
@@ -55,7 +57,7 @@
       background: currentColor;
       border-radius: 50%;
       box-shadow: 0 -5px, 0 5px;
-      color: $light-color;
+      color: var(--spectre-light-color);
       content: "";
       height: 3px;
       pointer-events: none;
@@ -88,9 +90,9 @@
   }
 
   .comparison-label {
-    background: rgba($dark-color, .5);
+    background: opacity-css(var(--spectre-dark-color), .5);
     bottom: $unit-4;
-    color: $light-color;
+    color: var(--spectre-light-color);
     padding: $unit-1 $unit-2;
     position: absolute;
     user-select: none;

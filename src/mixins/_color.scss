@@ -1,16 +1,24 @@
+@use "functions/color" as *;
+
 // Background color utility mixin
-@mixin bg-color-variant($name: ".bg-primary", $color: $primary-color) {
+@mixin bg-color-variant($name: ".bg-primary", $color: var(--spectre-primary-color), $light-text: false) {
   #{$name} {
     background: $color !important;
 
-    @if (lightness($color) < 60) {
-      color: $light-color;
+    // TODO: Replace this function with color-contrast when it is supported:
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-contrast#browser_compatibility
+    @if (type-of($color) == "color") {
+      @if (lightness($color) < 60) {
+        color: var(--spectre-light-color);
+      }
+    } @else if ($light-text) {
+      color: var(--spectre-light-color);
     }
   }
 }
 
 // Text color utility mixin
-@mixin text-color-variant($name: ".text-primary", $color: $primary-color) {
+@mixin text-color-variant($name: ".text-primary", $color: var(--spectre-primary-color)) {
   #{$name} {
     color: $color !important;
   }
@@ -18,10 +26,10 @@
   a#{$name} {
     &:focus,
     &:hover {
-      color: darken($color, 5%);
+      color: darken-css($color, 5%);
     }
     &:visited {
-      color: lighten($color, 5%);
+      color: lighten-css($color, 5%);
     }
   }
 }

@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background: $body-bg;
-  color: $body-font-color;
+  background: var(--spectre-body-bg);
+  color: var(--spectre-body-font-color);
   font-family: $body-font-family;
   font-size: $font-size;
   overflow-x: hidden;
@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: $link-color;
+  color: var(--spectre-link-color);
   outline: none;
   text-decoration: none;
 
@@ -34,11 +34,11 @@ a {
   &:hover,
   &:active,
   &.active {
-    color: $link-color-dark;
+    color: var(--spectre-link-color-dark);
     text-decoration: underline;
   }
 
   &:visited {
-    color: $link-color-light;
+    color: var(--spectre-link-color-light);
   }
 }

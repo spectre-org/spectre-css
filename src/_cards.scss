@@ -1,7 +1,7 @@
 // Cards
 .card {
-  background: $bg-color-light;
-  border: $border-width solid $border-color;
+  background: var(--spectre-bg-color-light);
+  border: $border-width solid var(--spectre-border-color);
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;
