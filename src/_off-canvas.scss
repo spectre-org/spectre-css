@@ -1,3 +1,5 @@
+@use "functions/color" as *;
+
 // Off canvas menus
 $off-canvas-breakpoint: $size-lg !default;
 
@@ -22,7 +24,7 @@ $off-canvas-breakpoint: $size-lg !default;
   }
 
   .off-canvas-sidebar {
-    background: $bg-color;
+    background: var(--spectre-bg-color);
     bottom: 0;
     min-width: 10rem;
     overflow-y: auto;
@@ -46,7 +48,7 @@ $off-canvas-breakpoint: $size-lg !default;
   }
 
   .off-canvas-overlay {
-    background: rgba($dark-color, .1);
+    background: opacity-css(var(--spectre-dark-color), .1);
     border-color: transparent;
     border-radius: 0;
     bottom: 0;

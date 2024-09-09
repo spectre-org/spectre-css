@@ -12,7 +12,7 @@
 
     &.is-focused {
       @include control-shadow();
-      border-color: $primary-color;
+      border-color: var(--spectre-primary-color);
     }
 
     .form-input {

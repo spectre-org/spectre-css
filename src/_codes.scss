@@ -1,17 +1,19 @@
+@use "functions/color" as *;
+
 // Codes
 code {
   @include label-base();
-  @include label-variant($code-color, lighten($code-color, 42.5%));
+  @include label-variant(var(--spectre-code-color), lighten-css(var(--spectre-code-color), 42.5%));
   font-size: 85%;
 }
 
 .code {
   border-radius: $border-radius;
-  color: $body-font-color;
+  color: var(--spectre-body-font-color);
   position: relative;
 
   &::before {
-    color: $gray-color;
+    color: var(--spectre-gray-color);
     content: attr(data-lang);
     font-size: $font-size-sm;
     position: absolute;
@@ -20,7 +22,7 @@ code {
   }
 
   code {
-    background: $bg-color;
+    background: var(--spectre-bg-color);
     color: inherit;
     display: block;
     line-height: 1.5;

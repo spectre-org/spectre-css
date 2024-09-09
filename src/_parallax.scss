@@ -1,3 +1,5 @@
+@use "functions/color" as *;
+
 // Parallax
 $parallax-deg: 3deg !default;
 $parallax-offset: 4.5px !default;
@@ -5,6 +7,10 @@ $parallax-offset-z: 50px !default;
 $parallax-perspective: 1000px !default;
 $parallax-scale: .95 !default;
 $parallax-fade-color: rgba(255, 255, 255, .35) !default;
+
+:root {
+  --spectre-parallax-fade-color: #{$parallax-fade-color};
+}
 
 // Mixin: Parallax direction
 @mixin parallax-dir() {
@@ -42,14 +48,14 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
 
   .parallax-front {
     align-items: center;
-    color: $light-color;
+    color: var(--spectre-light-color);
     display: flex;
     height: 100%;
     justify-content: center;
     left: 0;
     position: absolute;
     text-align: center;
-    text-shadow: 0 0 20px rgba($dark-color, .75);
+    text-shadow: 0 0 20px opacity-css(var(--spectre-dark-color), .75);
     top: 0;
     transform: translateZ($parallax-offset-z) scale($parallax-scale);
     transition: transform .4s;
@@ -67,7 +73,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(135deg, $parallax-fade-color 0%, transparent 50%);
+        background: linear-gradient(135deg, var(--spectre-parallax-fade-color) 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -86,7 +92,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
       transform: perspective($parallax-perspective) rotateX($parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-135deg, $parallax-fade-color 0%, transparent 50%);
+        background: linear-gradient(-135deg, var(--spectre-parallax-fade-color) 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -105,7 +111,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY(-$parallax-deg);
 
       &::before {
-        background: linear-gradient(45deg, $parallax-fade-color 0%, transparent 50%);
+        background: linear-gradient(45deg, var(--spectre-parallax-fade-color) 0%, transparent 50%);
       }
 
       .parallax-front {
@@ -124,7 +130,7 @@ $parallax-fade-color: rgba(255, 255, 255, .35) !default;
       transform: perspective($parallax-perspective) rotateX(-$parallax-deg) rotateY($parallax-deg);
 
       &::before {
-        background: linear-gradient(-45deg, $parallax-fade-color 0%, transparent 50%);
+        background: linear-gradient(-45deg, var(--spectre-parallax-fade-color) 0%, transparent 50%);
       }
 
       .parallax-front {

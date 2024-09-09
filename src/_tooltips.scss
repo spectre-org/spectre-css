@@ -1,11 +1,13 @@
+@use "functions/color" as *;
+
 // Tooltips
 .tooltip {
   position: relative;
   &::after {
-    background: rgba($dark-color, .95);
+    background: opacity-css(var(--spectre-dark-color), .95);
     border-radius: $border-radius;
     bottom: 100%;
-    color: $light-color;
+    color: var(--spectre-light-color);
     content: attr(data-tooltip);
     display: block;
     font-size: $font-size-sm;

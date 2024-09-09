@@ -1,8 +1,8 @@
 // Empty states (or Blank slates)
 .empty {
-  background: $bg-color;
+  background: var(--spectre-bg-color);
   border-radius: $border-radius;
-  color: $gray-color-dark;
+  color: var(--spectre-gray-color-dark);
   text-align: center;
   padding: $unit-16 $unit-8;
 

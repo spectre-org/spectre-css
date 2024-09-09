@@ -1,3 +1,5 @@
+@use "functions/color" as *;
+
 // Navs
 .nav {
   display: flex;
@@ -7,21 +9,21 @@
 
   .nav-item {
     a {
-      color: $gray-color-dark;
+      color: var(--spectre-gray-color-dark);
       padding: $unit-1 $unit-2;
       text-decoration: none;
       &:focus,
       &:hover {
-        color: $primary-color;
+        color: var(--spectre-primary-color);
       }
     }
     &.active {
       & > a {
-        color: darken($gray-color-dark, 10%);
+        color: darken-css(var(--spectre-gray-color-dark), 10%);
         font-weight: bold;
         &:focus,
         &:hover {
-          color: $primary-color;
+          color: var(--spectre-primary-color);
         }
       }
     }

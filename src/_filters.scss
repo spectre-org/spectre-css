@@ -3,8 +3,8 @@
 $filter-number: 8 !default;
 
 %filter-checked-nav { 
-  background: $primary-color;
-  color: $light-color;
+  background: var(--spectre-primary-color);
+  color: var(--spectre-light-color);
 }
 
 %filter-checked-body { 

@@ -2,7 +2,10 @@
 @import "variables";
 @import "mixins";
 
-/*! SpectreCSS %VERSION% | MIT License | https://github.com/spectre-org/spectre-css */
+/*! Spectre CSS %VERSION% | MIT License | https://github.com/spectre-org/spectre-css */
+
+// CSS variables
+@import "variables-css";
 
 // Reset and dependencies
 @import "normalize";

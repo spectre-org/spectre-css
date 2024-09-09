@@ -14,7 +14,7 @@
     position: relative;
 
     &:not(:first-child)::before {
-      background: $primary-color;
+      background: var(--spectre-primary-color);
       content: "";
       height: 2px;
       left: -50%;
@@ -24,14 +24,14 @@
     }
 
     a {
-      color: $primary-color;
+      color: var(--spectre-primary-color);
       display: inline-block;
       padding: 20px 10px 0;
       text-decoration: none;
 
       &::before {
-        background: $primary-color;
-        border: $border-width-lg solid $light-color;
+        background: var(--spectre-primary-color);
+        border: $border-width-lg solid var(--spectre-light-color);
         border-radius: 50%;
         content: "";
         display: block;
@@ -48,21 +48,21 @@
     &.active {
       a {
         &::before {
-          background: $light-color;
-          border: $border-width-lg solid $primary-color;
+          background: var(--spectre-light-color);
+          border: $border-width-lg solid var(--spectre-primary-color);
         }
       }
 
       & ~ .step-item {
         &::before {
-          background: $border-color;
+          background: var(--spectre-border-color);
         }
 
         a {
-          color: $gray-color;
+          color: var(--spectre-gray-color);
 
           &::before {
-            background: $border-color;
+            background: var(--spectre-border-color);
           }
         }
       }

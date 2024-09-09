@@ -1,10 +1,12 @@
+@use "functions/color" as *;
+
 // Buttons
 .btn {
   appearance: none;
-  background: $bg-color-light;
-  border: $border-width solid $primary-color;
+  background: var(--spectre-bg-color-light);
+  border: $border-width solid var(--spectre-primary-color);
   border-radius: $border-radius;
-  color: $primary-color;
+  color: var(--spectre-primary-color);
   cursor: pointer;
   display: inline-block;
   font-size: $font-size;
@@ -23,20 +25,20 @@
   }
   &:focus,
   &:hover {
-    background: $secondary-color;
-    border-color: $primary-color-dark;
+    background: var(--spectre-secondary-color);
+    border-color: var(--spectre-primary-color-dark);
     text-decoration: none;
   }
   &:active,
   &.active {
-    background: $primary-color-dark;
-    border-color: darken($primary-color-dark, 5%);
-    color: $light-color;
+    background: var(--spectre-primary-color-dark);
+    border-color: darken-css(var(--spectre-primary-color-dark), 5%);
+    color: var(--spectre-light-color);
     text-decoration: none;
     &.loading {
       &::after {
-        border-bottom-color: $light-color;
-        border-left-color: $light-color;
+        border-bottom-color: var(--spectre-light-color);
+        border-left-color: var(--spectre-light-color);
       }
     }
   }
@@ -50,48 +52,48 @@
 
   // Button Primary
   &.btn-primary {
-    background: $primary-color;
-    border-color: $primary-color-dark;
-    color: $light-color;
+    background: var(--spectre-primary-color);
+    border-color: var(--spectre-primary-color-dark);
+    color: var(--spectre-light-color);
     &:focus,
     &:hover {
-      background: darken($primary-color-dark, 2%);
-      border-color: darken($primary-color-dark, 5%);
-      color: $light-color;
+      background: darken-css(var(--spectre-primary-color-dark), 2%);
+      border-color: darken-css(var(--spectre-primary-color-dark), 5%);
+      color: var(--spectre-light-color);
     }
     &:active,
     &.active {
-      background: darken($primary-color-dark, 4%);
-      border-color: darken($primary-color-dark, 7%);
-      color: $light-color;
+      background: darken-css(var(--spectre-primary-color-dark), 4%);
+      border-color: darken-css(var(--spectre-primary-color-dark), 7%);
+      color: var(--spectre-light-color);
     }
     &.loading {
       &::after {
-        border-bottom-color: $light-color;
-        border-left-color: $light-color;
+        border-bottom-color: var(--spectre-light-color);
+        border-left-color: var(--spectre-light-color);
       }
     }
   }
 
   // Button Colors
   &.btn-success {
-    @include button-variant($success-color);
+    @include button-variant(var(--spectre-success-color));
   }
 
   &.btn-error {
-    @include button-variant($error-color);
+    @include button-variant(var(--spectre-error-color));
   }
 
   // Button Link
   &.btn-link {
     background: transparent;
     border-color: transparent;
-    color: $link-color;
+    color: var(--spectre-link-color);
     &:focus,
     &:hover,
     &:active,
     &.active {
-      color: $link-color-dark;
+      color: var(--spectre-link-color-dark);
     }
   }
 
@@ -145,7 +147,7 @@
 
     &:focus,
     &:hover {
-      background: rgba($bg-color, .5);
+      background: opacity-css(var(--spectre-bg-color), .5);
       opacity: .95;
     }
 

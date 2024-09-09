@@ -7,7 +7,7 @@
   &::after {
     animation: loading 500ms infinite linear;
     background: transparent;
-    border: $border-width-lg solid $primary-color;
+    border: $border-width-lg solid var(--spectre-primary-color);
     border-radius: 50%;
     border-right-color: transparent;
     border-top-color: transparent;

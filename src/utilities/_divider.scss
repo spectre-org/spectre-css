@@ -5,8 +5,8 @@
   position: relative;
 
   &[data-content]::after {
-    background: $bg-color-light;
-    color: $gray-color;
+    background: var(--spectre-bg-color-light);
+    color: var(--spectre-gray-color);
     content: attr(data-content);
     display: inline-block;
     font-size: $font-size-sm;
@@ -16,7 +16,7 @@
 }
 
 .divider {
-  border-top: $border-width solid $border-color-light;
+  border-top: $border-width solid var(--spectre-border-color-light);
   height: $border-width;
   margin: $unit-2 0;
 
@@ -30,7 +30,7 @@
   padding: $unit-4;
 
   &::before {
-    border-left: $border-width solid $border-color;
+    border-left: $border-width solid var(--spectre-border-color);
     bottom: $unit-2;
     content: "";
     display: block;

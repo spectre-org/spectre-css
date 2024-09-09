@@ -1,0 +1,43 @@
+// Core colors
+:root{
+  --spectre-primary-color: #{$primary-color};
+  --spectre-primary-color-dark: #{$primary-color-dark};
+  --spectre-primary-color-light: #{$primary-color-light};
+  --spectre-secondary-color: #{$secondary-color};
+  --spectre-secondary-color-dark: #{$secondary-color-dark};
+  --spectre-secondary-color-light: #{$secondary-color-light};
+}
+
+// Gray colors
+:root {
+  --spectre-dark-color: #{$dark-color};
+  --spectre-light-color: #{$light-color};
+  --spectre-gray-color: #{$gray-color};
+  --spectre-gray-color-dark: #{$gray-color-dark};
+  --spectre-gray-color-light: #{$gray-color-light};
+
+  --spectre-border-color: #{$border-color};
+  --spectre-border-color-dark: #{$border-color-dark};
+  --spectre-border-color-light: #{$border-color-light};
+  --spectre-bg-color: #{$bg-color};
+  --spectre-bg-color-dark: #{$bg-color-dark};
+  --spectre-bg-color-light: #{$bg-color-light};
+}
+
+// Control colors
+:root {
+  --spectre-success-color: #{$success-color};
+  --spectre-warning-color: #{$warning-color};
+  --spectre-error-color: #{$error-color};
+}
+
+// Other colors
+:root {
+  --spectre-code-color: #{$code-color};
+  --spectre-highlight-color: #{$highlight-color};
+  --spectre-body-bg: #{$body-bg};
+  --spectre-body-font-color: #{$body-font-color};
+  --spectre-link-color: #{$link-color};
+  --spectre-link-color-dark: #{$link-color-dark};
+  --spectre-link-color-light: #{$link-color-light};
+}

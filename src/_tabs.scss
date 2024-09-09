@@ -1,7 +1,7 @@
 // Tabs
 .tab {
   align-items: center;
-  border-bottom: $border-width solid $border-color;
+  border-bottom: $border-width solid var(--spectre-border-color);
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -19,13 +19,13 @@
       text-decoration: none;
       &:focus,
       &:hover {
-        color: $link-color;
+        color: var(--spectre-link-color);
       }
     }
     &.active a,
     a.active {
-      border-bottom-color: $primary-color;
-      color: $link-color;
+      border-bottom-color: var(--spectre-primary-color);
+      color: var(--spectre-link-color);
     }
 
     &.tab-action {

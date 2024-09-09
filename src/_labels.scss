@@ -1,7 +1,9 @@
+@use "functions/color" as *;
+
 // Labels
 .label {
   @include label-base();
-  @include label-variant(lighten($body-font-color, 5%), $bg-color-dark);
+  @include label-variant(lighten-css(var(--spectre-body-font-color), 5%), var(--spectre-bg-color-dark));
   display: inline-block;
 
   // Label rounded
@@ -13,22 +15,22 @@
 
   // Label colors
   &.label-primary {
-    @include label-variant($light-color, $primary-color);
+    @include label-variant(var(--spectre-light-color), var(--spectre-primary-color));
   }
 
   &.label-secondary {
-    @include label-variant($primary-color, $secondary-color);
+    @include label-variant(var(--spectre-primary-color), var(--spectre-secondary-color));
   }
 
   &.label-success {
-    @include label-variant($light-color, $success-color);
+    @include label-variant(var(--spectre-light-color), var(--spectre-success-color));
   }
 
   &.label-warning {
-    @include label-variant($light-color, $warning-color);
+    @include label-variant(var(--spectre-light-color), var(--spectre-warning-color));
   }
 
   &.label-error {
-    @include label-variant($light-color, $error-color);
+    @include label-variant(var(--spectre-light-color), var(--spectre-error-color));
   }
 }

@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+// TODO: Colors should be scaled in oklch rather than hsl, as it 
+// provides more accurate colors and supports a wider color space.
+// Unfortunately, changing to oklch requires reevalutaion of each
+// color, so it needs a lot of work.
+@function lighten-css($color, $percentage) {
+  $delta: math.div($percentage, 1%);
+  @return hsl(from $color h s calc(l + $delta) / alpha);
+}
+
+@function darken-css($color, $percentage) {
+  @return lighten-css($color, $percentage * -1);
+}
+
+@function opacity-css($color, $opacity){
+  @return hsl(from $color h s l / $opacity);
+}

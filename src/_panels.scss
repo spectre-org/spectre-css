@@ -1,6 +1,6 @@
 // Panels
 .panel {
-  border: $border-width solid $border-color;
+  border: $border-width solid var(--spectre-border-color);
   border-radius: $border-radius;
   display: flex;
   flex-direction: column;

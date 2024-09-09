@@ -1,9 +1,11 @@
+@use "functions/color" as *;
+
 // Component focus shadow
-@mixin control-shadow($color: $primary-color) {
-  box-shadow: 0 0 0 .1rem rgba($color, .2);
+@mixin control-shadow($color: var(--spectre-primary-color)) {
+  box-shadow: 0 0 0 .1rem opacity-css($color, .2);
 }
 
 // Shadow mixin
 @mixin shadow-variant($offset) {
-  box-shadow: 0 $offset ($offset + .05rem) * 2 rgba($dark-color, .3);
+  box-shadow: 0 $offset ($offset + .05rem) * 2 opacity-css(var(--spectre-dark-color), .3);
 }
