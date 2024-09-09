@@ -78,6 +78,17 @@ mark {
   padding: $unit-o $unit-h 0;
 }
 
+address {
+  font-style: normal;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: $mono-font-family;
+}
+
 // Blockquote
 blockquote {
   border-left: $border-width-lg solid var(--spectre-border-color);

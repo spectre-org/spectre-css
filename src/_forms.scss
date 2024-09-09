@@ -17,6 +17,15 @@ legend {
   margin-bottom: $layout-spacing-lg;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 // Form element: Label
 .form-label {
   display: block;
