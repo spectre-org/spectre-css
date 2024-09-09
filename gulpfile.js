@@ -1,11 +1,13 @@
-const gulp = require('gulp')
-const sass = require('gulp-sass')(require('sass'))
-const cleancss = require('gulp-clean-css')
-const csscomb = require('gulp-csscomb')
-const rename = require('gulp-rename')
-const autoprefixer = require('gulp-autoprefixer')
+import gulp from 'gulp';
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import cleancss from 'gulp-clean-css';
+import csscomb from 'gulp-csscomb';
+import rename from 'gulp-rename';
+import autoprefixer from 'gulp-autoprefixer';
+const sass = gulpSass(dartSass);
 
-function build () {
+export function build () {
   return gulp
     .src('./src/*.scss')
     .pipe(sass({ style: 'compact', precision: 10 })
@@ -21,10 +23,6 @@ function build () {
     .pipe(gulp.dest('./dist'))
 }
 
-function watch () {
+export function watch () {
   gulp.watch('./**/*.scss', build)
 }
-
-exports.watch = watch
-exports.build = build
-exports.default = build
