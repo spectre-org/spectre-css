@@ -26,8 +26,8 @@ New documentation is available at:
 
 Getting started:
 
-- [Installation](https://spectre-org.github.io/spectre-docs/docs/introduction/installation.html)
-- [Build](https://spectre-org.github.io/spectre-docs/docs/introduction/build.html)
+- [Installation](https://spectre-org.github.io/spectre-docs/docs/get-started/installation.html)
+- [Build](https://spectre-org.github.io/spectre-docs/docs/get-started/build.html)
 
 Content:
 
@@ -45,6 +45,8 @@ Related content:
 
 ## Contributing
 
+### Build
+
 Clone this repo locally with:
 
 ```bash
@@ -54,12 +56,14 @@ git clone https://github.com/spectre-org/spectre-css.git
 Spectre uses [Gulp](http://gulpjs.com/) to compile CSS:
 
 ```bash
-# compile SCSS to CSS and minify files
-gulp build    
-
 # watch file changes and re-compile
-gulp watch    
+npm run dev    
+
+# compile SCSS to CSS and minify files
+npm run build
 ```
+
+### Testing
 
 To work with Spectre CSS source files live in another project, you can use NPM link.
 
@@ -76,3 +80,42 @@ npm link @spectre-org/spectre-css
 ```
 
 The existing `node_modules/@spectre-org/spectre-css` folder will be replaced with a symlink to the local repository, and any changes there will be reflected immediately in your project.
+
+## Releasing
+
+> Releasing is only available to maintainers
+
+### Approach
+
+Spectre CSS is published to [NPM](https://www.npmjs.com/package/@spectre-org/spectre-css), and is made automatically available on [CDN](https://unpkg.com/@spectre-org/spectre-css/) thanks to [unpkg.com](https://unpkg.com/).
+
+Note that local `/src` files are compiled to `/dist` but are **not** committed to the repository.
+
+### Checklist
+
+Before publishing, check:
+
+- you're on the `main` branch
+- there are no outstanding commits
+- you bumped [`package.json`](./package.json) `version` correctly
+- you updated [`CHANGELOG.md`](./CHANGELOG.md) with all changes since the last version
+- you have tested the built files in an NPM-linked project (see [Testing](#testing), above)
+
+### Release
+
+To build and publish directly to NPM, run:
+
+```bash
+npm run release
+```
+
+To dry-run the release, run:
+
+```bash
+npm run release:dry
+```
+
+Once published, Spectre will be available at:
+
+- NPM: https://www.npmjs.com/package/@spectre-org/spectre-css
+- CDN: https://unpkg.com/browse/@spectre-org/spectre-css@latest/

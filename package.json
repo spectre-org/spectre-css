@@ -17,7 +17,8 @@
   "scripts": {
     "dev": " gulp watch",
     "build": "gulp build",
-    "release": "npm run build && npm publish --access public"
+    "release": "npm run build && npm publish --access public",
+    "release:dry": "npm run build && npm publish --access public --dry-run"
   },
   "keywords": [
     "css",
@@ -43,10 +44,8 @@
   },
   "browserslist": [
     "last 4 Chrome versions",
-    "Edge >= 12",
+    "last 4 Edge versions",
     "Firefox ESR",
-    "last 4 Safari versions",
-    "last 4 Opera versions",
-    "Explorer >= 10"
+    "last 4 Safari versions"
   ]
 }
