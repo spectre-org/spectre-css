@@ -47,7 +47,8 @@ h6,
 
 // Paragraphs
 p {
-  margin: 0 0 $line-height;
+  margin-top: $line-height;
+  margin-bottom: $line-height;
 }
 
 // Semantic text elements
@@ -111,11 +112,12 @@ ol {
 
   li {
     margin-top: $unit-2;
+    margin-left: $unit-4;
   }
 }
 
 ul {
-  list-style: disc inside;
+  list-style: disc outside;
 
   ul {
     list-style-type: circle;
@@ -123,7 +125,7 @@ ul {
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: decimal outside;
 
   ol {
     list-style-type: lower-alpha;
