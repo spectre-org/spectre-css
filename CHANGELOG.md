@@ -5,6 +5,11 @@
 Source:
 
 - Update CSS normalization to [modern-normalize](https://github.com/sindresorhus/modern-normalize) (#39)
+- Misc formatting fixes and tweaks (#47)
+  - Add top-margin to paragraphs
+  - Fix list item margin and wrap
+  - Increase horizontal padding on labels
+  - Remove styling from code blocks likely to be styled using plugins
 
 Build:
 
