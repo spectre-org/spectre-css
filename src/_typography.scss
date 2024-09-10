@@ -94,7 +94,11 @@ blockquote {
   margin-left: 0;
   padding: $unit-2 $unit-4;
 
-  p:last-child {
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  > p:last-child {
     margin-bottom: 0;
   }
 }
