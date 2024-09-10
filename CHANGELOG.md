@@ -1,10 +1,27 @@
 # Spectre CSS Changelog
 
+## v1.1.0 [#](https://github.com/spectre-org/spectre-css/releases/tag/v1.1.0)
+
+Source:
+
+- Update CSS normalization to [modern-normalize](https://github.com/sindresorhus/modern-normalize) (#39)
+- Misc formatting fixes and tweaks (#47)
+  - Add top-margin to paragraphs
+  - Fix list item margin and wrap
+  - Increase horizontal padding on labels
+  - Remove styling from code blocks likely to be styled using plugins
+
+Build:
+
+- Revise browser support (#35)
+- Migrate build to ES modules (#37)
+- Update license and banner text (#33, #34, #43)
+
 ## v1.0.0 [#](https://github.com/spectre-org/spectre-css/releases/tag/v1.0.0)
 
 - Update dependencies
-- Fix deprecated rules in sass 2.0
-- Move docs to https://github.com/spectre-org/spectre-docs
+- Fix deprecated rules in sass 2.0 (#10)
+- Move docs to [@spectre-org/spectre-docs](https://github.com/spectre-org/spectre-docs) (#13)
 
 ## v0.5.9 [#](https://github.com/picturepan2/spectre/releases/tag/v0.5.9)
 
