@@ -1,4 +1,4 @@
-/** 
+/**
 Manually forked from modern-normalize with some removals:
 
 - r1 Box model, already set by spectre.
@@ -167,6 +167,14 @@ button,
 [type='reset'],
 [type='submit'] {
 	-webkit-appearance: button;
+}
+
+/**
+Remove fieldset border.
+ */
+
+fieldset{
+	border: 0;
 }
 
 /**

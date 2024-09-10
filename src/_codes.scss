@@ -29,3 +29,9 @@ code {
     width: 100%;
   }
 }
+
+// Don't style codeblocks likely to be styled via plugins
+pre[class] code {
+  background: unset;
+  color: unset;
+}
