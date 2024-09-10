@@ -99,7 +99,7 @@ Before publishing, check:
 - there are no outstanding commits
 - you bumped [`package.json`](./package.json) `version` correctly
 - you updated [`CHANGELOG.md`](./CHANGELOG.md) with all changes since the last version
-- you have tested the built files in an NPM-linked project (see [Testing](#testing), above)
+- you have tested the built files in an [NPM-linked project](#testing) (such as the [docs](https://github.com/spectre-org/spectre-docs))
 
 ### Release
 
