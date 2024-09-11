@@ -43,6 +43,15 @@ Related content:
 - [Original Spectre.css docs](https://picturepan2.github.io/spectre/)
 - [Spectre.css on Twitter](https://twitter.com/spectrecss)
 
+## Roadmap
+
+The plan for Spectre CSS is to merge outstanding PRs, then look to add much-needed features.
+
+All issues will be added to projects as appropriate:
+
+- [Bug Fixes](https://github.com/orgs/spectre-org/projects/1)
+- [New Features](https://github.com/orgs/spectre-org/projects/2)
+
 ## Contributing
 
 ### Build
