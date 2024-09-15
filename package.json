@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": " gulp watch",
+    "dev": " gulp watch --trace-warnings",
     "build": "gulp build",
     "release": "npm run build && npm publish --access public",
     "release:dry": "npm run build && npm publish --access public --dry-run"
@@ -35,12 +35,14 @@
   },
   "devDependencies": {
     "gulp": "^5.0.0",
-    "gulp-replace": "^1.1.4",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-csscomb": "^3.1.0",
+    "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
+    "postcss-prefix-selector": "^1.16.1",
     "sass": "^1.77.8"
   },
   "browserslist": [
