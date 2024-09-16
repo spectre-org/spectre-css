@@ -15,9 +15,10 @@ import { readFileSync } from 'fs'
 
 const sass = gulpSass(dartSass)
 const pkg = JSON.parse(readFileSync('./package.json', 'utf8'))
+const { version } = pkg
 
 const DIST_PATH = './dist'
-const DOCS_PATH = '../spectre-docs/.vitepress/theme/styles/spectre'
+const DOCS_PATH = '../spectre-docs'
 
 // ---------------------------------------------------------------------------------------------------------------------
 // lib scripts
@@ -29,7 +30,7 @@ const DOCS_PATH = '../spectre-docs/.vitepress/theme/styles/spectre'
 export function build () {
   return gulp
     .src('./src/*.scss')
-    .pipe(replace(/%VERSION%/g, `v${pkg.version}`))
+    .pipe(replace(/%VERSION%/g, `v${version}`))
     .pipe(sass({ style: 'compact', precision: 10 })
       .on('error', sass.logError)
     )
@@ -56,8 +57,19 @@ export function watch () {
  * Build and save docs stylesheets
  */
 export function buildDocs () {
-  const options = { output: DOCS_PATH, minOnly: true }
+  // copy docs stylesheets
+  const output = `${DOCS_PATH}/.vitepress/theme/styles/spectre`
+  const options = { output, minOnly: true }
   isolate('namespace', '.vp-doc', options)
+
+  // update version string
+  const index = `${DOCS_PATH}/index.md`
+  if (Fs.existsSync(index)) {
+    gulp
+      .src(index, { base: '.' })
+      .pipe(replace(/tagline: ".+?"/, `tagline: "Latest version: v${version}"`))
+      .pipe(gulp.dest('.'))
+  }
 }
 
 /**
