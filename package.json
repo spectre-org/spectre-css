@@ -1,6 +1,6 @@
 {
   "name": "@spectre-org/spectre-css",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "homepage": "http://spectre-org.github.io/spectre-docs",
   "description": "Spectre CSS: A lightweight, responsive and modern CSS framework",
   "type": "module",

@@ -1,5 +1,16 @@
 # Spectre CSS Changelog
 
+## v1.2.0 [#](https://github.com/spectre-org/spectre-css/releases/tag/v1.2.0)
+
+Source:
+
+- Fix `blockquote > p` top-margin
+
+Build:
+
+- Add build-time namespacing and prefixing (#50)
+- Add build step to copy current version number to docs
+
 ## v1.1.0 [#](https://github.com/spectre-org/spectre-css/releases/tag/v1.1.0)
 
 Source:
