@@ -7,14 +7,10 @@ Manually forked from modern-normalize with some removals:
 - r4 Monospace font family, already set by spectre.
 - r5 Font size and line height on form elements, already set by spectre.
 
-And some temporary removals:
-- tr1 Tab size, to ensure backwards compatibility with spectre v1. TODO: Add this back when releasing spectre v2.
-- tr2 Table border color, to ensure backwards compatibility with spectre v1. TODO: Add this back when releasing spectre v2.
-
 To make it easier to update this fork with upstream changes, please only remove code, and remove it by commenting it out.
 If you need to change or add something, do it in the upstream repo or do it in a different file.
 */
-/*! modern-normalize v3.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -47,8 +43,7 @@ html {
 	/* r3 */
 	// line-height: 1.15; /* 1. Correct the line height in all browsers. */
 	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-	/* tr1 */
-	// tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+	tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
 }
 
 /*
@@ -131,10 +126,9 @@ Tabular data
 Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 
-/* tr2 */
-// table {
-// 	border-color: currentcolor;
-// }
+table {
+	border-color: currentcolor;
+}
 
 /*
 Forms
