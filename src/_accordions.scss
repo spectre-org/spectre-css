@@ -30,8 +30,12 @@
   }
 }
 
-// Remove default details marker in Webkit
+// Remove the default details marker
+// `list-style` covers modern browsers, the Webkit pseudo-element covers older Safari.
+// Note that `::marker` cannot be used here, as it does not accept the `display` property.
 summary.accordion-header {
+  list-style: none;
+
   &::-webkit-details-marker {
     display: none;
   }

@@ -18,6 +18,10 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  // Anchors styled as buttons would otherwise pick up the browser's visited colour
+  &:visited {
+    color: $primary-color;
+  }
   &:focus {
     @include control-shadow();
   }
@@ -53,6 +57,9 @@
     background: $primary-color;
     border-color: $primary-color-dark;
     color: $light-color;
+    &:visited {
+      color: $light-color;
+    }
     &:focus,
     &:hover {
       background: darken($primary-color-dark, 2%);
@@ -87,6 +94,9 @@
     background: transparent;
     border-color: transparent;
     color: $link-color;
+    &:visited {
+      color: $link-color;
+    }
     &:focus,
     &:hover,
     &:active,

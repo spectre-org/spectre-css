@@ -1,6 +1,11 @@
 // Loading
 .loading {
-  color: transparent !important;
+  // Hide child text as well as direct text, so nested content does not show through the spinner
+  &,
+  * {
+    color: transparent !important;
+  }
+
   min-height: $unit-4;
   pointer-events: none;
   position: relative;
@@ -14,13 +19,14 @@
     content: "";
     display: block;
     height: $unit-4;
-    left: 50%;
+    // `!important` keeps the spinner centred when the host element sets its own offsets
+    left: 50% !important;
     margin-left: -$unit-2;
     margin-top: -$unit-2;
     opacity: 1;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 50% !important;
     width: $unit-4;
     z-index: $zindex-0;
   }
