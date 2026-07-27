@@ -7,6 +7,7 @@ import csscomb from 'gulp-csscomb'
 import rename from 'gulp-rename'
 import replace from 'gulp-replace'
 import gulpIf from 'gulp-if'
+import merge from 'merge-stream'
 import autoprefixer from 'gulp-autoprefixer'
 import prefixSelector from 'postcss-prefix-selector'
 import prefixer from 'postcss-prefixer'
@@ -31,7 +32,7 @@ export function build () {
   return gulp
     .src('./src/*.scss')
     .pipe(replace(/%VERSION%/g, `v${version}`))
-    .pipe(sass({ style: 'compact', precision: 10 })
+    .pipe(sass({ style: 'expanded' })
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
@@ -60,16 +61,20 @@ export function buildDocs () {
   // copy docs stylesheets
   const output = `${DOCS_PATH}/.vitepress/theme/styles/spectre`
   const options = { output, minOnly: true }
-  isolate('namespace', '.vp-doc', options)
+  const streams = [isolate('namespace', '.vp-doc', options)]
 
   // update version string
   const index = `${DOCS_PATH}/index.md`
   if (Fs.existsSync(index)) {
-    gulp
-      .src(index, { base: '.' })
-      .pipe(replace(/tagline: ".+?"/, `tagline: "Latest version: v${version}"`))
-      .pipe(gulp.dest('.'))
+    streams.push(
+      gulp
+        .src(index, { base: '.' })
+        .pipe(replace(/tagline: ".+?"/, `tagline: "Latest version: v${version}"`))
+        .pipe(gulp.dest('.'))
+    )
   }
+
+  return merge(streams)
 }
 
 /**
