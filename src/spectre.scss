@@ -5,46 +5,54 @@
 /*! SpectreCSS %VERSION% | MIT License | https://github.com/spectre-org/spectre-css */
 
 // Reset and dependencies
-@import "normalize";
-@import "base";
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+@import "base/asian";
 
 // Elements
-@import "typography";
-@import "asian";
-@import "tables";
-@import "buttons";
-@import "forms";
-@import "labels";
-@import "codes";
-@import "media";
+@import "elements/tables";
+@import "elements/buttons";
+@import "elements/forms";
+@import "elements/labels";
+@import "elements/codes";
+@import "elements/media";
 
 // Layout
-@import "layout";
-@import "hero";
-@import "navbar";
+@import "layout/layout";
+@import "layout/hero";
+@import "layout/navbar";
 
 // Components
-@import "accordions";
-@import "avatars";
-@import "badges";
-@import "breadcrumbs";
-@import "bars";
-@import "cards";
-@import "chips";
-@import "dropdowns";
-@import "empty";
-@import "menus";
-@import "modals";
-@import "navs";
-@import "pagination";
-@import "panels";
-@import "popovers";
-@import "steps";
-@import "tabs";
-@import "tiles";
-@import "toasts";
-@import "tooltips";
+@import "components/accordions";
+@import "components/avatars";
+@import "components/badges";
+@import "components/breadcrumbs";
+@import "components/bars";
+@import "components/cards";
+@import "components/chips";
+@import "components/dropdowns";
+@import "components/empty";
+@import "components/menus";
+@import "components/modals";
+@import "components/navs";
+@import "components/pagination";
+@import "components/panels";
+@import "components/popovers";
+@import "components/steps";
+@import "components/tabs";
+@import "components/tiles";
+@import "components/toasts";
+@import "components/tooltips";
 
-// Utility classes
-@import "animations";
-@import "utilities";
+// Utilities
+@import "utilities/animations";
+@import "utilities/colors";
+@import "utilities/cursors";
+@import "utilities/display";
+@import "utilities/divider";
+@import "utilities/loading";
+@import "utilities/position";
+@import "utilities/shapes";
+@import "utilities/text";
+
