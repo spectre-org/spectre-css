@@ -84,6 +84,23 @@ relative import path, so the folder move must land first or those paths get writ
 #38 are independent and can land either side of that. #4 goes last, so spacing is judged against the
 final structure.
 
+#### On the cost of the folder move
+
+The folder move is worth being deliberate about, because its benefit is largely to maintainers while
+its cost falls on users and on future upstream ports.
+
+The flat paths it changes are a documented public API — `get-started/build.md` tells people to write
+`@import ".../src/buttons"` for selective imports. Moving the files silently breaks every one of those.
+It also makes cherry-picking from `picturepan2/spectre` permanently harder, since every future port
+needs its paths remapped; #48 anticipates this and asks for the upstream backlog to be cleared first,
+which the v1.2.1 and v1.3.0 releases above do.
+
+If the break turns out to be unwelcome, it can be avoided almost entirely: leave each old flat path in
+place as a one-line forward, so `src/_buttons.scss` becomes `@forward "elements/buttons";`. Every
+documented import keeps working, the folder structure still happens, and the shims can be dropped in a
+later major with a deprecation notice. The cost is around fifty one-line files, which is not free but
+is cheap next to breaking a documented API.
+
 ### v2.1.0 — minor — Dark mode
 
 | Item | Source |
@@ -99,6 +116,77 @@ redefines the `--*` values, so the default light theme is untouched.
 | --- | --- |
 | Spectre Raw — automatic styling of native HTML elements | [#51](https://github.com/spectre-org/spectre-css/issues/51) |
 | Dash docset configuration | upstream [#689](https://github.com/picturepan2/spectre/pull/689) |
+
+## Documentation
+
+Documentation lives in the separate [`spectre-docs`](https://github.com/spectre-org/spectre-docs)
+repository, as a VitePress site. Three things about how it is wired up determine how much work each
+release needs.
+
+**The sidebar is generated, not written.** `.vitepress/config.mts` uses `vitepress-sidebar` to scan
+`docs/`, taking titles and ordering from each page's `title` and `order` frontmatter. So a new page is
+just a new `.md` file with frontmatter, and a new section is just a folder with an `index.md`. Neither
+needs a config change.
+
+**The JS badges are hard-coded.** The same config holds a manual list of pages that get a "JS" badge in
+the sidebar. It is the one place that must be edited by hand when a component's JS requirement changes.
+
+**Styles are pushed from this repo.** The `buildDocs` gulp task compiles, namespaces and copies the
+stylesheet into the docs theme, and rewrites the version tagline on the home page. Restyling work needs
+no manual docs step beyond re-running that task.
+
+The existing sections — `get-started`, `elements`, `layout`, `components`, `utilities`, `experimentals`
+— already cover most of what is planned. Only two releases need genuinely new structure.
+
+### Per release
+
+**v1.2.1** — no new pages. The Meter fix may need its screenshot refreshed on
+`experimentals/meters`.
+
+**v1.3.0** — new pages within existing sections: `.table-stack` on `elements/tables`, `.card-shadow` on
+`components/cards`, `.order-*` on `layout` or `utilities/position`, and the new icons on
+`elements/icons`. Pagination hover and the expanded colour palette are updates to existing pages.
+
+RTL is the exception and needs a new page, most likely `get-started/rtl`, since it is a build-time
+`$rtl` flag rather than a class — it belongs with the other build and customisation material rather
+than in a component section.
+
+**v1.4.0** — `components/tabs` needs rewriting for the pure CSS implementation, including the tab-count
+limit. This is also the one release that must edit `.vitepress/config.mts`, to remove `'tabs'` from the
+JS badge list — the whole point of the change is that tabs no longer need JS.
+
+**v1.5.0** — needs a new `get-started/theming` page covering the CSS custom properties, kept separate
+from `customisation`, which documents the Sass variables. The two override mechanisms coexist and
+should be explained side by side, with guidance on when to reach for each.
+
+**v2.0.0** — the largest documentation task in the plan, and it is a rewrite rather than an addition.
+Two pages currently document the things this release breaks:
+
+- `get-started/build.md` shows the `@import` plus global variable override pattern under "User
+  variables", and flat `src/buttons` paths under "Selective imports". Both become wrong.
+- `get-started/customisation.md` describes overriding `!default` variables and links to the flat source
+  layout.
+
+Both need rewriting for `@use ... with (...)` and the new folder paths. This release also needs a new
+`get-started/migrating` page — a v1 to v2 upgrade guide covering the changed override syntax, the moved
+paths, and the visual differences from the spacing review and the colour maths change. That page is
+what makes the major version tolerable for existing users, so it should be treated as part of the
+release rather than a follow-up.
+
+**v2.1.0** — a new `get-started/dark-mode` page. Note that the docs site currently sets
+`appearance: false` and forces the `github-light` code theme, both of which disable VitePress's own
+dark mode. Shipping dark mode means reversing those settings, and then checking every page renders
+correctly in both themes — a larger job than writing the page itself.
+
+**Spectre Raw**, if it goes ahead, would need its own top-level section rather than a page, since it is
+a parallel way of using the framework rather than a feature within it.
+
+### One salvageable item from the old docs
+
+The documentation PRs listed in #5 target the old bundled Pug docs and cannot be merged. One is still
+worth reproducing by hand in the current site: upstream
+[#663](https://github.com/picturepan2/spectre/pull/663) documents `.flex-centered`, which the framework
+ships but the docs do not currently cover.
 
 ## Backlog triage
 
